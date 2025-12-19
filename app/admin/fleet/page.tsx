@@ -13,7 +13,7 @@ const fleetData = [
         passengers: 7,
         luggage: 5,
         status: 'Active',
-        image: '/gmc-yukon.webp',
+        image: '/gmc-yukon-xl-taxi.webp',
         price: 'Start from 250 SAR'
     },
     {
@@ -23,7 +23,7 @@ const fleetData = [
         passengers: 4,
         luggage: 3,
         status: 'Active',
-        image: '/toyota-camry.webp',
+        image: '/toyota-camry-taxi-sedan.webp',
         price: 'Start from 100 SAR'
     },
     {
@@ -33,7 +33,7 @@ const fleetData = [
         passengers: 7,
         luggage: 6,
         status: 'Active',
-        image: '/hyundai-staria.webp',
+        image: '/hyundai-staria-family-taxi.webp',
         price: 'Start from 180 SAR'
     },
     {
@@ -43,7 +43,7 @@ const fleetData = [
         passengers: 12,
         luggage: 10,
         status: 'Maintenance',
-        image: '/toyota-hiace.webp',
+        image: '/toyota-hiace-commuter-van.webp',
         price: 'Start from 300 SAR'
     }
 ];

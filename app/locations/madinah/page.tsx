@@ -1,256 +1,549 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { MapPin, Phone, Clock, Star, CheckCircle2, Car, Users, Shield } from 'lucide-react';
-import Hero from '@/components/Hero';
+import { MapPin, Clock, CheckCircle2, Car, Phone, ArrowRight, AlertCircle, Wallet } from 'lucide-react';
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
 } from '@/components/ui/accordion';
+import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
-    title: 'Madinah Umrah Taxi | Prophet\'s Mosque & Ziyarat',
-    description: 'Reliable Umrah Taxi in Madinah. We specialize in transport to Prophet\'s Mosque, Ziyarat tours, airport transfers, and Makkah connections.',
-    keywords: ['Madinah taxi', 'Prophet\'s Mosque taxi', 'Ziyarat taxi Madinah', 'Madinah airport transfer', 'Umrah taxi'],
+    title: 'Taxi Service in Madinah | Airport Transfer & Ziyarat Tours - Haram Taxi',
+    description: 'Book reliable taxi service in Madinah, Saudi Arabia. Airport transfers, hotel pickups, and Ziyarat tours. Available 24/7. Call now for instant booking!',
+    keywords: ['taxi service Madinah', 'Madinah airport taxi', 'taxi in Madinah', 'Madinah to Makkah taxi', 'Madinah Ziyarat taxi'],
+    openGraph: {
+        title: 'Taxi Service in Madinah | Airport Transfer & Ziyarat Tours',
+        description: 'Professional taxi service in Madinah. Airport transfers, Ziyarat tours, hotel pickups. Book now!',
+        url: 'https://haramtaxiservice.com/locations/madinah',
+        type: 'website',
+    },
 };
 
 export default function MadinahPage() {
     const services = [
-        { name: 'Airport Transfers', description: 'Prince Mohammad Airport to hotels' },
-        { name: 'Ziyarat Tours', description: 'Holy sites and historical places' },
-        { name: 'Makkah Transport', description: 'Madinah to Makkah and return' },
-        { name: 'Hotel Transfers', description: 'Hotel to Masjid Nabawi' },
-        { name: 'Train Station', description: 'Haramain Station Transfers' },
-        { name: 'Group Transport', description: 'For families and groups' },
+        {
+            name: 'Airport Transfer',
+            description: 'Pickup from Prince Mohammad bin Abdulaziz Airport (MED) to your hotel.',
+            icon: Car
+        },
+        {
+            name: 'Ziyarat Tours',
+            description: 'Visit Quba Mosque, Mount Uhud, Qiblatain, and Seven Mosques.',
+            icon: MapPin
+        },
+        {
+            name: 'Transfer to Makkah',
+            description: 'Reliable travel to Makkah hotels or Haram (4-5 hours).',
+            icon: ArrowRight
+        },
+        {
+            name: 'Hotel Pickup',
+            description: 'Service from Central Area (Markazia) and all Madinah hotels.',
+            icon: MapPin
+        },
+        {
+            name: 'Masjid Nabawi Transfer',
+            description: "Direct drop-off at Prophet's Mosque gates.",
+            icon: Car
+        },
+        {
+            name: '24/7 Service',
+            description: 'Always available for your convenience, day or night.',
+            icon: Clock
+        },
     ];
 
     const features = [
-        'Knowledgeable local drivers',
-        'Comfortable vehicles',
-        'Transparent pricing',
-        '24/7 service',
-        'Multilingual drivers',
-        'Respectful service',
-    ];
-
-    const madinahImages = [
-        '/madinah-prophets-mosque.webp',
-        '/madinah-night-view.webp',
-        '/hero-slide-2.webp',
+        'Licensed Madinah taxi drivers',
+        'Clean and air-conditioned vehicles',
+        'Fixed rates - no hidden charges',
+        '24/7 availability in Madinah',
+        'English & Arabic speaking drivers',
+        'Ziyarat tour packages available',
     ];
 
     const faqs = [
         {
-            question: "What is the taxi fare from Madinah Airport to Masjid An Nabawi?",
-            answer: "The taxi fare from Prince Mohammad Bin Abdulaziz International Airport (MED) to Masjid An Nabawi is generally around SAR 80-120. We offer fixed rates for peace of mind."
+            question: "How much is a taxi from Madinah Airport to hotels?",
+            answer: "The taxi fare from Prince Mohammad bin Abdulaziz Airport to Madinah hotels typically ranges from SAR 40-80 depending on the hotel location and vehicle type. The journey takes approximately 20-30 minutes."
         },
         {
-            question: "Can I visit Ziyarat places in Madinah by taxi?",
-            answer: "Yes, we offer specialized Ziyarat packages visiting Mount Uhud, Masjid Quba, Masjid Qiblatayn, and the Seven Mosques. Our drivers are well-versed in Islamic history sites."
+            question: "Do you provide Ziyarat tours in Madinah?",
+            answer: "Yes, we provide comprehensive Ziyarat tours in Madinah including visits to Quba Mosque, Mount Uhud, Qiblatain Mosque, and other historic Islamic sites. Our drivers are knowledgeable about all Ziyarat locations."
         },
         {
-            question: "How far is the train station from the Prophet's Mosque?",
-            answer: "The Haramain High-Speed Railway station is about 15-20 minutes by taxi from the Prophet's Mosque (Al-Masjid an-Nabawi), depending on traffic."
+            question: "How long does it take from Madinah to Makkah by taxi?",
+            answer: "The taxi journey from Madinah to Makkah takes approximately 4-5 hours via the Hijrah Highway. We provide comfortable vehicles with experienced drivers for this intercity trip."
         },
         {
-            question: "Do you provide transport from Madinah to Makkah?",
-            answer: "Yes, we offer comfortable private taxi transfers from Madinah to Makkah (approx. 4-5 hours). This is a preferred option for families with luggage and elderly pilgrims."
+            question: "Is taxi service available 24/7 in Madinah?",
+            answer: "Yes, our taxi service in Madinah operates 24 hours a day, 7 days a week. Whether you need early morning airport transfer or late-night hotel pickup, we're always available."
         },
         {
-            question: "Are there female drivers available in Madinah?",
-            answer: "Currently, our fleet is operated by professional male chauffeurs. However, we ensure the highest standards of safety, privacy, and respect for all family members."
+            question: "Can I book a taxi for multiple days in Madinah?",
+            answer: "Yes, we offer multi-day taxi rental services in Madinah. Perfect for families or groups who want dedicated transportation during their stay. Contact us for special rates."
         }
     ];
 
+    const popularRoutes = [
+        { from: 'Madinah Airport', to: 'Madinah Hotels', duration: '20-30 min', price: 'SAR 40-80' },
+        { from: 'Madinah Hotel', to: 'Prophet\'s Mosque', duration: '10-15 min', price: 'SAR 20-40' },
+        { from: 'Madinah', to: 'Makkah', duration: '4-5 hrs', price: 'SAR 400-600' },
+        { from: 'Madinah', to: 'Quba Mosque', duration: '15 min', price: 'SAR 30-50' },
+    ];
+
+    const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Haram Taxi Service - Madinah",
+        "image": "https://haramtaxiservice.com/madinah-prophets-mosque.webp",
+        "@id": "https://haramtaxiservice.com/locations/madinah",
+        "url": "https://haramtaxiservice.com/locations/madinah",
+        "telephone": "+966-XXX-XXXX",
+        "priceRange": "SAR 20-600",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Madinah",
+            "addressLocality": "Madinah",
+            "addressRegion": "Al Madinah Province",
+            "postalCode": "42311",
+            "addressCountry": "SA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 24.5247,
+            "longitude": 39.5692
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Madinah"
+        }
+    };
+
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
-        <div className="bg-gray-50 min-h-screen">
-            <Hero
-                images={madinahImages}
-                h1Text="Madinah Umrah Taxi & Ziyarat Tours"
-                title={
-                    <span className="bg-primary text-white px-4 py-2 rounded-lg inline-block decoration-clone leading-snug">
-                        Madinah Umrah Taxi
-                    </span>
-                }
-                subtitle="Ziyarat Tours"
-                location="Prophet's Mosque"
-            />
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-            <section className="py-20 px-4 sm:px-6 lg:px-8 relative bg-gray-50/50">
-                <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 rounded-l-full blur-3xl opacity-50 pointer-events-none"></div>
-                <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                        <div className="order-2 lg:order-1">
-                            <span className="bg-primary/10 text-primary font-semibold tracking-wider uppercase text-sm px-4 py-1.5 rounded-full inline-block mb-4">Madinah Services</span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                                Peace in the <br /><span className="text-primary">City of the Prophet</span>
-                            </h2>
-                            <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                                Our Madinah transport services are designed with the tranquility of the city in mind. From Airport pickups to Ziyarat of historic mosques, we ensure a respectful and comfortable experience.
-                            </p>
-
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {services.map((service, index) => (
-                                    <div key={index} className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:border-primary/40 hover:shadow-md transition-all">
-                                        <div className="flex items-center gap-3 mb-2">
-                                            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                                                <Car className="w-4 h-4" />
-                                            </div>
-                                            <h3 className="font-bold text-gray-900 text-sm">{service.name}</h3>
-                                        </div>
-                                        <p className="text-xs text-gray-500 pl-11">{service.description}</p>
-                                    </div>
-                                ))}
-                            </div>
+            <div className="bg-white min-h-screen">
+                {/* Breadcrumb */}
+                <div className="bg-gray-50 py-4">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="flex items-center gap-2 text-sm text-gray-600">
+                            <Link href="/" className="hover:text-teal-500">Home</Link>
+                            <span>/</span>
+                            <Link href="/locations" className="hover:text-teal-500">Locations</Link>
+                            <span>/</span>
+                            <span className="text-gray-900 font-medium">Madinah</span>
                         </div>
+                    </div>
+                </div>
 
-                        <div className="order-1 lg:order-2 relative group">
-                            <div className="relative h-[600px] w-full rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl border-4 border-white">
-                                <img
-                                    src="/green-dome-detail.webp"
-                                    alt="The Green Dome of Prophet's Mosque"
-                                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                                <div className="absolute bottom-10 left-0 right-0 text-center text-white">
-                                    <h3 className="text-2xl font-bold font-serif mb-1">Al-Masjid an-Nabawi</h3>
-                                    <p className="text-sm opacity-90 tracking-widest uppercase">The City of Light</p>
+                {/* Hero Section */}
+                <section className="relative h-[500px] bg-gray-900">
+                    <Image
+                        src="/masjid-nabawi-madinah.webp"
+                        alt="Taxi service in Madinah - Prophet's Mosque view"
+                        fill
+                        className="object-cover opacity-60"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+
+                    <div className="absolute inset-0 flex items-center">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                            <div className="max-w-3xl">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/90 rounded-full mb-6">
+                                    <MapPin className="w-4 h-4 text-white" />
+                                    <span className="text-white text-sm font-semibold">Madinah, Saudi Arabia</span>
+                                </div>
+
+                                <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+                                    Taxi Service in <span className="text-teal-400">Madinah</span>
+                                </h1>
+
+                                <p className="text-xl text-gray-200 mb-6">
+                                    Premier taxi service in Madinah, the City of the Prophet. We specialize in Airport transfers, Ziyarat tours to historical sites like Uhud and Quba, and comfortable trips to Makkah.
+                                </p>
+
+                                <div className="flex items-center gap-2 mb-8 text-teal-100 font-medium bg-white/10 w-fit px-4 py-2 rounded-lg backdrop-blur-sm">
+                                    <MapPin className="w-5 h-5" />
+                                    <span>Serving Madinah and surrounding areas within 50km radius</span>
+                                </div>
+
+                                <div className="flex flex-wrap gap-4">
+                                    <Link href="/booking">
+                                        <Button size="lg" className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg">
+                                            Book Madinah Taxi Now
+                                        </Button>
+                                    </Link>
+                                    <a href="tel:+966XXXXXXX">
+                                        <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg">
+                                            <Phone className="w-5 h-5 mr-2" />
+                                            Call Now
+                                        </Button>
+                                    </a>
                                 </div>
                             </div>
-                            {/* Decorative Outline */}
-                            <div className="absolute -inset-4 border border-dashed border-primary/30 rounded-t-full rounded-b-3xl z-[-1] animate-spin-slow" style={{ animationDuration: '60s' }}></div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <span className="bg-primary/10 text-primary font-semibold tracking-wider uppercase text-sm px-4 py-1.5 rounded-full inline-block mb-4">Why Choose Us</span>
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                                Trusted Umrah Taxi in Madinah
-                            </h2>
-                            <p className="text-gray-600 mb-8">
-                                Experience the blessed city with our professional drivers who understand the significance of your spiritual journey to Masjid Nabawi and historical sites.
+                {/* Quick Stats */}
+                <section className="py-12 bg-teal-500 text-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                            <div>
+                                <div className="text-3xl font-bold mb-2">24/7</div>
+                                <div className="text-sm opacity-90">Service in Madinah</div>
+                            </div>
+                            <div>
+                                <div className="text-3xl font-bold mb-2">4-5 hrs</div>
+                                <div className="text-sm opacity-90">To Makkah</div>
+                            </div>
+                            <div>
+                                <div className="text-3xl font-bold mb-2">30+</div>
+                                <div className="text-sm opacity-90">Hotels Covered</div>
+                            </div>
+                            <div>
+                                <div className="text-3xl font-bold mb-2">800+</div>
+                                <div className="text-sm opacity-90">Happy Customers</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Travel Times Section */}
+                <section className="py-12 bg-gray-50 border-b border-gray-200">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Estimated Travel Times from Madinah</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
+                                <div>
+                                    <div className="font-semibold text-gray-900">Makkah</div>
+                                    <div className="text-sm text-gray-500">Distance: 450km</div>
+                                </div>
+                                <div className="text-xl font-bold text-teal-600">4.5 hours</div>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
+                                <div>
+                                    <div className="font-semibold text-gray-900">Jeddah Airport</div>
+                                    <div className="text-sm text-gray-500">Distance: 420km</div>
+                                </div>
+                                <div className="text-xl font-bold text-teal-600">4 hours</div>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
+                                <div>
+                                    <div className="font-semibold text-gray-900">Yanbu</div>
+                                    <div className="text-sm text-gray-500">Distance: 230km</div>
+                                </div>
+                                <div className="text-xl font-bold text-teal-600">2.5 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Problems Solved Section */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Common Taxi Challenges in Madinah</h2>
+                            <p className="text-xl text-gray-600">We solve the problems visitors face when traveling to the Prophet&apos;s City.</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                                    <AlertCircle className="w-6 h-6 text-red-500" />
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">Airport Distance Challenge</h3>
+                                <p className="text-gray-600 mb-4">Prince Mohammad Bin Abdulaziz Airport is 20km+ from most hotels. Finding reliable airport transfers can be stressful after a long flight.</p>
+                                <div className="flex items-center text-teal-600 font-medium">
+                                    <CheckCircle2 className="w-5 h-5 mr-2" />
+                                    <span>Solution: Pre-arranged Meet & Greet with flight tracking</span>
+                                </div>
+                            </div>
+                            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                                    <AlertCircle className="w-6 h-6 text-red-500" />
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">Ziyarat Timing Confusion</h3>
+                                <p className="text-gray-600 mb-4">Coordinating visits to Quba Mosque, Qiblatain, and Uhud can be confusing. Many drivers lack knowledge of optimal visit sequences.</p>
+                                <div className="flex items-center text-teal-600 font-medium">
+                                    <CheckCircle2 className="w-5 h-5 mr-2" />
+                                    <span>Solution: Knowledgeable drivers with planned Ziyarat routes</span>
+                                </div>
+                            </div>
+                            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                                    <AlertCircle className="w-6 h-6 text-red-500" />
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">Hotel Zone Confusion</h3>
+                                <p className="text-gray-600 mb-4">Hotels in Markaziyah vs outer ring areas require different navigation. Explaining locations to drivers can be frustrating.</p>
+                                <div className="flex items-center text-teal-600 font-medium">
+                                    <CheckCircle2 className="w-5 h-5 mr-2" />
+                                    <span>Solution: GPS coordinates and local area expertise</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Cost / Pricing Guide */}
+                <section className="py-20 bg-gray-50">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-12">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-100 rounded-full mb-4">
+                                <Wallet className="w-4 h-4 text-teal-600" />
+                                <span className="text-teal-800 text-sm font-semibold">Clear Pricing</span>
+                            </div>
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Taxi Fare Guide for Madinah</h2>
+                            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                                Fixed rates for all routes, so you know exactly what you&apos;ll pay before you ride.
                             </p>
-                            <ul className="space-y-4">
-                                {features.map((feature, index) => (
-                                    <li key={index} className="flex items-center text-gray-700">
-                                        <CheckCircle2 className="w-5 h-5 text-gray-400 mr-3 flex-shrink-0" />
-                                        {feature}
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                            <div className="bg-white p-8 rounded-2xl shadow-sm">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-6">What Determines Your Price?</h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start">
+                                        <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                            <Car className="w-4 h-4 text-teal-500" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-gray-900">Vehicle Selection</h4>
+                                            <p className="text-gray-600 text-sm">Standard sedans for individuals/couples. Family vans for groups visiting Ziyarat sites together.</p>
+                                        </div>
                                     </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="bg-gray-50 p-6 rounded-2xl text-center border border-gray-200">
-                                <Clock className="w-8 h-8 text-gray-700 mx-auto mb-3" />
-                                <div className="text-3xl font-bold text-gray-900 mb-1">24/7</div>
-                                <div className="text-sm text-gray-600">Available</div>
+                                    <li className="flex items-start">
+                                        <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                            <MapPin className="w-4 h-4 text-teal-500" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-gray-900">Trip Type</h4>
+                                            <p className="text-gray-600 text-sm">Airport transfers are priced differently from local Ziyarat tours or intercity trips to Makkah.</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                            <Clock className="w-4 h-4 text-teal-500" />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-gray-900">Ziyarat Duration</h4>
+                                            <p className="text-gray-600 text-sm">Half-day Ziyarat packages (3-4 hours) are available for visiting multiple historical sites efficiently.</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div className="bg-gray-50 p-6 rounded-2xl text-center border border-gray-200">
-                                <Users className="w-8 h-8 text-gray-700 mx-auto mb-3" />
-                                <div className="text-3xl font-bold text-gray-900 mb-1">4000+</div>
-                                <div className="text-sm text-gray-600">Happy Pilgrims</div>
-                            </div>
-                            <div className="bg-gray-50 p-6 rounded-2xl text-center border border-gray-200">
-                                <Star className="w-8 h-8 text-gray-700 mx-auto mb-3" />
-                                <div className="text-3xl font-bold text-gray-900 mb-1">4.9</div>
-                                <div className="text-sm text-gray-600">Rating</div>
-                            </div>
-                            <div className="bg-gray-50 p-6 rounded-2xl text-center border border-gray-200">
-                                <Shield className="w-8 h-8 text-gray-700 mx-auto mb-3" />
-                                <div className="text-3xl font-bold text-gray-900 mb-1">100%</div>
-                                <div className="text-sm text-gray-600">Safe</div>
+                            <div className="bg-teal-500 p-8 rounded-2xl text-white flex flex-col justify-center">
+                                <h3 className="text-2xl font-bold mb-6">Fixed Airport Rates</h3>
+                                <p className="mb-6 opacity-90 text-lg">
+                                    No matter what time your flight lands or how heavy the traffic is, you pay the same agreed price for airport transfers. No meter anxiety, no surprises.
+                                </p>
+                                <Link href="/booking">
+                                    <Button className="bg-white text-teal-600 hover:bg-gray-100 w-full text-lg h-12">
+                                        Book Your Transfer
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            {/* Sacred Landmarks */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-900 text-white relative">
-                <div className="absolute inset-0 bg-[url('/pattern-grid.png')] opacity-[0.05]"></div>
-                <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="text-center mb-16">
-                        <span className="text-amber-500 font-bold tracking-[0.2em] uppercase text-xs">Explore History</span>
-                        <h2 className="text-3xl md:text-5xl font-bold font-serif mt-3 mb-6">Sacred Ziyarat Sites</h2>
-                        <p className="text-neutral-400 max-w-2xl mx-auto">
-                            Our drivers are knowledgeable guides who will take you to these blessed locations with the respect they deserve.
+                {/* Process Section */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">How It Works in Madinah</h2>
+                            <p className="text-xl text-gray-600">Hassle-free transportation from arrival to departure</p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                            <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-1 bg-gray-100 -z-10"></div>
+
+                            <div className="bg-white p-6 relative">
+                                <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                    <span className="text-3xl font-bold text-teal-500">1</span>
+                                </div>
+                                <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Book with Flight Details</h3>
+                                <p className="text-center text-gray-600">Share your flight number. We track your arrival and adjust pickup time automatically if delayed.</p>
+                            </div>
+
+                            <div className="bg-white p-6 relative">
+                                <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                    <span className="text-3xl font-bold text-teal-500">2</span>
+                                </div>
+                                <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Airport Greeting</h3>
+                                <p className="text-center text-gray-600">Driver waits at arrivals with a name board. Free waiting time included for flight delays.</p>
+                            </div>
+
+                            <div className="bg-white p-6 relative">
+                                <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                    <span className="text-3xl font-bold text-teal-500">3</span>
+                                </div>
+                                <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Relax & Arrive</h3>
+                                <p className="text-center text-gray-600">Comfortable ride to your hotel or arrange a Ziyarat tour for the next day.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Services in Madinah */}
+                <section className="py-20 bg-gray-50">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Taxi Services in Madinah</h2>
+                            <p className="text-xl text-gray-600">Complete transportation solutions across Madinah</p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {services.map((service, index) => (
+                                <div key={index} className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all">
+                                    <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                        <service.icon className="w-6 h-6 text-teal-500" />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2">{service.name}</h3>
+                                    <p className="text-gray-600">{service.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Popular Routes */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Popular Taxi Routes from Madinah</h2>
+                            <p className="text-xl text-gray-600">Most requested destinations from Madinah</p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {popularRoutes.map((route, index) => (
+                                <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className="flex-1">
+                                            <div className="text-sm text-gray-600 mb-1">From</div>
+                                            <div className="font-bold text-gray-900">{route.from}</div>
+                                        </div>
+                                        <ArrowRight className="w-6 h-6 text-teal-500 mx-4" />
+                                        <div className="flex-1">
+                                            <div className="text-sm text-gray-600 mb-1">To</div>
+                                            <div className="font-bold text-gray-900">{route.to}</div>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center justify-between text-sm">
+                                        <div className="flex items-center gap-2 text-gray-600">
+                                            <Clock className="w-4 h-4" />
+                                            {route.duration}
+                                        </div>
+                                        <div className="font-semibold text-teal-500">{route.price}</div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Why Choose Us */}
+                <section className="py-20 bg-gray-50">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                                    Why Choose Our Madinah Taxi Service?
+                                </h2>
+                                <p className="text-gray-600 mb-8 text-lg">
+                                    We provide reliable, professional taxi services throughout Madinah with experienced drivers who know the city and Ziyarat locations well.
+                                </p>
+                                <ul className="space-y-4">
+                                    {features.map((feature, index) => (
+                                        <li key={index} className="flex items-center text-gray-700">
+                                            <CheckCircle2 className="w-5 h-5 text-teal-500 mr-3 flex-shrink-0" />
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                                <Image
+                                    src="/green-dome-detail.webp"
+                                    alt="Professional taxi service near Green Dome Madinah"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* FAQ */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-12">
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                            <p className="text-xl text-gray-600">Common questions about taxi service in Madinah</p>
+                        </div>
+                        <Accordion type="single" collapsible className="space-y-4">
+                            {faqs.map((faq, index) => (
+                                <AccordionItem key={index} value={`item-${index}`} className="bg-gray-50 px-6 rounded-xl border-0">
+                                    <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-teal-500 text-left">
+                                        {faq.question}
+                                    </AccordionTrigger>
+                                    <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
+                                        {faq.answer}
+                                    </AccordionContent>
+                                </AccordionItem>
+                            ))}
+                        </Accordion>
+                    </div>
+                </section>
+
+                {/* CTA */}
+                <section className="py-20 bg-teal-500 text-white">
+                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <h2 className="text-4xl font-bold mb-6">Ready to Book Your Madinah Taxi?</h2>
+                        <p className="text-xl mb-8 opacity-90">
+                            Professional taxi service in Madinah available 24/7. Book now for instant confirmation!
                         </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="group relative h-80 rounded-2xl overflow-hidden cursor-pointer border border-white/10">
-                            <Image
-                                src="/zip-quba.webp"
-                                alt="Masjid Quba"
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                            <div className="absolute bottom-0 left-0 p-8">
-                                <h3 className="text-2xl font-bold font-serif mb-2 text-white group-hover:text-amber-500 transition-colors">Masjid Quba</h3>
-                                <p className="text-sm text-neutral-300">The first mosque built by the Prophet (PBUH).</p>
-                            </div>
-                        </div>
-
-                        <div className="group relative h-80 rounded-2xl overflow-hidden cursor-pointer border border-white/10">
-                            <Image
-                                src="/zip-uhud.webp"
-                                alt="Mount Uhud"
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                            <div className="absolute bottom-0 left-0 p-8">
-                                <h3 className="text-2xl font-bold font-serif mb-2 text-white group-hover:text-amber-500 transition-colors">Mount Uhud</h3>
-                                <p className="text-sm text-neutral-300">"Uhud is a mountain that loves us and we love it."</p>
-                            </div>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link href="/booking">
+                                <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-8 py-6 text-lg">
+                                    Book Madinah Taxi Online
+                                </Button>
+                            </Link>
+                            <a href="tel:+966XXXXXXX">
+                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-500 px-8 py-6 text-lg">
+                                    <Phone className="w-5 h-5 mr-2" />
+                                    Call for Booking
+                                </Button>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            {/* FAQ Section */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-                <div className="max-w-4xl mx-auto">
-                    <div className="text-center mb-12">
-                        <span className="bg-gray-100 text-black font-semibold tracking-wider uppercase text-sm px-4 py-1.5 rounded-full inline-block mb-4">FAQ</span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
-                        <p className="text-gray-600">Common questions about our taxi service</p>
-                    </div>
-                    <Accordion type="single" collapsible className="space-y-4">
-                        {faqs.map((faq, index) => (
-                            <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-xl border border-gray-200 px-6 shadow-sm">
-                                <AccordionTrigger className="text-left font-bold text-gray-900 hover:no-underline">{faq.question}</AccordionTrigger>
-                                <AccordionContent className="text-gray-600 pt-2">{faq.answer}</AccordionContent>
-                            </AccordionItem>
-                        ))}
-                    </Accordion>
-                </div>
-            </section>
-
-            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
-                <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                        Ready to Book Your Ride in Madinah?
-                    </h2>
-                    <p className="text-lg text-gray-300 mb-8">
-                        Professional taxi service available 24/7. Book now for instant confirmation!
-                    </p>
-                    <Link href="#booking">
-                        <Button size="lg" className="bg-white text-black hover:bg-gray-200 font-bold text-lg px-10 py-6">
-                            Book Your Taxi Now
-                        </Button>
-                    </Link>
-                </div>
-            </section>
-        </div>
+                </section>
+            </div>
+        </>
     );
 }

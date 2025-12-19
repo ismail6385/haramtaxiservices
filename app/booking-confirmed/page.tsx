@@ -36,7 +36,7 @@ function ConfirmationContent() {
                 )}
 
                 <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-8">
-                    <h2 className="text-xl font-semibold text-white mb-3">What's Next?</h2>
+                    <h2 className="text-xl font-semibold text-white mb-3">What&apos;s Next?</h2>
                     <ul className="text-neutral-300 text-left space-y-2">
                         <li className="flex items-start gap-2">
                             <span className="text-amber-500 mt-1">✓</span>

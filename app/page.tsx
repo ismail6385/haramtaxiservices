@@ -1,9 +1,7 @@
-"use client";
-
 import Hero from '@/components/Hero';
 import Script from 'next/script';
 import Image from 'next/image';
-import { Plane, MapPin, Building2, Shield, Clock, Award, CheckCircle2, Users, Crown, Star, ArrowRight, DollarSign, Headphones, Car } from 'lucide-react';
+import { Plane, MapPin, Building2, Shield, Clock, Award, CheckCircle2, Users, Crown, Star, ArrowRight, DollarSign, Headphones, Car, Phone, Mail, Navigation } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import {
@@ -13,111 +11,141 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import JsonLdFAQ from '@/components/JsonLdFAQ';
+import { getPrayerTimes } from '@/lib/prayer-times';
+import PrayerTimesWidget from '@/components/PrayerTimes';
 
-export default function Home() {
+export default async function Home() {
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Umrah Taxi - Premium Transport Service",
-    "url": "https://umrahtaxi.site",
+    "name": "Haram Taxi Service - Premium Transportation",
+    "url": "https://haramtaxiservice.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://umrahtaxi.site/search?q={search_term_string}",
+      "target": "https://haramtaxiservice.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
 
+  const initialPrayerTimes = await getPrayerTimes('Makkah');
+
   const heroImages = [
-    '/makkah-clock-tower.webp',
-    '/madinah-prophets-mosque.webp',
-    '/gmc-yukon.webp',
-    '/jeddah-corniche-sunset.webp',
-    '/makkah-kaaba-night.webp',
+    '/makkah-royal-clock-tower.webp',
+    '/masjid-nabawi-madinah.webp',
+    '/gmc-yukon-xl-taxi.webp',
+    '/jeddah-corniche-view.webp',
+    '/makkah-haram-night-view.webp',
   ];
 
   const services = [
     {
-      title: "Jeddah Airport Transfers",
-      description: "Seamless VIP pickup from King Abdulaziz International Airport (KAIA) to your Makkah hotel.",
+      title: "Airport Transfers",
+      description: "Seamless pickup from King Abdulaziz (Jeddah) & Prince Mohammad (Madinah) Airports directly to your hotel.",
       icon: Plane,
       link: "/locations/jeddah",
-      location: "Jeddah",
-      image: "/jeddah-service.webp"
+      image: "/jeddah-airport-taxi-service.webp",
+      imageAlt: "Airport taxi transfer from Jeddah Airport to Makkah and Madinah"
     },
     {
-      title: "Makkah - Madinah",
-      description: "Blessed journey between the Two Holy Harams in our premium GMC Yukon fleet.",
-      icon: MapPin,
+      title: "Intercity Travel",
+      description: "Comfortable, private rides between Makkah, Madinah, and Jeddah with experienced drivers.",
+      icon: Navigation,
       link: "/locations/makkah",
-      location: "Holy Route",
-      image: "/makkah-clock-tower-new.webp"
+      image: "/makkah-city-taxi-transfer.webp",
+      imageAlt: "City to city taxi transfer between Makkah Madinah and Jeddah"
     },
     {
-      title: "Ziyarat Tours",
-      description: "Religious tours to historical sites: Quba Mosque, Mount Uhud, Cave of Hira, and more.",
+      title: "Hotel Pickups",
+      description: "Door-to-door transfer service for all hotels in the Holy Cities. No waiting, no hassle.",
       icon: Building2,
       link: "/locations/madinah",
-      location: "Madinah",
-      image: "/madinah-umbrellas.webp"
+      image: "/madinah-hotel-transfer-service.webp",
+      imageAlt: "Hotel to hotel transfer service in Madinah and Makkah"
     },
     {
-      title: "Royal VIP Service",
-      description: "Exclusive chauffeur service for dignitaries and families requiring absolute privacy.",
+      title: "Private Chauffeur",
+      description: "Exclusive VIP service for Ziyarat tours, business meetings, and family travel.",
       icon: Crown,
       link: "/fleet/gmc-yukon",
-      location: "Kingdom Wide",
-      image: "/driver-luxury.webp"
+      image: "/private-vip-taxi-driver.webp",
+      imageAlt: "Private VIP taxi driver service in Saudi Arabia"
     }
   ];
 
   const fleet = [
     {
       name: "GMC Yukon XL",
-      image: "/gmc-yukon.webp",
+      image: "/gmc-yukon-xl-taxi.webp",
       passengers: 7,
       luggage: 5,
       features: ["VIP Luxury", "Soundproof", "Privacy Glass"],
-      link: "/fleet/gmc-yukon"
+      link: "/fleet/gmc-yukon",
+      imageAlt: "GMC Yukon XL luxury taxi interior and exterior for VIPs"
     },
     {
       name: "Toyota Camry",
-      image: "/toyota-camry.webp",
+      image: "/toyota-camry-taxi-sedan.webp",
       passengers: 4,
       luggage: 2,
       features: ["Economic", "Comfortable", "City Travel"],
-      link: "/fleet/toyota-camry"
+      link: "/fleet/toyota-camry",
+      imageAlt: "Toyota Camry economic taxi sedan for city travel in Jeddah"
     },
     {
       name: "Hyundai Staria",
-      image: "/hyundai-staria.webp",
+      image: "/hyundai-staria-family-taxi.webp",
       passengers: 7,
       luggage: 4,
       features: ["Family Van", "Spacious", "Modern AC"],
-      link: "/fleet/hyundai-staria"
+      link: "/fleet/hyundai-staria",
+      imageAlt: "Hyundai Staria family van taxi for Umrah groups"
+    }
+  ];
+
+  const features = [
+    {
+      icon: Clock,
+      title: "24/7 Available",
+      description: "Round the clock service, any time you need"
+    },
+    {
+      icon: Shield,
+      title: "Safe & Secure",
+      description: "Licensed drivers and insured vehicles"
+    },
+    {
+      icon: DollarSign,
+      title: "Best Rates",
+      description: "Competitive pricing with no hidden fees"
+    },
+    {
+      icon: Headphones,
+      title: "24/7 Support",
+      description: "Customer support always ready to help"
     }
   ];
 
   const faqs = [
     {
-      question: "How does the airport pickup work at Jeddah Terminal?",
-      answer: "Our driver will track your flight via flight number. Upon landing, he will wait at the arrival hall holding a name board with your name for easy identification."
+      question: "How do I book a taxi from Jeddah Airport to Makkah?",
+      answer: "You can book online through our website or contact us directly. Our driver will meet you at the arrival hall with a name board for easy identification."
     },
     {
-      question: "Are there any hidden fees for toll gates on the Makkah highway?",
-      answer: "No. Our pricing is 100% transparent. The quote includes fuel, driver allowance, toll gate fees (Makkah/Jeddah highway), and airport parking."
+      question: "What are your rates for Makkah to Madinah?",
+      answer: "Our rates are competitive and transparent with no hidden fees. The price includes fuel, driver, toll gates, and all applicable charges. Contact us for a detailed quote."
     },
     {
-      question: "Can we stop at Meeqat for Ihram?",
-      answer: "Yes, absolutely. For travelers coming from Madinah or Jeddah to Makkah, we facilitate a 30-45 minute stop at the designated Meeqat points (like Abyar Ali or Al Juhfah) at no extra cost."
+      question: "Do you provide 24/7 service?",
+      answer: "Yes, Haram Taxi Service operates 24 hours a day, 7 days a week. We're always available for airport pickups, hotel transfers, and intercity travel."
     },
     {
-      question: "What vehicle is best for a family of 5 with luggage?",
-      answer: "We recommend the GMC Yukon XL or Hyundai Staria. Both comfortably accommodate 5-7 passengers with ample space for 5+ large suitcases."
+      question: "What types of vehicles do you offer?",
+      answer: "We offer a range of vehicles including sedans (Toyota Camry), SUVs (GMC Yukon), and vans (Hyundai Staria, Toyota Hiace) to accommodate individuals, families, and groups."
     }
   ];
 
   return (
-    <div className="bg-neutral-950 min-h-screen font-sans">
+    <div className="bg-white min-h-screen">
       <Script
         id="website-schema"
         type="application/ld+json"
@@ -125,58 +153,104 @@ export default function Home() {
       />
       <JsonLdFAQ faqs={faqs} />
 
-      {/* Hero Section */}
+      {/* Hero Section - Modern Clean Design */}
       <Hero images={heroImages} />
 
-      {/* Services Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        {/* Background Pattern */}
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 border border-amber-500/30 bg-white/5 backdrop-blur-md rounded-full mb-6">
-              <span className="text-amber-500 text-xs font-bold tracking-[0.2em] uppercase">Our Expertise</span>
+      {/* Quick Stats Bar */}
+      <section className="bg-teal-500 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            <div>
+              <div className="text-4xl font-bold mb-2">15,000+</div>
+              <div className="text-sm opacity-90">Happy Customers</div>
             </div>
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 font-serif">
-              Royal Service for <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600">Sacred Departures</span>
-            </h3>
-            <p className="text-neutral-400 text-lg leading-relaxed font-light">
-              Designing the perfect travel experience for the Guests of Allah. From the moment you land in Jeddah to your prayers in the Holy Mosques.
+            <div>
+              <div className="text-4xl font-bold mb-2">24/7</div>
+              <div className="text-sm opacity-90">Service Available</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-sm opacity-90">Professional Drivers</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">100%</div>
+              <div className="text-sm opacity-90">Customer Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Prayer Times Section */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-block px-4 py-1.5 bg-teal-50 text-teal-600 rounded-full text-sm font-semibold mb-6">
+                Islamic Prayer Schedule
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Prayer Times for <span className="text-teal-600">Pilgrims</span>
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Stay punctual with your prayers during your spiritual journey. Check accurate daily prayer times for Makkah, Madinah, and Jeddah. Our drivers ensure strict adherence to prayer schedules, pausing journeys for Salah when needed.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/locations/makkah">
+                  <Button size="lg" className="bg-teal-600 hover:bg-teal-700 h-14 px-8 text-lg">
+                    Ride to Makkah Haram
+                  </Button>
+                </Link>
+                <Link href="/locations/madinah">
+                  <Button size="lg" variant="outline" className="border-teal-200 text-teal-700 hover:bg-teal-50 h-14 px-8 text-lg">
+                    Ride to Masjid Nabawi
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-teal-500/5 rounded-[2rem] transform rotate-2"></div>
+              <PrayerTimesWidget initialData={initialPrayerTimes} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - Card Grid Layout */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Professional taxi services across Saudi Arabia
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <Link key={index} href={service.link} className="group">
-                <div className="bg-neutral-900 border border-white/5 hover:border-amber-500/50 h-full flex flex-col cursor-pointer relative overflow-hidden transition-all duration-500 hover:-translate-y-2 group-hover:shadow-[0_0_30px_rgba(217,119,6,0.15)] rounded-lg">
-
-                  {/* Image Header with Overlay */}
-                  <div className="relative h-48 w-full overflow-hidden">
+                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                  <div className="relative h-48 overflow-hidden">
                     <Image
                       src={service.image}
-                      alt={service.title}
+                      alt={service.imageAlt}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent"></div>
-
-                    {/* Location Tag */}
-                    <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-wider text-white border border-white/10 group-hover:border-amber-500/50 transition-colors">
-                      {service.location}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4">
+                      <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center">
+                        <service.icon className="w-6 h-6 text-white" />
+                      </div>
                     </div>
                   </div>
-
-                  <div className="p-6 pt-2 relative">
-                    <div className="w-12 h-12 bg-amber-500 text-black rounded-lg flex items-center justify-center mb-4 -mt-10 relative z-10 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <service.icon className="w-6 h-6" />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-500 transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+                    <div className="flex items-center text-teal-500 font-semibold text-sm group-hover:translate-x-2 transition-transform">
+                      Learn More <ArrowRight className="w-4 h-4 ml-2" />
                     </div>
-
-                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-amber-500 transition-colors font-serif">{service.title}</h4>
-                    <p className="text-neutral-400 text-sm leading-relaxed mb-6 group-hover:text-neutral-300">{service.description}</p>
-
-                    <span className="mt-auto text-amber-600 font-semibold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:translate-x-2 transition-transform">
-                      Book Journey <ArrowRight className="w-3 h-3" />
-                    </span>
                   </div>
                 </div>
               </Link>
@@ -185,132 +259,71 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Feature Split Section */}
-      <section className="py-24 bg-neutral-900 border-y border-white/5 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* Why Choose Us - Icon Grid */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Haram Taxi Service</h2>
+            <p className="text-xl text-gray-600">Reliable, professional, and always on time</p>
+          </div>
 
-            <div className="order-2 lg:order-1 relative">
-              <div className="relative h-[600px] w-full shadow-2xl group">
-                {/* Decorative Frame */}
-                <div className="absolute inset-0 border border-amber-500/30 translate-x-4 translate-y-4 transition-transform group-hover:translate-x-6 group-hover:translate-y-6"></div>
-                <div className="relative h-full w-full overflow-hidden bg-neutral-800">
-                  <Image
-                    src="/madinah-prophets-mosque.webp"
-                    alt="The Prophet's Mosque Madinah - Peaceful Night View"
-                    fill
-                    className="object-cover opacity-90 grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent opacity-80"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <div key={index} className="text-center p-6 rounded-xl hover:bg-gray-50 transition-colors">
+                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <feature.icon className="w-8 h-8 text-teal-500" />
                 </div>
-
-                {/* Floating Quote Card */}
-                <div className="absolute bottom-12 -left-6 bg-neutral-950 border border-white/10 p-6 shadow-2xl max-w-xs hidden md:block">
-                  <div className="flex gap-1 mb-2">
-                    {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-3 h-3 text-amber-500 fill-amber-500" />)}
-                  </div>
-                  <p className="font-serif text-white text-lg italic leading-tight mb-2">"The journey was spiritual and the car was incredibly comfortable."</p>
-                  <p className="text-xs text-amber-500 uppercase tracking-widest">- Pilgrim from UK</p>
-                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
               </div>
-            </div>
-
-            <div className="order-1 lg:order-2 space-y-8">
-              <div className="flex items-center gap-4 mb-2">
-                <div className="h-[1px] w-12 bg-amber-500"></div>
-                <span className="text-amber-500 font-bold tracking-[0.2em] uppercase text-xs">Why Choose Umrah Taxi</span>
-              </div>
-
-              <h3 className="text-4xl md:text-5xl font-bold font-serif leading-tight text-white">
-                Dedicated to the <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600">Guests of Allah</span>
-              </h3>
-
-              <p className="text-neutral-400 text-lg leading-relaxed font-light border-l-2 border-white/10 pl-6">
-                We understand that this is not just a trip, but a lifelong dream. Our drivers are trained to recognize the sanctity of your pilgrimage, ensuring silence, cleanliness, and punctuality at all times.
-              </p>
-
-              <div className="space-y-6 pt-4">
-                <div className="flex items-start gap-4 group">
-                  <div className="p-3 bg-neutral-800 rounded border border-white/10 mt-1 group-hover:border-amber-500/50 transition-colors">
-                    <CheckCircle2 className="w-5 h-5 text-amber-500" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-lg mb-1">Makkah & Madinah Experts</h4>
-                    <p className="text-sm text-neutral-500 group-hover:text-neutral-300 transition-colors">Drivers who know every hotel, gate, and Ziyarat location by heart.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4 group">
-                  <div className="p-3 bg-neutral-800 rounded border border-white/10 mt-1 group-hover:border-amber-500/50 transition-colors">
-                    <CheckCircle2 className="w-5 h-5 text-amber-500" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-lg mb-1">Guaranteed 2024 Models</h4>
-                    <p className="text-sm text-neutral-500 group-hover:text-neutral-300 transition-colors">Travel in the reliability and cooling comfort of brand new vehicles.</p>
-                  </div>
-                </div>
-              </div>
-
-              <Link href="/about">
-                <Button className="bg-amber-600 hover:bg-amber-700 text-white mt-6 rounded-none px-8 h-12 text-sm uppercase tracking-widest shadow-[0_0_20px_rgba(217,119,6,0.2)]">
-                  Discover Our Mission
-                </Button>
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-
-      {/* Fleet Showcase */}
-      <section className="py-24 bg-neutral-950 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 border-b border-white/10 pb-8">
-            <div className="max-w-2xl">
-              <h2 className="text-amber-500 font-bold tracking-[0.2em] uppercase text-xs mb-3">The Royal Fleet</h2>
-              <h2 className="text-4xl font-bold text-white font-serif mb-4">Choose Your Carriage</h2>
-              <p className="text-neutral-400 font-light">Meticulously maintained vehicles ensuring a dignified arrival at the Haram.</p>
-            </div>
-            <Link href="/fleet" className="hidden sm:block">
-              <Button variant="outline" className="rounded-none px-8 h-12 border-white/20 text-white hover:bg-white hover:text-black transition-colors uppercase tracking-widest text-xs">
-                View Full Fleet
-              </Button>
-            </Link>
+      {/* Fleet Showcase - Horizontal Cards */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Fleet</h2>
+            <p className="text-xl text-gray-600">Choose from our range of premium vehicles</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {fleet.map((item, i) => (
-              <div key={i} className="group cursor-pointer relative bg-neutral-900 border border-white/5 hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2">
-                <div className="relative h-72 w-full overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {fleet.map((vehicle, index) => (
+              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="relative h-64">
                   <Image
-                    src={item.image}
-                    alt={item.name}
+                    src={vehicle.image}
+                    alt={vehicle.imageAlt}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent opacity-90"></div>
-
-                  {/* Floating Badge */}
-                  <div className="absolute bottom-4 left-4">
-                    <h3 className="text-2xl font-bold text-white font-serif group-hover:text-amber-500 transition-colors">{item.name}</h3>
-                  </div>
                 </div>
-
                 <div className="p-6">
-                  {/* Features */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {item.features.map((feat, idx) => (
-                      <span key={idx} className="text-[10px] uppercase tracking-wider px-2 py-1 bg-white/5 text-neutral-400 border border-white/5 rounded-sm">{feat}</span>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{vehicle.name}</h3>
+
+                  <div className="flex justify-between mb-4 text-sm text-gray-600">
+                    <div className="flex items-center gap-2">
+                      <Users className="w-4 h-4 text-teal-500" />
+                      <span>{vehicle.passengers} Passengers</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Car className="w-4 h-4 text-teal-500" />
+                      <span>{vehicle.luggage} Bags</span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {vehicle.features.map((feature, idx) => (
+                      <span key={idx} className="text-xs px-3 py-1 bg-teal-50 text-teal-700 rounded-full">
+                        {feature}
+                      </span>
                     ))}
                   </div>
 
-                  <div className="flex justify-between items-center text-sm text-neutral-400 border-t border-white/5 pt-4 mb-6">
-                    <span className="flex items-center gap-2"><Users className="w-4 h-4 text-amber-500" /> {item.passengers} Guests</span>
-                    <span className="flex items-center gap-2"><Car className="w-4 h-4 text-amber-500" /> {item.luggage} Bags</span>
-                  </div>
-
-                  <Link href={item.link} className="inline-block w-full">
-                    <Button className="w-full bg-transparent border border-white/20 text-white hover:bg-amber-600 hover:border-amber-600 transition-all uppercase text-xs tracking-widest h-12 rounded-none">
+                  <Link href={vehicle.link}>
+                    <Button className="w-full bg-teal-500 hover:bg-teal-600 text-white">
                       View Details
                     </Button>
                   </Link>
@@ -319,152 +332,116 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-12 text-center sm:hidden">
+          <div className="text-center mt-12">
             <Link href="/fleet">
-              <Button variant="outline" className="rounded-none px-8 w-full border-white/20 text-white">View Full Fleet</Button>
+              <Button variant="outline" className="border-teal-500 text-teal-500 hover:bg-teal-50 px-8 py-6 text-lg">
+                View All Vehicles
+              </Button>
             </Link>
           </div>
-
         </div>
       </section>
 
-      {/* Moments of Peace Gallery */}
-      <section className="py-24 bg-neutral-900 border-t border-white/5 relative overflow-hidden">
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 border border-amber-500/30 bg-white/5 backdrop-blur-md rounded-full mb-6">
-              <span className="text-amber-500 text-xs font-bold tracking-[0.2em] uppercase">Visual Journey</span>
-            </div>
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 font-serif">
-              Moments <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600">of Peace</span>
-            </h3>
-            <p className="text-neutral-400 text-lg max-w-2xl mx-auto font-light">
-              Glimpses of the spiritual comfort and premium service that awaits you.
-            </p>
+      {/* Testimonial Section */}
+      <section className="py-20 bg-teal-500 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-6">
+            {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-8 h-8 fill-white" />)}
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
-            {/* Large Main Item */}
-            <div className="md:col-span-3 md:row-span-2 relative group rounded-2xl overflow-hidden border border-white/10 h-72 md:h-full">
-              <Image
-                src="/makkah-royal-suite-view.webp"
-                alt="Panoramic view of Makkah Grand Mosque from Royal Suite"
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6">
-                <span className="text-amber-500 text-xs font-bold tracking-widest uppercase mb-2 block">Spiritual Elevation</span>
-                <h4 className="text-white font-serif text-2xl font-bold">Makkah Al Mukarramah</h4>
-              </div>
-            </div>
-
-            {/* Top Row Right */}
-            <div className="md:col-span-3 md:row-span-1 grid grid-cols-2 gap-4">
-              <div className="relative group rounded-2xl overflow-hidden border border-white/10 h-48 md:h-full">
-                <Image
-                  src="/umrah-family-arrival.webp"
-                  alt="Family arriving at Jeddah Airport for Umrah"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-                <div className="absolute bottom-4 left-4">
-                  <p className="text-white text-sm font-bold">Family Arrival</p>
-                </div>
-              </div>
-              <div className="relative group rounded-2xl overflow-hidden border border-white/10 h-48 md:h-full">
-                <Image
-                  src="/madinah-rawdah-visit.webp"
-                  alt="Pilgrims visiting the Rawdah in Madinah"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-                <div className="absolute bottom-4 left-4">
-                  <p className="text-white text-sm font-bold">Rawdah Visit</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Row Right */}
-            <div className="md:col-span-3 md:row-span-1 grid grid-cols-2 gap-4">
-              <div className="relative group rounded-2xl overflow-hidden border border-white/10 h-48 md:h-full">
-                <Image
-                  src="/vip-luxury-interior.webp"
-                  alt="GMC Yukon luxury interior seating"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-                <div className="absolute bottom-4 left-4">
-                  <p className="text-white text-sm font-bold">Royal Comfort</p>
-                </div>
-              </div>
-              <div className="relative group rounded-2xl overflow-hidden border border-white/10 h-48 md:h-full">
-                <Image
-                  src="/jeddah-airport-pickup-service.webp"
-                  alt="Professional airport pickup service at KAIA"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
-                <div className="absolute bottom-4 left-4">
-                  <p className="text-white text-sm font-bold">VIP Pickup</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <blockquote className="text-2xl md:text-3xl font-light mb-6 italic">
+            "Excellent service! The driver was professional, the car was clean and comfortable. Highly recommended for anyone traveling in Saudi Arabia."
+          </blockquote>
+          <p className="text-lg opacity-90">- Ahmed K., Riyadh</p>
         </div>
       </section>
-      <section className="py-24 bg-neutral-900 border-t border-white/5">
-        <div className="max-w-3xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4 font-serif">Frequently Asked Questions</h2>
-            <p className="text-neutral-400">Everything you need to know about your pilgrimage transport</p>
+
+      {/* FAQ Section - Clean Accordion */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-gray-600">Everything you need to know</p>
           </div>
+
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-neutral-950/50 px-6 rounded-none border border-white/5 data-[state=open]:border-amber-500/30 transition-all">
-                <AccordionTrigger className="text-lg font-medium text-white py-6 hover:no-underline hover:text-amber-500 text-left">{faq.question}</AccordionTrigger>
-                <AccordionContent className="text-neutral-400 pb-6 text-base leading-relaxed font-light border-t border-white/5 pt-4">{faq.answer}</AccordionContent>
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="bg-gray-50 px-6 rounded-xl border-0"
+              >
+                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-teal-500 text-left">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-32 px-4 text-center bg-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/makkah-kaaba-night.webp')] bg-cover bg-center opacity-40 blur-sm"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
-
-        <div className="relative z-10 max-w-4xl mx-auto animate-fade-in-up">
-          <div className="inline-flex items-center gap-3 px-4 py-2 border border-amber-500/50 bg-black/60 backdrop-blur-md rounded-full mb-8">
-            <Star className="w-3 h-3 text-amber-500 fill-amber-500 animate-pulse" />
-            <span className="text-amber-400 text-xs font-bold tracking-[0.2em] uppercase">Trusted by 15,000+ Pilgrims</span>
-          </div>
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 font-serif tracking-tight">
-            Ready for your <span className="text-amber-500">Journey?</span>
-          </h2>
-          <p className="text-xl text-neutral-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            Secure your ride with Umrah Taxi today. We guarantee the best rates, punctual service, and a peaceful journey to the House of Allah.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <Link href="/booking">
-              <Button size="lg" className="h-16 px-12 bg-amber-600 hover:bg-amber-700 text-white text-xl font-bold rounded-none shadow-[0_0_30px_rgba(217,119,6,0.4)] transition-transform hover:scale-105">
-                Book Your Ride
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button size="lg" variant="outline" className="h-16 px-12 bg-transparent border-white/30 hover:bg-white hover:text-black text-white text-xl font-bold rounded-none backdrop-blur-sm">
-                Get a Quote
-              </Button>
-            </Link>
+      {/* CTA Section - Modern Split Design */}
+      <section className="py-20 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Ready to Book Your Ride?
+              </h2>
+              <p className="text-xl text-gray-300 mb-8">
+                Experience professional taxi service in Saudi Arabia. Book now and travel with comfort and confidence.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/booking">
+                  <Button size="lg" className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg">
+                    Book Now
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 hover:text-teal-600 px-8 py-6 text-lg border-2 border-white">
+                    Contact Us
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <div className="bg-teal-500 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold mb-6">Why Book With Us?</h3>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold mb-1">Professional Drivers</div>
+                    <div className="text-sm opacity-90">Experienced and licensed drivers</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold mb-1">Clean Vehicles</div>
+                    <div className="text-sm opacity-90">Well-maintained and sanitized cars</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold mb-1">24/7 Available</div>
+                    <div className="text-sm opacity-90">Round the clock service</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <CheckCircle2 className="w-6 h-6 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold mb-1">Best Rates</div>
+                    <div className="text-sm opacity-90">Competitive pricing guaranteed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-    </div >
+    </div>
   );
 }

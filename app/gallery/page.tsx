@@ -15,45 +15,45 @@ export default function GalleryPage() {
             title: 'Our Premium Fleet',
             description: 'Luxury vehicles for every occasion',
             images: [
-                { src: '/gmc-yukon-context.webp', alt: 'GMC Yukon at Makkah Hotel', category: 'Luxury' },
-                { src: '/gmc-yukon.webp', alt: 'GMC Yukon - Studio View', category: 'Luxury' },
-                { src: '/driver-luxury.webp', alt: 'VIP Chauffeur Service', category: 'VIP' },
-                { src: '/toyota-camry-context.webp', alt: 'Toyota Camry in Makkah', category: 'Sedan' },
-                { src: '/hyundai-staria-context.webp', alt: 'Hyundai Staria in Jeddah', category: 'Van' },
-                { src: '/toyota-hiace-context.webp', alt: 'Toyota Hiace at Airport', category: 'Van' },
-                { src: '/toyota-coaster.webp', alt: 'Toyota Coaster - Tour Bus', category: 'Bus' },
+                { src: '/gmc-yukon-vip-service-saudi.webp', alt: 'GMC Yukon at Makkah Hotel', category: 'Luxury' },
+                { src: '/gmc-yukon-xl-taxi.webp', alt: 'GMC Yukon - Studio View', category: 'Luxury' },
+                { src: '/private-vip-taxi-driver.webp', alt: 'VIP Chauffeur Service', category: 'VIP' },
+                { src: '/toyota-camry-city-travel-saudi.webp', alt: 'Toyota Camry in Makkah', category: 'Sedan' },
+                { src: '/hyundai-staria-family-travel-saudi.webp', alt: 'Hyundai Staria in Jeddah', category: 'Van' },
+                { src: '/toyota-hiace-group-transport-saudi.webp', alt: 'Toyota Hiace at Airport', category: 'Van' },
+                { src: '/toyota-coaster-minibus.webp', alt: 'Toyota Coaster - Tour Bus', category: 'Bus' },
             ]
         },
         {
             title: 'Makkah Services',
             description: 'Professional transport in the Holy City',
             images: [
-                { src: '/makkah-clock-tower-new.webp', alt: 'Makkah Royal Clock Tower', category: 'Landmark' },
-                { src: '/makkah-kaaba-night.webp', alt: 'Kaaba at Night', category: 'Makkah' },
-                { src: '/zip-hira.webp', alt: 'Cave of Hira & Jabal Al-Nour', category: 'Ziyarat' },
-                { src: '/zip-mina.webp', alt: 'Mina Tent City Panoramic', category: 'Ziyarat' },
-                { src: '/makkah-highway.webp', alt: 'Scenic Route to Makkah', category: 'Travel' },
+                { src: '/makkah-city-taxi-transfer.webp', alt: 'Makkah Royal Clock Tower', category: 'Landmark' },
+                { src: '/makkah-haram-night-view.webp', alt: 'Kaaba at Night', category: 'Makkah' },
+                { src: '/jabal-al-nour-hira-cave.webp', alt: 'Cave of Hira & Jabal Al-Nour', category: 'Ziyarat' },
+                { src: '/mina-tent-city-makkah.webp', alt: 'Mina Tent City Panoramic', category: 'Ziyarat' },
+                { src: '/makkah-highway-scenic-route.webp', alt: 'Scenic Route to Makkah', category: 'Travel' },
             ]
         },
         {
             title: 'Madinah Services',
             description: 'Serving pilgrims in the City of the Prophet',
             images: [
-                { src: '/madinah-umbrellas.webp', alt: 'Masjid Nabawi Umbrellas', category: 'Landmark' },
-                { src: '/zip-quba.webp', alt: 'Quba Mosque - First Masjid', category: 'Ziyarat' },
-                { src: '/zip-uhud.webp', alt: 'Mount Uhud Landscape', category: 'Ziyarat' },
-                { src: '/green-dome-detail.webp', alt: 'Green Dome Detail', category: 'Madinah' },
-                { src: '/madinah-prophets-mosque.webp', alt: 'Prophet\'s Mosque at Sunset', category: 'Madinah' },
+                { src: '/madinah-hotel-transfer-service.webp', alt: 'Masjid Nabawi Umbrellas', category: 'Landmark' },
+                { src: '/quba-mosque-madinah.webp', alt: 'Quba Mosque - First Masjid', category: 'Ziyarat' },
+                { src: '/mount-uhud-historical-site.webp', alt: 'Mount Uhud Landscape', category: 'Ziyarat' },
+                { src: '/masjid-nabawi-green-dome.webp', alt: 'Green Dome Detail', category: 'Madinah' },
+                { src: '/masjid-nabawi-madinah.webp', alt: 'Prophet\'s Mosque at Sunset', category: 'Madinah' },
             ]
         },
         {
             title: 'Jeddah & Coastal Cities',
             description: 'Airport transfers and city tours',
             images: [
-                { src: '/jeddah-corniche-road.webp', alt: 'Luxury Drive on Corniche', category: 'Jeddah' },
-                { src: '/jeddah-service.webp', alt: 'VIP Airport Pickup', category: 'Service' },
-                { src: '/jeddah-corniche-sunset.webp', alt: 'Jeddah Corniche Sunset', category: 'Jeddah' },
-                { src: '/jeddah-airport-terminal.webp', alt: 'Jeddah Airport Terminal', category: 'Jeddah' },
+                { src: '/jeddah-corniche-scenic-drive.webp', alt: 'Luxury Drive on Corniche', category: 'Jeddah' },
+                { src: '/jeddah-airport-taxi-service.webp', alt: 'VIP Airport Pickup', category: 'Service' },
+                { src: '/jeddah-corniche-view.webp', alt: 'Jeddah Corniche Sunset', category: 'Jeddah' },
+                { src: '/jeddah-airport-terminal-taxi.webp', alt: 'Jeddah Airport Terminal', category: 'Jeddah' },
             ]
         },
         {
@@ -80,7 +80,7 @@ export default function GalleryPage() {
                         Our Gallery
                     </h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Explore our premium fleet and services across Saudi Arabia's most beautiful destinations
+                        Explore our premium fleet and services across Saudi Arabia&apos;s most beautiful destinations
                     </p>
                 </div>
 

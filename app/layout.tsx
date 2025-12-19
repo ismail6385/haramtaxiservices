@@ -15,36 +15,36 @@ import JsonLdService from '@/components/JsonLdService';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://umrahtaxi.site'),
-  title: 'Umrah Taxi | #1 Trusted Umrah & Hajj Taxi Service in KSA',
-  description: 'Book reliable Umrah Taxi services for Makkah, Madinah, and Jeddah. Airport transfers, Ziyarat tours, and intercity travel with premium vehicles. 24/7 Service.',
+  metadataBase: new URL('https://haramtaxiservice.com'),
+  title: {
+    default: 'Online Taxi Service in Saudi Arabia | Makkah, Madinah, Jeddah - Haram Taxi',
+    template: '%s | Haram Taxi Service'
+  },
+  description: 'Book online taxi service in Saudi Arabia. Professional drivers in Makkah, Madinah, Jeddah, Taif, AlUla. Airport transfers, city rides, Ziyarat tours. Available 24/7. Instant booking!',
   keywords: [
-    // Primary Keywords
-    'Umrah Taxi Service', 'Hajj Taxi Service', 'Makkah Taxi', 'Madinah Taxi',
-
-    // Umrah & Religious Travel
-    'Makkah to Madinah Taxi', 'Madinah to Makkah Transfer', 'Ziyarat Taxi Service',
-    'Jeddah Airport to Makkah Taxi', 'Haramain Taxi',
-
-    // Airport Transfer Keywords
-    'Jeddah Airport Transfer', 'King Abdulaziz Airport Taxi', 'Madinah Airport Taxi',
-    'Airport Pickup Makkah', 'Airport Drop Off Madinah',
+    // Primary Local SEO Keywords
+    'online taxi service Saudi Arabia', 'taxi service Makkah', 'taxi service Madinah', 'taxi service Jeddah',
+    'Haram Taxi Service', 'Saudi Arabia taxi booking', 'book taxi Saudi Arabia',
 
     // City-Specific Keywords
-    'Jeddah Taxi Service', 'Makkah Chauffeur', 'Madinah Taxi',
-    'Taif Ziyarat', 'Badar Ziyarat',
+    'Makkah taxi', 'Madinah taxi', 'Jeddah taxi', 'Taif taxi', 'AlUla taxi', 'Khayber taxi',
+    'taxi in Makkah', 'taxi in Madinah', 'taxi in Jeddah',
+
+    // Airport Transfer Keywords
+    'Jeddah airport taxi', 'Madinah airport taxi', 'airport transfer Jeddah',
+    'Jeddah to Makkah taxi', 'Madinah to Makkah taxi',
 
     // Service Type Keywords
-    'Luxury Umrah Taxi', 'VIP Umrah Transport', 'Private Driver Makkah',
-    'GMC Yukon Makkah', 'Hiace For Umrah Group',
+    'online taxi booking Saudi Arabia', '24/7 taxi service', 'professional taxi drivers',
+    'airport transfer Saudi Arabia', 'city taxi service', 'intercity taxi',
 
     // Long-tail Keywords
-    'Best Umrah Taxi Service', 'Cheap Taxi Makkah to Madinah',
-    'Reliable Jeddah Airport Taxi', 'Taxi for Ziyarat', 'Umrah Transportation'
+    'best taxi service Makkah', 'reliable taxi Madinah', 'cheap taxi Jeddah',
+    'Ziyarat taxi service', 'family taxi Saudi Arabia', 'private taxi booking'
   ],
-  authors: [{ name: 'Umrah Taxi' }],
-  creator: 'Umrah Taxi',
-  publisher: 'Umrah Taxi',
+  authors: [{ name: 'Haram Taxi Service' }],
+  creator: 'Haram Taxi Service',
+  publisher: 'Haram Taxi Service',
   robots: {
     index: true,
     follow: true,
@@ -57,30 +57,30 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Umrah Taxi | #1 Trusted Pilgrim Transport Service',
-    description: 'Experience comfortable and reliable Umrah taxi services. Makkah, Madinah, Jeddah Airport transfers. Book your ride today.',
-    url: 'https://umrahtaxi.site',
-    siteName: 'Umrah Taxi',
+    title: 'Online Taxi Service in Saudi Arabia | Makkah, Madinah, Jeddah',
+    description: 'Book online taxi service in Saudi Arabia. Professional drivers in Makkah, Madinah, Jeddah. Airport transfers, city rides. Available 24/7. Instant booking!',
+    url: 'https://haramtaxiservice.com',
+    siteName: 'Haram Taxi Service',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://umrahtaxi.site/og-image.jpg',
+        url: 'https://haramtaxiservice.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Umrah Taxi - Premium Transport for Pilgrims',
+        alt: 'Haram Taxi Service - Online Taxi Booking in Saudi Arabia',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Umrah Taxi | Premium Umrah & Hajj Transport',
-    description: 'Reliable airport transfers and Umrah taxi services. Makkah, Madinah, Jeddah. Book now!',
-    images: ['https://umrahtaxi.site/twitter-image.jpg'],
-    creator: '@umrahtaxi',
+    title: 'Online Taxi Service in Saudi Arabia | Book Now',
+    description: 'Professional taxi service in Makkah, Madinah, Jeddah. Airport transfers, city rides. Available 24/7.',
+    images: ['https://haramtaxiservice.com/twitter-image.jpg'],
+    creator: '@haramtaxi',
   },
   alternates: {
-    canonical: 'https://umrahtaxi.site',
+    canonical: 'https://haramtaxiservice.com',
   },
   verification: {
     // google: 'TODO: Add new verification code',
@@ -92,8 +92,8 @@ export const metadata: Metadata = {
     maximumScale: 5,
   },
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#047857' }, // Emerald Green
-    { media: '(prefers-color-scheme: dark)', color: '#047857' },
+    { media: '(prefers-color-scheme: light)', color: '#245A5F' }, // Deep Teal
+    { media: '(prefers-color-scheme: dark)', color: '#245A5F' },
   ],
   manifest: '/manifest.json',
 };

@@ -1,121 +1,225 @@
-
 import { Metadata } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, ArrowRight, ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
+import { MapPin, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-    title: 'Service Locations | Umrah Taxi - Royal Coverage',
-    description: 'We provide premium Umrah taxi and Ziyarat services in Makkah, Madinah, Jeddah, and other holy sites with VIP comfort.',
+    title: 'Taxi Service Locations in Saudi Arabia | Makkah, Madinah, Jeddah - Haram Taxi',
+    description: 'Professional taxi service across Saudi Arabia. We serve Makkah, Madinah, Jeddah, Taif, AlUla, and Khayber. Book reliable transportation 24/7.',
+    keywords: ['taxi service Saudi Arabia', 'taxi Makkah', 'taxi Madinah', 'taxi Jeddah', 'taxi Taif', 'taxi AlUla', 'taxi Khayber'],
+    openGraph: {
+        title: 'Taxi Service Locations in Saudi Arabia',
+        description: 'Professional taxi service in Makkah, Madinah, Jeddah, Taif, AlUla, and Khayber. Book now!',
+        url: 'https://haramtaxiservice.com/locations',
+        type: 'website',
+    },
 };
 
-const locations = [
-    {
-        name: 'Jeddah',
-        description: 'Premium Airport transfers and coastal city tours in the Gateway to the Two Holy Mosques.',
-        image: '/jeddah-corniche-sunset.webp',
-        href: '/locations/jeddah'
-    },
-    {
-        name: 'Makkah',
-        description: 'Dignified transport for Umrah pilgrims and Ziyarat to historical sites in the Holy City.',
-        image: '/makkah-clock-tower.webp',
-        href: '/locations/makkah'
-    },
-    {
-        name: 'Madinah',
-        description: 'Serene and comfortable journeys to the Prophet\'s Mosque and sacred landmarks.',
-        image: '/madinah-prophets-mosque.webp',
-        href: '/locations/madinah'
-    },
-    {
-        name: 'AlUla',
-        description: 'Luxury expeditions to the ancient wonders of Hegra, offering a journey through time.',
-        image: '/alula-hegra-tombs.webp',
-        href: '/locations/alula'
-    },
-    {
-        name: 'Taif',
-        description: 'Scenic drives through the mountains to the City of Roses for a refreshing retreat.',
-        image: '/taif-mountains-view.webp',
-        href: '/locations/taif'
-    },
-    {
-        name: 'Khayber',
-        description: 'Historical tours to the ancient oases and forts of Khaybar, rich in Islamic history.',
-        image: '/alula-hegra-tombs.webp', // Placeholder
-        href: '/locations/khayber-fort'
-    }
-];
-
 export default function LocationsPage() {
+    const locations = [
+        {
+            name: 'Jeddah',
+            slug: 'jeddah',
+            description: 'Airport transfers, city tours, and rides to Makkah from Jeddah',
+            image: '/jeddah-corniche-view.webp',
+            services: ['Airport Transfer', 'City Tours', 'Jeddah to Makkah'],
+            popular: true,
+        },
+        {
+            name: 'Makkah',
+            slug: 'makkah',
+            description: 'Haram transfers, Ziyarat tours, and intercity travel from Makkah',
+            image: '/makkah-royal-clock-tower.webp',
+            services: ['Haram Transfer', 'Ziyarat Tours', 'Hotel Pickup'],
+            popular: true,
+        },
+        {
+            name: 'Madinah',
+            slug: 'madinah',
+            description: 'Airport transfers, Ziyarat tours, and rides to Makkah from Madinah',
+            image: '/masjid-nabawi-madinah.webp',
+            services: ['Airport Transfer', 'Ziyarat Tours', 'Madinah to Makkah'],
+            popular: true,
+        },
+        {
+            name: 'Taif',
+            slug: 'taif',
+            description: 'Mountain tours, city transfers, and rides to Makkah from Taif',
+            image: '/taif-mountains-view.webp',
+            services: ['Mountain Tours', 'City Transfer', 'Taif to Makkah'],
+            popular: false,
+        },
+        {
+            name: 'AlUla',
+            slug: 'alula',
+            description: 'Heritage site tours, city transfers, and intercity travel',
+            image: '/alula-hegra-tombs.webp',
+            services: ['Heritage Tours', 'City Transfer', 'Day Tours'],
+            popular: false,
+        },
+        {
+            name: 'Khayber',
+            slug: 'khayber-fort',
+            description: 'Historical tours, city transfers, and rides to Madinah',
+            image: '/khaybar-fort-main.webp',
+            services: ['Historical Tours', 'City Transfer', 'Khayber to Madinah'],
+            popular: false,
+        },
+    ];
+
+    const popularLocations = locations.filter(loc => loc.popular);
+    const otherLocations = locations.filter(loc => !loc.popular);
+
+    const serviceAreasSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Taxi Service",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Haram Taxi Service",
+            "url": "https://haramtaxiservice.com"
+        },
+        "areaServed": locations.map(loc => ({
+            "@type": "City",
+            "name": loc.name,
+            "containedInPlace": {
+                "@type": "Country",
+                "name": "Saudi Arabia"
+            }
+        }))
+    };
+
     return (
-        <div className="bg-neutral-950 min-h-screen pt-32 pb-20 relative text-neutral-200 overflow-hidden">
-            {/* Background Decoration */}
-            <div className="absolute inset-0 bg-[url('/pattern-grid.png')] opacity-[0.03] pointer-events-none"></div>
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceAreasSchema) }} />
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
-                {/* Hero Section */}
-                <div className="text-center mb-20 animate-fade-in-up">
-                    <div className="inline-flex items-center gap-3 px-4 py-1.5 border border-amber-500/30 bg-white/5 backdrop-blur-md rounded-full mb-6">
-                        <MapPin className="w-3 h-3 text-amber-500" />
-                        <span className="text-amber-500 text-xs font-bold tracking-[0.2em] uppercase">Kingdom Wide</span>
+            <div className="bg-white min-h-screen">
+                {/* Breadcrumb */}
+                <div className="bg-gray-50 py-4">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="flex items-center gap-2 text-sm text-gray-600">
+                            <Link href="/" className="hover:text-teal-500">Home</Link>
+                            <span>/</span>
+                            <span className="text-gray-900 font-medium">Locations</span>
+                        </div>
                     </div>
-
-                    <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-serif">
-                        Our Service <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600">Locations</span>
-                    </h1>
-
-                    <p className="text-xl text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
-                        From the bustling ports of Jeddah to the sacred silence of Madinah, our premium fleet covers every key destination in your spiritual journey.
-                    </p>
                 </div>
 
-                {/* Locations Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {locations.map((loc, index) => (
-                        <Link key={index} href={loc.href} className="group block h-full animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-                            <div className="bg-neutral-900 rounded-none overflow-hidden border border-white/5 hover:border-amber-500/50 transition-all duration-500 h-full flex flex-col relative group-hover:-translate-y-2">
+                {/* Hero */}
+                <section className="py-20 bg-gradient-to-br from-teal-500 to-teal-600 text-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full mb-6">
+                            <MapPin className="w-4 h-4" />
+                            <span className="text-sm font-semibold">Service Locations</span>
+                        </div>
+                        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                            Taxi Service Locations in Saudi Arabia
+                        </h1>
+                        <p className="text-xl max-w-3xl mx-auto opacity-90">
+                            Professional taxi service across major cities in Saudi Arabia. We serve Makkah, Madinah, Jeddah, Taif, AlUla, and Khayber with 24/7 availability.
+                        </p>
+                    </div>
+                </section>
 
-                                {/* Image Container */}
-                                <div className="relative h-72 overflow-hidden">
-                                    <Image
-                                        src={loc.image}
-                                        alt={loc.name}
-                                        fill
-                                        className="object-cover transform group-hover:scale-110 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0"
-                                    />
-                                    {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent opacity-90"></div>
+                {/* Popular Locations */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Popular Destinations</h2>
+                            <p className="text-xl text-gray-600">Most requested taxi service locations</p>
+                        </div>
 
-                                    {/* Location Name on Image */}
-                                    <div className="absolute bottom-6 left-6 right-6">
-                                        <h3 className="text-3xl font-bold text-white font-serif mb-1 group-hover:text-amber-500 transition-colors">{loc.name}</h3>
-                                        <div className="h-0.5 w-12 bg-amber-500 group-hover:w-24 transition-all duration-500"></div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {popularLocations.map((location) => (
+                                <Link key={location.slug} href={`/locations/${location.slug}`} className="group">
+                                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                                        <div className="relative h-64">
+                                            <Image
+                                                src={location.image}
+                                                alt={`Taxi service in ${location.name}`}
+                                                fill
+                                                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                            <div className="absolute bottom-4 left-4 right-4">
+                                                <h3 className="text-2xl font-bold text-white mb-2">{location.name}</h3>
+                                            </div>
+                                        </div>
+                                        <div className="p-6">
+                                            <p className="text-gray-600 mb-4">{location.description}</p>
+                                            <div className="flex flex-wrap gap-2 mb-4">
+                                                {location.services.map((service, idx) => (
+                                                    <span key={idx} className="px-3 py-1 bg-teal-50 text-teal-600 text-sm rounded-full">
+                                                        {service}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                            <div className="flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
+                                                View Details
+                                                <ArrowRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
+                                            </div>
+                                        </div>
                                     </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </section>
 
-                                    {/* Corner Icon */}
-                                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md p-2 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-2 group-hover:translate-y-0">
-                                        <ArrowUpRight className="w-5 h-5 text-amber-500" />
-                                    </div>
-                                </div>
+                {/* Other Locations */}
+                <section className="py-20 bg-gray-50">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">More Locations</h2>
+                            <p className="text-xl text-gray-600">Additional cities we serve</p>
+                        </div>
 
-                                {/* Content */}
-                                <div className="p-8 flex-1 flex flex-col border-t border-white/5 bg-neutral-900/50 backdrop-blur-sm">
-                                    <p className="text-neutral-400 mb-6 flex-1 text-sm leading-relaxed font-light group-hover:text-neutral-300 transition-colors">
-                                        {loc.description}
-                                    </p>
-                                    <div className="flex items-center text-amber-500 font-bold text-xs uppercase tracking-widest group-hover:gap-2 transition-all">
-                                        Explore Routes <ArrowRight className="ml-2 w-4 h-4" />
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {otherLocations.map((location) => (
+                                <Link key={location.slug} href={`/locations/${location.slug}`} className="group">
+                                    <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                                        <div className="relative h-48">
+                                            <Image
+                                                src={location.image}
+                                                alt={`Taxi service in ${location.name}`}
+                                                fill
+                                                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                            <div className="absolute bottom-4 left-4">
+                                                <h3 className="text-xl font-bold text-white">{location.name}</h3>
+                                            </div>
+                                        </div>
+                                        <div className="p-6">
+                                            <p className="text-gray-600 mb-4">{location.description}</p>
+                                            <div className="flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
+                                                View Details
+                                                <ArrowRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* CTA */}
+                <section className="py-20 bg-teal-500 text-white">
+                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <h2 className="text-4xl font-bold mb-6">Need a Taxi in Saudi Arabia?</h2>
+                        <p className="text-xl mb-8 opacity-90">
+                            Book reliable taxi service across all major cities. Available 24/7 with professional drivers.
+                        </p>
+                        <Link href="/booking">
+                            <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-8 py-6 text-lg">
+                                Book Your Ride Now
+                            </Button>
                         </Link>
-                    ))}
-                </div>
+                    </div>
+                </section>
             </div>
-        </div>
+        </>
     );
 }

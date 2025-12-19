@@ -1,86 +1,188 @@
 import BookingForm from '@/components/BookingForm';
+import Image from 'next/image';
 import { Suspense } from 'react';
+import { CheckCircle2, Shield, Clock, Car } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Book Taxi Online in Saudi Arabia | Instant Booking - Haram Taxi',
+    description: 'Book taxi online in Saudi Arabia. Instant confirmation for Makkah, Madinah, Jeddah. Professional drivers, fixed rates. Available 24/7. Book now!',
+    keywords: ['book taxi online Saudi Arabia', 'online taxi booking Makkah', 'book taxi Madinah', 'instant taxi booking', 'taxi reservation Saudi Arabia'],
+    openGraph: {
+        title: 'Book Taxi Online in Saudi Arabia | Instant Booking',
+        description: 'Book taxi online with instant confirmation. Makkah, Madinah, Jeddah. Available 24/7.',
+        url: 'https://haramtaxiservice.com/booking',
+        type: 'website',
+    },
+};
 
 export default function BookingPage() {
-    return (
-        <div className="bg-gray-50 min-h-screen pt-20 sm:pt-24 pb-12 sm:pb-16 md:pb-24">
-            <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-12 gap-6 sm:gap-8 md:gap-12 items-start">
-                    {/* Booking Form Column */}
-                    <div className="lg:col-span-7">
-                        <div className="mb-6 sm:mb-8 lg:mb-12">
-                            <span className="bg-amber-100 text-amber-800 font-bold tracking-wider uppercase text-xs px-2 sm:px-3 py-1 rounded-full inline-block mb-2 sm:mb-3">Secure Your Ride</span>
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 font-serif leading-tight">Begin Your Journey</h1>
-                            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                                Fill out the form below to reserve your luxury vehicle. We ensure a seamless experience from arrival to departure.
-                            </p>
-                        </div>
+    const benefits = [
+        {
+            icon: CheckCircle2,
+            title: "Fixed Pricing",
+            description: "No hidden fees or surprises"
+        },
+        {
+            icon: Shield,
+            title: "Safe & Secure",
+            description: "Licensed drivers and insured vehicles"
+        },
+        {
+            icon: Clock,
+            title: "24/7 Service",
+            description: "Available anytime you need"
+        },
+        {
+            icon: Car,
+            title: "Clean Vehicles",
+            description: "Well-maintained and sanitized"
+        }
+    ];
 
-                        <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                            <div className="h-1.5 sm:h-2 bg-gradient-to-r from-amber-200 to-amber-500"></div>
-                            <div className="p-4 sm:p-5 md:p-6 lg:p-8">
-                                <Suspense fallback={<div className="text-center py-8 sm:py-12"><div className="inline-block animate-spin rounded-full h-6 w-6 sm:h-8 sm:w-8 border-b-2 border-primary"></div><p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600">Loading booking form...</p></div>}>
-                                    <BookingForm />
-                                </Suspense>
-                            </div>
+    return (
+        <div className="bg-white min-h-screen">
+            {/* Booking Form Section - TOP */}
+            <section className="pt-32 pb-12 bg-gradient-to-b from-teal-50 to-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-100 rounded-full mb-4">
+                            <Car className="w-4 h-4 text-teal-600" />
+                            <span className="text-teal-600 text-sm font-semibold">Book Your Ride</span>
                         </div>
+                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                            Reserve Your <span className="text-teal-500">Taxi</span>
+                        </h1>
+                        <p className="text-lg text-gray-600">
+                            Fill out the form below to book your taxi. We&apos;ll confirm your booking immediately.
+                        </p>
                     </div>
 
-                    {/* Trust Visuals Column */}
-                    <div className="hidden lg:block lg:col-span-5 space-y-8 sticky top-24">
+                    {/* Booking Form */}
+                    <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div className="h-2 bg-teal-500"></div>
+                        <div className="p-8">
+                            <Suspense fallback={
+                                <div className="text-center py-12">
+                                    <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-teal-500"></div>
+                                    <p className="mt-4 text-gray-600">Loading booking form...</p>
+                                </div>
+                            }>
+                                <BookingForm />
+                            </Suspense>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Benefits Grid - BELOW FORM */}
+            <section className="py-12 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Book With Us?</h2>
+                        <p className="text-lg text-gray-600">Professional taxi service you can trust</p>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        {benefits.map((benefit, index) => (
+                            <div key={index} className="bg-gray-50 p-6 rounded-xl text-center hover:shadow-lg transition-all">
+                                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <benefit.icon className="w-6 h-6 text-teal-500" />
+                                </div>
+                                <h3 className="font-semibold text-gray-900 mb-2">{benefit.title}</h3>
+                                <p className="text-sm text-gray-600">{benefit.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Trust Section - BELOW BENEFITS */}
+            <section className="py-12 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid md:grid-cols-2 gap-8">
                         {/* Trust Card 1 */}
-                        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden group">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden group">
                             <div className="relative h-64 w-full">
-                                <img
+                                <Image
                                     src="/driver-nameboard.webp"
-                                    alt="Professional Driver Waiting"
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    alt="Professional Driver"
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div className="absolute bottom-4 left-4 text-white">
-                                    <h3 className="font-bold text-lg">Meet & Greet Service</h3>
-                                    <p className="text-sm opacity-90">We wait for you, not the other way around.</p>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                <div className="absolute bottom-6 left-6 text-white">
+                                    <h3 className="font-bold text-xl mb-1">Professional Service</h3>
+                                    <p className="text-sm opacity-90">Experienced drivers ready to serve you</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Trust Card 2 */}
-                        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden group">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden group">
                             <div className="relative h-64 w-full">
-                                <img
+                                <Image
                                     src="/family-arrival.webp"
-                                    alt="Happy Family Arrival"
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    alt="Family Friendly"
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div className="absolute bottom-4 left-4 text-white">
-                                    <h3 className="font-bold text-lg">Family Friendly</h3>
-                                    <p className="text-sm opacity-90">Spacious vehicles for your loved ones and luggage.</p>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                <div className="absolute bottom-6 left-6 text-white">
+                                    <h3 className="font-bold text-xl mb-1">Family Friendly</h3>
+                                    <p className="text-sm opacity-90">Spacious vehicles for everyone</p>
                                 </div>
                             </div>
                         </div>
-
-                        {/* Trust Bullets */}
-                        <div className="bg-neutral-900 rounded-2xl p-8 text-white">
-                            <h3 className="font-serif text-xl mb-4 text-amber-500">Why Book With Us?</h3>
-                            <ul className="space-y-4">
-                                <li className="flex items-center gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber-500">1</div>
-                                    <span className="text-sm text-gray-300">No hidden fees, fixed pricing</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber-500">2</div>
-                                    <span className="text-sm text-gray-300">Flight tracking for delayed arrivals</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-amber-500">3</div>
-                                    <span className="text-sm text-gray-300">24/7 Customer Support available</span>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            {/* Additional Benefits */}
+            <section className="py-12 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="bg-teal-500 rounded-2xl p-8 text-white">
+                        <h3 className="text-2xl font-bold mb-6 text-center">Our Commitment to You</h3>
+                        <ul className="space-y-4">
+                            <li className="flex items-start gap-3">
+                                <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <CheckCircle2 className="w-5 h-5" />
+                                </div>
+                                <div>
+                                    <div className="font-semibold mb-1">Transparent Pricing</div>
+                                    <div className="text-sm opacity-90">No hidden fees or charges</div>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <CheckCircle2 className="w-5 h-5" />
+                                </div>
+                                <div>
+                                    <div className="font-semibold mb-1">Instant Confirmation</div>
+                                    <div className="text-sm opacity-90">Quick booking confirmation</div>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <CheckCircle2 className="w-5 h-5" />
+                                </div>
+                                <div>
+                                    <div className="font-semibold mb-1">24/7 Support</div>
+                                    <div className="text-sm opacity-90">Always here to help you</div>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <CheckCircle2 className="w-5 h-5" />
+                                </div>
+                                <div>
+                                    <div className="font-semibold mb-1">Professional Drivers</div>
+                                    <div className="text-sm opacity-90">Licensed and experienced</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }

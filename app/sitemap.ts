@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://umrahtaxi.site'
+    const baseUrl = 'https://haramtaxiservice.com'
 
     // Main pages
     const routes = [
@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/fleet',
         '/locations',
         '/contact',
+        '/booking',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
@@ -17,10 +18,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: route === '' ? 1 : 0.8,
     }))
 
-    // Fleet pages
+    // Fleet pages - All 6 vehicles
     const fleetPages = [
         '/fleet/gmc-yukon',
         '/fleet/toyota-camry',
+        '/fleet/hyundai-staria',
+        '/fleet/toyota-hiace',
+        '/fleet/toyota-coaster',
+        '/fleet/hyundai-starex',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
@@ -28,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }))
 
-    // Location pages
+    // Location pages - All 6 cities
     const locationPages = [
         '/locations/makkah',
         '/locations/madinah',

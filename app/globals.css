@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    /* Luxury Black & Gold Theme */
+    /* Haram Taxi Service - Teal & White Only */
     --background: 0 0% 100%;
     --foreground: 0 0% 10%;
 
@@ -14,22 +14,23 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    /* Primary: Jet Black - The definition of luxury */
-    --primary: 0 0% 9%;
-    /* #171717 - Neutral 900 */
-    --primary-foreground: 45 25% 95%;
-    /* Soft gold/white text */
+    /* Primary: Teal #0d9488 */
+    --primary: 173 58% 39%;
+    /* #0d9488 - Teal 500 */
+    --primary-foreground: 0 0% 100%;
+    /* White text */
 
-    /* Secondary: Metallic Gold */
-    --secondary: 43 55% 55%;
-    /* #C5A059 - Classic Gold */
+    /* Secondary: Same Teal */
+    --secondary: 173 58% 39%;
+    /* #0d9488 - Teal 500 */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    /* Accent: Rich Gold for buttons/highlights */
-    --accent: 43 55% 55%;
+    /* Accent: Teal */
+    --accent: 173 58% 39%;
+    /* #0d9488 - Teal 500 */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -37,14 +38,12 @@
 
     --border: 0 0% 92%;
     --input: 0 0% 92%;
-    --ring: 0 0% 9%;
+    --ring: 173 58% 39%;
 
     --radius: 0.5rem;
 
-    /* Custom Brand Colors - Luxury Palette */
-    --gold-metallic: 43 55% 55%;
-    --gold-light: 43 60% 75%;
-    --black-rich: 0 0% 5%;
+    /* Custom Brand Colors - Only Teal */
+    --teal-main: 173 58% 39%;
   }
 
   .dark {
@@ -58,16 +57,16 @@
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --primary: 173 58% 39%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 43 55% 55%;
+    --secondary: 173 58% 39%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 43 55% 55%;
+    --accent: 173 58% 39%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 30%;
@@ -75,7 +74,7 @@
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 0 0% 83%;
+    --ring: 173 58% 39%;
   }
 }
 
@@ -86,6 +85,21 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Fix Command Item hover colors */
+  [cmdk-item] {
+    cursor: pointer;
+  }
+
+  [cmdk-item]:hover {
+    background-color: hsl(173 58% 39% / 0.1) !important;
+    color: hsl(173 58% 39%) !important;
+  }
+
+  [cmdk-item][data-selected="true"] {
+    background-color: hsl(173 58% 39% / 0.1) !important;
+    color: hsl(173 58% 39%) !important;
   }
 }
 

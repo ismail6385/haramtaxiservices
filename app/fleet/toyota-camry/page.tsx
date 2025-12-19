@@ -2,244 +2,232 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Users, Briefcase, CheckCircle2, Star, Shield, Car, Check } from 'lucide-react';
+import { Users, Briefcase, CheckCircle2, Star, Shield, Car, Check, ArrowRight } from 'lucide-react';
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
 } from '@/components/ui/accordion';
-import JsonLdFAQ from '@/components/JsonLdFAQ';
+import RelatedVehicles from '@/components/RelatedVehicles';
 
 export const metadata: Metadata = {
-    title: 'Toyota Camry - Premium Sedan | Umrah Taxi',
-    description: 'Book our comfortable Toyota Camry for reliable city travel and Umrah transfers. The perfect balance of economy and luxury for couples and small families.',
-    keywords: ['Toyota Camry rental Makkah', 'premium sedan Saudi', 'city transport Madinah', 'airport transfer Jeddah', 'executive sedan'],
+    title: 'Toyota Camry Taxi in Saudi Arabia | Sedan Rental - Haram Taxi',
+    description: 'Book Toyota Camry sedan taxi in Saudi Arabia. Comfortable 4-seater for business and city travel in Makkah, Madinah, Jeddah. Professional drivers.',
+    keywords: ['Toyota Camry taxi', 'sedan rental Saudi Arabia', 'business taxi Makkah', 'city taxi Jeddah', '4 seater taxi'],
+    openGraph: {
+        title: 'Toyota Camry Sedan Taxi | Business & City Travel',
+        description: 'Book Toyota Camry for comfortable business and city travel in Saudi Arabia.',
+        url: 'https://haramtaxiservice.com/fleet/toyota-camry',
+        type: 'website',
+    },
 };
 
 export default function ToyotaCamryPage() {
     const features = [
-        'Premium Fabric Seating',
-        'Advanced Climate Control',
-        'Fuel Efficient Hybrid',
-        'Smooth & Quiet Ride',
-        'Immaculately Clean Interior',
-        'Professional Chauffeur',
-        'GPS & Route Optimization',
-        'USB Charging Points',
+        'Comfortable Leather Seats',
+        'Air Conditioning',
+        'Fuel Efficient',
+        'Smooth Ride',
+        'Professional Driver',
+        'Clean Interior',
+        'USB Charging',
+        'Spacious Trunk',
     ];
 
     const specifications = [
-        { label: 'Passengers', value: '4 Guests' },
-        { label: 'Luggage', value: '2 Large Bags' },
-        { label: 'Class', value: 'Premium Sedan' },
-        { label: 'Transmission', value: 'Automatic' },
+        { label: 'Passengers', value: '4 Adults', icon: Users },
+        { label: 'Luggage', value: '2 Large Bags', icon: Briefcase },
+        { label: 'Class', value: 'Sedan', icon: Star },
+        { label: 'Transmission', value: 'Automatic', icon: Car },
     ];
 
     const idealFor = [
-        'Efficient Airport Transfers',
-        'Inter-City Travel',
-        'Business Meetings',
-        'Couple/Solo Pilgrims',
-        'Economic Luxury',
-        'Daily City Commutes',
+        'Business Travel',
+        'City Rides',
+        'Airport Transfer',
+        'Hotel Pickup',
+        'Short Distance',
+        'Solo/Couple Travel',
     ];
 
     const faqs = [
         {
-            question: "Does the Toyota Camry come with a professional driver?",
-            answer: "Yes, all our Toyota Camry rentals are driven by professional, experienced chauffeurs who know the Holy Cities intimately, ensuring a smooth and efficient journey."
+            question: "Is the Toyota Camry suitable for airport transfers?",
+            answer: "Yes, the Toyota Camry is perfect for airport transfers with comfortable seating for 4 passengers and space for 2 large bags."
         },
         {
-            question: "How many passengers can the Toyota Camry accommodate?",
-            answer: "The Toyota Camry is optimized for up to 4 passengers with 2 large pieces of luggage, offering a comfortable and private environment for small groups or couples."
+            question: "How many passengers can the Camry accommodate?",
+            answer: "The Toyota Camry comfortably seats 4 adults with ample legroom and trunk space for luggage."
         },
         {
-            question: "Is fuel and toll charges included in the booking?",
-            answer: "Yes, our transparent pricing includes all fuel, road tolls, and necessary fees. You pay one flat rate for your premium transfer."
+            question: "Is fuel included in the price?",
+            answer: "Yes, all our pricing is inclusive of fuel, tolls, and driver costs. No hidden charges."
         },
         {
-            question: "Is the Camry suitable for Jeddah to Makkah transfers?",
-            answer: "Absolutely. The Toyota Camry is a favorite for the Jeddah-Makkah route, offering a smooth, stable, and quiet ride perfect for relaxation before performing Umrah."
+            question: "Can I book the Camry for city tours?",
+            answer: "Absolutely! The Toyota Camry is ideal for city tours and short-distance travel within Makkah, Madinah, or Jeddah."
         }
     ];
 
     return (
-        <div className="bg-neutral-950 min-h-screen pt-32 pb-20 relative text-neutral-200">
-            {/* Background Decoration */}
-            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <JsonLdFAQ faqs={faqs} />
-
-                {/* Breadcrumb */}
-                <div className="flex items-center gap-2 text-sm text-neutral-500 mb-6 uppercase tracking-widest">
-                    <Link href="/fleet" className="hover:text-amber-500 transition-colors">Fleet</Link>
-                    <span>/</span>
-                    <span className="text-amber-500">Toyota Camry</span>
-                </div>
-
-                {/* Hero Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
-                    {/* Content */}
-                    <div className="lg:col-span-5 space-y-8">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 border border-amber-500/30 bg-amber-500/10 rounded-full">
-                            <Star className="w-3.5 h-3.5 text-amber-500" />
-                            <span className="text-amber-500 text-[10px] font-bold tracking-[0.2em] uppercase">Best Value</span>
-                        </div>
-
-                        <h1 className="text-5xl md:text-6xl font-bold text-white font-serif leading-none">
-                            Toyota <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600">Camry</span>
-                        </h1>
-
-                        <p className="text-lg text-neutral-400 leading-relaxed border-l-2 border-amber-500/30 pl-6">
-                            The perfect blend of reliability, comfort, and efficiency. Our premium Toyota Camry fleet offers a sophisticated travel experience for those who value both quality and economy.
-                        </p>
-
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                            <Link href="/booking?vehicle=Toyota%20Camry">
-                                <Button className="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white font-serif tracking-widest text-sm uppercase px-8 py-6 rounded-none shadow-[0_0_20px_rgba(217,119,6,0.3)] hover:scale-105 transition-all">
-                                    Book Now
-                                </Button>
-                            </Link>
-                            <Link href="#details">
-                                <Button variant="outline" className="w-full sm:w-auto border-white/20 text-white hover:bg-white hover:text-black font-serif tracking-widest text-sm uppercase px-8 py-6 rounded-none backdrop-blur-sm">
-                                    View Details
-                                </Button>
-                            </Link>
-                        </div>
-                    </div>
-
-                    {/* Image */}
-                    <div className="lg:col-span-7 relative">
-                        <div className="relative aspect-[16/10] w-full rounded-sm overflow-hidden border border-white/10 shadow-2xl group">
-                            <Image
-                                src="/toyota-camry.webp"
-                                alt="Toyota Camry Premium Sedan"
-                                fill
-                                className="object-cover group-hover:scale-105 transition-transform duration-700"
-                            />
-                            {/* Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-tr from-neutral-900/60 via-transparent to-transparent"></div>
-                        </div>
-                        {/* Box Decoration */}
-                        <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-amber-500/10 -z-10 rounded-full blur-2xl"></div>
+        <div className="bg-white min-h-screen">
+            {/* Breadcrumb */}
+            <div className="bg-gray-50 py-4">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                        <Link href="/" className="hover:text-teal-500">Home</Link>
+                        <span>/</span>
+                        <Link href="/fleet" className="hover:text-teal-500">Fleet</Link>
+                        <span>/</span>
+                        <span className="text-gray-900 font-medium">Toyota Camry</span>
                     </div>
                 </div>
+            </div>
 
-                {/* Stats Grid */}
-                <div id="details" className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-                    {[
-                        { icon: Star, label: "Comfort Rating", value: "4.8/5" },
-                        { icon: Users, label: "Capacity", value: "4 Pax" },
-                        { icon: Briefcase, label: "Luggage", value: "2 Bags" },
-                        { icon: Shield, label: "Reliability", value: "100%" },
-                    ].map((stat, i) => (
-                        <div key={i} className="bg-white/5 border border-white/5 p-6 backdrop-blur-sm text-center group hover:border-amber-500/30 transition-colors">
-                            <stat.icon className="w-8 h-8 text-neutral-500 mx-auto mb-3 group-hover:text-amber-500 transition-colors" />
-                            <div className="text-2xl font-bold text-white mb-1 font-serif">{stat.value}</div>
-                            <div className="text-xs uppercase tracking-widest text-neutral-500">{stat.label}</div>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Features & Ideal For Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-                    {/* Features */}
-                    <div className="bg-neutral-900/50 p-8 border border-white/5 relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150 duration-700"></div>
-                        <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-3 font-serif">
-                            <span className="w-8 h-[1px] bg-amber-500"></span> Premium Features
-                        </h2>
-                        <ul className="grid gap-4">
-                            {features.map((feature, index) => (
-                                <li key={index} className="flex items-center text-neutral-400 group-hover:text-neutral-300 transition-colors">
-                                    <div className="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center mr-4 border border-amber-500/20">
-                                        <Check className="w-3 h-3 text-amber-500" />
-                                    </div>
-                                    {feature}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Context Visual - Makkah Night */}
-                    <div className="relative h-full min-h-[400px] rounded-sm overflow-hidden border border-white/10 group">
-                        <Image
-                            src="/toyota-camry-context.webp"
-                            alt="Toyota Camry in Makkah Night"
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-
-                        <div className="absolute bottom-0 left-0 p-8 w-full">
-                            <div className="mb-4">
-                                <span className="text-amber-500 text-xs font-bold tracking-[0.2em] uppercase">City Travel</span>
-                                <h3 className="text-2xl font-bold text-white font-serif mt-2">Makkah by Night</h3>
+            {/* Hero Section */}
+            <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div className="space-y-6">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 rounded-full">
+                                <Star className="w-4 h-4 text-teal-500" />
+                                <span className="text-teal-600 text-sm font-semibold">Business Sedan</span>
                             </div>
-                            <p className="text-neutral-300 text-sm leading-relaxed mb-6">
-                                The perfect companion for the bustling streets of the Holy City. Quiet, cool, and efficient navigation through the night.
+
+                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
+                                Toyota <span className="text-teal-500">Camry</span>
+                            </h1>
+
+                            <p className="text-xl text-gray-600 leading-relaxed">
+                                Reliable and comfortable sedan perfect for business travel and city rides. The Toyota Camry offers a smooth, economical journey across Saudi Arabia.
                             </p>
 
-                            <div className="flex flex-wrap gap-2">
-                                {idealFor.slice(0, 4).map((use, index) => (
-                                    <span key={index} className="text-[10px] uppercase tracking-wider px-2 py-1 bg-white/10 backdrop-blur-md text-white border border-white/10 rounded-sm">
-                                        {use}
-                                    </span>
-                                ))}
+                            <div className="flex flex-wrap gap-4 pt-4">
+                                <Link href="/booking?vehicle=Toyota%20Camry">
+                                    <Button size="lg" className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg">
+                                        Book Now
+                                        <ArrowRight className="w-5 h-5 ml-2" />
+                                    </Button>
+                                </Link>
+                                <a href="#details">
+                                    <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100 px-8 py-6 text-lg">
+                                        View Details
+                                    </Button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="relative">
+                            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl">
+                                <Image
+                                    src="/toyota-camry-taxi-sedan.webp"
+                                    alt="Toyota Camry sedan taxi in Saudi Arabia"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                {/* Specifications */}
-                <div className="mb-20">
-                    <h2 className="text-3xl font-bold text-white mb-8 font-serif text-center">Technical Specifications</h2>
+            {/* Specifications */}
+            <section id="details" className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {specifications.map((spec, index) => (
-                            <div key={index} className="bg-neutral-900 p-6 border-l-2 border-amber-500/20 hover:border-amber-500 transition-colors">
-                                <div className="text-xs text-neutral-500 uppercase tracking-widest mb-2">{spec.label}</div>
-                                <div className="text-xl font-bold text-white font-serif">{spec.value}</div>
+                            <div key={index} className="bg-gray-50 p-6 rounded-xl text-center hover:shadow-lg transition-all">
+                                <spec.icon className="w-8 h-8 text-teal-500 mx-auto mb-3" />
+                                <div className="text-2xl font-bold text-gray-900 mb-1">{spec.value}</div>
+                                <div className="text-sm text-gray-600">{spec.label}</div>
                             </div>
                         ))}
                     </div>
                 </div>
+            </section>
 
-                {/* FAQ Section - Dark Mode */}
-                <div className="max-w-3xl mx-auto mb-20">
-                    <h2 className="text-3xl font-bold text-white mb-10 text-center font-serif">Frequently Asked Questions</h2>
+            {/* Features */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div className="bg-white p-8 rounded-2xl shadow-md">
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Features</h2>
+                            <ul className="space-y-4">
+                                {features.map((feature, index) => (
+                                    <li key={index} className="flex items-center text-gray-700">
+                                        <div className="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mr-4">
+                                            <Check className="w-4 h-4 text-teal-500" />
+                                        </div>
+                                        {feature}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                            <Image
+                                src="/toyota-camry-context.webp"
+                                alt="Toyota Camry taxi for business travel"
+                                fill
+                                className="object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div className="absolute bottom-8 left-8 right-8">
+                                <h3 className="text-2xl font-bold text-white mb-4">Perfect For</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {idealFor.map((use, index) => (
+                                        <span key={index} className="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-sm rounded-full border border-white/30">
+                                            {use}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                        <p className="text-xl text-gray-600">Common questions about Toyota Camry rental</p>
+                    </div>
                     <Accordion type="single" collapsible className="space-y-4">
                         {faqs.map((faq, index) => (
-                            <AccordionItem key={index} value={`item-${index}`} className="bg-neutral-900/50 border border-white/5 px-6 data-[state=open]:border-amber-500/30 transition-colors">
-                                <AccordionTrigger className="text-left font-bold text-white hover:text-amber-500 hover:no-underline">{faq.question}</AccordionTrigger>
-                                <AccordionContent className="text-neutral-400 pt-2 pb-4 leading-relaxed">{faq.answer}</AccordionContent>
+                            <AccordionItem key={index} value={`item-${index}`} className="bg-gray-50 px-6 rounded-xl border-0">
+                                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-teal-500 text-left">
+                                    {faq.question}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
+                                    {faq.answer}
+                                </AccordionContent>
                             </AccordionItem>
                         ))}
                     </Accordion>
                 </div>
+            </section>
 
-                {/* CTA - Royal Banner */}
-                <div className="relative rounded-none overflow-hidden p-12 text-center border border-amber-500/30">
-                    <div className="absolute inset-0 bg-neutral-900"></div>
-                    <div className="absolute inset-0 bg-[url('/pattern-grid.png')] opacity-[0.05]"></div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 via-amber-950/20 to-neutral-900"></div>
+            {/* Related Vehicles */}
+            <RelatedVehicles currentVehicle="toyota-camry" />
 
-                    <div className="relative z-10">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-serif">
-                            Experience <span className="text-amber-500">Premium Comfort</span>
-                        </h2>
-                        <p className="text-lg text-neutral-400 mb-8 max-w-2xl mx-auto">
-                            Book your Toyota Camry today for a seamless and dignified travel experience.
-                        </p>
-                        <Link href="/booking?vehicle=Toyota%20Camry">
-                            <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-bold text-lg px-12 py-8 rounded-none shadow-[0_0_30px_rgba(245,158,11,0.3)] transition-transform hover:scale-105">
-                                Book This Vehicle
-                            </Button>
-                        </Link>
-                    </div>
+            {/* CTA */}
+            <section className="py-20 bg-teal-500 text-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-4xl font-bold mb-6">Ready to Book Toyota Camry?</h2>
+                    <p className="text-xl mb-8 opacity-90">
+                        Comfortable and economical sedan for your travel needs. Book now!
+                    </p>
+                    <Link href="/booking?vehicle=Toyota%20Camry">
+                        <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-12 py-6 text-lg">
+                            Book This Vehicle
+                        </Button>
+                    </Link>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }

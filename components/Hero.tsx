@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Clock, Shield } from 'lucide-react';
 import BookingForm from './BookingForm';
 import { useState, useEffect } from 'react';
 
@@ -26,9 +26,9 @@ export default function Hero(props: HeroProps) {
     ];
 
     const slideAltTexts = [
-        "Makkah Royal Clock Tower",
-        "Prophet's Mosque Madinah",
-        "Luxury GMC Yukon Fleet"
+        "Makkah Clock Tower",
+        "Madinah Mosque",
+        "Luxury Vehicle Fleet"
     ];
 
     useEffect(() => {
@@ -39,94 +39,116 @@ export default function Hero(props: HeroProps) {
     }, [slides.length]);
 
     return (
-        <section className="relative min-h-screen w-full overflow-x-hidden bg-black">
-            {/* Fullscreen Background Slider */}
+        <section className="relative min-h-screen w-full overflow-hidden bg-white">
+            {/* Background Slider */}
             <div className="absolute inset-0 z-0">
                 {slides.map((slide, index) => (
                     <div
                         key={index}
-                        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+                        className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
                     >
                         <Image
                             src={slide}
-                            alt={slideAltTexts[index] || "Luxury Transport"}
+                            alt={slideAltTexts[index] || "Taxi Service"}
                             fill
                             priority={index === 0}
                             className="object-cover"
                             quality={85}
                         />
-                        {/* Luxury Overlay: Deep Black with Gold Vignette */}
-                        <div className="absolute inset-0 bg-black/60 mix-blend-multiply" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/30" />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
                     </div>
                 ))}
             </div>
 
-            {/* Content Container */}
-            <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 w-full pt-24 sm:pt-28 lg:pt-32 pb-12 sm:pb-16 lg:pb-20">
-                <div className="grid lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12">
+            {/* Content */}
+            <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+                <div className="grid lg:grid-cols-12 gap-12 items-center">
 
-                    {/* Typography Section - Center on Mobile, Left on Desktop */}
-                    <div className="lg:col-span-7 space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start animate-fade-in-up">
-                        {/* Premium Badge */}
-                        <div className="inline-flex items-center gap-3 px-5 py-2 border border-amber-500/30 bg-black/40 backdrop-blur-md rounded-sm">
-                            <span className="h-[1px] w-8 bg-amber-500"></span>
-                            <span className="text-amber-400 text-xs font-bold tracking-[0.2em] uppercase font-serif">Royal Travel Experience</span>
-                            <span className="h-[1px] w-8 bg-amber-500"></span>
+                    {/* Left Content */}
+                    <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
+                        {/* Badge */}
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/90 rounded-full">
+                            <CheckCircle2 className="w-4 h-4 text-white" />
+                            <span className="text-white text-sm font-semibold">Professional Service</span>
                         </div>
 
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-medium text-white leading-[1.1] tracking-tight">
-                            Journey of <br />
-                            <span className="text-amber-500 drop-shadow-lg">
-                                Faith & Comfort
-                            </span>
+                        {/* H1 - SEO Optimized */}
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
+                            Online Taxi Service in <span className="text-teal-400">Saudi Arabia</span>
                         </h1>
 
-                        <p className="text-lg md:text-xl text-neutral-300 font-light leading-relaxed max-w-xl">
-                            Premium Umrah taxi services for the guests of Allah. Experience certified luxury with our GMC Yukon fleet in Makkah, Madinah, and Jeddah.
+                        {/* Description */}
+                        <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
+                            Book reliable taxi service in Makkah, Madinah, and Jeddah. Professional drivers, clean vehicles, and 24/7 availability.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-5 pt-6 w-full sm:w-auto">
-                            <Link href="/booking" className="w-full sm:w-auto">
-                                <Button className="w-full h-14 px-10 bg-amber-600 hover:bg-amber-700 text-white font-serif tracking-widest text-sm uppercase rounded-sm border border-amber-500/50 shadow-[0_0_20px_rgba(217,119,6,0.3)] transition-all hover:scale-105">
-                                    Book Now
+                        {/* CTA Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                            <Link href="/booking">
+                                <Button size="lg" className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg font-semibold">
+                                    Book Your Ride
+                                    <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
                             </Link>
-                            <Link href="/fleet" className="w-full sm:w-auto">
-                                <Button variant="outline" className="w-full h-14 px-10 bg-transparent border-amber-500/50 text-white hover:bg-amber-500 hover:text-black font-serif tracking-widest text-sm uppercase rounded-sm backdrop-blur-sm transition-all shadow-[0_0_15px_rgba(217,119,6,0.1)] hover:shadow-[0_0_20px_rgba(217,119,6,0.4)]">
+                            <Link href="/fleet">
+                                <Button size="lg" variant="outline" className="bg-white border-white text-gray-900 hover:bg-teal-500 hover:text-white hover:border-teal-500 px-8 py-6 text-lg font-semibold">
                                     View Fleet
                                 </Button>
                             </Link>
                         </div>
 
                         {/* Trust Badges */}
-                        <div className="pt-8 flex flex-wrap justify-center lg:justify-start gap-8 text-white/60 text-sm font-light">
-                            <div className="flex items-center gap-2">
-                                <Star className="w-4 h-4 text-amber-500" /> 5-Star Service
+                        <div className="flex flex-wrap gap-8 pt-6">
+                            <div className="flex items-center gap-2 text-white">
+                                <div className="w-10 h-10 bg-teal-500/20 rounded-full flex items-center justify-center">
+                                    <Clock className="w-5 h-5 text-teal-400" />
+                                </div>
+                                <div>
+                                    <div className="font-semibold">24/7 Service</div>
+                                    <div className="text-sm text-gray-300">Always Available</div>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full"></span> 2024 Models
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full"></span> 24/7 Support
+                            <div className="flex items-center gap-2 text-white">
+                                <div className="w-10 h-10 bg-teal-500/20 rounded-full flex items-center justify-center">
+                                    <Shield className="w-5 h-5 text-teal-400" />
+                                </div>
+                                <div>
+                                    <div className="font-semibold">Safe & Secure</div>
+                                    <div className="text-sm text-gray-300">Licensed Drivers</div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Booking Form Widget - Floating Right */}
-                    <div className="lg:col-span-5 relative animate-fade-in-up delay-200 w-full mt-6 lg:mt-0">
-                        <div className="bg-black/40 backdrop-blur-xl p-1 rounded-sm border border-amber-500/30 max-h-[calc(100vh-180px)] overflow-y-auto scrollbar-thin scrollbar-thumb-amber-500/50 scrollbar-track-white/5">
-                            <div className="bg-black/90 p-4 sm:p-5 lg:p-6 border border-white/5">
-                                <div className="text-center mb-4 sm:mb-5 pb-3 border-b border-white/10">
-                                    <h3 className="text-base sm:text-lg font-serif text-white tracking-wide">Plan Your Trip</h3>
-                                    <p className="text-amber-500/80 text-xs uppercase tracking-widest mt-1">Instant Confirmation</p>
-                                </div>
-                                <BookingForm variant="hero" />
+                    {/* Right - Booking Form */}
+                    <div className="lg:col-span-5">
+                        <div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden">
+                            <div className="bg-teal-500 p-4 text-center">
+                                <h3 className="text-xl font-bold text-white">Book Your Taxi</h3>
+                                <p className="text-sm text-white/90">Quick & Easy Booking</p>
+                            </div>
+                            <div className="p-6">
+                                <BookingForm variant="default" />
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* Slide Indicators */}
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+                {slides.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setCurrentSlide(index)}
+                        className={`w-2 h-2 rounded-full transition-all ${index === currentSlide
+                            ? 'bg-teal-500 w-8'
+                            : 'bg-white/50 hover:bg-white/80'
+                            }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                    />
+                ))}
             </div>
         </section>
     );

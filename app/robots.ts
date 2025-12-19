@@ -6,9 +6,9 @@ export default function robots(): MetadataRoute.Robots {
             {
                 userAgent: '*',
                 allow: '/',
-                disallow: ['/api/', '/admin/'],
+                disallow: ['/api/', '/admin/', '/booking-confirmed/'],
             },
         ],
-        sitemap: 'https://umrahtaxi.site/sitemap.xml',
+        sitemap: 'https://haramtaxiservice.com/sitemap.xml',
     }
 }

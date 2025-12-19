@@ -199,7 +199,7 @@ export default function FAQPage() {
                         Still Have Questions?
                     </h2>
                     <p className="text-lg text-gray-300 mb-6">
-                        Can't find the answer you're looking for? Our customer support team is here to help!
+                        Can&apos;t find the answer you&apos;re looking for? Our customer support team is here to help!
                     </p>
                     <Link href="/contact">
                         <Button size="lg" className="bg-white text-black hover:bg-gray-200 font-bold text-lg px-8 py-6">

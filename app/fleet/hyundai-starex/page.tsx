@@ -1,189 +1,227 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Users, Briefcase, CheckCircle2, Star, Shield, Clock, Car } from 'lucide-react';
+import { Users, Briefcase, CheckCircle2, Star, Shield, Car, Check, ArrowRight } from 'lucide-react';
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
 } from '@/components/ui/accordion';
+import RelatedVehicles from '@/components/RelatedVehicles';
 
 export const metadata: Metadata = {
-    title: 'Hyundai Starex - Family Van | Umrah Taxi',
-    description: 'Book our reliable Hyundai Starex for family Umrah trips. 7 passengers, comfortable and spacious, perfect for airport transfers.',
-    keywords: ['Hyundai Starex rental Makkah', 'family van Umrah', 'airport transfer Jeddah', '7 seater van'],
+    title: 'Hyundai Starex Taxi in Saudi Arabia | 7-Seater Van Rental - Haram Taxi',
+    description: 'Book Hyundai Starex 7-seater van taxi in Saudi Arabia. Reliable family van for airport transfers and trips in Makkah, Madinah, Jeddah.',
+    keywords: ['Hyundai Starex taxi', 'family van Saudi Arabia', '7 seater taxi', 'airport transfer van', 'reliable van'],
+    openGraph: {
+        title: 'Hyundai Starex Family Van Taxi | 7-Seater',
+        description: 'Book Hyundai Starex for reliable family travel in Saudi Arabia.',
+        url: 'https://haramtaxiservice.com/fleet/hyundai-starex',
+        type: 'website',
+    },
 };
 
 export default function HyundaiStarexPage() {
     const features = [
-        'Family friendly',
-        'Comfortable seating',
-        'Spacious interior',
-        'Air conditioning',
-        'Reliable performance',
-        'Large luggage space',
-        'Professional driver',
-        'Airport transfer ready',
+        'Family Friendly',
+        'Comfortable Seating',
+        'Reliable Performance',
+        'Airport Transfer Ready',
+        'Air Conditioning',
+        'Professional Driver',
+        'Spacious Luggage',
+        'Clean Interior',
     ];
 
     const specifications = [
-        { label: 'Passengers', value: '7' },
-        { label: 'Luggage', value: '10 Bags' },
-        { label: 'Type', value: 'Van' },
-        { label: 'Transmission', value: 'Automatic' },
+        { label: 'Passengers', value: '7 Adults', icon: Users },
+        { label: 'Luggage', value: '10 Large Bags', icon: Briefcase },
+        { label: 'Class', value: 'Van', icon: Star },
+        { label: 'Transmission', value: 'Automatic', icon: Car },
     ];
 
     const idealFor = [
-        'Family Travel',
-        'Airport Transfers',
-        'Group Outings',
+        'Family Trips',
+        'Airport Transfer',
+        'Hotel Pickup',
         'City Tours',
-        'Umrah Transport',
+        'Group Travel',
         'Long Distance',
     ];
 
     const faqs = [
         {
-            question: "Does the Hyundai Starex come with a professional driver?",
-            answer: "Yes, all our Hyundai Starex rentals include a professional, well-trained chauffeur. We do not offer self-drive options."
+            question: "How many passengers can the Hyundai Starex accommodate?",
+            answer: "The Hyundai Starex comfortably seats 7 adults with generous luggage space for up to 10 large bags, perfect for families and small groups."
         },
         {
-            question: "How many passengers can the Hyundai Starex accommodate comfortably?",
-            answer: "The Hyundai Starex is designed to carry 7 passengers with 10 luggage pieces comfortably, ensuring a relaxing journey for families."
+            question: "Is the Starex good for airport transfers?",
+            answer: "Yes! The Hyundai Starex is excellent for airport transfers with ample space for passengers and luggage, ensuring a comfortable journey."
         },
         {
-            question: "Is fuel and toll charges included in the booking?",
-            answer: "Yes, our pricing is all-inclusive. Fuel, road tolls, and parking fees at airports are covered specially for point-to-point transfers."
+            question: "Can we use it for family trips?",
+            answer: "Absolutely. The Starex is designed for family comfort with spacious seating and reliable performance for both short and long-distance travel."
         },
         {
-            question: "Can I book the Hyundai Starex for a trip from Jeddah to Makkah?",
-            answer: "Absolutely. The Hyundai Starex is a reliable choice for the Jeddah-Makkah route, providing a smooth and safe ride for Umrah pilgrims."
+            question: "Is luggage space sufficient?",
+            answer: "Yes, the Hyundai Starex has ample luggage space for 10 large bags, making it perfect for family trips with lots of belongings."
         }
     ];
 
     return (
-        <div className="bg-gray-50 min-h-screen pt-24 pb-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white min-h-screen">
+            <div className="bg-gray-50 py-4">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                        <Link href="/" className="hover:text-teal-500">Home</Link>
+                        <span>/</span>
+                        <Link href="/fleet" className="hover:text-teal-500">Fleet</Link>
+                        <span>/</span>
+                        <span className="text-gray-900 font-medium">Hyundai Starex</span>
+                    </div>
+                </div>
+            </div>
 
-                <div className="bg-white rounded-2xl overflow-hidden shadow-lg mb-12">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div className="relative h-96 lg:h-auto">
+            <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div className="space-y-6">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 rounded-full">
+                                <Star className="w-4 h-4 text-teal-500" />
+                                <span className="text-teal-600 text-sm font-semibold">Family Van</span>
+                            </div>
+
+                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
+                                Hyundai <span className="text-teal-500">Starex</span>
+                            </h1>
+
+                            <p className="text-xl text-gray-600 leading-relaxed">
+                                Reliable and comfortable family van perfect for airport transfers and family trips. The Hyundai Starex offers dependable performance with spacious seating.
+                            </p>
+
+                            <div className="flex flex-wrap gap-4 pt-4">
+                                <Link href="/booking?vehicle=Hyundai%20Starex">
+                                    <Button size="lg" className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg">
+                                        Book Now
+                                        <ArrowRight className="w-5 h-5 ml-2" />
+                                    </Button>
+                                </Link>
+                                <a href="#details">
+                                    <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100 px-8 py-6 text-lg">
+                                        View Details
+                                    </Button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="relative">
+                            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl">
+                                <Image
+                                    src="/hyundai-starex-family-van.webp"
+                                    alt="Hyundai Starex family van taxi in Saudi Arabia"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="details" className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        {specifications.map((spec, index) => (
+                            <div key={index} className="bg-gray-50 p-6 rounded-xl text-center hover:shadow-lg transition-all">
+                                <spec.icon className="w-8 h-8 text-teal-500 mx-auto mb-3" />
+                                <div className="text-2xl font-bold text-gray-900 mb-1">{spec.value}</div>
+                                <div className="text-sm text-gray-600">{spec.label}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div className="bg-white p-8 rounded-2xl shadow-md">
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Features</h2>
+                            <ul className="space-y-4">
+                                {features.map((feature, index) => (
+                                    <li key={index} className="flex items-center text-gray-700">
+                                        <div className="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mr-4">
+                                            <Check className="w-4 h-4 text-teal-500" />
+                                        </div>
+                                        {feature}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/hyundai-starex.webp"
-                                alt="Hyundai Starex"
+                                src="/hyundai-starex-context.webp"
+                                alt="Hyundai Starex for family travel"
                                 fill
                                 className="object-cover"
                             />
-                        </div>
-
-                        <div className="p-8 lg:p-12 flex flex-col justify-center">
-                            <span className="bg-gray-100 text-black font-semibold tracking-wider uppercase text-sm px-4 py-1.5 rounded-full inline-block w-fit mb-4">
-                                Reliable Choice
-                            </span>
-                            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                                Hyundai Starex
-                            </h1>
-                            <p className="text-xl text-gray-600 mb-6">
-                                Reliable and comfortable van perfect for families and small groups. Spacious interior with ample luggage capacity.
-                            </p>
-
-                            <div className="grid grid-cols-2 gap-4 mb-6">
-                                {specifications.map((spec, index) => (
-                                    <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                                        <div className="text-sm text-gray-500">{spec.label}</div>
-                                        <div className="text-lg font-bold text-gray-900">{spec.value}</div>
-                                    </div>
-                                ))}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div className="absolute bottom-8 left-8 right-8">
+                                <h3 className="text-2xl font-bold text-white mb-4">Perfect For</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {idealFor.map((use, index) => (
+                                        <span key={index} className="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-sm rounded-full border border-white/30">
+                                            {use}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
-
-                            <Link href="/booking?vehicle=Hyundai%20Starex">
-                                <Button size="lg" className="w-full bg-black hover:bg-gray-800 text-white font-bold">
-                                    Book Hyundai Starex Now
-                                </Button>
-                            </Link>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
-                    <div className="bg-white p-8 rounded-2xl shadow-sm">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6">Features</h2>
-                        <ul className="space-y-3">
-                            {features.map((feature, index) => (
-                                <li key={index} className="flex items-center text-gray-700">
-                                    <CheckCircle2 className="w-5 h-5 text-gray-400 mr-3 flex-shrink-0" />
-                                    {feature}
-                                </li>
-                            ))}
-                        </ul>
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                        <p className="text-xl text-gray-600">Common questions about Hyundai Starex rental</p>
                     </div>
-
-                    <div className="bg-white p-8 rounded-2xl shadow-sm">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6">Ideal For</h2>
-                        <ul className="space-y-3">
-                            {idealFor.map((use, index) => (
-                                <li key={index} className="flex items-center text-gray-700">
-                                    <Car className="w-5 h-5 text-gray-400 mr-3 flex-shrink-0" />
-                                    {use}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                    <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-                        <Star className="w-8 h-8 text-gray-700 mx-auto mb-3" />
-                        <div className="text-3xl font-bold text-gray-900 mb-1">4.8</div>
-                        <div className="text-sm text-gray-600">Rating</div>
-                    </div>
-                    <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-                        <Users className="w-8 h-8 text-gray-700 mx-auto mb-3" />
-                        <div className="text-3xl font-bold text-gray-900 mb-1">7</div>
-                        <div className="text-sm text-gray-600">Passengers</div>
-                    </div>
-                    <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-                        <Briefcase className="w-8 h-8 text-gray-700 mx-auto mb-3" />
-                        <div className="text-3xl font-bold text-gray-900 mb-1">10</div>
-                        <div className="text-sm text-gray-600">Bags</div>
-                    </div>
-                    <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-                        <Shield className="w-8 h-8 text-gray-700 mx-auto mb-3" />
-                        <div className="text-3xl font-bold text-gray-900 mb-1">100%</div>
-                        <div className="text-sm text-gray-600">Safe</div>
-                    </div>
-                </div>
-
-                {/* FAQ Section */}
-                <div className="max-w-4xl mx-auto mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
                     <Accordion type="single" collapsible className="space-y-4">
                         {faqs.map((faq, index) => (
-                            <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-xl border border-gray-200 px-6 shadow-sm">
-                                <AccordionTrigger className="text-left font-bold text-gray-900 hover:no-underline">{faq.question}</AccordionTrigger>
-                                <AccordionContent className="text-gray-600 pt-2">{faq.answer}</AccordionContent>
+                            <AccordionItem key={index} value={`item-${index}`} className="bg-gray-50 px-6 rounded-xl border-0">
+                                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-teal-500 text-left">
+                                    {faq.question}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
+                                    {faq.answer}
+                                </AccordionContent>
                             </AccordionItem>
                         ))}
                     </Accordion>
                 </div>
+            </section>
 
-                {/* CTA */}
-                <div className="bg-black rounded-2xl p-8 md:p-12 text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                        Ready for Comfortable Family Travel?
-                    </h2>
-                    <p className="text-lg text-gray-300 mb-6">
-                        Book our Hyundai Starex now for your next journey
+
+            {/* Related Vehicles */}
+            <RelatedVehicles currentVehicle="hyundai-starex" />
+            <section className="py-20 bg-teal-500 text-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-4xl font-bold mb-6">Ready to Book Hyundai Starex?</h2>
+                    <p className="text-xl mb-8 opacity-90">
+                        Reliable family van for comfortable travel. Book now!
                     </p>
                     <Link href="/booking?vehicle=Hyundai%20Starex">
-                        <Button size="lg" className="bg-white text-black hover:bg-gray-200 font-bold text-lg px-10 py-6">
-                            Book Now
+                        <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-12 py-6 text-lg">
+                            Book This Vehicle
                         </Button>
                     </Link>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }

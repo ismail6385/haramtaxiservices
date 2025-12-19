@@ -4,19 +4,13 @@ import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
 import {
-    LogOut,
     Calendar,
-    Users,
-    Car,
     Clock,
     MapPin,
     CheckCircle2,
-    XCircle,
-    AlertCircle,
     Search,
     Filter
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import {
@@ -60,6 +54,22 @@ export default function AdminDashboard() {
 
 
     useEffect(() => {
+        const fetchBookings = async () => {
+            try {
+                const { data, error } = await supabase
+                    .from('bookings')
+                    .select('*')
+                    .order('created_at', { ascending: false });
+
+                if (error) throw error;
+                setBookings(data || []);
+            } catch (error) {
+                console.error('Error fetching bookings:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
         const checkSession = async () => {
             const { data: { session } } = await supabase.auth.getSession();
             if (!session) {
@@ -69,23 +79,7 @@ export default function AdminDashboard() {
             }
         };
         checkSession();
-    }, [router, supabase]);
-
-    const fetchBookings = async () => {
-        try {
-            const { data, error } = await supabase
-                .from('bookings')
-                .select('*')
-                .order('created_at', { ascending: false });
-
-            if (error) throw error;
-            setBookings(data || []);
-        } catch (error) {
-            console.error('Error fetching bookings:', error);
-        } finally {
-            setLoading(false);
-        }
-    };
+    }, [router]);
 
     const updateStatus = async (id: string, newStatus: string) => {
         try {
@@ -98,7 +92,7 @@ export default function AdminDashboard() {
 
             // Update local state
             setBookings(bookings.map(b =>
-                b.id === id ? { ...b, status: newStatus as any } : b
+                b.id === id ? { ...b, status: newStatus as Booking['status'] } : b
             ));
         } catch (error) {
             console.error('Error updating status:', error);
