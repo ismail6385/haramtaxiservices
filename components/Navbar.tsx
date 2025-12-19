@@ -64,16 +64,16 @@ export default function Navbar() {
 
                         {/* Fleet Dropdown */}
                         <div
-                            className="relative"
+                            className="relative group"
                             onMouseEnter={() => setFleetDropdownOpen(true)}
                             onMouseLeave={() => setFleetDropdownOpen(false)}
                         >
-                            <button className="flex items-center gap-1 text-gray-700 hover:text-teal-500 font-medium transition-colors">
+                            <button className="flex items-center gap-1 text-gray-700 hover:text-teal-500 font-medium transition-colors py-2">
                                 Fleet
                                 <ChevronDown className={`w-4 h-4 transition-transform ${fleetDropdownOpen ? 'rotate-180' : ''}`} />
                             </button>
                             {fleetDropdownOpen && (
-                                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2">
+                                <div className="absolute top-full left-0 pt-0 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 animate-in fade-in slide-in-from-top-2 duration-200">
                                     <Link href="/fleet" className="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-500 font-semibold border-b border-gray-100">
                                         View All Fleet
                                     </Link>
@@ -92,16 +92,16 @@ export default function Navbar() {
 
                         {/* Locations Dropdown */}
                         <div
-                            className="relative"
+                            className="relative group"
                             onMouseEnter={() => setLocationsDropdownOpen(true)}
                             onMouseLeave={() => setLocationsDropdownOpen(false)}
                         >
-                            <button className="flex items-center gap-1 text-gray-700 hover:text-teal-500 font-medium transition-colors">
+                            <button className="flex items-center gap-1 text-gray-700 hover:text-teal-500 font-medium transition-colors py-2">
                                 Locations
                                 <ChevronDown className={`w-4 h-4 transition-transform ${locationsDropdownOpen ? 'rotate-180' : ''}`} />
                             </button>
                             {locationsDropdownOpen && (
-                                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2">
+                                <div className="absolute top-full left-0 pt-0 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 animate-in fade-in slide-in-from-top-2 duration-200">
                                     <Link href="/locations" className="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-500 font-semibold border-b border-gray-100">
                                         View All Locations
                                     </Link>
