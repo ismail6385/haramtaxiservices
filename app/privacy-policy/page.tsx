@@ -213,7 +213,7 @@ export default function PrivacyPolicyPage() {
 
                 {/* Children's Privacy */}
                 <div className="bg-white rounded-2xl p-8 shadow-sm mb-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">8. Children's Privacy</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">8. Children&apos;s Privacy</h2>
 
                     <p className="text-gray-700">
                         Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately, and we will take steps to remove such information.
