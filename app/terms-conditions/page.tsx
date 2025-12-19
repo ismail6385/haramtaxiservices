@@ -40,12 +40,12 @@ export default function TermsConditionsPage() {
                 <div className="bg-white rounded-2xl p-8 shadow-sm mb-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">1. Definitions</h2>
                     <ul className="space-y-3 text-gray-700">
-                        <li><strong>"Company," "We," "Us," "Our"</strong> refers to Umrah Taxi</li>
-                        <li><strong>"Customer," "You," "Your"</strong> refers to the person booking or using our services</li>
-                        <li><strong>"Services"</strong> refers to taxi, chauffeur, and transportation services we provide</li>
-                        <li><strong>"Driver"</strong> refers to our professional chauffeurs and drivers</li>
-                        <li><strong>"Vehicle"</strong> refers to any car, van, or bus used to provide our services</li>
-                        <li><strong>"Booking"</strong> refers to a reservation made for our transportation services</li>
+                        <li><strong>&quot;Company,&quot; &quot;We,&quot; &quot;Us,&quot; &quot;Our&quot;</strong> refers to Umrah Taxi</li>
+                        <li><strong>&quot;Customer,&quot; &quot;You,&quot; &quot;Your&quot;</strong> refers to the person booking or using our services</li>
+                        <li><strong>&quot;Services&quot;</strong> refers to taxi, chauffeur, and transportation services we provide</li>
+                        <li><strong>&quot;Driver&quot;</strong> refers to our professional chauffeurs and drivers</li>
+                        <li><strong>&quot;Vehicle&quot;</strong> refers to any car, van, or bus used to provide our services</li>
+                        <li><strong>&quot;Booking&quot;</strong> refers to a reservation made for our transportation services</li>
                     </ul>
                 </div>
 

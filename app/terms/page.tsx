@@ -28,7 +28,7 @@ export default function TermsPage() {
                     <section className="mb-12 bg-gray-50 p-8 rounded-2xl border border-gray-200">
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">Agreement to Terms</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            By booking or using Haram Taxi Service ("we", "us", or "our"), you agree to be bound by these Terms and Conditions. These terms govern your use of our taxi and transportation services in Saudi Arabia, including Makkah, Madinah, Jeddah, Taif, AlUla, and Khayber.
+                            By booking or using Haram Taxi Service (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), you agree to be bound by these Terms and Conditions. These terms govern your use of our taxi and transportation services in Saudi Arabia, including Makkah, Madinah, Jeddah, Taif, AlUla, and Khayber.
                         </p>
                         <p className="text-gray-700 leading-relaxed mt-4">
                             If you do not agree with any part of these terms, please do not use our services.
@@ -276,7 +276,7 @@ export default function TermsPage() {
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">Changes to Terms</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            We reserve the right to update these Terms and Conditions at any time. Changes will be posted on this page with an updated "Last Updated" date. Continued use of our services after changes constitutes acceptance of the modified terms.
+                            We reserve the right to update these Terms and Conditions at any time. Changes will be posted on this page with an updated &quot;Last Updated&quot; date. Continued use of our services after changes constitutes acceptance of the modified terms.
                         </p>
                     </section>
 

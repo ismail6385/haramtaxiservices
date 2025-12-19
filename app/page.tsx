@@ -349,7 +349,7 @@ export default async function Home() {
             {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-8 h-8 fill-white" />)}
           </div>
           <blockquote className="text-2xl md:text-3xl font-light mb-6 italic">
-            "Excellent service! The driver was professional, the car was clean and comfortable. Highly recommended for anyone traveling in Saudi Arabia."
+            &quot;Excellent service! The driver was professional, the car was clean and comfortable. Highly recommended for anyone traveling in Saudi Arabia.&quot;
           </blockquote>
           <p className="text-lg opacity-90">- Ahmed K., Riyadh</p>
         </div>

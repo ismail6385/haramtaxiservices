@@ -31,7 +31,7 @@ export default function PrivacyPage() {
                             Introduction
                         </h2>
                         <p className="text-gray-700 leading-relaxed">
-                            This Privacy Policy outlines how Haram Taxi Service ("we", "us", or "our") collects, uses, stores, and protects your personal information when you use our taxi and transportation services in Saudi Arabia, including bookings through our website, WhatsApp, or phone.
+                            This Privacy Policy outlines how Haram Taxi Service (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, stores, and protects your personal information when you use our taxi and transportation services in Saudi Arabia, including bookings through our website, WhatsApp, or phone.
                         </p>
                         <p className="text-gray-700 leading-relaxed mt-4">
                             By using our services, you agree to the collection and use of information in accordance with this policy.
@@ -222,7 +222,7 @@ export default function PrivacyPage() {
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">Changes to This Policy</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of significant changes by posting the new policy on this page with an updated "Last Updated" date. Your continued use of our services after changes constitutes acceptance of the updated policy.
+                            We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of significant changes by posting the new policy on this page with an updated &quot;Last Updated&quot; date. Your continued use of our services after changes constitutes acceptance of the updated policy.
                         </p>
                     </section>
 

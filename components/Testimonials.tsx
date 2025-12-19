@@ -28,7 +28,7 @@ export default function Testimonials() {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        Don't just take our word for it. Here's what our satisfied customers have to say about their experience with Umrah Taxi.
+                        Don&apos;t just take our word for it. Here&apos;s what our satisfied customers have to say about their experience with Umrah Taxi.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -39,7 +39,7 @@ export default function Testimonials() {
                                     <Star key={i} className="w-5 h-5 text-primary fill-primary" />
                                 ))}
                             </div>
-                            <p className="text-gray-700 mb-6 italic">"{testimonial.content}"</p>
+                            <p className="text-gray-700 mb-6 italic">&quot;{testimonial.content}&quot;</p>
                             <div>
                                 <h4 className="text-gray-900 font-semibold">{testimonial.name}</h4>
                                 <p className="text-sm text-gray-500">{testimonial.role}</p>
