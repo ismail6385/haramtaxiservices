@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function SEOContent() {
     return (
         <section className="py-20 bg-zinc-950 text-gray-300">
@@ -22,20 +24,22 @@ export default function SEOContent() {
                         </p>
                     </div>
                     <div className="relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1566371486490-560ded23b5e4?q=80&w=2070&auto=format&fit=crop"
                             alt="Private Chauffeur Service Saudi Arabia"
-                            className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            fill
+                            className="object-cover hover:scale-105 transition-transform duration-700"
                         />
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
                     <div className="order-2 lg:order-1 relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070&auto=format&fit=crop"
                             alt="Umrah Taxi Service Makkah"
-                            className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            fill
+                            className="object-cover hover:scale-105 transition-transform duration-700"
                         />
                     </div>
                     <div className="order-1 lg:order-2 prose prose-invert prose-lg">
@@ -67,10 +71,11 @@ export default function SEOContent() {
                         </p>
                     </div>
                     <div className="relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1554665826-4b6d7a050076?q=80&w=2069&auto=format&fit=crop"
                             alt="Luxury Airport Transfer Riyadh"
-                            className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            fill
+                            className="object-cover hover:scale-105 transition-transform duration-700"
                         />
                     </div>
                 </div>

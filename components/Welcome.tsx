@@ -1,4 +1,5 @@
 import { CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Welcome() {
     return (
@@ -37,10 +38,11 @@ export default function Welcome() {
                         </div>
                     </div>
                     <div className="relative h-[500px] rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
-                        <img
+                        <Image
                             src="/makkah-kaaba-night.webp" // Updated image to be relevant
                             alt="Umrah Taxi Service Makkah"
-                            className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            fill
+                            className="object-cover hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div className="absolute bottom-6 left-6 right-6">

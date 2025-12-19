@@ -1,6 +1,7 @@
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const routes = [
   {
@@ -68,10 +69,11 @@ export default function PopularRoutes() {
           {routes.map((route, index) => (
             <div key={index} className="bg-white border border-zinc-800 rounded-xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
               <div className="h-48 overflow-hidden relative">
-                <img
+                <Image
                   src={route.image}
                   alt={`${route.from} to ${route.to}`}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">

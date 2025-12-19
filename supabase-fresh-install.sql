@@ -1,7 +1,17 @@
--- Bookings Table for Taxi Service KSA
--- Run this SQL in Supabase SQL Editor
+-- Complete Bookings Table Setup (Fresh Install)
+-- This will DROP the existing table and recreate it with all fields
+-- ⚠️ WARNING: This will DELETE all existing booking data!
+-- Only use this if you're okay with losing existing data
 
-CREATE TABLE IF NOT EXISTS bookings (
+-- Drop existing table and all dependencies
+DROP TABLE IF EXISTS bookings CASCADE;
+
+-- Drop existing policies if they exist
+DROP POLICY IF EXISTS "Service role can do everything" ON bookings;
+DROP POLICY IF EXISTS "Anyone can create bookings" ON bookings;
+
+-- Create the bookings table with ALL fields
+CREATE TABLE bookings (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   
   -- User Details (Step 1)
@@ -25,7 +35,7 @@ CREATE TABLE IF NOT EXISTS bookings (
   status VARCHAR(50) DEFAULT 'pending',
   -- pending, confirmed, completed, cancelled
   
-  -- Confirmation (IMPORTANT: Required for email confirmation flow)
+  -- Confirmation (IMPORTANT: These fields are required!)
   confirmation_token VARCHAR(255) UNIQUE,
   confirmed_at TIMESTAMP WITH TIME ZONE,
   
@@ -38,12 +48,12 @@ CREATE TABLE IF NOT EXISTS bookings (
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
 );
 
--- Create index for faster queries
-CREATE INDEX IF NOT EXISTS idx_bookings_email ON bookings(customer_email);
-CREATE INDEX IF NOT EXISTS idx_bookings_status ON bookings(status);
-CREATE INDEX IF NOT EXISTS idx_bookings_date ON bookings(pickup_date);
-CREATE INDEX IF NOT EXISTS idx_bookings_created_at ON bookings(created_at DESC);
-CREATE INDEX IF NOT EXISTS idx_bookings_confirmation_token ON bookings(confirmation_token);
+-- Create indexes for faster queries
+CREATE INDEX idx_bookings_email ON bookings(customer_email);
+CREATE INDEX idx_bookings_status ON bookings(status);
+CREATE INDEX idx_bookings_date ON bookings(pickup_date);
+CREATE INDEX idx_bookings_created_at ON bookings(created_at DESC);
+CREATE INDEX idx_bookings_confirmation_token ON bookings(confirmation_token);
 
 -- Enable Row Level Security (RLS)
 ALTER TABLE bookings ENABLE ROW LEVEL SECURITY;
@@ -58,17 +68,17 @@ CREATE POLICY "Anyone can create bookings" ON bookings
   FOR INSERT
   WITH CHECK (true);
 
--- Create policy to allow anon users to read bookings
+-- Create policy to allow anon users to read their own bookings by confirmation token
 CREATE POLICY "Anyone can read bookings with confirmation token" ON bookings
   FOR SELECT
   USING (true);
 
--- Create policy to allow anon users to update bookings
+-- Create policy to allow anon users to update bookings with confirmation token
 CREATE POLICY "Anyone can update bookings with confirmation token" ON bookings
   FOR UPDATE
   USING (true);
 
--- Create updated_at trigger
+-- Create updated_at trigger function
 CREATE OR REPLACE FUNCTION update_updated_at_column()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -77,8 +87,11 @@ BEGIN
 END;
 $$ language 'plpgsql';
 
-CREATE TRIGGER update_bookings_updated_at BEFORE UPDATE ON bookings
-  FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+-- Create trigger for auto-updating updated_at
+CREATE TRIGGER update_bookings_updated_at 
+  BEFORE UPDATE ON bookings
+  FOR EACH ROW 
+  EXECUTE FUNCTION update_updated_at_column();
 
 -- Success message
-SELECT 'Bookings table created successfully!' as message;
+SELECT 'Bookings table created successfully with all fields!' as message;

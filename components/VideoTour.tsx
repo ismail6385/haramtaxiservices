@@ -2,6 +2,7 @@
 
 import { Play } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function VideoTour() {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -10,10 +11,11 @@ export default function VideoTour() {
         <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0">
-                <img
+                <Image
                     src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=2070&auto=format&fit=crop"
                     alt="Luxury Interior"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                 />
                 <div className="absolute inset-0 bg-white/60"></div>
             </div>
