@@ -198,7 +198,7 @@ export default function TermsPage() {
                             </div>
                             <div className="flex items-start gap-3 pl-4 border-l-2 border-teal-500">
                                 <span className="font-bold text-teal-600">→</span>
-                                <p><strong>Passenger Limits:</strong> Do not exceed the vehicle's maximum passenger capacity for safety reasons.</p>
+                                <p><strong>Passenger Limits:</strong> Do not exceed the vehicle&apos;s maximum passenger capacity for safety reasons.</p>
                             </div>
                             <div className="flex items-start gap-3 pl-4 border-l-2 border-teal-500">
                                 <span className="font-bold text-teal-600">→</span>
