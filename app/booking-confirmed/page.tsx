@@ -96,11 +96,11 @@ function ConfirmationContent() {
 
                         {/* Admin/Support Contact Section (Requested by User) */}
                         <div className="mb-10 p-4 rounded-lg bg-gradient-to-br from-neutral-800/50 to-neutral-900/50 border border-white/5">
-                            <p className="text-neutral-400 text-sm mb-3">Questions? Need urgent help?</p>
+                            <p className="text-neutral-400 text-sm mb-3">Questions? Contact Admin Support</p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
                                 <a href="mailto:umrahtaxi22@gmail.com" className="flex items-center gap-2 text-white hover:text-amber-400 transition-colors">
                                     <Mail className="w-4 h-4" />
-                                    umrahtaxi22@gmail.com
+                                    Admin: umrahtaxi22@gmail.com
                                 </a>
                                 <span className="hidden sm:inline text-neutral-600">|</span>
                                 <a href="https://wa.me/03176243861" className="flex items-center gap-2 text-white hover:text-green-400 transition-colors">
