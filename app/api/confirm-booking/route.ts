@@ -3,10 +3,11 @@ import { supabase } from '@/lib/supabase';
 
 // Force dynamic rendering for this route
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export async function GET(request: NextRequest) {
     try {
-        const searchParams = request.nextUrl.searchParams;
+        const { searchParams } = new URL(request.url);
         const token = searchParams.get('token');
 
         if (!token) {
@@ -52,7 +53,11 @@ export async function GET(request: NextRequest) {
 
         // Send confirmation email to customer
         try {
-            await fetch(new URL('/api/send-confirmation-email', request.url).toString(), {
+            const protocol = request.headers.get('x-forwarded-proto') || 'http';
+            const host = request.headers.get('host');
+            const baseUrl = `${protocol}://${host}`;
+
+            await fetch(`${baseUrl}/api/send-confirmation-email`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ booking })
