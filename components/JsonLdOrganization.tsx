@@ -4,10 +4,10 @@ export default function JsonLdOrganization() {
     const organizationSchema = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Umrah Taxi",
-        "alternateName": "UmrahTaxi",
-        "url": "https://umrahtaxi.site",
-        "logo": "https://umrahtaxi.site/logo.png",
+        "name": "Haram Taxi Service",
+        "alternateName": "HaramTaxi",
+        "url": "https://haramtaxiservice.com",
+        "logo": "https://haramtaxiservice.com/logo.png",
         "description": "Premium Umrah taxi and Hajj transport services across Saudi Arabia including airport transfers, Ziyarat tours, and intercity travel.",
         "address": {
             "@type": "PostalAddress",

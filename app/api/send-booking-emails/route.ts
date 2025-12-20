@@ -134,7 +134,7 @@ export async function POST(request: NextRequest) {
                 : '';
 
             customerEmail = await resend.emails.send({
-                from: 'Umrah Taxi <bookings@umrahtaxi.site>',
+                from: 'Haram Taxi <bookings@haramtaxiservice.com>',
                 to: [booking.customer_email],
                 subject: `Booking Received - Umrah Taxi (#${booking.id.slice(0, 8)})`,
                 html: `
@@ -421,10 +421,11 @@ export async function POST(request: NextRequest) {
             // Check if it's a domain verification error
             const errorMessage = customerEmailError.message || '';
             if (errorMessage.includes('domain') || errorMessage.includes('verify') || errorMessage.includes('not verified')) {
-                throw new Error(`Email domain not verified. Please verify 'umrahtaxi.site' in Resend dashboard. Error: ${customerEmailError.message}`);
+                console.error(`Email domain not verified. Please verify 'haramtaxiservice.com' in Resend dashboard. Error: ${customerEmailError.message}`);
+            } else {
+                console.error(`Customer email failed: ${customerEmailError.message}`);
             }
-
-            throw new Error(`Customer email failed: ${customerEmailError.message}`);
+            // Do not throw here so admin email can still be sent
         }
 
         // Send email to admin
@@ -432,7 +433,7 @@ export async function POST(request: NextRequest) {
         try {
             console.log('Sending admin email to:', adminEmail);
             adminEmailResult = await resend.emails.send({
-                from: 'Umrah Taxi System <system@umrahtaxi.site>',
+                from: 'Haram Taxi System <bookings@haramtaxiservice.com>',
                 to: [adminEmail],
                 subject: `🚗 New Booking - ${booking.customer_name} ${price ? `(SAR ${price})` : ''}`,
                 html: `

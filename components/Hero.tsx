@@ -51,6 +51,7 @@ export default function Hero(props: HeroProps) {
                             src={slide}
                             alt={slideAltTexts[index] || "Taxi Service"}
                             fill
+                            sizes="100vw"
                             priority={index === 0}
                             className="object-cover"
                             quality={85}

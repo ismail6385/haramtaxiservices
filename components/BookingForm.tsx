@@ -411,7 +411,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                         <div className="space-y-2">
                             <h4 className={`text-xs sm:text-sm font-bold ${textPrimary}`}>Choose Your Vehicle *</h4>
                             <Select
-                                value={formData.vehicle_type || undefined}
+                                value={formData.vehicle_type}
                                 onValueChange={(value) => {
                                     const vehicle = vehicles.find(v => v.name === value);
                                     if (vehicle) selectVehicle(vehicle);

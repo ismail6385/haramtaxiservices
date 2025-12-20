@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
 
         // Send confirmation email to customer
         const emailResult = await resend.emails.send({
-            from: 'Umrah Taxi <bookings@umrahtaxi.site>',
+            from: 'Haram Taxi <bookings@haramtaxiservice.com>',
             to: [booking.customer_email],
             subject: `✅ Booking Confirmed - Umrah Taxi (#${booking.id.slice(0, 8)})`,
             html: `

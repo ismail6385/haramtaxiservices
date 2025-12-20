@@ -4,8 +4,8 @@ export default function JsonLdLocalBusiness() {
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Umrah Taxi",
-        "image": "https://umrahtaxi.site/logo.png",
+        "name": "Haram Taxi Service",
+        "image": "https://haramtaxiservice.com/logo.png",
         "description": "Premium Umrah taxi and Hajj transport services in Saudi Arabia. Professional airport transfers, Ziyarat tours, and luxury intercity travel.",
         "address": {
             "@type": "PostalAddress",
@@ -21,7 +21,7 @@ export default function JsonLdLocalBusiness() {
         "areaServed": [
             "Jeddah", "Makkah", "Madinah", "Riyadh", "Dammam", "Taif", "Al Khobar", "Yanbu"
         ],
-        "url": "https://umrahtaxi.site",
+        "url": "https://haramtaxiservice.com",
         "priceRange": "$$",
         "openingHours": "Mo-Su 00:00-23:59",
         "aggregateRating": {

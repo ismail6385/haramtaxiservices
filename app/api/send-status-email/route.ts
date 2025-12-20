@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
                                 <p>Great news! Your booking <strong>#${bookingId.slice(0, 8)}</strong> has been fully confirmed by our team.</p>
                                 <p>Your driver will meet you at the scheduled time and location.</p>
                                 <p>If you need any assistance, simply reply to this email or contact us via WhatsApp.</p>
-                                <center><a href="https://umrahtaxi.site/contact" class="button">Contact Support</a></center>
+                                <center><a href="https://haramtaxiservice.com/contact" class="button">Contact Support</a></center>
                             </div>
                         </div>
                     </body>
@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
                                 <p>Dear <strong>${customerName}</strong>,</p>
                                 <p>Your booking <strong>#${bookingId.slice(0, 8)}</strong> has been cancelled.</p>
                                 <p>If this was a mistake or you wish to rebook, please visit our website.</p>
-                                <center><a href="https://umrahtaxi.site" class="button" style="background: #000; color: #fff;">Book Again</a></center>
+                                <center><a href="https://haramtaxiservice.com" class="button" style="background: #000; color: #fff;">Book Again</a></center>
                             </div>
                         </div>
                     </body>
@@ -110,7 +110,7 @@ export async function POST(request: NextRequest) {
         console.log(`Sending ${status} email to ${customerEmail}`);
 
         const data = await resend.emails.send({
-            from: 'Umrah Taxi <bookings@umrahtaxi.site>',
+            from: 'Haram Taxi <bookings@haramtaxiservice.com>',
             to: [customerEmail],
             subject: subject,
             html: htmlContent,
