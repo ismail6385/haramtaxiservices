@@ -110,7 +110,7 @@ export default function ToyotaHiacePage() {
                                 </Link>
                                 <a href="#details">
                                     <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100 px-8 py-6 text-lg">
-                                        View Details
+                                        View Toyota Hiace Specs
                                     </Button>
                                 </a>
                             </div>

@@ -45,7 +45,7 @@ export default function ServicesIndexPage() {
                             <CardFooter>
                                 <Link href={`/services/${service.slug}`} className="w-full">
                                     <Button className="w-full bg-brand-teal hover:bg-brand-teal-dark group shadow-md hover:shadow-lg transition-all">
-                                        View Details <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                        View {service.title.split('|')[0].trim()} <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                     </Button>
                                 </Link>
                             </CardFooter>

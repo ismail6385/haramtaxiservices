@@ -75,7 +75,7 @@ export default function FleetCard({ name, image, passengers, luggage, features, 
 
                     {/* CTA Button */}
                     <Button className="w-full bg-transparent hover:bg-amber-600 text-white border border-white/20 hover:border-amber-600 font-serif tracking-widest text-xs uppercase h-12 rounded-none transition-all group-hover:shadow-[0_0_20px_rgba(217,119,6,0.2)]">
-                        View Details
+                        View {name} Details
                     </Button>
                 </div>
             </div>

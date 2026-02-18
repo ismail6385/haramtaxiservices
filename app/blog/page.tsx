@@ -55,7 +55,7 @@ export default function BlogIndexPage() {
                             <CardFooter>
                                 <Link href={`/blog/${post.slug}`} className="w-full">
                                     <Button variant="outline" className="w-full hover:bg-teal-50 hover:text-teal-600 hover:border-teal-200 group">
-                                        Read More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                        Read: {post.title.length > 30 ? post.title.slice(0, 30) + '...' : post.title} <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                     </Button>
                                 </Link>
                             </CardFooter>

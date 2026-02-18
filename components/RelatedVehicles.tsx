@@ -81,7 +81,7 @@ export default function RelatedVehicles({ currentVehicle }: RelatedVehiclesProps
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">{vehicle.name}</h3>
                                     <p className="text-gray-600 text-sm mb-4">{vehicle.description}</p>
                                     <div className="flex items-center text-teal-500 font-semibold">
-                                        View Details <ArrowRight className="w-4 h-4 ml-2" />
+                                        View {vehicle.name} Details <ArrowRight className="w-4 h-4 ml-2" />
                                     </div>
                                 </div>
                             </div>

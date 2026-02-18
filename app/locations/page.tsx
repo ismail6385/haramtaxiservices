@@ -548,7 +548,7 @@ export default function LocationsPage() {
                                                 ))}
                                             </div>
                                             <div className="flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
-                                                View Details
+                                                Taxi in {location.name}
                                                 <ArrowRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
                                             </div>
                                         </div>
@@ -587,7 +587,7 @@ export default function LocationsPage() {
                                             <div className="p-6">
                                                 <p className="text-gray-600 mb-4">{location.description}</p>
                                                 <div className="flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
-                                                    View Details
+                                                    Taxi in {location.name}
                                                     <ArrowRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
                                                 </div>
                                             </div>

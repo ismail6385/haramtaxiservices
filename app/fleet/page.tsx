@@ -195,7 +195,7 @@ export default function FleetPage() {
                                     {/* CTA */}
                                     <Button asChild className="w-full bg-teal-500 hover:bg-teal-600 text-white group-hover:shadow-lg transition-all">
                                         <Link href={vehicle.href}>
-                                            View Details
+                                            View {vehicle.name} Details
                                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                         </Link>
                                     </Button>
