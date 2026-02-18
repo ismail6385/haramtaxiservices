@@ -13,6 +13,7 @@ export interface RouteData {
     distance: string;
     duration: string;
     content: string;
+    image?: string;
     pricing: RoutePricing[];
     faqs: { question: string; answer: string }[];
 }
@@ -37,6 +38,21 @@ export const routesData: RouteData[] = [
             { question: "How much is a taxi from Jeddah Airport to Makkah?", answer: "Prices start from 250 SAR for a Camry and 450 SAR for a GMC Yukon." },
             { question: "Do you pick up from the New Terminal 1?", answer: "Yes, we provide pickups from all Jeddah Airport terminals." }
         ]
+    },
+    {
+        slug: "jeddah-to-madinah",
+        title: "Taxi Jeddah to Madinah | 2026 Rates",
+        description: "Book a taxi from Jeddah City/Airport to Madinah. Direct transfer, comfortable vehicles. Fixed prices starting from 450 SAR.",
+        h1: "Jeddah to Madinah Taxi Service",
+        distance: "400 km",
+        duration: "4 hours",
+        content: "Travel from Jeddah to Madinah comfortably. Whether you are in a Jeddah hotel or arriving at the airport, we provide direct transfers to your Madinah hotel via the fast Hijrah Highway.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "450 SAR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "Hyundai Staria", price: "550 SR", capacity: "7 Pax", luggage: "5 Bags" },
+            { vehicle: "GMC Yukon", price: "750 SR", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: []
     },
     {
         slug: "makkah-to-madinah",
@@ -78,6 +94,21 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "makkah-to-jeddah-airport",
+        title: "Makkah to Jeddah Airport Taxi | Departure Transfer",
+        description: "Book your return taxi from Makkah to Jeddah Airport. Reliable pickup from Clock Tower, Aziziyah, and all Makkah hotels.",
+        h1: "Makkah to Jeddah Airport (KAIA) Taxi",
+        distance: "100 km",
+        duration: "1 hour 15 minutes",
+        content: "Same as our Makkah Hotel to Airport service. We ensure you reach the appropriate terminal (North, South, or Hajj Terminal) comfortably and on time.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "200 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "Hyundai Staria", price: "250 SR", capacity: "7 Pax", luggage: "5 Bags" },
+            { vehicle: "GMC Yukon", price: "400 SR", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: []
+    },
+    {
         slug: "madinah-hotel-to-jeddah-airport",
         title: "Madinah to Jeddah Airport Taxi | Direct Transfer",
         description: "Book a direct taxi from Madinah Hotel to Jeddah Airport. Fast and comfortable via Hijrah Highway. Prices start from 450 SAR.",
@@ -107,9 +138,223 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "150 SR", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "Hyundai Staria", price: "200 SR", capacity: "7 Pax", luggage: "5 Bags" },
-            { vehicle: "Toyota Hiace", price: "200 SR", capacity: "11 Pax", luggage: "10 Bags" },
             { vehicle: "GMC Yukon", price: "250 SR", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Coaster", price: "350 SR", capacity: "17 Pax", luggage: "15 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "dammam-to-makkah",
+        title: "Dammam to Makkah Taxi | Long Distance Transfer",
+        description: "Private taxi from Dammam/Khobar/Dhahran to Makkah. Comfortable long-distance travel.",
+        h1: "Dammam to Makkah Taxi Transfer",
+        distance: "1,250 km",
+        duration: "12-13 hours",
+        content: "A premium long-distance service for those who prefer road travel over flying. We provide spacious vehicles like GMC Yukon for this long journey.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "2500 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "3500 SR", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "riyadh-to-makkah",
+        title: "Riyadh to Makkah Taxi | Intercity Transfer",
+        description: "Travel from Riyadh to Makkah by private taxi. Door-to-door service for individuals and families.",
+        h1: "Riyadh to Makkah Taxi Service",
+        distance: "870 km",
+        duration: "9-10 hours",
+        content: "Comfortable intercity transfer from Riyadh to Makkah. Drivers experienced in long-distance travel ensure a safe journey.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "1800 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "2500 SR", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "tabuk-to-jordan-border",
+        title: "Tabuk to Jordan Border Taxi Transfer",
+        description: "Taxi service from Tabuk to Halat Ammar or Haql border crossings. Reliable border transfer.",
+        h1: "Tabuk to Jordan Border Transfer",
+        distance: "100-200 km",
+        duration: "1-2 hours",
+        content: "Crossing into Jordan? We provide transfers from Tabuk city/airport to the Halat Ammar border or Al Durra border (Haql).",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "400 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "700 SR", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "alula-to-madinah",
+        title: "AlUla to Madinah Taxi Transfer",
+        description: "Scenic drive from AlUla to Madinah. Visit the Prophet's Mosque after your tour of Hegra.",
+        h1: "AlUla to Madinah Taxi Service",
+        distance: "330 km",
+        duration: "3.5 hours",
+        content: "Private transfer from AlUla's resorts to Madinah. Enjoy the desert landscapes in comfort.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "600 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "900 SR", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "najran-to-yemen-border",
+        title: "Najran to Yemen Border (Wadeeah) Taxi",
+        description: "Transport from Najran to Al Wadeeah border crossing.",
+        h1: "Najran to Yemen Border Taxi",
+        distance: "350 km",
+        duration: "4 hours",
+        content: "Specialized transfer service to the Al Wadeeah border crossing into Yemen.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "600 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "Myundi Staria", price: "800 SR", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "hafr-to-kuwait-border",
+        title: "Hafr Al Batin to Kuwait Border Taxi",
+        description: "Taxi from Hafr Al Batin to Al Raqi (Kuwait border).",
+        h1: "Hafr Al Batin to Kuwait Border Transfer",
+        distance: "100 km",
+        duration: "1 hour",
+        content: "Short and convenient ride to the Kuwait border crossing.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "300 SR", capacity: "4 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "al-ahsa-to-uae",
+        title: "Al Ahsa to UAE Border (Batha) Taxi",
+        description: "Taxi from Al Ahsa / Hofuf to Al Batha border (UAE).",
+        h1: "Al Ahsa to UAE Border Transfer",
+        distance: "300 km",
+        duration: "3 hours",
+        content: "Transfer service to the UAE border at Batha.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "600 SR", capacity: "4 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "hail-to-riyadh",
+        title: "Hail to Riyadh Taxi Service",
+        description: "Travel from Hail to Riyadh by road.",
+        h1: "Hail to Riyadh Taxi Transfer",
+        distance: "640 km",
+        duration: "6 hours",
+        content: "Long-distance taxi from Hail to Riyadh.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "1200 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "1800 SR", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "jazan-to-abha",
+        title: "Jazan to Abha Taxi Transfer",
+        description: "Scenic drive from Jazan to Abha.",
+        h1: "Jazan to Abha Taxi Service",
+        distance: "200 km",
+        duration: "2.5 hours",
+        content: "Travel from the coast of Jazan to the mountains of Abha.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "500 SR", capacity: "4 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "hafr-to-riyadh",
+        title: "Hafr Al Batin to Riyadh Taxi",
+        description: "Taxi from Hafr Al Batin to Riyadh.",
+        h1: "Hafr Al Batin to Riyadh Transfer",
+        distance: "500 km",
+        duration: "5 hours",
+        content: "Connect from the Northern region to the capital.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "1000 SR", capacity: "4 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "al-ahsa-to-qatar",
+        title: "Al Ahsa to Qatar Border (Salwa) Taxi",
+        description: "Taxi from Al Ahsa to Salwa border (Qatar).",
+        h1: "Al Ahsa to Qatar Border Transfer",
+        distance: "150 km",
+        duration: "1.5 hours",
+        content: "Quick transfer to the Qatar border.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "400 SR", capacity: "4 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "buraidah-to-unayzah",
+        title: "Buraidah to Unayzah Taxi",
+        description: "Local transfer between Qassim cities.",
+        h1: "Buraidah to Unayzah Transfer",
+        distance: "30 km",
+        duration: "30 minutes",
+        content: "Local taxi service in Al Qassim.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "100 SR", capacity: "4 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "yanbu-to-madinah",
+        title: "Yanbu to Madinah Taxi Service",
+        description: "Transfer from Yanbu industrial city or airport to Madinah.",
+        h1: "Yanbu to Madinah Taxi Transfer",
+        distance: "230 km",
+        duration: "2.5 hours",
+        content: "Travel from the Red Sea coast to the Holy City of Madinah.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "500 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "700 SR", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "abha-to-khamis",
+        title: "Abha to Khamis Mushait Taxi",
+        description: "Local taxi between Abha and Khamis Mushait.",
+        h1: "Abha to Khamis Mushait Transfer",
+        distance: "30 km",
+        duration: "30 minutes",
+        content: "Quick local transfer.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "100 SR", capacity: "4 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "arar-to-iraq-border",
+        title: "Arar to Iraq Border (Jadidah) Taxi",
+        description: "Transfer from Arar to the Iraq border (Jadidah Arar).",
+        h1: "Arar to Iraq Border Transfer",
+        distance: "60 km",
+        duration: "45 minutes",
+        content: "Reliable transfer to the border crossing.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "200 SR", capacity: "4 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "qassim-to-riyadh",
+        title: "Qassim to Riyadh Taxi Transfer",
+        description: "Travel from Buraidah/Qassim to Riyadh.",
+        h1: "Qassim to Riyadh Taxi Service",
+        distance: "350 km",
+        duration: "3.5 hours",
+        content: "Intercity transfer from Qassim region to Riyadh.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "700 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "1000 SR", capacity: "7 Pax", luggage: "5 Bags" },
         ],
         faqs: []
     },
@@ -124,9 +369,6 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "120 SR", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "Hyundai Staria", price: "150 SR", capacity: "7 Pax", luggage: "5 Bags" },
-            { vehicle: "Toyota Hiace", price: "200 SR", capacity: "11 Pax", luggage: "10 Bags" },
-            { vehicle: "GMC Yukon", price: "250 SR", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Coaster", price: "300 SR", capacity: "17 Pax", luggage: "15 Bags" },
         ],
         faqs: []
     },
@@ -141,9 +383,6 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "120 SR", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "Hyundai Staria", price: "150 SR", capacity: "7 Pax", luggage: "5 Bags" },
-            { vehicle: "Toyota Hiace", price: "200 SR", capacity: "11 Pax", luggage: "10 Bags" },
-            { vehicle: "GMC Yukon", price: "250 SR", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Coaster", price: "300 SR", capacity: "17 Pax", luggage: "15 Bags" },
         ],
         faqs: []
     },
@@ -158,13 +397,9 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "250 SR", capacity: "4 Pax", luggage: "N/A" },
             { vehicle: "Hyundai Staria", price: "300 SR", capacity: "7 Pax", luggage: "N/A" },
-            { vehicle: "Toyota Hiace", price: "350 SR", capacity: "11 Pax", luggage: "N/A" },
             { vehicle: "GMC Yukon", price: "400 SR", capacity: "7 Pax", luggage: "N/A" },
-            { vehicle: "Toyota Coaster", price: "500 SR", capacity: "17 Pax", luggage: "N/A" },
         ],
-        faqs: [
-            { question: "Does the driver speak English?", answer: "Yes, most of our drivers speak English and Urdu/Hindi." }
-        ]
+        faqs: []
     },
     {
         slug: "madinah-ziyarat-tour",
@@ -177,7 +412,6 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "200 SR", capacity: "4 Pax", luggage: "N/A" },
             { vehicle: "Hyundai Staria", price: "250 SR", capacity: "7 Pax", luggage: "N/A" },
-            { vehicle: "Toyota Hiace", price: "300 SR", capacity: "11 Pax", luggage: "N/A" },
             { vehicle: "GMC Yukon", price: "300 SR", capacity: "7 Pax", luggage: "N/A" },
         ],
         faqs: []
@@ -192,15 +426,9 @@ export const routesData: RouteData[] = [
         content: "If you are searching for a reliable partner for your Umrah travel agency needs, look no further. We specialize in providing seamless ground transportation for pilgrims. Whether you are a travel agent looking for a trusted local transporter or a pilgrim organizing your own group, we offer the professional service expected from a top-tier Umrah travel agency.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Contact Us", capacity: "4 Pax", luggage: "2 Bags" },
-            { vehicle: "Hyundai Staria", price: "Contact Us", capacity: "7 Pax", luggage: "5 Bags" },
-            { vehicle: "Toyota Hiace", price: "Contact Us", capacity: "11 Pax", luggage: "10 Bags" },
             { vehicle: "GMC Yukon", price: "Contact Us", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Coaster", price: "Contact Us", capacity: "17 Pax", luggage: "15 Bags" },
         ],
-        faqs: [
-            { question: "Do you work with travel agencies?", answer: "Yes, we partner with Umrah travel agencies worldwide to provide ground transport." },
-            { question: "Can I book transport for a large group?", answer: "Absolutely. We have a fleet of Coasters and buses for large Umrah groups." }
-        ]
+        faqs: []
     },
     {
         slug: "hajj-travel-agency",
@@ -212,12 +440,9 @@ export const routesData: RouteData[] = [
         content: "Hajj requires precise logistics and timing. As a specialized Hajj travel agency transport provider, we understand the critical nature of these days. We offer dedicated transport services for Hajj groups, ensuring you move between Mina, Arafat, and Muzdalifah comfortably and on time.",
         pricing: [
             { vehicle: "GMC Yukon", price: "Seasonal", capacity: "7 Pax", luggage: "Limited" },
-            { vehicle: "Toyota Coaster", price: "Seasonal", capacity: "17 Pax", luggage: "Limited" },
             { vehicle: "Luxury Bus", price: "Seasonal", capacity: "49 Pax", luggage: "Large" },
         ],
-        faqs: [
-            { question: "Do you offer transport during Hajj days?", answer: "Yes, but Hajj transport must be booked months in advance due to permits." }
-        ]
+        faqs: []
     },
     {
         slug: "umrah-transport",
@@ -229,10 +454,7 @@ export const routesData: RouteData[] = [
         content: "Reliable Umrah transport is the key to a stress-free pilgrimage. We provide dedicated transport for Umrah, connecting you from Jeddah Airport to Makkah, and onwards to Madinah. Our drivers are trained to serve pilgrims with respect and patience.",
         pricing: [
             { vehicle: "Toyota Camry", price: "200 SR", capacity: "4 Pax", luggage: "2 Bags" },
-            { vehicle: "Hyundai Staria", price: "250 SR", capacity: "7 Pax", luggage: "5 Bags" },
-            { vehicle: "Toyota Hiace", price: "300 SR", capacity: "11 Pax", luggage: "10 Bags" },
             { vehicle: "GMC Yukon", price: "400 SR", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Coaster", price: "450 SR", capacity: "17 Pax", luggage: "15 Bags" },
         ],
         faqs: []
     },
@@ -246,12 +468,27 @@ export const routesData: RouteData[] = [
         content: "For those seeking the highest level of comfort, our luxury transport services offer late-model GMC Yukon XL and luxury vans. Enjoy privacy glass, premium leather seating, and experienced chauffeurs who understand the needs of VIP guests.",
         pricing: [
             { vehicle: "GMC Yukon XL", price: "450 SR", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Chevrolet Suburban", price: "450 SR", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Ford Expedition", price: "400 SR", capacity: "7 Pax", luggage: "5 Bags" },
-            { vehicle: "Lexus ES", price: "Contact Us", capacity: "3 Pax", luggage: "2 Bags" },
+        ],
+        faqs: []
+    },
+    {
+        slug: "madinah-to-makkah",
+        title: "Madinah to Makkah Taxi | Private Transfer 2026",
+        description: "Book a private taxi from Madinah to Makkah. Comfortable ride via Hijrah Highway. Fixed prices starting from 600 SAR. Stop at Meeqat included.",
+        h1: "Madinah to Makkah Taxi Service",
+        distance: "450 km",
+        duration: "4 hours 30 minutes",
+        content: "Travel from the Prophet's City to the Holy City of Makkah. Our experienced drivers take you via the fast Hijrah Highway with an optional stop at Meeqat Dhul Hulayfah for those who wish to enter Ihram. Comfortable, air-conditioned vehicles ensure a smooth journey between the two holiest cities.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "600 SR", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "Hyundai Staria", price: "700 SR", capacity: "7 Pax", luggage: "5 Bags" },
+            { vehicle: "Toyota Hiace", price: "750 SR", capacity: "11 Pax", luggage: "10 Bags" },
+            { vehicle: "GMC Yukon", price: "950 SR", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Coaster", price: "1300 SR", capacity: "17 Pax", luggage: "15 Bags" },
         ],
         faqs: [
-            { question: "Are your VIP cars tinted?", answer: "Yes, all our luxury transport vehicles have privacy tinting." }
+            { question: "Can we stop at Meeqat on the way?", answer: "Yes, our drivers will stop at Meeqat Dhul Hulayfah for you to enter Ihram before proceeding to Makkah." },
+            { question: "How long does it take from Madinah to Makkah?", answer: "The drive takes approximately 4.5 hours via the Hijrah Highway." }
         ]
     },
     {
@@ -264,8 +501,6 @@ export const routesData: RouteData[] = [
         content: "Staying in Aziziyah or Exotels? Our hotel to Haram transport service ensures you never miss a prayer. Booking a private daily transfer allows you to move between your hotel and the Haram with ease, avoiding the crowded public buses.",
         pricing: [
             { vehicle: "Toyota Camry", price: "50 SR", capacity: "4 Pax", luggage: "None" },
-            { vehicle: "Hyundai Staria", price: "80 SR", capacity: "7 Pax", luggage: "None" },
-            { vehicle: "Toyota Hiace", price: "100 SR", capacity: "11 Pax", luggage: "None" },
             { vehicle: "GMC Yukon", price: "150 SR", capacity: "7 Pax", luggage: "None" },
         ],
         faqs: []
