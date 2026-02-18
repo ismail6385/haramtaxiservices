@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
 
 const resendApiKey = process.env.RESEND_API_KEY;
-const TRUSTPILOT_LINK = 'https://www.trustpilot.com/review/taxiserviceksa.com'; // Replace with actual link
+const TRUSTPILOT_LINK = 'https://www.trustpilot.com/review/haramtaxiservice.com';
 
 if (!resendApiKey) {
     console.error('RESEND_API_KEY is not set');
@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
 
         switch (status) {
             case 'confirmed':
-                subject = '✅ Booking Confirmed - Umrah Taxi';
+                subject = '✅ Booking Confirmed - Haram Taxi';
                 htmlContent = `
                     <!DOCTYPE html>
                     <html>
@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
                 break;
 
             case 'cancelled':
-                subject = '❌ Booking Cancelled - Umrah Taxi';
+                subject = '❌ Booking Cancelled - Haram Taxi';
                 htmlContent = `
                     <!DOCTYPE html>
                     <html>
@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
                 break;
 
             case 'completed':
-                subject = '🌟 How was your ride? - Umrah Taxi';
+                subject = '🌟 How was your ride? - Haram Taxi';
                 htmlContent = `
                     <!DOCTYPE html>
                     <html>
@@ -95,7 +95,7 @@ export async function POST(request: NextRequest) {
                                 <p>Dear <strong>${customerName}</strong>,</p>
                                 <p>We hope you had a pleasant journey and a blessed Umrah!</p>
                                 <p>Your feedback helps us improve. If you enjoyed our service, please consider leaving us a review.</p>
-                                <p style="font-size: 14px; color: #666; text-align: center;">Thank you for choosing Umrah Taxi.</p>
+                                <p style="font-size: 14px; color: #666; text-align: center;">Thank you for choosing Haram Taxi Service.</p>
                             </div>
                         </div>
                     </body>
@@ -120,6 +120,6 @@ export async function POST(request: NextRequest) {
 
     } catch (error: any) {
         console.error('Error sending status email:', error);
-        return NextResponse.json({ error: error.message }, { status: 500 });
+        return NextResponse.json({ error: 'Failed to send status email' }, { status: 500 });
     }
 }

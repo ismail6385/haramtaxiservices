@@ -19,6 +19,17 @@ if (!adminEmail) {
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
+// Helper function to escape HTML to prevent XSS in emails
+function escapeHtml(str: string | undefined | null): string {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 // Helper function to format booking ID
 function formatBookingId(id: string | undefined): string {
     if (!id) return 'N/A';
@@ -287,10 +298,10 @@ export async function POST(request: NextRequest) {
                         </div>
                         
                         <div class="content">
-                            <p class="greeting">Hi ${booking.customer_name},</p>
-                            
+                            <p class="greeting">Hi ${escapeHtml(booking.customer_name)},</p>
+
                             <p style="color: #4b5563; font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
-                                We've received your booking request for a trip from <strong>${booking.pickup_location}</strong> to <strong>${booking.destination}</strong>.
+                                We've received your booking request for a trip from <strong>${escapeHtml(booking.pickup_location)}</strong> to <strong>${escapeHtml(booking.destination)}</strong>.
                             </p>
 
                             ${confirmationUrl ? `
@@ -307,15 +318,15 @@ export async function POST(request: NextRequest) {
                             <div class="details-grid">
                                 <div class="detail-item">
                                     <span class="label">Date & Time</span>
-                                    <span class="value">${booking.pickup_date} at ${booking.pickup_time}</span>
+                                    <span class="value">${escapeHtml(booking.pickup_date)} at ${escapeHtml(booking.pickup_time)}</span>
                                 </div>
                                 <div class="detail-item">
                                     <span class="label">Vehicle</span>
-                                    <span class="value">${booking.vehicle_type}</span>
+                                    <span class="value">${escapeHtml(booking.vehicle_type)}</span>
                                 </div>
                                 <div class="detail-item">
                                     <span class="label">Passengers</span>
-                                    <span class="value">${booking.passengers}</span>
+                                    <span class="value">${escapeHtml(String(booking.passengers))}</span>
                                 </div>
                                 <div class="detail-item">
                                     <span class="label">Booking Reference</span>
@@ -490,15 +501,15 @@ export async function POST(request: NextRequest) {
                                 <div class="section-title">Customer Details</div>
                                 <div class="row">
                                     <div class="key">Name</div>
-                                    <div class="value">${booking.customer_name}</div>
+                                    <div class="value">${escapeHtml(booking.customer_name)}</div>
                                 </div>
                                 <div class="row">
                                     <div class="key">Phone</div>
-                                    <div class="value">${booking.customer_phone}</div>
+                                    <div class="value">${escapeHtml(booking.customer_phone)}</div>
                                 </div>
                                 <div class="row">
                                     <div class="key">Email</div>
-                                    <div class="value">${booking.customer_email}</div>
+                                    <div class="value">${escapeHtml(booking.customer_email)}</div>
                                 </div>
                             </div>
 
@@ -506,23 +517,23 @@ export async function POST(request: NextRequest) {
                                 <div class="section-title">Trip Information</div>
                                 <div class="row">
                                     <div class="key">From</div>
-                                    <div class="value">${booking.pickup_location}</div>
+                                    <div class="value">${escapeHtml(booking.pickup_location)}</div>
                                 </div>
                                 <div class="row">
                                     <div class="key">To</div>
-                                    <div class="value">${booking.destination}</div>
+                                    <div class="value">${escapeHtml(booking.destination)}</div>
                                 </div>
                                 <div class="row">
                                     <div class="key">Date & Time</div>
-                                    <div class="value">${booking.pickup_date} @ ${booking.pickup_time}</div>
+                                    <div class="value">${escapeHtml(booking.pickup_date)} @ ${escapeHtml(booking.pickup_time)}</div>
                                 </div>
                                 <div class="row">
                                     <div class="key">Vehicle</div>
-                                    <div class="value">${booking.vehicle_type}</div>
+                                    <div class="value">${escapeHtml(booking.vehicle_type)}</div>
                                 </div>
                                 <div class="row">
                                     <div class="key">Passenger(s)</div>
-                                    <div class="value">${booking.passengers}</div>
+                                    <div class="value">${escapeHtml(String(booking.passengers))}</div>
                                 </div>
                             </div>
                             
@@ -581,12 +592,9 @@ export async function POST(request: NextRequest) {
         }
         console.error('=====================================');
 
-        // Return detailed error to client
+        // Return safe error to client (no stack traces or internal details)
         return NextResponse.json({
-            error: 'Failed to send emails',
-            message: error.message || 'Unknown error',
-            name: error.name || 'Error',
-            details: error.response ? JSON.stringify(error.response) : error.stack || 'No additional details'
+            error: 'Failed to send emails. Please try again or contact support.',
         }, { status: 500 });
     }
 }

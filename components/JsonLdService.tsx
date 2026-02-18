@@ -10,11 +10,11 @@ export default function JsonLdService() {
                 "description": "Reliable airport transfers from King Abdulaziz International Airport (Jeddah) and King Khalid International Airport (Riyadh).",
                 "provider": {
                     "@type": "LocalBusiness",
-                    "name": "Taxi Service KSA"
+                    "name": "Haram Taxi Service"
                 },
                 "areaServed": "Saudi Arabia",
                 "serviceType": "Airport Transfer",
-                "url": "https://taxiserviceksa.com/locations/jeddah"
+                "url": "https://haramtaxiservice.com/locations/jeddah"
             },
             {
                 "@type": "TaxiService",
@@ -22,11 +22,11 @@ export default function JsonLdService() {
                 "description": "Dedicated transport for Umrah pilgrims between Makkah, Madinah, and Jeddah.",
                 "provider": {
                     "@type": "LocalBusiness",
-                    "name": "Taxi Service KSA"
+                    "name": "Haram Taxi Service"
                 },
                 "areaServed": ["Makkah", "Madinah"],
                 "serviceType": "Religious Travel",
-                "url": "https://taxiserviceksa.com/locations/makkah"
+                "url": "https://haramtaxiservice.com/locations/makkah"
             },
             {
                 "@type": "TaxiService",
@@ -34,11 +34,11 @@ export default function JsonLdService() {
                 "description": "VIP and corporate chauffeur services with luxury vehicles like GMC Yukon and BMW.",
                 "provider": {
                     "@type": "LocalBusiness",
-                    "name": "Taxi Service KSA"
+                    "name": "Haram Taxi Service"
                 },
                 "areaServed": "Saudi Arabia",
                 "serviceType": "VIP Transport",
-                "url": "https://taxiserviceksa.com/fleet"
+                "url": "https://haramtaxiservice.com/fleet"
             }
         ]
     };

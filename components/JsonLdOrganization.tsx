@@ -21,10 +21,10 @@ export default function JsonLdOrganization() {
         ],
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+966-50-000-0000",
+            "telephone": "+1-307-346-4572",
             "contactType": "customer service",
             "areaServed": "SA",
-            "availableLanguage": ["en", "ar"]
+            "availableLanguage": ["en", "ar", "ur"]
         }
     };
 

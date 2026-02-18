@@ -27,10 +27,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: route.title,
         description: route.description,
+        alternates: {
+            canonical: `https://haramtaxiservice.com/routes/${slug}`,
+        },
         openGraph: {
             title: route.title,
             description: route.description,
             type: 'website',
+            url: `https://haramtaxiservice.com/routes/${slug}`,
         },
     };
 }

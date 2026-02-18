@@ -1,4 +1,4 @@
-import { createServerClient, type CookieOptions } from '@supabase/ssr';
+import { createServerClient } from '@supabase/ssr';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 import { supabaseAdmin } from '@/lib/supabase-admin';
@@ -9,19 +9,39 @@ export async function DELETE(
 ) {
     const id = params.id;
 
+    // Validate ID format (UUID)
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    if (!uuidRegex.test(id)) {
+        return NextResponse.json({ error: 'Invalid booking ID format' }, { status: 400 });
+    }
+
     try {
-        // 1. Verify Authentication (ensure user is logged in as admin)
-        // We can use the standard client to check the session from the cookie
-        // Since we don't have a robust role system set up in the db yet, we'll just check for a valid session for now.
-        // In a production app, you'd check if session.user.role === 'admin'
-        // const supabase = createRouteHandlerClient({ cookies });
-        // const { data: { session } } = await supabase.auth.getSession();
+        // Verify authentication via Supabase session cookie
+        const cookieStore = await cookies();
+        const supabase = createServerClient(
+            process.env.NEXT_PUBLIC_SUPABASE_URL!,
+            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+            {
+                cookies: {
+                    getAll() {
+                        return cookieStore.getAll();
+                    },
+                    setAll(cookiesToSet) {
+                        cookiesToSet.forEach(({ name, value, options }) => {
+                            cookieStore.set(name, value, options);
+                        });
+                    },
+                },
+            }
+        );
 
-        // if (!session) {
-        //   return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-        // }
+        const { data: { session } } = await supabase.auth.getSession();
 
-        // 2. Perform Delete using Admin Client (Bypasses RLS)
+        if (!session) {
+            return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+        }
+
+        // Perform Delete using Admin Client
         const { error } = await supabaseAdmin
             .from('bookings')
             .delete()
@@ -29,7 +49,7 @@ export async function DELETE(
 
         if (error) {
             console.error("Supabase Delete Error:", error);
-            return NextResponse.json({ error: error.message }, { status: 500 });
+            return NextResponse.json({ error: 'Failed to delete booking' }, { status: 500 });
         }
 
         return NextResponse.json({ message: 'Booking deleted successfully' });

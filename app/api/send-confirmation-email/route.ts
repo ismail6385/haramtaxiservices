@@ -112,11 +112,11 @@ export async function POST(request: NextRequest) {
                         
                         
                         <p style="margin-top: 30px; font-size: 14px; color: #666; text-align: center;">
-                            If you have any questions, feel free to reach out to us at <a href="mailto:umrahtaxi22@gmail.com" style="color: #d97706; text-decoration: none; font-weight: 600;">umrahtaxi22@gmail.com</a>
+                            If you have any questions, feel free to reach out to us at <a href="mailto:haramtaxiservice@gmail.com" style="color: #d97706; text-decoration: none; font-weight: 600;">haramtaxiservice@gmail.com</a>
                         </p>
                     </div>
                     <div class="footer">
-                        <p><strong>Umrah Taxi</strong></p>
+                        <p><strong>Haram Taxi Service</strong></p>
                         <p>Premium Umrah & Hajj Transport Services</p>
                         <p>Jeddah | Makkah | Madinah</p>
                     </div>
