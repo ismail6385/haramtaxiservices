@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Shield, Users, Clock, Star, Award, Target, Heart, TrendingUp, Car, MapPin, Headphones } from 'lucide-react';
@@ -95,8 +95,29 @@ export default function AboutPage() {
         }
     ];
 
+    const organizationSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Haram Taxi Service",
+        "url": "https://haramtaxiservice.com",
+        "logo": "https://haramtaxiservice.com/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+13073464572",
+            "contactType": "customer service",
+            "areaServed": "SA",
+            "availableLanguage": ["English", "Arabic", "Urdu"]
+        },
+        "sameAs": [
+            "https://www.facebook.com/haramtaxiservice",
+            "https://twitter.com/haramtaxi",
+            "https://www.instagram.com/haramtaxi"
+        ]
+    };
+
     return (
         <div className="bg-white min-h-screen pt-32 pb-20 relative text-gray-900 overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
             {/* Background Decoration */}
             <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -129,11 +150,11 @@ export default function AboutPage() {
 
                         <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                             <p>
-                                Our journey began in 2020 during a time when reliable, transparent transportation for pilgrims and travelers in Saudi Arabia was inconsistent. We witnessed firsthand the challenges faced by visitors to the Holy Cities—unpredictable pricing, language barriers, drivers unfamiliar with prayer times, and the stress of navigating unfamiliar routes during what should be a spiritually peaceful journey.
+                                Our journey began in 2020 during a time when reliable, transparent transportation for pilgrims and travelers in Saudi Arabia was inconsistent. We witnessed firsthand the challenges faced by visitors to the Holy Citiesâ€”unpredictable pricing, language barriers, drivers unfamiliar with prayer times, and the stress of navigating unfamiliar routes during what should be a spiritually peaceful journey.
                             </p>
 
                             <p>
-                                The founder of Haram Taxi Service recognized a simple truth: <strong>travelers needed a transportation partner they could trust</strong>. Someone who understood that arriving at Fajr on time isn&apos;t just about punctuality—it&apos;s about fulfilling an obligation. Someone who knew that the journey from Jeddah Airport to Makkah after a 12-hour flight should be comfortable, not stressful.
+                                The founder of Haram Taxi Service recognized a simple truth: <strong>travelers needed a transportation partner they could trust</strong>. Someone who understood that arriving at Fajr on time isn&apos;t just about punctualityâ€”it&apos;s about fulfilling an obligation. Someone who knew that the journey from Jeddah Airport to Makkah after a 12-hour flight should be comfortable, not stressful.
                             </p>
 
                             <div className="bg-white rounded-xl p-8 border-l-4 border-teal-500 my-8">
@@ -163,7 +184,7 @@ export default function AboutPage() {
                             </p>
 
                             <p className="text-gray-600 italic border-l-4 border-teal-200 pl-6 py-2">
-                                &quot;We don&apos;t just transport passengers. We honor the trust you place in us to be part of your journey—whether it&apos;s your first Umrah or a visit to historical Islamic sites. That responsibility drives everything we do.&quot;
+                                &quot;We don&apos;t just transport passengers. We honor the trust you place in us to be part of your journeyâ€”whether it&apos;s your first Umrah or a visit to historical Islamic sites. That responsibility drives everything we do.&quot;
                             </p>
                         </div>
                     </div>
@@ -385,7 +406,7 @@ export default function AboutPage() {
                                     <div className="flex-1">
                                         <h3 className="text-2xl font-bold text-gray-900 mb-3">Booking Request</h3>
                                         <p className="text-gray-700 mb-4 leading-relaxed">
-                                            Submit your ride details through our simple booking form: pickup location, destination, date, time, and number of passengers. You&apos;ll receive an instant quote—no hidden fees, no meter guesswork.
+                                            Submit your ride details through our simple booking form: pickup location, destination, date, time, and number of passengers. You&apos;ll receive an instant quoteâ€”no hidden fees, no meter guesswork.
                                         </p>
                                         <div className="bg-teal-50 p-4 rounded-lg">
                                             <p className="text-sm text-teal-800"><strong>What we need:</strong> Flight number (for airport pickups), hotel name, preferred pickup time, and any special requests (child seats, luggage assistance).</p>
@@ -408,7 +429,7 @@ export default function AboutPage() {
                                             Within 24 hours (usually much faster), you receive a confirmation via WhatsApp or email with your driver&apos;s name, vehicle details, and contact number. For airport pickups, we track your flight status in real-time.
                                         </p>
                                         <div className="bg-teal-50 p-4 rounded-lg">
-                                            <p className="text-sm text-teal-800"><strong>Peace of mind:</strong> If your flight is delayed, we adjust automatically—no extra charges for waiting.</p>
+                                            <p className="text-sm text-teal-800"><strong>Peace of mind:</strong> If your flight is delayed, we adjust automaticallyâ€”no extra charges for waiting.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -557,6 +578,40 @@ export default function AboutPage() {
                     </Accordion>
                 </div>
 
+                {/* Service Network Silo Links */}
+                <div className="mb-24">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 font-serif">Explore Our Network</h2>
+                        <p className="text-gray-600">Connecting you to the holiest sites in Islam</p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all border border-gray-100">
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Prime Locations</h3>
+                            <ul className="space-y-3">
+                                <li><Link href="/locations/makkah" className="text-teal-600 hover:text-teal-800 hover:underline">Taxi in Makkah</Link></li>
+                                <li><Link href="/locations/madinah" className="text-teal-600 hover:text-teal-800 hover:underline">Taxi in Madinah</Link></li>
+                                <li><Link href="/locations/jeddah" className="text-teal-600 hover:text-teal-800 hover:underline">Taxi in Jeddah</Link></li>
+                            </ul>
+                        </div>
+                        <div className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all border border-gray-100">
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Top Routes</h3>
+                            <ul className="space-y-3">
+                                <li><Link href="/routes/jeddah-airport-to-makkah" className="text-teal-600 hover:text-teal-800 hover:underline">Jeddah Airport to Makkah</Link></li>
+                                <li><Link href="/routes/makkah-to-madinah" className="text-teal-600 hover:text-teal-800 hover:underline">Makkah to Madinah</Link></li>
+                                <li><Link href="/routes/madinah-ziyarat-tour" className="text-teal-600 hover:text-teal-800 hover:underline">Madinah Ziyarat</Link></li>
+                            </ul>
+                        </div>
+                        <div className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all border border-gray-100">
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Services</h3>
+                            <ul className="space-y-3">
+                                <li><Link href="/services" className="text-teal-600 hover:text-teal-800 hover:underline">All Services</Link></li>
+                                <li><Link href="/fleet" className="text-teal-600 hover:text-teal-800 hover:underline">Our Fleet</Link></li>
+                                <li><Link href="/blog" className="text-teal-600 hover:text-teal-800 hover:underline">Travel Blog</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 {/* CTA Section */}
                 <div className="relative rounded-3xl overflow-hidden p-12 text-center shadow-2xl">
                     <div className="absolute inset-0 bg-teal-900"></div>
@@ -587,3 +642,4 @@ export default function AboutPage() {
         </div >
     );
 }
+

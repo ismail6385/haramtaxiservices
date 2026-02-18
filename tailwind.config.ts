@@ -19,6 +19,12 @@ const config: Config = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      fontFamily: {
+        // 30% body — Inter (Humanist sans-serif, legible at all sizes)
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        // 10% display — Playfair Display (elegant serif for H1/H2 identity)
+        display: ['var(--font-playfair)', 'Georgia', 'serif'],
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
@@ -60,11 +66,26 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        // Midnight Blue & Amber Brand Colors
+        // ── Brand Color System (60-30-10 Rule) ──────────────────────
+        // 60% Dominant : bg-white / bg-gray-*  (backgrounds)
+        // 30% Secondary: bg-brand-teal          (nav, sections)
+        // 10% Accent   : bg-brand-amber         (CTAs, stars, badges)
+        'brand-teal': {
+          DEFAULT: 'hsl(var(--brand-teal))',
+          light: 'hsl(var(--brand-teal-light))',
+          pale: 'hsl(var(--brand-teal-pale))',
+          dark: 'hsl(var(--brand-teal-dark))',
+        },
+        'brand-amber': {
+          DEFAULT: 'hsl(var(--brand-amber))',
+          light: 'hsl(var(--brand-amber-light))',
+          pale: 'hsl(var(--brand-amber-pale))',
+        },
+        // Legacy tokens (kept for backward compat)
         amber: {
-          DEFAULT: 'hsl(var(--amber))',
-          light: 'hsl(var(--amber-light))',
-          dark: 'hsl(var(--amber-dark))',
+          DEFAULT: 'hsl(var(--brand-amber))',
+          light: 'hsl(var(--brand-amber-light))',
+          dark: 'hsl(38 92% 35%)',
         },
         midnight: {
           DEFAULT: 'hsl(var(--midnight))',

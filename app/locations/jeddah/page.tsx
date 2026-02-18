@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { MapPin, Clock, CheckCircle2, Car, Phone, ArrowRight, Star, AlertCircle, Wallet } from 'lucide-react';
+import { MapPin, Clock, CheckCircle2, Car, Phone, ArrowRight, Star, AlertCircle, Wallet, MessageCircle } from 'lucide-react';
 import {
     Accordion,
     AccordionContent,
@@ -12,6 +12,9 @@ import {
 import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/locations/jeddah',
+    },
     title: 'Taxi Service in Jeddah | Airport Transfer & City Rides - Haram Taxi',
     description: 'Book reliable taxi service in Jeddah, Saudi Arabia. Airport transfers, city tours, and hotel pickups. Available 24/7. Call now for instant booking!',
     keywords: ['taxi service Jeddah', 'Jeddah airport taxi', 'taxi in Jeddah', 'Jeddah to Makkah taxi', 'Jeddah city taxi'],
@@ -28,32 +31,38 @@ export default function JeddahPage() {
         {
             name: 'Airport Transfer',
             description: 'Reliable pickup from King Abdulaziz International Airport (KAIA) to your destination.',
-            icon: Car
+            icon: Car,
+            href: '/routes/jeddah-airport-to-makkah'
         },
         {
             name: 'City Tours',
             description: 'Visit Al-Balad, Jeddah Corniche, and the Red Sea Mall with a local guide.',
-            icon: MapPin
+            icon: MapPin,
+            href: '/services/jeddah-city-tour'
         },
         {
             name: 'Transfer to Makkah',
             description: 'Direct ride to your Makkah hotel or the Haram (approx. 90 minutes).',
-            icon: ArrowRight
+            icon: ArrowRight,
+            href: '/routes/jeddah-airport-to-makkah'
         },
         {
             name: 'Hotel Pickup',
             description: 'Convenient rides from any hotel, resort, or apartment in Jeddah.',
-            icon: MapPin
+            icon: MapPin,
+            href: '/booking'
         },
         {
             name: 'Business Travel',
             description: 'Professional chauffeurs for meetings and corporate events.',
-            icon: Car
+            icon: Car,
+            href: '/services/business-travel'
         },
         {
             name: '24/7 Service',
             description: 'Always available, day or night, for all your transportation needs.',
-            icon: Clock
+            icon: Clock,
+            href: '/contact'
         },
     ];
 
@@ -104,7 +113,7 @@ export default function JeddahPage() {
         "image": "https://haramtaxiservice.com/jeddah-corniche-sunset.webp",
         "@id": "https://haramtaxiservice.com/locations/jeddah",
         "url": "https://haramtaxiservice.com/locations/jeddah",
-        "telephone": "+966-XXX-XXXX",
+        "telephone": "+13073464572",
         "priceRange": "SAR 30-600",
         "address": {
             "@type": "PostalAddress",
@@ -215,15 +224,10 @@ export default function JeddahPage() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <Link href="/booking">
-                                        <Button size="lg" className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg">
-                                            Book Jeddah Taxi Now
-                                        </Button>
-                                    </Link>
-                                    <a href="tel:+966XXXXXXX">
-                                        <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg">
-                                            <Phone className="w-5 h-5 mr-2" />
-                                            Call Now
+                                    <a href="https://wa.me/13073464572?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
+                                            <svg className="w-6 h-6 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>
+                                            Book via WhatsApp
                                         </Button>
                                     </a>
                                 </div>
@@ -440,13 +444,15 @@ export default function JeddahPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {services.map((service, index) => (
-                                <div key={index} className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all">
-                                    <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
-                                        <service.icon className="w-6 h-6 text-teal-500" />
+                                <Link key={index} href={service.href} className="block group">
+                                    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all h-full border border-transparent group-hover:border-teal-100">
+                                        <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-teal-500 transition-colors">
+                                            <service.icon className="w-6 h-6 text-teal-500 group-hover:text-white transition-colors" />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">{service.name}</h3>
+                                        <p className="text-gray-600">{service.description}</p>
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2">{service.name}</h3>
-                                    <p className="text-gray-600">{service.description}</p>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -460,29 +466,90 @@ export default function JeddahPage() {
                             <p className="text-xl text-gray-600">Most requested destinations from Jeddah</p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {popularRoutes.map((route, index) => (
-                                <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <div className="flex-1">
-                                            <div className="text-sm text-gray-600 mb-1">From</div>
-                                            <div className="font-bold text-gray-900">{route.from}</div>
-                                        </div>
-                                        <ArrowRight className="w-6 h-6 text-teal-500 mx-4" />
-                                        <div className="flex-1">
-                                            <div className="text-sm text-gray-600 mb-1">To</div>
-                                            <div className="font-bold text-gray-900">{route.to}</div>
-                                        </div>
+                        <Link href="/routes/jeddah-airport-to-makkah" className="block group">
+                            <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition-all">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="flex-1">
+                                        <div className="text-sm text-gray-600 mb-1">From</div>
+                                        <div className="font-bold text-gray-900">Jeddah Airport</div>
                                     </div>
-                                    <div className="flex items-center justify-between text-sm">
-                                        <div className="flex items-center gap-2 text-gray-600">
-                                            <Clock className="w-4 h-4" />
-                                            {route.duration}
-                                        </div>
-                                        <div className="font-semibold text-teal-500">{route.price}</div>
+                                    <ArrowRight className="w-6 h-6 text-teal-500 mx-4 group-hover:translate-x-1 transition-transform" />
+                                    <div className="flex-1">
+                                        <div className="text-sm text-gray-600 mb-1">To</div>
+                                        <div className="font-bold text-gray-900">Makkah Hotels</div>
                                     </div>
                                 </div>
-                            ))}
+                                <div className="flex items-center justify-between text-sm">
+                                    <div className="flex items-center gap-2 text-gray-600">
+                                        <Clock className="w-4 h-4" />
+                                        90 min
+                                    </div>
+                                    <div className="font-semibold text-teal-500">SAR 150-250</div>
+                                </div>
+                            </div>
+                        </Link>
+
+                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                            <div className="flex items-center justify-between mb-4">
+                                <div className="flex-1">
+                                    <div className="text-sm text-gray-600 mb-1">From</div>
+                                    <div className="font-bold text-gray-900">Jeddah Airport</div>
+                                </div>
+                                <ArrowRight className="w-6 h-6 text-teal-500 mx-4" />
+                                <div className="flex-1">
+                                    <div className="text-sm text-gray-600 mb-1">To</div>
+                                    <div className="font-bold text-gray-900">Jeddah City Center</div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-between text-sm">
+                                <div className="flex items-center gap-2 text-gray-600">
+                                    <Clock className="w-4 h-4" />
+                                    30 min
+                                </div>
+                                <div className="font-semibold text-teal-500">SAR 50-80</div>
+                            </div>
+                        </div>
+
+                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                            <div className="flex items-center justify-between mb-4">
+                                <div className="flex-1">
+                                    <div className="text-sm text-gray-600 mb-1">From</div>
+                                    <div className="font-bold text-gray-900">Jeddah</div>
+                                </div>
+                                <ArrowRight className="w-6 h-6 text-teal-500 mx-4" />
+                                <div className="flex-1">
+                                    <div className="text-sm text-gray-600 mb-1">To</div>
+                                    <div className="font-bold text-gray-900">Madinah</div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-between text-sm">
+                                <div className="flex items-center gap-2 text-gray-600">
+                                    <Clock className="w-4 h-4" />
+                                    4-5 hrs
+                                </div>
+                                <div className="font-semibold text-teal-500">SAR 400-600</div>
+                            </div>
+                        </div>
+
+                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                            <div className="flex items-center justify-between mb-4">
+                                <div className="flex-1">
+                                    <div className="text-sm text-gray-600 mb-1">From</div>
+                                    <div className="font-bold text-gray-900">Jeddah Corniche</div>
+                                </div>
+                                <ArrowRight className="w-6 h-6 text-teal-500 mx-4" />
+                                <div className="flex-1">
+                                    <div className="text-sm text-gray-600 mb-1">To</div>
+                                    <div className="font-bold text-gray-900">Al-Balad</div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-between text-sm">
+                                <div className="flex items-center gap-2 text-gray-600">
+                                    <Clock className="w-4 h-4" />
+                                    20 min
+                                </div>
+                                <div className="font-semibold text-teal-500">SAR 30-50</div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -560,10 +627,10 @@ export default function JeddahPage() {
                                     Book Jeddah Taxi Online
                                 </Button>
                             </Link>
-                            <a href="tel:+966XXXXXXX">
+                            <a href="https://wa.me/13073464572?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer">
                                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-500 px-8 py-6 text-lg">
-                                    <Phone className="w-5 h-5 mr-2" />
-                                    Call for Booking
+                                    <MessageCircle className="w-5 h-5 mr-2" />
+                                    WhatsApp Us
                                 </Button>
                             </a>
                         </div>

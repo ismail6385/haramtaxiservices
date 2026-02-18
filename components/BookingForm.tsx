@@ -60,7 +60,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
 
     const textPrimary = isHero ? "text-white" : "text-gray-900";
     const textSecondary = isHero ? "text-neutral-300" : "text-gray-600";
-    const inputBg = isHero ? "bg-white/10 border-white/20 text-white placeholder:text-neutral-400 focus:bg-black/50 focus:border-teal-500 rounded-none text-sm sm:text-base" : "bg-gray-50 border-gray-300 text-gray-900 focus:border-primary focus:bg-white rounded-lg sm:rounded-xl text-sm sm:text-base";
+    const inputBg = isHero ? "bg-white/10 border-white/20 text-white placeholder:text-neutral-400 focus:bg-black/50 focus:border-brand-teal rounded-none text-sm sm:text-base" : "bg-gray-50 border-gray-300 text-gray-900 focus:border-brand-teal focus:bg-white rounded-lg sm:rounded-xl text-sm sm:text-base";
     const labelColor = isHero ? "text-neutral-200" : "text-gray-700";
     const iconColor = isHero ? "text-neutral-400" : "text-gray-400";
 
@@ -68,7 +68,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [calculatedPrice, setCalculatedPrice] = useState<number | null>(null);
-    const [countryCode, setCountryCode] = useState('+966');
+    const [countryCode, setCountryCode] = useState('+1');
     const [open, setOpen] = useState(false);
 
     const [formData, setFormData] = useState<BookingData>({
@@ -114,13 +114,11 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
         }
     }, [searchParams]);
 
+    // Price calculation removed as per user request
+    const price = null;
+
     useEffect(() => {
-        if (formData.pickup_location && formData.destination && formData.vehicle_type) {
-            const price = getPrice(formData.pickup_location, formData.destination, formData.vehicle_type);
-            setCalculatedPrice(price);
-        } else {
-            setCalculatedPrice(null);
-        }
+        // No-op for now
     }, [formData.pickup_location, formData.destination, formData.vehicle_type]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -150,12 +148,16 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
             const fullPhoneNumber = `${countryCode}${formData.customer_phone}`;
 
             // Generate unique confirmation token
-            const confirmationToken = `${Date.now()}-${Math.random().toString(36).substring(2, 15)}`;
+            // const confirmationToken = `${Date.now()}-${Math.random().toString(36).substring(2, 15)}`;
+
+            // Exclude vehicle_image as it might not be in the DB schema and causes 400 error
+            // eslint-disable-next-line
+            const { vehicle_image, ...restFormData } = formData;
 
             const finalFormData = {
-                ...formData,
+                ...restFormData,
                 customer_phone: fullPhoneNumber,
-                confirmation_token: confirmationToken,
+                // confirmation_token: confirmationToken, // Disabled due to missing DB column
                 special_requests: calculatedPrice
                     ? `${formData.special_requests ? formData.special_requests + '. ' : ''}Quoted Price: SAR ${calculatedPrice}`
                     : formData.special_requests
@@ -175,8 +177,8 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         booking: data[0],
-                        price: calculatedPrice,
-                        confirmationToken
+                        price: calculatedPrice
+                        // confirmationToken // Disabled due to missing DB column
                     })
                 });
             } catch (emailError) {
@@ -214,12 +216,12 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                 <div className={`flex justify-between items-center mb-2 sm:mb-3 md:mb-4 ${isHero ? 'px-0' : 'px-1'}`}>
                     {[1, 2, 3].map((s) => (
                         <div key={s} className="flex items-center flex-1">
-                            <div className={`${isHero ? 'w-8 h-8 lg:w-9 lg:h-9' : 'w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10'} rounded-full flex items-center justify-center ${isHero ? 'text-sm lg:text-base' : 'text-xs sm:text-sm md:text-base'} font-bold transition-all flex-shrink-0 ${step >= s ? (isHero ? 'bg-teal-500 text-black' : 'bg-teal-500 text-black') : (isHero ? 'bg-white/10 text-white/50' : 'bg-gray-200 text-gray-500')
+                            <div className={`${isHero ? 'w-8 h-8 lg:w-9 lg:h-9' : 'w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10'} rounded-full flex items-center justify-center ${isHero ? 'text-sm lg:text-base' : 'text-xs sm:text-sm md:text-base'} font-bold transition-all flex-shrink-0 ${step >= s ? (isHero ? 'bg-brand-teal text-white' : 'bg-brand-teal text-white') : (isHero ? 'bg-white/10 text-white/50' : 'bg-gray-200 text-gray-500')
                                 }`}>
                                 {step > s ? <Check className={`${isHero ? 'w-3.5 h-3.5 lg:w-4 lg:h-4' : 'w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5'}`} /> : s}
                             </div>
                             {s < 3 && (
-                                <div className={`h-[2px] flex-1 ${isHero ? 'mx-1 lg:mx-2' : 'mx-1 sm:mx-2'} transition-all ${step > s ? (isHero ? 'bg-teal-500' : 'bg-teal-500') : (isHero ? 'bg-white/20' : 'bg-gray-200')
+                                <div className={`h-[2px] flex-1 ${isHero ? 'mx-1 lg:mx-2' : 'mx-1 sm:mx-2'} transition-all ${step > s ? (isHero ? 'bg-brand-teal' : 'bg-brand-teal') : (isHero ? 'bg-white/20' : 'bg-gray-200')
                                     }`} />
                             )}
                         </div>
@@ -273,7 +275,8 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                             variant="outline"
                                             role="combobox"
                                             aria-expanded={open}
-                                            className={`w-full ${isHero ? 'h-11 lg:h-12' : 'h-11 sm:h-12'} justify-between font-normal px-3 ${isHero ? 'text-sm lg:text-base' : 'text-sm sm:text-base'} ${inputBg} hover:bg-teal-50 hover:border-teal-500`}
+                                            className={`w-full ${isHero ? 'h-11 lg:h-12' : 'h-11 sm:h-12'} justify-between font-normal px-3 ${isHero ? 'text-sm lg:text-base' : 'text-sm sm:text-base'} ${inputBg} hover:bg-brand-teal-pale/10 hover:border-brand-teal`}
+
                                         >
                                             {countryCode ? (
                                                 <span className={`flex items-center truncate ${isHero ? 'text-xs lg:text-sm' : 'text-xs sm:text-sm'}`}>
@@ -341,7 +344,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                         <Button
                             type="button"
                             onClick={nextStep}
-                            className={`w-full bg-teal-500 hover:bg-teal-600 text-black font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none shadow-lg transition-transform hover:scale-[1.02] mt-2`}
+                            className={`w-full bg-brand-teal hover:bg-brand-teal-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none shadow-lg transition-transform hover:scale-[1.02] mt-2`}
                         >
                             Continue <ArrowRight className={`${isHero ? 'w-4 h-4' : 'w-4 h-4 sm:w-5 sm:h-5'} ml-2`} />
                         </Button>
@@ -457,7 +460,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                         <Button
                                             variant={"outline"}
                                             className={cn(
-                                                `w-full h-11 sm:h-12 justify-start text-left font-normal text-sm sm:text-base ${inputBg} hover:bg-teal-50 hover:border-teal-500`,
+                                                `w-full h-11 sm:h-12 justify-start text-left font-normal text-sm sm:text-base ${inputBg} hover:bg-brand-teal-pale/10 hover:border-brand-teal`,
                                                 !formData.pickup_date && "text-muted-foreground"
                                             )}
                                         >
@@ -535,7 +538,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                             <Button
                                 type="button"
                                 onClick={nextStep}
-                                className={`flex-1 bg-teal-500 hover:bg-teal-600 text-black font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
+                                className={`flex-1 bg-brand-teal hover:bg-brand-teal-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
                             >
                                 Continue <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" />
                             </Button>
@@ -573,12 +576,12 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                 </div>
 
                                 <div className={`border-t my-2 sm:my-3 ${isHero ? 'border-white/10' : 'border-gray-200'}`}></div>
-                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 bg-teal-500/10 p-3 rounded-lg border border-teal-500/20">
-                                    <span className="text-teal-500 font-bold flex items-center text-sm sm:text-base">
+                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 bg-brand-teal-pale/10 p-3 rounded-lg border border-brand-teal-pale/20">
+                                    <span className="text-brand-teal font-bold flex items-center text-sm sm:text-base">
                                         <Wallet className="w-4 h-4 mr-2 shrink-0" /> Total Price:
                                     </span>
                                     <span className={`font-bold text-base sm:text-lg ${textPrimary}`}>
-                                        {calculatedPrice ? `SAR ${calculatedPrice}` : 'Calculated upon confirmation'}
+                                        Get Quote via WhatsApp
                                     </span>
                                 </div>
                             </div>
@@ -596,7 +599,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                             </Button>
                             <Button
                                 type="submit"
-                                className={`flex-1 bg-teal-500 hover:bg-teal-600 text-black font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
+                                className={`flex-1 bg-brand-teal hover:bg-brand-teal-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
                                 disabled={loading}
                             >
                                 {loading ? 'Booking...' : 'Confirm Booking'} <Check className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" />
@@ -608,8 +611,8 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                 {/* Step 4: Success */}
                 {step === 4 && success && (
                     <div className="text-center space-y-4 sm:space-y-6 animate-fade-in-up py-6 sm:py-8 px-2">
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-teal-500 rounded-full flex items-center justify-center mx-auto">
-                            <Check className="w-8 h-8 sm:w-10 sm:h-10 text-black" />
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-brand-teal rounded-full flex items-center justify-center mx-auto">
+                            <Check className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                         </div>
                         <h3 className={`text-xl sm:text-2xl font-bold ${textPrimary} px-2`}>Booking Confirmed!</h3>
                         <p className={`text-sm sm:text-base ${textSecondary} px-2 sm:px-4`}>
@@ -621,7 +624,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                 setStep(1);
                                 setSuccess(false);
                                 setCalculatedPrice(null);
-                                setCountryCode('+966');
+                                setCountryCode('+1');
                                 setFormData({
                                     customer_name: '',
                                     customer_email: '',
@@ -638,7 +641,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                     status: 'pending'
                                 });
                             }}
-                            className={`bg-teal-500 hover:bg-teal-600 text-black font-bold ${isHero ? 'h-11 lg:h-12 px-6 lg:px-8 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 text-sm sm:text-base'} rounded-none mx-2`}
+                            className={`bg-brand-teal hover:bg-brand-teal-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 px-6 lg:px-8 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 text-sm sm:text-base'} rounded-none mx-2`}
                         >
                             Make Another Booking
                         </Button>

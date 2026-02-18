@@ -8,7 +8,7 @@ import {
 const faqs = [
     {
         question: "How do I book a taxi from Jeddah Airport?",
-        answer: "You can easily book a taxi through our website by clicking the 'Book Now' button. Alternatively, you can call or WhatsApp us at 03176243861 for instant booking confirmation."
+        answer: "You can easily book a taxi through our website by clicking the 'Book Now' button. Alternatively, you can call or WhatsApp us at +1 (307) 346-4572 for instant booking confirmation."
     },
     {
         question: "What types of vehicles do you offer?",
@@ -25,6 +25,18 @@ const faqs = [
     {
         question: "Is the service available 24/7?",
         answer: "Yes, our chauffeur services are available 24 hours a day, 7 days a week. Whether you have a late-night flight or an early morning meeting, we are always ready to serve you."
+    },
+    {
+        question: "Do you offer short distance trips within the city?",
+        answer: "No, we specialize in long-distance intercity transfers between Makkah, Madinah, Jeddah, and Taif. We also provide airport transfers including Makkah to Jeddah taxi service and Madinah to Makkah taxi. We do not cover short local distances within the city."
+    },
+    {
+        question: "How much is the taxi fare from Madinah to Makkah?",
+        answer: "The taxi fare from Madinah to Makkah depends on the vehicle type. We offer competitive rates for private taxi for Umrah pilgrims. Whether you need a Camry or a GMC Yukon, you can get a quote for Makkah to Madinah taxi cost instantly via WhatsApp."
+    },
+    {
+        question: "Do you offer taxi from Madinah to Badar?",
+        answer: "Yes, we provide trips to historical sites. You can inquire about the Madina to Badar taxi fare or reserve a ride for your Ziyarat. Our drivers are knowledgeable about the route."
     }
 ];
 

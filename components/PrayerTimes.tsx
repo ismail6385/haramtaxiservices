@@ -18,25 +18,26 @@ const CITIES = ['Makkah', 'Madinah', 'Jeddah'];
 export default function PrayerTimesWidget({ initialData, initialCity = 'Makkah' }: { initialData: PrayerTimesData | null, initialCity?: string }) {
     const [city, setCity] = useState(initialCity);
     const [times, setTimes] = useState<PrayerTimesData | null>(initialData);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(!initialData);
     const hasMounted = useRef(false);
 
     useEffect(() => {
-        // Skip fetch on initial mount if we have data for the initial city
+        // Skip fetch on initial mount IF we have data
         if (!hasMounted.current) {
             hasMounted.current = true;
             if (city === initialCity && initialData) {
+                setLoading(false);
                 return;
             }
         }
 
-        // Always fetch when city changes (after initial mount)
+        // Always fetch when city changes (or initial data missing)
         async function fetchTimes() {
             setLoading(true);
             try {
                 const url = `/api/prayer-times?city=${encodeURIComponent(city)}`;
                 const res = await fetch(url);
-                
+
                 if (res.ok) {
                     const data = await res.json();
                     if (data && data.Fajr) {
@@ -59,7 +60,31 @@ export default function PrayerTimesWidget({ initialData, initialCity = 'Makkah' 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [city]);
 
-    if (!times) return null;
+    if (!times) {
+        return (
+            <div className="bg-white rounded-2xl shadow-lg border border-teal-100 overflow-hidden h-full min-h-[300px] flex items-center justify-center p-8 text-gray-500">
+                <div className="text-center">
+                    {loading ? (
+                        <>
+                            <Clock className="w-8 h-8 text-teal-600 animate-spin mx-auto mb-2" />
+                            <p>Loading prayer times...</p>
+                        </>
+                    ) : (
+                        <>
+                            <Clock className="w-8 h-8 text-gray-300 mx-auto mb-2" />
+                            <p>Prayer times unavailable.</p>
+                            <button
+                                onClick={() => window.location.reload()}
+                                className="mt-2 text-sm text-teal-600 hover:underline"
+                            >
+                                Retry
+                            </button>
+                        </>
+                    )}
+                </div>
+            </div>
+        );
+    }
 
     const prayers = [
         { name: 'Fajr', time: times.Fajr },

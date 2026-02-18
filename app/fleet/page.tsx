@@ -108,7 +108,7 @@ export default function FleetPage() {
                             <span className="text-teal-600 text-sm font-semibold">Premium Fleet</span>
                         </div>
 
-                        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                        <h1 className="text-fluid-h1 font-bold text-gray-900 mb-6">
                             Our <span className="text-teal-500">Vehicle Fleet</span>
                         </h1>
 
@@ -193,12 +193,12 @@ export default function FleetPage() {
                                     </div>
 
                                     {/* CTA */}
-                                    <Link href={vehicle.href}>
-                                        <Button className="w-full bg-teal-500 hover:bg-teal-600 text-white group-hover:shadow-lg transition-all">
+                                    <Button asChild className="w-full bg-teal-500 hover:bg-teal-600 text-white group-hover:shadow-lg transition-all">
+                                        <Link href={vehicle.href}>
                                             View Details
                                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                                        </Button>
-                                    </Link>
+                                        </Link>
+                                    </Button>
                                 </div>
                             </div>
                         ))}
@@ -210,7 +210,7 @@ export default function FleetPage() {
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Our Fleet?</h2>
+                        <h2 className="text-fluid-h1 font-bold text-gray-900 mb-4">Why Choose Our Fleet?</h2>
                         <p className="text-xl text-gray-600">Quality and comfort guaranteed</p>
                     </div>
 
@@ -245,7 +245,7 @@ export default function FleetPage() {
             {/* CTA Section */}
             <section className="py-20 bg-teal-500 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Ready to Book Your Ride?</h2>
+                    <h2 className="text-fluid-h1 font-bold mb-6">Ready to Book Your Ride?</h2>
                     <p className="text-xl mb-8 opacity-90">
                         Choose your preferred vehicle and book now for a comfortable journey
                     </p>

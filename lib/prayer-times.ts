@@ -44,7 +44,7 @@ export async function getPrayerTimes(city: string = 'Makkah'): Promise<PrayerTim
         const { Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha } = data.data.timings;
         return { Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha };
     } catch (error) {
-        console.error('Error fetching prayer times:', error);
+        console.warn('Warning: Failed to fetch prayer times:', error instanceof Error ? error.message : error);
         return null;
     }
 }

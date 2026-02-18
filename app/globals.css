@@ -4,7 +4,14 @@
 
 @layer base {
   :root {
-    /* Haram Taxi Service - Teal & White Only */
+    /* ─────────────────────────────────────────────────────────
+     * Haram Taxi Service — Color System (60-30-10 Rule)
+     *
+     * 60% Dominant : White / Light Gray  (backgrounds, cards)
+     * 30% Secondary: Teal #0f766e        (nav, sections, borders)
+     * 10% Accent   : Amber #d97706       (CTAs, stars, badges)
+     * ───────────────────────────────────────────────────────── */
+
     --background: 0 0% 100%;
     --foreground: 0 0% 10%;
 
@@ -14,23 +21,19 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    /* Primary: Teal #0d9488 */
-    --primary: 173 58% 39%;
-    /* #0d9488 - Teal 500 */
+    /* PRIMARY — Teal 700 (#0f766e) — Trust + Calm */
+    --primary: 175 77% 26%;
     --primary-foreground: 0 0% 100%;
-    /* White text */
 
-    /* Secondary: Same Teal */
-    --secondary: 173 58% 39%;
-    /* #0d9488 - Teal 500 */
-    --secondary-foreground: 0 0% 100%;
+    /* SECONDARY — Teal 100 (#ccfbf1) — Soft teal for backgrounds/chips */
+    --secondary: 166 76% 91%;
+    --secondary-foreground: 175 77% 20%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    /* Accent: Teal */
-    --accent: 173 58% 39%;
-    /* #0d9488 - Teal 500 */
+    /* ACCENT — Amber 600 (#d97706) — 10% warmth, premium, CTA highlight */
+    --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -38,43 +41,55 @@
 
     --border: 0 0% 92%;
     --input: 0 0% 92%;
-    --ring: 173 58% 39%;
+    --ring: 175 77% 26%;
 
     --radius: 0.5rem;
 
-    /* Custom Brand Colors - Only Teal */
-    --teal-main: 173 58% 39%;
+    /* ── Brand Tokens (use these for consistency) ── */
+    --brand-teal: 175 77% 26%;
+    /* #0f766e — primary */
+    --brand-teal-light: 175 60% 40%;
+    /* #2a9d8f — hover states */
+    --brand-teal-pale: 166 76% 91%;
+    /* #ccfbf1 — backgrounds */
+    --brand-teal-dark: 175 77% 15%;
+    /* Darker teal for gradients */
+    --brand-amber: 38 92% 50%;
+    /* #d97706 — accent */
+    --brand-amber-light: 43 96% 56%;
+    /* #fbbf24 — stars, highlights */
+    --brand-amber-pale: 48 96% 89%;
+    /* #fef3c7 — badge backgrounds */
   }
 
   .dark {
-    --background: 0 0% 5%;
-    /* Deep Black */
-    --foreground: 0 0% 98%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 173 58% 39%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 175 77% 26%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 173 58% 39%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 173 58% 39%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 173 58% 39%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 175 77% 26%;
   }
 }
 
@@ -86,63 +101,104 @@
   body {
     @apply bg-background text-foreground;
   }
-
-  /* Fix Command Item hover colors */
-  [cmdk-item] {
-    cursor: pointer;
-  }
-
-  [cmdk-item]:hover {
-    background-color: hsl(173 58% 39% / 0.1) !important;
-    color: hsl(173 58% 39%) !important;
-  }
-
-  [cmdk-item][data-selected="true"] {
-    background-color: hsl(173 58% 39% / 0.1) !important;
-    color: hsl(173 58% 39%) !important;
-  }
 }
 
 @layer utilities {
-  .animate-slow-zoom {
-    animation: slow-zoom 20s linear infinite alternate;
+  .text-fluid-h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+    line-height: 1.1;
   }
 
-  .animate-fade-in-up {
-    animation: fade-in-up 0.8s ease-out forwards;
-    opacity: 0;
+  .text-fluid-h2 {
+    font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+    line-height: 1.2;
   }
 
-  .animate-fade-in-left {
-    animation: fade-in-left 0.8s ease-out forwards;
-    opacity: 0;
+  /* Custom pattern for backgrounds */
+  .pattern-dots {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+/* Animations */
+@layer utilities {
+  .animate-in {
+    animation-name: fade-in-up;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
   }
 
-  .animate-gradient {
-    animation: gradient 8s linear infinite;
-    background-size: 200% auto;
+  .animate-delay-100 {
+    animation-delay: 0.1s;
   }
 
-  .delay-100 {
-    animation-delay: 100ms;
+  .animate-delay-200 {
+    animation-delay: 0.2s;
   }
 
-  .delay-200 {
-    animation-delay: 200ms;
+  /* Keyframes */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
-  .delay-300 {
-    animation-delay: 300ms;
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
   }
 
-  .pattern-grid-lg {
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.95);
+    }
+
+    to {
+      transform: scale(1);
+    }
   }
 
-  @keyframes slow-zoom {
+  @keyframes zoom-out {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(0.95);
+    }
+  }
+
+  @keyframes slide-in-from-top-2 {
+    from {
+      transform: translateY(-0.5rem);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-from-bottom {
+    from {
+      transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes ken-burns {
     from {
       transform: scale(1);
     }

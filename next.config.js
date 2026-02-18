@@ -66,6 +66,16 @@ const nextConfig = {
         destination: '/:path+',
         permanent: true,
       },
+      {
+        source: '/locations/alula',
+        destination: '/locations',
+        permanent: true,
+      },
+      {
+        source: '/locations/khayber-fort',
+        destination: '/locations',
+        permanent: true,
+      },
     ]
   },
 

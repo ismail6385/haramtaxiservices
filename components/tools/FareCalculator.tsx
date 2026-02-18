@@ -10,19 +10,18 @@ export default function FareCalculator() {
     const [from, setFrom] = useState(CITIES[0]);
     const [to, setTo] = useState(CITIES[1]);
     const [vehicle, setVehicle] = useState<VehicleType>(VEHICLES[1]);
-    const [fare, setFare] = useState<number | null>(null);
+    const [showQuote, setShowQuote] = useState(false);
 
     const handleCalculate = () => {
-        const price = calculateFare(from, to, vehicle);
-        setFare(price);
+        setShowQuote(true);
     };
 
     return (
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden max-w-lg mx-auto">
             <div className="bg-teal-600 p-6 text-white text-center">
                 <Calculator className="w-10 h-10 mx-auto mb-2 opacity-90" />
-                <h2 className="text-2xl font-bold">Taxi Fare Calculator</h2>
-                <p className="text-teal-100 text-sm">Get an instant estimate for your ride</p>
+                <h2 className="text-2xl font-bold">Taxi Fare Estimator</h2>
+                <p className="text-teal-100 text-sm">Get a quote for your ride</p>
             </div>
 
             <div className="p-8 space-y-6">
@@ -75,17 +74,17 @@ export default function FareCalculator() {
                     onClick={handleCalculate}
                     className="w-full bg-teal-600 hover:bg-teal-700 h-12 text-lg"
                 >
-                    Calculate Fare
+                    Get Quote
                 </Button>
 
                 {/* Result */}
-                {fare !== null ? (
+                {showQuote ? (
                     <div className="mt-8 p-6 bg-teal-50 rounded-xl border border-teal-100 text-center animate-in fade-in slide-in-from-bottom-4">
                         <div className="text-sm text-gray-600 mb-1">Estimated Fare</div>
-                        <div className="text-4xl font-bold text-teal-700 mb-2">
-                            SAR {fare}
+                        <div className="text-2xl font-bold text-teal-700 mb-2">
+                            Contact for Best Price
                         </div>
-                        <p className="text-xs text-gray-500 mb-4">*Prices are estimates and may vary by season</p>
+                        <p className="text-xs text-gray-500 mb-4">*Prices vary by season & availability</p>
                         <Link href="/booking">
                             <Button variant="outline" className="border-teal-600 text-teal-700 hover:bg-teal-600 hover:text-white w-full">
                                 Book This Ride
@@ -95,7 +94,7 @@ export default function FareCalculator() {
                     </div>
                 ) : (
                     <div className="mt-4 text-center text-sm text-gray-400">
-                        Select details to see price
+                        Select details to get a quote
                     </div>
                 )}
             </div>

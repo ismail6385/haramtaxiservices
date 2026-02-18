@@ -32,7 +32,7 @@ export default function HeaderDate() {
     if (!mounted) return <div className="h-4 w-32 bg-white/10 rounded animate-pulse"></div>;
 
     return (
-        <div className="flex items-center gap-2 text-xs font-medium text-white/90">
+        <div className="flex items-center gap-2 text-xs font-medium text-white/90 whitespace-nowrap">
             <Calendar className="w-3 h-3 text-teal-300" />
             <span className="hidden sm:inline">{date.greg}</span>
             <span className="sm:hidden">{date.greg.split(',')[1]}</span> {/* Short on mobile */}

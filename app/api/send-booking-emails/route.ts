@@ -7,7 +7,7 @@ export const runtime = 'nodejs';
 
 // Initialize Resend with API key check
 const resendApiKey = process.env.RESEND_API_KEY;
-const adminEmail = process.env.ADMIN_EMAIL || 'umrahtaxi22@gmail.com';
+const adminEmail = process.env.ADMIN_EMAIL || 'haramtaxiservice@gmail.com';
 
 if (!resendApiKey) {
     console.error('RESEND_API_KEY is not set in environment variables');
@@ -332,13 +332,13 @@ export async function POST(request: NextRequest) {
                             
                             <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; text-align: center;">
                                 <p style="color: #6b7280; font-size: 14px;">
-                                    Questions? Contact us at <a href="mailto:umrahtaxi22@gmail.com" style="color: #d97706; font-weight: 600; text-decoration: none;">umrahtaxi22@gmail.com</a>
+                                    Questions? Contact us at <a href="mailto:${adminEmail}" style="color: #d97706; font-weight: 600; text-decoration: none;">${adminEmail}</a>
                                 </p>
                             </div>
                         </div>
                         
                         <div class="footer">
-                            <p><strong>Umrah Taxi Service</strong></p>
+                            <p><strong>Haram Taxi Service</strong></p>
                             <p>Professional • Reliable • 24/7 Support</p>
                             <p style="margin-top: 12px; opacity: 0.6;">
                                 © ${new Date().getFullYear()} Haram Taxi Service. All rights reserved.

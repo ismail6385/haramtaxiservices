@@ -1,4 +1,5 @@
-import BookingForm from '@/components/BookingForm';
+﻿import BookingForm from '@/components/BookingForm';
+import { Suspense } from 'react';
 import { Clock, MapPin, CheckCircle2, MessageSquare, Headphones, Phone, Mail } from 'lucide-react';
 import { Metadata } from 'next';
 import Image from 'next/image';
@@ -70,30 +71,50 @@ export default function ContactPage() {
         }
     ];
 
+    const contactSchema = {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Haram Taxi Service",
+        "description": "Contact us for taxi bookings in Makkah, Madinah, Jeddah.",
+        "url": "https://haramtaxiservice.com/contact",
+        "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "Haram Taxi Service",
+            "telephone": "+13073464572",
+            "email": "haramtaxiservice@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Makkah / Madinah / Jeddah",
+                "addressCountry": "SA"
+            },
+            "areaServed": ["Makkah", "Madinah", "Jeddah", "Taif"]
+        }
+    };
+
     return (
         <div className="bg-white min-h-screen">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }} />
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-gray-50 to-white pt-32 pb-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="bg-gradient-to-b from-brand-teal/5 to-white pt-32 pb-20 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-brand-teal/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 rounded-full mb-6">
-                            <MessageSquare className="w-4 h-4 text-teal-500" />
-                            <span className="text-teal-600 text-sm font-semibold">Get in Touch</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-teal-pale rounded-full mb-6">
+                            <MessageSquare className="w-4 h-4 text-brand-teal" />
+                            <span className="text-brand-teal-dark text-sm font-semibold">Get in Touch</span>
                         </div>
 
-                        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                            Contact <span className="text-teal-500">Us</span>
+                        <h1 className="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-6">
+                            Contact <span className="text-brand-teal">Us</span>
                         </h1>
 
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
                             Have questions about our taxi service? Fill out the form below and we&apos;ll get back to you as soon as possible.
                         </p>
 
-                        <div className="mt-6">
-                            <a href="mailto:haramtaxiservice@gmail.com" className="inline-flex items-center gap-2 text-teal-500 hover:text-teal-600 font-semibold text-lg">
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
+                        <div className="mt-8">
+                            <a href="mailto:haramtaxiservice@gmail.com" className="inline-flex items-center gap-2 text-brand-teal hover:text-brand-teal-dark font-semibold text-lg hover:underline transition-all">
+                                <Mail className="w-5 h-5" />
                                 haramtaxiservice@gmail.com
                             </a>
                         </div>
@@ -102,11 +123,11 @@ export default function ContactPage() {
                     {/* Features Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                         {features.map((feature, index) => (
-                            <div key={index} className="bg-white p-6 rounded-xl shadow-sm text-center">
-                                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                    <feature.icon className="w-6 h-6 text-teal-500" />
+                            <div key={index} className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-100 group">
+                                <div className="w-14 h-14 bg-brand-teal-pale rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                                    <feature.icon className="w-7 h-7 text-brand-teal" />
                                 </div>
-                                <h3 className="font-semibold text-gray-900 mb-1">{feature.title}</h3>
+                                <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">{feature.title}</h3>
                                 <p className="text-sm text-gray-600">{feature.description}</p>
                             </div>
                         ))}
@@ -115,97 +136,130 @@ export default function ContactPage() {
             </section>
 
             {/* Contact Form Section */}
-            <section className="py-20 bg-gray-50">
+            <section className="py-24 bg-gray-50 border-t border-gray-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-                        <div className="mb-8">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
-                            <p className="text-gray-600">
-                                Fill out the form below and our team will respond to your inquiry promptly.
-                            </p>
-                        </div>
-                        <BookingForm variant="hero" />
+                    <div className="mb-12 text-center">
+                        <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Start Your Journey</h2>
+                        <p className="text-gray-600">
+                            Ready to travel? Book your ride instantly using our secure booking form below.
+                        </p>
                     </div>
+                    <Suspense fallback={<div className="h-[400px] flex items-center justify-center text-gray-400">Loading form...</div>}>
+                        <BookingForm variant="default" />
+                    </Suspense>
                 </div>
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-20 bg-white">
+            <section className="py-24 bg-white overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                                Why Choose Haram Taxi Service?
+                            <h2 className="text-4xl font-display font-bold text-gray-900 mb-6 leading-tight">
+                                Why Choose <span className="text-brand-teal">Haram Taxi?</span>
                             </h2>
-                            <p className="text-gray-600 mb-8 text-lg">
+                            <p className="text-gray-600 mb-10 text-lg leading-relaxed">
                                 We are committed to providing the best taxi service experience in Saudi Arabia with professional drivers and well-maintained vehicles.
                             </p>
-                            <ul className="space-y-4">
-                                <li className="flex items-start">
-                                    <CheckCircle2 className="w-6 h-6 text-teal-500 mr-3 flex-shrink-0 mt-1" />
+                            <ul className="space-y-6">
+                                <li className="flex items-start group">
+                                    <div className="w-10 h-10 rounded-full bg-brand-teal-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-teal transition-colors duration-300">
+                                        <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                                    </div>
                                     <div>
-                                        <h3 className="font-semibold text-gray-900 mb-1">Professional Drivers</h3>
-                                        <p className="text-gray-600 text-sm">Experienced and licensed drivers</p>
+                                        <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Professional Drivers</h3>
+                                        <p className="text-gray-600">Experienced and licensed drivers</p>
                                     </div>
                                 </li>
-                                <li className="flex items-start">
-                                    <CheckCircle2 className="w-6 h-6 text-teal-500 mr-3 flex-shrink-0 mt-1" />
+                                <li className="flex items-start group">
+                                    <div className="w-10 h-10 rounded-full bg-brand-teal-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-teal transition-colors duration-300">
+                                        <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                                    </div>
                                     <div>
-                                        <h3 className="font-semibold text-gray-900 mb-1">Clean Vehicles</h3>
-                                        <p className="text-gray-600 text-sm">Well-maintained and sanitized cars</p>
+                                        <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Clean Vehicles</h3>
+                                        <p className="text-gray-600">Well-maintained and sanitized cars</p>
                                     </div>
                                 </li>
-                                <li className="flex items-start">
-                                    <CheckCircle2 className="w-6 h-6 text-teal-500 mr-3 flex-shrink-0 mt-1" />
+                                <li className="flex items-start group">
+                                    <div className="w-10 h-10 rounded-full bg-brand-teal-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-teal transition-colors duration-300">
+                                        <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                                    </div>
                                     <div>
-                                        <h3 className="font-semibold text-gray-900 mb-1">Transparent Pricing</h3>
-                                        <p className="text-gray-600 text-sm">No hidden fees or charges</p>
+                                        <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Transparent Pricing</h3>
+                                        <p className="text-gray-600">No hidden fees or charges</p>
                                     </div>
                                 </li>
-                                <li className="flex items-start">
-                                    <CheckCircle2 className="w-6 h-6 text-teal-500 mr-3 flex-shrink-0 mt-1" />
+                                <li className="flex items-start group">
+                                    <div className="w-10 h-10 rounded-full bg-brand-teal-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-teal transition-colors duration-300">
+                                        <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                                    </div>
                                     <div>
-                                        <h3 className="font-semibold text-gray-900 mb-1">24/7 Service</h3>
-                                        <p className="text-gray-600 text-sm">Always available when you need us</p>
+                                        <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">24/7 Service</h3>
+                                        <p className="text-gray-600">Always available when you need us</p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl group">
                             <Image
                                 src="/support-team.webp"
                                 alt="Customer Support"
                                 fill
-                                className="object-cover"
+                                className="object-cover group-hover:scale-105 transition-transform duration-700"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div className="absolute bottom-8 left-8">
-                                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-teal-500 rounded-full mb-3">
-                                    <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                                    <span className="text-white text-sm font-semibold">Available Now</span>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            <div className="absolute bottom-10 left-10 right-10">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-teal rounded-full mb-4 shadow-lg">
+                                    <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                                    <span className="text-white text-sm font-bold tracking-wide uppercase">Available Now</span>
                                 </div>
-                                <h3 className="text-white text-2xl font-bold">Professional Service</h3>
+                                <h3 className="text-white text-3xl font-display font-bold mb-2">Need Help?</h3>
+                                <p className="text-gray-200 text-lg">Our support team is online waiting to help you.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+            {/* Service Areas Links */}
+            <section className="py-16 bg-gray-50 border-t border-gray-100">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-2xl font-display font-bold text-gray-900 mb-10">Serving All Major Locations</h2>
+                    <div className="flex flex-wrap justify-center gap-4 text-sm font-medium">
+                        <Link href="/locations/makkah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
+                            Taxi in Makkah
+                        </Link>
+                        <Link href="/locations/madinah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
+                            Taxi in Madinah
+                        </Link>
+                        <Link href="/locations/jeddah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
+                            Taxi in Jeddah
+                        </Link>
+                        <Link href="/routes/jeddah-airport-to-makkah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
+                            Jeddah Airport to Makkah
+                        </Link>
+                        <Link href="/routes/makkah-to-madinah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
+                            Makkah to Madinah
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             {/* FAQ Section */}
-            <section className="py-20 bg-gray-50">
+            <section className="py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-                        <p className="text-xl text-gray-600">Common questions about our service</p>
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-display font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">Common questions about our service</p>
                     </div>
                     <Accordion type="single" collapsible className="space-y-4">
                         {faqs.map((faq, index) => (
                             <AccordionItem
                                 key={index}
-                                value={`item - ${index} `}
-                                className="bg-white px-6 rounded-xl border-0 shadow-sm"
+                                value={`item-${index}`}
+                                className="bg-gray-50 px-6 rounded-2xl border border-gray-100 shadow-sm"
                             >
-                                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-teal-500 text-left">
+                                <AccordionTrigger className="text-lg font-bold font-display text-gray-900 py-6 hover:text-brand-teal text-left">
                                     {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
@@ -218,20 +272,22 @@ export default function ContactPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-teal-500 text-white">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-6">Ready to Book?</h2>
-                    <p className="text-xl mb-8 opacity-90">
-                        Book your taxi now and experience professional service
+            <section className="py-24 bg-brand-teal text-white relative overflow-hidden">
+                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                    <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Ready to Book?</h2>
+                    <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto font-light">
+                        Book your taxi now and experience professional service across Saudi Arabia.
                     </p>
-                    <a
+                    <Link
                         href="/booking"
-                        className="inline-block bg-white text-teal-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+                        className="inline-block bg-white text-brand-teal hover:bg-gray-100 hover:text-brand-teal-dark px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:scale-105"
                     >
                         Book Now
-                    </a>
+                    </Link>
                 </div>
             </section>
         </div>
     );
 }
+
