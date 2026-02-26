@@ -61,7 +61,7 @@ export default async function RoutePage({ params }: Props) {
         "provider": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "telephone": "+13073464572",
+            "telephone": "+923080628195",
             "image": "https://haramtaxiservice.com/logo.png"
         },
         "areaServed": "Saudi Arabia",

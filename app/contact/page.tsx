@@ -80,7 +80,7 @@ export default function ContactPage() {
         "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "telephone": "+13073464572",
+            "telephone": "+923080628195",
             "email": "haramtaxiservice@gmail.com",
             "address": {
                 "@type": "PostalAddress",

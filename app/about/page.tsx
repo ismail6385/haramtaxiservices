@@ -103,7 +103,7 @@ export default function AboutPage() {
         "logo": "https://haramtaxiservice.com/logo.png",
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+13073464572",
+            "telephone": "+923080628195",
             "contactType": "customer service",
             "areaServed": "SA",
             "availableLanguage": ["English", "Arabic", "Urdu"]

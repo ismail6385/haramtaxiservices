@@ -145,7 +145,7 @@ export default function Navbar() {
                         </Link>
 
                         <a
-                            href="https://wa.me/13073464572?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
+                            href="https://wa.me/923080628195?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -257,7 +257,7 @@ export default function Navbar() {
                         </Link>
 
                         <a
-                            href="https://wa.me/13073464572?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
+                            href="https://wa.me/923080628195?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setMobileMenuOpen(false)}

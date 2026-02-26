@@ -725,7 +725,7 @@ export default async function Home() {
                 </Button>
               </Link>
               <a
-                href="https://wa.me/13073464572?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride."
+                href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride."
                 target="_blank"
                 rel="noopener noreferrer"
               >
