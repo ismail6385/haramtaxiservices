@@ -30,7 +30,7 @@ export default function FAQPage() {
                 },
                 {
                     question: 'Can I modify or cancel my booking?',
-                    answer: 'Yes, you can modify or cancel your booking. For cancellations more than 24 hours before pickup, you\'ll receive a full refund. Cancellations 12-24 hours before receive a 50% refund. Less than 12 hours - no refund.'
+                    answer: 'Yes, you can modify or cancel your booking. For cancellations more than 24 hours before pickup, you\'ll receive a full refund. Cancellations adequate time before receive a 50% refund. Less than 12 hours - no refund.'
                 },
                 {
                     question: 'Do I get a booking confirmation?',
@@ -110,7 +110,7 @@ export default function FAQPage() {
                 },
                 {
                     question: 'How much luggage can I bring?',
-                    answer: 'Luggage capacity varies by vehicle. Sedans accommodate 2-3 large bags, SUVs 4-5 bags, and vans 10-16 bags. Inform us if you have excess luggage.'
+                    answer: 'Luggage capacity varies by vehicle. Sedans accommodate Get Quote large bags, SUVs Get Quote bags, and vans Get Quote bags. Inform us if you have excess luggage.'
                 },
                 {
                     question: 'What if I leave something in the vehicle?',

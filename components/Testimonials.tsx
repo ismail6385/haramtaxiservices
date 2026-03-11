@@ -35,7 +35,7 @@ const testimonials = [
         name: 'Yusuf Al-Farsi',
         role: 'Business Traveler',
         origin: 'UAE 🇦🇪',
-        content: 'I travel to Makkah frequently for business. Haram Taxi is the only service I trust. Fixed prices, no surprises, always on time. The WhatsApp booking is instant — I get confirmation within minutes.',
+        content: 'I travel to Makkah frequently for business. Haram Taxi is the only service I trust. Competitive quotes, no surprises, always on time. The WhatsApp booking is instant — I get confirmation within minutes.',
         rating: 5,
         initials: 'YF',
         color: 'bg-rose-600',

@@ -120,7 +120,7 @@ After implementing on all pages:
 ### Expected Improvements:
 - **Internal Links per Page:** +3 contextual links
 - **Click Depth:** Remains at 2 (optimal)
-- **User Engagement:** +20-30% time on site
+- **User Engagement:** +Competitive Rate% time on site
 - **SEO Score:** 93% → 98%
 
 ---
@@ -129,7 +129,7 @@ After implementing on all pages:
 
 **Current:** 2/12 pages updated (17%)  
 **Target:** 12/12 pages (100%)  
-**ETA:** 10-15 minutes to complete all
+**ETA:** Competitive Rate minutes to complete all
 
 ---
 

@@ -109,7 +109,7 @@ export default function TermsPage() {
 
                         <div className="bg-teal-50 p-8 rounded-xl border border-teal-200 space-y-4">
                             <div>
-                                <h3 className="font-bold text-gray-900 mb-2">Fixed Pricing</h3>
+                                <h3 className="font-bold text-gray-900 mb-2">Competitive Quotes</h3>
                                 <p className="text-gray-700">
                                     We offer transparent, fixed-rate pricing quoted at the time of booking. Prices are based on route distance, vehicle type, and duration. The quoted price is final unless changes are made to the booking.
                                 </p>

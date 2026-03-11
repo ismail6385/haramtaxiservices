@@ -466,23 +466,23 @@ and timely service.
 
 ## 📊 Expected SEO Impact
 
-### Week 1-2:
+### Week Competitive Rate:
 - ✅ Google starts understanding service relationships
 - ✅ Better matching for long-tail queries
 - ✅ Improved click-through rates
 
 ### Month 1:
-- 📈 +30-40% increase in "near me" searches
+- 📈 +Competitive Rate% increase in "near me" searches
 - 📈 Better rankings for "[service] in [city]" queries
 - 📈 Rich snippets may start appearing
 
-### Month 2-3:
-- 📈 +60-80% increase in organic traffic
+### Month Competitive Rate:
+- 📈 +Competitive Rate% increase in organic traffic
 - 📈 Top 5 rankings for primary keywords
 - 📈 Featured snippets for "best [service] in [city]"
 
-### Month 4-6:
-- 📈 +150-200% increase in organic traffic
+### Month Competitive Rate:
+- 📈 +Competitive Rate% increase in organic traffic
 - 📈 #1 rankings for local service queries
 - 📈 Established as local authority
 

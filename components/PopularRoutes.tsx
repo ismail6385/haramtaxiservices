@@ -26,7 +26,7 @@ const routes = [
     description: "Direct transfers from Jeddah to Madinah. Perfect for pilgrims and visitors who want to visit the Prophet's Mosque without delays.",
     time: "4 Hours",
     distance: "415 KM",
-    image: "https://images.unsplash.com/photo-1578895101408-1a36b8342f58?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-0.154a36b8342f58?q=80&w=2070&auto=format&fit=crop"
   },
   {
     from: "Riyadh Airport",
@@ -42,7 +42,7 @@ const routes = [
     description: "Scenic drive from the cool mountains of Taif to the Holy City of Makkah. Enjoy the beautiful landscapes in comfort.",
     time: "1 Hour 10 Mins",
     distance: "90 KM",
-    image: "https://images.unsplash.com/photo-1627834377411-8da5f4f09de8?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-0.154da5f4f09de8?q=80&w=2070&auto=format&fit=crop"
   },
   {
     from: "Madinah Airport",
@@ -50,7 +50,7 @@ const routes = [
     description: "Quick and reliable transfer from Prince Mohammad Bin Abdulaziz Airport to your hotel in Madinah.",
     time: "25 Mins",
     distance: "20 KM",
-    image: "https://images.unsplash.com/photo-1565657829323-57f9b97771b6?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-0.154f9b97771b6?q=80&w=2070&auto=format&fit=crop"
   }
 ];
 
@@ -95,11 +95,23 @@ export default function PopularRoutes() {
                 <p className="text-gray-600 mb-6 leading-relaxed text-sm flex-1 font-light">
                   {route.description}
                 </p>
-                <Link href={`/booking?service=${encodeURIComponent(`${route.from} to ${route.to}`)}`} className="w-full mt-auto">
-                  <Button className="w-full bg-brand-teal hover:bg-brand-teal-dark text-white font-bold py-6 rounded-xl transition-all shadow-md hover:shadow-lg group-hover:translate-y-[-2px]">
-                    Book This Route
-                  </Button>
-                </Link>
+                <div className="flex flex-col gap-3 w-full mt-auto">
+                  <Link href={`/booking?service=${encodeURIComponent(`${route.from} to ${route.to}`)}`} className="w-full">
+                    <Button className="w-full bg-brand-teal hover:bg-brand-teal-dark text-white font-bold py-6 rounded-xl transition-all shadow-md hover:shadow-lg group-hover:translate-y-[-2px]">
+                      Book via Form
+                    </Button>
+                  </Link>
+                  <a 
+                    href={`https://wa.me/966569487569?text=${encodeURIComponent(`As-salamu alaykum, I want to book a taxi from ${route.from} to ${route.to}.`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button variant="outline" className="w-full border-brand-teal text-brand-teal hover:bg-brand-teal-pale font-bold py-6 rounded-xl transition-all">
+                      Quick WhatsApp Booking
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
           ))}

@@ -155,17 +155,17 @@ After deployment, verify:
 
 ## 📈 Expected Results:
 
-### **Immediate (1-2 days):**
+### **Immediate (Competitive Rate days):**
 - ✅ Sitemap accessible
 - ✅ Robots.txt working
 - ✅ Canonical tags fixed
 
-### **Short-term (1-2 weeks):**
+### **Short-term (Competitive Rate weeks):**
 - ✅ Google starts crawling
 - ✅ Pages begin indexing
 - ✅ Search Console data appears
 
-### **Long-term (1-3 months):**
+### **Long-term (Competitive Rate months):**
 - ✅ Full site indexed
 - ✅ Rankings improve
 - ✅ Organic traffic increases

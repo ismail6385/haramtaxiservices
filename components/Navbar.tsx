@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Car, ChevronDown, MessageCircle } from 'lucide-react';
 import HeaderDate from '@/components/HeaderDate';
@@ -10,6 +11,11 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [fleetDropdownOpen, setFleetDropdownOpen] = useState(false);
     const [locationsDropdownOpen, setLocationsDropdownOpen] = useState(false);
+    const pathname = usePathname();
+
+    if (pathname && pathname.startsWith('/admin')) {
+        return null;
+    }
 
     const fleetItems = [
         { name: 'GMC Yukon', href: '/fleet/gmc-yukon' },
@@ -145,7 +151,7 @@ export default function Navbar() {
                         </Link>
 
                         <a
-                            href="https://wa.me/923080628195?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
+                            href="https://wa.me/966569487569?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -257,7 +263,7 @@ export default function Navbar() {
                         </Link>
 
                         <a
-                            href="https://wa.me/923080628195?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
+                            href="https://wa.me/966569487569?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20taxi%20service."
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setMobileMenuOpen(false)}

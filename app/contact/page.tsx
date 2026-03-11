@@ -1,4 +1,4 @@
-﻿import BookingForm from '@/components/BookingForm';
+import BookingForm from '@/components/BookingForm';
 import { Suspense } from 'react';
 import { Clock, MapPin, CheckCircle2, MessageSquare, Headphones, Phone, Mail } from 'lucide-react';
 import { Metadata } from 'next';
@@ -14,11 +14,11 @@ import {
 
 export const metadata: Metadata = {
     title: 'Contact Us | Book Taxi in Saudi Arabia - Haram Taxi Service',
-    description: 'Contact Haram Taxi Service for bookings in Makkah, Madinah, Jeddah. Book online or call us 24/7. Professional taxi service across Saudi Arabia.',
-    keywords: ['contact taxi Saudi Arabia', 'book taxi Makkah', 'taxi booking Madinah', 'call taxi Jeddah', 'online taxi booking'],
+    description: 'Contact Haram Taxi Service for bookings in Makkah, Madinah, Jeddah. Book online or WhatsApp us 24/7. Professional taxi service across Saudi Arabia.',
+    keywords: ['contact taxi Saudi Arabia', 'book taxi Makkah', 'taxi booking Madinah', 'WhatsApp taxi Jeddah', 'online taxi booking'],
     openGraph: {
         title: 'Contact Us | Book Taxi in Saudi Arabia',
-        description: 'Contact us for taxi bookings in Makkah, Madinah, Jeddah. Available 24/7.',
+        description: 'Contact us for taxi bookings in Makkah, Madinah, Jeddah. Available 24/7 via WhatsApp.',
         url: 'https://haramtaxiservice.com/contact',
         type: 'website',
     },
@@ -32,7 +32,7 @@ export default function ContactPage() {
         },
         {
             question: "What is your response time?",
-            answer: "We aim to respond to all inquiries within 30-60 minutes. For urgent bookings, we provide instant confirmation."
+            answer: "We aim to respond to all inquiries within a reasonable time. For urgent bookings, we provide instant confirmation."
         },
         {
             question: "Do you operate 24/7?",
@@ -80,7 +80,7 @@ export default function ContactPage() {
         "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "telephone": "+923080628195",
+            "telephone": "+966569487569",
             "email": "haramtaxiservice@gmail.com",
             "address": {
                 "@type": "PostalAddress",
@@ -109,10 +109,14 @@ export default function ContactPage() {
                         </h1>
 
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
-                            Have questions about our taxi service? Fill out the form below and we&apos;ll get back to you as soon as possible.
+                            Have questions about our taxi service? Reach out via WhatsApp or our online booking form for an instant quote.
                         </p>
 
-                        <div className="mt-8">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+                            <a href="https://wa.me/966569487569" className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#20bd5a] transition-all shadow-lg hover:scale-105 active:scale-95">
+                                <MessageSquare className="w-6 h-6" />
+                                WhatsApp Us Now
+                            </a>
                             <a href="mailto:haramtaxiservice@gmail.com" className="inline-flex items-center gap-2 text-brand-teal hover:text-brand-teal-dark font-semibold text-lg hover:underline transition-all">
                                 <Mail className="w-5 h-5" />
                                 haramtaxiservice@gmail.com
@@ -185,7 +189,7 @@ export default function ContactPage() {
                                         <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
                                     </div>
                                     <div>
-                                        <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Transparent Pricing</h3>
+                                        <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Competitive Quotes</h3>
                                         <p className="text-gray-600">No hidden fees or charges</p>
                                     </div>
                                 </li>

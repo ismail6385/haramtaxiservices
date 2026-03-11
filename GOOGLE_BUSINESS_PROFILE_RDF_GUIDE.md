@@ -91,7 +91,7 @@ Description: Professional airport transfer service in Jeddah provides 24/7
 chauffeur service from King Abdulaziz International Airport to Makkah, Madinah, 
 and all Jeddah locations. Meet and greet included.
 
-Price: Starting from SAR 150
+Price: Starting from Get Quote
 Category: Airport Transportation
 ```
 
@@ -106,7 +106,7 @@ Description: Dedicated Umrah taxi service specializes in comfortable
 transportation for pilgrims between Makkah and Madinah. Experienced drivers 
 with knowledge of Ziyarat locations.
 
-Price: Starting from SAR 400
+Price: Starting from Get Quote
 Category: Religious Transportation
 ```
 
@@ -121,7 +121,7 @@ Description: Luxury intercity chauffeur service provides comfortable travel
 across Saudi Arabia including Jeddah to Makkah, Riyadh to Dammam, and Taif 
 transfers.
 
-Price: Starting from SAR 200
+Price: Starting from Get Quote
 Category: Long Distance Transportation
 ```
 
@@ -136,7 +136,7 @@ Description: Executive chauffeur service in Riyadh specializes in VIP airport
 transfers from King Khalid International Airport and corporate transportation 
 for business executives.
 
-Price: Starting from SAR 250
+Price: Starting from Get Quote
 Category: Executive Transportation
 ```
 
@@ -150,7 +150,7 @@ Title: Ziyarat Tours
 Description: Guided Ziyarat tours help pilgrims visit historical Islamic sites 
 in Makkah and Madinah with experienced drivers and comfortable vehicles.
 
-Price: Starting from SAR 300
+Price: Starting from Get Quote
 Category: Religious Tours
 ```
 
@@ -248,7 +248,7 @@ service from King Abdulaziz International Airport. We help travelers with:
 ✅ Meet and greet at arrivals
 ✅ Flight tracking
 ✅ Luxury vehicles (GMC Yukon, Toyota Camry)
-✅ Fixed prices with no hidden fees
+✅ Competitive quotes with no hidden fees
 
 Book now: 03176243861
 
@@ -331,7 +331,7 @@ Call now: 03176243861
 ```
 Yes! Our airport transfer service in Jeddah provides professional chauffeur 
 service from King Abdulaziz International Airport to Makkah. The journey takes 
-approximately 1-1.5 hours. We offer meet and greet service, flight tracking, 
+approximately Competitive Rate.5 hours. We offer meet and greet service, flight tracking, 
 and luxury vehicles (GMC Yukon, Toyota Camry, Hyundai Staria). Book now: 
 03176243861
 ```
@@ -345,10 +345,10 @@ and luxury vehicles (GMC Yukon, Toyota Camry, Hyundai Staria). Book now:
 
 **A (RDF Triple Format):**
 ```
-Our Umrah taxi service from Makkah to Madinah starts from SAR 400 for a 
+Our Umrah taxi service from Makkah to Madinah starts from Get Quote for a 
 comfortable vehicle. The price includes experienced drivers who specialize in 
 Umrah transportation, spacious vehicles for families (up to 7 passengers), and 
-prayer stops during the 4-5 hour journey. Call for exact quote: 03176243861
+prayer stops during the Competitive Rate hour journey. Call for exact quote: 03176243861
 ```
 
 **RDF Triple:** Umrah taxi → specializes in → Makkah to Madinah transportation
@@ -451,12 +451,12 @@ https://taxiserviceksa.com/booking
 
 ### Phone Number:
 ```
-+92-317-6243861
++Competitive Rate-6243861
 ```
 
 ### WhatsApp:
 ```
-+92-317-6243861
++Competitive Rate-6243861
 ```
 
 ---
@@ -476,7 +476,7 @@ https://taxiserviceksa.com/booking
 - [x] Contact information
 
 ### ✅ Engagement (Weekly)
-- [ ] Post 2-3 updates per week
+- [ ] Post Competitive Rate updates per week
 - [ ] Respond to all reviews within 24 hours
 - [ ] Answer Q&A questions with RDF triples
 - [ ] Upload new photos monthly
@@ -493,23 +493,23 @@ https://taxiserviceksa.com/booking
 
 ## 🚀 Expected Results
 
-### Week 1-2:
+### Week Competitive Rate:
 - ✅ Profile fully optimized
 - ✅ Better visibility in "near me" searches
 - ✅ Increased profile views
 
 ### Month 1:
-- 📈 +40-50% increase in profile views
+- 📈 +Competitive Rate% increase in profile views
 - 📈 +30% increase in phone calls
 - 📈 Better rankings for local keywords
 
-### Month 2-3:
-- 📈 +80-100% increase in profile views
+### Month Competitive Rate:
+- 📈 +Competitive Rate% increase in profile views
 - 📈 +50% increase in direction requests
 - 📈 Top 3 in local pack for main keywords
 
-### Month 4-6:
-- 📈 +150-200% increase in profile engagement
+### Month Competitive Rate:
+- 📈 +Competitive Rate% increase in profile engagement
 - 📈 #1 position in local pack
 - 📈 Established as local authority
 

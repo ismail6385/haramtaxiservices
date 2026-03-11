@@ -30,14 +30,14 @@ The website has a **strong foundation** with:
 ```
 Homepage (Authority: 100)
 │
-├─ Main Service Pages (Authority: 80-90)
+├─ Main Service Pages (Authority: Competitive Rate)
 │  ├─ Fleet (/fleet) → Links to 6 vehicle pages
 │  ├─ Locations (/locations) → Links to 6 city pages
 │  ├─ Booking (/booking) → Conversion page
 │  ├─ Contact (/contact) → Support page
 │  └─ About (/about) → Brand page
 │
-├─ Fleet Pages (Authority: 60-70)
+├─ Fleet Pages (Authority: Competitive Rate)
 │  ├─ GMC Yukon (/fleet/gmc-yukon)
 │  ├─ Toyota Camry (/fleet/toyota-camry)
 │  ├─ Hyundai Staria (/fleet/hyundai-staria)
@@ -45,7 +45,7 @@ Homepage (Authority: 100)
 │  ├─ Toyota Coaster (/fleet/toyota-coaster)
 │  └─ Hyundai Starex (/fleet/hyundai-starex)
 │
-└─ Location Pages (Authority: 70-80)
+└─ Location Pages (Authority: Competitive Rate)
    ├─ Makkah (/locations/makkah)
    ├─ Madinah (/locations/madinah)
    ├─ Jeddah (/locations/jeddah)
@@ -280,11 +280,11 @@ Homepage (0 clicks)
 ├─ Main Pages (1 click)
 │  └─ All accessible from header/footer
 │
-├─ Fleet Vehicles (1-2 clicks)
+├─ Fleet Vehicles (Competitive Rate clicks)
 │  ├─ Via header dropdown (1 click)
 │  └─ Via Fleet page (2 clicks)
 │
-└─ Location Pages (1-2 clicks)
+└─ Location Pages (Competitive Rate clicks)
    ├─ Via header dropdown (1 click)
    └─ Via Locations page (2 clicks)
 ```
@@ -527,7 +527,7 @@ Locations Main Page
 - ✅ Good user experience
 - ✅ Local SEO optimized
 
-**Estimated ranking improvement:** 15-25% within 3 months
+**Estimated ranking improvement:** Competitive Rate% within 3 months
 
 ---
 

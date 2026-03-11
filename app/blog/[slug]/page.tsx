@@ -96,7 +96,7 @@ export default async function BlogPostPage({ params }: Props) {
                             {post.relatedServiceSlug && (
                                 <div className="mt-12 bg-teal-50 border border-teal-100 rounded-xl p-6">
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">Looking for this service?</h3>
-                                    <p className="text-gray-600 mb-4">We offer professional {post.relatedServiceSlug.replace(/-/g, ' ')} with fixed prices.</p>
+                                    <p className="text-gray-600 mb-4">We offer professional {post.relatedServiceSlug.replace(/-/g, ' ')} with Competitive Quotes.</p>
                                     <Link href={`/services/${post.relatedServiceSlug}`}>
                                         <Button className="bg-teal-600 hover:bg-teal-700 text-white">
                                             Book Now <ArrowRight className="w-4 h-4 ml-2" />
@@ -120,9 +120,9 @@ export default async function BlogPostPage({ params }: Props) {
                             <div className="relative z-10">
                                 <h3 className="text-xl font-bold mb-2">Need Help?</h3>
                                 <p className="text-gray-400 mb-6 text-sm">Call our 24/7 support line for immediate assistance.</p>
-                                <a href="tel:+923080628195" className="block">
+                                <a href="https://wa.me/966569487569" className="block">
                                     <Button className="w-full bg-white text-gray-900 hover:bg-gray-100 group font-bold">
-                                        Call Now
+                                        WhatsApp Now
                                     </Button>
                                 </a>
                             </div>

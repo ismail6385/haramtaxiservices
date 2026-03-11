@@ -1,10 +1,16 @@
 "use client";
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Car, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
+    const pathname = usePathname();
+
+    if (pathname && pathname.startsWith('/admin')) {
+        return null;
+    }
 
     const quickLinks = [
         { name: 'Home', href: '/' },

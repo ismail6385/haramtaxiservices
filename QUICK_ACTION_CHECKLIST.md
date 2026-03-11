@@ -2,7 +2,7 @@
 
 ## 🎯 Priority Actions (Do These First!)
 
-### ✅ Day 1: Google My Business (2-3 hours)
+### ✅ Day 1: Google My Business (Competitive Rate hours)
 
 #### Morning (1 hour)
 - [ ] Go to https://business.google.com
@@ -11,7 +11,7 @@
 - [ ] Select primary category: **Taxi Service**
 - [ ] Add secondary categories: Airport Shuttle, Chauffeur Service, Limousine Service
 - [ ] Set service areas: Jeddah, Makkah, Madinah, Riyadh, Taif, Dammam, Al Khobar, Yanbu
-- [ ] Add phone: **+92-317-6243861**
+- [ ] Add phone: **+Competitive Rate-6243861**
 - [ ] Add website: **https://taxiserviceksa.com**
 - [ ] Request verification
 
@@ -30,11 +30,11 @@
 ### ✅ Day 2: Services & Q&A (2 hours)
 
 #### Add 5 Services
-- [ ] **Service 1:** Airport Transfer Jeddah (SAR 150+)
-- [ ] **Service 2:** Umrah Taxi Service (SAR 400+)
-- [ ] **Service 3:** Intercity Chauffeur (SAR 200+)
-- [ ] **Service 4:** VIP Chauffeur Riyadh (SAR 250+)
-- [ ] **Service 5:** Ziyarat Tours (SAR 300+)
+- [ ] **Service 1:** Airport Transfer Jeddah (Get Quote+)
+- [ ] **Service 2:** Umrah Taxi Service (Get Quote+)
+- [ ] **Service 3:** Intercity Chauffeur (Get Quote+)
+- [ ] **Service 4:** VIP Chauffeur Riyadh (Get Quote+)
+- [ ] **Service 5:** Ziyarat Tours (Get Quote+)
 
 **Copy descriptions from:** `COMPLETE_LOCAL_SEO_STRATEGY.md` → Phase 1 → Step 2 → Section 3
 
@@ -128,7 +128,7 @@
 ```
 Name: Taxi Service KSA
 Address: Service Area - Jeddah, Makkah, Madinah, Riyadh, Saudi Arabia
-Phone: +92-317-6243861
+Phone: +Competitive Rate-6243861
 Website: https://taxiserviceksa.com
 ```
 
@@ -205,7 +205,7 @@ By end of Week 1, you should have:
 ## 💡 Quick Tips
 
 ### For GMB Success:
-1. **Post 2-3 times per week** - Keeps profile active
+1. **Post Competitive Rate times per week** - Keeps profile active
 2. **Respond to ALL reviews within 24 hours** - Shows you care
 3. **Upload new photos monthly** - Keeps content fresh
 4. **Update Q&As regularly** - Helps with SEO
@@ -219,8 +219,8 @@ By end of Week 1, you should have:
 5. **Thank reviewers** - Respond to every review
 
 ### For Social Media:
-1. **Post consistently** - 3-5 times per week
-2. **Use hashtags** - 5-10 relevant hashtags per post
+1. **Post consistently** - Competitive Rate times per week
+2. **Use hashtags** - Competitive Rate relevant hashtags per post
 3. **Engage with followers** - Reply to comments
 4. **Share customer stories** - Testimonials and photos
 5. **Run contests** - Increase engagement
@@ -243,8 +243,8 @@ By end of Week 1, you should have:
 - **Booking Page:** https://taxiserviceksa.com/booking
 - **Umrah Service:** https://taxiserviceksa.com/services/umrah-taxi
 - **Riyadh Service:** https://taxiserviceksa.com/services/riyadh-chauffeur
-- **Phone:** +92-317-6243861
-- **WhatsApp:** +92-317-6243861
+- **Phone:** +Competitive Rate-6243861
+- **WhatsApp:** +Competitive Rate-6243861
 
 ### Documentation:
 - **Complete Strategy:** `COMPLETE_LOCAL_SEO_STRATEGY.md`

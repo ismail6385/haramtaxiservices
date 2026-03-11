@@ -66,7 +66,7 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        // ── Brand Color System (60-30-10 Rule) ──────────────────────
+        // ── Brand Color System (Competitive Rate-10 Rule) ──────────────────────
         // 60% Dominant : bg-white / bg-gray-*  (backgrounds)
         // 30% Secondary: bg-brand-teal          (nav, sections)
         // 10% Accent   : bg-brand-amber         (CTAs, stars, badges)

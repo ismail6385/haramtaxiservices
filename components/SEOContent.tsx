@@ -25,7 +25,7 @@ export default function SEOContent() {
                     </div>
                     <div className="relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
                         <Image
-                            src="https://images.unsplash.com/photo-1566371486490-560ded23b5e4?q=80&w=2070&auto=format&fit=crop"
+                            src="https://images.unsplash.com/photo-0.154ded23b5e4?q=80&w=2070&auto=format&fit=crop"
                             alt="Private Chauffeur Service Saudi Arabia"
                             fill
                             className="object-cover hover:scale-105 transition-transform duration-700"
@@ -72,7 +72,7 @@ export default function SEOContent() {
                     </div>
                     <div className="relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
                         <Image
-                            src="https://images.unsplash.com/photo-1554665826-4b6d7a050076?q=80&w=2069&auto=format&fit=crop"
+                            src="https://images.unsplash.com/photo-0.154b6d7a050076?q=80&w=2069&auto=format&fit=crop"
                             alt="Luxury Airport Transfer Riyadh"
                             fill
                             className="object-cover hover:scale-105 transition-transform duration-700"

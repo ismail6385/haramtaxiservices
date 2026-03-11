@@ -16,7 +16,7 @@ export default function BlogPreview() {
         {
             title: "Top 5 Luxury Hotels in Jeddah",
             excerpt: "Discover the most opulent accommodations in the Bride of the Red Sea for a truly royal stay.",
-            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-0.154a8506099945?q=80&w=2070&auto=format&fit=crop",
             date: "Nov 02, 2024",
             author: "Sarah Khan",
             slug: "/blog/luxury-hotels-jeddah"

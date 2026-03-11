@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { MapPin, Clock, CheckCircle2, Car, Phone, ArrowRight, AlertCircle, Wallet } from 'lucide-react';
+import { MapPin, Clock, CheckCircle2, Car, Phone, MessageCircle, ArrowRight, AlertCircle, Wallet } from 'lucide-react';
 import {
     Accordion,
     AccordionContent,
@@ -39,7 +39,7 @@ export default function TaifPage() {
     const features = [
         'Licensed Taif taxi drivers',
         'Clean and air-conditioned vehicles',
-        'Fixed rates - no hidden charges',
+        'competitive quotes - no hidden charges',
         '24/7 availability in Taif',
         'English & Arabic speaking drivers',
         'Mountain tour packages available',
@@ -48,7 +48,7 @@ export default function TaifPage() {
     const faqs = [
         {
             question: "How much is a taxi from Taif to Makkah?",
-            answer: "The taxi fare from Taif to Makkah typically ranges from SAR 120-200 depending on the vehicle type. The scenic journey takes approximately 1.5 hours through mountain roads."
+            answer: "The taxi fare from Taif to Makkah typically ranges from Get Quote-200 depending on the vehicle type. The scenic journey takes approximately 1.5 hours through mountain roads."
         },
         {
             question: "Do you provide mountain tour services in Taif?",
@@ -64,15 +64,15 @@ export default function TaifPage() {
         },
         {
             question: "How long does it take from Taif to Jeddah by taxi?",
-            answer: "The taxi journey from Taif to Jeddah takes approximately 2-2.5 hours. We provide comfortable vehicles with experienced drivers for this route."
+            answer: "The taxi journey from Taif to Jeddah takes approximately Get Quote hours. We provide comfortable vehicles with experienced drivers for this route."
         }
     ];
 
     const popularRoutes = [
-        { from: 'Taif', to: 'Makkah', duration: '1.5 hrs', price: 'SAR 120-200' },
-        { from: 'Taif', to: 'Jeddah', duration: '2-2.5 hrs', price: 'SAR 200-300' },
-        { from: 'Taif City', to: 'Al-Hada', duration: '30 min', price: 'SAR 50-80' },
-        { from: 'Taif', to: 'Shubra Palace', duration: '20 min', price: 'SAR 30-50' },
+        { from: 'Taif', to: 'Makkah', duration: '1.5 hrs', price: 'Get Quote-200' },
+        { from: 'Taif', to: 'Jeddah', duration: 'Get Quote hrs', price: 'Get Quote-300' },
+        { from: 'Taif City', to: 'Al-Hada', duration: '30 min', price: 'Get Quote-80' },
+        { from: 'Taif', to: 'Shubra Palace', duration: '20 min', price: 'Get Quote-50' },
     ];
 
     const localBusinessSchema = {
@@ -82,8 +82,8 @@ export default function TaifPage() {
         "image": "https://haramtaxiservice.com/taif-mountains-view.webp",
         "@id": "https://haramtaxiservice.com/locations/taif",
         "url": "https://haramtaxiservice.com/locations/taif",
-        "telephone": "+923080628195",
-        "priceRange": "SAR 30-300",
+        "telephone": "+966569487569",
+        "priceRange": "Get Quote-300",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Taif",
@@ -159,9 +159,9 @@ export default function TaifPage() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Taif." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Taif." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
-                                            <svg className="w-6 h-6 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                            <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
                                         </Button>
                                     </a>
@@ -239,7 +239,7 @@ export default function TaifPage() {
                                 <p className="text-gray-600 mb-4">Popular attractions like Shubra Palace, Al Rudaf Park, and Souq Okaz are spread across the city, making taxi-hopping expensive and tiring.</p>
                                 <div className="flex items-center text-teal-600 font-medium">
                                     <CheckCircle2 className="w-5 h-5 mr-2" />
-                                    <span>Solution: Half-day city tour packages with fixed pricing</span>
+                                    <span>Solution: Half-day city tour packages with Competitive quotes</span>
                                 </div>
                             </div>
                             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
@@ -263,7 +263,7 @@ export default function TaifPage() {
                         <div className="text-center mb-12">
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-100 rounded-full mb-4">
                                 <Wallet className="w-4 h-4 text-teal-600" />
-                                <span className="text-teal-800 text-sm font-semibold">Transparent Rates</span>
+                                <span className="text-teal-800 text-sm font-semibold">Competitive rates</span>
                             </div>
                             <h2 className="text-4xl font-bold text-gray-900 mb-4">Taxi Pricing in Taif</h2>
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -464,9 +464,9 @@ export default function TaifPage() {
                                     Book Taif Taxi Online
                                 </Button>
                             </Link>
-                            <a href="tel:+923080628195">
+                            <a href="https://wa.me/966569487569">
                                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-500 px-8 py-6 text-lg">
-                                    <Phone className="w-5 h-5 mr-2" />Call for Booking
+                                    <MessageCircle className="w-5 h-5 mr-2" />WhatsApp for Booking
                                 </Button>
                             </a>
                         </div>

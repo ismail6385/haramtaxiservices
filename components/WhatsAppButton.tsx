@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppButton() {
     const [isVisible, setIsVisible] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const toggleVisibility = () => {
@@ -20,11 +22,15 @@ export default function WhatsAppButton() {
     }, []);
 
     const handleWhatsAppClick = () => {
-        const phoneNumber = '923080628195';
+        const phoneNumber = '966569487569';
         const message = "As-salamu alaykum, I want to book a taxi. Please provide details.";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
+
+    if (pathname && pathname.startsWith('/admin')) {
+        return null;
+    }
 
     return (
         <button

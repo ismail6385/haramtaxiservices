@@ -23,7 +23,7 @@ export default function JsonLdLocalBusiness() {
         ],
         "url": "https://haramtaxiservice.com",
         "priceRange": "$$",
-        "openingHours": "Mo-Su 00:00-23:59",
+        "openingHours": "Mo-Su 00:Get Quote:59",
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",

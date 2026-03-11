@@ -20,9 +20,9 @@ export const servicesData: ServiceData[] = [
         content: "Arriving in Jeddah for Umrah? Our specialized airport transfer service ensures a smooth transition from the terminal to your hotel in Makkah or Madinah. We monitor your flight status to handle delays and our drivers meet you at the arrivals hall with a name board/sign.",
         features: ["Meet & Greet Service", "Flight Tracking", "60 Minutes Free Waiting", "Help with Luggage"],
         pricing: [
-            { title: "Makkah (Sedan)", price: "200 SAR" },
-            { title: "Makkah (GMC)", price: "400 SAR" },
-            { title: "Madinah (Sedan)", price: "450 SAR" },
+            { title: "Makkah (Sedan)", price: "Get Quote" },
+            { title: "Makkah (GMC)", price: "Get Quote" },
+            { title: "Madinah (Sedan)", price: "Get Quote" },
         ],
         faqs: [
             { question: "Where will the driver meet me?", answer: "The driver will wait at the arrivals hall with a sign bearing your name." },
@@ -33,11 +33,11 @@ export const servicesData: ServiceData[] = [
         slug: "madinah-airport-transfer",
         title: "Madinah Airport Taxi Service | Prince Mohammad Airport",
         description: "Reliable taxi transfers from Prince Mohammad Bin Abdulaziz International Airport to your Madinah hotel.",
-        content: "Start your visit to the Prophet's City with ease. Our Madinah airport taxi service provides quick and comfortable transfers to all hotels near Masjid Nabawi. Avoid the hassle of haggling and enjoy a fixed-price ride.",
-        features: ["24/7 Availability", "Fixed Prices", "English Speaking Drivers", "VIP Options"],
+        content: "Start your visit to the Prophet's City with ease. Our Madinah airport taxi service provides quick and comfortable transfers to all hotels near Masjid Nabawi. Avoid the hassle of haggling and enjoy a competitive-rate ride.",
+        features: ["24/7 Availability", "competitive quotes", "English Speaking Drivers", "VIP Options"],
         pricing: [
-            { title: "Madinah Hotel (Sedan)", price: "80 SAR" },
-            { title: "Madinah Hotel (GMC)", price: "150 SAR" },
+            { title: "Madinah Hotel (Sedan)", price: "Get Quote" },
+            { title: "Madinah Hotel (GMC)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -46,10 +46,10 @@ export const servicesData: ServiceData[] = [
         title: "Makkah Ziyarat Tour | Historical Sites Taxi",
         description: "Visit the holy sites of Makkah including Cave Hira, Cave Thawr, and Arafat with our guided taxi tour.",
         content: "Experience the profound history of Makkah with our Ziyarat tours. Our knowledgeable drivers will take you to Jabal Al-Nour (Cave of Hira), Jabal Thawr, Mina, Muzdalifah, Arafat, and Jannat al-Mu'alla. Take your time to pray and reflect at each location.",
-        features: ["3-4 Hour Tour", "Knowledgeable Driver", "Flexible Route", "Air Conditioned"],
+        features: ["Get Quote Hour Tour", "Knowledgeable Driver", "Flexible Route", "Air Conditioned"],
         pricing: [
-            { title: "Sedan (4 Pax)", price: "200 SAR" },
-            { title: "GMC (7 Pax)", price: "350 SAR" },
+            { title: "Sedan (4 Pax)", price: "Get Quote" },
+            { title: "GMC (7 Pax)", price: "Get Quote" },
         ],
         faqs: [
             { question: "Can we climb the mountain?", answer: "Yes, but please allocate extra time. Standard tours are for visiting the base." }
@@ -60,10 +60,10 @@ export const servicesData: ServiceData[] = [
         title: "Madinah Ziyarat Tour | Holy Places Visit",
         description: "Comprehensive Ziyarat tour in Madinah visiting Masjid Quba, Mount Uhud, and Qiblatain.",
         content: "Visit the sacred landmarks of Madinah. Our tour includes Masjid Quba (where 2 rakats equal an Umrah), Mount Uhud & Archers' Hill, Masjid Qiblatain, and the Seven Mosques. A spiritual journey for every pilgrim.",
-        features: ["3-4 Hour Tour", "Guided Visit", "Door-to-door", "Family Friendly"],
+        features: ["Get Quote Hour Tour", "Guided Visit", "Door-to-door", "Family Friendly"],
         pricing: [
-            { title: "Sedan (4 Pax)", price: "150 SAR" },
-            { title: "GMC (7 Pax)", price: "250 SAR" },
+            { title: "Sedan (4 Pax)", price: "Get Quote" },
+            { title: "GMC (7 Pax)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -74,8 +74,8 @@ export const servicesData: ServiceData[] = [
         content: "Professional chauffeur service for business and leisure travelers arriving in Riyadh. We provide meet & greet services at all terminals of KKIA.",
         features: ["Flight Monitoring", "Luxury Vehicles", "English Speaking Drivers", "Corporate Accounts"],
         pricing: [
-            { title: "City Center (Sedan)", price: "150 SAR" },
-            { title: "City Center (GMC)", price: "250 SAR" },
+            { title: "City Center (Sedan)", price: "Get Quote" },
+            { title: "City Center (GMC)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -84,10 +84,10 @@ export const servicesData: ServiceData[] = [
         title: "Dammam Airport (KFIA) Taxi Service",
         description: "Reliable taxi from King Fahd International Airport to Dammam, Khobar, and Dhahran.",
         content: "Fast and comfortable transfers from Dammam Airport. Whether you are heading to Khobar Corniche, Dhahran Aramco Camp, or Dammam city, we get you there safely.",
-        features: ["Eastern Province Coverage", "24/7 Operations", "Fixed Rates", " Spacious Cars"],
+        features: ["Eastern Province Coverage", "24/7 Operations", "competitive rates", " Spacious Cars"],
         pricing: [
-            { title: "Dammam (Sedan)", price: "120 SAR" },
-            { title: "Khobar (Sedan)", price: "150 SAR" },
+            { title: "Dammam (Sedan)", price: "Get Quote" },
+            { title: "Khobar (Sedan)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -98,8 +98,8 @@ export const servicesData: ServiceData[] = [
         content: "Experience the future with our NEOM transfer services. We provide authorized transport from NEOM Bay Airport to all major project sites and camps.",
         features: ["Permitted Vehicles", "Knowledgeable Drivers", "Premium Fleet", "Punctual Service"],
         pricing: [
-            { title: "Transfer (Sedan)", price: "Contact Us" },
-            { title: "Transfer (GMC)", price: "Contact Us" },
+            { title: "Transfer (Sedan)", price: "Get Quote" },
+            { title: "Transfer (GMC)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -110,8 +110,8 @@ export const servicesData: ServiceData[] = [
         content: "Visit Saudi Arabia's first UNESCO World Heritage site. Our drivers will take you to the Winter Park or directly to Hegra entrance for your booked tour.",
         features: ["Local Experts", "Scenic Route", "Flexible Timing", "Comfortable SUVs"],
         pricing: [
-            { title: "Half Day Tour", price: "400 SAR" },
-            { title: "Full Day Tour", price: "700 SAR" },
+            { title: "Half Day Tour", price: "Get Quote" },
+            { title: "Full Day Tour", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -122,7 +122,7 @@ export const servicesData: ServiceData[] = [
         content: "Reliable transfer for travelers crossing into Jordan. We drop you right at the Saudi passport control.",
         features: ["Border Expertise", "24/7 Service", "Help with Formalities", "Safe Driving"],
         pricing: [
-            { title: "Transfer (Sedan)", price: "400 SAR" },
+            { title: "Transfer (Sedan)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -133,8 +133,8 @@ export const servicesData: ServiceData[] = [
         content: "Discover the rich culture and modern marvels of KSA. Customized city tours available in all major cities.",
         features: ["Custom Itinerary", "Local Guide Driver", "Multiple Cities", "Hourly Rates"],
         pricing: [
-            { title: "4 Hours (Sedan)", price: "300 SAR" },
-            { title: "8 Hours (Sedan)", price: "500 SAR" },
+            { title: "4 Hours (Sedan)", price: "Get Quote" },
+            { title: "8 Hours (Sedan)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -145,7 +145,7 @@ export const servicesData: ServiceData[] = [
         content: "Reliable transport for corporate clients. Establish a corporate account for seamless billing and priority booking.",
         features: ["Priority Booking", "Monthly Invoicing", "Executive Cars", "NDAs Available"],
         pricing: [
-            { title: "Daily Rate", price: "Contact Us" },
+            { title: "Daily Rate", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -156,7 +156,7 @@ export const servicesData: ServiceData[] = [
         content: "Need a car for the whole day? Our hourly chauffeur service gives you the freedom to go where you want, when you want.",
         features: ["Unlimited Stops", "Fuel Included", "Professional Driver", "Clean Vehicle"],
         pricing: [
-            { title: "Per Hour (Min 4h)", price: "50 SAR/hr" },
+            { title: "Per Hour (Min 4h)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -167,7 +167,7 @@ export const servicesData: ServiceData[] = [
         content: "Visit Tabuk Castle, the old Hijaz Railway station, and the vibrant souks of Tabuk.",
         features: ["Historic Sites", "Local Markets", "Family Friendly", "3 Hours"],
         pricing: [
-            { title: "Tour (Sedan)", price: "250 SAR" },
+            { title: "Tour (Sedan)", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -178,7 +178,7 @@ export const servicesData: ServiceData[] = [
         content: "Seamless pickup from AlUla Airport to Habitas, Banyan Tree, or Shaden Resort.",
         features: ["Resort Drop-off", "Luxury SUVs", "Desert Capable", "Luggage Assist"],
         pricing: [
-            { title: "Transfer", price: "200 SAR" },
+            { title: "Transfer", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -189,7 +189,7 @@ export const servicesData: ServiceData[] = [
         content: "Navigating the vast NEOM region requires reliable transport. We serve Magnag, Sharma, and Gayle.",
         features: ["Region Knowledge", "4x4 Available", "Project Site Access", "Long Distance"],
         pricing: [
-            { title: "Hourly Rate", price: "Contact Us" },
+            { title: "Hourly Rate", price: "Get Quote" },
         ],
         faqs: []
     },
@@ -200,7 +200,7 @@ export const servicesData: ServiceData[] = [
         description: "Causeway transfer to Bahrain.",
         content: "Cross the King Fahd Causeway comfortably.",
         features: ["Causeway Permit", "Insurance Included"],
-        pricing: [{ title: "One Way", price: "400 SAR" }],
+        pricing: [{ title: "One Way", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -209,7 +209,7 @@ export const servicesData: ServiceData[] = [
         description: "Direct transfer from Khobar to Bahrain.",
         content: "Quick trip across the bridge.",
         features: ["Door to Door", "Document Assist"],
-        pricing: [{ title: "One Way", price: "350 SAR" }],
+        pricing: [{ title: "One Way", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -218,7 +218,7 @@ export const servicesData: ServiceData[] = [
         description: "Travel to Bahrain from KSA.",
         content: "Reliable cross-border taxi service.",
         features: ["Cross Border", "Round Trip"],
-        pricing: [{ title: "One Way", price: "400 SAR" }],
+        pricing: [{ title: "One Way", price: "Get Quote" }],
         faqs: []
     },
     // Generic generator for location-based services
@@ -228,7 +228,7 @@ export const servicesData: ServiceData[] = [
         description: "Local and intercity taxi in Jubail.",
         content: "Leading taxi provider in Jubail Industrial City.",
         features: ["Industrial Area Access", "24/7"],
-        pricing: [{ title: "City Ride", price: "30 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -237,7 +237,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Yanbu Al Sinaiyah and Al Bahr.",
         content: "Reliable transport in the Royal Commission city.",
         features: ["RC Area", "Airport Transfer"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -246,7 +246,7 @@ export const servicesData: ServiceData[] = [
         description: "City and mountain transport in Taif.",
         content: "Visit Al Hada, Shafa, and Taif city center.",
         features: ["Mountain Safe", "Cable Car"],
-        pricing: [{ title: "City Tour", price: "200 SAR" }],
+        pricing: [{ title: "City Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -255,7 +255,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport in the cloud city of Abha.",
         content: "Tour the Green Mountain and High City.",
         features: ["Cool Climate", "Scenic Drives"],
-        pricing: [{ title: "Daily Rate", price: "400 SAR" }],
+        pricing: [{ title: "Daily Rate", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -264,7 +264,7 @@ export const servicesData: ServiceData[] = [
         description: "Pickup from King Abdullah Bin Abdulaziz Airport (Jazan).",
         content: "Transfer to Jazan city, Sabya, or Abu Arish.",
         features: ["Flight Monitoring", "Punctual"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -273,7 +273,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer from Najran Domestic Airport.",
         content: "Serving Najran city and border areas.",
         features: ["Local Drivers", "Safe"],
-        pricing: [{ title: "City Transfer", price: "60 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -282,7 +282,7 @@ export const servicesData: ServiceData[] = [
         description: "Al Ahsa International Airport transfers.",
         content: "Serving Hofuf and Mubarraz.",
         features: ["Oasis Tour", "Dates Market"],
-        pricing: [{ title: "City Transfer", price: "70 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -291,7 +291,7 @@ export const servicesData: ServiceData[] = [
         description: "Prince Sultan Bin Abdulaziz Airport taxi.",
         content: "Gate to NEOM and the North.",
         features: ["Wide Coverage", "English Support"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -300,7 +300,7 @@ export const servicesData: ServiceData[] = [
         description: "Hail International Airport transfer.",
         content: "Gateway to the desert and rock art.",
         features: ["Rally Drivers", "Knowledgeable"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -309,7 +309,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi from ELQ Airport to Buraidah and Unaizah.",
         content: "Central region airport transfers.",
         features: ["Serving all Qassim", "Fast"],
-        pricing: [{ title: "Buraidah", price: "80 SAR" }],
+        pricing: [{ title: "Buraidah", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -318,7 +318,7 @@ export const servicesData: ServiceData[] = [
         description: "Arar Airport pickup and drop-off.",
         content: "Northern Borders transport.",
         features: ["Safe", "Reliable"],
-        pricing: [{ title: "City Transfer", price: "40 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -327,7 +327,7 @@ export const servicesData: ServiceData[] = [
         description: "Al Jouf Airport (Sakaka) taxi service.",
         content: "Serving Sakaka and Dumat al-Jandal.",
         features: ["Olive Country", "Heritage"],
-        pricing: [{ title: "Sakaka", price: "50 SAR" }],
+        pricing: [{ title: "Sakaka", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -336,7 +336,7 @@ export const servicesData: ServiceData[] = [
         description: "Bisha Airport transfer service.",
         content: "Serving Bisha and surrounding villages.",
         features: ["Local", "Friendly"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -345,7 +345,7 @@ export const servicesData: ServiceData[] = [
         description: "Rafha Airport pickup service.",
         content: "Serving Rafha city.",
         features: ["On Time", "Clean Cars"],
-        pricing: [{ title: "City Transfer", price: "40 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -354,7 +354,7 @@ export const servicesData: ServiceData[] = [
         description: "Sharurah Airport transfer.",
         content: "Serving the Empty Quarter gateway.",
         features: ["Desert Safe", "AC"],
-        pricing: [{ title: "City Transfer", price: "40 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -363,7 +363,7 @@ export const servicesData: ServiceData[] = [
         description: "Turaif Airport transfer service.",
         content: "Serving the mining city of Turaif.",
         features: ["Industrial", "Business"],
-        pricing: [{ title: "City Transfer", price: "40 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -372,7 +372,7 @@ export const servicesData: ServiceData[] = [
         description: "Airport transfer in Wadi Ad Dawasir.",
         content: "Connecting the valley.",
         features: ["Local", "Fast"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -381,7 +381,7 @@ export const servicesData: ServiceData[] = [
         description: "Al Wajh Airport pickup.",
         content: "Red Sea coastal city transfer.",
         features: ["Coastal", "Historic"],
-        pricing: [{ title: "City Transfer", price: "40 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -390,7 +390,7 @@ export const servicesData: ServiceData[] = [
         description: "Prince Abdul Mohsin Bin Abdulaziz Airport taxi.",
         content: "Serving Yanbu Industrial and Yanbu Al Bahr.",
         features: ["Diving Trips", "Business"],
-        pricing: [{ title: "City Transfer", price: "60 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -399,7 +399,7 @@ export const servicesData: ServiceData[] = [
         description: "Gurayat Airport transfer.",
         content: "Serving the northern border city.",
         features: ["Border Access", "24/7"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -408,7 +408,7 @@ export const servicesData: ServiceData[] = [
         description: "Explore the largest oasis in the world.",
         content: "Visit Al Qara Hill and the souks.",
         features: ["UNESCO Site", "Nature"],
-        pricing: [{ title: "Tour", price: "200 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -417,7 +417,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport across Al Qassim region.",
         content: "Serving Buraidah, Unaizah, and Ar Rass.",
         features: ["Dates Festival", "Business"],
-        pricing: [{ title: "Intercity", price: "100 SAR" }],
+        pricing: [{ title: "Intercity", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -426,7 +426,7 @@ export const servicesData: ServiceData[] = [
         description: "High-end chauffeur service in KSA.",
         content: "S Class, BMW 7 Series, and Yukon XL.",
         features: ["VIP", "Protocol"],
-        pricing: [{ title: "Daily", price: "2000 SAR" }],
+        pricing: [{ title: "Daily", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -435,7 +435,7 @@ export const servicesData: ServiceData[] = [
         description: "Spacious vehicles for families.",
         content: "Safe and comfortable transport for ladies and children.",
         features: ["Family Privacy", "Child Seats"],
-        pricing: [{ title: "Booking", price: "Standard + 20%" }],
+        pricing: [{ title: "Booking", price: "Get Quote" }],
         faqs: []
     },
     // ===== Airport Taxis =====
@@ -445,7 +445,7 @@ export const servicesData: ServiceData[] = [
         description: "Professional transfer from Prince Sultan Airport to Tabuk city, NEOM, and surrounding areas.",
         content: "Reliable airport transfer from Tabuk Airport to your hotel or destination. We serve Tabuk city center, NEOM project sites, and surrounding areas.",
         features: ["Flight Monitoring", "Meet & Greet", "Wide Coverage", "24/7"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }, { title: "NEOM Transfer", price: "400 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }, { title: "NEOM Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -454,7 +454,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi from Jubail Airport to industrial city and residential area.",
         content: "Quick transfer from Jubail Airport to the Royal Commission area, Industrial City, or residential neighborhoods.",
         features: ["Industrial Access", "Fast", "Clean Cars", "English Support"],
-        pricing: [{ title: "City Transfer", price: "60 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -462,8 +462,8 @@ export const servicesData: ServiceData[] = [
         title: "Dammam Airport (KFIA) Taxi",
         description: "Taxi from King Fahd International Airport to Dammam, Khobar, and Dhahran.",
         content: "Fast airport pickup from KFIA. We cover Dammam, Khobar, Dhahran, and Jubail.",
-        features: ["Eastern Province", "Flight Tracking", "Fixed Rate", "Large Fleet"],
-        pricing: [{ title: "Dammam City", price: "120 SAR" }, { title: "Khobar", price: "150 SAR" }],
+        features: ["Eastern Province", "Flight Tracking", "competitive rate", "Large Fleet"],
+        pricing: [{ title: "Dammam City", price: "Get Quote" }, { title: "Khobar", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -472,7 +472,7 @@ export const servicesData: ServiceData[] = [
         description: "Airport transfer in Ad Dawadmi.",
         content: "Serving Dawadmi Airport and surrounding areas in the Riyadh region.",
         features: ["Local Drivers", "Reliable", "AC", "Luggage Help"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -481,7 +481,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi from Abha Regional Airport to city center and tourist areas.",
         content: "Transfer from Abha Airport to Green Mountain, High City, Soudah, and all Abha hotels.",
         features: ["Mountain Safe", "Tourist Areas", "Cool Climate", "Scenic"],
-        pricing: [{ title: "City Transfer", price: "60 SAR" }, { title: "Soudah", price: "150 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }, { title: "Soudah", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -490,7 +490,7 @@ export const servicesData: ServiceData[] = [
         description: "Airport transfer from Qaisumah Airport.",
         content: "Serving Hafr Al Batin and surrounding northern areas from Qaisumah Airport.",
         features: ["Northern Region", "Reliable", "Safe", "AC"],
-        pricing: [{ title: "Hafr Al Batin", price: "80 SAR" }],
+        pricing: [{ title: "Hafr Al Batin", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -499,7 +499,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi from King Abdulaziz International Airport to Jeddah city, Makkah, and Madinah.",
         content: "Professional taxi service from Jeddah Airport. We serve all terminals including T1, North Terminal, and Hajj Terminal. Direct transfers to Jeddah hotels, Makkah, and Madinah.",
         features: ["All Terminals", "Meet & Greet", "24/7", "Flight Tracking"],
-        pricing: [{ title: "Jeddah City", price: "80 SAR" }, { title: "Makkah", price: "250 SAR" }],
+        pricing: [{ title: "Jeddah City", price: "Get Quote" }, { title: "Makkah", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -507,8 +507,8 @@ export const servicesData: ServiceData[] = [
         title: "Khobar Airport Taxi",
         description: "Airport transfer from KFIA to Khobar city.",
         content: "Direct transfer from King Fahd International Airport to Al Khobar hotels and corniche area.",
-        features: ["Direct Route", "Fixed Price", "Comfortable", "Meet & Greet"],
-        pricing: [{ title: "Khobar Transfer", price: "150 SAR" }],
+        features: ["Direct Route", "Competitive Quote", "Comfortable", "Meet & Greet"],
+        pricing: [{ title: "Khobar Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -517,7 +517,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer from Al Baha Domestic Airport.",
         content: "Airport pickup in Al Baha. We serve Al Baha city, Baljurashi, and Thee Ain village.",
         features: ["Mountain Driving", "Tourist Spots", "Safe", "AC"],
-        pricing: [{ title: "City Transfer", price: "50 SAR" }],
+        pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -526,7 +526,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer from NEOM Bay Airport to project sites.",
         content: "Authorized transport from NEOM Bay Airport to The Line, Trojena, Sindalah port, and all NEOM zones.",
         features: ["NEOM Permitted", "Premium Fleet", "Project Access", "Reliable"],
-        pricing: [{ title: "Transfer", price: "Contact Us" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -535,7 +535,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer from Red Sea International Airport to resorts.",
         content: "Premium airport transfer to Red Sea Global resort destinations. Luxury vehicles for a first-class experience.",
         features: ["Luxury Fleet", "Resort Drop-off", "VIP Service", "Luggage Assist"],
-        pricing: [{ title: "Resort Transfer", price: "Contact Us" }],
+        pricing: [{ title: "Resort Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -544,7 +544,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer from King Abdullah Economic City to Jeddah Airport.",
         content: "Direct transfer from KAEC to King Abdulaziz International Airport. Reliable service for residents and business travelers.",
         features: ["Direct Route", "On Time", "Business Class", "Luggage Help"],
-        pricing: [{ title: "One Way", price: "250 SAR" }],
+        pricing: [{ title: "One Way", price: "Get Quote" }],
         faqs: []
     },
     // ===== City Taxis =====
@@ -554,7 +554,7 @@ export const servicesData: ServiceData[] = [
         description: "Local and intercity taxi service in Tabuk region.",
         content: "Reliable taxi service covering Tabuk city, military areas, and connections to NEOM and Jordan border.",
         features: ["City Coverage", "Intercity", "Military City", "Border Runs"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }, { title: "Intercity", price: "From 200 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Intercity", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -563,7 +563,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Buraidah, capital of Al Qassim region.",
         content: "Local transport in Buraidah. We cover the dates market, Al Rajhi Mosque, King Abdullah Park, and all neighborhoods.",
         features: ["Local Knowledge", "Date Festival", "Business", "Reliable"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -572,7 +572,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Hofuf and Al Mubarraz, Al Ahsa region.",
         content: "Transport within Al Ahsa's main city. Visit Al Qara caves, the traditional souks, and the famous oasis.",
         features: ["Oasis Tours", "UNESCO Site", "Local Expert", "AC"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }, { title: "Al Qara Tour", price: "150 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Al Qara Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -581,7 +581,7 @@ export const servicesData: ServiceData[] = [
         description: "Premium taxi service in Al Khobar.",
         content: "Covering Khobar Corniche, Half Moon Bay, Dhahran, and King Fahd Causeway transfers to Bahrain.",
         features: ["Corniche Area", "Bahrain Bridge", "Business District", "Beach Trips"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }, { title: "Bahrain", price: "350 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Bahrain", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -590,7 +590,7 @@ export const servicesData: ServiceData[] = [
         description: "Professional taxi service across the capital city of Riyadh.",
         content: "Reliable transport in Riyadh. Airport transfers, business district, Diriyah, Boulevard, and all major destinations.",
         features: ["Capital Coverage", "Business District", "Airport Runs", "24/7"],
-        pricing: [{ title: "City Ride", price: "30 SAR" }, { title: "Airport", price: "150 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Airport", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -599,7 +599,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Dammam, Eastern Province capital.",
         content: "Covering Dammam Corniche, King Fahd Park, Heritage Village, and all city areas. Quick connections to Khobar and Dhahran.",
         features: ["Eastern Province", "Corniche Area", "Heritage Sites", "Tri-City"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -608,7 +608,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport in Najran, southern Saudi Arabia.",
         content: "Explore Najran's rich heritage. We serve the Emara Palace, Al Ukhdood archaeological site, and the traditional souks.",
         features: ["Heritage Tours", "Border Access", "Local Guides", "AC"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }, { title: "Heritage Tour", price: "200 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Heritage Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -617,7 +617,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Sharurah, gateway to the Empty Quarter.",
         content: "Reliable transport in Sharurah and connections to Najran and the Empty Quarter desert.",
         features: ["Desert Safe", "Long Distance", "AC", "Reliable"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -626,7 +626,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Rabigh industrial and residential areas.",
         content: "Serving Petro Rabigh workers, KAEC residents, and transit passengers along the Jeddah-Madinah highway.",
         features: ["Industrial Zone", "KAEC Link", "Highway Access", "24/7"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }, { title: "KAEC", price: "100 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "KAEC", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -635,7 +635,7 @@ export const servicesData: ServiceData[] = [
         description: "Premium taxi service in the holy city of Madinah.",
         content: "Reliable transport in Madinah. Hotel to Haram transfers, Ziyarat tours, airport pickups, and intercity connections.",
         features: ["Haram Transfers", "Ziyarat Tours", "Airport Runs", "24/7 Prayer Times"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }, { title: "Airport", price: "80 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Airport", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -644,7 +644,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Gurayat, northern Saudi Arabia.",
         content: "Serving Qurayyat city and the Jordan border crossing. Ideal for travelers heading to Amman.",
         features: ["Border Runs", "Jordan Access", "Reliable", "AC"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }, { title: "Border", price: "200 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Border", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -653,7 +653,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Umluj, the Maldives of Saudi Arabia.",
         content: "Beach transfers, island boat trips, and city transport in the beautiful coastal town of Umluj.",
         features: ["Beach Access", "Island Trips", "Scenic", "Coastal"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }, { title: "Beach Tour", price: "150 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Beach Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -662,7 +662,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Baljurashi, Al Baha region.",
         content: "Mountain transport in Baljurashi. Access to Raghdan Forest Park, Thee Ain Village, and scenic mountain roads.",
         features: ["Mountain Safe", "Forest Park", "Scenic Routes", "Cool Climate"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -671,25 +671,25 @@ export const servicesData: ServiceData[] = [
         description: "Taxi in Tanomah, Asir region mountain town.",
         content: "Scenic mountain transport in Tanomah. Visit the famous fog-covered forests and Al Namas.",
         features: ["Mountain Roads", "Fog Forest", "Scenic", "Safe"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
         slug: "city-taxi",
         title: "City Taxi Service",
         description: "Local city taxi service across Saudi Arabia.",
-        content: "Professional city taxi service available in all major Saudi cities. Fixed rates, clean vehicles, and professional drivers.",
-        features: ["All Cities", "Fixed Rates", "Clean Cars", "Professional"],
-        pricing: [{ title: "Base Rate", price: "From 25 SAR" }],
+        content: "Professional city taxi service available in all major Saudi cities. competitive rates, clean vehicles, and professional drivers.",
+        features: ["All Cities", "competitive rates", "Clean Cars", "Professional"],
+        pricing: [{ title: "Base Rate", price: "Get Quote" }],
         faqs: []
     },
     {
         slug: "local-taxi",
         title: "Local Taxi Service",
         description: "Affordable local taxi rides in your city.",
-        content: "Need a ride within your city? Our local taxi service covers all neighborhoods with fair, fixed pricing.",
+        content: "Need a ride within your city? Our local taxi service covers all neighborhoods with fair, Competitive quotes.",
         features: ["Affordable", "Quick Pickup", "All Areas", "Door to Door"],
-        pricing: [{ title: "Local Ride", price: "From 20 SAR" }],
+        pricing: [{ title: "Local Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -698,7 +698,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service in KAEC (King Abdullah Economic City).",
         content: "Serving KAEC residents, visitors, and business travelers. Connections to Jeddah, Rabigh, and the Haramain train station.",
         features: ["KAEC Coverage", "Train Station", "Jeddah Link", "Business"],
-        pricing: [{ title: "City Ride", price: "30 SAR" }, { title: "Jeddah", price: "250 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }, { title: "Jeddah", price: "Get Quote" }],
         faqs: []
     },
     // ===== Tour Services =====
@@ -708,7 +708,7 @@ export const servicesData: ServiceData[] = [
         description: "Guided taxi tour of AlUla's ancient wonders and modern attractions.",
         content: "Explore AlUla's stunning landscapes, Hegra UNESCO site, Elephant Rock, and the Old Town. Our drivers know every hidden gem.",
         features: ["UNESCO Sites", "Elephant Rock", "Old Town", "Desert Landscapes"],
-        pricing: [{ title: "Half Day", price: "400 SAR" }, { title: "Full Day", price: "700 SAR" }],
+        pricing: [{ title: "Half Day", price: "Get Quote" }, { title: "Full Day", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -717,7 +717,7 @@ export const servicesData: ServiceData[] = [
         description: "Explore Jeddah's historic Al Balad, Corniche, and modern landmarks.",
         content: "Discover Jeddah's blend of old and new. Visit UNESCO-listed Al Balad, the stunning Corniche, King Fahd Fountain, and the vibrant art scene.",
         features: ["Al Balad UNESCO", "Corniche Drive", "King Fahd Fountain", "Art District"],
-        pricing: [{ title: "Half Day", price: "300 SAR" }, { title: "Full Day", price: "500 SAR" }],
+        pricing: [{ title: "Half Day", price: "Get Quote" }, { title: "Full Day", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -726,7 +726,7 @@ export const servicesData: ServiceData[] = [
         description: "Tour the historic port city of Yanbu Al Bahr and the modern industrial city.",
         content: "Explore Yanbu's diving spots, the old Ottoman harbor, and the Royal Commission recreational areas.",
         features: ["Historic Port", "Diving Spots", "RC Area", "Corniche"],
-        pricing: [{ title: "Tour", price: "250 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -735,7 +735,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit historic old towns across Saudi Arabia.",
         content: "Experience the charm of traditional Saudi old towns. From Jeddah's Al Balad to AlUla's Old Town and Ushaiger village.",
         features: ["Heritage Sites", "Photography Spots", "Guided", "Cultural"],
-        pricing: [{ title: "Tour", price: "250 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -744,7 +744,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the colorful heritage village of Rijal Almaa near Abha.",
         content: "Explore the stunning UNESCO-nominated Rijal Almaa village with its colorful stone towers. Located in the Asir mountains near Abha.",
         features: ["UNESCO Nominated", "Mountain Village", "Photography", "Cultural Heritage"],
-        pricing: [{ title: "Tour from Abha", price: "300 SAR" }],
+        pricing: [{ title: "Tour from Abha", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -753,7 +753,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the ancient marble village of Thee Ain in Al Baha.",
         content: "Discover the spectacular Thee Ain heritage village, built on a white marble hill with a waterfall. A hidden gem in Al Baha region.",
         features: ["Ancient Village", "Waterfall", "Marble Hill", "Photography"],
-        pricing: [{ title: "Tour from Al Baha", price: "250 SAR" }],
+        pricing: [{ title: "Tour from Al Baha", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -762,7 +762,7 @@ export const servicesData: ServiceData[] = [
         description: "Explore Al Qara caves and mountain in Al Ahsa.",
         content: "Visit the famous Al Qara Mountain with its cool caves and stunning views over the Al Ahsa oasis. A unique geological wonder.",
         features: ["Cave Exploration", "Oasis Views", "Cool Temperature", "UNESCO Area"],
-        pricing: [{ title: "Tour", price: "200 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -771,7 +771,7 @@ export const servicesData: ServiceData[] = [
         description: "Tour the highest point in Saudi Arabia at Soudah Peak near Abha.",
         content: "Visit Soudah Peak at 3,000m above sea level. Enjoy cable car rides, fog forests, and breathtaking mountain views.",
         features: ["Highest Peak", "Cable Car", "Fog Forest", "Mountain Views"],
-        pricing: [{ title: "Tour from Abha", price: "300 SAR" }],
+        pricing: [{ title: "Tour from Abha", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -780,7 +780,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the UNESCO rock art site at Jubbah near Hail.",
         content: "Explore the ancient petroglyphs at Jubbah, a UNESCO World Heritage site. Thousands of years of human history carved in stone.",
         features: ["UNESCO Site", "Rock Art", "Desert Landscape", "Historical"],
-        pricing: [{ title: "Tour from Hail", price: "300 SAR" }],
+        pricing: [{ title: "Tour from Hail", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -789,7 +789,7 @@ export const servicesData: ServiceData[] = [
         description: "Explore Dumat Al Jandal castle and Al Jouf olive farms.",
         content: "Visit the ancient Marid Castle, Mosque of Omar, and the famous olive groves of Al Jouf region.",
         features: ["Marid Castle", "Omar Mosque", "Olive Farms", "Heritage"],
-        pricing: [{ title: "Tour", price: "250 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -798,7 +798,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the traditional mud-brick village of Ushaiger near Riyadh.",
         content: "Step back in time at Ushaiger, one of the best-preserved traditional Najdi villages. Just 200km from Riyadh.",
         features: ["Mud Brick Houses", "Traditional", "Photography", "Near Riyadh"],
-        pricing: [{ title: "Tour from Riyadh", price: "400 SAR" }],
+        pricing: [{ title: "Tour from Riyadh", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -807,7 +807,7 @@ export const servicesData: ServiceData[] = [
         description: "Explore Najran's Emara Palace and Al Ukhdood archaeological site.",
         content: "Discover the rich history of Najran. Visit the stunning Emara Palace, the ancient Al Ukhdood ruins mentioned in the Quran, and traditional souks.",
         features: ["Emara Palace", "Al Ukhdood", "Quranic Site", "Traditional Souks"],
-        pricing: [{ title: "Tour", price: "250 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -816,7 +816,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the famous date and pomegranate farms of Bisha.",
         content: "Explore Bisha's agricultural heritage. Tour date palm plantations and pomegranate orchards in the fertile valley.",
         features: ["Date Farms", "Pomegranate", "Agricultural", "Valley Views"],
-        pricing: [{ title: "Farm Tour", price: "200 SAR" }],
+        pricing: [{ title: "Farm Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -825,7 +825,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the famous shipwreck beach and Red Sea coast at Haql.",
         content: "Explore Haql's stunning coastline with views of four countries. Visit the famous Georgios G shipwreck on the beach.",
         features: ["Shipwreck Beach", "Red Sea Coast", "4 Country Views", "Scenic"],
-        pricing: [{ title: "Tour from Tabuk", price: "350 SAR" }],
+        pricing: [{ title: "Tour from Tabuk", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -834,7 +834,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the famous oases of Saudi Arabia.",
         content: "Explore Al Ahsa, the world's largest oasis, and other palm-filled oases across the Kingdom.",
         features: ["Al Ahsa Oasis", "Palm Gardens", "Springs", "UNESCO"],
-        pricing: [{ title: "Tour", price: "200 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -843,7 +843,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the ancient ruins of Lina Village near Tabuk.",
         content: "Explore the mysterious ruins of Lina, an ancient village in the Tabuk region with archaeological significance.",
         features: ["Ancient Ruins", "Archaeological", "Desert Setting", "Photography"],
-        pricing: [{ title: "Tour", price: "250 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -852,7 +852,7 @@ export const servicesData: ServiceData[] = [
         description: "Visit the olive farms of Al Jouf region.",
         content: "Al Jouf is home to the largest olive farms in the Middle East. Tour the groves and taste fresh Saudi olive oil.",
         features: ["Olive Groves", "Oil Tasting", "Al Jouf", "Agricultural"],
-        pricing: [{ title: "Tour", price: "200 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     // ===== Industrial & Business Services =====
@@ -862,7 +862,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to industrial valleys and economic zones in Saudi Arabia.",
         content: "Specialized transport for workers and visitors to industrial valleys across the Kingdom. Covering Modon zones and free trade areas.",
         features: ["Industrial Zones", "Worker Transport", "Early Morning", "Shift Times"],
-        pricing: [{ title: "Transfer", price: "From 50 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -871,7 +871,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to and from Petro Rabigh refinery complex.",
         content: "Reliable transport for Petro Rabigh employees and contractors. Gate-to-gate service with safety compliance.",
         features: ["Refinery Access", "Safety Compliant", "Shift Times", "Reliable"],
-        pricing: [{ title: "Transfer", price: "From 100 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -880,7 +880,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service to Al Kharj industrial area south of Riyadh.",
         content: "Transport to Al Kharj military and industrial zones. Serving factory workers, military personnel, and business visitors.",
         features: ["Industrial Zone", "Military Base", "Riyadh Link", "Daily Runs"],
-        pricing: [{ title: "From Riyadh", price: "200 SAR" }],
+        pricing: [{ title: "From Riyadh", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -889,7 +889,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport within Jubail Industrial City and Royal Commission area.",
         content: "Specialized transport serving the Royal Commission of Jubail. Access to SABIC, Ma'aden, and other industrial facilities.",
         features: ["RC Access", "SABIC Area", "Industrial Pass", "Worker Transport"],
-        pricing: [{ title: "Industrial Zone", price: "40 SAR" }],
+        pricing: [{ title: "Industrial Zone", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -898,7 +898,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service in Royal Commission areas of Jubail and Yanbu.",
         content: "Serving the Royal Commission industrial cities of Jubail and Yanbu. Access to all plant sites and residential compounds.",
         features: ["RC Jubail", "RC Yanbu", "Plant Access", "Compound Service"],
-        pricing: [{ title: "Transfer", price: "From 40 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -907,7 +907,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Saudi Aramco compounds and facilities.",
         content: "Reliable transport for Aramco employees and visitors. Serving Dhahran, Ras Tanura, and Abqaiq areas.",
         features: ["Compound Access", "Dhahran HQ", "Ras Tanura", "Abqaiq"],
-        pricing: [{ title: "Transfer", price: "From 80 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -916,7 +916,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport within Yanbu Industrial City.",
         content: "Serving the petrochemical and refining complex of Yanbu Industrial City. Worker transport and business transfers.",
         features: ["Petrochemical Zone", "Refinery Area", "Worker Shifts", "Business"],
-        pricing: [{ title: "Transfer", price: "From 40 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -925,7 +925,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Sudair Industrial City north of Riyadh.",
         content: "Taxi service to the growing Sudair Industrial City, home to major manufacturing and logistics facilities.",
         features: ["Industrial Zone", "Riyadh Link", "Manufacturing", "Logistics"],
-        pricing: [{ title: "From Riyadh", price: "250 SAR" }],
+        pricing: [{ title: "From Riyadh", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -934,7 +934,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to industrial zones across Saudi Arabia.",
         content: "Specialized transport for factory workers and business visitors to industrial zones in all major Saudi cities.",
         features: ["All Cities", "Shift Times", "Worker Transport", "Business"],
-        pricing: [{ title: "Transfer", price: "From 50 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -943,7 +943,7 @@ export const servicesData: ServiceData[] = [
         description: "Professional transport for business meetings and corporate events.",
         content: "Executive taxi service for business professionals. Clean, punctual, and discreet transport for meetings and events.",
         features: ["Executive Cars", "Punctual", "Corporate Accounts", "Receipt"],
-        pricing: [{ title: "Hourly", price: "75 SAR/hr" }, { title: "Daily", price: "500 SAR" }],
+        pricing: [{ title: "Hourly", price: "Get Quote" }, { title: "Daily", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -952,7 +952,7 @@ export const servicesData: ServiceData[] = [
         description: "Daily staff transport solutions for businesses.",
         content: "Reliable daily transport for your workforce. We provide scheduled pickups and drop-offs for company staff across Saudi Arabia.",
         features: ["Daily Routes", "Scheduled Times", "Coaster Available", "Monthly Plans"],
-        pricing: [{ title: "Monthly Contract", price: "Contact Us" }],
+        pricing: [{ title: "Monthly Contract", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -961,7 +961,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service near King Fahd University of Petroleum & Minerals.",
         content: "Serving KFUPM students, faculty, and visitors. Quick rides to Dhahran, Khobar, and Dammam.",
         features: ["Campus Pickup", "Student Rates", "Dhahran Area", "Reliable"],
-        pricing: [{ title: "City Ride", price: "25 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -970,7 +970,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service in and around King Khalid Military City, Hafr Al Batin.",
         content: "Serving KKMC and Hafr Al Batin. Reliable transport for military personnel and civilian workers.",
         features: ["Military City", "Hafr Al Batin", "Reliable", "24/7"],
-        pricing: [{ title: "City Ride", price: "30 SAR" }],
+        pricing: [{ title: "City Ride", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -979,7 +979,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to military cities in Saudi Arabia.",
         content: "Serving King Khalid Military City, King Abdulaziz Military City, and other defense installations.",
         features: ["Military Zones", "Worker Transport", "Reliable", "Safe"],
-        pricing: [{ title: "Transfer", price: "From 50 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -988,7 +988,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service near major Saudi universities.",
         content: "Serving students and faculty at KAU, KFUPM, KSU, UQU, Islamic University, and other campuses across Saudi Arabia.",
         features: ["Campus Service", "Student Rates", "Multiple Cities", "Safe"],
-        pricing: [{ title: "Campus Ride", price: "From 20 SAR" }],
+        pricing: [{ title: "Campus Ride", price: "Get Quote" }],
         faqs: []
     },
     // ===== Border Services =====
@@ -998,7 +998,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer to Saudi-Kuwait border crossings.",
         content: "Reliable taxi to Al Raqi and Al Khafji border crossings. Serving travelers heading to Kuwait.",
         features: ["Border Experience", "Document Help", "24/7", "Return Trips"],
-        pricing: [{ title: "From Hafr Al Batin", price: "300 SAR" }, { title: "From Dammam", price: "500 SAR" }],
+        pricing: [{ title: "From Hafr Al Batin", price: "Get Quote" }, { title: "From Dammam", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1007,7 +1007,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer to Saudi-UAE border at Al Batha.",
         content: "Transport to the Al Batha border crossing to UAE. Serving travelers from Al Ahsa, Hofuf, and Eastern Province.",
         features: ["Batha Border", "Document Assist", "AC", "Reliable"],
-        pricing: [{ title: "From Al Ahsa", price: "600 SAR" }, { title: "From Dammam", price: "800 SAR" }],
+        pricing: [{ title: "From Al Ahsa", price: "Get Quote" }, { title: "From Dammam", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1016,7 +1016,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer to Salwa border crossing to Qatar.",
         content: "Quick transfer to the Salwa border for travelers heading to Doha. From Al Ahsa, Khobar, or Dammam.",
         features: ["Salwa Border", "Fast Route", "Return Available", "AC"],
-        pricing: [{ title: "From Al Ahsa", price: "400 SAR" }, { title: "From Khobar", price: "500 SAR" }],
+        pricing: [{ title: "From Al Ahsa", price: "Get Quote" }, { title: "From Khobar", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1025,7 +1025,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer to Saudi-Jordan border crossings.",
         content: "Transport to Halat Ammar, Al Durra (Haql), and Al Haditha border crossings for travelers heading to Jordan.",
         features: ["Multiple Crossings", "Tabuk Area", "Document Help", "24/7"],
-        pricing: [{ title: "From Tabuk", price: "400 SAR" }],
+        pricing: [{ title: "From Tabuk", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1034,7 +1034,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi for travelers exiting to Jordan.",
         content: "Complete exit transfer service to Jordan borders. We handle the route while you focus on your documents.",
         features: ["Exit Support", "Border Knowledge", "Reliable", "Comfortable"],
-        pricing: [{ title: "Transfer", price: "400 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1043,7 +1043,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer to Saudi-Yemen border at Al Tuwal and Wadeeah.",
         content: "Transport to Yemen border crossings from Najran, Jazan, and surrounding areas.",
         features: ["Al Tuwal", "Wadeeah", "Border Expert", "Safe"],
-        pricing: [{ title: "From Najran", price: "600 SAR" }, { title: "From Jazan", price: "400 SAR" }],
+        pricing: [{ title: "From Najran", price: "Get Quote" }, { title: "From Jazan", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1052,7 +1052,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer to Al Wadeeah border crossing (Yemen).",
         content: "Direct taxi service to the Al Wadeeah border crossing from Najran and Sharurah.",
         features: ["Wadeeah Crossing", "Najran Base", "Reliable", "Safe"],
-        pricing: [{ title: "From Najran", price: "600 SAR" }],
+        pricing: [{ title: "From Najran", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1061,7 +1061,7 @@ export const servicesData: ServiceData[] = [
         description: "Specialized border crossing transport service.",
         content: "Expert transport to all Saudi border crossings. Our drivers know the procedures and best times to cross.",
         features: ["All Borders", "Procedure Knowledge", "Wait Service", "Return"],
-        pricing: [{ title: "Transfer", price: "From 300 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1070,7 +1070,7 @@ export const servicesData: ServiceData[] = [
         description: "Quick border run for visa renewal purposes.",
         content: "Need to exit and re-enter Saudi Arabia for visa purposes? We provide efficient border run services to the nearest crossing.",
         features: ["Fast Service", "Border Knowledge", "Wait & Return", "Multiple Borders"],
-        pricing: [{ title: "Visa Run", price: "From 500 SAR" }],
+        pricing: [{ title: "Visa Run", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1079,7 +1079,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer from Qurayyat to Al Haditha Jordan border.",
         content: "Short transfer from Qurayyat city to the Al Haditha border crossing into Jordan.",
         features: ["Short Distance", "Border Access", "Fast", "Reliable"],
-        pricing: [{ title: "Border Transfer", price: "150 SAR" }],
+        pricing: [{ title: "Border Transfer", price: "Get Quote" }],
         faqs: []
     },
     // ===== Tourism & Special Services =====
@@ -1089,7 +1089,7 @@ export const servicesData: ServiceData[] = [
         description: "Desert safari transport and dune bashing experiences.",
         content: "Experience the Arabian desert in a 4x4. Dune bashing, sunset views, and traditional Bedouin camp visits available.",
         features: ["4x4 Vehicles", "Dune Bashing", "Sunset Tours", "Camp Visits"],
-        pricing: [{ title: "Half Day Safari", price: "500 SAR" }, { title: "Full Day", price: "800 SAR" }],
+        pricing: [{ title: "Half Day Safari", price: "Get Quote" }, { title: "Full Day", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1098,7 +1098,7 @@ export const servicesData: ServiceData[] = [
         description: "Reliable desert-ready transport across Saudi Arabia.",
         content: "Navigate the Saudi deserts safely with our desert-experienced drivers and 4x4 vehicles.",
         features: ["4x4 Fleet", "Desert Experience", "GPS Equipped", "Safety Kit"],
-        pricing: [{ title: "Transfer", price: "From 200 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1107,7 +1107,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport through the Great Nafud Desert.",
         content: "Explore the red sand dunes of the Great Nafud Desert. Our experienced drivers navigate the desert safely.",
         features: ["Red Sand Dunes", "4x4 Only", "Desert Guide", "Photography"],
-        pricing: [{ title: "Day Trip", price: "600 SAR" }],
+        pricing: [{ title: "Day Trip", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1116,7 +1116,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to the edge of the Empty Quarter desert.",
         content: "Experience the vastness of Rub al Khali, the largest sand desert in the world. Based from Sharurah or Najran.",
         features: ["World Largest Desert", "4x4 Required", "Guide Included", "Adventure"],
-        pricing: [{ title: "Day Trip", price: "700 SAR" }],
+        pricing: [{ title: "Day Trip", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1125,7 +1125,7 @@ export const servicesData: ServiceData[] = [
         description: "Scenic mountain tours in Asir, Al Baha, and Taif regions.",
         content: "Experience the cool mountains of southern Saudi Arabia. From Soudah Peak to Al Baha forests and Taif roses.",
         features: ["Scenic Routes", "Cool Climate", "Multiple Regions", "Safe Driving"],
-        pricing: [{ title: "Mountain Tour", price: "From 300 SAR" }],
+        pricing: [{ title: "Mountain Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1134,7 +1134,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport along the Red Sea coast from Jeddah to NEOM.",
         content: "Explore Saudi Arabia's stunning Red Sea coastline. From Jeddah to Umluj, Al Wajh, and NEOM.",
         features: ["Coastal Route", "Beach Access", "Diving Spots", "Scenic"],
-        pricing: [{ title: "Transfer", price: "From 200 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1143,7 +1143,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to The Line mega project in NEOM.",
         content: "Authorized transport service to The Line project in NEOM. Serving workers, visitors, and business travelers.",
         features: ["NEOM Access", "Authorized", "Premium Fleet", "Reliable"],
-        pricing: [{ title: "Transfer", price: "Contact Us" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1152,7 +1152,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Sindalah Island port in NEOM.",
         content: "Transfer to the luxury Sindalah Island yacht destination in NEOM. Premium vehicles for a premium experience.",
         features: ["Island Transfer", "Luxury", "NEOM Zone", "VIP"],
-        pricing: [{ title: "Transfer", price: "Contact Us" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1161,7 +1161,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Trojena ski resort project in NEOM.",
         content: "Transfer to Trojena, the future mountain tourism destination in NEOM. Winter sports and year-round adventures.",
         features: ["Mountain Access", "NEOM Zone", "Premium", "Authorized"],
-        pricing: [{ title: "Transfer", price: "Contact Us" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1170,7 +1170,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Half Moon Bay beach near Khobar.",
         content: "Beach day at Half Moon Bay? We provide comfortable transport from Khobar, Dammam, and Dhahran to this popular beach destination.",
         features: ["Beach Transfer", "Weekend Trips", "Family Friendly", "Return Trip"],
-        pricing: [{ title: "From Khobar", price: "100 SAR" }],
+        pricing: [{ title: "From Khobar", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1179,7 +1179,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Umluj beaches, the Maldives of Saudi Arabia.",
         content: "Reach the crystal-clear waters of Umluj. Island boat trip coordination available.",
         features: ["Beach Access", "Island Trips", "Crystal Waters", "Photography"],
-        pricing: [{ title: "Transfer", price: "From 150 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1188,7 +1188,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Jazan ferry terminal for Farasan Islands.",
         content: "Transfer to the Jazan ferry port for your Farasan Islands trip. We time your pickup to match the ferry schedule.",
         features: ["Ferry Schedule", "Jazan Port", "Island Trip", "Timed Pickup"],
-        pricing: [{ title: "From Jazan", price: "80 SAR" }],
+        pricing: [{ title: "From Jazan", price: "Get Quote" }],
         faqs: []
     },
     // ===== Service Type Categories =====
@@ -1197,8 +1197,8 @@ export const servicesData: ServiceData[] = [
         title: "Intercity Taxi Service",
         description: "Long-distance intercity taxi between all Saudi cities.",
         content: "Connect between any two cities in Saudi Arabia. Comfortable, air-conditioned vehicles with experienced long-distance drivers.",
-        features: ["All Cities", "Long Distance", "Comfortable", "Fixed Rates"],
-        pricing: [{ title: "Per KM", price: "From 2 SAR/km" }],
+        features: ["All Cities", "Long Distance", "Comfortable", "competitive rates"],
+        pricing: [{ title: "Per KM", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1207,7 +1207,7 @@ export const servicesData: ServiceData[] = [
         description: "Premium long-distance taxi service across Saudi Arabia.",
         content: "Specialized in journeys over 500km. Our long-distance fleet includes spacious SUVs and luxury sedans for maximum comfort.",
         features: ["500+ KM Routes", "Comfort Stops", "Fresh Driver", "AC"],
-        pricing: [{ title: "Custom Quote", price: "Contact Us" }],
+        pricing: [{ title: "Custom Quote", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1216,7 +1216,7 @@ export const servicesData: ServiceData[] = [
         description: "Dedicated taxi service for Umrah and Hajj pilgrims.",
         content: "Special transport designed for pilgrims. Our drivers understand the rituals, timings, and holy sites. Patient, respectful service.",
         features: ["Pilgrim Focused", "Holy Sites", "Patient Drivers", "Prayer Stops"],
-        pricing: [{ title: "Transfer", price: "From 200 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1225,7 +1225,7 @@ export const servicesData: ServiceData[] = [
         description: "Complete taxi service for Umrah pilgrims in Saudi Arabia.",
         content: "From airport to hotel, hotel to Haram, and Ziyarat tours. Everything a pilgrim needs in one reliable taxi service.",
         features: ["Airport Pickup", "Hotel Transfers", "Ziyarat", "24/7"],
-        pricing: [{ title: "Package", price: "From 200 SAR" }],
+        pricing: [{ title: "Package", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1234,7 +1234,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Saudi Arabia's heritage and historical sites.",
         content: "Visit UNESCO sites, ancient ruins, and historical landmarks across the Kingdom with our knowledgeable drivers.",
         features: ["UNESCO Sites", "Knowledgeable Drivers", "Photography Stops", "Cultural"],
-        pricing: [{ title: "Tour", price: "From 250 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1243,7 +1243,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service to historical sites in Saudi Arabia.",
         content: "From Mada'in Saleh to Diriyah, explore Saudi Arabia's rich history with a private taxi and knowledgeable driver.",
         features: ["Historical Routes", "Guide Driver", "Flexible Timing", "All Regions"],
-        pricing: [{ title: "Tour", price: "From 250 SAR" }],
+        pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1252,7 +1252,7 @@ export const servicesData: ServiceData[] = [
         description: "Daily shuttle between your hotel and Masjid Al Haram in Makkah.",
         content: "Staying in Aziziyah or far from the Haram? Our daily shuttle gets you to the Clock Tower area and back, avoiding crowded buses.",
         features: ["Daily Service", "Prayer Times", "Aziziyah Coverage", "Private"],
-        pricing: [{ title: "One Way", price: "50 SAR" }, { title: "Daily Package", price: "200 SAR" }],
+        pricing: [{ title: "One Way", price: "Get Quote" }, { title: "Daily Package", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1261,7 +1261,7 @@ export const servicesData: ServiceData[] = [
         description: "Professional airport taxi at all Saudi airports.",
         content: "Meet and greet at arrivals, flight tracking, and reliable transport from every airport in Saudi Arabia to your destination.",
         features: ["All Airports", "Meet & Greet", "Flight Tracking", "24/7"],
-        pricing: [{ title: "Transfer", price: "From 50 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1270,7 +1270,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to the annual dates festival in Buraidah.",
         content: "Visit the world's largest dates festival in Buraidah. We provide transport from airports and hotels to the festival grounds.",
         features: ["Festival Ground", "Buraidah", "Seasonal", "Group Transport"],
-        pricing: [{ title: "Transfer", price: "From 100 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1279,7 +1279,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi during dates festival season in Qassim.",
         content: "Reliable taxi during the busy dates festival season in Buraidah and Unayzah. Book early for guaranteed availability.",
         features: ["Festival Season", "Advance Booking", "Qassim Area", "Reliable"],
-        pricing: [{ title: "Transfer", price: "From 80 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     // ===== Specific Location Services =====
@@ -1289,7 +1289,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Jazan Economic City (JEC).",
         content: "Taxi service to Jazan Economic City, serving workers, business visitors, and industrial staff.",
         features: ["JEC Access", "Industrial Area", "Worker Transport", "Reliable"],
-        pricing: [{ title: "From Jazan", price: "100 SAR" }],
+        pricing: [{ title: "From Jazan", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1298,7 +1298,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Ghadha Park in Hail.",
         content: "Visit the beautiful Ghadha Park in Hail. Enjoy the natural reserve with its unique trees and desert landscape.",
         features: ["Nature Reserve", "Hail Area", "Family Trip", "Scenic"],
-        pricing: [{ title: "From Hail", price: "150 SAR" }],
+        pricing: [{ title: "From Hail", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1307,7 +1307,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Raghdan Park in Al Baha.",
         content: "Visit the cool Raghdan Forest Park, the most famous park in Al Baha region. Cable car and forest walks await.",
         features: ["Forest Park", "Cable Car", "Cool Climate", "Al Baha"],
-        pricing: [{ title: "From Al Baha", price: "80 SAR" }],
+        pricing: [{ title: "From Al Baha", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1316,7 +1316,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to King Fahd Dam near Bisha.",
         content: "Visit the largest dam in Saudi Arabia. A popular picnic and sightseeing destination in Bisha.",
         features: ["Dam Visit", "Scenic Views", "Picnic Area", "Photography"],
-        pricing: [{ title: "From Bisha", price: "100 SAR" }],
+        pricing: [{ title: "From Bisha", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1325,7 +1325,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport in Waad Al Shamal mining city.",
         content: "Serving the Waad Al Shamal mining and industrial area near Turaif. Worker and business transport.",
         features: ["Mining City", "Industrial", "Worker Transport", "Northern Region"],
-        pricing: [{ title: "Transfer", price: "From 100 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1334,7 +1334,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service across the Northern Borders region.",
         content: "Serving Arar, Rafha, and Turaif in the Northern Borders region. Intercity and border crossing services.",
         features: ["Arar", "Rafha", "Turaif", "Border Access"],
-        pricing: [{ title: "Intercity", price: "From 200 SAR" }],
+        pricing: [{ title: "Intercity", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1343,7 +1343,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer to SAR train station in Majmaah.",
         content: "Connecting Majmaah to the Saudi Railway network. Transfer to the train station from Majmaah city and surrounding areas.",
         features: ["Train Connection", "SAR Station", "Timed Pickup", "Reliable"],
-        pricing: [{ title: "Station Transfer", price: "50 SAR" }],
+        pricing: [{ title: "Station Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1352,7 +1352,7 @@ export const servicesData: ServiceData[] = [
         description: "Transfer to Haramain Railway station in KAEC.",
         content: "Connecting to the Haramain High Speed Railway at KAEC station. Transfers from Rabigh, Jeddah north, and KAEC city.",
         features: ["High Speed Rail", "KAEC Station", "Timed Service", "Business"],
-        pricing: [{ title: "Transfer", price: "From 80 SAR" }],
+        pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1361,7 +1361,7 @@ export const servicesData: ServiceData[] = [
         description: "Taxi service to KAUST campus near Thuwal.",
         content: "Transport to King Abdullah University of Science and Technology. Serving faculty, students, and visitors.",
         features: ["Campus Access", "Thuwal Area", "Jeddah Link", "Professional"],
-        pricing: [{ title: "From Jeddah", price: "200 SAR" }],
+        pricing: [{ title: "From Jeddah", price: "Get Quote" }],
         faqs: []
     },
     {
@@ -1370,7 +1370,7 @@ export const servicesData: ServiceData[] = [
         description: "Transport to Duba commercial port on the Red Sea.",
         content: "Transfer to Duba Port for ferry connections to Egypt and port operations. Serving travelers and port workers.",
         features: ["Port Access", "Ferry Connection", "Egypt Route", "Reliable"],
-        pricing: [{ title: "From Tabuk", price: "300 SAR" }],
+        pricing: [{ title: "From Tabuk", price: "Get Quote" }],
         faqs: []
     }
 ];

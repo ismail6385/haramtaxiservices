@@ -8,7 +8,7 @@ import {
 const faqs = [
     {
         question: "How do I book a taxi from Jeddah Airport?",
-        answer: "You can easily book a taxi through our website by clicking the 'Book Now' button. Alternatively, you can call or WhatsApp us at +923080628195 for instant booking confirmation."
+        answer: "You can easily book a taxi through our website by clicking the 'Book Now' button. Alternatively, you can call or WhatsApp us at +966569487569 for instant booking confirmation."
     },
     {
         question: "What types of vehicles do you offer?",
@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: "Are your prices fixed or metered?",
-        answer: "We offer fixed, transparent pricing for all our intercity and airport transfer services. You will know the exact cost before your journey begins, with no hidden charges."
+        answer: "We offer fixed, competitive quotes for all our intercity and airport transfer services. You will know the exact cost before your journey begins, with no hidden charges."
     },
     {
         question: "Is the service available 24/7?",

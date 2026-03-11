@@ -103,7 +103,7 @@ export default function AboutPage() {
         "logo": "https://haramtaxiservice.com/logo.png",
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+923080628195",
+            "telephone": "+966569487569",
             "contactType": "customer service",
             "areaServed": "SA",
             "availableLanguage": ["English", "Arabic", "Urdu"]
@@ -162,7 +162,7 @@ export default function AboutPage() {
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
                                         <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span><strong>Unpredictable Pricing:</strong> No more meter surprises or inflated rates during peak seasons. We committed to fixed, transparent pricing from day one.</span>
+                                        <span><strong>Unpredictable Pricing:</strong> No more meter surprises or inflated rates during peak seasons. We committed to fixed, competitive quotes from day one.</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
@@ -446,7 +446,7 @@ export default function AboutPage() {
                                     <div className="flex-1">
                                         <h3 className="text-2xl font-bold text-gray-900 mb-3">Pickup & Meet</h3>
                                         <p className="text-gray-700 mb-4 leading-relaxed">
-                                            Your driver arrives 10-15 minutes early at the agreed location. For airport pickups, they&apos;ll wait at arrivals holding a name board with your name. For hotel pickups, they wait in the lobby or designated pickup area.
+                                            Your driver arrives a reasonable time early at the agreed location. For airport pickups, they&apos;ll wait at arrivals holding a name board with your name. For hotel pickups, they wait in the lobby or designated pickup area.
                                         </p>
                                         <div className="bg-teal-50 p-4 rounded-lg">
                                             <p className="text-sm text-teal-800"><strong>Communication:</strong> Driver will share live location via WhatsApp. You can call directly if needed.</p>
@@ -489,7 +489,7 @@ export default function AboutPage() {
                                             Arrival at your destination. For hotels, we drop you at the main entrance. For Haram areas with restricted access, we&apos;ll take you to the nearest legal drop-off point and guide you from there.
                                         </p>
                                         <div className="bg-teal-50 p-4 rounded-lg">
-                                            <p className="text-sm text-teal-800"><strong>Payment:</strong> Pay the agreed fixed price. We accept cash (SAR) or can arrange bank transfers for corporate clients.</p>
+                                            <p className="text-sm text-teal-800"><strong>Payment:</strong> Pay the agreed Competitive Quote. We accept cash (SAR) or can arrange bank transfers for corporate clients.</p>
                                         </div>
                                     </div>
                                 </div>

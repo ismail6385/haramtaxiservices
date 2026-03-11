@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const toggleVisibility = () => {
@@ -30,7 +32,7 @@ export default function ScrollToTop() {
         });
     };
 
-    if (!isVisible) {
+    if (!isVisible || (pathname && pathname.startsWith('/admin'))) {
         return null;
     }
 

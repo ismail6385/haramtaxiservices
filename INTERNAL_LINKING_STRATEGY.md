@@ -230,8 +230,8 @@ our Toyota Hiace for group transportation."
 3. Locations Main Page - Links to all cities
 
 ### Medium Authority Pages:
-1. Individual Fleet Pages - 3-5 internal links
-2. Individual Location Pages - 3-5 internal links
+1. Individual Fleet Pages - Competitive Rate internal links
+2. Individual Location Pages - Competitive Rate internal links
 
 ### Support Pages:
 1. About - Links to services and contact

@@ -46,15 +46,15 @@ export default function FareCalculatorPage() {
                                 <tbody className="divide-y divide-gray-100">
                                     <tr>
                                         <td className="p-4 font-medium">Jeddah Airport → Makkah</td>
-                                        <td className="p-4">200 SAR</td>
-                                        <td className="p-4">350 SAR</td>
-                                        <td className="p-4">400 SAR</td>
+                                        <td className="p-4">Get Quote</td>
+                                        <td className="p-4">Get Quote</td>
+                                        <td className="p-4">Get Quote</td>
                                     </tr>
                                     <tr>
                                         <td className="p-4 font-medium">Makkah → Madinah</td>
-                                        <td className="p-4">450 SAR</td>
-                                        <td className="p-4">650 SAR</td>
-                                        <td className="p-4">700 SAR</td>
+                                        <td className="p-4">Get Quote</td>
+                                        <td className="p-4">Get Quote</td>
+                                        <td className="p-4">Get Quote</td>
                                     </tr>
                                 </tbody>
                             </table>

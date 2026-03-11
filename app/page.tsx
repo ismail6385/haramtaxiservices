@@ -22,6 +22,8 @@ import DistanceTable from '@/components/DistanceTable';
 import ComparisonTable from '@/components/ComparisonTable';
 import Testimonials from '@/components/Testimonials';
 import FounderNote from '@/components/FounderNote';
+import TrustMarkers from '@/components/TrustMarkers';
+import BookingProcess from '@/components/BookingProcess';
 
 
 export const metadata: Metadata = {
@@ -132,7 +134,7 @@ export default async function Home() {
     {
       icon: DollarSign,
       title: "Best Rates",
-      description: "Competitive, fixed pricing. No surge pricing, no hidden fees."
+      description: "Competitive quotes. No surge pricing, no hidden fees."
     },
     {
       icon: Headphones,
@@ -172,7 +174,7 @@ export default async function Home() {
     },
     {
       question: "Can I book an affordable private Umrah taxi online?",
-      answer: "Yes, we are known as an affordable private Umrah taxi provider. You can book private taxi for Umrah pilgrims directly through our website or WhatsApp. We offer transparent pricing for all our private taxi for Umrah services."
+      answer: "Yes, we are known as an affordable private Umrah taxi provider. You can book private taxi for Umrah pilgrims directly through our website or WhatsApp. We offer competitive quotes for all our private taxi for Umrah services."
     }
   ];
 
@@ -224,7 +226,7 @@ export default async function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-fluid-h2 font-display font-bold text-gray-900">Most Popular Taxi Routes</h2>
-            <p className="text-lg text-gray-600 mt-3 font-light">Direct & Private transfers with fixed prices. Click to book instantly.</p>
+            <p className="text-lg text-gray-600 mt-3 font-light">Direct & Private transfers with competitive quotes. Click to book instantly.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
@@ -289,7 +291,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* NEW: Transparent Pricing Preview */}
+      {/* NEW: Competitive Quotes Preview */}
       <PricingPreview />
 
       {/* NEW: Distance Table for SEO Snippets */}
@@ -569,7 +571,7 @@ export default async function Home() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Jeddah Airport to Makkah: Complete Travel Guide</h3>
               <p>
                 The most common route for Umrah pilgrims is from <strong>King Abdulaziz International Airport (Jeddah) to Makkah</strong>.
-                The distance is approximately 100 kilometers (62 miles), and the journey typically takes 60 to 90 minutes.
+                The distance is approximately 100 kilometers (62 miles), and the journey typically takesGet Quote minutes.
                 We service all terminals:
               </p>
               <ul className="list-disc pl-5 mt-2 space-y-1">
@@ -578,15 +580,15 @@ export default async function Home() {
                 <li><strong>Hajj Terminal:</strong> Dedicated to Hajj and Umrah charter flights.</li>
               </ul>
               <p className="mt-2">
-                <strong>Taxi Fare Jeddah to Makkah:</strong> Prices vary by vehicle. A standard sedan (Camry) typically costs between 200-250 SAR, while a luxury GMC Yukon XL starts from 350-400 SAR.
-                Haram Taxi Service offers fixed rates so you never have to haggle.
+                <strong>Taxi Fare Jeddah to Makkah:</strong> Prices vary by vehicle. A standard sedan (Camry) typically costs between Get Quote, while a luxury GMC Yukon XL starts from a competitive rate-Get Quote
+                Haram Taxi Service offers competitive quotes so you never have to haggle.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Makkah to Madinah Taxi Services</h3>
               <p>
-                The spiritual journey often continues from Makkah to Madinah. This route via the Hijrah Highway covers about 450 km (280 miles) and takes 4 to 5 hours.
+                The spiritual journey often continues from Makkah to Madinah. This route via the Hijrah Highway covers about 450 km (280 miles) and takesGet Quote hours.
                 Traveling by private taxi allows you to stop at the <strong>Meeqat</strong> if you are traveling in reverse (Madinah to Makkah) to assume Ihram.
                 Our vehicles are equipped with dual AC systems to handle the desert heat, ensuring a comfortable ride for children and the elderly.
               </p>
@@ -649,6 +651,115 @@ export default async function Home() {
           </div>
         </SeoReadMore>
       </section>
+
+      <BookingProcess />
+
+      <TrustMarkers />
+      
+      {/* NEW SECTION: Our Global Standards & Safety */}
+      <section className="py-24 bg-brand-teal-pale/20 overflow-hidden relative">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-teal/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">Our Commitment to Excellence</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+              At Haram Taxi Service, we don&apos;t just provide rides; we facilitate a sacred journey. Our operations are built on three core pillars that ensure your peace of mind from touchdown to takeoff.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-brand-teal text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-brand-teal/20">
+                <Shield className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Unmatched Security</h3>
+              <p className="text-gray-600 leading-relaxed font-light">
+                Every vehicle is tracked via real-time GPS and is fully compliant with the Saudi Transport General Authority (TGA) standards. Your safety is our spiritual duty.
+              </p>
+            </div>
+            <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-brand-amber text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-brand-amber/20">
+                <Star className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Executive Quality</h3>
+              <p className="text-gray-600 leading-relaxed font-light">
+                We maintain a modern fleet of high-end vehicles. From sanitized interiors to climate control optimized for the Arabian heat, comfort is guaranteed.
+              </p>
+            </div>
+            <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-brand-teal-dark text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-brand-teal-dark/20">
+                <Users className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Professionalism</h3>
+              <p className="text-gray-600 leading-relaxed font-light">
+                Our drivers are not just operators; they are experienced guides who understand the sanctity of your journey and treat every passenger with utmost respect.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW SECTION: Travel Tips for Pilgrims */}
+      <section className="py-24 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] lg:aspect-auto lg:h-[600px]">
+              <Image 
+                src="/makkah-haram-night-view.webp" 
+                alt="Makkah Haram Night View" 
+                fill 
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-8 left-8 right-8 text-white">
+                <p className="text-brand-amber font-bold text-sm tracking-widest uppercase mb-2">Pro Tip</p>
+                <h3 className="text-2xl font-bold">Book 48 Hours in Advance</h3>
+                <p className="opacity-90 font-light">Ensure vehicle availability during peak seasons like Ramadan and Hajj.</p>
+              </div>
+            </div>
+            <div className="space-y-10">
+              <div>
+                <h2 className="text-4xl font-display font-bold text-gray-900 mb-6">Expert Travel Tips for Your Umrah Journey</h2>
+                <p className="text-xl text-gray-600 font-light leading-relaxed">
+                  Navigating the Kingdom during pilgrimage can be complex. Here are few tips to make your transition from Jeddah Airport to the Holy Cities smoother.
+                </p>
+              </div>
+              
+              <div className="space-y-8">
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 bg-brand-teal-pale text-brand-teal rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Arrival Strategy</h4>
+                    <p className="text-gray-600 font-light leading-relaxed">Look for your chauffeur at the designated &quot;Meeting Point&quot; in Terminal 1. They will be holding a personalized name card for instant recognition.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 bg-brand-teal-pale text-brand-teal rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Connectivity is Key</h4>
+                    <p className="text-gray-600 font-light leading-relaxed">Stay connected via WhatsApp. Our dispatch team is available 24/7 to coordinate your pickup if your flight is delayed or if you have trouble with baggage claim.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 bg-brand-teal-pale text-brand-teal rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Comfort First</h4>
+                    <p className="text-gray-600 font-light leading-relaxed">Saudi Arabia&apos;s heat can be intense. Always choose a vehicle with robust climate control like our GMC Yukon series for long intercity transfers.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-6">
+                <Link href="/services">
+                  <Button size="lg" className="bg-brand-teal hover:bg-brand-teal-dark h-14 px-8 text-lg rounded-xl">
+                    Explore All Services <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Testimonials — Social Proof (Psychology Principle #2) */}
       <Testimonials />
@@ -725,7 +836,7 @@ export default async function Home() {
                 </Button>
               </Link>
               <a
-                href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride."
+                href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride."
                 target="_blank"
                 rel="noopener noreferrer"
               >

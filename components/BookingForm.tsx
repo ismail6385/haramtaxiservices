@@ -25,7 +25,7 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
-import { MapPin, Phone, User, Clock, Car, Mail, ArrowRight, ArrowLeft, Check, Users, Briefcase, Wallet, ChevronsUpDown, Search, Calendar as CalendarIcon } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, User, Clock, Car, Mail, ArrowRight, ArrowLeft, Check, Users, Briefcase, Wallet, ChevronsUpDown, Search, Calendar as CalendarIcon } from 'lucide-react';
 import { supabase, vehicles, type BookingData } from '@/lib/supabase';
 import { getPrice } from '@/lib/pricing';
 import { countryCodes } from '@/data/countryCodes';
@@ -325,7 +325,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                 <h4 className={`${isHero ? 'text-xs lg:text-sm' : 'text-xs sm:text-sm'} font-medium ${labelColor} mb-1.5 sm:mb-2 ml-1`}>WhatsApp Number</h4>
                                 <div className="flex">
                                     <div className={`${isHero ? 'h-11 lg:h-12' : 'h-11 sm:h-12'} flex items-center justify-center ${isHero ? 'px-2 lg:px-3' : 'px-2 sm:px-3 md:px-4'} font-mono ${isHero ? 'text-xs lg:text-sm' : 'text-xs sm:text-sm'} ${isHero ? 'min-w-[65px] lg:min-w-[75px]' : 'min-w-[65px] sm:min-w-[75px] md:min-w-[85px]'} gap-1 border border-r-0 ${isHero ? 'bg-white/5 border-white/20 text-neutral-300 rounded-l-none' : 'bg-gray-100 border-gray-300 text-gray-500 rounded-l-lg sm:rounded-l-xl'}`}>
-                                        <Phone className={`w-3 h-3 sm:w-4 sm:h-4 ${iconColor} shrink-0`} />
+                                        <MessageCircle className={`w-3 h-3 sm:w-4 sm:h-4 ${iconColor} shrink-0`} />
                                         <span className="truncate">{countryCode}</span>
                                     </div>
                                     <Input

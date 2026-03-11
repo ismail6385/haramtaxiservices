@@ -153,9 +153,9 @@ Disallow: /api/
    - Enhanced rich snippet eligibility
 
 2. **Click-Through Rate (CTR):**
-   - Enhanced meta descriptions → +15-25% CTR
-   - Rich snippets → +20-30% CTR
-   - Star ratings in SERPs → +10-15% CTR
+   - Enhanced meta descriptions → +Competitive Rate% CTR
+   - Rich snippets → +Competitive Rate% CTR
+   - Star ratings in SERPs → +Competitive Rate% CTR
 
 3. **Crawlability:**
    - Sitemap helps Google discover all pages
@@ -243,13 +243,13 @@ Your homepage is now eligible for these rich snippets:
 3. ✅ Add schema markup to other pages
 4. ✅ Optimize images with alt text
 
-### Short-term (1-2 weeks):
+### Short-term (Competitive Rate weeks):
 1. Create blog content for target keywords
 2. Build backlinks from Saudi Arabia directories
 3. Optimize service pages individually
 4. Add FAQ schema to FAQ section
 
-### Long-term (1-3 months):
+### Long-term (Competitive Rate months):
 1. Create location-specific landing pages
 2. Build local citations
 3. Gather and display customer reviews
@@ -298,10 +298,10 @@ Your homepage is now eligible for these rich snippets:
 7. ✅ Technical SEO Files (robots.txt, sitemap.ts)
 
 **Expected Timeline for Results:**
-- **1-2 weeks:** Improved indexing, rich snippets may appear
+- **Competitive Rate weeks:** Improved indexing, rich snippets may appear
 - **1 month:** Better rankings for long-tail keywords
-- **2-3 months:** Significant improvement in primary keyword rankings
-- **3-6 months:** Established authority, consistent top rankings
+- **Competitive Rate months:** Significant improvement in primary keyword rankings
+- **Competitive Rate months:** Established authority, consistent top rankings
 
 ---
 

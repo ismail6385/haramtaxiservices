@@ -551,7 +551,7 @@ export async function POST(request: NextRequest) {
                         
                         <div class="action-bar">
                             ${booking.customer_phone ? `<a href="https://wa.me/${formatPhoneForWhatsApp(booking.customer_phone)}" class="btn btn-whatsapp">WhatsApp</a>` : ''}
-                            ${booking.customer_phone ? `<a href="tel:${booking.customer_phone}" class="btn btn-call">Call</a>` : ''}
+                            ${booking.customer_phone ? `<a href="https://wa.me/966569487569" class="btn btn-call">Call</a>` : ''}
                             <a href="mailto:${booking.customer_email}" class="btn btn-email">Email</a>
                         </div>
                     </div>

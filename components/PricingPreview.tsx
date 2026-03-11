@@ -110,7 +110,7 @@ export default function PricingPreview() {
         <section className="py-20 bg-white" id="pricing" aria-labelledby="pricing-heading">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 id="pricing-heading" className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">Official 2026 Price List</h2>
+                    <h2 id="pricing-heading" className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">Our Executive Fleet & Service Areas</h2>
                     <p className="text-xl text-gray-600">Fixed Rates. No Hidden Charges. <span className="text-brand-amber font-semibold">Best Price Guaranteed.</span></p>
                 </div>
 

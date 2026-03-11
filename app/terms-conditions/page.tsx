@@ -145,7 +145,7 @@ export default function TermsConditionsPage() {
                             <h3 className="text-lg font-semibold text-gray-900 mb-2">4.1 Customer Cancellation</h3>
                             <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
                                 <li><strong>More than 24 hours before pickup:</strong> Full refund</li>
-                                <li><strong>12-24 hours before pickup:</strong> 50% refund</li>
+                                <li><strong>adequate time before pickup:</strong> 50% refund</li>
                                 <li><strong>Less than 12 hours before pickup:</strong> No refund</li>
                                 <li><strong>No-show:</strong> Full charge applies</li>
                             </ul>
@@ -161,7 +161,7 @@ export default function TermsConditionsPage() {
                         <div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-2">4.3 Refund Processing</h3>
                             <p className="text-gray-700">
-                                Approved refunds will be processed within 7-10 business days to the original payment method.
+                                Approved refunds will be processed within Get Quote business days to the original payment method.
                             </p>
                         </div>
                     </div>

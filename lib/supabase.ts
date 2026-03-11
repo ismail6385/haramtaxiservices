@@ -28,41 +28,41 @@ export const vehicles = [
         image: '/gmc-yukon.webp',
         passengers: 7,
         luggage: 5,
-        priceRange: 'SAR 250 - 400'
+        priceRange: 'Get Quote - 400'
     },
     {
         name: 'Toyota Camry',
         image: '/toyota-camry.webp',
         passengers: 4,
         luggage: 3,
-        priceRange: 'SAR 100 - 150'
+        priceRange: 'Get Quote - 150'
     },
     {
         name: 'Hyundai Staria',
         image: '/hyundai-staria.webp',
         passengers: 7,
         luggage: 6,
-        priceRange: 'SAR 180 - 250'
+        priceRange: 'Get Quote - 250'
     },
     {
         name: 'Toyota Hiace',
         image: '/toyota-hiace.webp',
         passengers: 11,
         luggage: 10,
-        priceRange: 'SAR 300 - 450'
+        priceRange: 'Get Quote - 450'
     },
     {
         name: 'Toyota Coaster',
         image: '/toyota-coaster.webp',
         passengers: 17,
         luggage: 15,
-        priceRange: 'SAR 400 - 600'
+        priceRange: 'Get Quote - 600'
     },
     {
         name: 'Hyundai Starex',
         image: '/hyundai-starex.webp',
         passengers: 7,
         luggage: 5,
-        priceRange: 'SAR 150 - 220'
+        priceRange: 'Get Quote - 220'
     }
 ];

@@ -14,7 +14,7 @@ const fleetData = [
         luggage: 5,
         status: 'Active',
         image: '/gmc-yukon-xl-taxi.webp',
-        price: 'Start from 250 SAR'
+        price: 'Start from Get Quote'
     },
     {
         id: '2',
@@ -24,7 +24,7 @@ const fleetData = [
         luggage: 3,
         status: 'Active',
         image: '/toyota-camry-taxi-sedan.webp',
-        price: 'Start from 100 SAR'
+        price: 'Start from Get Quote'
     },
     {
         id: '3',
@@ -34,7 +34,7 @@ const fleetData = [
         luggage: 6,
         status: 'Active',
         image: '/hyundai-staria-family-taxi.webp',
-        price: 'Start from 180 SAR'
+        price: 'Start from Get Quote'
     },
     {
         id: '4',
@@ -44,7 +44,7 @@ const fleetData = [
         luggage: 10,
         status: 'Maintenance',
         image: '/toyota-hiace-commuter-van.webp',
-        price: 'Start from 300 SAR'
+        price: 'Start from Get Quote'
     }
 ];
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import BookingForm from '@/components/BookingForm';
 import { Suspense } from 'react';
-import { MapPin, Phone, Clock, Star, Shield, Car, CheckCircle2, Navigation, DollarSign, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Clock, Star, Shield, Car, CheckCircle2, Navigation, DollarSign, ArrowRight, MessageCircle } from 'lucide-react';
 import NearbyCities from '@/components/NearbyCities';
 
 export const metadata: Metadata = {
@@ -53,15 +53,15 @@ export default function RiyadhLocationPage() {
     const faqs = [
         {
             question: "How much is a taxi from Riyadh Airport to downtown?",
-            answer: "Fares typically range from 100 SAR to 200 SAR depending on the vehicle type (Sedan vs. GMC) and your hotel location in Riyadh."
+            answer: "Fares typically range from Get Quote to Get Quote depending on the vehicle type (Sedan vs. GMC) and your hotel location in Riyadh."
         },
         {
             question: "Is Uber or Careem available in Riyadh?",
-            answer: "Yes, but our private taxi service offers guaranteed fixed rates, no surge pricing, and professional drivers who know the city well."
+            answer: "Yes, but our private taxi service offers guaranteed competitive quotes, no surge pricing, and professional drivers who know the city well."
         },
         {
             question: "Can I book a taxi from Riyadh to Makkah?",
-            answer: "Yes, we offer long-distance intercity transfers. The drive takes about 8-9 hours, offering a comfortable private alternative to flying or buses."
+            answer: "Yes, we offer long-distance intercity transfers. The drive takes about adequate time, offering a comfortable private alternative to flying or buses."
         },
         {
             question: "Do you serve Riyadh Season events?",
@@ -74,7 +74,7 @@ export default function RiyadhLocationPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Riyadh",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+923080628195",
+        "telephone": "+966569487569",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "King Fahd Road",
@@ -134,9 +134,9 @@ export default function RiyadhLocationPage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Riyadh." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Riyadh." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
-                                            <svg className="w-6 h-6 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                            <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
                                         </Button>
                                     </a>
@@ -150,7 +150,7 @@ export default function RiyadhLocationPage() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl font-bold text-teal-900 mb-4">How much does a taxi cost in Riyadh?</h2>
                     <p className="text-lg text-teal-800 leading-relaxed">
-                        Taxi fares in Riyadh typically range from <span className="font-bold">100 SAR to 300 SAR</span> for airport transfers and city rides.
+                        Taxi fares in Riyadh typically range from <span className="font-bold">Get Quote to Get Quote</span> for airport transfers and city rides.
                         We offer fixed-price booking for major districts like Olaya (12211), Al Malqa (13521), and Diplomatic Quarter (12512).
                         Available 24/7 for your convenience.
                     </p>
@@ -176,7 +176,7 @@ export default function RiyadhLocationPage() {
                                     {[
                                         { title: "Licensed & Insured", desc: "TGA-certified chauffeurs and fully insured vehicles." },
                                         { title: "Luxury Fleet", desc: "Late-model GMC Yukon, Mercedes, and Ford Taurus." },
-                                        { title: "Fixed Pricing", desc: "Quote provided upfront. No hidden fees or meter anxiety." },
+                                        { title: "Competitive Quotes", desc: "Quote provided upfront. No hidden fees or surprises." },
                                         { title: "24/7 Availability", desc: "Early morning flight? Late meeting? We are always on." },
                                         { title: "English Speaking", desc: "Communication is easy with our professional drivers." }
                                     ].map((item, idx) => (
@@ -259,9 +259,9 @@ export default function RiyadhLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Riyadh." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Riyadh." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
-                                            <svg className="w-5 h-5 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> WhatsApp Booking
+                                            <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
                                     </a>
                                 </div>
@@ -308,9 +308,9 @@ export default function RiyadhLocationPage() {
                                 Book Now
                             </Button>
                         </Link>
-                        <a href="tel:+923080628195">
+                        <a href="https://wa.me/966569487569">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
-                                Call Support
+                                WhatsApp Support
                             </Button>
                         </a>
                     </div>

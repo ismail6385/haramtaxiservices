@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Users, Briefcase, CheckCircle2, ArrowRight, Car } from 'lucide-react';
+import { Users, Briefcase, CheckCircle2, ArrowRight, Car, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
@@ -192,13 +192,25 @@ export default function FleetPage() {
                                         ))}
                                     </div>
 
-                                    {/* CTA */}
-                                    <Button asChild className="w-full bg-teal-500 hover:bg-teal-600 text-white group-hover:shadow-lg transition-all">
-                                        <Link href={vehicle.href}>
-                                            View {vehicle.name} Details
-                                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                                        </Link>
-                                    </Button>
+                                    {/* CTAs */}
+                                    <div className="flex flex-col sm:flex-row gap-3">
+                                        <Button asChild className="flex-1 bg-teal-500 hover:bg-teal-600 text-white group-hover:shadow-lg transition-all">
+                                            <Link href={vehicle.href}>
+                                                Details
+                                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                            </Link>
+                                        </Button>
+                                        <a 
+                                            href={`https://wa.me/966569487569?text=Assalamu%20Alaikum%2C%20I%20want%20to%20get%20a%20quote%20for%20a%20${encodeURIComponent(vehicle.name)}.`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex-1"
+                                        >
+                                            <Button variant="outline" className="w-full border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all">
+                                                WhatsApp
+                                            </Button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -250,14 +262,18 @@ export default function FleetPage() {
                         Choose your preferred vehicle and book now for a comfortable journey
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/booking">
-                            <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-8 py-6 text-lg">
-                                Book Now
+                        <a 
+                            href="https://wa.me/966569487569"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-12 py-7 text-xl font-bold shadow-xl">
+                                <MessageCircle className="w-6 h-6 mr-2" /> WhatsApp for Booking
                             </Button>
-                        </Link>
+                        </a>
                         <Link href="/contact">
-                            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-500 px-8 py-6 text-lg">
-                                Contact Us
+                            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-500 px-12 py-7 text-xl font-bold">
+                                Contact Support
                             </Button>
                         </Link>
                     </div>

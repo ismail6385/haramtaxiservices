@@ -1,9 +1,10 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { routesData } from '@/lib/routesData';
 import BookingForm from '@/components/BookingForm';
 import { CheckCircle2, MapPin, Clock } from 'lucide-react';
 import { Suspense } from 'react';
+import PilgrimTips from '@/components/PilgrimTips';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Home } from 'lucide-react';
@@ -61,7 +62,7 @@ export default async function RoutePage({ params }: Props) {
         "provider": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "telephone": "+923080628195",
+            "telephone": "+966569487569",
             "image": "https://haramtaxiservice.com/logo.png"
         },
         "areaServed": "Saudi Arabia",
@@ -69,7 +70,7 @@ export default async function RoutePage({ params }: Props) {
         "offers": route.pricing.map(p => ({
             "@type": "Offer",
             "priceCurrency": "SAR",
-            "price": p.price.replace(/[^0-9]/g, '') || "0",
+            "price": p.price.replace(/[^Get Quote]/g, '') || "0",
             "itemOffered": {
                 "@type": "Service",
                 "name": p.vehicle
@@ -121,7 +122,7 @@ export default async function RoutePage({ params }: Props) {
                         <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
                             <div className="bg-gray-900 text-white p-6">
                                 <h2 className="text-2xl font-bold">2026 Taxi Rates</h2>
-                                <p className="opacity-80">Fixed prices for {route.h1}</p>
+                                <p className="opacity-80">Competitive quotes for {route.h1}</p>
                             </div>
                             <div className="p-6">
                                 <div className="grid gap-4">
@@ -161,6 +162,8 @@ export default async function RoutePage({ params }: Props) {
                                 </div>
                             </div>
                         )}
+
+                        <PilgrimTips />
                     </div>
 
                     {/* Sidebar Booking Form */}
@@ -174,7 +177,7 @@ export default async function RoutePage({ params }: Props) {
                                 <h4 className="font-semibold mb-3">Why Choose Us?</h4>
                                 <ul className="space-y-2 text-sm text-gray-600">
                                     <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-teal-500" /> Licensed Drivers</li>
-                                    <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-teal-500" /> Fixed Prices</li>
+                                    <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-teal-500" /> Competitive Quotes</li>
                                     <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-teal-500" /> 24/7 Support</li>
                                 </ul>
                             </div>

@@ -69,17 +69,17 @@ export default function UmrahEstimator() {
                     <div className="grid grid-cols-3 gap-3">
                         <button onClick={() => setGroupSize('small')} className={`p-4 rounded-xl border-2 text-center transition-all ${groupSize === 'small' ? 'border-teal-600 bg-teal-50' : 'border-gray-100 hover:border-teal-200'}`}>
                             <Users className="w-6 h-6 mx-auto mb-2 text-gray-500" />
-                            <div className="font-semibold text-sm">1-4 Pax</div>
+                            <div className="font-semibold text-sm">Get Quote Pax</div>
                             <div className="text-xs text-gray-400">Sedan</div>
                         </button>
                         <button onClick={() => setGroupSize('medium')} className={`p-4 rounded-xl border-2 text-center transition-all ${groupSize === 'medium' ? 'border-teal-600 bg-teal-50' : 'border-gray-100 hover:border-teal-200'}`}>
                             <Users className="w-6 h-6 mx-auto mb-2 text-gray-500" />
-                            <div className="font-semibold text-sm">5-7 Pax</div>
+                            <div className="font-semibold text-sm">Get Quote Pax</div>
                             <div className="text-xs text-gray-400">GMC Yukon</div>
                         </button>
                         <button onClick={() => setGroupSize('large')} className={`p-4 rounded-xl border-2 text-center transition-all ${groupSize === 'large' ? 'border-teal-600 bg-teal-50' : 'border-gray-100 hover:border-teal-200'}`}>
                             <Users className="w-6 h-6 mx-auto mb-2 text-gray-500" />
-                            <div className="font-semibold text-sm">8-12 Pax</div>
+                            <div className="font-semibold text-sm">Get Quote Pax</div>
                             <div className="text-xs text-gray-400">Hiace</div>
                         </button>
                     </div>

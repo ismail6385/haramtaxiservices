@@ -16,13 +16,8 @@ import {
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { cn } from '@/lib/utils'; // Assuming you have a utils file for class merging
-
 const menuItems = [
-    { name: 'Dashboard', href: '/admin/dashboard', icon: LayoutDashboard },
     { name: 'Bookings', href: '/admin/bookings', icon: CalendarDays },
-    { name: 'Fleet', href: '/admin/fleet', icon: Car },
-    { name: 'Locations', href: '/admin/locations', icon: MapPin },
-    { name: 'Settings', href: '/admin/settings', icon: Settings },
 ];
 
 export default function AdminSidebar() {
@@ -57,7 +52,7 @@ export default function AdminSidebar() {
                 <div className="flex flex-col h-full">
                     {/* Logo Section */}
                     <div className="h-20 flex items-center px-6 border-b border-neutral-800">
-                        <Link href="/admin/dashboard" className="flex items-center gap-2">
+                        <Link href="/admin/bookings" className="flex items-center gap-2">
                             <div className="bg-primary/20 p-2 rounded-lg">
                                 <Car className="h-6 w-6 text-primary" />
                             </div>

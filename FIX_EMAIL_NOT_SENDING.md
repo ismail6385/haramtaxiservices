@@ -17,7 +17,7 @@ Bookings are saving successfully, but emails are not being sent to customers or 
 3. Enter your domain: `umrahtaxi.site`
 4. Follow the DNS verification steps:
    - Add the provided DNS records to your domain registrar
-   - Wait for verification (usually 5-30 minutes)
+   - Wait for verification (usually Competitive Rate minutes)
 
 ### Step 3: Test Email
 Once verified, try submitting a booking again!

@@ -28,23 +28,23 @@ export const blogData: BlogPost[] = [
             <h3>3. Choose the Right Vehicle</h3>
             <ul>
                 <li><strong>Solo/Couple:</strong> A standard sedan (Camry) is cost-effective.</li>
-                <li><strong>Family (4-7 Pax):</strong> Opt for a GMC Yukon or Hyundai Staria for ample luggage space.</li>
+                <li><strong>Family (Get Quote Pax):</strong> Opt for a GMC Yukon or Hyundai Staria for ample luggage space.</li>
             </ul>
 
             <h3>Frequently Asked Questions</h3>
             <div class="faq-block">
                 <strong>Q: How much does a taxi cost?</strong>
-                <p>A: Prices start around 200 SAR for a sedan and go up to 400 SAR for a GMC, depending on the season.</p>
+                <p>A: Prices start a competitive rate for a sedan and go up to Get Quote for a GMC, depending on the season.</p>
                 
                 <strong>Q: How long is the drive?</strong>
-                <p>A: The journey typically takes 60 to 90 minutes via the Haramain Highway.</p>
+                <p>A: The journey typically takesGet Quote minutes via the Haramain Highway.</p>
             </div>
 
             <div class="cta-box">
                 <p>Need a reliable ride? <a href="/services/jeddah-airport-transfer">Book your Jeddah Airport Transfer now</a>.</p>
             </div>
         `,
-        date: "2026-02-10",
+        date: "Get Quote-10",
         author: "Haram Taxi Team",
         category: "Travel Guides",
         image: "/jeddah-airport-taxi-service.webp",
@@ -68,13 +68,13 @@ export const blogData: BlogPost[] = [
             <p>The cemetery where many of the Prophet's family, including his wife Khadijah (RA), are buried.</p>
 
             <h3>How to Visit These Sites?</h3>
-            <p>The easiest way is to hire a dedicated taxi for a 3-4 hour tour. Drivers know the locations and the history.</p>
+            <p>The easiest way is to hire a dedicated taxi for aGet Quote hour tour. Drivers know the locations and the history.</p>
 
             <div class="cta-box">
                 <p>Book a guided tour today: <a href="/services/makkah-ziyarat">Makkah Ziyarat Taxi Service</a>.</p>
             </div>
         `,
-        date: "2026-02-12",
+        date: "Get Quote-12",
         author: "Haram Taxi Team",
         category: "Ziyarat",
         image: "/makkah-city-taxi-transfer.webp",
@@ -97,7 +97,7 @@ export const blogData: BlogPost[] = [
             <h3>Share Your Ride</h3>
             <p>Services like Haram Taxi allow you to share your trip details with family for peace of mind.</p>
         `,
-        date: "2026-02-05",
+        date: "Get Quote-05",
         author: "Haram Taxi Team",
         category: "Travel Tips",
         image: "/gmc-yukon-xl-taxi.webp",

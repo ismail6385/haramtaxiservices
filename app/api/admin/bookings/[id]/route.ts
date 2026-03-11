@@ -10,7 +10,7 @@ export async function DELETE(
     const id = params.id;
 
     // Validate ID format (UUID)
-    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    const uuidRegex = /^[Get Quotea-f]{8}-[Get Quotea-f]{4}-[Get Quotea-f]{4}-[Get Quotea-f]{4}-[Get Quotea-f]{12}$/i;
     if (!uuidRegex.test(id)) {
         return NextResponse.json({ error: 'Invalid booking ID format' }, { status: 400 });
     }

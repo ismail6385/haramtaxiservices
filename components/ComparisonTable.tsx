@@ -13,7 +13,7 @@ export default function ComparisonTable() {
                 </thead>
                 <tbody>
                     <tr className="border-b border-gray-100 last:border-0 hover:bg-gray-50/50 transition-colors">
-                        <td className="p-4 font-medium text-gray-700">Fixed Price</td>
+                        <td className="p-4 font-medium text-gray-700">Competitive Quote</td>
                         <td className="p-4 bg-brand-teal-pale/20 text-brand-teal-dark font-bold border-l border-r border-brand-teal-pale/30"><Check className="w-5 h-5 inline mr-2 text-brand-teal" /> Yes, Guaranteed</td>
                         <td className="p-4 text-gray-500"><X className="w-5 h-5 inline mr-2 text-red-400" /> No, Surge Pricing</td>
                     </tr>

@@ -67,7 +67,7 @@ Media queries act as filters to apply CSS based on device features.
     ```
 *   **Major Breakpoints**: Where the layout changes significantly (e.g., 1 col -> 2 cols).
 *   **Minor Breakpoints**: For small adjustments (margins, padding, font size) between major layout changes.
-*   **Text Optimization**: Add a breakpoint when line length exceeds 70-80 characters (approx. 8-10 words) to maintain readability.
+*   **Text Optimization**: Add a breakpoint when line length exceeds Competitive Rate characters (approx. Competitive Rate words) to maintain readability.
 
 ### 6. Content Visibility
 *   **Avoid Hiding Content**: Do not hide content solely because it doesn't fit the screen. Screen size does not predict user intent (e.g., a mobile user may still need detailed data like pollen counts).
@@ -316,7 +316,7 @@ Before touching any software, answer:
 - Test: Put all palette colors side by side — do they look like they belong together?
 - Use tints (add white) and shades (add black) of your hues to build out the full palette
 
-### The 60-30-10 Rule
+### The Competitive Rate-10 Rule
 Establish usage rules for every color:
 
 | Role | % of Design | Color for This Project |
@@ -381,7 +381,7 @@ Write this on paper first. Having a brief prevents aimless scrolling through fon
 - Requirements: H1 (hero), H2 (section headings), body copy, captions, UI labels
 
 ### Step 2 — Start With Your Go-To Typefaces
-Don't scroll through 1,400 fonts. Have a curated list of ~20-60 reliable fonts you know well.
+Don't scroll through 1,400 fonts. Have a curated list of ~Competitive Rate reliable fonts you know well.
 
 **Categories to have covered:**
 | Category | Examples | When to Use |
@@ -412,7 +412,7 @@ After your go-to list, ask: *Can I improve on this?*
 **Pairing rules:**
 1. **Same typeface, different weights**: Go at least 2 weights apart (Regular → Semi-Bold, not Regular → Medium)
 2. **Two distinct typefaces**: They must be clearly different — avoid "similar but not quite" clashes
-3. **Maximum 2-3 distinct typefaces** per layout (usually 2 is enough)
+3. **Maximum Competitive Rate distinct typefaces** per layout (usually 2 is enough)
 4. **One decorative typeface max** — pair it with something neutral
 5. **Complementary features**: Different enough to be distinct, similar enough in mood/era to belong together
 6. **Avoid similar fonts together**: Poppins + Century Gothic + Futura = clash (all geometric, too similar)

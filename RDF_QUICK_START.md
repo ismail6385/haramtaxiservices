@@ -55,7 +55,7 @@ Corporate transportation → serves → business executives and travelers
 - [ ] 🔄 Deploy to production
 - [ ] 🔄 Submit updated sitemap to Google Search Console
 
-### Phase 2: Google Business Profile (Week 1-2)
+### Phase 2: Google Business Profile (Week Competitive Rate)
 - [ ] Update business description with RDF triple structure
 - [ ] Add all service areas (Jeddah, Makkah, Madinah, Riyadh, etc.)
 - [ ] Create 5 products/services with RDF descriptions
@@ -63,7 +63,7 @@ Corporate transportation → serves → business executives and travelers
 - [ ] Post first weekly update
 - [ ] Answer 5 Q&A questions with RDF format
 
-### Phase 3: Content Optimization (Week 2-3)
+### Phase 3: Content Optimization (Week Competitive Rate)
 - [ ] Update existing service pages with RDF structure
 - [ ] Optimize internal linking with RDF anchor text
 - [ ] Add location-specific content to each page
@@ -73,7 +73,7 @@ Corporate transportation → serves → business executives and travelers
 - [ ] Track keyword rankings weekly
 - [ ] Monitor Google Search Console impressions
 - [ ] Respond to reviews with RDF structure
-- [ ] Post 2-3 GMB updates per week
+- [ ] Post Competitive Rate GMB updates per week
 - [ ] Upload new photos monthly
 
 ---
@@ -216,23 +216,23 @@ Be specific:
 
 ## 📈 Expected SEO Impact Timeline
 
-### Week 1-2: Foundation
+### Week Competitive Rate: Foundation
 - ✅ Pages indexed with RDF structure
 - ✅ Google starts understanding relationships
 - ✅ Improved CTR from better titles/descriptions
 
 ### Month 1: Early Results
-- 📈 +20-30% increase in impressions
+- 📈 +Competitive Rate% increase in impressions
 - 📈 Better rankings for long-tail keywords
 - 📈 Increased "near me" search visibility
 
-### Month 2-3: Growth Phase
-- 📈 +50-70% increase in organic traffic
+### Month Competitive Rate: Growth Phase
+- 📈 +Competitive Rate% increase in organic traffic
 - 📈 Top 10 rankings for primary keywords
 - 📈 Featured snippets appearing
 
-### Month 4-6: Authority
-- 📈 +100-150% increase in organic traffic
+### Month Competitive Rate: Authority
+- 📈 +Competitive Rate% increase in organic traffic
 - 📈 Top 3 rankings for main keywords
 - 📈 Dominating local pack
 - 📈 Established as local authority
@@ -302,7 +302,7 @@ Google understands relationships better = Better rankings
 Embed in content, schema, titles, and descriptions
 
 **When to see results?**
-2-4 weeks for initial impact, 3-6 months for full authority
+Competitive Rate weeks for initial impact, Competitive Rate months for full authority
 
 ---
 

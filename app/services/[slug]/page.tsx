@@ -1,11 +1,12 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { servicesData } from '@/lib/servicesData';
 import BookingForm from '@/components/BookingForm';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, Home, ChevronRight } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, MessageCircle, Home, ChevronRight } from 'lucide-react';
 import { Suspense } from 'react';
+import PilgrimTips from '@/components/PilgrimTips';
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -109,9 +110,9 @@ export default async function ServicePage({ params }: Props) {
                                     Book Now
                                 </Button>
                             </Link>
-                            <a href="tel:+923080628195">
+                            <a href="https://wa.me/966569487569">
                                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg">
-                                    <Phone className="w-5 h-5 mr-2" /> Call Us
+                                    <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Us
                                 </Button>
                             </a>
                         </div>
@@ -151,7 +152,7 @@ export default async function ServicePage({ params }: Props) {
                         {/* Pricing Table */}
                         {service.pricing && service.pricing.length > 0 && (
                             <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-6">Transparent Pricing</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-6">Competitive Quotes</h3>
                                 <div className="overflow-hidden bg-white border border-gray-200 rounded-2xl shadow-sm">
                                     <table className="w-full text-left">
                                         <thead className="bg-gray-50 border-b border-gray-200">
@@ -191,6 +192,8 @@ export default async function ServicePage({ params }: Props) {
                             </div>
                         )}
 
+                        <PilgrimTips />
+
                     </div>
 
                     {/* Sidebar */}
@@ -217,9 +220,9 @@ export default async function ServicePage({ params }: Props) {
                         <div className="bg-gray-900 rounded-2xl p-8 text-white text-center">
                             <h3 className="text-xl font-bold mb-4">Need Help?</h3>
                             <p className="text-gray-400 mb-6 text-sm">Our support team is available 24/7 to assist you with your booking.</p>
-                            <a href="tel:+923080628195" className="block mb-4">
+                            <a href="https://wa.me/966569487569" className="block mb-4">
                                 <Button className="w-full bg-white text-gray-900 hover:bg-gray-100 group">
-                                    <Phone className="w-4 h-4 mr-2 group-hover:text-teal-500 transition-colors" /> Call Support
+                                    <MessageCircle className="w-4 h-4 mr-2 group-hover:text-teal-500 transition-colors" /> WhatsApp Support
                                 </Button>
                             </a>
                             <div className="text-xs text-gray-500">

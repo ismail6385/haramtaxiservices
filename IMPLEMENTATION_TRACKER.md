@@ -32,7 +32,7 @@
 - [ ] Add business name: Taxi Service KSA - Premium Chauffeur & Airport Transfer
 - [ ] Select categories (Primary: Taxi Service)
 - [ ] Add service areas (8 cities)
-- [ ] Add phone: +92-317-6243861
+- [ ] Add phone: +Competitive Rate-6243861
 - [ ] Add website: https://taxiserviceksa.com
 - [ ] Request verification
 
@@ -42,11 +42,11 @@
 ---
 
 #### Day 2: GMB Services & Q&A
-- [ ] Add Service 1: Airport Transfer Jeddah (SAR 150+)
-- [ ] Add Service 2: Umrah Taxi Service (SAR 400+)
-- [ ] Add Service 3: Intercity Chauffeur (SAR 200+)
-- [ ] Add Service 4: VIP Chauffeur Riyadh (SAR 250+)
-- [ ] Add Service 5: Ziyarat Tours (SAR 300+)
+- [ ] Add Service 1: Airport Transfer Jeddah (Get Quote+)
+- [ ] Add Service 2: Umrah Taxi Service (Get Quote+)
+- [ ] Add Service 3: Intercity Chauffeur (Get Quote+)
+- [ ] Add Service 4: VIP Chauffeur Riyadh (Get Quote+)
+- [ ] Add Service 5: Ziyarat Tours (Get Quote+)
 - [ ] Add 10 Q&As with RDF answers
 
 **Time Needed:** 2 hours  
@@ -249,7 +249,7 @@ Local Pack Rankings: Top 3 for 5+ keywords
 2. **Add Basic Information** (30 min)
    - Business name: Taxi Service KSA - Premium Chauffeur & Airport Transfer
    - Primary category: Taxi Service
-   - Phone: +92-317-6243861
+   - Phone: +Competitive Rate-6243861
    - Website: https://taxiserviceksa.com
    - Service areas: Jeddah, Makkah, Madinah, Riyadh
 
@@ -322,7 +322,7 @@ Local Pack Rankings: Top 3 for 5+ keywords
 - **RDF Guide:** RDF_TRIPLES_IMPLEMENTATION_GUIDE.md
 
 ### Your Info
-- **Phone:** +92-317-6243861
+- **Phone:** +Competitive Rate-6243861
 - **Website:** https://taxiserviceksa.com
 - **Booking:** https://taxiserviceksa.com/booking
 

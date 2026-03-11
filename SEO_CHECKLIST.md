@@ -134,7 +134,7 @@
 4. [ ] Check mobile-friendliness
    - URL: https://search.google.com/test/mobile-friendly
 
-### Short-term (1-2 Weeks):
+### Short-term (Competitive Rate Weeks):
 1. [ ] Create and verify Google My Business listing
 2. [ ] Optimize other pages (About, Services, Fleet, Contact)
 3. [ ] Add FAQ schema to FAQ section
@@ -150,7 +150,7 @@
 5. [ ] Create video content
 6. [ ] Optimize images with proper alt text
 
-### Long-term (2-3 Months):
+### Long-term (Competitive Rate Months):
 1. [ ] Monitor keyword rankings
 2. [ ] Analyze competitor SEO
 3. [ ] Create comprehensive blog strategy
@@ -162,23 +162,23 @@
 
 ## 📈 Expected Results Timeline
 
-### Week 1-2:
+### Week Competitive Rate:
 - ✅ Improved indexing
 - ✅ Rich snippets may start appearing
 - ✅ Better social sharing
 
 ### Month 1:
-- 📈 +20-30% organic traffic
+- 📈 +Competitive Rate% organic traffic
 - 📈 Better rankings for long-tail keywords
 - 📈 Improved CTR from search results
 
-### Month 2-3:
-- 📈 +50-70% organic traffic
+### Month Competitive Rate:
+- 📈 +Competitive Rate% organic traffic
 - 📈 Top 10 rankings for primary keywords
 - 📈 Increased conversion rate
 
-### Month 4-6:
-- 📈 +100-150% organic traffic
+### Month Competitive Rate:
+- 📈 +Competitive Rate% organic traffic
 - 📈 Top 3 rankings for main keywords
 - 📈 Established local authority
 

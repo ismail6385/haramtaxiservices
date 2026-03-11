@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { CheckCircle2, Home, Mail, MessageSquare, Phone } from 'lucide-react';
+import { CheckCircle2, Home, Mail, MessageSquare, Phone, MessageCircle } from 'lucide-react';
 
 function ConfirmationContent() {
     const searchParams = useSearchParams();
@@ -84,7 +84,7 @@ function ConfirmationContent() {
                                 {/* Step 3 */}
                                 <div className="flex gap-4">
                                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-500 flex items-center justify-center border border-amber-500/30 animate-pulse">
-                                        <Phone className="w-4 h-4" />
+                                        <MessageCircle className="w-4 h-4" />
                                     </div>
                                     <div>
                                         <h4 className="text-amber-400 font-medium">Driver Assignment</h4>
@@ -103,7 +103,7 @@ function ConfirmationContent() {
                                     Admin: umrahtaxi22@gmail.com
                                 </a>
                                 <span className="hidden sm:inline text-neutral-600">|</span>
-                                <a href="https://wa.me/923080628195" className="flex items-center gap-2 text-white hover:text-green-400 transition-colors">
+                                <a href="https://wa.me/966569487569" className="flex items-center gap-2 text-white hover:text-green-400 transition-colors">
                                     <MessageSquare className="w-4 h-4" />
                                     WhatsApp Support
                                 </a>

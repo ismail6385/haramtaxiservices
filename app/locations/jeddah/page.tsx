@@ -69,7 +69,7 @@ export default function JeddahPage() {
     const features = [
         'Licensed Jeddah taxi drivers',
         'Clean and air-conditioned vehicles',
-        'Fixed rates - no hidden charges',
+        'competitive quotes - no hidden charges',
         '24/7 availability in Jeddah',
         'English & Arabic speaking drivers',
         'Airport meet & greet service',
@@ -78,7 +78,7 @@ export default function JeddahPage() {
     const faqs = [
         {
             question: "How much is a taxi from Jeddah Airport to Makkah?",
-            answer: "The taxi fare from King Abdulaziz International Airport (Jeddah) to Makkah typically ranges from SAR 150-250 depending on the vehicle type. The journey takes approximately 90 minutes. Book with us for fixed, transparent pricing."
+            answer: "The taxi fare from King Abdulaziz International Airport (Jeddah) to Makkah typically ranges from Get Quote-250 depending on the vehicle type. The journey takes approximately 90 minutes. Book with us for fixed, competitive quotes."
         },
         {
             question: "Is taxi service available 24/7 in Jeddah?",
@@ -90,7 +90,7 @@ export default function JeddahPage() {
         },
         {
             question: "Do you provide taxi service from Jeddah to Madinah?",
-            answer: "Yes, we provide comfortable taxi service from Jeddah to Madinah. The journey takes approximately 4-5 hours. We recommend booking in advance for intercity trips."
+            answer: "Yes, we provide comfortable taxi service from Jeddah to Madinah. The journey takes approximately adequate time. We recommend booking in advance for intercity trips."
         },
         {
             question: "Are your Jeddah taxi drivers licensed?",
@@ -99,10 +99,10 @@ export default function JeddahPage() {
     ];
 
     const popularRoutes = [
-        { from: 'Jeddah Airport', to: 'Makkah Hotels', duration: '90 min', price: 'SAR 150-250' },
-        { from: 'Jeddah Airport', to: 'Jeddah City Center', duration: '30 min', price: 'SAR 50-80' },
-        { from: 'Jeddah', to: 'Madinah', duration: '4-5 hrs', price: 'SAR 400-600' },
-        { from: 'Jeddah Corniche', to: 'Al-Balad', duration: '20 min', price: 'SAR 30-50' },
+        { from: 'Jeddah Airport', to: 'Makkah Hotels', duration: '90 min', price: 'Get Quote-250' },
+        { from: 'Jeddah Airport', to: 'Jeddah City Center', duration: '30 min', price: 'Get Quote-80' },
+        { from: 'Jeddah', to: 'Madinah', duration: 'Get Quote hrs', price: 'Get Quote-600' },
+        { from: 'Jeddah Corniche', to: 'Al-Balad', duration: '20 min', price: 'Get Quote-50' },
     ];
 
     // Schema markup for Local Business
@@ -113,8 +113,8 @@ export default function JeddahPage() {
         "image": "https://haramtaxiservice.com/jeddah-corniche-sunset.webp",
         "@id": "https://haramtaxiservice.com/locations/jeddah",
         "url": "https://haramtaxiservice.com/locations/jeddah",
-        "telephone": "+923080628195",
-        "priceRange": "SAR 30-600",
+        "telephone": "+966569487569",
+        "priceRange": "Get Quote-600",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Jeddah",
@@ -224,9 +224,9 @@ export default function JeddahPage() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
-                                            <svg className="w-6 h-6 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>
+                                            <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
                                         </Button>
                                     </a>
@@ -316,7 +316,7 @@ export default function JeddahPage() {
                                 <p className="text-gray-600 mb-4">Street taxis often refuse to use meters or take longer routes, leading to higher fares than expected.</p>
                                 <div className="flex items-center text-teal-600 font-medium">
                                     <CheckCircle2 className="w-5 h-5 mr-2" />
-                                    <span>Solution: Fixed Upfront Pricing</span>
+                                    <span>Solution: competitive upfront quotes</span>
                                 </div>
                             </div>
                             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
@@ -344,7 +344,7 @@ export default function JeddahPage() {
                             </div>
                             <h2 className="text-4xl font-bold text-gray-900 mb-4">Taxi Fare Guide for Jeddah</h2>
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                                Unlike metered taxis that charge by time and distance, we offer fixed rates based on vehicle type and destination.
+                                Unlike metered taxis that charge by time and distance, we offer competitive quotes based on vehicle type and destination.
                             </p>
                         </div>
 
@@ -382,7 +382,7 @@ export default function JeddahPage() {
                                 </ul>
                             </div>
                             <div className="bg-teal-500 p-8 rounded-2xl text-white flex flex-col justify-center">
-                                <h3 className="text-2xl font-bold mb-6">Why Fixed Pricing Wins</h3>
+                                <h3 className="text-2xl font-bold mb-6">Why Competitive Quotes Wins</h3>
                                 <p className="mb-6 opacity-90 text-lg">
                                     With street taxis, traffic jams mean the meter keeps running. With Haram Taxi, you pay the agreed price regardless of traffic delays on Medina Road or Haramain Highway.
                                 </p>
@@ -484,7 +484,7 @@ export default function JeddahPage() {
                                         <Clock className="w-4 h-4" />
                                         90 min
                                     </div>
-                                    <div className="font-semibold text-teal-500">SAR 150-250</div>
+                                    <div className="font-semibold text-teal-500">Get Quote-250</div>
                                 </div>
                             </div>
                         </Link>
@@ -506,7 +506,7 @@ export default function JeddahPage() {
                                     <Clock className="w-4 h-4" />
                                     30 min
                                 </div>
-                                <div className="font-semibold text-teal-500">SAR 50-80</div>
+                                <div className="font-semibold text-teal-500">Get Quote-80</div>
                             </div>
                         </div>
 
@@ -525,9 +525,9 @@ export default function JeddahPage() {
                             <div className="flex items-center justify-between text-sm">
                                 <div className="flex items-center gap-2 text-gray-600">
                                     <Clock className="w-4 h-4" />
-                                    4-5 hrs
+                                    Get Quote hrs
                                 </div>
-                                <div className="font-semibold text-teal-500">SAR 400-600</div>
+                                <div className="font-semibold text-teal-500">Get Quote-600</div>
                             </div>
                         </div>
 
@@ -548,7 +548,7 @@ export default function JeddahPage() {
                                     <Clock className="w-4 h-4" />
                                     20 min
                                 </div>
-                                <div className="font-semibold text-teal-500">SAR 30-50</div>
+                                <div className="font-semibold text-teal-500">Get Quote-50</div>
                             </div>
                         </div>
                     </div>
@@ -627,7 +627,7 @@ export default function JeddahPage() {
                                     Book Jeddah Taxi Online
                                 </Button>
                             </Link>
-                            <a href="https://wa.me/923080628195?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer">
                                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-500 px-8 py-6 text-lg">
                                     <MessageCircle className="w-5 h-5 mr-2" />
                                     WhatsApp Us

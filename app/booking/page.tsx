@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Book Taxi Online in Saudi Arabia | Instant Booking - Haram Taxi',
-    description: 'Book taxi online in Saudi Arabia. Instant confirmation for Makkah, Madinah, Jeddah. Professional drivers, fixed rates. Available 24/7. Book now!',
+    description: 'Book taxi online in Saudi Arabia. Instant confirmation for Makkah, Madinah, Jeddah. Professional drivers, competitive quotes. Available 24/7. Book now!',
     keywords: ['book taxi online Saudi Arabia', 'online taxi booking Makkah', 'book taxi Madinah', 'instant taxi booking', 'taxi reservation Saudi Arabia'],
     openGraph: {
         title: 'Book Taxi Online in Saudi Arabia | Instant Booking',
@@ -20,7 +20,7 @@ export default function BookingPage() {
     const benefits = [
         {
             icon: CheckCircle2,
-            title: "Fixed Pricing",
+            title: "Competitive Quotes",
             description: "No hidden fees or surprises"
         },
         {
@@ -150,7 +150,7 @@ export default function BookingPage() {
                                     <CheckCircle2 className="w-5 h-5" />
                                 </div>
                                 <div>
-                                    <div className="font-semibold mb-1">Transparent Pricing</div>
+                                    <div className="font-semibold mb-1">Competitive Quotes</div>
                                     <div className="text-sm opacity-90">No hidden fees or charges</div>
                                 </div>
                             </li>

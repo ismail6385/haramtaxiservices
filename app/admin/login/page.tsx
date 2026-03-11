@@ -31,7 +31,7 @@ export default function LoginPage() {
                 throw error;
             }
 
-            router.push('/admin/dashboard');
+            router.push('/admin/bookings');
             router.refresh();
         } catch (err: any) {
             setError(err.message);
