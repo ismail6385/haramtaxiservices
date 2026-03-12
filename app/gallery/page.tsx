@@ -4,6 +4,9 @@ import Image from 'next/image';
 import { Camera, Car, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/gallery',
+    },
     title: 'Gallery | Umrah Taxi - Our Fleet & Holy Sites',
     description: 'View our premium fleet of vehicles and services for Umrah pilgrims. Browse photos of GMC Yukons, Hiace vans, and our services in Makkah and Madinah.',
     keywords: ['umrah taxi gallery', 'fleet photos', 'GMC Yukon Makkah', 'Hiace Madinah', 'ziyarat photos'],

@@ -13,6 +13,9 @@ import {
 } from '@/components/ui/accordion';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/contact',
+    },
     title: 'Contact Us | Book Taxi in Saudi Arabia - Haram Taxi Service',
     description: 'Contact Haram Taxi Service for bookings in Makkah, Madinah, Jeddah. Book online or WhatsApp us 24/7. Professional taxi service across Saudi Arabia.',
     keywords: ['contact taxi Saudi Arabia', 'book taxi Makkah', 'taxi booking Madinah', 'WhatsApp taxi Jeddah', 'online taxi booking'],

@@ -10,6 +10,9 @@ import {
 } from '@/components/ui/accordion';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/faq',
+    },
     title: 'FAQs | Umrah Taxi - Common Questions',
     description: 'Find answers to frequently asked questions about booking Umrah taxi, payments, Ziyarat tours, and airport transfers.',
     keywords: ['umrah taxi FAQ', 'booking help', 'payment questions', 'ziyarat faq', 'airport transfer FAQ'],

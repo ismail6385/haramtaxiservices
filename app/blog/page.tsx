@@ -7,6 +7,9 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar, User } from 'lucide-react';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/blog',
+    },
     title: 'Haram Taxi Blog | Umrah Travel Tips & Guides',
     description: 'Read our latest guides on booking taxis in Saudi Arabia, visiting historical sites, and travel tips for Umrah pilgrims.',
 };

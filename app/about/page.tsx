@@ -11,6 +11,9 @@ import {
 } from '@/components/ui/accordion';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/about',
+    },
     title: 'About Us | Professional Taxi Service in Saudi Arabia - Haram Taxi',
     description: 'Learn about Haram Taxi Service - professional taxi transportation in Makkah, Madinah, Jeddah. Serving travelers with reliable, safe, and comfortable rides across Saudi Arabia since 2020.',
     keywords: ['about Haram Taxi', 'taxi company Saudi Arabia', 'professional taxi service', 'Makkah taxi company', 'Madinah transportation', 'reliable taxi Saudi Arabia'],

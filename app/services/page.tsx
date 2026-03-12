@@ -6,6 +6,9 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Star, Shield, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/services',
+    },
     title: 'Professional Taxi Services | Haram Taxi Service',
     description: 'Explore our range of premium taxi services including airport transfers, intercity rides to Makkah & Madinah, and Ziyarat tours.',
 };

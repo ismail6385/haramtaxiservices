@@ -5,6 +5,9 @@ import { Users, Briefcase, CheckCircle2, ArrowRight, Car, MessageCircle } from '
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/fleet',
+    },
     title: 'Taxi Fleet in Saudi Arabia | GMC Yukon, Camry, Vans - Haram Taxi',
     description: 'View our taxi fleet in Saudi Arabia. Luxury SUVs, sedans, family vans, and buses. GMC Yukon, Toyota Camry, Hyundai Staria. Book your vehicle now!',
     keywords: ['taxi fleet Saudi Arabia', 'GMC Yukon taxi', 'Toyota Camry taxi', 'family van taxi', 'luxury SUV taxi Makkah', 'group taxi Saudi Arabia'],

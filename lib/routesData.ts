@@ -75,13 +75,13 @@ export const routesData: RouteData[] = [
         ]
     },
     {
-        slug: "makkah-hotel-to-jeddah-airport",
+        slug: "makkah-to-jeddah-airport",
         title: "Taxi Makkah Hotel to Jeddah Airport | 24/7 Drop-off",
         description: "Reliable transfer from your Makkah hotel to King Abdulaziz Airport (Jeddah). Arrive on time for your flight. competitive rates starting Get Quote",
         h1: "Makkah Hotel to Jeddah Airport Taxi",
         distance: "100 km",
         duration: "1 hour 15 minutes",
-        content: "End your Umrah trip with a hassle-free ride to the airport. We pick you up from your hotel lobby in Makkah and drop you off at your departure terminal in Jeddah.",
+        content: "End your Umrah trip with a hassle-free ride to the airport. We pick you up from your hotel lobby in Makkah (Clock Tower, Aziziyah, etc) and drop you off at your departure terminal in Jeddah (Terminal 1, North Terminal, or Hajj Terminal). Ensure you arrive on time for your flight with our reliable taxi service.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
@@ -90,23 +90,8 @@ export const routesData: RouteData[] = [
             { vehicle: "Toyota Coaster", price: "Get Quote", capacity: "17 Pax", luggage: "15 Bags" },
         ],
         faqs: [
-            { question: "When should I leave Makkah for my flight?", answer: "We recommend leaving at leastGet Quote hours before your international flight departure." }
+            { question: "When should I leave Makkah for my flight?", answer: "We recommend leaving at least 4 hours before your international flight departure." }
         ]
-    },
-    {
-        slug: "makkah-to-jeddah-airport",
-        title: "Makkah to Jeddah Airport Taxi | Departure Transfer",
-        description: "Book your return taxi from Makkah to Jeddah Airport. Reliable pickup from Clock Tower, Aziziyah, and all Makkah hotels.",
-        h1: "Makkah to Jeddah Airport (KAIA) Taxi",
-        distance: "100 km",
-        duration: "1 hour 15 minutes",
-        content: "Same as our Makkah Hotel to Airport service. We ensure you reach the appropriate terminal (North, South, or Hajj Terminal) comfortably and on time.",
-        pricing: [
-            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
-            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
-            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-        ],
-        faqs: []
     },
     {
         slug: "madinah-hotel-to-jeddah-airport",

@@ -5,6 +5,9 @@ import { CheckCircle2, Shield, Clock, Car } from 'lucide-react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/booking',
+    },
     title: 'Book Taxi Online in Saudi Arabia | Instant Booking - Haram Taxi',
     description: 'Book taxi online in Saudi Arabia. Instant confirmation for Makkah, Madinah, Jeddah. Professional drivers, competitive quotes. Available 24/7. Book now!',
     keywords: ['book taxi online Saudi Arabia', 'online taxi booking Makkah', 'book taxi Madinah', 'instant taxi booking', 'taxi reservation Saudi Arabia'],

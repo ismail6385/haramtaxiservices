@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { Shield, Eye, Lock, UserCheck, FileText, Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/privacy',
+    },
     title: 'Privacy Policy | Harm Taxi Service',
     description: 'Learn how Haram Taxi Service protects your personal information. Our privacy policy explains data collection, usage, and your rights.',
     robots: 'index, follow',

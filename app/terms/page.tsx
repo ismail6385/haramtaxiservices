@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { FileText, AlertCircle, CheckCircle, XCircle, Shield, CreditCard } from 'lucide-react';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/terms',
+    },
     title: 'Terms & Conditions | Haram Taxi Service',
     description: 'Terms and conditions for using Haram Taxi Service. Learn about booking policies, cancellations, liability, and service agreements.',
     robots: 'index, follow',

@@ -126,18 +126,7 @@ export const servicesData: ServiceData[] = [
         ],
         faqs: []
     },
-    {
-        slug: "city-tours",
-        title: "City Tours in Saudi Arabia",
-        description: "Explore Riyadh, Jeddah, AlUla, and more with our private city tour services.",
-        content: "Discover the rich culture and modern marvels of KSA. Customized city tours available in all major cities.",
-        features: ["Custom Itinerary", "Local Guide Driver", "Multiple Cities", "Hourly Rates"],
-        pricing: [
-            { title: "4 Hours (Sedan)", price: "Get Quote" },
-            { title: "8 Hours (Sedan)", price: "Get Quote" },
-        ],
-        faqs: []
-    },
+
     {
         slug: "business-travel",
         title: "Corporate & Business Taxi Services",
@@ -285,15 +274,7 @@ export const servicesData: ServiceData[] = [
         pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
-    {
-        slug: "tabuk-airport-taxi",
-        title: "Tabuk Airport Taxi Transfer",
-        description: "Prince Sultan Bin Abdulaziz Airport taxi.",
-        content: "Gate to NEOM and the North.",
-        features: ["Wide Coverage", "English Support"],
-        pricing: [{ title: "City Transfer", price: "Get Quote" }],
-        faqs: []
-    },
+
     {
         slug: "hail-airport-taxi",
         title: "Hail Airport Taxi",
@@ -457,15 +438,7 @@ export const servicesData: ServiceData[] = [
         pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
-    {
-        slug: "dammam-airport-taxi",
-        title: "Dammam Airport (KFIA) Taxi",
-        description: "Taxi from King Fahd International Airport to Dammam, Khobar, and Dhahran.",
-        content: "Fast airport pickup from KFIA. We cover Dammam, Khobar, Dhahran, and Jubail.",
-        features: ["Eastern Province", "Flight Tracking", "competitive rate", "Large Fleet"],
-        pricing: [{ title: "Dammam City", price: "Get Quote" }, { title: "Khobar", price: "Get Quote" }],
-        faqs: []
-    },
+
     {
         slug: "dawadmi-airport-taxi",
         title: "Dawadmi Airport Taxi",
@@ -475,15 +448,7 @@ export const servicesData: ServiceData[] = [
         pricing: [{ title: "City Transfer", price: "Get Quote" }],
         faqs: []
     },
-    {
-        slug: "abha-airport-taxi",
-        title: "Abha Airport Taxi",
-        description: "Taxi from Abha Regional Airport to city center and tourist areas.",
-        content: "Transfer from Abha Airport to Green Mountain, High City, Soudah, and all Abha hotels.",
-        features: ["Mountain Safe", "Tourist Areas", "Cool Climate", "Scenic"],
-        pricing: [{ title: "City Transfer", price: "Get Quote" }, { title: "Soudah", price: "Get Quote" }],
-        faqs: []
-    },
+
     {
         slug: "qaisumah-airport-taxi",
         title: "Qaisumah Airport Taxi",
@@ -493,15 +458,7 @@ export const servicesData: ServiceData[] = [
         pricing: [{ title: "Hafr Al Batin", price: "Get Quote" }],
         faqs: []
     },
-    {
-        slug: "jeddah-airport-taxi",
-        title: "Jeddah Airport (KAIA) Taxi",
-        description: "Taxi from King Abdulaziz International Airport to Jeddah city, Makkah, and Madinah.",
-        content: "Professional taxi service from Jeddah Airport. We serve all terminals including T1, North Terminal, and Hajj Terminal. Direct transfers to Jeddah hotels, Makkah, and Madinah.",
-        features: ["All Terminals", "Meet & Greet", "24/7", "Flight Tracking"],
-        pricing: [{ title: "Jeddah City", price: "Get Quote" }, { title: "Makkah", price: "Get Quote" }],
-        faqs: []
-    },
+
     {
         slug: "khobar-airport-taxi",
         title: "Khobar Airport Taxi",
@@ -1237,15 +1194,7 @@ export const servicesData: ServiceData[] = [
         pricing: [{ title: "Tour", price: "Get Quote" }],
         faqs: []
     },
-    {
-        slug: "historical-taxi",
-        title: "Historical Sites Taxi",
-        description: "Taxi service to historical sites in Saudi Arabia.",
-        content: "From Mada'in Saleh to Diriyah, explore Saudi Arabia's rich history with a private taxi and knowledgeable driver.",
-        features: ["Historical Routes", "Guide Driver", "Flexible Timing", "All Regions"],
-        pricing: [{ title: "Tour", price: "Get Quote" }],
-        faqs: []
-    },
+
     {
         slug: "hotel-to-haram-transport",
         title: "Hotel to Haram Transport",
@@ -1273,15 +1222,7 @@ export const servicesData: ServiceData[] = [
         pricing: [{ title: "Transfer", price: "Get Quote" }],
         faqs: []
     },
-    {
-        slug: "date-festival-taxi",
-        title: "Date Festival Taxi",
-        description: "Taxi during dates festival season in Qassim.",
-        content: "Reliable taxi during the busy dates festival season in Buraidah and Unayzah. Book early for guaranteed availability.",
-        features: ["Festival Season", "Advance Booking", "Qassim Area", "Reliable"],
-        pricing: [{ title: "Transfer", price: "Get Quote" }],
-        faqs: []
-    },
+
     // ===== Specific Location Services =====
     {
         slug: "jazan-economic-city",

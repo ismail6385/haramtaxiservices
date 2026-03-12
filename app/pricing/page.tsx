@@ -17,6 +17,9 @@ import {
 import BookingForm from '@/components/BookingForm';
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/pricing',
+    },
     title: 'Our Executive Fleet & Service Areas | Haram Taxi Service',
     description: 'Explore our premium fleet for Umrah & Hajj transfers. competitive quotes for Camry, GMC Yukon, Staria, and Hiace. WhatsApp for an instant quote.',
 };

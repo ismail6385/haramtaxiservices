@@ -71,6 +71,56 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/routes/makkah-hotel-to-jeddah-airport',
+        destination: '/routes/makkah-to-jeddah-airport',
+        permanent: true,
+      },
+      {
+        source: '/services/jeddah-airport-taxi',
+        destination: '/services/jeddah-airport-transfer',
+        permanent: true,
+      },
+      {
+        source: '/services/tabuk-airport-taxi',
+        destination: '/services/tabuk-airport-transfer',
+        permanent: true,
+      },
+      {
+        source: '/services/dammam-airport-taxi',
+        destination: '/services/dammam-airport-transfer',
+        permanent: true,
+      },
+      {
+        source: '/services/abha-airport-taxi',
+        destination: '/services/abha-taxi',
+        permanent: true,
+      },
+      {
+        source: '/services/historical-taxi',
+        destination: '/services/heritage-taxi',
+        permanent: true,
+      },
+      {
+        source: '/services/date-festival-taxi',
+        destination: '/services/date-festival-transfer',
+        permanent: true,
+      },
+      {
+        source: '/services/city-tours',
+        destination: '/services/city-taxi',
+        permanent: true,
+      },
+      {
+        source: '/privacy-policy',
+        destination: '/privacy',
+        permanent: true,
+      },
+      {
+        source: '/terms-conditions',
+        destination: '/terms',
+        permanent: true,
+      },
+      {
         source: '/locations/alula',
         destination: '/locations',
         permanent: true,
