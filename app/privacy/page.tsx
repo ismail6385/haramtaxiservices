@@ -17,7 +17,7 @@ export default function PrivacyPage() {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <Shield className="w-16 h-16 text-teal-600 mx-auto mb-6" />
+                    <Shield className="w-16 h-16 text-slate-600 mx-auto mb-6" />
                     <h1 className="text-5xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
                     <p className="text-xl text-gray-600">Last Updated: December 19, 2024</p>
                     <p className="text-gray-600 mt-4">
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
                     {/* Introduction */}
                     <section className="mb-12 bg-gray-50 p-8 rounded-2xl border border-gray-200">
                         <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-                            <Eye className="w-6 h-6 text-teal-600" />
+                            <Eye className="w-6 h-6 text-slate-600" />
                             Introduction
                         </h2>
                         <p className="text-gray-700 leading-relaxed">
@@ -44,12 +44,12 @@ export default function PrivacyPage() {
                     {/* Information We Collect */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <FileText className="w-6 h-6 text-teal-600" />
+                            <FileText className="w-6 h-6 text-slate-600" />
                             Information We Collect
                         </h2>
 
                         <div className="space-y-6">
-                            <div className="bg-white p-6 border-l-4 border-teal-500 rounded-r-lg">
+                            <div className="bg-white p-6 border-l-4 border-slate-500 rounded-r-lg">
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">Personal Information Provided by You</h3>
                                 <p className="text-gray-700 mb-3">When you book a ride, we collect:</p>
                                 <ul className="list-disc list-inside space-y-2 text-gray-700">
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
                                 </ul>
                             </div>
 
-                            <div className="bg-white p-6 border-l-4 border-teal-500 rounded-r-lg">
+                            <div className="bg-white p-6 border-l-4 border-slate-500 rounded-r-lg">
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">Automatically Collected Information</h3>
                                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                                     <li><strong>Device Information:</strong> IP address, browser type, operating system</li>
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
                     {/* How We Use Your Information */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <UserCheck className="w-6 h-6 text-teal-600" />
+                            <UserCheck className="w-6 h-6 text-slate-600" />
                             How We Use Your Information
                         </h2>
 
@@ -82,23 +82,23 @@ export default function PrivacyPage() {
                             <p className="text-gray-700 mb-4">We use collected information for:</p>
                             <ul className="space-y-3 text-gray-700">
                                 <li className="flex items-start gap-3">
-                                    <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                                     <span><strong>Service Delivery:</strong> Processing bookings, coordinating pickups, tracking rides for safety</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                                     <span><strong>Communication:</strong> Sending booking confirmations, driver details, service updates</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                                     <span><strong>Customer Support:</strong> Responding to inquiries, resolving issues, improving service quality</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                                     <span><strong>Safety & Security:</strong> GPS tracking during rides, driver verification, emergency response</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                                     <span><strong>Legal Compliance:</strong> Meeting Saudi Arabia transportation regulations and legal obligations</span>
                                 </li>
                             </ul>
@@ -108,26 +108,26 @@ export default function PrivacyPage() {
                     {/* Data Security */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <Lock className="w-6 h-6 text-teal-600" />
+                            <Lock className="w-6 h-6 text-slate-600" />
                             Data Security
                         </h2>
 
-                        <div className="bg-teal-50 p-8 rounded-xl border border-teal-200">
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
                             <p className="text-gray-800 leading-relaxed">
                                 We implement industry-standard security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. This includes:
                             </p>
                             <ul className="mt-4 space-y-2 text-gray-800">
                                 <li className="flex items-center gap-2">
-                                    <span className="text-teal-600">✓</span> Encrypted data transmission (SSL/TLS)
+                                    <span className="text-slate-600">✓</span> Encrypted data transmission (SSL/TLS)
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <span className="text-teal-600">✓</span> Secure servers with restricted access
+                                    <span className="text-slate-600">✓</span> Secure servers with restricted access
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <span className="text-teal-600">✓</span> Regular security audits and updates
+                                    <span className="text-slate-600">✓</span> Regular security audits and updates
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <span className="text-teal-600">✓</span> Access controls for employees handling data
+                                    <span className="text-slate-600">✓</span> Access controls for employees handling data
                                 </li>
                             </ul>
                             <p className="text-gray-700 mt-4 italic text-sm">
@@ -170,19 +170,19 @@ export default function PrivacyPage() {
                             <p className="text-gray-800 font-semibold">You have the right to:</p>
                             <ul className="space-y-3 text-gray-700">
                                 <li className="flex items-start gap-3">
-                                    <Shield className="w-5 h-5 text-teal-600 mt-1 flex-shrink-0" />
+                                    <Shield className="w-5 h-5 text-slate-600 mt-1 flex-shrink-0" />
                                     <span><strong>Access Your Data:</strong> Request a copy of the personal information we hold about you</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <Shield className="w-5 h-5 text-teal-600 mt-1 flex-shrink-0" />
+                                    <Shield className="w-5 h-5 text-slate-600 mt-1 flex-shrink-0" />
                                     <span><strong>Correct Inaccuracies:</strong> Update or correct any incorrect personal information</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <Shield className="w-5 h-5 text-teal-600 mt-1 flex-shrink-0" />
+                                    <Shield className="w-5 h-5 text-slate-600 mt-1 flex-shrink-0" />
                                     <span><strong>Delete Your Data:</strong> Request deletion of your information (subject to legal retention requirements)</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <Shield className="w-5 h-5 text-teal-600 mt-1 flex-shrink-0" />
+                                    <Shield className="w-5 h-5 text-slate-600 mt-1 flex-shrink-0" />
                                     <span><strong>Opt-Out:</strong> Unsubscribe from marketing communications at any time</span>
                                 </li>
                             </ul>
@@ -206,15 +206,15 @@ export default function PrivacyPage() {
                     </section>
 
                     {/* Contact */}
-                    <section className="mb-12 bg-teal-500 text-white p-8 rounded-2xl">
+                    <section className="mb-12 bg-slate-500 text-white p-8 rounded-2xl">
                         <h2 className="text-3xl font-bold mb-4 flex items-center gap-3">
                             <Mail className="w-8 h-8" />
                             Contact Us About Privacy
                         </h2>
-                        <p className="text-teal-50 mb-6 leading-relaxed">
+                        <p className="text-slate-50 mb-6 leading-relaxed">
                             If you have questions about this Privacy Policy or how we handle your data, please contact us:
                         </p>
-                        <div className="space-y-2 text-teal-50">
+                        <div className="space-y-2 text-slate-50">
                             <p><strong>Email:</strong> haramtaxiservice@gmail.com</p>
                             <p><strong>Website:</strong> <Link href="/" className="underline hover:text-white">haramtaxiservice.com</Link></p>
                             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
@@ -231,13 +231,13 @@ export default function PrivacyPage() {
 
                     {/* Footer Navigation */}
                     <div className="mt-16 pt-8 border-t border-gray-200 flex gap-6 justify-center">
-                        <Link href="/terms" className="text-teal-600 hover:text-teal-700 font-semibold">
+                        <Link href="/terms" className="text-slate-600 hover:text-slate-700 font-semibold">
                             Terms & Conditions →
                         </Link>
-                        <Link href="/about" className="text-teal-600 hover:text-teal-700 font-semibold">
+                        <Link href="/about" className="text-slate-600 hover:text-slate-700 font-semibold">
                             About Us →
                         </Link>
-                        <Link href="/contact" className="text-teal-600 hover:text-teal-700 font-semibold">
+                        <Link href="/contact" className="text-slate-600 hover:text-slate-700 font-semibold">
                             Contact →
                         </Link>
                     </div>

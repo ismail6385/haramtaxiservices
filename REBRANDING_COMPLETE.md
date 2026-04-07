@@ -201,7 +201,7 @@ Successfully converted the Umrah Taxi Service website to **Haram Taxi Service** 
 #### Buttons
 ```tsx
 // Primary CTA Button
-className="bg-teal-600 hover:bg-teal-700 text-white"
+className="bg-slate-600 hover:bg-slate-700 text-white"
 
 // Secondary Button
 className="bg-yellow-500 hover:bg-yellow-600 text-black"
@@ -222,7 +222,7 @@ className="text-yellow-500"
 className="border-yellow-500/50"
 
 // Active states
-className="border-teal-600"
+className="border-slate-600"
 ```
 
 ---

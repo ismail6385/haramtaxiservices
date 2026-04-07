@@ -8,7 +8,7 @@ const testimonials = [
         content: 'Alhamdulillah, the driver was waiting for us at the airport with a name board. The GMC Yukon was spotless and the AC was perfect. After a 10-hour flight, this was exactly the comfort we needed. Highly recommended for any pilgrim.',
         rating: 5,
         initials: 'AA',
-        color: 'bg-teal-600',
+        color: 'bg-slate-600',
         trip: 'Jeddah Airport → Makkah',
     },
     {
@@ -28,7 +28,7 @@ const testimonials = [
         content: 'I organized Umrah for a group of 14 people. Haram Taxi provided two Hiace vans, both on time and both immaculate. The drivers knew every Ziyarat location in Madinah. Will definitely use again for our next group trip.',
         rating: 5,
         initials: 'MK',
-        color: 'bg-amber-600',
+        color: 'bg-yellow-600',
         trip: 'Madinah Ziyarat Tour',
     },
     {
@@ -70,17 +70,17 @@ export default function Testimonials() {
 
                 {/* Header with aggregate social proof */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-6 py-2 bg-brand-amber-pale/40 border border-brand-amber text-brand-amber-dark rounded-full mb-8 shadow-sm">
+                    <div className="inline-flex items-center gap-2 px-6 py-2 bg-brand-gold-pale/40 border border-brand-gold text-brand-gold-dark rounded-full mb-8 shadow-sm">
                         <div className="flex">
                             {[1, 2, 3, 4, 5].map(i => (
-                                <Star key={i} className="w-4 h-4 fill-brand-amber text-brand-amber" />
+                                <Star key={i} className="w-4 h-4 fill-brand-gold text-brand-gold" />
                             ))}
                         </div>
                         <span className="text-sm font-bold tracking-wide">Rated 5.0 · 15,000+ Pilgrims Served</span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
-                        Trusted by Pilgrims <span className="text-brand-teal">Worldwide</span>
+                        Trusted by Pilgrims <span className="text-brand-navy">Worldwide</span>
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light leading-relaxed">
                         Real experiences from real pilgrims. From Jeddah Airport transfers to full Ziyarat tours — here&apos;s what our customers say.
@@ -116,19 +116,19 @@ export default function Testimonials() {
                     {testimonials.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:border-brand-teal/30 hover:-translate-y-1 transition-all duration-300 flex flex-col group relative overflow-hidden"
+                            className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:border-brand-navy/30 hover:-translate-y-1 transition-all duration-300 flex flex-col group relative overflow-hidden"
                         >
                             <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                                <Quote className="w-24 h-24 text-brand-teal transform rotate-12" />
+                                <Quote className="w-24 h-24 text-brand-navy transform rotate-12" />
                             </div>
 
                             {/* Quote icon */}
-                            <Quote className="w-8 h-8 text-brand-teal/20 fill-brand-teal/20 mb-4 flex-shrink-0" aria-hidden="true" />
+                            <Quote className="w-8 h-8 text-brand-navy/20 fill-brand-navy/20 mb-4 flex-shrink-0" aria-hidden="true" />
 
                             {/* Stars */}
                             <div className="flex gap-0.5 mb-4">
                                 {[...Array(testimonial.rating)].map((_, i) => (
-                                    <Star key={i} className="w-4 h-4 fill-brand-amber text-brand-amber" />
+                                    <Star key={i} className="w-4 h-4 fill-brand-gold text-brand-gold" />
                                 ))}
                             </div>
 
@@ -138,8 +138,8 @@ export default function Testimonials() {
                             </p>
 
                             {/* Trip tag */}
-                            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-brand-teal-pale/20 text-brand-teal-dark rounded-full text-xs font-bold mb-6 self-start border border-brand-teal-pale/50">
-                                <span className="w-1.5 h-1.5 bg-brand-teal rounded-full animate-pulse" aria-hidden="true" />
+                            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-brand-navy-pale/20 text-brand-navy-dark rounded-full text-xs font-bold mb-6 self-start border border-brand-navy-pale/50">
+                                <span className="w-1.5 h-1.5 bg-brand-navy rounded-full animate-pulse" aria-hidden="true" />
                                 {testimonial.trip}
                             </div>
 
@@ -166,22 +166,22 @@ export default function Testimonials() {
                         <div className="flex items-center gap-3">
                             <div className="flex -space-x-1">
                                 {[1, 2, 3, 4, 5].map(i => (
-                                    <Star key={i} className="w-5 h-5 fill-brand-amber text-brand-amber drop-shadow-sm" />
+                                    <Star key={i} className="w-5 h-5 fill-brand-gold text-brand-gold drop-shadow-sm" />
                                 ))}
                             </div>
                             <span className="text-gray-900 font-bold text-base">5.0 Average Rating</span>
                         </div>
                         <div className="w-px h-6 bg-gray-200 hidden sm:block" aria-hidden="true" />
                         <span className="text-gray-600 text-sm font-medium flex items-center gap-2">
-                            <CheckCircle2 className="w-4 h-4 text-brand-teal" /> 15,000+ Verified Bookings
+                            <CheckCircle2 className="w-4 h-4 text-brand-navy" /> 15,000+ Verified Bookings
                         </span>
                         <div className="w-px h-6 bg-gray-200 hidden sm:block" aria-hidden="true" />
                         <span className="text-gray-600 text-sm font-medium flex items-center gap-2">
-                            <Users className="w-4 h-4 text-brand-teal" /> 50+ Countries Served
+                            <Users className="w-4 h-4 text-brand-navy" /> 50+ Countries Served
                         </span>
                         <div className="w-px h-6 bg-gray-200 hidden sm:block" aria-hidden="true" />
                         <span className="text-gray-600 text-sm font-medium flex items-center gap-2">
-                            <Shield className="w-4 h-4 text-brand-teal" /> TGA Licensed &amp; Insured
+                            <Shield className="w-4 h-4 text-brand-navy" /> TGA Licensed &amp; Insured
                         </span>
                     </div>
                 </div>

@@ -60,7 +60,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
 
     const textPrimary = isHero ? "text-white" : "text-gray-900";
     const textSecondary = isHero ? "text-neutral-300" : "text-gray-600";
-    const inputBg = isHero ? "bg-white/10 border-white/20 text-white placeholder:text-neutral-400 focus:bg-black/50 focus:border-brand-teal rounded-none text-sm sm:text-base" : "bg-gray-50 border-gray-300 text-gray-900 focus:border-brand-teal focus:bg-white rounded-lg sm:rounded-xl text-sm sm:text-base";
+    const inputBg = isHero ? "bg-white/10 border-white/20 text-white placeholder:text-neutral-400 focus:bg-black/50 focus:border-brand-navy rounded-none text-sm sm:text-base" : "bg-gray-50 border-gray-300 text-gray-900 focus:border-brand-navy focus:bg-white rounded-lg sm:rounded-xl text-sm sm:text-base";
     const labelColor = isHero ? "text-neutral-200" : "text-gray-700";
     const iconColor = isHero ? "text-neutral-400" : "text-gray-400";
 
@@ -216,12 +216,12 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                 <div className={`flex justify-between items-center mb-2 sm:mb-3 md:mb-4 ${isHero ? 'px-0' : 'px-1'}`}>
                     {[1, 2, 3].map((s) => (
                         <div key={s} className="flex items-center flex-1">
-                            <div className={`${isHero ? 'w-8 h-8 lg:w-9 lg:h-9' : 'w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10'} rounded-full flex items-center justify-center ${isHero ? 'text-sm lg:text-base' : 'text-xs sm:text-sm md:text-base'} font-bold transition-all flex-shrink-0 ${step >= s ? (isHero ? 'bg-brand-teal text-white' : 'bg-brand-teal text-white') : (isHero ? 'bg-white/10 text-white/50' : 'bg-gray-200 text-gray-500')
+                            <div className={`${isHero ? 'w-8 h-8 lg:w-9 lg:h-9' : 'w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10'} rounded-full flex items-center justify-center ${isHero ? 'text-sm lg:text-base' : 'text-xs sm:text-sm md:text-base'} font-bold transition-all flex-shrink-0 ${step >= s ? (isHero ? 'bg-brand-navy text-white' : 'bg-brand-navy text-white') : (isHero ? 'bg-white/10 text-white/50' : 'bg-gray-200 text-gray-500')
                                 }`}>
                                 {step > s ? <Check className={`${isHero ? 'w-3.5 h-3.5 lg:w-4 lg:h-4' : 'w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5'}`} /> : s}
                             </div>
                             {s < 3 && (
-                                <div className={`h-[2px] flex-1 ${isHero ? 'mx-1 lg:mx-2' : 'mx-1 sm:mx-2'} transition-all ${step > s ? (isHero ? 'bg-brand-teal' : 'bg-brand-teal') : (isHero ? 'bg-white/20' : 'bg-gray-200')
+                                <div className={`h-[2px] flex-1 ${isHero ? 'mx-1 lg:mx-2' : 'mx-1 sm:mx-2'} transition-all ${step > s ? (isHero ? 'bg-brand-navy' : 'bg-brand-navy') : (isHero ? 'bg-white/20' : 'bg-gray-200')
                                     }`} />
                             )}
                         </div>
@@ -275,7 +275,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                             variant="outline"
                                             role="combobox"
                                             aria-expanded={open}
-                                            className={`w-full ${isHero ? 'h-11 lg:h-12' : 'h-11 sm:h-12'} justify-between font-normal px-3 ${isHero ? 'text-sm lg:text-base' : 'text-sm sm:text-base'} ${inputBg} hover:bg-brand-teal-pale/10 hover:border-brand-teal`}
+                                            className={`w-full ${isHero ? 'h-11 lg:h-12' : 'h-11 sm:h-12'} justify-between font-normal px-3 ${isHero ? 'text-sm lg:text-base' : 'text-sm sm:text-base'} ${inputBg} hover:bg-brand-navy-pale/10 hover:border-brand-navy`}
 
                                         >
                                             {countryCode ? (
@@ -344,7 +344,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                         <Button
                             type="button"
                             onClick={nextStep}
-                            className={`w-full bg-brand-teal hover:bg-brand-teal-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none shadow-lg transition-transform hover:scale-[1.02] mt-2`}
+                            className={`w-full bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none shadow-lg transition-transform hover:scale-[1.02] mt-2`}
                         >
                             Continue <ArrowRight className={`${isHero ? 'w-4 h-4' : 'w-4 h-4 sm:w-5 sm:h-5'} ml-2`} />
                         </Button>
@@ -460,7 +460,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                         <Button
                                             variant={"outline"}
                                             className={cn(
-                                                `w-full h-11 sm:h-12 justify-start text-left font-normal text-sm sm:text-base ${inputBg} hover:bg-brand-teal-pale/10 hover:border-brand-teal`,
+                                                `w-full h-11 sm:h-12 justify-start text-left font-normal text-sm sm:text-base ${inputBg} hover:bg-brand-navy-pale/10 hover:border-brand-navy`,
                                                 !formData.pickup_date && "text-muted-foreground"
                                             )}
                                         >
@@ -538,7 +538,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                             <Button
                                 type="button"
                                 onClick={nextStep}
-                                className={`flex-1 bg-brand-teal hover:bg-brand-teal-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
+                                className={`flex-1 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
                             >
                                 Continue <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" />
                             </Button>
@@ -576,8 +576,8 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                 </div>
 
                                 <div className={`border-t my-2 sm:my-3 ${isHero ? 'border-white/10' : 'border-gray-200'}`}></div>
-                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 bg-brand-teal-pale/10 p-3 rounded-lg border border-brand-teal-pale/20">
-                                    <span className="text-brand-teal font-bold flex items-center text-sm sm:text-base">
+                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 bg-brand-navy-pale/10 p-3 rounded-lg border border-brand-navy-pale/20">
+                                    <span className="text-brand-navy font-bold flex items-center text-sm sm:text-base">
                                         <Wallet className="w-4 h-4 mr-2 shrink-0" /> Total Price:
                                     </span>
                                     <span className={`font-bold text-base sm:text-lg ${textPrimary}`}>
@@ -599,7 +599,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                             </Button>
                             <Button
                                 type="submit"
-                                className={`flex-1 bg-brand-teal hover:bg-brand-teal-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
+                                className={`flex-1 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
                                 disabled={loading}
                             >
                                 {loading ? 'Booking...' : 'Confirm Booking'} <Check className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" />
@@ -611,7 +611,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                 {/* Step 4: Success */}
                 {step === 4 && success && (
                     <div className="text-center space-y-4 sm:space-y-6 animate-fade-in-up py-6 sm:py-8 px-2">
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-brand-teal rounded-full flex items-center justify-center mx-auto">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-brand-navy rounded-full flex items-center justify-center mx-auto">
                             <Check className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                         </div>
                         <h3 className={`text-xl sm:text-2xl font-bold ${textPrimary} px-2`}>Booking Confirmed!</h3>
@@ -641,7 +641,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                     status: 'pending'
                                 });
                             }}
-                            className={`bg-brand-teal hover:bg-brand-teal-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 px-6 lg:px-8 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 text-sm sm:text-base'} rounded-none mx-2`}
+                            className={`bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 px-6 lg:px-8 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 text-sm sm:text-base'} rounded-none mx-2`}
                         >
                             Make Another Booking
                         </Button>

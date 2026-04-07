@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -75,9 +75,9 @@ export default function ToyotaHiacePage() {
             <div className="bg-gray-50 py-4">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <Link href="/" className="hover:text-teal-500">Home</Link>
+                        <Link href="/" className="hover:text-slate-500">Home</Link>
                         <span>/</span>
-                        <Link href="/fleet" className="hover:text-teal-500">Fleet</Link>
+                        <Link href="/fleet" className="hover:text-slate-500">Fleet</Link>
                         <span>/</span>
                         <span className="text-gray-900 font-medium">Toyota Hiace</span>
                     </div>
@@ -88,13 +88,13 @@ export default function ToyotaHiacePage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 rounded-full">
-                                <Star className="w-4 h-4 text-teal-500" />
-                                <span className="text-teal-600 text-sm font-semibold">Group Van</span>
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 rounded-full">
+                                <Star className="w-4 h-4 text-slate-500" />
+                                <span className="text-slate-600 text-sm font-semibold">Group Van</span>
                             </div>
 
                             <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
-                                Toyota <span className="text-teal-500">Hiace</span>
+                                Toyota <span className="text-slate-500">Hiace</span>
                             </h1>
 
                             <p className="text-xl text-gray-600 leading-relaxed">
@@ -103,7 +103,7 @@ export default function ToyotaHiacePage() {
 
                             <div className="flex flex-wrap gap-4 pt-4">
                                 <Link href="/booking?vehicle=Toyota%20Hiace">
-                                    <Button size="lg" className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg">
+                                    <Button size="lg" className="bg-slate-500 hover:bg-slate-600 text-white px-8 py-6 text-lg">
                                         Book Now
                                         <ArrowRight className="w-5 h-5 ml-2" />
                                     </Button>
@@ -119,12 +119,13 @@ export default function ToyotaHiacePage() {
                         <div className="relative">
                             <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/toyota-hiace-commuter-van.webp"
-                                    alt="Toyota Hiace group van taxi in Saudi Arabia"
-                                    fill
-                                    className="object-cover"
-                                    priority
-                                />
+                        src="/toyota-hiace-commuter-van.webp"
+                        alt="Toyota Hiace group van taxi in Saudi Arabia"
+                        width={800}
+                        height={600}
+                        className="w-full h-full object-cover"
+                        priority
+                    />
                             </div>
                         </div>
                     </div>
@@ -136,7 +137,7 @@ export default function ToyotaHiacePage() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {specifications.map((spec, index) => (
                             <div key={index} className="bg-gray-50 p-6 rounded-xl text-center hover:shadow-lg transition-all">
-                                <spec.icon className="w-8 h-8 text-teal-500 mx-auto mb-3" />
+                                <spec.icon className="w-8 h-8 text-slate-500 mx-auto mb-3" />
                                 <div className="text-2xl font-bold text-gray-900 mb-1">{spec.value}</div>
                                 <div className="text-sm text-gray-600">{spec.label}</div>
                             </div>
@@ -153,8 +154,8 @@ export default function ToyotaHiacePage() {
                             <ul className="space-y-4">
                                 {features.map((feature, index) => (
                                     <li key={index} className="flex items-center text-gray-700">
-                                        <div className="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mr-4">
-                                            <Check className="w-4 h-4 text-teal-500" />
+                                        <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center mr-4">
+                                            <Check className="w-4 h-4 text-slate-500" />
                                         </div>
                                         {feature}
                                     </li>
@@ -164,11 +165,12 @@ export default function ToyotaHiacePage() {
 
                         <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/toyota-hiace-group-transport-saudi.webp"
-                                alt="Toyota Hiace for group travel"
-                                fill
-                                className="object-cover"
-                            />
+                        src="/toyota-hiace-group-transport-saudi.webp"
+                        alt="Toyota Hiace for group travel"
+                        width={1000}
+                        height={500}
+                        className="w-full h-full object-cover"
+                    />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                             <div className="absolute bottom-8 left-8 right-8">
                                 <h3 className="text-2xl font-bold text-white mb-4">Perfect For</h3>
@@ -188,13 +190,13 @@ export default function ToyotaHiacePage() {
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Toyota Hiace Taxi FAQs</h2>
                         <p className="text-xl text-gray-600">Common questions about Toyota Hiace rental</p>
                     </div>
                     <Accordion type="single" collapsible className="space-y-4">
                         {faqs.map((faq, index) => (
                             <AccordionItem key={index} value={`item-${index}`} className="bg-gray-50 px-6 rounded-xl border-0">
-                                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-teal-500 text-left">
+                                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-slate-500 text-left">
                                     {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
@@ -209,14 +211,14 @@ export default function ToyotaHiacePage() {
 
             {/* Related Vehicles */}
             <RelatedVehicles currentVehicle="toyota-hiace" />
-            <section className="py-20 bg-teal-500 text-white">
+            <section className="py-20 bg-slate-500 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">Ready to Book Toyota Hiace?</h2>
                     <p className="text-xl mb-8 opacity-90">
                         Spacious group van for comfortable travel. Book now!
                     </p>
                     <Link href="/booking?vehicle=Toyota%20Hiace">
-                        <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-12 py-6 text-lg">
+                        <Button size="lg" className="bg-white text-slate-500 hover:bg-gray-100 px-12 py-6 text-lg">
                             Book This Vehicle
                         </Button>
                     </Link>

@@ -34,20 +34,20 @@ export default function HijriConverter() {
 
     return (
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden max-w-lg mx-auto">
-            <div className="bg-teal-600 p-6 text-white text-center">
+            <div className="bg-slate-600 p-6 text-white text-center">
                 <Calendar className="w-10 h-10 mx-auto mb-2 opacity-90" />
                 <h2 className="text-2xl font-bold">Date Converter</h2>
                 <div className="flex justify-center mt-4">
-                    <div className="bg-teal-700 p-1 rounded-lg flex text-xs font-semibold">
+                    <div className="bg-slate-700 p-1 rounded-lg flex text-xs font-semibold">
                         <button
                             onClick={() => { setMode('gToH'); setResult(null); }}
-                            className={`px-4 py-2 rounded-md transition-all ${mode === 'gToH' ? 'bg-white text-teal-700 shadow' : 'text-teal-100 hover:text-white'}`}
+                            className={`px-4 py-2 rounded-md transition-all ${mode === 'gToH' ? 'bg-white text-slate-700 shadow' : 'text-slate-100 hover:text-white'}`}
                         >
                             Gregorian → Hijri
                         </button>
                         <button
                             onClick={() => { setMode('hToG'); setResult(null); }}
-                            className={`px-4 py-2 rounded-md transition-all ${mode === 'hToG' ? 'bg-white text-teal-700 shadow' : 'text-teal-100 hover:text-white'}`}
+                            className={`px-4 py-2 rounded-md transition-all ${mode === 'hToG' ? 'bg-white text-slate-700 shadow' : 'text-slate-100 hover:text-white'}`}
                         >
                             Hijri → Gregorian
                         </button>
@@ -74,26 +74,26 @@ export default function HijriConverter() {
                 <Button
                     onClick={handleConvert}
                     disabled={loading || !dateInput}
-                    className="w-full bg-teal-600 hover:bg-teal-700 h-12 text-lg"
+                    className="w-full bg-slate-600 hover:bg-slate-700 h-12 text-lg"
                 >
                     {loading ? <RefreshCw className="w-5 h-5 animate-spin" /> : 'Convert Date'}
                 </Button>
 
                 {result && (
-                    <div className="mt-8 p-6 bg-teal-50 rounded-xl border border-teal-100 text-center animate-in fade-in slide-in-from-bottom-4">
+                    <div className="mt-8 p-6 bg-slate-50 rounded-xl border border-slate-100 text-center animate-in fade-in slide-in-from-bottom-4">
                         <div className="text-sm text-gray-600 mb-2">Converted Date</div>
                         {mode === 'gToH' ? (
                             <>
-                                <div className="text-3xl font-bold text-teal-800 font-serif">
+                                <div className="text-3xl font-bold text-slate-800 font-serif">
                                     {result.day} {result.month.en} {result.year}
                                 </div>
-                                <div className="text-xl text-teal-600 font-serif mt-1">
+                                <div className="text-xl text-slate-600 font-serif mt-1">
                                     {result.month.ar}
                                 </div>
                                 <div className="text-sm text-gray-500 mt-2">{result.weekday.en}</div>
                             </>
                         ) : (
-                            <div className="text-3xl font-bold text-teal-800 font-serif">
+                            <div className="text-3xl font-bold text-slate-800 font-serif">
                                 {result.date}
                             </div>
                         )}

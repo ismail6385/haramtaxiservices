@@ -73,14 +73,15 @@ export default function RelatedVehicles({ currentVehicle }: RelatedVehiclesProps
                                     <Image
                                         src={vehicle.image}
                                         alt={`${vehicle.name} taxi in Saudi Arabia`}
-                                        fill
-                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                        width={400}
+                                        height={200}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                     />
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">{vehicle.name}</h3>
                                     <p className="text-gray-600 text-sm mb-4">{vehicle.description}</p>
-                                    <div className="flex items-center text-teal-500 font-semibold">
+                                    <div className="flex items-center text-slate-500 font-semibold">
                                         View {vehicle.name} Details <ArrowRight className="w-4 h-4 ml-2" />
                                     </div>
                                 </div>

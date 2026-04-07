@@ -41,8 +41,9 @@ export default function Welcome() {
                         <Image
                             src="/makkah-kaaba-night.webp" // Updated image to be relevant
                             alt="Umrah Taxi Service Makkah"
-                            fill
-                            className="object-cover hover:scale-105 transition-transform duration-700"
+                            width={800}
+                            height={500}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div className="absolute bottom-6 left-6 right-6">

@@ -21,7 +21,7 @@ export default function BlogTeaser() {
                         <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-3">Travel Insights</h2>
                         <p className="text-xl text-gray-600 font-light">Latest news, guides, and updates for your spiritual journey</p>
                     </div>
-                    <Link href="/blog" className="hidden md:flex items-center text-brand-teal font-semibold hover:text-brand-amber transition-colors group">
+                    <Link href="/blog" className="hidden md:flex items-center text-brand-navy font-semibold hover:text-brand-gold transition-colors group">
                         View All Articles <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Link>
                 </div>
@@ -34,22 +34,23 @@ export default function BlogTeaser() {
                                     <Image
                                         src={post.image}
                                         alt={post.title}
-                                        fill
+                                        width={400}
+                                        height={250}
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
-                                    <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold text-brand-teal shadow-md">
+                                    <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold text-brand-navy shadow-md">
                                         {post.date}
                                     </div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-xl font-display font-bold text-gray-900 mb-3 group-hover:text-brand-teal transition-colors line-clamp-2 leading-tight">
+                                    <h3 className="text-xl font-display font-bold text-gray-900 mb-3 group-hover:text-brand-navy transition-colors line-clamp-2 leading-tight">
                                         {post.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
                                         {post.excerpt || "Read the full guide for tips on Ziyarat, best times to visit, and essential travel advice."}
                                     </p>
-                                    <span className="inline-flex items-center text-brand-teal font-semibold text-sm group-hover:text-brand-amber transition-colors">
+                                    <span className="inline-flex items-center text-brand-navy font-semibold text-sm group-hover:text-brand-gold transition-colors">
                                         Read Article <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                     </span>
                                 </div>
@@ -59,7 +60,7 @@ export default function BlogTeaser() {
                 </div>
 
                 <div className="mt-10 text-center md:hidden">
-                    <Link href="/blog" className="inline-flex items-center text-brand-teal font-bold hover:text-brand-amber transition-colors">
+                    <Link href="/blog" className="inline-flex items-center text-brand-navy font-bold hover:text-brand-gold transition-colors">
                         View All Articles <ArrowRight className="w-5 h-5 ml-2" />
                     </Link>
                 </div>

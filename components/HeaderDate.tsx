@@ -33,11 +33,11 @@ export default function HeaderDate() {
 
     return (
         <div className="flex items-center gap-2 text-xs font-medium text-white/90 whitespace-nowrap">
-            <Calendar className="w-3 h-3 text-teal-300" />
+            <Calendar className="w-3 h-3 text-slate-300" />
             <span className="hidden sm:inline">{date.greg}</span>
             <span className="sm:hidden">{date.greg.split(',')[1]}</span> {/* Short on mobile */}
-            <span className="text-teal-500/50">|</span>
-            <span className="text-teal-200">{date.hijri}</span>
+            <span className="text-slate-500/50">|</span>
+            <span className="text-slate-200">{date.hijri}</span>
         </div>
     );
 }

@@ -491,7 +491,7 @@ export default function LocationsPage() {
                 <div className="bg-gray-50 py-4">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex items-center gap-2 text-sm text-gray-600">
-                            <Link href="/" className="hover:text-teal-500">Home</Link>
+                            <Link href="/" className="hover:text-slate-500">Home</Link>
                             <span>/</span>
                             <span className="text-gray-900 font-medium">Locations</span>
                         </div>
@@ -530,8 +530,9 @@ export default function LocationsPage() {
                                             <Image
                                                 src={location.image}
                                                 alt={`Taxi service in ${location.name}`}
-                                                fill
-                                                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                                width={400}
+                                                height={256}
+                                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                             <div className="absolute bottom-4 left-4 right-4">
@@ -542,12 +543,12 @@ export default function LocationsPage() {
                                             <p className="text-gray-600 mb-4">{location.description}</p>
                                             <div className="flex flex-wrap gap-2 mb-4">
                                                 {location.services.map((service, idx) => (
-                                                    <span key={idx} className="px-3 py-1 bg-teal-50 text-teal-600 text-sm rounded-full">
+                                                    <span key={idx} className="px-3 py-1 bg-slate-50 text-slate-600 text-sm rounded-full">
                                                         {service}
                                                     </span>
                                                 ))}
                                             </div>
-                                            <div className="flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
+                                            <div className="flex items-center text-slate-500 font-semibold group-hover:gap-2 transition-all">
                                                 Taxi in {location.name}
                                                 <ArrowRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
                                             </div>
@@ -576,8 +577,9 @@ export default function LocationsPage() {
                                                 <Image
                                                     src={location.image}
                                                     alt={`Taxi service in ${location.name}`}
-                                                    fill
-                                                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                                    width={400}
+                                                    height={200}
+                                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                                 />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                                 <div className="absolute bottom-4 left-4">
@@ -586,7 +588,7 @@ export default function LocationsPage() {
                                             </div>
                                             <div className="p-6">
                                                 <p className="text-gray-600 mb-4">{location.description}</p>
-                                                <div className="flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
+                                                <div className="flex items-center text-slate-500 font-semibold group-hover:gap-2 transition-all">
                                                     Taxi in {location.name}
                                                     <ArrowRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
                                                 </div>
@@ -600,14 +602,14 @@ export default function LocationsPage() {
                 )}
 
                 {/* CTA */}
-                <section className="py-20 bg-teal-500 text-white">
+                <section className="py-20 bg-slate-500 text-white">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className="text-4xl font-bold mb-6">Need a Taxi in Saudi Arabia?</h2>
                         <p className="text-xl mb-8 opacity-90">
                             Book reliable taxi service across all major cities. Available 24/7 with professional drivers.
                         </p>
                         <Link href="/booking">
-                            <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-8 py-6 text-lg">
+                            <Button size="lg" className="bg-white text-slate-500 hover:bg-gray-100 px-8 py-6 text-lg">
                                 Book Your Ride Now
                             </Button>
                         </Link>

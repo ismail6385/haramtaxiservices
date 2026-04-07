@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -53,7 +53,7 @@ export default function JazanLocationPage() {
     const faqs = [
         {
             question: "How far is the ferry terminal from Jazan Airport?",
-            answer: "The Jazan Port (ferry terminal) is about a Get Quote minute drive from Jazan Airport (GIZ). We ensure you arrive with plenty of time before departure."
+            answer: "The Jazan Port (ferry terminal) is about a comfortable drive from Jazan Airport (GIZ). We ensure you arrive with plenty of time before departure."
         },
         {
             question: "Do you go to Sabya and Abu Arish?",
@@ -74,7 +74,7 @@ export default function JazanLocationPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Jazan",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+966569487569",
+        "telephone": "+996575806733",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Corniche Road",
@@ -109,8 +109,9 @@ export default function JazanLocationPage() {
                     <Image
                         src="/jazan-heritage-village.webp"
                         alt="Taxi Service in Jazan Saudi Arabia"
-                        fill
-                        className="object-cover"
+                        width={1200}
+                        height={500}
+                        className="w-full h-full object-cover"
                         priority
                     />
                 </div>
@@ -129,7 +130,7 @@ export default function JazanLocationPage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jazan." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jazan." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -145,8 +146,8 @@ export default function JazanLocationPage() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Rates in Jazan</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        A typical taxi fare from Jazan Airport (GIZ) to the city center or Ferry Terminal is between <span className="font-bold text-orange-700">Get Quote and Get Quote</span>.
-                        Trips to surrounding towns like Sabya or Abu Arish range from <span className="font-bold text-orange-700">Get Quote to Get Quote</span>.
+                        A typical taxi fare from Jazan Airport (GIZ) to the city center or Ferry Terminal is between <span className="font-bold text-orange-700">Get Quote</span>.
+                        Trips to surrounding towns like Sabya or Abu Arish range from <span className="font-bold text-orange-700">Get Quote</span>.
                         Always agree on a fix price or use a trusted booking service.
                     </p>
                 </div>
@@ -199,7 +200,7 @@ export default function JazanLocationPage() {
 
                             {/* Services List */}
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Service Areas</h2>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Jazan Taxi Service Areas</h2>
                                 <div className="space-y-4">
                                     {services.map((service, index) => (
                                         <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -249,7 +250,7 @@ export default function JazanLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jazan." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jazan." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
                                             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
@@ -295,7 +296,7 @@ export default function JazanLocationPage() {
                                 Book Jazan Taxi
                             </Button>
                         </Link>
-                        <a href="https://wa.me/966569487569">
+                        <a href="https://wa.me/996575806733">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
                                 WhatsApp Now
                             </Button>

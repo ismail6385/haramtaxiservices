@@ -10,30 +10,35 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/blog',
     },
-    title: 'Haram Taxi Blog | Umrah Travel Tips & Guides',
-    description: 'Read our latest guides on booking taxis in Saudi Arabia, visiting historical sites, and travel tips for Umrah pilgrims.',
+    title: 'Haram Chauffeur Insights | VIP Travel Guides & Tips',
+    description: 'Read our latest executive transport guides for Saudi Arabia, spiritual journey tips for the Holy Cities, and VIP pilgrimage logistics.',
 };
 
 export default function BlogIndexPage() {
     return (
         <div className="bg-white min-h-screen">
-            <div className="bg-teal-600 text-white py-20 px-4 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Travel Insights & Guides</h1>
+            <div className="bg-brand-navy text-white py-20 px-4 text-center">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 font-display">Executive Insights & VIP Guides</h1>
                 <p className="text-xl opacity-90 max-w-2xl mx-auto">Expert advice for your spiritual journey in Saudi Arabia.</p>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Latest Articles & Travel Guides</h2>
+                    <p className="text-gray-600 mt-4">Stay updated with the latest news, tips, and guides for your travel in Saudi Arabia.</p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {blogData.map((post) => (
+                    {blogData.slice(0, 30).map((post) => (
                         <Card key={post.slug} className="hover:shadow-lg transition-shadow border-gray-100 overflow-hidden group">
                             <div className="relative h-48 w-full">
                                 <Image
                                     src={post.image}
                                     alt={post.title}
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    width={400}
+                                    height={225}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
-                                <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                <div className="absolute top-4 left-4 bg-brand-gold text-brand-navy text-xs font-bold px-3 py-1 rounded-full shadow-md">
                                     {post.category}
                                 </div>
                             </div>
@@ -57,7 +62,7 @@ export default function BlogIndexPage() {
                             </CardContent>
                             <CardFooter>
                                 <Link href={`/blog/${post.slug}`} className="w-full">
-                                    <Button variant="outline" className="w-full hover:bg-teal-50 hover:text-teal-600 hover:border-teal-200 group">
+                                    <Button variant="outline" className="w-full hover:bg-slate-50 hover:text-slate-600 hover:border-slate-200 group">
                                         Read: {post.title.length > 30 ? post.title.slice(0, 30) + '...' : post.title} <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                     </Button>
                                 </Link>

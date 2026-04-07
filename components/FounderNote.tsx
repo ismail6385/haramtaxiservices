@@ -8,14 +8,14 @@ export default function FounderNote() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left: Text Content */}
                     <div className="space-y-8 relative">
-                        <Quote className="w-20 h-20 text-brand-teal-pale absolute -top-10 -left-6 -z-10 opacity-50" />
+                        <Quote className="w-20 h-20 text-brand-navy-pale absolute -top-10 -left-6 -z-10 opacity-50" />
 
                         <div className="space-y-4">
-                            <div className="inline-block px-4 py-1.5 bg-brand-amber-pale text-brand-amber-dark rounded-full text-sm font-bold tracking-wide uppercase">
+                            <div className="inline-block px-4 py-1.5 bg-brand-gold-pale text-brand-gold-dark rounded-full text-sm font-bold tracking-wide uppercase">
                                 Our Mission
                             </div>
                             <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 leading-tight">
-                                Serving the <span className="text-brand-teal">Guests of Allah</span> with Honor
+                                Serving the <span className="text-brand-navy">Guests of Allah</span> with Honor
                             </h2>
                         </div>
 
@@ -35,13 +35,13 @@ export default function FounderNote() {
                             <div className="flex items-center gap-4">
                                 <div className="w-16 h-16 bg-gray-100 rounded-full overflow-hidden relative border-2 border-white shadow-md">
                                     {/* Placeholder for founder image, using a generic professional silhouette if needed or just initials */}
-                                    <div className="bg-brand-teal w-full h-full flex items-center justify-center text-white font-display font-bold text-2xl">
+                                    <div className="bg-brand-navy w-full h-full flex items-center justify-center text-white font-display font-bold text-2xl">
                                         HT
                                     </div>
                                 </div>
                                 <div>
                                     <div className="font-display font-bold text-xl text-gray-900">Abu Abdullah</div>
-                                    <div className="text-brand-teal font-medium">Operations Manager</div>
+                                    <div className="text-brand-navy font-medium">Operations Manager</div>
                                 </div>
                             </div>
                         </div>
@@ -53,10 +53,11 @@ export default function FounderNote() {
                         <Image
                             src="/makkah-haram-night-view.webp"
                             alt="Makkah Haram View"
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            width={800}
+                            height={600}
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-brand-teal/80 via-transparent to-transparent opacity-60"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-transparent to-transparent opacity-60"></div>
 
                         {/* Text overlay similar to the 'founder video' vibe from the transcript */}
                         <div className="absolute bottom-8 left-8 right-8 text-white">

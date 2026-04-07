@@ -18,17 +18,17 @@ export default function FareCalculator() {
 
     return (
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden max-w-lg mx-auto">
-            <div className="bg-teal-600 p-6 text-white text-center">
+            <div className="bg-slate-600 p-6 text-white text-center">
                 <Calculator className="w-10 h-10 mx-auto mb-2 opacity-90" />
                 <h2 className="text-2xl font-bold">Taxi Fare Estimator</h2>
-                <p className="text-teal-100 text-sm">Get a quote for your ride</p>
+                <p className="text-slate-100 text-sm">Get a quote for your ride</p>
             </div>
 
             <div className="p-8 space-y-6">
                 {/* From */}
                 <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-teal-500" />
+                        <MapPin className="w-4 h-4 text-slate-500" />
                         Pickup Location
                     </label>
                     <select
@@ -72,21 +72,21 @@ export default function FareCalculator() {
 
                 <Button
                     onClick={handleCalculate}
-                    className="w-full bg-teal-600 hover:bg-teal-700 h-12 text-lg"
+                    className="w-full bg-slate-600 hover:bg-slate-700 h-12 text-lg"
                 >
                     Get Quote
                 </Button>
 
                 {/* Result */}
                 {showQuote ? (
-                    <div className="mt-8 p-6 bg-teal-50 rounded-xl border border-teal-100 text-center animate-in fade-in slide-in-from-bottom-4">
+                    <div className="mt-8 p-6 bg-slate-50 rounded-xl border border-slate-100 text-center animate-in fade-in slide-in-from-bottom-4">
                         <div className="text-sm text-gray-600 mb-1">Estimated Fare</div>
-                        <div className="text-2xl font-bold text-teal-700 mb-2">
+                        <div className="text-2xl font-bold text-slate-700 mb-2">
                             Contact for Best Price
                         </div>
                         <p className="text-xs text-gray-500 mb-4">*Prices vary by season & availability</p>
                         <Link href="/booking">
-                            <Button variant="outline" className="border-teal-600 text-teal-700 hover:bg-teal-600 hover:text-white w-full">
+                            <Button variant="outline" className="border-slate-600 text-slate-700 hover:bg-slate-600 hover:text-white w-full">
                                 Book This Ride
                                 <ArrowRight className="w-4 h-4 ml-2" />
                             </Button>

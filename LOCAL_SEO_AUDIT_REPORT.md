@@ -337,9 +337,9 @@ area, Aziziyah, and Misfalah districts. Available 24/7 for pilgrims and resident
 
 **Add to each location page after H1:**
 ```html
-<div className="bg-teal-50 p-4 rounded-lg mb-6">
+<div className="bg-slate-50 p-4 rounded-lg mb-6">
   <p className="text-gray-700">
-    <MapPin className="inline w-4 h-4 text-teal-500" />
+    <MapPin className="inline w-4 h-4 text-slate-500" />
     Serving [City Name] and surrounding areas within 50km radius
   </p>
 </div>

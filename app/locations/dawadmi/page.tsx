@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -61,7 +61,7 @@ export default function DawadmiLocationPage() {
         },
         {
             question: "Can I book a ride to Makkah?",
-            answer: "Yes, we provide Umrah taxi services from Dawadmi to Makkah, which is about a Get Quote hour journey."
+            answer: "Yes, we provide Umrah taxi services from Dawadmi to Makkah, which is a short hour journey."
         },
         {
             question: "Are family cars available?",
@@ -74,7 +74,7 @@ export default function DawadmiLocationPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Dawadmi",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+966569487569",
+        "telephone": "+996575806733",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "King Abdulaziz Road",
@@ -87,49 +87,50 @@ export default function DawadmiLocationPage() {
     };
 
     return (
-        <div className="bg-amber-50 min-h-screen">
+        <div className="bg-yellow-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
             {/* Breadcrumbs */}
-            <div className="bg-amber-100 py-4 border-b border-amber-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-amber-900/60">
-                    <Link href="/" className="hover:text-amber-700">Home</Link>
+            <div className="bg-yellow-100 py-4 border-b border-amber-200">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-yellow-900/60">
+                    <Link href="/" className="hover:text-yellow-700">Home</Link>
                     <span className="mx-2">/</span>
-                    <Link href="/locations" className="hover:text-amber-700">Locations</Link>
+                    <Link href="/locations" className="hover:text-yellow-700">Locations</Link>
                     <span className="mx-2">/</span>
-                    <span className="font-semibold text-amber-900">Dawadmi</span>
+                    <span className="font-semibold text-yellow-900">Dawadmi</span>
                 </div>
             </div>
 
             {/* Hero Section */}
             <section className="relative h-[600px] flex items-center">
-                <div className="absolute inset-0 bg-amber-900/50 z-10"></div>
+                <div className="absolute inset-0 bg-yellow-900/50 z-10"></div>
                 {/* Fallback color/image */}
-                <div className="absolute inset-0 bg-amber-800 z-0">
+                <div className="absolute inset-0 bg-yellow-800 z-0">
                     <Image
                         src="/dawadmi-desert.webp"
                         alt="Taxi Service in Dawadmi and Desert"
-                        fill
-                        className="object-cover"
+                        width={1200}
+                        height={500}
+                        className="w-full h-full object-cover"
                         priority
                     />
                 </div>
 
                 <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div className="max-w-3xl text-white">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-600 rounded-full mb-6 animate-fade-in border border-amber-400/50">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-600 rounded-full mb-6 animate-fade-in border border-amber-400/50">
                             <MapPin className="w-4 h-4 text-white" />
                             <span className="text-sm font-semibold uppercase tracking-wide">Heart of Najd</span>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                             Dawadmi Taxi Service
                         </h1>
-                        <p className="text-xl md:text-2xl opacity-95 mb-8 leading-relaxed font-light text-amber-50">
+                        <p className="text-xl md:text-2xl opacity-95 mb-8 leading-relaxed font-light text-yellow-50">
                             Connecting the Central Region. Airport transfers and long-distance comfort.
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Dawadmi." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Dawadmi." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -145,9 +146,9 @@ export default function DawadmiLocationPage() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Dawadmi</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Local taxis within Dawadmi average <span className="font-bold text-amber-700">Get Quote</span>.
-                        Rides to Riyadh typically cost <span className="font-bold text-amber-700">Get Quote</span>.
-                        Airport transfers to DWD are approximately <span className="font-bold text-amber-700">Get Quote</span> depending on distance.
+                        Local taxis within Dawadmi average <span className="font-bold text-yellow-700">Get Quote</span>.
+                        Rides to Riyadh typically cost <span className="font-bold text-yellow-700">Get Quote</span>.
+                        Airport transfers to DWD are approximately <span className="font-bold text-yellow-700">Get Quote</span> depending on distance.
                     </p>
                 </div>
             </section>
@@ -163,13 +164,13 @@ export default function DawadmiLocationPage() {
                             {/* Why Choose Us */}
                             <div>
                                 <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                                    <Shield className="w-8 h-8 text-amber-600" />
+                                    <Shield className="w-8 h-8 text-yellow-600" />
                                     Why Haram Taxi Dawadmi?
                                 </h2>
                                 <div className="grid sm:grid-cols-2 gap-6">
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center shrink-0">
-                                            <Plane className="w-5 h-5 text-amber-600" />
+                                        <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center shrink-0">
+                                            <Plane className="w-5 h-5 text-yellow-600" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-gray-900">Flight Tracking</h3>
@@ -177,8 +178,8 @@ export default function DawadmiLocationPage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center shrink-0">
-                                            <MapPin className="w-5 h-5 text-amber-600" />
+                                        <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center shrink-0">
+                                            <MapPin className="w-5 h-5 text-yellow-600" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-gray-900">Regional Expert</h3>
@@ -190,18 +191,18 @@ export default function DawadmiLocationPage() {
 
                             {/* Services List */}
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Services</h2>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Dawadmi Taxi Services</h2>
                                 <div className="space-y-4">
                                     {services.map((service, index) => (
                                         <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                                            <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center shrink-0">
-                                                <service.icon className="w-6 h-6 text-amber-600" />
+                                            <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center shrink-0">
+                                                <service.icon className="w-6 h-6 text-yellow-600" />
                                             </div>
                                             <div>
                                                 <h3 className="text-xl font-bold text-gray-900 mb-2">{service.name}</h3>
                                                 <p className="text-gray-600 mb-3">{service.description}</p>
                                                 {service.href && (
-                                                    <Link href={service.href} className="text-amber-600 font-semibold text-sm hover:underline flex items-center gap-1">
+                                                    <Link href={service.href} className="text-yellow-600 font-semibold text-sm hover:underline flex items-center gap-1">
                                                         Booking Info <ArrowRight className="w-3 h-3" />
                                                     </Link>
                                                 )}
@@ -230,7 +231,7 @@ export default function DawadmiLocationPage() {
                         <div className="space-y-8">
                             {/* Booking Widget */}
                             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden sticky top-24">
-                                <div className="bg-amber-600 p-6 text-white">
+                                <div className="bg-yellow-600 p-6 text-white">
                                     <h3 className="text-xl font-bold flex items-center gap-2">
                                         <Clock className="w-5 h-5" /> Book Your Ride
                                     </h3>
@@ -240,7 +241,7 @@ export default function DawadmiLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Dawadmi." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Dawadmi." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
                                             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
@@ -252,14 +253,14 @@ export default function DawadmiLocationPage() {
                             {/* Local Info */}
                             <div className="bg-white rounded-2xl p-6 border border-gray-200">
                                 <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                                    <MapPin className="w-5 h-5 text-amber-600" /> Key Locations
+                                    <MapPin className="w-5 h-5 text-yellow-600" /> Key Locations
                                 </h3>
                                 <ul className="space-y-3 text-sm text-gray-700">
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-amber-600 rounded-full"></div> King Salman Airport (DWD)</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-amber-600 rounded-full"></div> Dawadmi General Hospital</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-amber-600 rounded-full"></div> King Abdulaziz Road</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-amber-600 rounded-full"></div> Heritage Village</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-amber-600 rounded-full"></div> College of Technology</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-yellow-600 rounded-full"></div> King Salman Airport (DWD)</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-yellow-600 rounded-full"></div> Dawadmi General Hospital</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-yellow-600 rounded-full"></div> King Abdulaziz Road</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-yellow-600 rounded-full"></div> Heritage Village</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-yellow-600 rounded-full"></div> College of Technology</li>
                                 </ul>
                             </div>
                         </div>
@@ -281,11 +282,11 @@ export default function DawadmiLocationPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/booking">
-                            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-10 py-6 text-lg font-bold">
+                            <Button size="lg" className="bg-yellow-600 hover:bg-yellow-700 text-white px-10 py-6 text-lg font-bold">
                                 Book Now
                             </Button>
                         </Link>
-                        <a href="https://wa.me/966569487569">
+                        <a href="https://wa.me/996575806733">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
                                 WhatsApp Booking
                             </Button>
@@ -296,4 +297,5 @@ export default function DawadmiLocationPage() {
         </div>
     );
 }
+
 

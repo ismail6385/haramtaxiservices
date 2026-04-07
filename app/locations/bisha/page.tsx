@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -57,11 +57,11 @@ export default function BishaLocationPage() {
         },
         {
             question: "Do you offer rides to Abha?",
-            answer: "Yes, we provide private taxi transfers to Abha and Khamis Mushait, which are about 250km (2.adequate time) away."
+            answer: "Yes, we provide private taxi transfers to Abha and Khamis Mushait, which are about 250km (2.5 to 3 hours) away."
         },
         {
             question: "How much is a taxi from Bisha Airport to downtown?",
-            answer: "A taxi from Bisha Airport (BHH) to the city center is very affordable, typically costing between Get Quote and Get Quote"
+            answer: "A taxi from Bisha Airport (BHH) to the city center is very affordable, typically costing between Get Quote"
         },
         {
             question: "Are taxis available for the Bisha Date Festival?",
@@ -74,7 +74,7 @@ export default function BishaLocationPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Bisha",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+966569487569",
+        "telephone": "+996575806733",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Abu Baker Al Siddiq Road",
@@ -109,8 +109,9 @@ export default function BishaLocationPage() {
                     <Image
                         src="/bisha-palms.webp"
                         alt="Taxi Service in Bisha and Date Farms"
-                        fill
-                        className="object-cover"
+                        width={1200}
+                        height={500}
+                        className="w-full h-full object-cover"
                         priority
                     />
                 </div>
@@ -129,7 +130,7 @@ export default function BishaLocationPage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Bisha." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Bisha." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -146,7 +147,7 @@ export default function BishaLocationPage() {
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Bisha</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         A taxi from Bisha Airport (BHH) to the city center costs around <span className="font-bold text-orange-700">Get Quote</span>.
-                        A round trip to King Fahd Dam with waiting time is typically <span className="font-bold text-orange-700">Get Quote</span>.
+                        A round trip to King Fahd Dam with waiting time is typically <span className="font-bold text-orange-700">affordable rates</span>.
                         Intercity trips to Abha start from <span className="font-bold text-orange-700">Get Quote</span>.
                     </p>
                 </div>
@@ -190,7 +191,7 @@ export default function BishaLocationPage() {
 
                             {/* Services List */}
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Services</h2>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Bisha Taxi Services</h2>
                                 <div className="space-y-4">
                                     {services.map((service, index) => (
                                         <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -240,7 +241,7 @@ export default function BishaLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Bisha." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Bisha." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
                                             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
@@ -285,7 +286,7 @@ export default function BishaLocationPage() {
                                 Book Now
                             </Button>
                         </Link>
-                        <a href="https://wa.me/966569487569">
+                        <a href="https://wa.me/996575806733">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
                                 WhatsApp Booking
                             </Button>
@@ -296,4 +297,5 @@ export default function BishaLocationPage() {
         </div>
     );
 }
+
 

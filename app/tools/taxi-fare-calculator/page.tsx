@@ -14,7 +14,7 @@ export default function FareCalculatorPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        Taxi Fare <span className="text-teal-600">Calculator</span>
+                        Taxi Fare <span className="text-slate-600">Calculator</span>
                     </h1>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         Plan your journey budget with our transparent fare estimator.
@@ -62,7 +62,7 @@ export default function FareCalculatorPage() {
                     </div>
 
                     <div className="bg-white p-8 rounded-2xl shadow-sm">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fare Calculator FAQs</h2>
                         <div className="space-y-6">
                             <div>
                                 <h3 className="font-semibold text-lg text-gray-800 mb-2">Are these prices fixed?</h3>

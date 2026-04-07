@@ -37,7 +37,7 @@ export default async function CityPrayerPage({ params }: Props) {
                 {/* Breadcrumb / Back */}
                 <div className="mb-8">
                     <Link href="/tools/prayer-times">
-                        <Button variant="ghost" className="pl-0 hover:bg-transparent hover:text-teal-600">
+                        <Button variant="ghost" className="pl-0 hover:bg-transparent hover:text-slate-600">
                             <ArrowLeft className="w-4 h-4 mr-2" />
                             Back to All Cities
                         </Button>
@@ -47,11 +47,11 @@ export default async function CityPrayerPage({ params }: Props) {
                 <div className="grid lg:grid-cols-12 gap-12">
                     <div className="lg:col-span-6 lg:col-start-4">
                         <div className="text-center mb-8">
-                            <span className="inline-block px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                            <span className="inline-block px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
                                 Daily Schedule
                             </span>
                             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                                Prayer Times for <span className="text-teal-600">{cityName}</span>
+                                Prayer Times for <span className="text-slate-600">{cityName}</span>
                             </h1>
                             <p className="text-gray-500 flex items-center justify-center gap-2">
                                 <Calendar className="w-4 h-4" />
@@ -67,7 +67,7 @@ export default async function CityPrayerPage({ params }: Props) {
                                 We provide reliable taxi services in {cityName} for all prayer times.
                             </p>
                             <Link href={`/locations/${citySlug === 'makkah' || citySlug === 'madinah' || citySlug === 'jeddah' ? citySlug : 'makkah'}`}>
-                                <Button className="bg-teal-600 hover:bg-teal-700 w-full">
+                                <Button className="bg-slate-600 hover:bg-slate-700 w-full">
                                     Book Taxi in {cityName}
                                 </Button>
                             </Link>

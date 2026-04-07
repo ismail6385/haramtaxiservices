@@ -49,8 +49,9 @@ export default function BlogPreview() {
                                 <Image
                                     src={post.image}
                                     alt={post.title}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    width={400}
+                                    height={250}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div className="absolute bottom-4 left-4 flex items-center space-x-4 text-xs text-white">
@@ -71,7 +72,7 @@ export default function BlogPreview() {
                                 <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">
                                     {post.excerpt}
                                 </p>
-                                <Link href={post.slug} className="inline-flex items-center text-primary font-medium hover:text-amber-600 transition-colors">
+                                <Link href={post.slug} className="inline-flex items-center text-primary font-medium hover:text-yellow-600 transition-colors">
                                     Read Article
                                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                                 </Link>

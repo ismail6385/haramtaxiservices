@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/contact',
     },
-    title: 'Contact Us | Book Taxi in Saudi Arabia - Haram Taxi Service',
-    description: 'Contact Haram Taxi Service for bookings in Makkah, Madinah, Jeddah. Book online or WhatsApp us 24/7. Professional taxi service across Saudi Arabia.',
-    keywords: ['contact taxi Saudi Arabia', 'book taxi Makkah', 'taxi booking Madinah', 'WhatsApp taxi Jeddah', 'online taxi booking'],
+    title: 'Contact Us | Executive Taxi Services KSA - Haram Taxi',
+    description: 'Contact Haram Taxi for premium bookings in Makkah, Madinah, and Jeddah. Professional VIP transport across Saudi Arabia available 24/7.',
+    keywords: ['contact taxi Saudi Arabia', 'book luxury transport Makkah', 'premium transfer Madinah', 'VIP taxi Jeddah', 'executive car booking'],
     openGraph: {
-        title: 'Contact Us | Book Taxi in Saudi Arabia',
-        description: 'Contact us for taxi bookings in Makkah, Madinah, Jeddah. Available 24/7 via WhatsApp.',
+        title: 'Contact Us | Executive Taxi Service Saudi Arabia',
+        description: 'Contact us for premium transfers in Makkah, Madinah, and Jeddah. 24/7 VIP support available via WhatsApp.',
         url: 'https://haramtaxiservice.com/contact',
         type: 'website',
     },
@@ -54,8 +54,8 @@ export default function ContactPage() {
     const features = [
         {
             icon: Clock,
-            title: "24/7 Available",
-            description: "Round the clock service for your convenience"
+            title: "24/7 Chauffeur Dispatch",
+            description: "Round-the-clock executive support for your peace of mind"
         },
         {
             icon: CheckCircle2,
@@ -83,7 +83,7 @@ export default function ContactPage() {
         "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "telephone": "+966569487569",
+            "telephone": "+996575806733",
             "email": "haramtaxiservice@gmail.com",
             "address": {
                 "@type": "PostalAddress",
@@ -98,29 +98,29 @@ export default function ContactPage() {
         <div className="bg-white min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }} />
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-brand-teal/5 to-white pt-32 pb-20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-brand-teal/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+            <section className="bg-gradient-to-b from-brand-navy/5 to-white pt-32 pb-20 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-brand-navy/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-teal-pale rounded-full mb-6">
-                            <MessageSquare className="w-4 h-4 text-brand-teal" />
-                            <span className="text-brand-teal-dark text-sm font-semibold">Get in Touch</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-navy-pale rounded-full mb-6">
+                            <MessageSquare className="w-4 h-4 text-brand-navy" />
+                            <span className="text-brand-navy-dark text-sm font-semibold">Get in Touch</span>
                         </div>
 
-                        <h1 className="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-6">
-                            Contact <span className="text-brand-teal">Us</span>
+                        <h1 className="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-6 underline decoration-brand-gold decoration-4 underline-offset-8">
+                            Connect <span className="text-brand-navy">With Us</span>
                         </h1>
 
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
-                            Have questions about our taxi service? Reach out via WhatsApp or our online booking form for an instant quote.
+                            Do you require a bespoke travel arrangement for your pilgrimage? Reach out via WhatsApp or our secure portal for an immediate executive quote.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
-                            <a href="https://wa.me/966569487569" className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#20bd5a] transition-all shadow-lg hover:scale-105 active:scale-95">
+                            <a href="https://wa.me/996575806733" className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#20bd5a] transition-all shadow-lg hover:scale-105 active:scale-95">
                                 <MessageSquare className="w-6 h-6" />
                                 WhatsApp Us Now
                             </a>
-                            <a href="mailto:haramtaxiservice@gmail.com" className="inline-flex items-center gap-2 text-brand-teal hover:text-brand-teal-dark font-semibold text-lg hover:underline transition-all">
+                            <a href="mailto:haramtaxiservice@gmail.com" className="inline-flex items-center gap-2 text-brand-navy hover:text-brand-navy-dark font-semibold text-lg hover:underline transition-all">
                                 <Mail className="w-5 h-5" />
                                 haramtaxiservice@gmail.com
                             </a>
@@ -131,8 +131,8 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                         {features.map((feature, index) => (
                             <div key={index} className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-100 group">
-                                <div className="w-14 h-14 bg-brand-teal-pale rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                                    <feature.icon className="w-7 h-7 text-brand-teal" />
+                                <div className="w-14 h-14 bg-brand-navy-pale rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                                    <feature.icon className="w-7 h-7 text-brand-navy" />
                                 </div>
                                 <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">{feature.title}</h3>
                                 <p className="text-sm text-gray-600">{feature.description}</p>
@@ -163,15 +163,15 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
                             <h2 className="text-4xl font-display font-bold text-gray-900 mb-6 leading-tight">
-                                Why Choose <span className="text-brand-teal">Haram Taxi?</span>
+                                Why Choose <span className="text-brand-navy border-b-4 border-brand-gold">Haram Taxi?</span>
                             </h2>
                             <p className="text-gray-600 mb-10 text-lg leading-relaxed">
-                                We are committed to providing the best taxi service experience in Saudi Arabia with professional drivers and well-maintained vehicles.
+                                We are dedicated to delivering the premier taxi experience in Saudi Arabia, combining professional etiquette with a flagship luxury fleet.
                             </p>
                             <ul className="space-y-6">
                                 <li className="flex items-start group">
-                                    <div className="w-10 h-10 rounded-full bg-brand-teal-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-teal transition-colors duration-300">
-                                        <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                                    <div className="w-10 h-10 rounded-full bg-brand-navy-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-navy transition-colors duration-300">
+                                        <CheckCircle2 className="w-5 h-5 text-brand-navy group-hover:text-white transition-colors duration-300" />
                                     </div>
                                     <div>
                                         <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Professional Drivers</h3>
@@ -179,17 +179,17 @@ export default function ContactPage() {
                                     </div>
                                 </li>
                                 <li className="flex items-start group">
-                                    <div className="w-10 h-10 rounded-full bg-brand-teal-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-teal transition-colors duration-300">
-                                        <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                                    <div className="w-10 h-10 rounded-full bg-brand-navy-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-navy transition-colors duration-300">
+                                        <CheckCircle2 className="w-5 h-5 text-brand-navy group-hover:text-white transition-colors duration-300" />
                                     </div>
                                     <div>
-                                        <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Clean Vehicles</h3>
-                                        <p className="text-gray-600">Well-maintained and sanitized cars</p>
+                                        <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Sanitized Luxury Vehicles</h3>
+                                        <p className="text-gray-600">Pristine, late-model executive fleet</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start group">
-                                    <div className="w-10 h-10 rounded-full bg-brand-teal-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-teal transition-colors duration-300">
-                                        <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                                    <div className="w-10 h-10 rounded-full bg-brand-navy-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-navy transition-colors duration-300">
+                                        <CheckCircle2 className="w-5 h-5 text-brand-navy group-hover:text-white transition-colors duration-300" />
                                     </div>
                                     <div>
                                         <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">Competitive Quotes</h3>
@@ -197,8 +197,8 @@ export default function ContactPage() {
                                     </div>
                                 </li>
                                 <li className="flex items-start group">
-                                    <div className="w-10 h-10 rounded-full bg-brand-teal-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-teal transition-colors duration-300">
-                                        <CheckCircle2 className="w-5 h-5 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                                    <div className="w-10 h-10 rounded-full bg-brand-navy-pale flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-brand-navy transition-colors duration-300">
+                                        <CheckCircle2 className="w-5 h-5 text-brand-navy group-hover:text-white transition-colors duration-300" />
                                     </div>
                                     <div>
                                         <h3 className="font-display font-bold text-gray-900 mb-1 text-lg">24/7 Service</h3>
@@ -211,12 +211,13 @@ export default function ContactPage() {
                             <Image
                                 src="/support-team.webp"
                                 alt="Customer Support"
-                                fill
-                                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                width={800}
+                                height={600}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div className="absolute bottom-10 left-10 right-10">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-teal rounded-full mb-4 shadow-lg">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-navy rounded-full mb-4 shadow-lg">
                                     <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                                     <span className="text-white text-sm font-bold tracking-wide uppercase">Available Now</span>
                                 </div>
@@ -233,20 +234,20 @@ export default function ContactPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl font-display font-bold text-gray-900 mb-10">Serving All Major Locations</h2>
                     <div className="flex flex-wrap justify-center gap-4 text-sm font-medium">
-                        <Link href="/locations/makkah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
+                        <Link href="/locations/makkah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-sm">
                             Taxi in Makkah
                         </Link>
-                        <Link href="/locations/madinah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
+                        <Link href="/locations/madinah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-sm">
                             Taxi in Madinah
                         </Link>
-                        <Link href="/locations/jeddah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
+                        <Link href="/locations/jeddah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-sm">
                             Taxi in Jeddah
                         </Link>
-                        <Link href="/routes/jeddah-airport-to-makkah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
-                            Jeddah Airport to Makkah
+                        <Link href="/routes/jeddah-airport-to-makkah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-sm">
+                            Jeddah Airport VIP Transfer
                         </Link>
-                        <Link href="/routes/makkah-to-madinah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all shadow-sm">
-                            Makkah to Madinah
+                        <Link href="/routes/makkah-to-madinah" className="px-6 py-4 bg-white border border-gray-200 rounded-full hover:border-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-sm">
+                            Makkah to Madinah Executive
                         </Link>
                     </div>
                 </div>
@@ -256,7 +257,7 @@ export default function ContactPage() {
             <section className="py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-display font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                        <h2 className="text-4xl font-display font-bold text-gray-900 mb-4">Contact & Support FAQs</h2>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto">Common questions about our service</p>
                     </div>
                     <Accordion type="single" collapsible className="space-y-4">
@@ -266,7 +267,7 @@ export default function ContactPage() {
                                 value={`item-${index}`}
                                 className="bg-gray-50 px-6 rounded-2xl border border-gray-100 shadow-sm"
                             >
-                                <AccordionTrigger className="text-lg font-bold font-display text-gray-900 py-6 hover:text-brand-teal text-left">
+                                <AccordionTrigger className="text-lg font-bold font-display text-gray-900 py-6 hover:text-brand-navy text-left">
                                     {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
@@ -279,16 +280,16 @@ export default function ContactPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-24 bg-brand-teal text-white relative overflow-hidden">
+            <section className="py-24 bg-brand-navy text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Ready to Book?</h2>
                     <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto font-light">
-                        Book your taxi now and experience professional service across Saudi Arabia.
+                        Reserve your private taxi now and experience distinguished travel across Saudi Arabia.
                     </p>
                     <Link
                         href="/booking"
-                        className="inline-block bg-white text-brand-teal hover:bg-gray-100 hover:text-brand-teal-dark px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:scale-105"
+                        className="inline-block bg-white text-brand-navy hover:bg-gray-100 hover:text-brand-navy-dark px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:scale-105"
                     >
                         Book Now
                     </Link>
@@ -297,4 +298,3 @@ export default function ContactPage() {
         </div>
     );
 }
-

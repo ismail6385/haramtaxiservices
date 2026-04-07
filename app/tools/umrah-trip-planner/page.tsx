@@ -13,7 +13,7 @@ export default function UmrahPlannerPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        Umrah Transport <span className="text-teal-600">Planner</span>
+                        Umrah Transport <span className="text-slate-600">Planner</span>
                     </h1>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         Budgeting for your sacred journey made easy. Calculate the total cost of transportation for your entire trip in seconds.

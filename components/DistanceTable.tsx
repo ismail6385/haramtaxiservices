@@ -8,9 +8,10 @@ export default function DistanceTable() {
     const routes = useMemo(() => [
         { route: "Jeddah Airport -> Makkah", km: "100 km", time: "1 hr 15 min", road: "Haramain Hwy" },
         { route: "Makkah -> Madinah", km: "450 km", time: "4 hr 30 min", road: "Hijrah Hwy" },
-        { route: "Madinah -> Jeddah Airport", km: "415 km", time: "4 hr 10 min", road: "Hijrah Hwy" },
-        { route: "Jeddah -> Yanbu", km: "330 km", time: "3 hr 20 min", road: "Costal Hwy" },
-        { route: "Makkah -> Taif", km: "90 km", time: "1 hr 10 min", road: "Al Hada Mtn" },
+        { route: "Riyadh -> Dammam", km: "395 km", time: "3 hr 50 min", road: "Hwy 40" },
+        { route: "Tabuk -> Jordan Border", km: "115 km", time: "1 hr 20 min", road: "Hwy 80" },
+        { route: "Khobar -> Bahrain", km: "45 km", time: "45 min", road: "King Fahd Cwy" },
+        { route: "NEOM Bay -> The Line", km: "95 km", time: "1 hr 10 min", road: "Project Road" },
     ], []);
 
     return (
@@ -33,11 +34,11 @@ export default function DistanceTable() {
                         </TableHeader>
                         <TableBody>
                             {routes.map((r, i) => (
-                                <TableRow key={i} className="hover:bg-brand-teal-pale/10 transition-colors border-b border-gray-100 last:border-0">
+                                <TableRow key={i} className="hover:bg-brand-navy-pale/10 transition-colors border-b border-gray-100 last:border-0">
                                     <TableCell className="font-medium text-gray-700 py-4 pl-6">{r.route}</TableCell>
                                     <TableCell className="py-4 text-gray-600">{r.km}</TableCell>
                                     <TableCell className="py-4">
-                                        <Badge variant="outline" className="bg-brand-teal-pale/20 text-brand-teal-dark border-brand-teal-pale/50 font-medium whitespace-nowrap">
+                                        <Badge variant="outline" className="bg-brand-navy-pale/20 text-brand-navy-dark border-brand-navy-pale/50 font-medium whitespace-nowrap">
                                             {r.time}
                                         </Badge>
                                     </TableCell>

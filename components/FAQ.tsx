@@ -8,7 +8,7 @@ import {
 const faqs = [
     {
         question: "How do I book a taxi from Jeddah Airport?",
-        answer: "You can easily book a taxi through our website by clicking the 'Book Now' button. Alternatively, you can call or WhatsApp us at +966569487569 for instant booking confirmation."
+        answer: "You can easily book a taxi through our website by clicking the 'Book Now' button. Alternatively, you can call or WhatsApp us at +996575806733 for instant booking confirmation."
     },
     {
         question: "What types of vehicles do you offer?",
@@ -40,11 +40,11 @@ const faqs = [
     }
 ];
 
-export default function FAQ() {
+export default function FAQ({ title = "Frequently Asked Questions" }: { title?: string }) {
     return (
         <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{title}</h2>
                 <p className="text-gray-400">
                     Find answers to common questions about our services and booking process.
                 </p>

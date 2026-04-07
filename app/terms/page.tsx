@@ -17,7 +17,7 @@ export default function TermsPage() {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <FileText className="w-16 h-16 text-teal-600 mx-auto mb-6" />
+                    <FileText className="w-16 h-16 text-slate-600 mx-auto mb-6" />
                     <h1 className="text-5xl font-bold text-gray-900 mb-4">Terms & Conditions</h1>
                     <p className="text-xl text-gray-600">Last Updated: December 19, 2024</p>
                     <p className="text-gray-600 mt-4">
@@ -41,31 +41,31 @@ export default function TermsPage() {
                     {/* Service Description */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <CheckCircle className="w-6 h-6 text-teal-600" />
+                            <CheckCircle className="w-6 h-6 text-slate-600" />
                             Service Description
                         </h2>
 
-                        <div className="bg-white p-6 border-l-4 border-teal-500 rounded-r-lg">
+                        <div className="bg-white p-6 border-l-4 border-slate-500 rounded-r-lg">
                             <p className="text-gray-700 mb-4">Haram Taxi Service provides:</p>
                             <ul className="space-y-2 text-gray-700">
                                 <li className="flex items-start gap-2">
-                                    <span className="text-teal-600 mt-1">✓</span>
+                                    <span className="text-slate-600 mt-1">✓</span>
                                     <span>Airport transfer services (Jeddah, Madinah, Taif airports)</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-teal-600 mt-1">✓</span>
+                                    <span className="text-slate-600 mt-1">✓</span>
                                     <span>Intercity taxi rides (Makkah, Madinah, Jeddah, Taif, AlUla, Khayber)</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-teal-600 mt-1">✓</span>
+                                    <span className="text-slate-600 mt-1">✓</span>
                                     <span>Local city transportation and hotel transfers</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-teal-600 mt-1">✓</span>
+                                    <span className="text-slate-600 mt-1">✓</span>
                                     <span>Ziyarat tours to historic Islamic sites</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-teal-600 mt-1">✓</span>
+                                    <span className="text-slate-600 mt-1">✓</span>
                                     <span>Group transportation with vans and buses</span>
                                 </li>
                             </ul>
@@ -106,11 +106,11 @@ export default function TermsPage() {
                     {/* Pricing & Payment */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <CreditCard className="w-6 h-6 text-teal-600" />
+                            <CreditCard className="w-6 h-6 text-slate-600" />
                             Pricing & Payment
                         </h2>
 
-                        <div className="bg-teal-50 p-8 rounded-xl border border-teal-200 space-y-4">
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 space-y-4">
                             <div>
                                 <h3 className="font-bold text-gray-900 mb-2">Competitive Quotes</h3>
                                 <p className="text-gray-700">
@@ -187,24 +187,24 @@ export default function TermsPage() {
                         <h2 className="text-2xl font-bold text-gray-900 mb-6">Customer Responsibilities</h2>
 
                         <div className="space-y-3 text-gray-700">
-                            <div className="flex items-start gap-3 pl-4 border-l-2 border-teal-500">
-                                <span className="font-bold text-teal-600">→</span>
+                            <div className="flex items-start gap-3 pl-4 border-l-2 border-slate-500">
+                                <span className="font-bold text-slate-600">→</span>
                                 <p><strong>Be Ready on Time:</strong> Be at the pickup location 5 minutes before the agreed time. Drivers will wait up to 15 minutes for hotel pickups and 60 minutes for airport pickups (from flight landing time).</p>
                             </div>
-                            <div className="flex items-start gap-3 pl-4 border-l-2 border-teal-500">
-                                <span className="font-bold text-teal-600">→</span>
+                            <div className="flex items-start gap-3 pl-4 border-l-2 border-slate-500">
+                                <span className="font-bold text-slate-600">→</span>
                                 <p><strong>Accurate Information:</strong> Provide correct pickup location, contact number, and flight details (for airports).</p>
                             </div>
-                            <div className="flex items-start gap-3 pl-4 border-l-2 border-teal-500">
-                                <span className="font-bold text-teal-600">→</span>
+                            <div className="flex items-start gap-3 pl-4 border-l-2 border-slate-500">
+                                <span className="font-bold text-slate-600">→</span>
                                 <p><strong>Respectful Behavior:</strong> Treat drivers with respect. Inappropriate behavior, harassment, or damage to vehicles may result in immediate service termination and legal action.</p>
                             </div>
-                            <div className="flex items-start gap-3 pl-4 border-l-2 border-teal-500">
-                                <span className="font-bold text-teal-600">→</span>
+                            <div className="flex items-start gap-3 pl-4 border-l-2 border-slate-500">
+                                <span className="font-bold text-slate-600">→</span>
                                 <p><strong>Passenger Limits:</strong> Do not exceed the vehicle&apos;s maximum passenger capacity for safety reasons.</p>
                             </div>
-                            <div className="flex items-start gap-3 pl-4 border-l-2 border-teal-500">
-                                <span className="font-bold text-teal-600">→</span>
+                            <div className="flex items-start gap-3 pl-4 border-l-2 border-slate-500">
+                                <span className="font-bold text-slate-600">→</span>
                                 <p><strong>Luggage:</strong> Standard luggage is included. Oversized items (bicycles, wheelchairs, large equipment) must be mentioned at booking.</p>
                             </div>
                         </div>
@@ -213,7 +213,7 @@ export default function TermsPage() {
                     {/* Liability & Disclaimer */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <Shield className="w-6 h-6 text-teal-600" />
+                            <Shield className="w-6 h-6 text-slate-600" />
                             Liability & Disclaimer
                         </h2>
 
@@ -251,7 +251,7 @@ export default function TermsPage() {
                     {/* Service Quality */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">Service Quality Commitment</h2>
-                        <div className="bg-teal-50 p-6 rounded-xl border-l-4 border-teal-500">
+                        <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-500">
                             <p className="text-gray-700 leading-relaxed">
                                 We are committed to providing safe, professional, and reliable service. If you experience issues with:
                             </p>
@@ -284,12 +284,12 @@ export default function TermsPage() {
                     </section>
 
                     {/* Contact */}
-                    <section className="mb-12 bg-teal-500 text-white p-8 rounded-2xl">
+                    <section className="mb-12 bg-slate-500 text-white p-8 rounded-2xl">
                         <h2 className="text-3xl font-bold mb-4">Questions About Terms?</h2>
-                        <p className="text-teal-50 mb-6 leading-relaxed">
+                        <p className="text-slate-50 mb-6 leading-relaxed">
                             If you have questions about these Terms and Conditions, please contact us:
                         </p>
-                        <div className="space-y-2 text-teal-50">
+                        <div className="space-y-2 text-slate-50">
                             <p><strong>Email:</strong> haramtaxiservice@gmail.com</p>
                             <p><strong>Website:</strong> <Link href="/" className="underline hover:text-white">haramtaxiservice.com</Link></p>
                             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
@@ -298,13 +298,13 @@ export default function TermsPage() {
 
                     {/* Footer Navigation */}
                     <div className="mt-16 pt-8 border-t border-gray-200 flex gap-6 justify-center">
-                        <Link href="/privacy" className="text-teal-600 hover:text-teal-700 font-semibold">
+                        <Link href="/privacy" className="text-slate-600 hover:text-slate-700 font-semibold">
                             Privacy Policy →
                         </Link>
-                        <Link href="/about" className="text-teal-600 hover:text-teal-700 font-semibold">
+                        <Link href="/about" className="text-slate-600 hover:text-slate-700 font-semibold">
                             About Us →
                         </Link>
-                        <Link href="/contact" className="text-teal-600 hover:text-teal-700 font-semibold">
+                        <Link href="/contact" className="text-slate-600 hover:text-slate-700 font-semibold">
                             Contact →
                         </Link>
                     </div>

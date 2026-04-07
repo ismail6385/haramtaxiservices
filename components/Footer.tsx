@@ -21,6 +21,9 @@ export default function Footer() {
         { name: 'Locations', href: '/locations' },
         { name: 'Contact', href: '/contact' },
         { name: 'Booking', href: '/booking' },
+        { name: 'FAQ', href: '/faq' },
+        { name: 'Gallery', href: '/gallery' },
+        { name: 'Tools', href: '/tools' },
     ];
 
     const locations = [
@@ -59,21 +62,21 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div>
                         <Link href="/" className="flex items-center gap-3 mb-6 group">
-                            <div className="w-12 h-12 bg-brand-teal rounded-xl flex items-center justify-center shadow-lg shadow-brand-teal/20 group-hover:bg-brand-teal-light transition-colors">
+                            <div className="w-12 h-12 bg-brand-navy rounded-xl flex items-center justify-center shadow-lg shadow-brand-navy/20 group-hover:bg-brand-navy-light transition-colors">
                                 <Car className="w-7 h-7 text-white" />
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-xl font-display font-bold text-white tracking-wide">
-                                    Haram <span className="text-brand-teal">Taxi</span>
+                                    Haram <span className="text-brand-gold">Taxi</span>
                                 </span>
                                 <span className="text-[10px] text-gray-500 uppercase tracking-widest font-medium ml-0.5">Premium Service</span>
                             </div>
                         </Link>
                         <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-                            Professional taxi service across Saudi Arabia. Available 24/7 for your transportation needs, specializing in Umrah and Hajj transfers.
+                            Elite chauffeur and VIP transport services across Saudi Arabia. Available 24/7 for distinguished travelers, specializing in luxury Umrah and Hajj transfers with absolute privacy.
                         </p>
                         <div className="mb-6">
-                            <a href="mailto:haramtaxiservice@gmail.com" className="text-brand-teal hover:text-brand-teal-light text-sm flex items-center gap-3 transition-colors font-medium">
+                            <a href="mailto:haramtaxiservice@gmail.com" className="text-brand-navy hover:text-brand-navy-light text-sm flex items-center gap-3 transition-colors font-medium">
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
@@ -83,30 +86,33 @@ export default function Footer() {
                         <div className="flex gap-4">
                             <a
                                 href="#"
-                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-teal/50 hover:bg-brand-teal rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
+                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-navy/50 hover:bg-brand-navy rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
                                 aria-label="Facebook"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <Facebook className="w-5 h-5" />
+                                <span className="sr-only">Facebook</span>
                             </a>
                             <a
                                 href="#"
-                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-teal/50 hover:bg-brand-teal rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
+                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-navy/50 hover:bg-brand-navy rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
                                 aria-label="Twitter"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <Twitter className="w-5 h-5" />
+                                <span className="sr-only">Twitter</span>
                             </a>
                             <a
                                 href="#"
-                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-teal/50 hover:bg-brand-teal rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
+                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-navy/50 hover:bg-brand-navy rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
                                 aria-label="Instagram"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <Instagram className="w-5 h-5" />
+                                <span className="sr-only">Instagram</span>
                             </a>
                         </div>
                     </div>
@@ -117,7 +123,7 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {quickLinks.map((link) => (
                                 <li key={link.name}>
-                                    <Link href={link.href} className="block text-gray-400 hover:text-brand-teal transition-colors text-sm hover:translate-x-1 duration-200">
+                                    <Link href={link.href} className="block text-gray-400 hover:text-brand-navy transition-colors text-sm hover:translate-x-1 duration-200">
                                         {link.name}
                                     </Link>
                                 </li>
@@ -131,8 +137,8 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {locations.map((location) => (
                                 <li key={location.name}>
-                                    <Link href={location.href} className="block text-gray-400 hover:text-brand-teal transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
-                                        <MapPin className="w-4 h-4 text-brand-teal/70" />
+                                    <Link href={location.href} className="block text-gray-400 hover:text-brand-navy transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
+                                        <MapPin className="w-4 h-4 text-brand-navy/70" />
                                         {location.name}
                                     </Link>
                                 </li>
@@ -147,8 +153,8 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {services.map((service) => (
                                 <li key={service.name}>
-                                    <Link href={service.href} className="block text-gray-400 hover:text-brand-teal transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
-                                        <Car className="w-4 h-4 text-brand-teal/70" />
+                                    <Link href={service.href} className="block text-gray-400 hover:text-brand-navy transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
+                                        <Car className="w-4 h-4 text-brand-navy/70" />
                                         {service.name}
                                     </Link>
                                 </li>
@@ -162,8 +168,8 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {vehicles.map((vehicle) => (
                                 <li key={vehicle.name}>
-                                    <Link href={vehicle.href} className="block text-gray-400 hover:text-brand-teal transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
-                                        <Car className="w-4 h-4 text-brand-teal/70" />
+                                    <Link href={vehicle.href} className="block text-gray-400 hover:text-brand-navy transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
+                                        <Car className="w-4 h-4 text-brand-navy/70" />
                                         {vehicle.name}
                                     </Link>
                                 </li>
@@ -181,10 +187,10 @@ export default function Footer() {
                             © {currentYear} Haram Taxi Service. All rights reserved.
                         </div>
                         <div className="flex gap-8 text-sm">
-                            <Link href="/privacy" className="text-gray-500 hover:text-brand-teal transition-colors">
+                            <Link href="/privacy" className="text-gray-500 hover:text-brand-navy transition-colors">
                                 Privacy Policy
                             </Link>
-                            <Link href="/terms" className="text-gray-500 hover:text-brand-teal transition-colors">
+                            <Link href="/terms" className="text-gray-500 hover:text-brand-navy transition-colors">
                                 Terms of Service
                             </Link>
                         </div>

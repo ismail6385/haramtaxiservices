@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -78,7 +78,7 @@ export default function AlQunfudhahLocationPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Al Qunfudhah",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+966569487569",
+        "telephone": "+996575806733",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "King Abdulaziz Road",
@@ -126,8 +126,9 @@ export default function AlQunfudhahLocationPage() {
                     <Image
                         src="/qunfudhah-corniche.webp"
                         alt="Taxi Service in Al Qunfudhah Corniche"
-                        fill
-                        className="object-cover"
+                        width={1200}
+                        height={500}
+                        className="w-full h-full object-cover"
                         priority
                     />
                 </div>
@@ -146,7 +147,7 @@ export default function AlQunfudhahLocationPage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Qunfudhah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Qunfudhah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -233,17 +234,17 @@ export default function AlQunfudhahLocationPage() {
                                         <tbody className="divide-y divide-gray-100">
                                             <tr>
                                                 <td className="p-4 text-gray-700">Jeddah Airport Transfer</td>
-                                                <td className="p-4 text-gray-900 font-medium">400â€“Get Quote</td>
+                                                <td className="p-4 text-gray-900 font-medium">400Get Quote</td>
                                                 <td className="p-4 text-sm text-gray-600">Door-to-door, luggage assist, toll fees</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 text-gray-700">Hourly City Tour</td>
-                                                <td className="p-4 text-gray-900 font-medium">100â€“Get Quote/hr</td>
+                                                <td className="p-4 text-gray-900 font-medium">100Get Quote/hr</td>
                                                 <td className="p-4 text-sm text-gray-600">Driver, fuel, waiting time at landmarks</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 text-gray-700">Local Trip</td>
-                                                <td className="p-4 text-gray-900 font-medium">15â€“Get Quote</td>
+                                                <td className="p-4 text-gray-900 font-medium">15Get Quote</td>
                                                 <td className="p-4 text-sm text-gray-600">Standard pickup within city limits</td>
                                             </tr>
                                         </tbody>
@@ -285,7 +286,7 @@ export default function AlQunfudhahLocationPage() {
 
                             {/* FAQs */}
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-6">Al Qunfudhah Taxi Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {faqs.map((faq, idx) => (
                                         <div key={idx} className="bg-white p-6 rounded-xl border border-gray-200">
@@ -325,7 +326,7 @@ export default function AlQunfudhahLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Qunfudhah." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Qunfudhah." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
                                             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
@@ -379,7 +380,7 @@ export default function AlQunfudhahLocationPage() {
                                 Book Today
                             </Button>
                         </Link>
-                        <a href="https://wa.me/966569487569">
+                        <a href="https://wa.me/996575806733">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
                                 WhatsApp Booking
                             </Button>

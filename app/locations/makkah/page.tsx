@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/makkah',
     },
-    title: 'Makkah Taxi Service | Haram Taxi Service',
-    description: 'Professional taxi service in Makkah. Airport transfers, hotel pickups, and city transportation. Available 24/7.',
-    keywords: ['Makkah taxi', 'taxi Makkah', 'Makkah to Madinah taxi', 'Jeddah airport to Makkah', 'Umrah taxi Makkah', 'private taxi Makkah', 'taxi for umrah'],
+    title: 'VIP Chauffeur Service in Makkah | Sacred Journey Transfers - Haram Chauffeur',
+    description: 'Elite chauffeur service in Makkah for distinguished pilgrims. VIP airport transfers, hotel pickups, and sacred Ziyarat tours. Available 24/7 with absolute dignity.',
+    keywords: ['Makkah chauffeur', 'VIP transport Makkah', 'executive car Makkah', 'sacred journey Makkah', 'Umrah chauffeur Makkah', 'private chauffeur Makkah', 'distinguished pilgrimage transport'],
 };
 
 export default function MakkahPage() {
@@ -84,7 +84,7 @@ export default function MakkahPage() {
         },
         {
             question: "Can you arrange transport from Makkah to Madinah?",
-            answer: "Yes, we offer comfortable intercity transportation between Makkah and Madinah. The journey takes approximately adequate time."
+            answer: "Yes, we offer comfortable intercity transportation between Makkah and Madinah. The journey takes approximately 4.5 hours."
         },
         {
             question: "Do you offer group transportation?",
@@ -100,7 +100,7 @@ export default function MakkahPage() {
         "description": "Professional taxi service in Makkah. Book online for reliable transportation.",
         "@id": "https://haramtaxiservice.com/locations/makkah",
         "url": "https://haramtaxiservice.com/locations/makkah",
-        "telephone": "+966569487569",
+        "telephone": "+996575806733",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
@@ -122,34 +122,36 @@ export default function MakkahPage() {
                 <Image
                     src="/makkah-royal-clock-tower.webp"
                     alt="Makkah Royal Clock Tower and Haram view"
-                    fill
-                    className="object-cover opacity-60"
+                    width={1200}
+                    height={500}
+                    className="w-full h-full object-cover opacity-60"
+                    priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
 
                 <div className="absolute inset-0 flex items-center">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                         <div className="max-w-3xl">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/90 rounded-full mb-6">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-navy rounded-full mb-6">
                                 <MapPin className="w-4 h-4 text-white" />
-                                <span className="text-white text-sm font-semibold">Makkah</span>
+                                <span className="text-white text-sm font-semibold uppercase tracking-wider">The Holy City of Makkah</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                                Taxi Service in <span className="text-teal-400">Makkah</span>
+                            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-display">
+                                Elite Chauffeur in <span className="text-brand-gold">Makkah</span>
                             </h1>
 
-                            <p className="text-xl text-gray-200 mb-6">
-                                Trusted taxi service in the Holy City of Makkah. We provide 24/7 transfers to Masjid Al-Haram, Ziyarat tours to holy sites, and reliable Umrah taxi rides to Jeddah Airport and Madinah.
+                            <p className="text-xl text-gray-200 mb-6 leading-relaxed">
+                                Distinguished chauffeur service in the Holy City of Makkah. We provide 24/7 executive transfers to Masjid Al-Haram, guided Ziyarat tours to sacred sites, and reliable intercity transport with the utmost dignity.
                             </p>
 
-                            <div className="flex items-center gap-2 mb-8 text-teal-100 font-medium bg-white/10 w-fit px-4 py-2 rounded-lg backdrop-blur-sm">
+                            <div className="flex items-center gap-2 mb-8 text-slate-100 font-medium bg-white/10 w-fit px-4 py-2 rounded-lg backdrop-blur-sm">
                                 <MapPin className="w-5 h-5" />
                                 <span>Serving Makkah and surrounding areas within 50km radius</span>
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Makkah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Makkah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -162,7 +164,7 @@ export default function MakkahPage() {
             </section>
 
             {/* Quick Stats */}
-            <section className="py-12 bg-teal-500 text-white">
+            <section className="py-12 bg-brand-navy text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                         <div>
@@ -170,7 +172,7 @@ export default function MakkahPage() {
                             <div className="text-sm opacity-90">Available</div>
                         </div>
                         <div>
-                            <div className="text-3xl font-bold mb-2">Get Quotehrs</div>
+                            <div className="text-3xl font-bold mb-2">1.5 hrs</div>
                             <div className="text-sm opacity-90">From Airport</div>
                         </div>
                         <div>
@@ -195,21 +197,21 @@ export default function MakkahPage() {
                                 <div className="font-semibold text-gray-900">Jeddah Airport</div>
                                 <div className="text-sm text-gray-500">Distance: 80km</div>
                             </div>
-                            <div className="text-xl font-bold text-teal-600">60 mins</div>
+                            <div className="text-xl font-bold text-brand-navy">60 mins</div>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                             <div>
                                 <div className="font-semibold text-gray-900">Madinah</div>
                                 <div className="text-sm text-gray-500">Distance: 450km</div>
                             </div>
-                            <div className="text-xl font-bold text-teal-600">4.5 hours</div>
+                            <div className="text-xl font-bold text-slate-600">4.5 hours</div>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                             <div>
                                 <div className="font-semibold text-gray-900">Taif</div>
                                 <div className="text-sm text-gray-500">Distance: 90km</div>
                             </div>
-                            <div className="text-xl font-bold text-teal-600">1.5 hours</div>
+                            <div className="text-xl font-bold text-slate-600">1.5 hours</div>
                         </div>
                     </div>
                 </div>
@@ -229,7 +231,7 @@ export default function MakkahPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Haram Access Restrictions</h3>
                             <p className="text-gray-600 mb-4">Private vehicles cannot enter the immediate Haram area. Drop-off points can be confusing, especially for first-time visitors.</p>
-                            <div className="flex items-center text-teal-600 font-medium">
+                            <div className="flex items-center text-slate-600 font-medium">
                                 <CheckCircle2 className="w-5 h-5 mr-2" />
                                 <span>Solution: We know the closest legal pickup/drop-off points</span>
                             </div>
@@ -240,7 +242,7 @@ export default function MakkahPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Walking Distance with Luggage</h3>
                             <p className="text-gray-600 mb-4">Hotels in Aziziyah and Misfalah areas often require long walks through pedestrian-only zones, difficult with heavy bags.</p>
-                            <div className="flex items-center text-teal-600 font-medium">
+                            <div className="flex items-center text-slate-600 font-medium">
                                 <CheckCircle2 className="w-5 h-5 mr-2" />
                                 <span>Solution: Door-to-door service where legally permitted</span>
                             </div>
@@ -251,7 +253,7 @@ export default function MakkahPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Peak Prayer Traffic</h3>
                             <p className="text-gray-600 mb-4">Gridlock after Maghrib and Isha prayers makes transportation extremely difficult, with some taxis refusing trips.</p>
-                            <div className="flex items-center text-teal-600 font-medium">
+                            <div className="flex items-center text-slate-600 font-medium">
                                 <CheckCircle2 className="w-5 h-5 mr-2" />
                                 <span>Solution: Pre-scheduled rides with timing flexibility</span>
                             </div>
@@ -264,9 +266,9 @@ export default function MakkahPage() {
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-100 rounded-full mb-4">
-                            <Wallet className="w-4 h-4 text-teal-600" />
-                            <span className="text-teal-800 text-sm font-semibold">Fair Pricing</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full mb-4">
+                            <Wallet className="w-4 h-4 text-slate-600" />
+                            <span className="text-slate-800 text-sm font-semibold">Fair Pricing</span>
                         </div>
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">Taxi Pricing in Makkah</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -279,8 +281,8 @@ export default function MakkahPage() {
                             <h3 className="text-2xl font-bold text-gray-900 mb-6">What Influences Your Fare?</h3>
                             <ul className="space-y-4">
                                 <li className="flex items-start">
-                                    <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                        <Users className="w-4 h-4 text-teal-500" />
+                                    <div className="w-8 h-8 bg-slate-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <Users className="w-4 h-4 text-slate-500" />
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Group Size</h4>
@@ -288,8 +290,8 @@ export default function MakkahPage() {
                                     </div>
                                 </li>
                                 <li className="flex items-start">
-                                    <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                        <MapPin className="w-4 h-4 text-teal-500" />
+                                    <div className="w-8 h-8 bg-slate-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <MapPin className="w-4 h-4 text-slate-500" />
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Hotel Location</h4>
@@ -297,8 +299,8 @@ export default function MakkahPage() {
                                     </div>
                                 </li>
                                 <li className="flex items-start">
-                                    <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                        <Clock className="w-4 h-4 text-teal-500" />
+                                    <div className="w-8 h-8 bg-slate-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <Clock className="w-4 h-4 text-slate-500" />
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Ramadan & Hajj Season</h4>
@@ -307,13 +309,13 @@ export default function MakkahPage() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="bg-teal-500 p-8 rounded-2xl text-white flex flex-col justify-center">
+                        <div className="bg-brand-navy p-8 rounded-2xl text-white flex flex-col justify-center shadow-xl">
                             <h3 className="text-2xl font-bold mb-6">No Ramadan Surges</h3>
                             <p className="mb-6 opacity-90 text-lg">
                                 Many services triple their prices during Ramadan and Hajj. We believe in serving pilgrims with honesty and maintain consistent, fair pricing throughout the year.
                             </p>
                             <Link href="/booking">
-                                <Button className="bg-white text-teal-600 hover:bg-gray-100 w-full text-lg h-12">
+                                <Button className="bg-white text-slate-600 hover:bg-gray-100 w-full text-lg h-12">
                                     Get Your Quote
                                 </Button>
                             </Link>
@@ -334,24 +336,24 @@ export default function MakkahPage() {
                         <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-1 bg-gray-100 -z-10"></div>
 
                         <div className="bg-white p-6 relative">
-                            <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
-                                <span className="text-3xl font-bold text-teal-500">1</span>
+                            <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                <span className="text-3xl font-bold text-slate-500">1</span>
                             </div>
                             <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Book & Coordinate</h3>
                             <p className="text-center text-gray-600">Share your hotel details via WhatsApp. We&apos;ll confirm the exact pickup point based on accessibility rules.</p>
                         </div>
 
                         <div className="bg-white p-6 relative">
-                            <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
-                                <span className="text-3xl font-bold text-teal-500">2</span>
+                            <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                <span className="text-3xl font-bold text-slate-500">2</span>
                             </div>
                             <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Meet Your Driver</h3>
                             <p className="text-center text-gray-600">Receive driver details and live location. No searching or waiting in the heat.</p>
                         </div>
 
                         <div className="bg-white p-6 relative">
-                            <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
-                                <span className="text-3xl font-bold text-teal-500">3</span>
+                            <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                <span className="text-3xl font-bold text-slate-500">3</span>
                             </div>
                             <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Arrive Safely</h3>
                             <p className="text-center text-gray-600">Comfortable ride to your destination, whether Jeddah Airport, Madinah, or local Ziyarat sites.</p>
@@ -371,11 +373,11 @@ export default function MakkahPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
                             <Link key={index} href={service.href} className="block group">
-                                <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all h-full border border-transparent group-hover:border-teal-100">
-                                    <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-teal-500 transition-colors">
-                                        <service.icon className="w-6 h-6 text-teal-500 group-hover:text-white transition-colors" />
+                                <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all h-full border border-transparent group-hover:border-slate-100">
+                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-slate-500 transition-colors">
+                                        <service.icon className="w-6 h-6 text-slate-500 group-hover:text-white transition-colors" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">{service.name}</h3>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-slate-600 transition-colors">{service.name}</h3>
                                     <p className="text-gray-600">{service.description}</p>
                                 </div>
                             </Link>
@@ -398,7 +400,7 @@ export default function MakkahPage() {
                             <ul className="space-y-4">
                                 {features.map((feature, index) => (
                                     <li key={index} className="flex items-center text-gray-700">
-                                        <CheckCircle2 className="w-5 h-5 text-teal-500 mr-3 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-slate-500 mr-3 flex-shrink-0" />
                                         {feature}
                                     </li>
                                 ))}
@@ -407,9 +409,10 @@ export default function MakkahPage() {
                         <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/makkah-highway.webp"
-                                alt="Makkah Highway"
-                                fill
-                                className="object-cover"
+                                alt="Private taxi driving on Makkah highway towards the Holy City"
+                                width={800}
+                                height={500}
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
@@ -426,23 +429,23 @@ export default function MakkahPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <Link href="/routes/jeddah-airport-to-makkah" className="block group">
-                            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all border border-transparent hover:border-teal-100">
+                            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all border border-transparent hover:border-slate-100">
                                 <div className="flex items-center justify-between mb-4">
-                                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-600">Jeddah Airport</h3>
-                                    <ArrowRight className="w-5 h-5 text-teal-500 group-hover:translate-x-1 transition-transform" />
+                                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-slate-600">Jeddah Airport</h3>
+                                    <ArrowRight className="w-5 h-5 text-slate-500 group-hover:translate-x-1 transition-transform" />
                                 </div>
-                                <p className="text-gray-600 mb-2">Duration: 1.adequate time</p>
+                                <p className="text-gray-600 mb-2">Duration: 1.5 hours</p>
                                 <p className="text-sm text-gray-500">Most popular airport transfer</p>
                             </div>
                         </Link>
 
                         <Link href="/routes/makkah-to-madinah" className="block group">
-                            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all border border-transparent hover:border-teal-100">
+                            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all border border-transparent hover:border-slate-100">
                                 <div className="flex items-center justify-between mb-4">
-                                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-600">Madinah</h3>
-                                    <ArrowRight className="w-5 h-5 text-teal-500 group-hover:translate-x-1 transition-transform" />
+                                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-slate-600">Madinah</h3>
+                                    <ArrowRight className="w-5 h-5 text-slate-500 group-hover:translate-x-1 transition-transform" />
                                 </div>
-                                <p className="text-gray-600 mb-2">Duration: adequate time</p>
+                                <p className="text-gray-600 mb-2">Duration: 4.5 hours</p>
                                 <p className="text-sm text-gray-500">Comfortable intercity travel</p>
                             </div>
                         </Link>
@@ -450,7 +453,7 @@ export default function MakkahPage() {
                         <div className="bg-white p-8 rounded-2xl shadow-md">
                             <div className="flex items-center justify-between mb-4">
                                 <h3 className="text-xl font-bold text-gray-900">Taif</h3>
-                                <ArrowRight className="w-5 h-5 text-teal-500" />
+                                <ArrowRight className="w-5 h-5 text-slate-500" />
                             </div>
                             <p className="text-gray-600 mb-2">Duration: 1.5 hours</p>
                             <p className="text-sm text-gray-500">Scenic mountain route</p>
@@ -463,7 +466,7 @@ export default function MakkahPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Makkah Taxi Frequently Asked Questions</h2>
                         <p className="text-xl text-gray-600">Common questions about Makkah taxi service</p>
                     </div>
                     <Accordion type="single" collapsible className="space-y-4">
@@ -473,7 +476,7 @@ export default function MakkahPage() {
                                 value={`item-${index}`}
                                 className="bg-gray-50 px-6 rounded-xl border-0"
                             >
-                                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-teal-500 text-left">
+                                <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-slate-500 text-left">
                                     {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
@@ -486,10 +489,10 @@ export default function MakkahPage() {
             </section>
 
             {/* Nearby Cities */}
-            <NearbyCities currentCity="makkah" />
+            <NearbyCities currentCity="Makkah" />
 
             {/* CTA Section */}
-            <section className="py-20 bg-teal-500 text-white">
+            <section className="py-20 bg-brand-navy text-white shadow-2xl">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold mb-6">
                         Ready to Book Your Makkah Taxi?
@@ -499,12 +502,12 @@ export default function MakkahPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/booking">
-                            <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-8 py-6 text-lg">
+                            <Button size="lg" className="bg-white text-slate-500 hover:bg-gray-100 px-8 py-6 text-lg">
                                 Book Now
                             </Button>
                         </Link>
                         <Link href="/contact">
-                            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-500 px-8 py-6 text-lg">
+                            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-500 px-8 py-6 text-lg">
                                 Contact Us
                             </Button>
                         </Link>

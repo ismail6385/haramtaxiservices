@@ -28,7 +28,7 @@ export default function SeoReadMore({ title, previewText, children }: SeoReadMor
                 <Button
                     onClick={() => setIsExpanded(!isExpanded)}
                     variant="outline"
-                    className="border-teal-500 text-teal-600 hover:bg-teal-50 group"
+                    className="border-slate-500 text-slate-600 hover:bg-slate-50 group"
                 >
                     {isExpanded ? (
                         <>Read Less <ChevronUp className="ml-2 w-4 h-4" /></>

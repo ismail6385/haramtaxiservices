@@ -45,7 +45,7 @@ import RelatedVehicles from '@/components/RelatedVehicles';
 <RelatedVehicles currentVehicle="[vehicle-slug]" />
 
 {/* CTA Section */}
-<section className="py-20 bg-teal-500 text-white">
+<section className="py-20 bg-slate-500 text-white">
 ```
 
 ### For Location Pages:
@@ -61,7 +61,7 @@ import NearbyCities from '@/components/NearbyCities';
 <NearbyCities currentCity="[city-slug]" />
 
 {/* CTA Section */}
-<section className="py-20 bg-teal-500 text-white">
+<section className="py-20 bg-slate-500 text-white">
 ```
 
 ---

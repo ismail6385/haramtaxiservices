@@ -66,26 +66,26 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        // ── Brand Color System (Competitive Rate-10 Rule) ──────────────────────
-        // 60% Dominant : bg-white / bg-gray-*  (backgrounds)
-        // 30% Secondary: bg-brand-teal          (nav, sections)
-        // 10% Accent   : bg-brand-amber         (CTAs, stars, badges)
-        'brand-teal': {
-          DEFAULT: 'hsl(var(--brand-teal))',
-          light: 'hsl(var(--brand-teal-light))',
-          pale: 'hsl(var(--brand-teal-pale))',
-          dark: 'hsl(var(--brand-teal-dark))',
+        // ── Brand Color System (Premium Navy & Gold) ──────────────────────
+        // 60% Dominant : bg-white / bg-slate-*  (backgrounds)
+        // 30% Secondary: bg-brand-navy          (nav, sections)
+        // 10% Accent   : bg-brand-gold          (CTAs, stars, badges)
+        'brand-navy': {
+          DEFAULT: 'hsl(var(--brand-navy))',
+          light: 'hsl(var(--brand-navy-light))',
+          pale: 'hsl(var(--brand-navy-pale))',
+          dark: 'hsl(var(--brand-navy-dark))',
         },
-        'brand-amber': {
-          DEFAULT: 'hsl(var(--brand-amber))',
-          light: 'hsl(var(--brand-amber-light))',
-          pale: 'hsl(var(--brand-amber-pale))',
+        'brand-gold': {
+          DEFAULT: 'hsl(var(--brand-gold))',
+          light: 'hsl(var(--brand-gold-light))',
+          pale: 'hsl(var(--brand-gold-pale))',
         },
         // Legacy tokens (kept for backward compat)
-        amber: {
-          DEFAULT: 'hsl(var(--brand-amber))',
-          light: 'hsl(var(--brand-amber-light))',
-          dark: 'hsl(38 92% 35%)',
+        yellow: {
+          DEFAULT: 'hsl(var(--brand-gold))',
+          light: 'hsl(var(--brand-gold-light))',
+          dark: 'hsl(46, 65%, 40%)',
         },
         midnight: {
           DEFAULT: 'hsl(var(--midnight))',

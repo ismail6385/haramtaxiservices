@@ -41,10 +41,10 @@ export default function DistanceCalculator() {
 
     return (
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden max-w-lg mx-auto">
-            <div className="bg-teal-600 p-6 text-white text-center">
+            <div className="bg-slate-600 p-6 text-white text-center">
                 <Navigation className="w-10 h-10 mx-auto mb-2 opacity-90" />
                 <h2 className="text-2xl font-bold">Distance Calculator</h2>
-                <p className="text-teal-100 text-sm">Plan your travel durations</p>
+                <p className="text-slate-100 text-sm">Plan your travel durations</p>
             </div>
 
             <div className="p-8 space-y-6">
@@ -69,18 +69,18 @@ export default function DistanceCalculator() {
                     </div>
                 </div>
 
-                <Button onClick={handleCalculate} className="w-full bg-teal-600 hover:bg-teal-700">
+                <Button onClick={handleCalculate} className="w-full bg-slate-600 hover:bg-slate-700">
                     Check Distance
                 </Button>
 
                 {result && (
-                    <div className="mt-4 p-4 bg-teal-50 rounded-xl border border-teal-100 flex justify-between items-center animate-in fade-in">
-                        <div className="text-center w-1/2 border-r border-teal-200">
-                            <div className="text-xs text-teal-600 uppercase font-bold">Distance</div>
+                    <div className="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-100 flex justify-between items-center animate-in fade-in">
+                        <div className="text-center w-1/2 border-r border-slate-200">
+                            <div className="text-xs text-slate-600 uppercase font-bold">Distance</div>
                             <div className="text-2xl font-bold text-gray-800">{result.km} km</div>
                         </div>
                         <div className="text-center w-1/2">
-                            <div className="text-xs text-teal-600 uppercase font-bold">Time</div>
+                            <div className="text-xs text-slate-600 uppercase font-bold">Time</div>
                             <div className="text-2xl font-bold text-gray-800">{result.time}</div>
                         </div>
                     </div>

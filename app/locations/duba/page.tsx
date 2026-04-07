@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -65,7 +65,7 @@ export default function DubaLocationPage() {
         },
         {
             question: "What is the cost of a taxi to Tabuk?",
-            answer: "A private sedan to Tabuk typically costs between Get Quote and Get Quote, depending on the drop-off location."
+            answer: "A private sedan to Tabuk typically costs between Get Quote, depending on the drop-off location."
         }
     ];
 
@@ -74,7 +74,7 @@ export default function DubaLocationPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Duba",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+966569487569",
+        "telephone": "+996575806733",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "King Abdulaziz Road",
@@ -87,49 +87,50 @@ export default function DubaLocationPage() {
     };
 
     return (
-        <div className="bg-teal-50 min-h-screen">
+        <div className="bg-slate-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
             {/* Breadcrumbs */}
-            <div className="bg-teal-100 py-4 border-b border-teal-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-teal-900/60">
-                    <Link href="/" className="hover:text-teal-700">Home</Link>
+            <div className="bg-slate-100 py-4 border-b border-slate-200">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-900/60">
+                    <Link href="/" className="hover:text-slate-700">Home</Link>
                     <span className="mx-2">/</span>
-                    <Link href="/locations" className="hover:text-teal-700">Locations</Link>
+                    <Link href="/locations" className="hover:text-slate-700">Locations</Link>
                     <span className="mx-2">/</span>
-                    <span className="font-semibold text-teal-900">Duba</span>
+                    <span className="font-semibold text-slate-900">Duba</span>
                 </div>
             </div>
 
             {/* Hero Section */}
             <section className="relative h-[600px] flex items-center">
-                <div className="absolute inset-0 bg-teal-900/50 z-10"></div>
+                <div className="absolute inset-0 bg-slate-900/50 z-10"></div>
                 {/* Fallback color/image */}
-                <div className="absolute inset-0 bg-teal-800 z-0">
+                <div className="absolute inset-0 bg-slate-800 z-0">
                     <Image
                         src="/duba-port.webp"
                         alt="Taxi Service in Duba and Port"
-                        fill
-                        className="object-cover"
+                        width={1200}
+                        height={500}
+                        className="w-full h-full object-cover"
                         priority
                     />
                 </div>
 
                 <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div className="max-w-3xl text-white">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-600 rounded-full mb-6 animate-fade-in border border-teal-400/50">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-600 rounded-full mb-6 animate-fade-in border border-slate-400/50">
                             <Anchor className="w-4 h-4 text-white" />
                             <span className="text-sm font-semibold uppercase tracking-wide">Red Sea Port Hub</span>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                             Duba Taxi Service
                         </h1>
-                        <p className="text-xl md:text-2xl opacity-95 mb-8 leading-relaxed font-light text-teal-50">
+                        <p className="text-xl md:text-2xl opacity-95 mb-8 leading-relaxed font-light text-slate-50">
                             Your connection from Duba Port to Tabuk, Neom, and beyond. Reliable ferry transfers.
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Duba." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Duba." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -141,13 +142,13 @@ export default function DubaLocationPage() {
             </section>
 
             {/* AI Overview Block */}
-            <section className="py-12 bg-white border-b border-teal-100">
+            <section className="py-12 bg-white border-b border-slate-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Duba</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Local rides within Duba are typically <span className="font-bold text-teal-700">Get Quote</span>.
-                        Transfers to Tabuk Airport cost around <span className="font-bold text-teal-700">Get Quote</span>.
-                        Rides to Neom locations start from <span className="font-bold text-teal-700">Get Quote</span>.
+                        Local rides within Duba are typically <span className="font-bold text-slate-700">affordable rates</span>.
+                        Transfers to Tabuk Airport cost around <span className="font-bold text-slate-700">Get Quote</span>.
+                        Rides to Neom locations start from <span className="font-bold text-slate-700">Get Quote</span>.
                     </p>
                 </div>
             </section>
@@ -163,13 +164,13 @@ export default function DubaLocationPage() {
                             {/* Why Choose Us */}
                             <div>
                                 <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                                    <Shield className="w-8 h-8 text-teal-600" />
+                                    <Shield className="w-8 h-8 text-slate-600" />
                                     Why Haram Taxi Duba?
                                 </h2>
                                 <div className="grid sm:grid-cols-2 gap-6">
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center shrink-0">
-                                            <Anchor className="w-5 h-5 text-teal-600" />
+                                        <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
+                                            <Anchor className="w-5 h-5 text-slate-600" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-gray-900">Port Specialists</h3>
@@ -177,8 +178,8 @@ export default function DubaLocationPage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center shrink-0">
-                                            <MapPin className="w-5 h-5 text-teal-600" />
+                                        <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
+                                            <MapPin className="w-5 h-5 text-slate-600" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-gray-900">Neom Neighbors</h3>
@@ -190,18 +191,18 @@ export default function DubaLocationPage() {
 
                             {/* Services List */}
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Services</h2>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Duba Taxi Services</h2>
                                 <div className="space-y-4">
                                     {services.map((service, index) => (
                                         <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                                            <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center shrink-0">
-                                                <service.icon className="w-6 h-6 text-teal-600" />
+                                            <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
+                                                <service.icon className="w-6 h-6 text-slate-600" />
                                             </div>
                                             <div>
                                                 <h3 className="text-xl font-bold text-gray-900 mb-2">{service.name}</h3>
                                                 <p className="text-gray-600 mb-3">{service.description}</p>
                                                 {service.href && (
-                                                    <Link href={service.href} className="text-teal-600 font-semibold text-sm hover:underline flex items-center gap-1">
+                                                    <Link href={service.href} className="text-slate-600 font-semibold text-sm hover:underline flex items-center gap-1">
                                                         Service Info <ArrowRight className="w-3 h-3" />
                                                     </Link>
                                                 )}
@@ -230,7 +231,7 @@ export default function DubaLocationPage() {
                         <div className="space-y-8">
                             {/* Booking Widget */}
                             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden sticky top-24">
-                                <div className="bg-teal-600 p-6 text-white">
+                                <div className="bg-slate-600 p-6 text-white">
                                     <h3 className="text-xl font-bold flex items-center gap-2">
                                         <Clock className="w-5 h-5" /> Quick Booking
                                     </h3>
@@ -240,7 +241,7 @@ export default function DubaLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Duba." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Duba." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
                                             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
@@ -252,14 +253,14 @@ export default function DubaLocationPage() {
                             {/* Local Info */}
                             <div className="bg-white rounded-2xl p-6 border border-gray-200">
                                 <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                                    <MapPin className="w-5 h-5 text-teal-600" /> Key Landmarks
+                                    <MapPin className="w-5 h-5 text-slate-600" /> Key Landmarks
                                 </h3>
                                 <ul className="space-y-3 text-sm text-gray-700">
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> Duba Port (Ferry Terminal)</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> Duba Corniche</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> King Abdulaziz Castle</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> Fish Market</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> Sharma Resort (40km)</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> Duba Port (Ferry Terminal)</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> Duba Corniche</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> King Abdulaziz Castle</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> Fish Market</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> Sharma Resort (40km)</li>
                                 </ul>
                             </div>
                         </div>
@@ -281,11 +282,11 @@ export default function DubaLocationPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/booking">
-                            <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white px-10 py-6 text-lg font-bold">
+                            <Button size="lg" className="bg-slate-600 hover:bg-slate-700 text-white px-10 py-6 text-lg font-bold">
                                 Book Now
                             </Button>
                         </Link>
-                        <a href="https://wa.me/966569487569">
+                        <a href="https://wa.me/996575806733">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
                                 WhatsApp Booking
                             </Button>
@@ -296,4 +297,5 @@ export default function DubaLocationPage() {
         </div>
     );
 }
+
 

@@ -62,11 +62,11 @@ export default function PrayerTimesWidget({ initialData, initialCity = 'Makkah' 
 
     if (!times) {
         return (
-            <div className="bg-white rounded-2xl shadow-lg border border-teal-100 overflow-hidden h-full min-h-[300px] flex items-center justify-center p-8 text-gray-500">
+            <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden h-full min-h-[300px] flex items-center justify-center p-8 text-gray-500">
                 <div className="text-center">
                     {loading ? (
                         <>
-                            <Clock className="w-8 h-8 text-teal-600 animate-spin mx-auto mb-2" />
+                            <Clock className="w-8 h-8 text-slate-600 animate-spin mx-auto mb-2" />
                             <p>Loading prayer times...</p>
                         </>
                     ) : (
@@ -75,7 +75,7 @@ export default function PrayerTimesWidget({ initialData, initialCity = 'Makkah' 
                             <p>Prayer times unavailable.</p>
                             <button
                                 onClick={() => window.location.reload()}
-                                className="mt-2 text-sm text-teal-600 hover:underline"
+                                className="mt-2 text-sm text-slate-600 hover:underline"
                             >
                                 Retry
                             </button>
@@ -99,8 +99,8 @@ export default function PrayerTimesWidget({ initialData, initialCity = 'Makkah' 
     const formatTime = (t: string) => t.split(' ')[0];
 
     return (
-        <div className="bg-white rounded-2xl shadow-lg border border-teal-100 overflow-hidden h-full">
-            <div className="bg-teal-600 p-6 text-white">
+        <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden h-full">
+            <div className="bg-slate-600 p-6 text-white">
                 <div className="flex flex-col gap-4">
                     <div className="flex items-center justify-between">
                         <h3 className="font-bold text-xl flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function PrayerTimesWidget({ initialData, initialCity = 'Makkah' 
                         </h3>
                     </div>
 
-                    <div className="flex gap-2 bg-teal-700/50 p-1.5 rounded-lg w-full">
+                    <div className="flex gap-2 bg-slate-700/50 p-1.5 rounded-lg w-full">
                         {CITIES.map((c) => (
                             <button
                                 key={c}
@@ -117,7 +117,7 @@ export default function PrayerTimesWidget({ initialData, initialCity = 'Makkah' 
                                 onClick={() => {
                                     setCity(c);
                                 }}
-                                className={`flex-1 px-4 py-2.5 rounded-md transition-all font-semibold text-sm ${city === c ? 'bg-white text-teal-700 shadow-md' : 'text-teal-100 hover:text-white hover:bg-teal-600/50'
+                                className={`flex-1 px-4 py-2.5 rounded-md transition-all font-semibold text-sm ${city === c ? 'bg-white text-slate-700 shadow-md' : 'text-slate-100 hover:text-white hover:bg-slate-600/50'
                                     }`}
                             >
                                 {c}
@@ -135,9 +135,9 @@ export default function PrayerTimesWidget({ initialData, initialCity = 'Makkah' 
             <div className="p-6">
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     {prayers.map((prayer) => (
-                        <div key={prayer.name} className="text-center p-3 rounded-xl bg-gray-50 border border-gray-100 hover:border-teal-200 hover:bg-teal-50/50 transition-all group">
+                        <div key={prayer.name} className="text-center p-3 rounded-xl bg-gray-50 border border-gray-100 hover:border-slate-200 hover:bg-slate-50/50 transition-all group">
                             <div className="text-gray-500 text-xs font-medium mb-1 uppercase tracking-wider">{prayer.name}</div>
-                            <div className="text-teal-700 font-bold text-lg font-mono group-hover:text-teal-600">
+                            <div className="text-slate-700 font-bold text-lg font-mono group-hover:text-slate-600">
                                 {loading ? '...' : formatTime(prayer.time)}
                             </div>
                         </div>

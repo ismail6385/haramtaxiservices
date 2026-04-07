@@ -13,7 +13,7 @@ const TOOLS = [
         href: '/tools/taxi-fare-calculator',
         icon: Calculator,
         description: 'Get instant price estimates for rides between Jeddah, Makkah, and Madinah.',
-        color: 'bg-teal-500'
+        color: 'bg-slate-500'
     },
     {
         name: 'Prayer Times',
@@ -51,7 +51,7 @@ export default function ToolsIndex() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        Traveler <span className="text-teal-600">Resources</span>
+                        Traveler <span className="text-slate-600">Resources</span>
                     </h1>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         Essential free tools to help you plan your journey in Saudi Arabia with ease and confidence.
@@ -67,7 +67,7 @@ export default function ToolsIndex() {
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">{tool.name}</h3>
                                 <p className="text-gray-600 mb-6 flex-grow">{tool.description}</p>
-                                <div className="flex items-center text-teal-600 font-semibold group-hover:translate-x-2 transition-transform">
+                                <div className="flex items-center text-slate-600 font-semibold group-hover:translate-x-2 transition-transform">
                                     Use Tool <ArrowRight className="w-4 h-4 ml-2" />
                                 </div>
                             </div>

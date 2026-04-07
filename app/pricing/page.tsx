@@ -81,7 +81,7 @@ export default function PricingPage() {
     return (
         <div className="bg-white min-h-screen">
             {/* Executive Hero */}
-            <section className="relative py-24 bg-brand-teal overflow-hidden">
+            <section className="relative py-24 bg-brand-navy overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
                 </div>
@@ -91,7 +91,7 @@ export default function PricingPage() {
                         <span className="text-xs font-bold uppercase tracking-widest">Premium Transportation Network</span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6">
-                        Our Executive Fleet & <span className="text-brand-amber">Service Areas</span>
+                        Our Executive Fleet & <span className="text-brand-gold">Service Areas</span>
                     </h1>
                     <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/80 leading-relaxed">
                         Moving away from fixed lists to personalized value. WhatsApp us your requirements for a customized, competitive quote tailored to your exact journey.
@@ -100,8 +100,9 @@ export default function PricingPage() {
             </section>
 
             {/* Value Props */}
-            <section className="py-12 border-b border-gray-100">
+            <section className="py-12 border-b border-gray-100 bg-gray-50/50">
                 <div className="container mx-auto px-4">
+                    <h2 className="sr-only">Our Core Service Values</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[
                             { icon: Clock, label: '24/7 Availability', sub: 'Across KSA Airports' },
@@ -110,7 +111,7 @@ export default function PricingPage() {
                             { icon: MessageCircle, label: 'Instant Quotes', sub: 'Via WhatsApp Chat' },
                         ].map((item, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
-                                <item.icon className="w-8 h-8 text-brand-teal mb-3" />
+                                <item.icon className="w-8 h-8 text-brand-navy mb-3" />
                                 <h3 className="font-bold text-gray-900">{item.label}</h3>
                                 <p className="text-xs text-gray-500">{item.sub}</p>
                             </div>
@@ -138,14 +139,14 @@ export default function PricingPage() {
                                         fill 
                                         className="object-cover hover:scale-105 transition-transform duration-700"
                                     />
-                                    <div className="absolute top-6 left-6 bg-brand-teal text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    <div className="absolute top-6 left-6 bg-brand-navy text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                                         {vehicle.category}
                                     </div>
                                 </div>
 
                                 {/* Content Container */}
                                 <div className="lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                                    <div className="mb-2 text-brand-teal-light font-bold text-sm tracking-wide uppercase italic">
+                                    <div className="mb-2 text-brand-navy-light font-bold text-sm tracking-wide uppercase italic">
                                         Best for: {vehicle.bestFor}
                                     </div>
                                     <h3 className="text-3xl font-display font-bold text-gray-900 mb-4">{vehicle.name}</h3>
@@ -155,8 +156,8 @@ export default function PricingPage() {
 
                                     <div className="grid grid-cols-2 gap-6 mb-8">
                                         <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 bg-brand-teal-pale rounded-xl flex items-center justify-center">
-                                                <Users className="w-5 h-5 text-brand-teal" />
+                                            <div className="w-10 h-10 bg-brand-navy-pale rounded-xl flex items-center justify-center">
+                                                <Users className="w-5 h-5 text-brand-navy" />
                                             </div>
                                             <div>
                                                 <div className="text-xs font-bold text-gray-400 uppercase">Seating</div>
@@ -164,8 +165,8 @@ export default function PricingPage() {
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 bg-brand-teal-pale rounded-xl flex items-center justify-center">
-                                                <Briefcase className="w-5 h-5 text-brand-teal" />
+                                            <div className="w-10 h-10 bg-brand-navy-pale rounded-xl flex items-center justify-center">
+                                                <Briefcase className="w-5 h-5 text-brand-navy" />
                                             </div>
                                             <div>
                                                 <div className="text-xs font-bold text-gray-400 uppercase">Luggage</div>
@@ -185,7 +186,7 @@ export default function PricingPage() {
 
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <a 
-                                            href={`https://wa.me/966569487569?text=Assalamu%20Alaikum%2C%20I%20want%20to%20get%20a%20quote%20for%20a%20${encodeURIComponent(vehicle.name)}.`}
+                                            href={`https://wa.me/996575806733?text=Assalamu%20Alaikum%2C%20I%20want%20to%20get%20a%20quote%20for%20a%20${encodeURIComponent(vehicle.name)}.`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex-1"
@@ -224,16 +225,16 @@ export default function PricingPage() {
                                     'Riyadh to Makkah Intercity',
                                     'Dammam to Bahrain Causeway'
                                 ].map((route, i) => (
-                                    <div key={i} className="flex justify-between items-center p-4 bg-gray-50 rounded-xl hover:bg-brand-teal-pale transition-colors group">
+                                    <div key={i} className="flex justify-between items-center p-4 bg-gray-50 rounded-xl hover:bg-brand-navy-pale transition-colors group">
                                         <span className="font-semibold text-gray-700">{route}</span>
-                                        <ArrowRight className="w-4 h-4 text-brand-teal opacity-0 group-hover:opacity-100 transition-opacity" />
+                                        <ArrowRight className="w-4 h-4 text-brand-navy opacity-0 group-hover:opacity-100 transition-opacity" />
                                     </div>
                                 ))}
                             </div>
 
-                            <div className="mt-8 p-6 bg-brand-amber/5 rounded-2xl border border-brand-amber/10">
-                                <h4 className="font-bold text-brand-amber-dark mb-2">Note on Peak Seasons</h4>
-                                <p className="text-sm text-brand-amber-dark/70 leading-relaxed">
+                            <div className="mt-8 p-6 bg-brand-gold/5 rounded-2xl border border-brand-gold/10">
+                                <h4 className="font-bold text-brand-gold-dark mb-2">Note on Peak Seasons</h4>
+                                <p className="text-sm text-brand-gold-dark/70 leading-relaxed">
                                     During Ramadan and Hajj seasons, availability is limited. We recommend booking at least 1 week in advance for peak travel periods.
                                 </p>
                             </div>
@@ -241,7 +242,7 @@ export default function PricingPage() {
 
                         <div className="lg:col-span-2">
                              <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 md:p-12 relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-teal/5 rounded-bl-full"></div>
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-navy/5 rounded-bl-full"></div>
                                 <h3 className="text-3xl font-display font-bold mb-2">Quick Quote Request</h3>
                                 <p className="text-gray-500 mb-8">Fill the form below or message us directly on WhatsApp for an immediate response.</p>
                                 <BookingForm />
@@ -252,19 +253,19 @@ export default function PricingPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-20 bg-brand-teal text-white text-center relative">
+            <section className="py-20 bg-brand-navy text-white text-center relative">
                  <div className="max-w-4xl mx-auto px-4 relative z-10">
-                    <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Ready to Experience <span className="text-brand-amber italic">Premium Travel?</span></h2>
+                    <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Ready to Experience <span className="text-brand-gold italic">Premium Travel?</span></h2>
                     <p className="text-lg text-white/70 mb-10 leading-relaxed">
                         Whether you are an individual pilgrim or a large group, we have the fleet and expertise to make your journey through the Kingdom seamless.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a 
-                            href="https://wa.me/966569487569"
+                            href="https://wa.me/996575806733"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Button size="lg" className="bg-white text-brand-teal hover:bg-gray-100 px-12 py-7 text-xl font-bold rounded-2xl shadow-xl shadow-brand-teal-dark/20">
+                            <Button size="lg" className="bg-white text-brand-navy hover:bg-gray-100 px-12 py-7 text-xl font-bold rounded-2xl shadow-xl shadow-brand-navy-dark/20">
                                 <MessageCircle className="w-6 h-6 mr-2" /> Message on WhatsApp
                             </Button>
                         </a>

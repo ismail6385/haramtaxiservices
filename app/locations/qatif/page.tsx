@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -53,7 +53,7 @@ export default function QatifLocationPage() {
     const faqs = [
         {
             question: "How far is Qatif from Dammam Airport?",
-            answer: "Qatif is very close to King Fahd Airport (approx. a short distance). The trip usually takes a reasonable time."
+            answer: "Qatif is very close to King Fahd Airport (approx. a short distance). The trip usually takes a estimated time."
         },
         {
             question: "Do you serve Tarout Island?",
@@ -74,7 +74,7 @@ export default function QatifLocationPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service Qatif",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+966569487569",
+        "telephone": "+996575806733",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Al Quds Street",
@@ -87,49 +87,50 @@ export default function QatifLocationPage() {
     };
 
     return (
-        <div className="bg-teal-50 min-h-screen">
+        <div className="bg-slate-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
             {/* Breadcrumbs */}
-            <div className="bg-teal-100 py-4 border-b border-teal-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-teal-900/60">
-                    <Link href="/" className="hover:text-teal-700">Home</Link>
+            <div className="bg-slate-100 py-4 border-b border-slate-200">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-900/60">
+                    <Link href="/" className="hover:text-slate-700">Home</Link>
                     <span className="mx-2">/</span>
-                    <Link href="/locations" className="hover:text-teal-700">Locations</Link>
+                    <Link href="/locations" className="hover:text-slate-700">Locations</Link>
                     <span className="mx-2">/</span>
-                    <span className="font-semibold text-teal-900">Qatif</span>
+                    <span className="font-semibold text-slate-900">Qatif</span>
                 </div>
             </div>
 
             {/* Hero Section */}
             <section className="relative h-[600px] flex items-center">
-                <div className="absolute inset-0 bg-teal-900/50 z-10"></div>
+                <div className="absolute inset-0 bg-slate-900/50 z-10"></div>
                 {/* Fallback color/image */}
-                <div className="absolute inset-0 bg-teal-800 z-0">
+                <div className="absolute inset-0 bg-slate-800 z-0">
                     <Image
                         src="/qatif-corniche.webp"
                         alt="Taxi Service in Qatif"
-                        fill
-                        className="object-cover"
+                        width={1200}
+                        height={500}
+                        className="w-full h-full object-cover"
                         priority
                     />
                 </div>
 
                 <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div className="max-w-3xl text-white">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-600 rounded-full mb-6 animate-fade-in border border-teal-400/50">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-600 rounded-full mb-6 animate-fade-in border border-slate-400/50">
                             <Shield className="w-4 h-4 text-white" />
                             <span className="text-sm font-semibold uppercase tracking-wide">Eastern Province</span>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                             Qatif Taxi Service
                         </h1>
-                        <p className="text-xl md:text-2xl opacity-95 mb-8 leading-relaxed font-light text-teal-50">
+                        <p className="text-xl md:text-2xl opacity-95 mb-8 leading-relaxed font-light text-slate-50">
                             Serving Qatif, Saihat, Tarout, and Safwa. Your gateway to Dammam Airport and Jubail.
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Qatif." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Qatif." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -141,13 +142,13 @@ export default function QatifLocationPage() {
             </section>
 
             {/* AI Overview Block */}
-            <section className="py-12 bg-white border-b border-teal-100">
+            <section className="py-12 bg-white border-b border-slate-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Qatif</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Rides to Dammam Airport typically cost <span className="font-bold text-teal-700">Get Quote</span>.
-                        Transfers to Jubail Industrial City range from <span className="font-bold text-teal-700">Get Quote</span>.
-                        Local trips within Qatif/Saihat start from <span className="font-bold text-teal-700">Get Quote</span>.
+                        Rides to Dammam Airport typically cost <span className="font-bold text-slate-700">Get Quote</span>.
+                        Transfers to Jubail Industrial City range from <span className="font-bold text-slate-700">Get Quote</span>.
+                        Local trips within Qatif/Saihat start from <span className="font-bold text-slate-700">Get Quote</span>.
                     </p>
                 </div>
             </section>
@@ -163,13 +164,13 @@ export default function QatifLocationPage() {
                             {/* Why Choose Us */}
                             <div>
                                 <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                                    <Shield className="w-8 h-8 text-teal-600" />
+                                    <Shield className="w-8 h-8 text-slate-600" />
                                     Why Haram Taxi Qatif?
                                 </h2>
                                 <div className="grid sm:grid-cols-2 gap-6">
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center shrink-0">
-                                            <Clock className="w-5 h-5 text-teal-600" />
+                                        <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
+                                            <Clock className="w-5 h-5 text-slate-600" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-gray-900">Punctual Commutes</h3>
@@ -177,8 +178,8 @@ export default function QatifLocationPage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center shrink-0">
-                                            <ShoppingBag className="w-5 h-5 text-teal-600" />
+                                        <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
+                                            <ShoppingBag className="w-5 h-5 text-slate-600" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-gray-900">Local Knowledge</h3>
@@ -190,19 +191,19 @@ export default function QatifLocationPage() {
 
                             {/* Services List */}
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Services</h2>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Qatif Taxi Services</h2>
                                 <div className="space-y-4">
                                     {services.map((service, index) => (
                                         <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                                            <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center shrink-0">
-                                                <service.icon className="w-6 h-6 text-teal-600" />
+                                            <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
+                                                <service.icon className="w-6 h-6 text-slate-600" />
                                             </div>
                                             <div>
                                                 <h3 className="text-xl font-bold text-gray-900 mb-2">{service.name}</h3>
                                                 <p className="text-gray-600 mb-3">{service.description}</p>
                                                 {service.href && (
-                                                    <Link href={service.href} className="text-teal-600 font-semibold text-sm hover:underline flex items-center gap-1">
-                                                        Details <ArrowRight className="w-3 h-3" />
+                                                    <Link href={service.href} className="text-slate-600 font-semibold text-sm hover:underline flex items-center gap-1">
+                                                        {service.name} Details <ArrowRight className="w-3 h-3" />
                                                     </Link>
                                                 )}
                                             </div>
@@ -230,7 +231,7 @@ export default function QatifLocationPage() {
                         <div className="space-y-8">
                             {/* Booking Widget */}
                             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden sticky top-24">
-                                <div className="bg-teal-600 p-6 text-white">
+                                <div className="bg-slate-600 p-6 text-white">
                                     <h3 className="text-xl font-bold flex items-center gap-2">
                                         <Clock className="w-5 h-5" /> Quick Booking
                                     </h3>
@@ -240,7 +241,7 @@ export default function QatifLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Qatif." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Qatif." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
                                             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
@@ -252,13 +253,13 @@ export default function QatifLocationPage() {
                             {/* Local Info */}
                             <div className="bg-white rounded-2xl p-6 border border-gray-200">
                                 <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                                    <MapPin className="w-5 h-5 text-teal-600" /> Key Locations
+                                    <MapPin className="w-5 h-5 text-slate-600" /> Key Locations
                                 </h3>
                                 <ul className="space-y-3 text-sm text-gray-700">
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> Qatif City Mall</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> Tarout Castle</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> Qatif Fish Market</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full"></div> Prince Nayef Road</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> Qatif City Mall</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> Tarout Castle</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> Qatif Fish Market</li>
+                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-slate-600 rounded-full"></div> Prince Nayef Road</li>
                                 </ul>
                             </div>
                         </div>
@@ -280,11 +281,11 @@ export default function QatifLocationPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/booking">
-                            <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white px-10 py-6 text-lg font-bold">
+                            <Button size="lg" className="bg-slate-600 hover:bg-slate-700 text-white px-10 py-6 text-lg font-bold">
                                 Book Now
                             </Button>
                         </Link>
-                        <a href="https://wa.me/966569487569">
+                        <a href="https://wa.me/996575806733">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
                                 WhatsApp Booking
                             </Button>
@@ -295,4 +296,6 @@ export default function QatifLocationPage() {
         </div>
     );
 }
+
+
 

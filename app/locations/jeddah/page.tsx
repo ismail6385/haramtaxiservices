@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/jeddah',
     },
-    title: 'Taxi Service in Jeddah | Airport Transfer & City Rides - Haram Taxi',
-    description: 'Book reliable taxi service in Jeddah, Saudi Arabia. Airport transfers, city tours, and hotel pickups. Available 24/7. Call now for instant booking!',
-    keywords: ['taxi service Jeddah', 'Jeddah airport taxi', 'taxi in Jeddah', 'Jeddah to Makkah taxi', 'Jeddah city taxi'],
+    title: 'Executive Chauffeur Service in Jeddah | Airport VIP Transfer - Haram Chauffeur',
+    description: 'Experience premium chauffeur service in Jeddah. VIP airport transfers, city tours, and hotel pickups with professional drivers. Available 24/7. Book your executive ride now!',
+    keywords: ['chauffeur service Jeddah', 'Jeddah airport VIP transport', 'executive car Jeddah', 'distinguished Jeddah chauffeur', 'VIP Jeddah transport'],
     openGraph: {
-        title: 'Taxi Service in Jeddah | Airport Transfer & City Rides',
-        description: 'Professional taxi service in Jeddah. Airport transfers, city tours, hotel pickups. Book now!',
+        title: 'Executive Chauffeur Service in Jeddah | VIP Airport Transfer',
+        description: 'Elite chauffeur and VIP transport services in Jeddah. Professional, private, and reliable.',
         url: 'https://haramtaxiservice.com/locations/jeddah',
         type: 'website',
     },
@@ -69,7 +69,7 @@ export default function JeddahPage() {
     const features = [
         'Licensed Jeddah taxi drivers',
         'Clean and air-conditioned vehicles',
-        'competitive quotes - no hidden charges',
+        'Competitive fixed rates - no hidden charges',
         '24/7 availability in Jeddah',
         'English & Arabic speaking drivers',
         'Airport meet & greet service',
@@ -78,7 +78,7 @@ export default function JeddahPage() {
     const faqs = [
         {
             question: "How much is a taxi from Jeddah Airport to Makkah?",
-            answer: "The taxi fare from King Abdulaziz International Airport (Jeddah) to Makkah typically ranges from Get Quote-250 depending on the vehicle type. The journey takes approximately 90 minutes. Book with us for fixed, competitive quotes."
+            answer: "The taxi fare from King Abdulaziz International Airport (Jeddah) to Makkah is fixed based on vehicle type. The journey takes approximately 90 minutes. Book with us for transparent, upfront quotes."
         },
         {
             question: "Is taxi service available 24/7 in Jeddah?",
@@ -86,11 +86,11 @@ export default function JeddahPage() {
         },
         {
             question: "How do I book a taxi in Jeddah?",
-            answer: "You can book a taxi in Jeddah through our online booking form on this website. Simply enter your pickup location, destination, date and time. You'll receive instant confirmation."
+            answer: "You can book a taxi in Jeddah through our online booking form on this website or via WhatsApp. Simply share your pickup details, and we'll confirm your ride instantly."
         },
         {
             question: "Do you provide taxi service from Jeddah to Madinah?",
-            answer: "Yes, we provide comfortable taxi service from Jeddah to Madinah. The journey takes approximately adequate time. We recommend booking in advance for intercity trips."
+            answer: "Yes, we provide comfortable taxi service from Jeddah to Madinah. The journey takes approximately 4 hours. We recommend booking in advance for this intercity trip."
         },
         {
             question: "Are your Jeddah taxi drivers licensed?",
@@ -99,22 +99,21 @@ export default function JeddahPage() {
     ];
 
     const popularRoutes = [
-        { from: 'Jeddah Airport', to: 'Makkah Hotels', duration: '90 min', price: 'Get Quote-250' },
-        { from: 'Jeddah Airport', to: 'Jeddah City Center', duration: '30 min', price: 'Get Quote-80' },
-        { from: 'Jeddah', to: 'Madinah', duration: 'Get Quote hrs', price: 'Get Quote-600' },
-        { from: 'Jeddah Corniche', to: 'Al-Balad', duration: '20 min', price: 'Get Quote-50' },
+        { from: 'Jeddah Airport', to: 'Makkah Hotels', duration: '90 min', price: 'Get Quote' },
+        { from: 'Jeddah Airport', to: 'Jeddah City Center', duration: '30 min', price: 'Get Quote' },
+        { from: 'Jeddah', to: 'Madinah', duration: '4 hours', price: 'Get Quote' },
+        { from: 'Jeddah Corniche', to: 'Al-Balad', duration: '20 min', price: 'Get Quote' },
     ];
 
-    // Schema markup for Local Business
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Haram Taxi Service - Jeddah",
+        "name": "Haram Chauffeur Service - Jeddah",
         "image": "https://haramtaxiservice.com/jeddah-corniche-sunset.webp",
         "@id": "https://haramtaxiservice.com/locations/jeddah",
         "url": "https://haramtaxiservice.com/locations/jeddah",
-        "telephone": "+966569487569",
-        "priceRange": "Get Quote-600",
+        "telephone": "+996575806733",
+        "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Jeddah",
@@ -142,11 +141,6 @@ export default function JeddahPage() {
             "opens": "00:00",
             "closes": "23:59"
         },
-        "sameAs": [
-            "https://facebook.com/haramtaxi",
-            "https://twitter.com/haramtaxi",
-            "https://instagram.com/haramtaxi"
-        ],
         "areaServed": {
             "@type": "City",
             "name": "Jeddah"
@@ -182,9 +176,9 @@ export default function JeddahPage() {
                 <div className="bg-gray-50 py-4">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex items-center gap-2 text-sm text-gray-600">
-                            <Link href="/" className="hover:text-teal-500">Home</Link>
+                            <Link href="/" className="hover:text-slate-500">Home</Link>
                             <span>/</span>
-                            <Link href="/locations" className="hover:text-teal-500">Locations</Link>
+                            <Link href="/locations" className="hover:text-slate-500">Locations</Link>
                             <span>/</span>
                             <span className="text-gray-900 font-medium">Jeddah</span>
                         </div>
@@ -196,8 +190,9 @@ export default function JeddahPage() {
                     <Image
                         src="/jeddah-corniche-view.webp"
                         alt="Taxi service in Jeddah - Jeddah Corniche sunset view"
-                        fill
-                        className="object-cover opacity-60"
+                        width={1200}
+                        height={500}
+                        className="w-full h-full object-cover opacity-60"
                         priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -205,26 +200,26 @@ export default function JeddahPage() {
                     <div className="absolute inset-0 flex items-center">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                             <div className="max-w-3xl">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/90 rounded-full mb-6">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-navy rounded-full mb-6">
                                     <MapPin className="w-4 h-4 text-white" />
-                                    <span className="text-white text-sm font-semibold">Jeddah, Saudi Arabia</span>
+                                    <span className="text-white text-sm font-semibold uppercase tracking-wider">Jeddah, Saudi Arabia</span>
                                 </div>
 
-                                <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                                    Taxi Service in <span className="text-teal-400">Jeddah</span>
+                                <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-display">
+                                    Premium Chauffeur in <span className="text-brand-gold">Jeddah</span>
                                 </h1>
 
-                                <p className="text-xl text-gray-200 mb-6">
-                                    Reliable taxi service in Jeddah, the Gateway to the Holy Cities. We offer premium airport pickups, intercity transfers to Makkah (1 hr) & Madinah (4 hrs), and local rides to popular spots like the Corniche and Al-Balad.
+                                <p className="text-xl text-gray-200 mb-6 leading-relaxed">
+                                    Distinguished chauffeur service in Jeddah, the Gateway to the Holy Cities. We provide elite airport arrivals, executive intercity transfers, and bespoke Ziyarat experiences with absolute dignity.
                                 </p>
 
-                                <div className="flex items-center gap-2 mb-8 text-teal-100 font-medium bg-white/10 w-fit px-4 py-2 rounded-lg backdrop-blur-sm">
+                                <div className="flex items-center gap-2 mb-8 text-slate-100 font-medium bg-white/10 w-fit px-4 py-2 rounded-lg backdrop-blur-sm">
                                     <MapPin className="w-5 h-5" />
                                     <span>Serving Jeddah and surrounding areas within 50km radius</span>
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -237,7 +232,7 @@ export default function JeddahPage() {
                 </section>
 
                 {/* Quick Stats */}
-                <section className="py-12 bg-teal-500 text-white">
+                <section className="py-12 bg-brand-navy text-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                             <div>
@@ -269,21 +264,21 @@ export default function JeddahPage() {
                                     <div className="font-semibold text-gray-900">Makkah</div>
                                     <div className="text-sm text-gray-500">Distance: 80km</div>
                                 </div>
-                                <div className="text-xl font-bold text-teal-600">60 mins</div>
+                                <div className="text-xl font-bold text-brand-navy">60 mins</div>
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                                 <div>
                                     <div className="font-semibold text-gray-900">Madinah</div>
                                     <div className="text-sm text-gray-500">Distance: 420km</div>
                                 </div>
-                                <div className="text-xl font-bold text-teal-600">4 hours</div>
+                                <div className="text-xl font-bold text-slate-600">4 hours</div>
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                                 <div>
                                     <div className="font-semibold text-gray-900">KAEC</div>
                                     <div className="text-sm text-gray-500">Distance: 100km</div>
                                 </div>
-                                <div className="text-xl font-bold text-teal-600">1.5 hours</div>
+                                <div className="text-xl font-bold text-slate-600">1.5 hours</div>
                             </div>
                         </div>
                     </div>
@@ -303,7 +298,7 @@ export default function JeddahPage() {
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">Airport Chaos & Queues</h3>
                                 <p className="text-gray-600 mb-4">Finding a taxi at King Abdulaziz International Airport (KAIA) can be chaotic, especially during peak seasons. Long queues are common.</p>
-                                <div className="flex items-center text-teal-600 font-medium">
+                                <div className="flex items-center text-slate-600 font-medium">
                                     <CheckCircle2 className="w-5 h-5 mr-2" />
                                     <span>Solution: Pre-booked Meet & Greet</span>
                                 </div>
@@ -314,9 +309,9 @@ export default function JeddahPage() {
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">Unpredictable Meters</h3>
                                 <p className="text-gray-600 mb-4">Street taxis often refuse to use meters or take longer routes, leading to higher fares than expected.</p>
-                                <div className="flex items-center text-teal-600 font-medium">
+                                <div className="flex items-center text-slate-600 font-medium">
                                     <CheckCircle2 className="w-5 h-5 mr-2" />
-                                    <span>Solution: competitive upfront quotes</span>
+                                    <span>Solution: upfront quotes with fixed rates</span>
                                 </div>
                             </div>
                             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
@@ -325,9 +320,9 @@ export default function JeddahPage() {
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">Language Barriers</h3>
                                 <p className="text-gray-600 mb-4">Communicating destination details to non-English speaking drivers can be stressful and lead to errors.</p>
-                                <div className="flex items-center text-teal-600 font-medium">
+                                <div className="flex items-center text-slate-600 font-medium">
                                     <CheckCircle2 className="w-5 h-5 mr-2" />
-                                    <span>Solution: English Speaking Drivers</span>
+                                    <span>Solution: Professional Chauffeurs</span>
                                 </div>
                             </div>
                         </div>
@@ -338,13 +333,13 @@ export default function JeddahPage() {
                 <section className="py-20 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-100 rounded-full mb-4">
-                                <Wallet className="w-4 h-4 text-teal-600" />
-                                <span className="text-teal-800 text-sm font-semibold">Price Transparency</span>
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full mb-4">
+                                <Wallet className="w-4 h-4 text-slate-600" />
+                                <span className="text-slate-800 text-sm font-semibold">Price Transparency</span>
                             </div>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Taxi Fare Guide for Jeddah</h2>
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Chauffeur Fare Guide for Jeddah</h2>
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                                Unlike metered taxis that charge by time and distance, we offer competitive quotes based on vehicle type and destination.
+                                Unlike metered taxis that charge by time and distance, we offer competitive fixed rates based on vehicle type and destination.
                             </p>
                         </div>
 
@@ -353,42 +348,42 @@ export default function JeddahPage() {
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6">What Affects Your Price?</h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start">
-                                        <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                            <Car className="w-4 h-4 text-teal-500" />
+                                        <div className="w-8 h-8 bg-slate-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                            <Car className="w-4 h-4 text-slate-500" />
                                         </div>
                                         <div>
                                             <h4 className="font-semibold text-gray-900">Vehicle Class</h4>
-                                            <p className="text-gray-600 text-sm">Economy sedans are standard. GMCs and H1 Vans for groups cost more due to capacity and luxury.</p>
+                                            <p className="text-gray-600 text-sm">Economy sedans are standard. SUVs and Large Vans for groups are available for extra capacity and comfort.</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start">
-                                        <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                            <MapPin className="w-4 h-4 text-teal-500" />
+                                        <div className="w-8 h-8 bg-slate-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                            <MapPin className="w-4 h-4 text-slate-500" />
                                         </div>
                                         <div>
                                             <h4 className="font-semibold text-gray-900">Distance & Route</h4>
-                                            <p className="text-gray-600 text-sm">Longer trips like Jeddah to Makkah (90km) are priced differently than local city rides.</p>
+                                            <p className="text-gray-600 text-sm">Longer trips like Jeddah to Makkah (80km) are priced at fixed rates, different from local city rides.</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start">
-                                        <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                            <Clock className="w-4 h-4 text-teal-500" />
+                                        <div className="w-8 h-8 bg-slate-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                            <Clock className="w-4 h-4 text-slate-500" />
                                         </div>
                                         <div>
                                             <h4 className="font-semibold text-gray-900">Seasonality</h4>
-                                            <p className="text-gray-600 text-sm">Prices may adjust slightly during high-demand periods like Ramadan and Hajj due to traffic and resource availability.</p>
+                                            <p className="text-gray-600 text-sm">Prices remain fair year-round, with only minor adjustments during high-demand periods like Ramadan and Hajj.</p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="bg-teal-500 p-8 rounded-2xl text-white flex flex-col justify-center">
-                                <h3 className="text-2xl font-bold mb-6">Why Competitive Quotes Wins</h3>
+                            <div className="bg-brand-navy p-8 rounded-2xl text-white flex flex-col justify-center shadow-xl">
+                                <h3 className="text-2xl font-bold mb-6">Why Fixed Quotes Win</h3>
                                 <p className="mb-6 opacity-90 text-lg">
-                                    With street taxis, traffic jams mean the meter keeps running. With Haram Taxi, you pay the agreed price regardless of traffic delays on Medina Road or Haramain Highway.
+                                    With street taxis, traffic jams mean the meter keeps running. With Haram Taxi, you pay the agreed fixed price regardless of traffic delays on Medina Road or Haramain Highway.
                                 </p>
                                 <Link href="/booking">
-                                    <Button className="bg-white text-teal-600 hover:bg-gray-100 w-full text-lg h-12">
-                                        Get Your Fixed Quote
+                                    <Button className="bg-white text-slate-600 hover:bg-gray-100 w-full text-lg h-12">
+                                        Get Your Quote
                                     </Button>
                                 </Link>
                             </div>
@@ -408,27 +403,27 @@ export default function JeddahPage() {
                             <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-1 bg-gray-100 -z-10"></div>
 
                             <div className="bg-white p-6 relative">
-                                <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
-                                    <span className="text-3xl font-bold text-teal-500">1</span>
+                                <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                    <span className="text-3xl font-bold text-slate-500">1</span>
                                 </div>
-                                <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Book Online</h3>
-                                <p className="text-center text-gray-600">Select your pickup, drop-off, and vehicle type. No payment needed to reserve.</p>
+                                <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Book & Coordinate</h3>
+                                <p className="text-center text-gray-600">Select your pickup, drop-off, and vehicle type. No payment needed to reserve. We&apos;ll coordinate via WhatsApp.</p>
                             </div>
 
                             <div className="bg-white p-6 relative">
-                                <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
-                                    <span className="text-3xl font-bold text-teal-500">2</span>
+                                <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                    <span className="text-3xl font-bold text-slate-500">2</span>
                                 </div>
                                 <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Receive Confirmation</h3>
-                                <p className="text-center text-gray-600">Get an instant confirmation via WhatsApp. We&apos;ll share driver details before your trip.</p>
+                                <p className="text-center text-gray-600">Get an instant confirmation via WhatsApp or Email. We&apos;ll share driver details before your trip.</p>
                             </div>
 
                             <div className="bg-white p-6 relative">
-                                <div className="w-24 h-24 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
-                                    <span className="text-3xl font-bold text-teal-500">3</span>
+                                <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-lg">
+                                    <span className="text-3xl font-bold text-slate-500">3</span>
                                 </div>
                                 <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Meet & Ride</h3>
-                                <p className="text-center text-gray-600">Driver meets you at the location. Enjoy a comfortable ride to your destination.</p>
+                                <p className="text-center text-gray-600">Driver meets you at the airport or hotel. Enjoy a comfortable ride to your destination.</p>
                             </div>
                         </div>
                     </div>
@@ -438,18 +433,18 @@ export default function JeddahPage() {
                 <section className="py-20 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
-                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Taxi Services in Jeddah</h2>
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Executive Services in Jeddah</h2>
                             <p className="text-xl text-gray-600">Complete transportation solutions across Jeddah</p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {services.map((service, index) => (
                                 <Link key={index} href={service.href} className="block group">
-                                    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all h-full border border-transparent group-hover:border-teal-100">
-                                        <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-teal-500 transition-colors">
-                                            <service.icon className="w-6 h-6 text-teal-500 group-hover:text-white transition-colors" />
+                                    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all h-full border border-transparent group-hover:border-slate-100">
+                                        <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-slate-500 transition-colors">
+                                            <service.icon className="w-6 h-6 text-slate-500 group-hover:text-white transition-colors" />
                                         </div>
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">{service.name}</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-slate-600 transition-colors">{service.name}</h3>
                                         <p className="text-gray-600">{service.description}</p>
                                     </div>
                                 </Link>
@@ -466,89 +461,91 @@ export default function JeddahPage() {
                             <p className="text-xl text-gray-600">Most requested destinations from Jeddah</p>
                         </div>
 
-                        <Link href="/routes/jeddah-airport-to-makkah" className="block group">
-                            <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-teal-300 transition-all">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <Link href="/routes/jeddah-airport-to-makkah" className="block group">
+                                <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-slate-300 transition-all">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className="flex-1">
+                                            <div className="text-sm text-gray-600 mb-1">From</div>
+                                            <div className="font-bold text-gray-900">Jeddah Airport</div>
+                                        </div>
+                                        <ArrowRight className="w-6 h-6 text-slate-500 mx-4 group-hover:translate-x-1 transition-transform" />
+                                        <div className="flex-1">
+                                            <div className="text-sm text-gray-600 mb-1">To</div>
+                                            <div className="font-bold text-gray-900">Makkah Hotels</div>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center justify-between text-sm">
+                                        <div className="flex items-center gap-2 text-gray-600">
+                                            <Clock className="w-4 h-4" />
+                                            90 min
+                                        </div>
+                                        <div className="font-semibold text-brand-gold uppercase tracking-wider text-xs">Executive Quote</div>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
                                 <div className="flex items-center justify-between mb-4">
                                     <div className="flex-1">
                                         <div className="text-sm text-gray-600 mb-1">From</div>
                                         <div className="font-bold text-gray-900">Jeddah Airport</div>
                                     </div>
-                                    <ArrowRight className="w-6 h-6 text-teal-500 mx-4 group-hover:translate-x-1 transition-transform" />
+                                    <ArrowRight className="w-6 h-6 text-slate-500 mx-4" />
                                     <div className="flex-1">
                                         <div className="text-sm text-gray-600 mb-1">To</div>
-                                        <div className="font-bold text-gray-900">Makkah Hotels</div>
+                                        <div className="font-bold text-gray-900">Jeddah City Center</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between text-sm">
                                     <div className="flex items-center gap-2 text-gray-600">
                                         <Clock className="w-4 h-4" />
-                                        90 min
+                                        30 min
                                     </div>
-                                    <div className="font-semibold text-teal-500">Get Quote-250</div>
+                                    <div className="font-semibold text-slate-500">Get Quote</div>
                                 </div>
                             </div>
-                        </Link>
 
-                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                            <div className="flex items-center justify-between mb-4">
-                                <div className="flex-1">
-                                    <div className="text-sm text-gray-600 mb-1">From</div>
-                                    <div className="font-bold text-gray-900">Jeddah Airport</div>
+                            <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="flex-1">
+                                        <div className="text-sm text-gray-600 mb-1">From</div>
+                                        <div className="font-bold text-gray-900">Jeddah</div>
+                                    </div>
+                                    <ArrowRight className="w-6 h-6 text-slate-500 mx-4" />
+                                    <div className="flex-1">
+                                        <div className="text-sm text-gray-600 mb-1">To</div>
+                                        <div className="font-bold text-gray-900">Madinah</div>
+                                    </div>
                                 </div>
-                                <ArrowRight className="w-6 h-6 text-teal-500 mx-4" />
-                                <div className="flex-1">
-                                    <div className="text-sm text-gray-600 mb-1">To</div>
-                                    <div className="font-bold text-gray-900">Jeddah City Center</div>
+                                <div className="flex items-center justify-between text-sm">
+                                    <div className="flex items-center gap-2 text-gray-600">
+                                        <Clock className="w-4 h-4" />
+                                        4 hours
+                                    </div>
+                                    <div className="font-semibold text-slate-500">Get Quote</div>
                                 </div>
                             </div>
-                            <div className="flex items-center justify-between text-sm">
-                                <div className="flex items-center gap-2 text-gray-600">
-                                    <Clock className="w-4 h-4" />
-                                    30 min
-                                </div>
-                                <div className="font-semibold text-teal-500">Get Quote-80</div>
-                            </div>
-                        </div>
 
-                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                            <div className="flex items-center justify-between mb-4">
-                                <div className="flex-1">
-                                    <div className="text-sm text-gray-600 mb-1">From</div>
-                                    <div className="font-bold text-gray-900">Jeddah</div>
+                            <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="flex-1">
+                                        <div className="text-sm text-gray-600 mb-1">From</div>
+                                        <div className="font-bold text-gray-900">Jeddah Corniche</div>
+                                    </div>
+                                    <ArrowRight className="w-6 h-6 text-slate-500 mx-4" />
+                                    <div className="flex-1">
+                                        <div className="text-sm text-gray-600 mb-1">To</div>
+                                        <div className="font-bold text-gray-900">Al-Balad</div>
+                                    </div>
                                 </div>
-                                <ArrowRight className="w-6 h-6 text-teal-500 mx-4" />
-                                <div className="flex-1">
-                                    <div className="text-sm text-gray-600 mb-1">To</div>
-                                    <div className="font-bold text-gray-900">Madinah</div>
+                                <div className="flex items-center justify-between text-sm">
+                                    <div className="flex items-center gap-2 text-gray-600">
+                                        <Clock className="w-4 h-4" />
+                                        20 min
+                                    </div>
+                                    <div className="font-semibold text-slate-500">Get Quote</div>
                                 </div>
-                            </div>
-                            <div className="flex items-center justify-between text-sm">
-                                <div className="flex items-center gap-2 text-gray-600">
-                                    <Clock className="w-4 h-4" />
-                                    Get Quote hrs
-                                </div>
-                                <div className="font-semibold text-teal-500">Get Quote-600</div>
-                            </div>
-                        </div>
-
-                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                            <div className="flex items-center justify-between mb-4">
-                                <div className="flex-1">
-                                    <div className="text-sm text-gray-600 mb-1">From</div>
-                                    <div className="font-bold text-gray-900">Jeddah Corniche</div>
-                                </div>
-                                <ArrowRight className="w-6 h-6 text-teal-500 mx-4" />
-                                <div className="flex-1">
-                                    <div className="text-sm text-gray-600 mb-1">To</div>
-                                    <div className="font-bold text-gray-900">Al-Balad</div>
-                                </div>
-                            </div>
-                            <div className="flex items-center justify-between text-sm">
-                                <div className="flex items-center gap-2 text-gray-600">
-                                    <Clock className="w-4 h-4" />
-                                    20 min
-                                </div>
-                                <div className="font-semibold text-teal-500">Get Quote-50</div>
                             </div>
                         </div>
                     </div>
@@ -568,7 +565,7 @@ export default function JeddahPage() {
                                 <ul className="space-y-4">
                                     {features.map((feature, index) => (
                                         <li key={index} className="flex items-center text-gray-700">
-                                            <CheckCircle2 className="w-5 h-5 text-teal-500 mr-3 flex-shrink-0" />
+                                            <CheckCircle2 className="w-5 h-5 text-slate-500 mr-3 flex-shrink-0" />
                                             {feature}
                                         </li>
                                     ))}
@@ -590,7 +587,7 @@ export default function JeddahPage() {
                 <section className="py-20 bg-white">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
-                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Jeddah Taxi Frequently Asked Questions</h2>
                             <p className="text-xl text-gray-600">Common questions about taxi service in Jeddah</p>
                         </div>
                         <Accordion type="single" collapsible className="space-y-4">
@@ -600,7 +597,7 @@ export default function JeddahPage() {
                                     value={`item-${index}`}
                                     className="bg-gray-50 px-6 rounded-xl border-0"
                                 >
-                                    <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-teal-500 text-left">
+                                    <AccordionTrigger className="text-lg font-semibold text-gray-900 py-6 hover:text-slate-500 text-left">
                                         {faq.question}
                                     </AccordionTrigger>
                                     <AccordionContent className="text-gray-600 pb-6 text-base leading-relaxed">
@@ -613,7 +610,7 @@ export default function JeddahPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-20 bg-teal-500 text-white">
+                <section className="py-20 bg-brand-navy text-white shadow-2xl">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className="text-4xl font-bold mb-6">
                             Ready to Book Your Jeddah Taxi?
@@ -623,12 +620,12 @@ export default function JeddahPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/booking">
-                                <Button size="lg" className="bg-white text-teal-500 hover:bg-gray-100 px-8 py-6 text-lg">
-                                    Book Jeddah Taxi Online
+                                <Button size="lg" className="bg-white text-slate-500 hover:bg-gray-100 px-8 py-6 text-lg">
+                                    Reserve Your Jeddah Chauffeur Now
                                 </Button>
                             </Link>
-                            <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer">
-                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-500 px-8 py-6 text-lg">
+                            <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Jeddah." target="_blank" rel="noopener noreferrer">
+                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-500 px-8 py-6 text-lg">
                                     <MessageCircle className="w-5 h-5 mr-2" />
                                     WhatsApp Us
                                 </Button>

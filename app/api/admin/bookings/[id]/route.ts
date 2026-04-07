@@ -4,20 +4,20 @@ import { NextResponse } from 'next/server';
 import { supabaseAdmin } from '@/lib/supabase-admin';
 
 export async function DELETE(
-    request: Request,
+    _request: Request,
     { params }: { params: { id: string } }
 ) {
     const id = params.id;
 
     // Validate ID format (UUID)
-    const uuidRegex = /^[Get Quotea-f]{8}-[Get Quotea-f]{4}-[Get Quotea-f]{4}-[Get Quotea-f]{4}-[Get Quotea-f]{12}$/i;
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
     if (!uuidRegex.test(id)) {
         return NextResponse.json({ error: 'Invalid booking ID format' }, { status: 400 });
     }
 
     try {
         // Verify authentication via Supabase session cookie
-        const cookieStore = await cookies();
+        const cookieStore = cookies();
         const supabase = createServerClient(
             process.env.NEXT_PUBLIC_SUPABASE_URL!,
             process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,

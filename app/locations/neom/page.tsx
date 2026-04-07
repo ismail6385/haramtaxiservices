@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -53,11 +53,11 @@ export default function NeomLocationPage() {
     const faqs = [
         {
             question: "How far is The Line from NEOM Bay Airport?",
-            answer: "The Line is a vast development, but the main access points are reachable within a reasonable time from NEOM Bay Airport via our private transfers."
+            answer: "The Line is a vast development, but the main access points are reachable within a estimated time from NEOM Bay Airport via our private transfers."
         },
         {
             question: "Do you offer rides to Tabuk?",
-            answer: "Yes, we provide comfortable intercity taxi services to Tabuk city and airport, which is about 1.adequate time away."
+            answer: "Yes, we provide comfortable intercity taxi services to Tabuk city and airport, which is about 1.5 to 2 hours away."
         },
         {
             question: "Is transport available to Trojena?",
@@ -74,7 +74,7 @@ export default function NeomLocationPage() {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service NEOM",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+966569487569",
+        "telephone": "+996575806733",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "NEOM Community 1",
@@ -109,8 +109,9 @@ export default function NeomLocationPage() {
                     <Image
                         src="/neom-future.webp"
                         alt="Taxi Service in NEOM and The Line"
-                        fill
-                        className="object-cover"
+                        width={1200}
+                        height={500}
+                        className="w-full h-full object-cover"
                         priority
                     />
                 </div>
@@ -129,7 +130,7 @@ export default function NeomLocationPage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Neom." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Neom." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -146,8 +147,8 @@ export default function NeomLocationPage() {
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in NEOM</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         A private transfer from NEOM Bay Airport (NUM) starting from <span className="font-bold text-blue-700">Get Quote</span>.
-                        Trips to Tabuk are typically <span className="font-bold text-blue-700">Get Quote</span>.
-                        Daily chauffeur services for project sites start at <span className="font-bold text-blue-700">Get Quote/day</span>.
+                        Trips to Tabuk are typically <span className="font-bold text-blue-700">affordable rates</span>.
+                        Daily chauffeur services for project sites start at <span className="font-bold text-blue-700">fixed rates/day</span>.
                     </p>
                 </div>
             </section>
@@ -190,7 +191,7 @@ export default function NeomLocationPage() {
 
                             {/* Services List */}
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Services</h2>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-8">Neom Taxi Services</h2>
                                 <div className="space-y-4">
                                     {services.map((service, index) => (
                                         <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -202,7 +203,7 @@ export default function NeomLocationPage() {
                                                 <p className="text-gray-600 mb-3">{service.description}</p>
                                                 {service.href && (
                                                     <Link href={service.href} className="text-blue-600 font-semibold text-sm hover:underline flex items-center gap-1">
-                                                        Booking Details <ArrowRight className="w-3 h-3" />
+                                                        Booking {service.name} Details <ArrowRight className="w-3 h-3" />
                                                     </Link>
                                                 )}
                                             </div>
@@ -240,7 +241,7 @@ export default function NeomLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/966569487569?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Neom." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Neom." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
                                             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
@@ -285,7 +286,7 @@ export default function NeomLocationPage() {
                                 Book Now
                             </Button>
                         </Link>
-                        <a href="https://wa.me/966569487569">
+                        <a href="https://wa.me/996575806733">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
                                 WhatsApp Booking
                             </Button>
@@ -296,4 +297,6 @@ export default function NeomLocationPage() {
         </div>
     );
 }
+
+
 

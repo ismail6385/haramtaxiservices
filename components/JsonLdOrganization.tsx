@@ -21,7 +21,7 @@ export default function JsonLdOrganization() {
         ],
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+966 56 948 7569",
+            "telephone": "+996 57 580 6733",
             "contactType": "customer service",
             "areaServed": "SA",
             "availableLanguage": ["en", "ar", "ur"]

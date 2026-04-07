@@ -83,11 +83,11 @@ function ConfirmationContent() {
 
                                 {/* Step 3 */}
                                 <div className="flex gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-500 flex items-center justify-center border border-amber-500/30 animate-pulse">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-yellow-500/20 text-yellow-500 flex items-center justify-center border border-amber-500/30 animate-pulse">
                                         <MessageCircle className="w-4 h-4" />
                                     </div>
                                     <div>
-                                        <h4 className="text-amber-400 font-medium">Driver Assignment</h4>
+                                        <h4 className="text-yellow-400 font-medium">Driver Assignment</h4>
                                         <p className="text-neutral-400 text-sm">We will contact you shortly via WhatsApp to arrange the pickup.</p>
                                     </div>
                                 </div>
@@ -98,12 +98,12 @@ function ConfirmationContent() {
                         <div className="mb-10 p-4 rounded-lg bg-gradient-to-br from-neutral-800/50 to-neutral-900/50 border border-white/5">
                             <p className="text-neutral-400 text-sm mb-3">Questions? Contact Admin Support</p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
-                                <a href="mailto:umrahtaxi22@gmail.com" className="flex items-center gap-2 text-white hover:text-amber-400 transition-colors">
+                                <a href="mailto:umrahtaxi22@gmail.com" className="flex items-center gap-2 text-white hover:text-yellow-400 transition-colors">
                                     <Mail className="w-4 h-4" />
                                     Admin: umrahtaxi22@gmail.com
                                 </a>
                                 <span className="hidden sm:inline text-neutral-600">|</span>
-                                <a href="https://wa.me/966569487569" className="flex items-center gap-2 text-white hover:text-green-400 transition-colors">
+                                <a href="https://wa.me/996575806733" className="flex items-center gap-2 text-white hover:text-green-400 transition-colors">
                                     <MessageSquare className="w-4 h-4" />
                                     WhatsApp Support
                                 </a>

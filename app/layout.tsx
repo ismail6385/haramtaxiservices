@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Montserrat, Cormorant_Garamond } from 'next/font/google';
 import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,16 +12,16 @@ import JsonLdLocalBusiness from '@/components/JsonLdLocalBusiness';
 import JsonLdService from '@/components/JsonLdService';
 
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap', weight: ['400', '500', '600', '700', '800', '900'] });
+const inter = Montserrat({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+const playfair = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-playfair', display: 'swap', weight: ['400', '500', '600', '700'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://haramtaxiservice.com'),
   title: {
-    default: 'No 1. Private Umrah Taxi Service in Saudi Arabia | Jeddah to Makkah, Madinah',
-    template: '%s | Haram Taxi Service'
+    default: 'Reliable Taxi & Travel Agency | Complete Saudi Arabia Transport',
+    template: '%s | Haram Taxi'
   },
-  description: 'Book the most reliable Umrah taxi service in Saudi Arabia. #1 Private Cab for Jeddah to Makkah, Makkah to Madinah, and Airport Transfers. 24/7 VIP Service with GMC, Camry, Staria. Instant WhatsApp Booking!',
+  description: 'Book the most trusted transportation service in Saudi Arabia. Reliable private transport for Jeddah, Makkah, Madinah, Airport Transfers and Border Crossings. 24/7 Professional Travel Agency.',
   keywords: [
     // Primary Local SEO Keywords
     'online taxi service Saudi Arabia', 'taxi service Makkah', 'taxi service Madinah', 'taxi service Jeddah',
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
     // Umrah & Pilgrim Specific
     'affordable private umrah taxi', 'book private taxi for umrah', 'private taxi for umrah pilgrims',
-    'taxi for umrah', 'private taxi for umrah', 'umrah taxi service near me', 'best umrah taxi service',
-    'private car service for umrah', 'umrah taxi service', 'private umrah taxi', 'umrah taxi service in saudi arabia',
-    'umrah taxi services', 'umrah taxis', 'luxury umrah cab',
+    'taxi for umrah', 'private taxi for umrah', 'umrah chauffeur service near me', 'best umrah chauffeur service',
+    'private car service for umrah', 'umrah chauffeur service', 'private umrah taxi', 'umrah chauffeur service in saudi arabia',
+    'umrah chauffeur services', 'umrah taxis', 'luxury umrah cab',
 
     // Fare & Pricing Keywords
     'madinah to makkah taxi fare', 'taxi fare from madinah to makkah', 'taxi fare from medina to mecca',
@@ -55,21 +55,21 @@ export const metadata: Metadata = {
     'makkah to jeddah airport taxi', 'jeddah airport to madinah taxi', 'jeddah airport to haram taxi fare',
 
     // Service Type & Vehicle Keywords
-    'online taxi booking Saudi Arabia', '24/7 taxi service', 'professional taxi drivers',
+    'online taxi booking Saudi Arabia', '24/7 chauffeur service', 'professional taxi drivers',
     'VIP taxi Saudi Arabia', 'GMC Yukon taxi Makkah', 'Toyota Camry taxi Saudi Arabia', 'staria taxi',
     'coaster bus for rent', 'rent coaster bus', 'bus coaster for rent', 'family taxi in makkah',
     'chauffeur service in mecca', 'cab service in makkah', 'online taxi in makkah',
-    'best taxi service in makkah', 'online taxi madinah to makkah',
+    'best chauffeur service in makkah', 'online taxi madinah to makkah',
 
     // General Saudi Taxi & Service Keywords
-    'taxi in saudi arabia', 'taxi services in saudi arabia', 'ksa taxi service',
-    'saudi taxi', 'taxi saudi arabia', 'taxi saudi', 'taxi company', 'best taxi service in saudi arabia',
-    'taxi service ksa', 'saudi taxi number', 'cab service in saudi arabia',
-    'online taxi service in saudi arabia', 'taxi service', 'taxis service',
-    'saudi taxi service', 'taxi service saudi arabia', 'ksa taxi', 'saudi taxi companies',
+    'taxi in saudi arabia', 'chauffeur services in saudi arabia', 'ksa chauffeur service',
+    'saudi taxi', 'taxi saudi arabia', 'taxi saudi', 'taxi company', 'best chauffeur service in saudi arabia',
+    'chauffeur service ksa', 'saudi taxi number', 'cab service in saudi arabia',
+    'online chauffeur service in saudi arabia', 'chauffeur service', 'taxis service',
+    'saudi chauffeur service', 'chauffeur service saudi arabia', 'ksa taxi', 'saudi taxi companies',
     'saudi taxi company', 'taxi companies in saudi arabia', 'taxi company in saudi arabia',
-    'taxis in saudi arabia', 'taxi services', 'taxi', 'reliable taxi service',
-    'private taxi service in riyadh', 'online taxi in saudi arabia', 'saudi taxi booking',
+    'taxis in saudi arabia', 'chauffeur services', 'taxi', 'reliable chauffeur service',
+    'private chauffeur service in riyadh', 'online taxi in saudi arabia', 'saudi taxi booking',
     'online taxi saudi arabia', 'saudi online taxi', 'taxi business in saudi arabia',
     'saudi airport taxi', 'saudi cab', 'cab in saudi', 'taxi in saudi', 'saudi taxis',
     'how to book taxi in saudi arabia', 'saudi cab service', 'saudi arabia taxi company',
@@ -146,42 +146,42 @@ export const metadata: Metadata = {
     'umrah taxi jeedah', 'umrah airport transfer', 'jeddah to makkah coaster', 'makkah to jeddah coaster',
     'gmc taxi', 'taxi near me', 'umrah taxi madinah', 'ksa taxi', 'medina airport car service',
     'taxi cab companies near me', 'chauffeur from jeddah to madinah', 'jeddah chauffeur service',
-    'taxi service near me', 'chauffeur service jeddah', 'umrah taxi makkah', 'taxi ksa',
+    'chauffeur service near me', 'chauffeur service jeddah', 'umrah taxi makkah', 'taxi ksa',
     'madinah airport taxi', 'how to perform umrah', 'holy places during umrah', 'mosque quba',
     'madinah jeddah umrah transport', 'chauffeur services', 'makkah hotel to madinah hotel taxi',
-    'jeddah airport to makkah taxi fare', 'madinah taxi service', 'holy places umrah',
+    'jeddah airport to makkah taxi fare', 'madinah chauffeur service', 'holy places umrah',
     'chauffeur service in jeddah', 'to performed umrah', 'best shawarma in makkah',
-    'taxi company near me', 'taxi in ksa', 'cheap taxi service in makkah', 'jeddah to makkah staria',
+    'taxi company near me', 'taxi in ksa', 'cheap chauffeur service in makkah', 'jeddah to makkah staria',
     'jeddah to makkah', 'madinah to jeddah taxi', 'vip airport transfers in mecca',
     'dammam chauffeur service', 'jeddah airport to makkah car service', 'madinah taxi',
     'chauffeur service in dammam', 'how is umrah performed', 'uber from jeddah airport to makkah',
     'jeddah airport to makkah bus', 'umrah ziarah taxi', 'performing umrah', 'hyundai starex 7 seater',
-    'uber jeddah airport to makkah', 'madina taxi service', 'uber jeddah to makkah',
+    'uber jeddah airport to makkah', 'madina chauffeur service', 'uber jeddah to makkah',
     'jeddah airport to makkah bus fare', 'mecca chauffeur service', 'private taxi near me',
-    'taxi service dammam', 'cab service near me', 'first mosque in medina',
+    'chauffeur service dammam', 'cab service near me', 'first mosque in medina',
     'jeddah to madinah taxi cost', 'jeddah airport to mecca by bus', 'jeddah airport to mecca taxi fare',
     'chauffeur service mecca', 'how do you perform umrah', 'saptco jeddah airport to makkah',
     'taxi cab service near me', 'chauffeur service dammam', 'jeddah airport to makkah taxi',
     'madinah to jeddah airport taxi fare', 'cab service', 'jeddah airport to makkah distance',
     'riyadh to jeddah taxi', 'saudi sim for umrah', 'saptco madinah to makkah fare',
-    'cab services in saudi arabia', 'taxi services near me', 'near me taxi service',
-    'pick and drop jeddah', 'taxi services in jeddah', 'taxi fare jeddah airport to makkah 2025 price sar',
-    'umrah taxi services in saudi arabia', 'makkah madina taxi service', 'mecca taxi service',
-    'where was the first mosque built', 'taxis in jeddah', 'makkah to madinah taxi service',
+    'cab services in saudi arabia', 'chauffeur services near me', 'near me chauffeur service',
+    'pick and drop jeddah', 'chauffeur services in jeddah', 'taxi fare jeddah airport to makkah 2025 price sar',
+    'umrah chauffeur services in saudi arabia', 'makkah madina chauffeur service', 'mecca chauffeur service',
+    'where was the first mosque built', 'taxis in jeddah', 'makkah to madinah chauffeur service',
     'first mosque built in islam', 'premium transportation in saudi arabia', 'online taxi booking near me',
     'makkah to jeddah taxi fare', 'taxi from jeddah airport to makkah', 'grand mosque saudi',
     'private transfer from jeddah to madinah', 'jeddah to mecca', 'hajj umrah taxi',
-    'madinah to makkah taxi services', 'mekkah foul', 'makkah shawarma', 'alula taxi service',
+    'madinah to makkah chauffeur services', 'mekkah foul', 'makkah shawarma', 'alula chauffeur service',
     'alula taxi', 'taxi van', 'how do i get a ride from medina airport?', 'airport pickup for umrah pilgrims',
-    'cab services near me', 'chacha taxi service', 'taxi services in riyadh', 'taxi services in makkah',
+    'cab services near me', 'chacha chauffeur service', 'chauffeur services in riyadh', 'chauffeur services in makkah',
     'taxi near me now', 'uber from jeddah to makkah', 'nearest cab service', 'jeddah taxi company',
     'first mosque in makkah', 'prophet\'s mosque', 'jeddah to makkah taxi fare',
-    'saudi arabia tourist dress code', 'cheap taxi service near me', 'saudi arabia dress code',
-    'cheap cab service near me', 'jeddah airport to makkah taxi service', 'umrah taxi service online',
+    'saudi arabia tourist dress code', 'cheap chauffeur service near me', 'saudi arabia dress code',
+    'cheap cab service near me', 'jeddah airport to makkah chauffeur service', 'umrah chauffeur service online',
     'abha cable car tickets price', 'from jeddah to makkah', 'jeddah to makkah taxi',
     'best shawarma makkah', 'shawarma makkah latest', 'private taxi booking',
-    'is uber available in madinah airport?', 'online taxi service in riyadh', 'mobily umrah package',
-    'near taxi service', 'makkah radio taxi', 'top rated airport transfer services near me',
+    'is uber available in madinah airport?', 'online chauffeur service in riyadh', 'mobily umrah package',
+    'near chauffeur service', 'makkah radio taxi', 'top rated airport transfer services near me',
     'taxis near me', 'near me taxi', 'premium transportation services in saudi arabia',
     'makkah taxi company', 'the first mosque in islam', 'umrah cabs', 'taxi stand near me',
     'cab services', 'cab number near me', 'taxi umrah',
@@ -234,8 +234,8 @@ export const metadata: Metadata = {
     maximumScale: 5,
   },
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#0f766e' }, // Brand Teal
-    { media: '(prefers-color-scheme: dark)', color: '#0f766e' },
+    { media: '(prefers-color-scheme: light)', color: '#001F3F' }, // Brand Navy
+    { media: '(prefers-color-scheme: dark)', color: '#001F3F' },
   ],
   manifest: '/manifest.json',
 };

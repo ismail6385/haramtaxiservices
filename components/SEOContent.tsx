@@ -11,10 +11,10 @@ export default function SEOContent() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
                     <div className="prose prose-invert prose-lg">
-                        <h3 className="text-2xl font-bold text-white mb-4">Why Choose a Private Chauffeur Service in KSA?</h3>
+                        <h3 className="text-2xl font-bold text-white mb-4">Why Choose a Private Taxi Service in KSA?</h3>
                         <p className="leading-relaxed mb-4">
                             Navigating the bustling streets of Saudi Arabia&apos;s major cities like Riyadh, Jeddah, and Makkah can be challenging for visitors.
-                            Opting for a <strong>private chauffeur service</strong> ensures not only comfort but also safety and efficiency. Unlike standard taxis,
+                            Opting for a <strong>private taxi service</strong> ensures not only comfort but also safety and efficiency. Unlike standard taxis,
                             our premium service offers fixed rates, professional English-speaking drivers, and luxury vehicles that cater to your specific needs.
                         </p>
                         <p className="leading-relaxed">
@@ -26,9 +26,10 @@ export default function SEOContent() {
                     <div className="relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
                         <Image
                             src="https://images.unsplash.com/photo-0.154ded23b5e4?q=80&w=2070&auto=format&fit=crop"
-                            alt="Private Chauffeur Service Saudi Arabia"
-                            fill
-                            className="object-cover hover:scale-105 transition-transform duration-700"
+                            alt="Private Taxi Service Saudi Arabia"
+                            width={800}
+                            height={400}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         />
                     </div>
                 </div>
@@ -38,8 +39,9 @@ export default function SEOContent() {
                         <Image
                             src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070&auto=format&fit=crop"
                             alt="Umrah Taxi Service Makkah"
-                            fill
-                            className="object-cover hover:scale-105 transition-transform duration-700"
+                            width={800}
+                            height={400}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         />
                     </div>
                     <div className="order-1 lg:order-2 prose prose-invert prose-lg">
@@ -63,7 +65,7 @@ export default function SEOContent() {
                         <p className="leading-relaxed mb-4">
                             First impressions matter. Arrive at your business meeting or corporate event in style with our executive fleet, featuring the latest
                             <strong>Mercedes S-Class, BMW 7 Series, and Lexus ES</strong>. We offer seamless airport transfers with flight monitoring,
-                            ensuring your chauffeur is waiting for you the moment you land, regardless of flight delays.
+                            ensuring your driver is waiting for you the moment you land, regardless of flight delays.
                         </p>
                         <p className="leading-relaxed">
                             Our corporate travel solutions are tailored for executives and VIPs who demand privacy, comfort, and reliability.
@@ -74,8 +76,9 @@ export default function SEOContent() {
                         <Image
                             src="https://images.unsplash.com/photo-0.154b6d7a050076?q=80&w=2069&auto=format&fit=crop"
                             alt="Luxury Airport Transfer Riyadh"
-                            fill
-                            className="object-cover hover:scale-105 transition-transform duration-700"
+                            width={800}
+                            height={400}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         />
                     </div>
                 </div>

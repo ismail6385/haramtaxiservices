@@ -13,7 +13,7 @@ export default function DistancePage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        Travel Distance <span className="text-teal-600">Calculator</span>
+                        Travel Distance <span className="text-slate-600">Calculator</span>
                     </h1>
                 </div>
                 <div className="flex justify-center">

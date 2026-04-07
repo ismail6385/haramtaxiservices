@@ -14,8 +14,9 @@ export default function VideoTour() {
                 <Image
                     src="https://images.unsplash.com/photo-0.154d516935?q=80&w=2070&auto=format&fit=crop"
                     alt="Luxury Interior"
-                    fill
-                    className="object-cover"
+                    width={1920}
+                    height={600}
+                    className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-white/60"></div>
             </div>
