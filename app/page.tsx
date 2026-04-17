@@ -73,7 +73,7 @@ export default async function Home() {
   const faqs = [
     {
       question: "How do I book a taxi from Makkah to Madinah?",
-      answer: "You can book instantly using our online booking form or via WhatsApp at +996 57 580 6733. We offer fixed rates starting from 400 SAR for Makkah to Madinah transfers."
+      answer: "You can book instantly using our online booking form or via WhatsApp at +996 57 580 6733. We offer guaranteed fixed rates — contact us for a personalised quote."
     },
     {
       question: "Are your Jeddah Airport transfer rates fixed?",
@@ -227,9 +227,9 @@ export default async function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Taxi from Makkah to Madinah", p: "Starts 400 SAR", d: "Standard 450km transit via Haramain Highway in premium SUV or Van.", tags: ["4.5 Hours", "Door-to-door", "Meet & Greet"], link: "/routes/makkah-to-madinah-taxi" },
-              { title: "Jeddah Airport to Makkah Taxi", p: "Starts 150 SAR", d: "Direct KAIA Terminal transfer with flight tracking and 60min free waiting.", tags: ["VIP Pickup", "Fixed Tolls", "Luggage Help"], link: "/routes/jeddah-airport-to-makkah-taxi" },
-              { title: "VIP Madinah City Ziyarat", p: "Starts 200 SAR", d: "Visit Uhud, Quba, and 7 Mosques with our expert bilingual guides.", tags: ["Knowledgeable", "Hydration Incl.", "Flexible Time"], link: "/services/ziyarat" }
+              { title: "Taxi from Makkah to Madinah", p: "Fixed Rate • Get Quote", d: "Standard 450km transit via Haramain Highway in premium SUV or Van.", tags: ["4.5 Hours", "Door-to-door", "Meet & Greet"], link: "/routes/makkah-to-madinah-taxi" },
+              { title: "Jeddah Airport to Makkah Taxi", p: "Fixed Rate • Get Quote", d: "Direct KAIA Terminal transfer with flight tracking and 60min free waiting.", tags: ["VIP Pickup", "Fixed Tolls", "Luggage Help"], link: "/routes/jeddah-airport-to-makkah-taxi" },
+              { title: "VIP Madinah City Ziyarat", p: "Fixed Rate • Get Quote", d: "Visit Uhud, Quba, and 7 Mosques with our expert bilingual guides.", tags: ["Knowledgeable", "Hydration Incl.", "Flexible Time"], link: "/services/ziyarat" }
             ].map((service, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-3xl border border-white/10 p-12 rounded-[4rem] hover:bg-brand-gold group transition-all duration-500 cursor-pointer">
                 <h3 className="text-3xl font-black text-white group-hover:text-brand-navy mb-4 leading-tight">{service.title}</h3>

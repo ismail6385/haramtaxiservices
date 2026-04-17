@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Calendar, Users, ArrowRight, Clock, Star, ShieldCheck, Tag } from 'lucide-react';
 import Link from 'next/link';
@@ -10,18 +10,6 @@ export default function HeroBookingForm() {
     const [dropoff, setDropoff] = useState('Makkah Hotel');
     const [pax, setPax] = useState('1-4 Pax');
 
-    const estimatedFare = useMemo(() => {
-        const p = pickup.toLowerCase();
-        const d = dropoff.toLowerCase();
-        
-        if ((p.includes('jeddah') && d.includes('makkah')) || (d.includes('jeddah') && p.includes('makkah'))) {
-            return pax === '1-4 Pax' ? '200' : '350';
-        }
-        if ((p.includes('makkah') && d.includes('madinah')) || (d.includes('makkah') && p.includes('madinah'))) {
-            return pax === '1-4 Pax' ? '400' : '650';
-        }
-        return null;
-    }, [pickup, dropoff, pax]);
 
     const quickRoutes = [
         { p: 'Jeddah Airport', d: 'Makkah Hotel' },
@@ -104,7 +92,7 @@ export default function HeroBookingForm() {
                     <Button asChild className="w-full h-20 lg:px-12 bg-brand-navy hover:bg-brand-navy-light text-white font-black text-xl rounded-2xl shadow-2xl transition-all hover:scale-[1.05] active:scale-95 group relative overflow-hidden">
                         <Link href={`/booking?pickup=${pickup}&dropoff=${dropoff}&pax=${pax}`}>
                             <span className="relative z-10 flex items-center gap-3">
-                                {estimatedFare ? 'BOOK FOR ' + estimatedFare + ' SAR' : 'GET QUOTE'}
+                                GET QUOTE
                                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                             </span>
                         </Link>
@@ -123,13 +111,10 @@ export default function HeroBookingForm() {
                     </div>
                 </div>
                 
-                {estimatedFare && (
-                    <div className="bg-brand-gold/10 px-6 py-3 rounded-2xl border-2 border-brand-gold/30 animate-in zoom-in-95">
-                        <span className="text-xs font-black text-brand-navy uppercase tracking-widest block">Estimated Fixed Fare</span>
-                        <span className="text-3xl font-black text-brand-navy">{estimatedFare} SAR</span>
-                        <span className="text-[9px] font-bold text-gray-500 ml-2 uppercase">All taxes included</span>
-                    </div>
-                )}
+                <div className="bg-brand-gold/10 px-6 py-3 rounded-2xl border-2 border-brand-gold/30">
+                    <span className="text-xs font-black text-brand-navy uppercase tracking-widest block">Fixed Rate Guaranteed</span>
+                    <span className="text-sm font-bold text-brand-navy">Contact us via WhatsApp for your personalised quote</span>
+                </div>
             </div>
         </div>
     );

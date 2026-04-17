@@ -21,37 +21,7 @@ export default function UmrahEstimator() {
         if (groupSize === 'medium') vehicle = 'GMC Yukon';
         if (groupSize === 'large') vehicle = 'Hiace';
 
-        // Base costs per leg (Approximations based on known rates)
-        const RATE_MAP: any = {
-            'Sedan': { airport: 200, intercity: 450, ziyarat: 150 },
-            'GMC Yukon': { airport: 350, intercity: 650, ziyarat: 250 },
-            'Hiace': { airport: 400, intercity: 700, ziyarat: 300 },
-        };
-
-        const rates = RATE_MAP[vehicle];
-        let total = 0;
-
-        if (route === 'full') {
-            // Jed->Mak (Airport), Mak->Mad (Intercity), Mad->Jed (Intercity)
-            total = rates.airport + rates.intercity * 2;
-        } else if (route === 'makkah_only') {
-            // Jed->Mak (Airport), Mak->Jed (Airport)
-            total = rates.airport * 2;
-        } else if (route === 'madinah_first') {
-            // Mad->Mak (Intercity), Mak->Jed (Airport) -- Arrival pickup assumed included or separate?
-            // Let's assume Airport pickup at Madinah (similar to Jeddah rate usually or slightly less? let's use airport rate)
-            // Mad Airport->Mad Hotel (Airport cost?), Mad->Mak (Intercity), Mak->Jed Airport (Airport cost)
-            total = rates.airport * 2 + rates.intercity;
-        }
-
-        if (ziyarat) {
-            // Add Ziyarat for each major city visited
-            if (route === 'full') total += rates.ziyarat * 2; // Mak + Mad
-            if (route === 'makkah_only') total += rates.ziyarat; // Mak
-            if (route === 'madinah_first') total += rates.ziyarat * 2; // Mad + Mak
-        }
-
-        setEstimate(total);
+        setEstimate(1);
     };
 
     return (
@@ -121,9 +91,17 @@ export default function UmrahEstimator() {
 
                 {estimate !== null && (
                     <div className="bg-slate-900 text-white p-6 rounded-xl text-center animate-in zoom-in-95">
-                        <div className="text-slate-200 text-sm mb-1">Estimated Total Transport Cost</div>
-                        <div className="text-4xl font-bold mb-2">SAR {estimate}</div>
-                        <p className="text-xs text-slate-300/80">Includes fuel, driver, and tolls. No hidden fees.</p>
+                        <div className="text-slate-200 text-sm mb-1">Your Trip Summary is Ready</div>
+                        <div className="text-xl font-bold mb-3">Contact us for your fixed quote</div>
+                        <a
+                            href={`https://wa.me/923080628195?text=${encodeURIComponent('Salam, I would like a quote for my Umrah transport.')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-[#25D366] text-white font-black px-6 py-3 rounded-xl text-sm hover:bg-[#20BD5A] transition-colors"
+                        >
+                            WhatsApp Us for Quote
+                        </a>
+                        <p className="text-xs text-slate-300/80 mt-3">Fixed rates • No hidden fees • Instant confirmation</p>
                     </div>
                 )}
             </div>

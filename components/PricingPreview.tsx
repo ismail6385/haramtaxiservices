@@ -13,15 +13,15 @@ const pricingData = {
         capacity: "4 Pax",
         luggage: "2 Bags",
         idealFor: "Couples & Business",
-        startPrice: "100",
+        startPrice: "",
         icon: Car,
         rates: [
-            { route: "Jeddah Airport to Makkah", price: "200 SAR", popular: true },
-            { route: "Makkah to Madinah Taxi", price: "400 SAR" },
-            { route: "Madinah Airport to Madinah Hotel", price: "100 SAR" },
-            { route: "Riyadh Airport Transfer", price: "150 SAR" },
-            { route: "Dammam City Ride", price: "80 SAR" },
-            { route: "Ziyarat Makkah (4 Hours)", price: "250 SAR" },
+            { route: "Jeddah Airport to Makkah", price: "Get Quote", popular: true },
+            { route: "Makkah to Madinah Taxi", price: "Get Quote" },
+            { route: "Madinah Airport to Madinah Hotel", price: "Get Quote" },
+            { route: "Riyadh Airport Transfer", price: "Get Quote" },
+            { route: "Dammam City Ride", price: "Get Quote" },
+            { route: "Ziyarat Makkah (4 Hours)", price: "Get Quote" },
         ]
     },
     staria: {
@@ -30,15 +30,15 @@ const pricingData = {
         capacity: "7 Pax",
         luggage: "5 Bags",
         idealFor: "Families & Groups",
-        startPrice: "150",
+        startPrice: "",
         icon: Users,
         rates: [
-            { route: "Jeddah Airport to Makkah", price: "350 SAR", popular: true },
-            { route: "Makkah to Madinah Taxi", price: "600 SAR" },
-            { route: "Madinah Airport to Madinah Hotel", price: "150 SAR" },
-            { route: "Riyadh Airport Transfer", price: "250 SAR" },
-            { route: "NEOM & Project Sites", price: "800 SAR" },
-            { route: "Ziyarat Madinah (4 Hours)", price: "350 SAR" },
+            { route: "Jeddah Airport to Makkah", price: "Get Quote", popular: true },
+            { route: "Makkah to Madinah Taxi", price: "Get Quote" },
+            { route: "Madinah Airport to Madinah Hotel", price: "Get Quote" },
+            { route: "Riyadh Airport Transfer", price: "Get Quote" },
+            { route: "NEOM & Project Sites", price: "Get Quote" },
+            { route: "Ziyarat Madinah (4 Hours)", price: "Get Quote" },
         ]
     },
     gmc: {
@@ -47,15 +47,15 @@ const pricingData = {
         capacity: "7 Pax",
         luggage: "6 Bags",
         idealFor: "VIP & Executives",
-        startPrice: "250",
+        startPrice: "",
         icon: Briefcase,
         rates: [
-            { route: "Jeddah Airport to Makkah (VIP)", price: "500 SAR", popular: true },
-            { route: "Makkah to Madinah (VIP)", price: "900 SAR" },
-            { route: "Riyadh Corporate Full Day", price: "1200 SAR" },
-            { route: "NEOM Business Delegation", price: "1500 SAR" },
-            { route: "Border Crossing (Bahrain)", price: "1000 SAR" },
-            { route: "VIP Ziyarat Tour", price: "600 SAR" },
+            { route: "Jeddah Airport to Makkah (VIP)", price: "Get Quote", popular: true },
+            { route: "Makkah to Madinah (VIP)", price: "Get Quote" },
+            { route: "Riyadh Corporate Full Day", price: "Get Quote" },
+            { route: "NEOM Business Delegation", price: "Get Quote" },
+            { route: "Border Crossing (Bahrain)", price: "Get Quote" },
+            { route: "VIP Ziyarat Tour", price: "Get Quote" },
         ]
     },
     hiace: {
@@ -64,14 +64,14 @@ const pricingData = {
         capacity: "11 Pax",
         luggage: "10 Bags",
         idealFor: "Large Pilgrim Groups",
-        startPrice: "200",
+        startPrice: "",
         icon: Users,
         rates: [
-            { route: "Jeddah Airport to Makkah (Group)", price: "450 SAR", popular: true },
-            { route: "Makkah to Madinah (Group)", price: "800 SAR" },
-            { route: "Full Day Group Ziyarat", price: "700 SAR" },
-            { route: "Airport to City Group Transfer", price: "300 SAR" },
-            { route: "Corporate Event Transport", price: "1000 SAR" },
+            { route: "Jeddah Airport to Makkah (Group)", price: "Get Quote", popular: true },
+            { route: "Makkah to Madinah (Group)", price: "Get Quote" },
+            { route: "Full Day Group Ziyarat", price: "Get Quote" },
+            { route: "Airport to City Group Transfer", price: "Get Quote" },
+            { route: "Corporate Event Transport", price: "Get Quote" },
             { route: "Hajj/Umrah Group Logistics", price: "Get Quote" },
         ]
     }
@@ -124,8 +124,8 @@ export default function PricingPreview() {
                             <div className="inline-block px-4 py-1.5 bg-brand-gold text-brand-navy text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-4">
                                 {activeData.type}
                             </div>
-                            <div className="text-4xl font-black text-white mt-4">
-                               <span className="text-brand-gold">From</span> {activeData.startPrice} <span className="text-sm opacity-60">SAR</span>
+                            <div className="text-2xl font-black text-brand-gold mt-4 uppercase tracking-widest">
+                               Fixed Rate • On Request
                             </div>
                         </div>
                         <div className="p-10 space-y-6">
@@ -181,7 +181,7 @@ export default function PricingPreview() {
                                         </div>
                                         <div className="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-10">
                                             <div className="text-right">
-                                                <span className="font-black text-3xl text-brand-navy">{rate.price}</span>
+                                                <span className="font-black text-xl text-brand-gold">{rate.price}</span>
                                                 <p className="text-[10px] text-gray-400 font-bold">FIXED RATE</p>
                                             </div>
                                             <Link href="/booking">
@@ -203,7 +203,7 @@ export default function PricingPreview() {
                                <p className="text-sm font-bold text-gray-500">Joined by 250+ passengers this week</p>
                             </div>
                             <Link href="/pricing" className="text-brand-navy font-black hover:text-brand-navy-light flex items-center gap-3 text-sm group tracking-widest uppercase">
-                                VIEW ALL 50+ ROUTES & RATES
+                                VIEW ALL 50+ ROUTES
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform shadow-sm" />
                             </Link>
                         </div>
