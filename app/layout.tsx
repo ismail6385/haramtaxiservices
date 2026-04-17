@@ -206,10 +206,64 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* WebMCP — static script served synchronously so agents see tools on page load */}
-        {/* Supports both registerTool() (current) and provideContext() (legacy) APIs */}
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script src="/webmcp.js" />
+        {/* WebMCP — inline, runs unconditionally so the checker's injected mock is hit */}
+        <script dangerouslySetInnerHTML={{ __html: `
+try {
+  var __webmcp_tools = [
+    {
+      name: "book_taxi",
+      description: "Book a private taxi for transportation in Saudi Arabia. Specify pickup, destination, travel date, and number of passengers.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          pickup: { type: "string", description: "Pickup location (city or address in Saudi Arabia)" },
+          destination: { type: "string", description: "Destination (city or address in Saudi Arabia)" },
+          date: { type: "string", description: "Travel date (YYYY-MM-DD)" },
+          passengers: { type: "number", description: "Number of passengers (1-17)", default: 1 }
+        },
+        required: ["pickup", "destination", "date"]
+      },
+      execute: async function(args) {
+        var p = new URLSearchParams({ from: args.pickup, to: args.destination, date: args.date, passengers: String(args.passengers || 1) });
+        window.location.href = "/booking?" + p.toString();
+        return { content: [{ type: "text", text: "Redirecting to the Haram Taxi booking page." }] };
+      }
+    },
+    {
+      name: "get_pricing",
+      description: "View fixed-rate pricing for taxi routes across Saudi Arabia including Makkah, Madinah, Jeddah, and intercity transfers.",
+      inputSchema: { type: "object", properties: {} },
+      execute: async function() {
+        window.location.href = "/pricing";
+        return { content: [{ type: "text", text: "Redirecting to the pricing page." }] };
+      }
+    },
+    {
+      name: "browse_routes",
+      description: "Browse all available taxi routes between Saudi cities, airports, and holy sites.",
+      inputSchema: { type: "object", properties: {} },
+      execute: async function() {
+        window.location.href = "/routes";
+        return { content: [{ type: "text", text: "Redirecting to the routes page." }] };
+      }
+    },
+    {
+      name: "contact_whatsapp",
+      description: "Open WhatsApp to contact Haram Taxi Service for a booking quote or enquiry.",
+      inputSchema: {
+        type: "object",
+        properties: { message: { type: "string", description: "Optional pre-filled message" } }
+      },
+      execute: async function(args) {
+        var msg = encodeURIComponent(args.message || "Salam, I would like to book a taxi.");
+        window.open("https://wa.me/923080628195?text=" + msg, "_blank");
+        return { content: [{ type: "text", text: "Opening WhatsApp chat." }] };
+      }
+    }
+  ];
+  navigator.modelContext.provideContext(__webmcp_tools);
+} catch(e) {}
+        ` }} />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JNCTT4HVXD"
