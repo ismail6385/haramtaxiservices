@@ -10,6 +10,9 @@ import JsonLdBreadcrumb from '@/components/JsonLdBreadcrumb';
 import JsonLdOrganization from '@/components/JsonLdOrganization';
 import JsonLdLocalBusiness from '@/components/JsonLdLocalBusiness';
 import JsonLdService from '@/components/JsonLdService';
+import UrgencyTopBar from '@/components/UrgencyTopBar';
+import LeadCapturePopup from '@/components/LeadCapturePopup';
+import MobileBottomCTA from '@/components/MobileBottomCTA';
 
 
 const inter = Montserrat({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
@@ -113,78 +116,33 @@ export const metadata: Metadata = {
     'the great mosque mecca', 'best places in saudi arabia', 'beautiful places of saudi arabia',
     'masjid al-haram history', 'masjid a quba', 'what is the haram', 'the grand mosque in mecca',
     'first mosque in medina', 'saudi beautiful places', 'the grand mosque of mecca',
-    'masjid al-haram mecca', 'al-masjid al-haram', 'masjid al quba saudi arabia',
-    '1st mosque of islam', 'saudi arabia masjid al haram', 'where is masjid quba',
-    'masid quba', 'quba mosque medina saudi arabia', 'best places to visit in saudi arabia',
-    'masjid al-haram in mecca', 'mosque in mecca', 'masjid haram',
-    'most beautiful place in saudi arabia', 'mecca\'s grand mosque', 'first masjid in madina',
-    'first mosque in madina', 'history of masjid e quba', 'great mosque in mecca',
-    'al haram mosque mecca', 'why is masjid al haram called haram', 'why is it called masjid al-haram',
-    'masjide quba', 'al haram', 'old original masjid quba', 'quba mosque location',
-    'masjid al haram mecca saudi arabia', 'mesjid quba', 'saudi arabia beautiful place',
-    'prophets mosque', 'meaning of masjid al haram', 'ziyarat in makkah', 'al haram mecca',
-    'wadi al jinn', 'quba masjid madinah', 'first mosque built in islam', 'ziyarat makkah',
-    'importance of masjid e quba', 'the holy mosque in mecca', 'al-haram mosque',
-    'who built masjid al haram', 'ziyarat places in makkah', 'quba masjid',
-    'makkah ziyarat places list', 'mekkah foul', 'cave hira hike time', 'quba avenue',
-    'masjid al khandaq', 'masjid haram capacity', 'masjid e quba location',
-    'quba walkway', 'first islamic mosque', '1st masjid of islam', 'masjid quba is also known as',
-    'first mosque in makkah', 'masjid al haram in mecca', 'where is quba mosque located',
-    'prophet\'s mosque', 'holy mosque in mecca', 'where is masjid e quba', 'masjid e haram history',
-    'mosque mecca', 'masjid al haram arabic', 'haram masjid', 'wadi jinn in saudi arabia',
-    'mecca saudi arabia mosque', 'jannat-ul baqi map', 'masjid quba in madina',
-    'masjid al haram facts', 'where was first mosque built', 'islam first mosque',
-    'quba madinah', 'hejaz railway museum', 'masjid al haram name meaning',
 
-    // Additional Service & Location Specific
-    'madinah airport to masjid nabawi', '7 seater taxi near me', 'saudi umrah sim packages',
-    'gharameel stargazing', 'medina airport cab', 'medina airport taxi', 'madina chauffeur service',
-    'private transport umrah', 'makkah to madinah coaster', 'makkah to jeddah staria', 'quba mosque saudi',
-    'makkah to madinah staria', 'chauffeur service madina', 'chauffeur service in madina',
-    'jeddah airport taxi booking', 'beautiful places in saudi', 'umrah car service', 'medina airport pickup',
-    'umrah taxi pricing', 'airport transfers saudi arabia', 'professional airport transfers in jeddah',
-    'umrah taxi jeedah', 'umrah airport transfer', 'jeddah to makkah coaster', 'makkah to jeddah coaster',
-    'gmc taxi', 'taxi near me', 'umrah taxi madinah', 'ksa taxi', 'medina airport car service',
-    'taxi cab companies near me', 'chauffeur from jeddah to madinah', 'jeddah chauffeur service',
-    'chauffeur service near me', 'chauffeur service jeddah', 'umrah taxi makkah', 'taxi ksa',
-    'madinah airport taxi', 'how to perform umrah', 'holy places during umrah', 'mosque quba',
-    'madinah jeddah umrah transport', 'chauffeur services', 'makkah hotel to madinah hotel taxi',
-    'jeddah airport to makkah taxi fare', 'madinah chauffeur service', 'holy places umrah',
-    'chauffeur service in jeddah', 'to performed umrah', 'best shawarma in makkah',
-    'taxi company near me', 'taxi in ksa', 'cheap chauffeur service in makkah', 'jeddah to makkah staria',
-    'jeddah to makkah', 'madinah to jeddah taxi', 'vip airport transfers in mecca',
-    'dammam chauffeur service', 'jeddah airport to makkah car service', 'madinah taxi',
-    'chauffeur service in dammam', 'how is umrah performed', 'uber from jeddah airport to makkah',
-    'jeddah airport to makkah bus', 'umrah ziarah taxi', 'performing umrah', 'hyundai starex 7 seater',
-    'uber jeddah airport to makkah', 'madina chauffeur service', 'uber jeddah to makkah',
-    'jeddah airport to makkah bus fare', 'mecca chauffeur service', 'private taxi near me',
-    'chauffeur service dammam', 'cab service near me', 'first mosque in medina',
-    'jeddah to madinah taxi cost', 'jeddah airport to mecca by bus', 'jeddah airport to mecca taxi fare',
-    'chauffeur service mecca', 'how do you perform umrah', 'saptco jeddah airport to makkah',
-    'taxi cab service near me', 'chauffeur service dammam', 'jeddah airport to makkah taxi',
-    'madinah to jeddah airport taxi fare', 'cab service', 'jeddah airport to makkah distance',
-    'riyadh to jeddah taxi', 'saudi sim for umrah', 'saptco madinah to makkah fare',
-    'cab services in saudi arabia', 'chauffeur services near me', 'near me chauffeur service',
-    'pick and drop jeddah', 'chauffeur services in jeddah', 'taxi fare jeddah airport to makkah 2025 price sar',
-    'umrah chauffeur services in saudi arabia', 'makkah madina chauffeur service', 'mecca chauffeur service',
-    'where was the first mosque built', 'taxis in jeddah', 'makkah to madinah chauffeur service',
-    'first mosque built in islam', 'premium transportation in saudi arabia', 'online taxi booking near me',
-    'makkah to jeddah taxi fare', 'taxi from jeddah airport to makkah', 'grand mosque saudi',
-    'private transfer from jeddah to madinah', 'jeddah to mecca', 'hajj umrah taxi',
-    'madinah to makkah chauffeur services', 'mekkah foul', 'makkah shawarma', 'alula chauffeur service',
-    'alula taxi', 'taxi van', 'how do i get a ride from medina airport?', 'airport pickup for umrah pilgrims',
-    'cab services near me', 'chacha chauffeur service', 'chauffeur services in riyadh', 'chauffeur services in makkah',
-    'taxi near me now', 'uber from jeddah to makkah', 'nearest cab service', 'jeddah taxi company',
-    'first mosque in makkah', 'prophet\'s mosque', 'jeddah to makkah taxi fare',
-    'saudi arabia tourist dress code', 'cheap chauffeur service near me', 'saudi arabia dress code',
-    'cheap cab service near me', 'jeddah airport to makkah chauffeur service', 'umrah chauffeur service online',
-    'abha cable car tickets price', 'from jeddah to makkah', 'jeddah to makkah taxi',
-    'best shawarma makkah', 'shawarma makkah latest', 'private taxi booking',
-    'is uber available in madinah airport?', 'online chauffeur service in riyadh', 'mobily umrah package',
-    'near chauffeur service', 'makkah radio taxi', 'top rated airport transfer services near me',
-    'taxis near me', 'near me taxi', 'premium transportation services in saudi arabia',
-    'makkah taxi company', 'the first mosque in islam', 'umrah cabs', 'taxi stand near me',
-    'cab services', 'cab number near me', 'taxi umrah',
+    // Google Search Console — High Intent Keywords (NEW)
+    'madinah to makkah by car', 'how long from madinah to makkah by car', 'madinah to makkah drive',
+    'car with driver saudi arabia', 'rent a car with driver saudi arabia',
+    'hyundai staria rental saudi arabia', 'hyundai starex 7 seater', 'starex car saudi',
+    'staria for rent', 'staria rent a car ksa', 'hyundai staria for rent ksa',
+    'taif to makkah taxi', 'taif airport to makkah', 'how to get from taif to makkah',
+    'alula taxi', 'alula airport transfer', 'private taxi alula', 'al ula transport',
+    'hiace rent in ksa', 'toyota hiace makkah', 'hiace for rent saudi', '11 seater van',
+    'gmc yukon rental jeddah', 'gmc from madinah to makkah', 'gmc taxi saudi',
+    'private car from madinah to makkah', 'private car makkah to madinah',
+    'car with driver in makkah', 'car with driver in madinah', 'driver with car madinah',
+    'madinah to makkah transport', 'transport from madinah to makkah',
+    'jeddah to madinah by car', 'jeddah to medinah car',
+    'expatriates pick and drop jeddah', 'pick and drop service riyadh',
+    'luxury car service saudi arabia', 'vip transfer makkah',
+    'chauffeur service saudi arabia', 'private driver saudi arabia',
+    'medinah to makkah by car', 'medinah to mecca by car', 'medina to mecca car',
+    'how much taxi from madinah to makkah', 'madinah to makkah cost by car',
+    'madinah to makkah travel time by car', 'cab booking saudi arabia',
+    'private umrah taxi for families', 'umrah taxi for families',
+    'makkah to badr distance', 'makkah to badr taxi',
+    'professional airport transfers in jeddah', 'airport transfers saudi arabia',
+    'private transport umrah', 'makkah to madinah coaster',
+    'madinah airport to masjid nabawi', '7 seater taxi near me',
+    'car ride makkah to madinah', 'car ride madinah to makkah',
+    'madinah to makkah how long', 'taxi services makkah', 'best taxi service makkah',
   ],
   authors: [{ name: 'Haram Taxi Service' }],
   creator: 'Haram Taxi Service',
@@ -248,6 +206,74 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* WebMCP — expose site tools to AI agents via navigator.modelContext */}
+        <Script id="webmcp" strategy="afterInteractive">
+          {`
+            if (typeof navigator !== 'undefined' && navigator.modelContext) {
+              navigator.modelContext.provideContext({
+                tools: [
+                  {
+                    name: 'book_taxi',
+                    description: 'Book a private taxi or vehicle for transportation in Saudi Arabia. Provide pickup, destination, date, and passenger count.',
+                    inputSchema: {
+                      type: 'object',
+                      properties: {
+                        pickup: { type: 'string', description: 'Pickup location (city or address)' },
+                        destination: { type: 'string', description: 'Destination location (city or address)' },
+                        date: { type: 'string', description: 'Travel date (YYYY-MM-DD)' },
+                        passengers: { type: 'number', description: 'Number of passengers', default: 1 }
+                      },
+                      required: ['pickup', 'destination', 'date']
+                    },
+                    execute: async function(args) {
+                      var params = new URLSearchParams({
+                        from: args.pickup,
+                        to: args.destination,
+                        date: args.date,
+                        passengers: String(args.passengers || 1)
+                      });
+                      window.location.href = '/booking?' + params.toString();
+                      return { success: true, message: 'Redirecting to booking page' };
+                    }
+                  },
+                  {
+                    name: 'get_pricing',
+                    description: 'View pricing for taxi routes across Saudi Arabia including Makkah, Madinah, Jeddah, and airports.',
+                    inputSchema: { type: 'object', properties: {} },
+                    execute: async function() {
+                      window.location.href = '/pricing';
+                      return { success: true, message: 'Redirecting to pricing page' };
+                    }
+                  },
+                  {
+                    name: 'browse_routes',
+                    description: 'Browse all available taxi routes between Saudi cities.',
+                    inputSchema: { type: 'object', properties: {} },
+                    execute: async function() {
+                      window.location.href = '/routes';
+                      return { success: true, message: 'Redirecting to routes page' };
+                    }
+                  },
+                  {
+                    name: 'contact_whatsapp',
+                    description: 'Open WhatsApp to contact Haram Taxi Service directly for bookings or enquiries.',
+                    inputSchema: {
+                      type: 'object',
+                      properties: {
+                        message: { type: 'string', description: 'Optional message to pre-fill' }
+                      }
+                    },
+                    execute: async function(args) {
+                      var msg = encodeURIComponent(args.message || 'Hello, I would like to book a taxi.');
+                      window.open('https://wa.me/923080628195?text=' + msg, '_blank');
+                      return { success: true, message: 'Opening WhatsApp' };
+                    }
+                  }
+                ]
+              });
+            }
+          `}
+        </Script>
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JNCTT4HVXD"
@@ -263,6 +289,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.variable} ${playfair.variable} ${inter.className}`} suppressHydrationWarning>
+        <UrgencyTopBar />
         <Navbar />
         <JsonLdBreadcrumb />
         <JsonLdOrganization />
@@ -272,6 +299,8 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <ScrollToTop />
+        <LeadCapturePopup />
+        <MobileBottomCTA />
       </body>
     </html>
   );

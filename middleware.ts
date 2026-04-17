@@ -4,6 +4,15 @@ import { NextResponse, type NextRequest } from 'next/server';
 export async function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
+    // Markdown content negotiation for homepage (RFC 7231 / Markdown for Agents)
+    if (pathname === '/') {
+        const accept = request.headers.get('accept') ?? '';
+        if (accept.includes('text/markdown')) {
+            const markdownUrl = new URL('/api/homepage-markdown', request.url);
+            return NextResponse.rewrite(markdownUrl);
+        }
+    }
+
     // Protect admin routes (except login page)
     if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
         const response = NextResponse.next();
@@ -70,5 +79,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-    matcher: ['/admin/:path*', '/api/admin/:path*'],
+    matcher: ['/', '/admin/:path*', '/api/admin/:path*'],
 };

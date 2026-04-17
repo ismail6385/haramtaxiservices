@@ -23,6 +23,21 @@ const nextConfig = {
   async headers() {
     return [
       {
+        // RFC 8288 Link headers for agent discovery on homepage
+        source: '/',
+        headers: [
+          {
+            key: 'Link',
+            value: [
+              '</.well-known/api-catalog>; rel="api-catalog"',
+              '</.well-known/agent-card.json>; rel="describedby"',
+              '</.well-known/agent-skills/index.json>; rel="https://agentskills.io/rel/index"',
+              '</.well-known/mcp/server-card.json>; rel="https://modelcontextprotocol.io/rel/server-card"',
+            ].join(', '),
+          },
+        ],
+      },
+      {
         source: '/:path*',
         headers: [
           {

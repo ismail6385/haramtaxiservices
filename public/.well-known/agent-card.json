@@ -1,0 +1,57 @@
+{
+  "$schema": "https://a2a-protocol.org/schema/agent-card.json",
+  "name": "Haram Taxi Service Agent",
+  "version": "1.0.0",
+  "description": "AI booking agent for premium private taxi and transportation services across Saudi Arabia, specialising in Umrah and Hajj pilgrim transport between Makkah, Madinah, Jeddah, and major Saudi cities.",
+  "url": "https://haramtaxiservice.com",
+  "provider": {
+    "organization": "Haram Taxi Service",
+    "url": "https://haramtaxiservice.com"
+  },
+  "supportedInterfaces": [
+    {
+      "url": "https://haramtaxiservice.com/booking",
+      "transport": "HTTP/1.1",
+      "protocol": "web-form"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "multiTurn": false
+  },
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain", "text/html"],
+  "skills": [
+    {
+      "id": "book-taxi",
+      "name": "Book Taxi",
+      "description": "Book a private taxi or vehicle for transportation in Saudi Arabia. Supports economy, premium, and VIP vehicle classes.",
+      "tags": ["booking", "taxi", "transport", "saudi-arabia"]
+    },
+    {
+      "id": "airport-transfer",
+      "name": "Airport Transfer",
+      "description": "Book airport pickup and drop-off services for Jeddah (JED), Madinah (MED), and Dammam (DMM) airports.",
+      "tags": ["airport", "transfer", "jeddah", "madinah"]
+    },
+    {
+      "id": "umrah-transport",
+      "name": "Umrah Transport",
+      "description": "Specialised transportation packages for Umrah pilgrims including Makkah-Madinah routes and Haram access.",
+      "tags": ["umrah", "hajj", "makkah", "madinah", "pilgrimage"]
+    },
+    {
+      "id": "get-pricing",
+      "name": "Get Pricing",
+      "description": "Retrieve pricing information for routes between cities and airports across Saudi Arabia.",
+      "tags": ["pricing", "fare", "cost", "routes"]
+    },
+    {
+      "id": "intercity-transfer",
+      "name": "Intercity Transfer",
+      "description": "Long-distance transfers between Saudi cities: Makkah ↔ Madinah, Jeddah ↔ Makkah, Jeddah ↔ Madinah, and more.",
+      "tags": ["intercity", "long-distance", "makkah", "madinah", "jeddah"]
+    }
+  ]
+}

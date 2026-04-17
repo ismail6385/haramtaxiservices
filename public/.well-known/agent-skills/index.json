@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "name": "Haram Taxi Service Agent Skills",
+  "description": "Agent skills for booking and discovering taxi transportation services in Saudi Arabia",
+  "skills": [
+    {
+      "name": "taxi-booking",
+      "type": "api",
+      "description": "Book private taxi and transportation services across Saudi Arabia via the Haram Taxi Service booking API",
+      "url": "https://haramtaxiservice.com/.well-known/api-catalog",
+      "sha256": ""
+    },
+    {
+      "name": "a2a-agent",
+      "type": "a2a",
+      "description": "A2A Agent Card for Haram Taxi Service — describes supported interfaces, capabilities, and skills",
+      "url": "https://haramtaxiservice.com/.well-known/agent-card.json",
+      "sha256": "d7c988fb3f8314a88e548dfdd229effab3880940db2fff267f8c27405a6c39a5"
+    },
+    {
+      "name": "mcp-server",
+      "type": "mcp",
+      "description": "MCP Server Card for Haram Taxi Service — exposes booking tools to AI agents via MCP protocol",
+      "url": "https://haramtaxiservice.com/.well-known/mcp/server-card.json",
+      "sha256": "027737e90140c14a842b85efed0d683866e6ec02ead5f7dfbfb80083d3ac067b"
+    }
+  ]
+}

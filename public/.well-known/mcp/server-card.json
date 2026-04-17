@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2024-11-05",
+  "serverInfo": {
+    "name": "Haram Taxi Service",
+    "version": "1.0.0",
+    "description": "MCP server for Haram Taxi Service — premium private transportation for Makkah, Madinah, Jeddah, and all major Saudi Arabia cities. Specialising in Umrah and Hajj pilgrim transport."
+  },
+  "transport": {
+    "type": "http",
+    "endpoint": "https://haramtaxiservice.com/api/mcp"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": false,
+    "prompts": false
+  },
+  "contact": {
+    "whatsapp": "+923080628195",
+    "website": "https://haramtaxiservice.com"
+  }
+}
