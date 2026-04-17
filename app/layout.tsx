@@ -206,74 +206,43 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* WebMCP — expose site tools to AI agents via navigator.modelContext */}
-        <Script id="webmcp" strategy="afterInteractive">
-          {`
-            if (typeof navigator !== 'undefined' && navigator.modelContext) {
-              navigator.modelContext.provideContext({
-                tools: [
-                  {
-                    name: 'book_taxi',
-                    description: 'Book a private taxi or vehicle for transportation in Saudi Arabia. Provide pickup, destination, date, and passenger count.',
-                    inputSchema: {
-                      type: 'object',
-                      properties: {
-                        pickup: { type: 'string', description: 'Pickup location (city or address)' },
-                        destination: { type: 'string', description: 'Destination location (city or address)' },
-                        date: { type: 'string', description: 'Travel date (YYYY-MM-DD)' },
-                        passengers: { type: 'number', description: 'Number of passengers', default: 1 }
-                      },
-                      required: ['pickup', 'destination', 'date']
-                    },
-                    execute: async function(args) {
-                      var params = new URLSearchParams({
-                        from: args.pickup,
-                        to: args.destination,
-                        date: args.date,
-                        passengers: String(args.passengers || 1)
-                      });
-                      window.location.href = '/booking?' + params.toString();
-                      return { success: true, message: 'Redirecting to booking page' };
-                    }
-                  },
-                  {
-                    name: 'get_pricing',
-                    description: 'View pricing for taxi routes across Saudi Arabia including Makkah, Madinah, Jeddah, and airports.',
-                    inputSchema: { type: 'object', properties: {} },
-                    execute: async function() {
-                      window.location.href = '/pricing';
-                      return { success: true, message: 'Redirecting to pricing page' };
-                    }
-                  },
-                  {
-                    name: 'browse_routes',
-                    description: 'Browse all available taxi routes between Saudi cities.',
-                    inputSchema: { type: 'object', properties: {} },
-                    execute: async function() {
-                      window.location.href = '/routes';
-                      return { success: true, message: 'Redirecting to routes page' };
-                    }
-                  },
-                  {
-                    name: 'contact_whatsapp',
-                    description: 'Open WhatsApp to contact Haram Taxi Service directly for bookings or enquiries.',
-                    inputSchema: {
-                      type: 'object',
-                      properties: {
-                        message: { type: 'string', description: 'Optional message to pre-fill' }
-                      }
-                    },
-                    execute: async function(args) {
-                      var msg = encodeURIComponent(args.message || 'Hello, I would like to book a taxi.');
-                      window.open('https://wa.me/923080628195?text=' + msg, '_blank');
-                      return { success: true, message: 'Opening WhatsApp' };
-                    }
-                  }
-                ]
-              });
-            }
-          `}
-        </Script>
+        {/* WebMCP — server-rendered so checkers see it in initial HTML */}
+        <script dangerouslySetInnerHTML={{ __html: `
+(function(){
+  function registerWebMCP(){
+    if(typeof navigator==='undefined'||!navigator.modelContext)return;
+    navigator.modelContext.provideContext({
+      tools:[
+        {
+          name:'book_taxi',
+          description:'Book a private taxi or vehicle for transportation in Saudi Arabia. Provide pickup, destination, date, and passenger count.',
+          inputSchema:{type:'object',properties:{pickup:{type:'string',description:'Pickup location (city or address)'},destination:{type:'string',description:'Destination location (city or address)'},date:{type:'string',description:'Travel date (YYYY-MM-DD)'},passengers:{type:'number',description:'Number of passengers',default:1}},required:['pickup','destination','date']},
+          execute:async function(args){var p=new URLSearchParams({from:args.pickup,to:args.destination,date:args.date,passengers:String(args.passengers||1)});window.location.href='/booking?'+p.toString();return{success:true};}
+        },
+        {
+          name:'get_pricing',
+          description:'View pricing for taxi routes across Saudi Arabia including Makkah, Madinah, Jeddah, and airports.',
+          inputSchema:{type:'object',properties:{}},
+          execute:async function(){window.location.href='/pricing';return{success:true};}
+        },
+        {
+          name:'browse_routes',
+          description:'Browse all available taxi routes between Saudi cities.',
+          inputSchema:{type:'object',properties:{}},
+          execute:async function(){window.location.href='/routes';return{success:true};}
+        },
+        {
+          name:'contact_whatsapp',
+          description:'Open WhatsApp to contact Haram Taxi Service directly for bookings or enquiries.',
+          inputSchema:{type:'object',properties:{message:{type:'string',description:'Optional message to pre-fill'}}},
+          execute:async function(args){var msg=encodeURIComponent(args.message||'Hello, I would like to book a taxi.');window.open('https://wa.me/923080628195?text='+msg,'_blank');return{success:true};}
+        }
+      ]
+    });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',registerWebMCP);}else{registerWebMCP();}
+})();
+        ` }} />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JNCTT4HVXD"
