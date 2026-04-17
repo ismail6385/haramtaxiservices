@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import BookingForm from '@/components/BookingForm';
 import { Suspense } from 'react';
-import { MapPin, Phone, Clock, Shield, Leaf, Heart, ArrowRight, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, Shield, Leaf, Heart, ArrowRight } from 'lucide-react';
 import NearbyCities from '@/components/NearbyCities';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export const metadata: Metadata = {
     alternates: {
@@ -131,8 +132,8 @@ export default function AlJoufLocationPage() {
 
                         <div className="flex flex-wrap gap-4">
                                     <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Jouf." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                                        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
-                                            <MessageCircle className="w-5 h-5 mr-2" />
+                                        <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
+                                            <WhatsAppIcon className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
                                         </Button>
                                     </a>
@@ -242,8 +243,8 @@ export default function AlJoufLocationPage() {
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
                                     <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Jouf." target="_blank" rel="noopener noreferrer" className="block w-full">
-                                        <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
-                                            <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
+                                        <Button className="w-full bg-[#25D366] hover:bg-[#1ebd5b] text-white font-bold h-12">
+                                            <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
                                     </a>
                                 </div>

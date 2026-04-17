@@ -6,7 +6,6 @@ import {
   ShieldCheck, 
   Users, 
   Briefcase, 
-  MessageCircle, 
   CheckCircle2, 
   Car, 
   ArrowRight,
@@ -15,6 +14,7 @@ import {
   Clock
 } from 'lucide-react';
 import BookingForm from '@/components/BookingForm';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export const metadata: Metadata = {
     alternates: {
@@ -105,13 +105,16 @@ export default function PricingPage() {
                     <h2 className="sr-only">Our Core Service Values</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[
-                            { icon: Clock, label: '24/7 Availability', sub: 'Across KSA Airports' },
-                            { icon: ShieldCheck, label: 'Verified Drivers', sub: 'Safety & Reliability' },
-                            { icon: Globe, label: 'All City Routes', sub: 'Kingdom Wide Service' },
-                            { icon: MessageCircle, label: 'Instant Quotes', sub: 'Via WhatsApp Chat' },
+                            { icon: Clock, label: '24/7 Availability', sub: 'Across KSA Airports', isWA: false },
+                            { icon: ShieldCheck, label: 'Verified Drivers', sub: 'Safety & Reliability', isWA: false },
+                            { icon: Globe, label: 'All City Routes', sub: 'Kingdom Wide Service', isWA: false },
+                            { icon: null, label: 'Instant Quotes', sub: 'Via WhatsApp Chat', isWA: true },
                         ].map((item, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
-                                <item.icon className="w-8 h-8 text-brand-navy mb-3" />
+                                {item.isWA 
+                                    ? <WhatsAppIcon className="w-8 h-8 text-[#25D366] mb-3" />
+                                    : item.icon && <item.icon className="w-8 h-8 text-brand-navy mb-3" />
+                                }
                                 <h3 className="font-bold text-gray-900">{item.label}</h3>
                                 <p className="text-xs text-gray-500">{item.sub}</p>
                             </div>
@@ -192,7 +195,7 @@ export default function PricingPage() {
                                             className="flex-1"
                                         >
                                             <Button className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white h-14 rounded-2xl font-bold shadow-lg shadow-green-200">
-                                                <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp for Quote
+                                                <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp for Quote
                                             </Button>
                                         </a>
                                         <Link href="/booking" className="flex-1">
@@ -266,7 +269,7 @@ export default function PricingPage() {
                             rel="noopener noreferrer"
                         >
                             <Button size="lg" className="bg-white text-brand-navy hover:bg-gray-100 px-12 py-7 text-xl font-bold rounded-2xl shadow-xl shadow-brand-navy-dark/20">
-                                <MessageCircle className="w-6 h-6 mr-2" /> Message on WhatsApp
+                                <WhatsAppIcon className="w-6 h-6 mr-2 text-[#25D366]" /> Message on WhatsApp
                             </Button>
                         </a>
                         <Link href="/contact">

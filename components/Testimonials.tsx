@@ -58,6 +58,7 @@ const testimonials = [
         content: 'Even as a local, I use Haram Taxi for Hajj season because of the reliability. During Hajj, every minute counts. Their drivers know the routes perfectly and never get stuck. Best decision I made for my Hajj logistics.',
         rating: 5,
         initials: 'HT',
+        avatar: 'https://i.pravatar.cc/150?u=6',
         color: 'bg-cyan-600',
         trip: 'Makkah → Mina → Arafat',
     },
@@ -145,15 +146,30 @@ export default function Testimonials() {
 
                             {/* Author */}
                             <div className="flex items-center gap-4 pt-6 border-t border-gray-50 relative z-10">
-                                <div
-                                    className={`w-12 h-12 rounded-full ${testimonial.color} flex items-center justify-center text-white font-bold text-sm flex-shrink-0 shadow-md ring-4 ring-gray-50`}
-                                    aria-hidden="true"
-                                >
-                                    {testimonial.initials}
+                                {testimonial.avatar ? (
+                                    <img 
+                                        src={testimonial.avatar} 
+                                        alt={testimonial.name} 
+                                        className="w-12 h-12 rounded-full object-cover shadow-md ring-4 ring-gray-50 flex-shrink-0"
+                                    />
+                                ) : (
+                                    <div
+                                        className={`w-12 h-12 rounded-full ${testimonial.color} flex items-center justify-center text-white font-bold text-sm flex-shrink-0 shadow-md ring-4 ring-gray-50`}
+                                        aria-hidden="true"
+                                    >
+                                        {testimonial.initials}
+                                    </div>
+                                )}
+                                <div className="flex-grow">
+                                    <div className="font-bold text-gray-900 text-sm tracking-wide flex items-center gap-2">
+                                        {testimonial.name} 
+                                        <CheckCircle2 className="w-4 h-4 text-blue-500" />
+                                    </div>
+                                    <div className="text-xs text-gray-500 font-medium uppercase tracking-wider">{testimonial.role} · {testimonial.origin}</div>
                                 </div>
                                 <div>
-                                    <div className="font-bold text-gray-900 text-sm tracking-wide">{testimonial.name}</div>
-                                    <div className="text-xs text-gray-500 font-medium uppercase tracking-wider">{testimonial.role} · {testimonial.origin}</div>
+                                    {/* Google Logo minimal fallback */}
+                                    <span className="font-bold text-[10px] bg-gray-100 text-gray-600 px-2 py-1 rounded-full uppercase">Google</span>
                                 </div>
                             </div>
                         </div>

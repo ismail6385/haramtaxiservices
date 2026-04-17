@@ -37,6 +37,15 @@ export default function Footer() {
         { name: 'Tabuk', href: '/locations/tabuk' },
     ];
 
+    const popularRoutes = [
+        { name: 'Routes Index', href: '/routes' },
+        { name: 'Riyadh to Bahrain', href: '/routes/riyadh-to-bahrain' },
+        { name: 'Jeddah to Riyadh', href: '/routes/jeddah-to-riyadh' },
+        { name: 'Dammam to Madinah', href: '/routes/dammam-to-madinah' },
+        { name: 'Qassim to Makkah', href: '/routes/qassim-to-makkah' },
+        { name: 'Makkah to Madinah', href: '/routes/makkah-to-madinah' },
+    ];
+
     const vehicles = [
         { name: 'GMC Yukon', href: '/fleet/gmc-yukon' },
         { name: 'Toyota Camry', href: '/fleet/toyota-camry' },
@@ -55,126 +64,106 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="bg-gray-950 text-gray-300 border-t border-gray-900">
+        <footer itemScope itemType="https://schema.org/LocalBusiness" className="bg-gray-950 text-gray-300 border-t border-gray-900">
+            <meta itemProp="name" content="Haram Taxi Service" />
+            <meta itemProp="image" content="https://haramtaxiservice.com/logo.png" />
+            <meta itemProp="priceRange" content="$$" />
             {/* Main Footer */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
                     {/* Brand Column */}
-                    <div>
-                        <Link href="/" className="flex items-center gap-3 mb-6 group">
-                            <div className="w-12 h-12 bg-brand-navy rounded-xl flex items-center justify-center shadow-lg shadow-brand-navy/20 group-hover:bg-brand-navy-light transition-colors">
-                                <Car className="w-7 h-7 text-white" />
+                    <div className="lg:col-span-2">
+                        <Link href="/" className="flex items-center gap-3 mb-8 group">
+                            <div className="w-14 h-14 bg-brand-navy rounded-2xl flex items-center justify-center shadow-2xl group-hover:bg-brand-navy-light transition-all">
+                                <Car className="w-8 h-8 text-brand-gold" />
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-xl font-display font-bold text-white tracking-wide">
+                                <span className="text-2xl font-display font-black text-white tracking-tighter">
                                     Haram <span className="text-brand-gold">Taxi</span>
                                 </span>
-                                <span className="text-[10px] text-gray-500 uppercase tracking-widest font-medium ml-0.5">Premium Service</span>
+                                <span className="text-[10px] text-gray-500 uppercase tracking-[0.3em] font-black">Official KSA Transport</span>
                             </div>
                         </Link>
-                        <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-                            Elite chauffeur and VIP transport services across Saudi Arabia. Available 24/7 for distinguished travelers, specializing in luxury Umrah and Hajj transfers with absolute privacy.
+                        <p className="text-sm text-gray-400 mb-8 leading-relaxed pr-8">
+                            Premium licensed transportation service specializing in Makkah to Madinah transit, Jeddah Airport VIP transfers, and custom Umrah Ziyarat packages since 2014. 
                         </p>
-                        <div className="mb-6">
-                            <a href="mailto:haramtaxiservice@gmail.com" className="text-brand-navy hover:text-brand-navy-light text-sm flex items-center gap-3 transition-colors font-medium">
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                haramtaxiservice@gmail.com
-                            </a>
-                        </div>
-                        <div className="flex gap-4">
-                            <a
-                                href="#"
-                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-navy/50 hover:bg-brand-navy rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
-                                aria-label="Facebook"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Facebook className="w-5 h-5" />
-                                <span className="sr-only">Facebook</span>
-                            </a>
-                            <a
-                                href="#"
-                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-navy/50 hover:bg-brand-navy rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
-                                aria-label="Twitter"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Twitter className="w-5 h-5" />
-                                <span className="sr-only">Twitter</span>
-                            </a>
-                            <a
-                                href="#"
-                                className="w-10 h-10 bg-gray-900 border border-gray-800 hover:border-brand-navy/50 hover:bg-brand-navy rounded-lg flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white"
-                                aria-label="Instagram"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Instagram className="w-5 h-5" />
-                                <span className="sr-only">Instagram</span>
-                            </a>
+                        <div className="space-y-4 mb-8">
+                            <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress" className="flex items-center gap-4 group cursor-pointer">
+                                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-brand-gold transition-colors">
+                                    <MapPin className="w-5 h-5 text-brand-gold" />
+                                </div>
+                                <div>
+                                    <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest">Headquarters</p>
+                                    <p className="text-sm text-white font-bold"><span itemProp="streetAddress">Al Aziziyah</span>, <span itemProp="addressLocality">Makkah</span>, <span itemProp="addressCountry">Saudi Arabia</span></p>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-4 group cursor-pointer">
+                                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-green-500 transition-colors">
+                                    <svg viewBox="0 0 24 24" className="w-5 h-5 fill-green-500"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                </div>
+                                <div>
+                                    <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest">WhatsApp Support</p>
+                                    <p itemProp="telephone" className="text-sm text-white font-bold">+996 57 580 6733</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Quick Links */}
+                    {/* Service Areas */}
                     <div>
-                        <h3 className="text-white font-display font-bold text-lg mb-6">Quick Links</h3>
-                        <ul className="space-y-3">
-                            {quickLinks.map((link) => (
-                                <li key={link.name}>
-                                    <Link href={link.href} className="block text-gray-400 hover:text-brand-navy transition-colors text-sm hover:translate-x-1 duration-200">
-                                        {link.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Locations */}
-                    <div>
-                        <h3 className="text-white font-display font-bold text-lg mb-6">Service Areas</h3>
-                        <ul className="space-y-3">
+                        <h3 className="text-white font-display font-black text-xs uppercase tracking-[0.3em] mb-8">Service Areas</h3>
+                        <ul className="space-y-4">
                             {locations.map((location) => (
                                 <li key={location.name}>
-                                    <Link href={location.href} className="block text-gray-400 hover:text-brand-navy transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
-                                        <MapPin className="w-4 h-4 text-brand-navy/70" />
-                                        {location.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-
-                    </div>
-
-                    {/* Services */}
-                    <div>
-                        <h3 className="text-white font-display font-bold text-lg mb-6">Services</h3>
-                        <ul className="space-y-3">
-                            {services.map((service) => (
-                                <li key={service.name}>
-                                    <Link href={service.href} className="block text-gray-400 hover:text-brand-navy transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
-                                        <Car className="w-4 h-4 text-brand-navy/70" />
-                                        {service.name}
+                                    <Link href={location.href} className="text-gray-500 hover:text-brand-gold transition-colors text-[11px] font-black uppercase tracking-widest flex items-center gap-2 group">
+                                        <div className="w-1 h-1 bg-brand-gold/20 group-hover:bg-brand-gold rounded-full" /> {location.name} Taxi
                                     </Link>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Fleet */}
+                    {/* The Routes */}
                     <div>
-                        <h3 className="text-white font-display font-bold text-lg mb-6">Our Fleet</h3>
-                        <ul className="space-y-3">
-                            {vehicles.map((vehicle) => (
+                        <h3 className="text-white font-display font-black text-xs uppercase tracking-[0.3em] mb-8">Popular Routes</h3>
+                        <ul className="space-y-4">
+                            {popularRoutes.map((route) => (
+                                <li key={route.name}>
+                                    <Link href={route.href} className="text-gray-500 hover:text-brand-gold transition-colors text-[11px] font-black uppercase tracking-widest flex items-center gap-2 group">
+                                        <div className="w-1 h-1 bg-brand-gold/20 group-hover:bg-brand-gold rounded-full" /> {route.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* The Fleet */}
+                    <div>
+                        <h3 className="text-white font-display font-black text-xs uppercase tracking-[0.3em] mb-8">Our Fleet</h3>
+                        <ul className="space-y-4">
+                             {vehicles.map((vehicle) => (
                                 <li key={vehicle.name}>
-                                    <Link href={vehicle.href} className="block text-gray-400 hover:text-brand-navy transition-colors text-sm flex items-center gap-2 hover:translate-x-1 duration-200">
-                                        <Car className="w-4 h-4 text-brand-navy/70" />
-                                        {vehicle.name}
+                                    <Link href={vehicle.href} className="text-gray-500 hover:text-brand-gold transition-colors text-[11px] font-black uppercase tracking-widest flex items-center gap-2 group">
+                                        <div className="w-1 h-1 bg-brand-gold/20 group-hover:bg-brand-gold rounded-full" /> {vehicle.name}
                                     </Link>
                                 </li>
-                            ))}
+                             ))}
                         </ul>
+                    </div>
+
+                    {/* Trust Column */}
+                    <div>
+                        <h3 className="text-white font-display font-black text-xs uppercase tracking-[0.3em] mb-8">Compliance</h3>
+                        <div className="space-y-6">
+                            <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                                <p className="text-[10px] font-bold text-gray-400 mb-2 leading-tight uppercase tracking-widest">Ministry of Transport Licensed</p>
+                                <p className="text-[9px] text-gray-500 font-medium">Verified transport license for operation across all KSA regions and airports.</p>
+                            </div>
+                            <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                                <p className="text-[10px] font-bold text-gray-400 mb-2 leading-tight uppercase tracking-widest">Customer Protection</p>
+                                <p className="text-[9px] text-gray-500 font-medium">All rides are insured and monitored for safety and punctuality.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

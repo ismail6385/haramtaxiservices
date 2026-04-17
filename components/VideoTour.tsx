@@ -12,7 +12,7 @@ export default function VideoTour() {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="https://images.unsplash.com/photo-0.154d516935?q=80&w=2070&auto=format&fit=crop"
+                    src="/vip-luxury-interior.webp"
                     alt="Luxury Interior"
                     width={1920}
                     height={600}

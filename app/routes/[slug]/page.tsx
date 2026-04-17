@@ -8,6 +8,7 @@ import PilgrimTips from '@/components/PilgrimTips';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Home } from 'lucide-react';
+import CustomerUpdates from '@/components/CustomerUpdates';
 
 export const dynamic = 'force-static';
 
@@ -78,16 +79,42 @@ export default async function RoutePage({ params }: Props) {
         }))
     };
 
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://haramtaxiservice.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Routes",
+                "item": "https://haramtaxiservice.com/routes"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": route.title,
+                "item": `https://haramtaxiservice.com/routes/${route.slug}`
+            }
+        ]
+    };
+
     return (
         <div className="bg-gray-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
             {/* Breadcrumb */}
             <div className="bg-slate-700 text-slate-100 py-3 border-b border-slate-600">
                 <div className="container mx-auto px-4 text-sm flex items-center gap-2">
                     <Link href="/" className="hover:text-white flex items-center gap-1"><Home className="w-3 h-3" /> Home</Link>
                     <ChevronRight className="w-3 h-3" />
-                    <Link href="/locations" className="hover:text-white">Routes</Link>
+                    <Link href="/routes" className="hover:text-white">Routes</Link>
                     <ChevronRight className="w-3 h-3" />
                     <span className="text-white font-semibold truncate">{route.h1}</span>
                 </div>
@@ -185,6 +212,9 @@ export default async function RoutePage({ params }: Props) {
                     </div>
                 </div>
             </div>
+            {/* Customer Updates for the Route */}
+            <CustomerUpdates location={route.h1} />
+
             {/* Silo Linking Section */}
             <div className="bg-white border-t border-gray-200 mt-12 py-12">
                 <div className="container mx-auto px-4">

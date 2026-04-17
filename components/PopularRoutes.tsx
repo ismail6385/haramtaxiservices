@@ -10,7 +10,7 @@ const routes = [
     description: "The most convenient way to start your Umrah journey. Our driver will meet you at the arrival hall and take you directly to your hotel in Makkah.",
     time: "1 Hour 15 Mins",
     distance: "100 KM",
-    image: "https://images.unsplash.com/photo-1565552629477-e2be80b53d8c?q=80&w=2074&auto=format&fit=crop"
+    image: "/jeddah-airport-pickup-service.webp"
   },
   {
     from: "Makkah",
@@ -18,7 +18,7 @@ const routes = [
     description: "Travel between the two Holy Cities in absolute comfort. Enjoy a scenic drive with our experienced chauffeurs who know the best routes.",
     time: "4 Hours 30 Mins",
     distance: "450 KM",
-    image: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070&auto=format&fit=crop"
+    image: "/makkah-highway.webp"
   },
   {
     from: "Jeddah",
@@ -26,7 +26,7 @@ const routes = [
     description: "Direct transfers from Jeddah to Madinah. Perfect for pilgrims and visitors who want to visit the Prophet's Mosque without delays.",
     time: "4 Hours",
     distance: "415 KM",
-    image: "https://images.unsplash.com/photo-0.154a36b8342f58?q=80&w=2070&auto=format&fit=crop"
+    image: "/jeddah-corniche-road.webp"
   },
   {
     from: "Riyadh Airport",
@@ -34,7 +34,7 @@ const routes = [
     description: "Long-distance luxury transfer from Riyadh to Makkah. Ideal for those who prefer a private car over flying.",
     time: "8 Hours 30 Mins",
     distance: "870 KM",
-    image: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070&auto=format&fit=crop"
+    image: "/riyadh-skyline.webp"
   },
   {
     from: "Taif",
@@ -42,7 +42,7 @@ const routes = [
     description: "Scenic drive from the cool mountains of Taif to the Holy City of Makkah. Enjoy the beautiful landscapes in comfort.",
     time: "1 Hour 10 Mins",
     distance: "90 KM",
-    image: "https://images.unsplash.com/photo-0.154da5f4f09de8?q=80&w=2070&auto=format&fit=crop"
+    image: "/taif-al-hada.webp"
   },
   {
     from: "Madinah Airport",
@@ -50,7 +50,7 @@ const routes = [
     description: "Quick and reliable transfer from Prince Mohammad Bin Abdulaziz Airport to your hotel in Madinah.",
     time: "25 Mins",
     distance: "20 KM",
-    image: "https://images.unsplash.com/photo-0.154f9b97771b6?q=80&w=2070&auto=format&fit=crop"
+    image: "/madinah-hotel-transfer-service.webp"
   }
 ];
 

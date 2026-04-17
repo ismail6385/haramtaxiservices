@@ -18,8 +18,8 @@ export default function BlogTeaser() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-12 gap-6">
                     <div>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-3">Travel Insights</h2>
-                        <p className="text-xl text-gray-600 font-light">Latest news, guides, and updates for your spiritual journey</p>
+                        <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-3">Umrah & Saudi Travel Guides</h2>
+                        <p className="text-xl text-gray-600 font-light">Expert advice on Makkah taxis, Jeddah airport transfers, and Ziyarat routes.</p>
                     </div>
                     <Link href="/blog" className="hidden md:flex items-center text-brand-navy font-semibold hover:text-brand-gold transition-colors group">
                         View All Articles <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

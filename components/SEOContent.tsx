@@ -25,7 +25,7 @@ export default function SEOContent() {
                     </div>
                     <div className="relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
                         <Image
-                            src="https://images.unsplash.com/photo-0.154ded23b5e4?q=80&w=2070&auto=format&fit=crop"
+                            src="/private-vip-taxi-driver.webp"
                             alt="Private Taxi Service Saudi Arabia"
                             width={800}
                             height={400}
@@ -37,7 +37,7 @@ export default function SEOContent() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
                     <div className="order-2 lg:order-1 relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
                         <Image
-                            src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070&auto=format&fit=crop"
+                            src="/makkah-city-taxi-transfer.webp"
                             alt="Umrah Taxi Service Makkah"
                             width={800}
                             height={400}
@@ -74,7 +74,7 @@ export default function SEOContent() {
                     </div>
                     <div className="relative h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
                         <Image
-                            src="https://images.unsplash.com/photo-0.154b6d7a050076?q=80&w=2069&auto=format&fit=crop"
+                            src="/vip-luxury-interior.webp"
                             alt="Luxury Airport Transfer Riyadh"
                             width={800}
                             height={400}

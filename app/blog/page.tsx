@@ -28,7 +28,7 @@ export default function BlogIndexPage() {
                     <p className="text-gray-600 mt-4">Stay updated with the latest news, tips, and guides for your travel in Saudi Arabia.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {blogData.slice(0, 30).map((post) => (
+                    {blogData.map((post) => (
                         <Card key={post.slug} className="hover:shadow-lg transition-shadow border-gray-100 overflow-hidden group">
                             <div className="relative h-48 w-full">
                                 <Image

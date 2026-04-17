@@ -68,6 +68,35 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
+        slug: "badr-ziyarat-tour",
+        title: "Battle of Badr Tour Taxi | Ziyarat from Madinah",
+        description: "Private taxi Ziyarat tour to the historic Battle of Badr site from Madinah.",
+        content: "Take a step back into Islamic history with a dedicated private taxi tour to Badr. Located 150km from Madinah, our tour takes you safely to the Shuhada graveyard, the Areesh Mosque, and the historic battlefield with Urdu & English speaking drivers.",
+        features: ["4-5 Hour Tour", "Historical Sites", "Urdu/English Drivers", "Door-to-door"],
+        pricing: [
+            { title: "Sedan (4 Pax)", price: "Get Quote" },
+            { title: "GMC (7 Pax)", price: "Get Quote" },
+            { title: "Hiace (10 Pax)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "How far is Badr from Madinah?", answer: "It is approximately 1.5 to 2 hours drive each way." }
+        ]
+    },
+    {
+        slug: "hajj-umrah-group-bus-coaster",
+        title: "Hajj & Umrah Group Transport | Coaster 20-Seater",
+        description: "Book a Toyota Coaster for large family groups. Luggage handling and Tafweej compliance included.",
+        content: "Traveling for Umrah or Hajj with a large group? Do not book multiple small taxis. Hire our Nusuk-registered Toyota Coaster 20-Seater. We handle heavy luggage, manage airport Tafweej clearance, and ensure your entire group arrives at the hotel together without separation.",
+        features: ["20 Passengers max", "Heavy Luggage Support", "Tafweej Cleared", "Group Friendly"],
+        pricing: [
+            { title: "Jeddah to Makkah", price: "Get Quote" },
+            { title: "Makkah to Madinah", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "Do you offer larger buses?", answer: "Yes, we can arrange 49-seater VIP buses for very large Hajj communities." }
+        ]
+    },
+    {
         slug: "riyadh-airport-transfer",
         title: "Riyadh Airport (RUH) Taxi Transfer",
         description: "Premium airport transfer service from King Khalid International Airport to Riyadh city and beyond.",
@@ -403,12 +432,15 @@ export const servicesData: ServiceData[] = [
     },
     {
         slug: "luxury-chauffeur",
-        title: "Luxury Chauffeur Service",
-        description: "High-end chauffeur service in KSA.",
-        content: "S Class, BMW 7 Series, and Yukon XL.",
-        features: ["VIP", "Protocol"],
-        pricing: [{ title: "Daily", price: "Get Quote" }],
-        faqs: []
+        title: "VIP Luxury Chauffeur Service | Lexus & Mercedes Umrah Transfers",
+        description: "Elite VIP chauffeur service in KSA. Featuring 2025/2026 Mercedes V-Class, S-Class, and Lexus ES 300 for premium Umrah transfers.",
+        content: "Experience true 5-Star travel with our Elite VIP Limousine service. We offer the latest 2025/2026 models of Lexus ES 300, Mercedes-Benz V-Class, and GMC Yukon Denali. Enjoy a whisper-quiet ride, English/Urdu speaking professional chauffeurs, complimentary chilled water, and premium tissues. Perfect for high-net-worth pilgrims, corporate executives, and VIP Makkah to Madinah transfers.",
+        features: ["2025/2026 Fleet", "Mercedes V-Class / Lexus", "Meet & Greet Service", "Free Water & Tissues"],
+        pricing: [{ title: "Lexus ES 300 (JED to Makkah)", price: "Get Quote" }, { title: "V-Class 6-Seater", price: "Get Quote" }],
+        faqs: [
+            { question: "Do you have the Mercedes V-Class available?", answer: "Yes, our VIP fleet includes the latest Mercedes V-Class luxury vans with captain chairs." },
+            { question: "Are your drivers trained chauffeurs?", answer: "Yes, our luxury tier features highly trained, uniformed chauffeurs who provide complimentary flight tracking and luggage assistance." }
+        ]
     },
     {
         slug: "family-taxi",
@@ -418,6 +450,28 @@ export const servicesData: ServiceData[] = [
         features: ["Family Privacy", "Child Seats"],
         pricing: [{ title: "Booking", price: "Get Quote" }],
         faqs: []
+    },
+    {
+        slug: "wheelchair-accessible-umrah-taxi",
+        title: "Wheelchair Accessible Umrah Taxi | Elderly Transport",
+        description: "Specialized low-floor vehicles (Staria/GMC) for elderly pilgrims requiring wheelchair access.",
+        content: "We provide dedicated elderly-friendly transport. Our Hyundai Staria and GMC Yukon XL vehicles offer massive trunk space for folded wheelchairs and low step-in heights for passengers with mobility issues. We ensure drop-offs at the most accessible Haram gates.",
+        features: ["Wheelchair Capability", "Low Step-in Height", "Helpful Drivers", "Accessible Drop-offs"],
+        pricing: [{ title: "Staria (Jeddah to Makkah)", price: "Get Quote" }, { title: "GMC Yukon XL", price: "Get Quote" }],
+        faqs: [
+            { question: "Can the taxi fit a wheelchair and luggage?", answer: "Yes, our Staria and GMC vehicles have ample cargo space to fit a folded wheelchair alongside standard passenger luggage." }
+        ]
+    },
+    {
+        slug: "safe-umrah-taxi-solo-females-families",
+        title: "Safe Umrah Taxi | For Solo Females & Families",
+        description: "Verified, safe, and strictly private taxi transfers from Jeddah airport to Makkah for women and families.",
+        content: "Safety is our priority. We offer vetted, licensed drivers with a strict privacy protocol for solo female travelers and families. Enjoy live ride-tracking, 'Pay After Journey' security, and complete peace of mind without dealing with aggressive street taxis.",
+        features: ["Verified Drivers", "Live WhatsApp Tracking", "Pay After Journey", "Family Privacy"],
+        pricing: [{ title: "Sedan Transfer", price: "Get Quote" }, { title: "Family SUV", price: "Get Quote" }],
+        faqs: [
+            { question: "Can I share my live location?", answer: "Yes, you are provided with your driver's details beforehand, and we encourage you to share your live WhatsApp location with family." }
+        ]
     },
     // ===== Airport Taxis =====
     {

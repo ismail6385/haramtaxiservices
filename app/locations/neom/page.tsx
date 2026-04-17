@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import BookingForm from '@/components/BookingForm';
 import { Suspense } from 'react';
-import { MapPin, Phone, Clock, Shield, Anchor, Zap, ArrowRight, Building, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, Shield, Anchor, Zap, ArrowRight, Building } from 'lucide-react';
 import NearbyCities from '@/components/NearbyCities';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export const metadata: Metadata = {
     alternates: {
@@ -130,13 +131,13 @@ export default function NeomLocationPage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Neom." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                                        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
-                                            <MessageCircle className="w-5 h-5 mr-2" />
-                                            Book via WhatsApp
-                                        </Button>
-                                    </a>
-                                </div>
+                            <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Neom." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
+                                    <WhatsAppIcon className="w-5 h-5 mr-2" />
+                                    Book via WhatsApp
+                                </Button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -239,14 +240,14 @@ export default function NeomLocationPage() {
                                 </div>
                                 <div className="p-6">
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
-                                    <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Neom." target="_blank" rel="noopener noreferrer" className="block w-full">
-                                        <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
-                                            <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
-                                        </Button>
-                                    </a>
-                                </div>
+                                        <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
+                                        <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
+                                        <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Neom." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                            <Button className="w-full bg-[#25D366] hover:bg-[#1ebd5b] text-white font-bold h-12">
+                                                <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp Booking
+                                            </Button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -278,7 +279,7 @@ export default function NeomLocationPage() {
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-4xl font-bold mb-6">Visiting the Future?</h2>
                     <p className="text-xl text-gray-400 mb-8">
-                        Secure your transport in the Kingdom&apos;s most ambitious project.
+                        Let us handle your transportation in the NEOM region.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/booking">
@@ -287,8 +288,8 @@ export default function NeomLocationPage() {
                             </Button>
                         </Link>
                         <a href="https://wa.me/996575806733">
-                            <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
-                                WhatsApp Booking
+                            <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-10 py-6 text-lg font-bold border-0">
+                                <WhatsAppIcon className="w-5 h-5 mr-3" /> WhatsApp Booking
                             </Button>
                         </a>
                     </div>
@@ -297,6 +298,3 @@ export default function NeomLocationPage() {
         </div>
     );
 }
-
-
-

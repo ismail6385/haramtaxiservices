@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { MapPin, Clock, CheckCircle2, Car, Users, Navigation, ArrowRight, AlertCircle, Wallet, MessageCircle } from 'lucide-react';
+import { MapPin, Clock, CheckCircle2, Car, Users, Navigation, ArrowRight, AlertCircle, Wallet } from 'lucide-react';
 import {
     Accordion,
     AccordionContent,
@@ -10,6 +10,8 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import NearbyCities from '@/components/NearbyCities';
+import CustomerUpdates from '@/components/CustomerUpdates';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export const metadata: Metadata = {
     alternates: {
@@ -152,8 +154,8 @@ export default function MakkahPage() {
 
                             <div className="flex flex-wrap gap-4">
                                     <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Makkah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                                        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
-                                            <MessageCircle className="w-5 h-5 mr-2" />
+                                        <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
+                                            <WhatsAppIcon className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
                                         </Button>
                                     </a>
@@ -461,6 +463,9 @@ export default function MakkahPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Customer Updates */}
+            <CustomerUpdates location="Makkah" />
 
             {/* FAQ Section */}
             <section className="py-20 bg-white">

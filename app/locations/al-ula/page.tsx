@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import BookingForm from '@/components/BookingForm';
 import { Suspense } from 'react';
-import { MapPin, Phone, MessageCircle, Clock, Star, Shield, Car, CheckCircle2, Bed, Palette, Mountain } from 'lucide-react';
+import { MapPin, Phone, Clock, Star, Shield, Car, CheckCircle2, Bed, Palette, Mountain } from 'lucide-react';
 import NearbyCities from '@/components/NearbyCities';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export const metadata: Metadata = {
     alternates: {
@@ -136,8 +137,8 @@ export default function AlUlaLocationPage() {
                                 </Button>
                             </Link>
                             <a href="https://wa.me/996575806733">
-                                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-stone-900 px-10 py-6 text-lg ">
-                                    <MessageCircle className="w-5 h-5 mr-3" /> Call Support
+                                <Button size="lg" className="w-full sm:w-auto bg-[#25D366] hover:bg-[#1ebd5b] text-white px-10 py-6 text-lg border-0 shadow-lg">
+                                    <WhatsAppIcon className="w-5 h-5 mr-3" /> WhatsApp Booking
                                 </Button>
                             </a>
                         </div>
@@ -247,8 +248,8 @@ export default function AlUlaLocationPage() {
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Instant Booking</h3>
                                     <p className="text-sm text-gray-600 mb-4 font-sans">Chat with us on WhatsApp for fixed-rate pricing.</p>
                                     <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Ula." target="_blank" rel="noopener noreferrer" className="block w-full">
-                                        <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12 border-0 shadow-md">
-                                            <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
+                                        <Button className="w-full bg-[#25D366] hover:bg-[#1ebd5b] text-white font-bold h-12 border-0 shadow-md">
+                                            <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
                                     </a>
                                 </div>

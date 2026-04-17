@@ -98,7 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
 
     // Add dynamic blog posts (from lib/blogData)
-    const blogSitemap = blogData.slice(0, 30).map((post) => ({
+    const blogSitemap = blogData.map((post) => ({
         url: `${baseUrl}/blog/${post.slug}`,
         lastModified: new Date(post.date), // Use actual post date if available
         changeFrequency: 'monthly' as const,

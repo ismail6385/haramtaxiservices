@@ -8,7 +8,7 @@ export default function BlogPreview() {
         {
             title: "Ultimate Guide to Umrah 2025",
             excerpt: "Everything you need to know about performing Umrah this year, from visa requirements to best travel times.",
-            image: "https://images.unsplash.com/photo-1565552629477-e254f3a367c9?q=80&w=2068&auto=format&fit=crop",
+            image: "/masjid-nabawi-madinah.webp",
             date: "Oct 15, 2024",
             author: "Ahmed Al-Sayed",
             slug: "/blog/umrah-guide-2025"
@@ -16,7 +16,7 @@ export default function BlogPreview() {
         {
             title: "Top 5 Luxury Hotels in Jeddah",
             excerpt: "Discover the most opulent accommodations in the Bride of the Red Sea for a truly royal stay.",
-            image: "https://images.unsplash.com/photo-0.154a8506099945?q=80&w=2070&auto=format&fit=crop",
+            image: "/jeddah-corniche-view.webp",
             date: "Nov 02, 2024",
             author: "Sarah Khan",
             slug: "/blog/luxury-hotels-jeddah"
@@ -24,7 +24,7 @@ export default function BlogPreview() {
         {
             title: "Business Travel Etiquette in KSA",
             excerpt: "A comprehensive guide for international business travelers on navigating Saudi corporate culture.",
-            image: "https://images.unsplash.com/photo-1554469384-e5898eb74c0f?q=80&w=2070&auto=format&fit=crop",
+            image: "/makkah-clock-tower-new.webp",
             date: "Nov 10, 2024",
             author: "Faisal Rahman",
             slug: "/blog/business-etiquette-ksa"

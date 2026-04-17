@@ -58,6 +58,7 @@ export default function BookingProcess() {
                         </div>
                         <div>
                             <h4 className="text-xl font-bold text-gray-900">Arriving in the next 24 Hours?</h4>
+                            <p className="text-brand-gold font-black uppercase text-sm mt-1">Limited Taxi Availability for Airport Transfers & Umrah</p>
                             <p className="text-gray-500">Fast-track your booking via WhatsApp for priority dispatch.</p>
                         </div>
                     </div>

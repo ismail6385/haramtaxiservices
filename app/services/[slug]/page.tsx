@@ -4,9 +4,10 @@ import { notFound } from 'next/navigation';
 import { servicesData } from '@/lib/servicesData';
 import BookingForm from '@/components/BookingForm';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, MessageCircle, Home, ChevronRight } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, Home, ChevronRight } from 'lucide-react';
 import { Suspense } from 'react';
 import PilgrimTips from '@/components/PilgrimTips';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -106,13 +107,13 @@ export default async function ServicePage({ params }: Props) {
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <Link href="/booking">
-                                <Button size="lg" className="bg-slate-500 hover:bg-slate-600 text-white font-bold px-8 py-6 text-lg">
+                                <Button size="lg" className="bg-slate-500 hover:bg-slate-600 active:bg-slate-700 text-white font-bold px-8 py-6 text-lg transition-colors">
                                     Book Now
                                 </Button>
                             </Link>
                             <a href="https://wa.me/996575806733">
-                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg">
-                                    <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Us
+                                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900 active:bg-gray-100 active:text-gray-900 px-8 py-6 text-lg transition-colors">
+                                    <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp Us
                                 </Button>
                             </a>
                         </div>
@@ -221,8 +222,8 @@ export default async function ServicePage({ params }: Props) {
                             <h3 className="text-xl font-bold mb-4">Need Help?</h3>
                             <p className="text-gray-400 mb-6 text-sm">Our support team is available 24/7 to assist you with your booking.</p>
                             <a href="https://wa.me/996575806733" className="block mb-4">
-                                <Button className="w-full bg-white text-gray-900 hover:bg-gray-100 group">
-                                    <MessageCircle className="w-4 h-4 mr-2 group-hover:text-slate-500 transition-colors" /> WhatsApp Support
+                                <Button className="w-full bg-[#25D366] hover:bg-[#1ebd5b] text-white group">
+                                    <WhatsAppIcon className="w-4 h-4 mr-2" /> WhatsApp Support
                                 </Button>
                             </a>
                             <div className="text-xs text-gray-500">

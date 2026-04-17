@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import BookingForm from '@/components/BookingForm';
 import { Suspense } from 'react';
-import { MapPin, Phone, Clock, Shield, Globe, Landmark, ArrowRight, MessageCircle } from 'lucide-react';
+import { MapPin, Clock, Shield, Globe, Landmark, ArrowRight } from 'lucide-react';
 import NearbyCities from '@/components/NearbyCities';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export const metadata: Metadata = {
     alternates: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     keywords: ['taxi Al Hofuf', 'Al Ahsa taxi', 'Al Ahsa airport taxi', 'taxi to Al Qara', 'Hofuf local taxi'],
     openGraph: {
         title: 'Taxi Service in Al Hofuf | UNESCO Oasis',
-        description: 'Reliable transport in Al Ahsa. Connecting you to the world\'s largest oasis and heritage sites.',
+        description: "Reliable transport in Al Ahsa. Connecting you to the world's largest oasis and heritage sites.",
         url: 'https://haramtaxiservice.com/locations/al-hofuf',
         type: 'website',
     },
@@ -104,7 +104,6 @@ export default function AlHofufLocationPage() {
             {/* Hero Section */}
             <section className="relative h-[600px] flex items-center">
                 <div className="absolute inset-0 bg-yellow-900/50 z-10"></div>
-                {/* Fallback color/image */}
                 <div className="absolute inset-0 bg-yellow-800 z-0">
                     <Image
                         src="/al-hofuf-oasis.webp"
@@ -118,7 +117,7 @@ export default function AlHofufLocationPage() {
 
                 <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div className="max-w-3xl text-white">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-600 rounded-full mb-6 animate-fade-in border border-yellow-400/50">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-600 rounded-full mb-6 border border-yellow-400/50">
                             <Landmark className="w-4 h-4 text-white" />
                             <span className="text-sm font-semibold uppercase tracking-wide">UNESCO World Heritage</span>
                         </div>
@@ -130,13 +129,13 @@ export default function AlHofufLocationPage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Hofuf." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                                        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
-                                            <MessageCircle className="w-5 h-5 mr-2" />
-                                            Book via WhatsApp
-                                        </Button>
-                                    </a>
-                                </div>
+                            <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Hofuf." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
+                                    <WhatsAppIcon className="w-5 h-5 mr-2" />
+                                    Book via WhatsApp
+                                </Button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -229,7 +228,6 @@ export default function AlHofufLocationPage() {
 
                         {/* Sidebar */}
                         <div className="space-y-8">
-                            {/* Booking Widget */}
                             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden sticky top-24">
                                 <div className="bg-yellow-600 p-6 text-white">
                                     <h3 className="text-xl font-bold flex items-center gap-2">
@@ -239,14 +237,14 @@ export default function AlHofufLocationPage() {
                                 </div>
                                 <div className="p-6">
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
-                                    <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Hofuf." target="_blank" rel="noopener noreferrer" className="block w-full">
-                                        <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
-                                            <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
-                                        </Button>
-                                    </a>
-                                </div>
+                                        <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
+                                        <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
+                                        <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Al%20Hofuf." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                            <Button className="w-full bg-[#25D366] hover:bg-[#1ebd5b] text-white font-bold h-12">
+                                                <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp Booking
+                                            </Button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -286,8 +284,8 @@ export default function AlHofufLocationPage() {
                             </Button>
                         </Link>
                         <a href="https://wa.me/996575806733">
-                            <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
-                                WhatsApp Booking
+                            <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-10 py-6 text-lg font-bold flex items-center gap-2">
+                                <WhatsAppIcon className="w-5 h-5" /> WhatsApp Booking
                             </Button>
                         </a>
                     </div>
@@ -296,6 +294,3 @@ export default function AlHofufLocationPage() {
         </div>
     );
 }
-
-
-

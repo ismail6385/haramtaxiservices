@@ -67,10 +67,16 @@ export default function PilgrimTips() {
                 </div>
             </div>
 
-            <div className="pt-4 border-t border-brand-navy/10">
-                <p className="text-xs text-brand-navy-dark font-medium italic opacity-80 text-center">
+            <div className="pt-4 border-t border-brand-navy/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <p className="text-xs text-brand-navy-dark font-medium italic opacity-80 text-center sm:text-left">
                     Note: Our services are designed to give you peace of mind so you can focus on your Ibadah. 
                 </p>
+                <a 
+                    href="/booking"
+                    className="bg-brand-navy hover:bg-brand-navy-light text-white font-black px-6 py-3 rounded-xl text-sm transition-all whitespace-nowrap"
+                >
+                    Book your Umrah taxi now
+                </a>
             </div>
         </div>
     );
