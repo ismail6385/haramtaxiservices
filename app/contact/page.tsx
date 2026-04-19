@@ -1,6 +1,6 @@
 import BookingForm from '@/components/BookingForm';
 import { Suspense } from 'react';
-import { Clock, MapPin, CheckCircle2, MessageSquare, Headphones, Phone, Mail } from 'lucide-react';
+import { Clock, MapPin, CheckCircle2, MessageSquare, Headphones, Phone, Mail, Home, ChevronRight, Star } from 'lucide-react';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/contact',
     },
-    title: 'Contact Us | Executive Taxi Services KSA - Haram Taxi',
-    description: 'Contact Haram Taxi for premium bookings in Makkah, Madinah, and Jeddah. Professional VIP transport across Saudi Arabia available 24/7.',
+    title: 'Contact Us | Executive Taxi Services KSA [24/7 Support]',
+    description: 'Get in touch for premium taxi bookings in Makkah, Madinah, and Jeddah. 24/7 VIP support via WhatsApp. [Instant Quotes & Confirmation].',
     keywords: ['contact taxi Saudi Arabia', 'book luxury transport Makkah', 'premium transfer Madinah', 'VIP taxi Jeddah', 'executive car booking'],
     openGraph: {
         title: 'Contact Us | Executive Taxi Service Saudi Arabia',
@@ -27,78 +27,93 @@ export const metadata: Metadata = {
     },
 };
 
+const faqs = [
+    {
+        question: "How can I book a taxi?",
+        answer: "You can book through our online booking form on this page or the homepage. Fill in your details and we&apos;ll confirm your booking immediately."
+    },
+    {
+        question: "What is your response time?",
+        answer: "We aim to respond to all inquiries within a reasonable time. For urgent bookings, we provide instant confirmation."
+    },
+    {
+        question: "Do you operate 24/7?",
+        answer: "Yes, our taxi service is available 24 hours a day, 7 days a week including holidays."
+    },
+    {
+        question: "Can I modify my booking?",
+        answer: "Yes, you can modify your booking by contacting us through the form. We recommend making changes at least 24 hours before your scheduled pickup."
+    },
+    {
+        question: "What areas do you cover?",
+        answer: "We provide taxi services across Makkah, Madinah, Jeddah, Taif, AlUla, and other major cities in Saudi Arabia."
+    }
+];
+
+const features = [
+    {
+        icon: Clock,
+        title: "24/7 Chauffeur Dispatch",
+        description: "Round-the-clock executive support for your peace of mind"
+    },
+    {
+        icon: CheckCircle2,
+        title: "Instant Confirmation",
+        description: "Quick booking confirmation via online form"
+    },
+    {
+        icon: MapPin,
+        title: "Wide Coverage",
+        description: "Service across all major cities in KSA"
+    },
+    {
+        icon: Headphones,
+        title: "Customer Support",
+        description: "Dedicated support team ready to help"
+    }
+];
+
+const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Haram Taxi Service",
+    "description": "Contact us for taxi bookings in Makkah, Madinah, Jeddah.",
+    "url": "https://haramtaxiservice.com/contact",
+    "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Haram Taxi Service",
+        "telephone": "+996575806733",
+        "email": "haramtaxiservice@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Makkah / Madinah / Jeddah",
+            "addressCountry": "SA"
+        },
+        "areaServed": ["Makkah", "Madinah", "Jeddah", "Taif"]
+    }
+};
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+        }
+    }))
+};
+
 export default function ContactPage() {
-    const faqs = [
-        {
-            question: "How can I book a taxi?",
-            answer: "You can book through our online booking form on this page or the homepage. Fill in your details and we&apos;ll confirm your booking immediately."
-        },
-        {
-            question: "What is your response time?",
-            answer: "We aim to respond to all inquiries within a reasonable time. For urgent bookings, we provide instant confirmation."
-        },
-        {
-            question: "Do you operate 24/7?",
-            answer: "Yes, our taxi service is available 24 hours a day, 7 days a week including holidays."
-        },
-        {
-            question: "Can I modify my booking?",
-            answer: "Yes, you can modify your booking by contacting us through the form. We recommend making changes at least 24 hours before your scheduled pickup."
-        },
-        {
-            question: "What areas do you cover?",
-            answer: "We provide taxi services across Makkah, Madinah, Jeddah, Taif, AlUla, and other major cities in Saudi Arabia."
-        }
-    ];
-
-    const features = [
-        {
-            icon: Clock,
-            title: "24/7 Chauffeur Dispatch",
-            description: "Round-the-clock executive support for your peace of mind"
-        },
-        {
-            icon: CheckCircle2,
-            title: "Instant Confirmation",
-            description: "Quick booking confirmation via online form"
-        },
-        {
-            icon: MapPin,
-            title: "Wide Coverage",
-            description: "Service across all major cities in KSA"
-        },
-        {
-            icon: Headphones,
-            title: "Customer Support",
-            description: "Dedicated support team ready to help"
-        }
-    ];
-
-    const contactSchema = {
-        "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "name": "Contact Haram Taxi Service",
-        "description": "Contact us for taxi bookings in Makkah, Madinah, Jeddah.",
-        "url": "https://haramtaxiservice.com/contact",
-        "mainEntity": {
-            "@type": "LocalBusiness",
-            "name": "Haram Taxi Service",
-            "telephone": "+996575806733",
-            "email": "haramtaxiservice@gmail.com",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Makkah / Madinah / Jeddah",
-                "addressCountry": "SA"
-            },
-            "areaServed": ["Makkah", "Madinah", "Jeddah", "Taif"]
-        }
-    };
-
     return (
         <div className="bg-white min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-brand-navy/5 to-white pt-32 pb-20 relative overflow-hidden">
+            <section id="contact-options" className="bg-gradient-to-b from-brand-navy/5 to-white pt-32 pb-20 relative overflow-hidden scroll-mt-24">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-brand-navy/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-16">
@@ -142,8 +157,21 @@ export default function ContactPage() {
                 </div>
             </section>
 
+            {/* Quick Navigation / Table of Contents */}
+            <div className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <nav className="flex flex-wrap items-center gap-6 text-sm">
+                        <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
+                        <a href="#contact-options" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Official Support</a>
+                        <a href="#booking-form" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Direct Booking</a>
+                        <a href="#why-choose" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Corporate Commitment</a>
+                        <a href="#faq" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Help Center</a>
+                    </nav>
+                </div>
+            </div>
+
             {/* Contact Form Section */}
-            <section className="py-24 bg-gray-50 border-t border-gray-100">
+            <section id="booking-form" className="py-24 bg-gray-50 border-t border-gray-100 scroll-mt-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-12 text-center">
                         <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Start Your Journey</h2>
@@ -158,7 +186,7 @@ export default function ContactPage() {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-24 bg-white overflow-hidden">
+            <section id="why-choose" className="py-24 bg-white overflow-hidden scroll-mt-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
@@ -254,7 +282,7 @@ export default function ContactPage() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-24 bg-white">
+            <section id="faq" className="py-24 bg-white scroll-mt-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-display font-bold text-gray-900 mb-4">Contact & Support FAQs</h2>

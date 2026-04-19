@@ -86,9 +86,23 @@ export default function DhahranLocationPage() {
         "priceRange": "$$"
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-blue-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Breadcrumbs */}
             <div className="bg-blue-100 py-4 border-b border-blue-200">
@@ -112,6 +126,7 @@ export default function DhahranLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover"
+                        sizes="100vw"
                         priority
                     />
                 </div>
@@ -144,7 +159,7 @@ export default function DhahranLocationPage() {
             {/* AI Overview Block */}
             <section className="py-12 bg-white border-b border-blue-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Dhahran</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi cost in Dhahran?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         Rides to Dammam Airport typically cost <span className="font-bold text-blue-700">Get Quote</span>.
                         Transfers to Bahrain start from <span className="font-bold text-blue-700">Get Quote</span>.

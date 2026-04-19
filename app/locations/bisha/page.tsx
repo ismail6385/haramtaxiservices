@@ -86,9 +86,23 @@ export default function BishaLocationPage() {
         "priceRange": "$$"
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-orange-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Breadcrumbs */}
             <div className="bg-orange-100 py-4 border-b border-orange-200">
@@ -112,6 +126,7 @@ export default function BishaLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover"
+                        sizes="100vw"
                         priority
                     />
                 </div>
@@ -144,7 +159,7 @@ export default function BishaLocationPage() {
             {/* AI Overview Block */}
             <section className="py-12 bg-white border-b border-orange-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Bisha</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi cost in Bisha?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         A taxi from Bisha Airport (BHH) to the city center costs around <span className="font-bold text-orange-700">Get Quote</span>.
                         A round trip to King Fahd Dam with waiting time is typically <span className="font-bold text-orange-700">affordable rates</span>.

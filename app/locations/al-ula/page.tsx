@@ -87,9 +87,23 @@ export default function AlUlaLocationPage() {
         "priceRange": "$$$"
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-stone-50 min-h-screen font-serif">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Breadcrumbs */}
             <div className="bg-stone-100 py-4 border-b border-stone-200">
@@ -113,6 +127,7 @@ export default function AlUlaLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover opacity-80"
+                        sizes="100vw"
                         priority
                     />
                 </div>
@@ -149,7 +164,7 @@ export default function AlUlaLocationPage() {
             {/* AI Overview Block */}
             <section className="py-16 bg-white border-b border-stone-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold text-stone-800 mb-6 ">Getting Around Al Ula</h2>
+                    <h2 className="text-2xl font-bold text-stone-800 mb-6 ">How do I get around Al Ula?</h2>
                     <p className="text-lg text-stone-600 leading-relaxed font-light">
                         Transport in AlUla is best managed with pre-booked private cars to ensure reliability.
                         We provide professional airport transfers from AlUla International (ULH) and private tours

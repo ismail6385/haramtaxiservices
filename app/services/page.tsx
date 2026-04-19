@@ -9,8 +9,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/services',
     },
-    title: 'Professional Taxi Services | Haram Taxi Service',
-    description: 'Explore our range of premium taxi services including airport transfers, intercity rides to Makkah & Madinah, and Ziyarat tours.',
+    title: 'Professional Taxi Services [2026 Updated] | Premium KSA Transport',
+    description: 'Experience the most reliable private taxi services in Saudi Arabia. Premium airport transfers, intercity rides to Makkah & Madinah, and sacred Ziyarat tours. [Get Your 2026 Quote Today].',
 };
 
 export default function ServicesIndexPage() {
@@ -19,11 +19,25 @@ export default function ServicesIndexPage() {
             {/* Hero */}
             <div className="bg-brand-navy text-white py-12 md:py-20 px-4 text-center">
                 <h1 className="text-fluid-h1 font-bold mb-4 font-display">Our Services</h1>
-                <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">Elite VIP transportation solutions tailored for your spiritual journey with dignity and grace.</p>
+                <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
+                    Elite VIP transportation solutions tailored for your <Link href="/locations" className="text-white hover:text-brand-gold underline decoration-white/20">spiritual journey</Link> across Saudi Arabia with dignity and grace.
+                </p>
+            </div>
+
+            {/* Quick Navigation */}
+            <div className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <nav className="flex flex-wrap items-center gap-6 text-sm">
+                        <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
+                        <a href="#all-services" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">All Services</a>
+                        <a href="#why-choose" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Why Choose Us</a>
+                        <Link href="/contact" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Support & Help</Link>
+                    </nav>
+                </div>
             </div>
 
             {/* Services Grid */}
-            <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <div id="all-services" className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 scroll-mt-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {servicesData.map((service) => (
                         <Card key={service.slug} className="hover:shadow-xl transition-all duration-300 border-brand-navy-pale hover:border-brand-navy group">
@@ -58,7 +72,7 @@ export default function ServicesIndexPage() {
             </div>
 
             {/* Why Choose Us */}
-            <div className="bg-gray-50 py-20 border-t border-gray-100">
+            <div id="why-choose" className="bg-gray-50 py-20 border-t border-gray-100 scroll-mt-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Why Choose Haram Taxi?</h2>
@@ -84,7 +98,9 @@ export default function ServicesIndexPage() {
                                 <Star className="w-7 h-7 text-brand-navy" />
                             </div>
                             <h3 className="font-display font-bold text-xl mb-3 text-gray-900">Top Rated Service</h3>
-                            <p className="text-gray-600 leading-relaxed">Trusted by thousands of pilgrims for Umrah and Hajj transport excellence.</p>
+                            <p className="text-gray-600 leading-relaxed">
+                                Trusted by thousands of pilgrims for <Link href="/routes" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">Umrah and Hajj transport</Link> excellence.
+                            </p>
                         </div>
                     </div>
                 </div>

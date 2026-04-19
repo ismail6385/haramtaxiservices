@@ -1,4 +1,5 @@
 import { Star, Quote, CheckCircle2, Users, Shield } from 'lucide-react';
+import Image from 'next/image';
 
 const testimonials = [
     {
@@ -147,9 +148,11 @@ export default function Testimonials() {
                             {/* Author */}
                             <div className="flex items-center gap-4 pt-6 border-t border-gray-50 relative z-10">
                                 {testimonial.avatar ? (
-                                    <img 
+                                    <Image 
                                         src={testimonial.avatar} 
                                         alt={testimonial.name} 
+                                        width={48}
+                                        height={48}
                                         className="w-12 h-12 rounded-full object-cover shadow-md ring-4 ring-gray-50 flex-shrink-0"
                                     />
                                 ) : (

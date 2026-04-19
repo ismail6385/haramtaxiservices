@@ -87,9 +87,23 @@ export default function NeomLocationPage() {
         "priceRange": "$$$"
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-slate-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Breadcrumbs */}
             <div className="bg-slate-100 py-4 border-b border-slate-200">
@@ -113,6 +127,7 @@ export default function NeomLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover"
+                        sizes="100vw"
                         priority
                     />
                 </div>
@@ -145,7 +160,7 @@ export default function NeomLocationPage() {
             {/* AI Overview Block */}
             <section className="py-12 bg-white border-b border-slate-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in NEOM</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi cost in NEOM?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         A private transfer from NEOM Bay Airport (NUM) starting from <span className="font-bold text-blue-700">Get Quote</span>.
                         Trips to Tabuk are typically <span className="font-bold text-blue-700">affordable rates</span>.

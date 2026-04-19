@@ -18,7 +18,7 @@ export default function RoutesIndexPage() {
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Explore Our Taxi Routes</h1>
                     <p className="text-lg text-gray-600">
-                        From VIP intercity transfers to long-distance cross-border journeys, view all our dedicated routes across Saudi Arabia and the Gulf.
+                        From <Link href="/services" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">VIP intercity transfers</Link> to long-distance cross-border journeys, view all our dedicated routes across <Link href="/locations" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">Saudi Arabia</Link> and the Gulf.
                     </p>
                 </div>
 

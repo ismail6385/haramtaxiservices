@@ -87,9 +87,23 @@ export default function ZulfiLocationPage() {
         "priceRange": "$$"
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-yellow-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Breadcrumbs */}
             <div className="bg-yellow-100 py-4 border-b border-yellow-200">
@@ -113,6 +127,7 @@ export default function ZulfiLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover"
+                        sizes="100vw"
                         priority
                     />
                 </div>
@@ -145,7 +160,7 @@ export default function ZulfiLocationPage() {
             {/* AI Overview Block */}
             <section className="py-12 bg-white border-b border-yellow-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Zulfi</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi cost in Zulfi?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         Local city rides range from <span className="font-bold text-yellow-700">Get Quote</span>.
                         Trips to Qassim Airport (ELQ) are typically <span className="font-bold text-yellow-700">affordable rates</span>.

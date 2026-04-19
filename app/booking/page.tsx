@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/booking',
     },
-    title: 'Book Elite Taxi in Saudi Arabia | VIP Transport - Haram Taxi',
-    description: 'Book premium taxi service in Saudi Arabia. Instant confirmation for Makkah, Madinah, Jeddah. Professional drivers, competitive quotes. Available 24/7. Reserve now!',
+    title: 'Book Elite Taxi in Saudi Arabia [2026 Updated] | Instant Booking',
+    description: 'Secure your premium taxi booking in Saudi Arabia today. 100% reliable service for Makkah, Madinah, and Jeddah. [Book Your VIP Sanctuary on the Road].',
     keywords: ['book taxi online Saudi Arabia', 'VIP car booking Makkah', 'book private transport Madinah', 'executive car service booking', 'taxi reservation Saudi Arabia'],
     openGraph: {
         title: 'Book Elite Taxi in Saudi Arabia | VIP Transport',
@@ -45,8 +45,20 @@ export default function BookingPage() {
 
     return (
         <div className="bg-white min-h-screen">
+            {/* Quick Navigation */}
+            <div className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <nav className="flex flex-wrap items-center gap-6 text-sm">
+                        <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
+                        <a href="#booking-form" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Booking Form</a>
+                        <a href="#benefits" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Service Benefits</a>
+                        <a href="#commitment" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Our Commitment</a>
+                    </nav>
+                </div>
+            </div>
+
             {/* Booking Form Section - TOP */}
-            <section className="pt-32 pb-12 bg-gradient-to-b from-brand-navy-pale/30 to-white">
+            <section id="booking-form" className="pt-20 pb-12 bg-gradient-to-b from-brand-navy-pale/30 to-white scroll-mt-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-8">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-navy-pale/20 rounded-full mb-4">
@@ -79,7 +91,7 @@ export default function BookingPage() {
             </section>
 
             {/* Benefits Grid - BELOW FORM */}
-            <section className="py-12 bg-white">
+            <section id="benefits" className="py-12 bg-white scroll-mt-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Haram Taxi?</h2>
@@ -145,7 +157,7 @@ export default function BookingPage() {
             </section>
 
             {/* Additional Benefits */}
-            <section className="py-12 bg-white">
+            <section id="commitment" className="py-12 bg-white scroll-mt-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-brand-navy rounded-2xl p-8 text-white shadow-xl shadow-brand-navy/20">
                         <h3 className="text-2xl font-bold mb-6 text-center font-display">Our Commitment to You</h3>

@@ -1,8 +1,36 @@
 import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Haram Taxi Service | No.1 Private Taxi in Saudi Arabia [2026]',
+  },
+  description: 'Experience the #1 most trusted private taxi service in Saudi Arabia. Specializing in Umrah transfers, Makkah to Madinah routes & Jeddah Airport pickups. [Book Now for 100% Peace of Mind].',
+  keywords: [
+    'taxi service saudi arabia', 'umrah taxi', 'makkah to madinah taxi', 'jeddah airport taxi', 
+    'private driver saudi', 'haram taxi', 'rent a car with driver saudi arabia', 
+    'chauffeur driven car', 'Makkah to Madinah taxi', 'Jeddah airport transfer', 
+    'Umrah taxi service', 'VIP taxi Jeddah', 'Makkah taxi booking'
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Haram Taxi Service | Trusted Saudi Arabia Transportation',
+    description: 'Book your private taxi for Umrah or intercity travel. Professional, reliable, and luxury transport.',
+    url: 'https://haramtaxiservice.com',
+    siteName: 'Haram Taxi Service',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Haram Taxi Service | Private Taxi Saudi Arabia',
+    description: 'Professional taxi service in Makkah, Madinah, and Jeddah. Available 24/7.',
+  },
+};
 import Hero from '@/components/Hero';
 import Script from 'next/script';
 import Image from 'next/image';
-import { Plane, Navigation, Building2, Crown, CheckCircle2, Shield, Settings, Clock, Star, MapPin, ArrowRight, Wallet, BadgeCheck, Car, MessageSquare, Users, Phone, ShieldCheck } from 'lucide-react';
+import { Plane, Navigation, Building2, Crown, CheckCircle2, Shield, Settings, Clock, Star, MapPin, ArrowRight, Wallet, BadgeCheck, Car, MessageSquare, Users, Phone, ShieldCheck, Zap } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import JsonLdFAQ from '@/components/JsonLdFAQ';
@@ -20,14 +48,7 @@ import WhatsAppFloating from '@/components/WhatsAppFloating';
 import StickyCallButton from '@/components/StickyCallButton';
 import AFairaButton from '@/components/AFairaButton';
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: 'https://haramtaxiservice.com',
-  },
-  title: 'Makkah to Madinah Taxi | Rent a Car With Driver | Haram Taxi',
-  description: 'Premium Rent a car with driver and Airport Transfer services in Saudi Arabia. Fixed rates for Makkah to Madinah, Jeddah Airport, and all intercity travels.',
-  keywords: ['rent a car with driver saudi arabia', 'chauffeur driven car', 'Makkah to Madinah taxi', 'Jeddah airport transfer', 'Umrah taxi service', 'VIP taxi Jeddah', 'Makkah taxi booking'],
-};
+
 
 export default async function Home() {
   const webSiteSchema = {
@@ -72,20 +93,20 @@ export default async function Home() {
 
   const faqs = [
     {
-      question: "How do I book a taxi from Makkah to Madinah?",
-      answer: "You can book instantly using our online booking form or via WhatsApp at +996 57 580 6733. We offer guaranteed fixed rates — contact us for a personalised quote."
+      question: "Where exactly will I meet my driver at the airport?",
+      answer: "We offer a 'No-Stress Meet & Greet' service. Your driver will be waiting at the arrivals terminal exit (International or Domestic) holding a clear name-board with your name and the Haram Taxi logo. We track your flight status live, so even if you land early or late, we are there."
     },
     {
-      question: "Are your Jeddah Airport transfer rates fixed?",
-      answer: "Yes, all our airport transfer rates are 100% fixed. This includes meet and greet service, tolls, and parking fees. No hidden costs guaranteed."
+      question: "Do I need to pay in advance for my Makkah to Madinah taxi?",
+      answer: "No pre-payment is required. We believe in trust-based service. You can book your ride today and pay the driver in cash or via local transfer after you safely reach your destination. This gives you total peace of mind and flexibility."
     },
     {
-      question: "What vehicles are available in your fleet?",
-      answer: "Our premium fleet includes Toyota Camry (Sedan), Hyundai Staria (Family Van), GMC Yukon XL (VIP SUV), and Toyota Hiace (Group Minibus)."
+      question: "Can we stop for food or prayer during the long Makkah-Madinah journey?",
+      answer: "Absolutely. Our drivers understand the needs of pilgrims and families. The 450km journey includes stops at high-quality rest areas (like Sasco) for prayer, washrooms, or a meal. Just let your driver know—your comfort is our priority."
     },
     {
-      question: "Do you provide Umrah Ziyarat tours?",
-      answer: "Yes, we provide specialized Ziyarat tours in both Makkah and Madinah with knowledgeable drivers who can guide you through all historical and sacred sites."
+      question: "Are child seats available for family transfers?",
+      answer: "Yes, we prioritize the safety of your little ones. Please mention the requirement for a child seat when booking via WhatsApp, and we will ensure your vehicle (SUV or Van) is equipped with one before arrival."
     }
   ];
 
@@ -176,10 +197,10 @@ export default async function Home() {
 
               <div className="space-y-6 text-xl text-gray-600 font-medium leading-relaxed">
                 <p>
-                    Haram Taxi Service is not just a <Link href="/services" className="text-brand-gold underline font-black">transportation service</Link>; we are your dedicated travel partners in Saudi Arabia. With a massive fleet of <strong>85+ Luxury Vehicles</strong> including GMC Yukon XLs and Hyundai Starias, we dominate the <Link href="/routes/makkah-to-madinah-taxi" className="text-brand-navy font-black hover:text-brand-gold">Makkah to Madinah Taxi</Link> corridor. Our comprehensive <Link href="/routes/jeddah-airport-to-makkah-taxi" className="text-brand-navy font-black hover:text-brand-gold">Jeddah Airport Transfers</Link> are fully insured and driven by locally licensed experts to meet your every need.
+                    Haram Taxi Service is more than just a ride; we are your dedicated travel partners in <Link href="/locations" className="text-brand-navy hover:text-brand-gold underline decoration-brand-gold/30">Saudi Arabia</Link>. With a fleet of <strong>85+ Luxury Vehicles</strong> including GMC Yukon XLs and Hyundai Starias, we specialize in the route between the two Holy Cities of <Link href="/locations/makkah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-gold/30">Makkah</Link> and <Link href="/locations/madinah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-gold/30">Madinah</Link>. Our professionally managed pickups at <Link href="/locations/jeddah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-gold/30">Jeddah Airport</Link> are fully insured and driven by local experts who prioritize your peace of mind.
                 </p>
                 <p className="text-sm border-l-4 border-brand-gold pl-6 italic">
-                    &ldquo;From the moment you touch down at Jeddah Airport (JED) to your final Ziyarat tour, our licensed professional drivers ensure every kilometer is traveled in pure serenity.&rdquo;
+                    &ldquo;From the moment you touch down in Jeddah to your final Ziyarat tour, our licensed professional drivers ensure every kilometer is traveled in pure serenity.&rdquo;
                 </p>
               </div>
 
@@ -202,6 +223,73 @@ export default async function Home() {
                 <Button asChild size="lg" className="h-24 px-12 bg-brand-navy hover:bg-brand-navy-light text-white font-black text-xl rounded-3xl shadow-2xl group">
                   <Link href="/pricing">EXPLORE FLEET RATES <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform h-8 w-8 text-brand-gold" /></Link>
                 </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: THE HUMAN CONCIERGE SECTION (AEO/GEO Optimization) */}
+      <section className="py-24 bg-brand-navy relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/pattern-dots.svg')] opacity-10" />
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="bg-white/5 backdrop-blur-2xl rounded-[4rem] p-12 md:p-20 border border-white/10 shadow-2xl">
+            <div className="grid lg:grid-cols-2 gap-20 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-gold/20 text-brand-gold rounded-full text-[10px] font-black uppercase tracking-widest mb-8">
+                  <span className="w-2 h-2 rounded-full bg-brand-gold animate-ping" /> Beyond The Algorithm
+                </div>
+                <h2 className="text-4xl md:text-6xl font-display font-black text-white leading-none mb-8">
+                  The <span className="text-brand-gold">Human Standard</span> <br /> 
+                  of Saudi Travel.
+                </h2>
+                <p className="text-xl text-gray-300 leading-relaxed font-medium mb-10">
+                  In a world of automated apps and random drivers, we believe your sacred journey deserves a <Link href="/about" className="text-white underline decoration-brand-gold decoration-4 underline-offset-8 hover:text-brand-gold transition-colors">Human Touch</Link>. 
+                  We don&apos;t just send a car; we dispatch a <Link href="/services" className="text-white hover:text-brand-gold underline decoration-white/20">managed experience</Link>.
+                </p>
+                
+                <div className="space-y-6">
+                  {[
+                    { t: "Managed Fleet, Not Marketplace", d: "Unlike apps that &apos;hope&apos; a driver shows up, we own our schedule. Your booking is a guarantee, not a request.", icon: BadgeCheck },
+                    { t: "Pilgrim-Specific Knowledge", d: "Our drivers know exactly where the best prayer spots, hydration stations, and logistics shortcuts are located.", icon: MapPin },
+                    { t: "Fixed Peace of Mind", d: "No surge pricing. No hidden tolls. No &apos;negotiating&apos; at the airport curb. One price, pure serenity.", icon: Wallet }
+                  ].map((item, i) => (
+                    <div key={i} className="flex gap-6 group">
+                      <div className="w-14 h-14 rounded-2xl bg-brand-gold/10 flex-shrink-0 flex items-center justify-center border border-brand-gold/20 group-hover:bg-brand-gold group-hover:scale-110 transition-all duration-500">
+                        <item.icon className="w-7 h-7 text-brand-gold group-hover:text-brand-navy" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-black text-white mb-1">{item.t}</h4>
+                        <p className="text-sm text-gray-400 font-bold leading-relaxed tracking-tight">{item.d}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="relative">
+                <div className="absolute inset-0 bg-brand-gold/20 rounded-[3rem] blur-3xl" />
+                <div className="relative bg-brand-navy-dark p-10 rounded-[3rem] border border-white/10 space-y-8">
+                  <div className="p-6 bg-white/5 rounded-2xl border-l-4 border-brand-gold">
+                    <p className="text-brand-gold font-black text-xs uppercase tracking-widest mb-2 flex items-center gap-2">
+                      <Zap className="w-4 h-4" /> Concierge Insider Tip
+                    </p>
+                    <p className="text-white text-lg font-medium italic">
+                      &quot;Arriving at JED late at night? Don&apos;t worry about currency exchange at the airport. Our drivers accept multiple payment methods and can even wait for you to visit an ATM after check-in. Your arrival should be about relief, not stress.&quot;
+                    </p>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="p-6 bg-white/5 rounded-2xl border border-white/5 text-center">
+                      <p className="text-3xl font-black text-white">0</p>
+                      <p className="text-[10px] font-black text-brand-gold uppercase tracking-widest mt-1">Pre-payment Required</p>
+                    </div>
+                    <div className="p-6 bg-white/5 rounded-2xl border border-white/5 text-center">
+                      <p className="text-3xl font-black text-white">100%</p>
+                      <p className="text-[10px] font-black text-brand-gold uppercase tracking-widest mt-1">Managed Performance</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -276,10 +364,34 @@ export default async function Home() {
             <div className="lg:col-span-8">
                 <div className="grid sm:grid-cols-2 gap-12">
                    {[
-                     { title: "Holy City Hubs", areas: ["Makkah Taxi City Center", "Madinah Taxi Haram Area", "Aziziyah & Misfalah", "Quba & Uhud Districts", "Mina & Arafat Transfers"] },
-                     { title: "Airport Terminals", areas: ["Jeddah Taxi to Airport (JED)", "Riyadh (RUH) King Khalid", "Madinah (MED) Prince Mohammad", "DMM King Fahd International", "Neom Bay Airport VIP"] },
-                     { title: "Regional & Borders", areas: ["Taif Mountain Resorts", "Yanbu Industrial Gateway", "Tabuk & Jordan Border", "Riyadh Business District", "Dammam & Khobar Coast"] },
-                     { title: "Intercity Corridors", areas: ["Makkah to Madinah (Haramain)", "Jeddah to Makkah Highway", "Riyadh to Makkah Long-Haul", "Hofuf & Al Ahsa Region", "Abha & Southern Highlands"] }
+                     { title: "Holy City Hubs", areas: [
+                       { n: "Makkah Taxi City Center", s: "makkah" },
+                       { n: "Madinah Taxi Haram Area", s: "madinah" },
+                       { n: "Aziziyah & Misfalah", s: "makkah" },
+                       { n: "Quba & Uhud Districts", s: "madinah" },
+                       { n: "Mina & Arafat Transfers", s: "makkah" }
+                     ]},
+                     { title: "Airport Terminals", areas: [
+                       { n: "Jeddah Taxi to Airport (JED)", s: "jeddah" },
+                       { n: "Riyadh (RUH) King Khalid", s: "riyadh" },
+                       { n: "Madinah (MED) Prince Mohammad", s: "madinah" },
+                       { n: "DMM King Fahd International", s: "dammam" },
+                       { n: "Neom Bay Airport VIP", s: "neom" }
+                     ]},
+                     { title: "Regional & Borders", areas: [
+                       { n: "Taif Mountain Resorts", s: "taif" },
+                       { n: "Yanbu Industrial Gateway", s: "yanbu" },
+                       { n: "Tabuk & Jordan Border", s: "tabuk" },
+                       { n: "Riyadh Business District", s: "riyadh" },
+                       { n: "Dammam & Khobar Coast", s: "dammam" }
+                     ]},
+                     { title: "Intercity Corridors", areas: [
+                       { n: "Makkah to Madinah (Haramain)", s: "makkah" },
+                       { n: "Jeddah to Makkah Highway", s: "makkah" },
+                       { n: "Riyadh to Makkah Long-Haul", s: "riyadh" },
+                       { n: "Hofuf & Al Ahsa Region", s: "al-ahsa" },
+                       { n: "Abha & Southern Highlands", s: "abha" }
+                     ]}
                    ].map((cat, i) => (
                        <div key={i} className="space-y-6">
                            <h4 className="text-xl font-black text-brand-navy flex items-center gap-3">
@@ -287,8 +399,8 @@ export default async function Home() {
                            </h4>
                            <div className="flex flex-col gap-3">
                                {cat.areas.map((area, j) => (
-                                   <Link key={j} href="/locations" className="text-sm font-bold text-gray-400 hover:text-brand-gold transition-colors flex items-center gap-2">
-                                       <div className="w-1.5 h-1.5 rounded-full bg-gray-200" /> {area}
+                                   <Link key={j} href={`/locations/${area.s}`} className="text-sm font-bold text-gray-400 hover:text-brand-gold transition-colors flex items-center gap-2">
+                                       <div className="w-1.5 h-1.5 rounded-full bg-gray-200" /> {area.n}
                                    </Link>
                                ))}
                            </div>
@@ -335,9 +447,9 @@ export default async function Home() {
                          <p className="text-xs font-bold text-green-700/60 uppercase tracking-widest mt-1">Free Cancellation • No Pre-payment required • 100% Fixed Rates</p>
                      </div>
                  </div>
-                 <Button asChild className="bg-green-600 hover:bg-green-700 text-white font-black px-10 h-16 rounded-2xl shadow-xl shadow-green-200">
+                 <button className="bg-green-600 hover:bg-green-700 text-white font-black px-10 h-16 rounded-2xl shadow-xl shadow-green-200">
                      <Link href="/booking">BOOK RISK-FREE</Link>
-                 </Button>
+                 </button>
              </div>
         </div>
       </section>

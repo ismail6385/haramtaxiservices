@@ -129,6 +129,7 @@ export default function AlQunfudhahLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover"
+                        sizes="100vw"
                         priority
                     />
                 </div>

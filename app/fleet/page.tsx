@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/fleet',
     },
-    title: 'Elite Chauffeur Fleet | Premium GMC & VIP Executive Sedans Saudi Arabia',
-    description: 'Explore our distinguished chauffeur fleet in Saudi Arabia. Featuring the flagship GMC Yukon XL, executive Toyota Camry, and VIP family vans. Experience the ultimate sanctuary on the road.',
+    title: 'Elite Chauffeur Fleet | Premium GMC & VIP Executive Sedans [2026]',
+    description: 'Explore our distinguished chauffeur fleet in Saudi Arabia. Featuring 2024 GMC Yukon XL, executive Toyota Camry, and VIP family vans. [Book Your Ultimate Sanctuary on the Road].',
     keywords: ['chauffeur fleet Saudi Arabia', 'GMC Yukon VIP', 'executive sedan Makkah', 'premium family transport', 'luxury SUV chauffeur', 'VIP pilgrimage transport', 'Saudi Arabia executive car'],
     openGraph: {
         title: 'Elite Chauffeur Fleet | Premium Saudi VIP Transport',
@@ -142,8 +142,20 @@ export default function FleetPage() {
                 </div>
             </section>
 
+            {/* Quick Navigation */}
+            <div className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <nav className="flex flex-wrap items-center gap-6 text-sm">
+                        <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
+                        <a href="#vehicles" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Vehicle Types</a>
+                        <a href="#why-choose" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Quality Standards</a>
+                        <a href="#book" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Book Now</a>
+                    </nav>
+                </div>
+            </div>
+
             {/* Fleet Grid */}
-            <section className="py-20">
+            <section id="vehicles" className="py-20 scroll-mt-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {fleet.map((vehicle, index) => (
@@ -223,7 +235,7 @@ export default function FleetPage() {
             </section>
 
             {/* Why Choose Our Fleet */}
-            <section className="py-20 bg-gray-50">
+            <section id="why-choose" className="py-20 bg-gray-50 scroll-mt-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-fluid-h1 font-bold text-gray-900 mb-4">Why Choose Our Fleet?</h2>
@@ -259,7 +271,7 @@ export default function FleetPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-brand-navy text-white relative overflow-hidden">
+            <section id="book" className="py-20 bg-brand-navy text-white relative overflow-hidden scroll-mt-24">
                 <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <h2 className="text-fluid-h1 font-bold mb-6 font-display">Experience Distinguished Travel</h2>

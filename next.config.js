@@ -6,9 +6,9 @@ const nextConfig = {
   // Image optimization
   images: {
     formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 60,
+    minimumCacheTTL: 2592000,
     remotePatterns: [
       {
         protocol: 'https',
@@ -22,6 +22,26 @@ const nextConfig = {
   // Security headers
   async headers() {
     return [
+      {
+        // Long cache for static assets (images, fonts, JS, CSS)
+        source: '/(_next/static|images|fonts)/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        // Cache public images (webp/avif/png/jpg)
+        source: '/:file(.*\\.(?:webp|avif|png|jpg|jpeg|svg|ico|woff2|woff))',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
       {
         // RFC 8288 Link headers for agent discovery on homepage
         source: '/',

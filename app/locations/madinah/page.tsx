@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/madinah',
     },
-    title: 'Executive Chauffeur Service in Madinah | Elite Ziyarat Tours - Haram Chauffeur',
-    description: 'Book distinguished chauffeur service in Madinah. VIP airport transfers, hotel pickups, and exclusive Ziyarat tours. Experience the City of the Prophet with absolute serenity. Available 24/7.',
+    title: 'Executive Chauffeur Service in Madinah [2026 Updated] | Elite Ziyarat Tours',
+    description: 'Book distinguished chauffeur service in Madinah. VIP airport transfers, hotel pickups, and exclusive Ziyarat tours. Experience the City of the Prophet with absolute peace of mind. [100% Reliable Service].',
     keywords: ['Madinah chauffeur service', 'VIP transport Madinah', 'executive car Madinah', 'distinguished Madinah transport', 'Madinah Ziyarat chauffeur', 'luxury Madinah travel'],
     openGraph: {
         title: 'Executive Chauffeur Service in Madinah | Elite Ziyarat Tours',
@@ -181,6 +181,7 @@ export default function MadinahPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover opacity-60"
+                        sizes="100vw"
                         priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -198,7 +199,7 @@ export default function MadinahPage() {
                                 </h1>
 
                                 <p className="text-xl text-gray-200 mb-6 leading-relaxed">
-                                    Premier chauffeur service in Madinah, the sanctuary of the Prophet (ﷺ). We provide elite airport arrivals, bespoke Ziyarat experiences to historical sites, and dignified intercity transit.
+                                    Premier chauffeur service in Madinah, the sanctuary of the Prophet (ﷺ). We provide elite airport arrivals, <Link href="/services/madinah-ziyarat" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">bespoke Ziyarat experiences</Link> to historical sites, and dignified <Link href="/routes" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">intercity transit</Link>.
                                 </p>
 
                                 <div className="flex items-center gap-2 mb-8 text-slate-100 font-medium bg-white/10 w-fit px-4 py-2 rounded-lg backdrop-blur-sm">
@@ -249,14 +250,14 @@ export default function MadinahPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                                 <div>
-                                    <div className="font-semibold text-gray-900">Makkah</div>
+                                    <div className="font-semibold text-gray-900"><Link href="/locations/makkah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">Makkah</Link></div>
                                     <div className="text-sm text-gray-500">Distance: 450km</div>
                                 </div>
                                 <div className="text-xl font-bold text-brand-navy">4.5 hours</div>
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                                 <div>
-                                    <div className="font-semibold text-gray-900">Jeddah Airport</div>
+                                    <div className="font-semibold text-gray-900"><Link href="/locations/jeddah" className="text-slate-600 hover:text-brand-gold underline decoration-slate-600/20">Jeddah Airport</Link></div>
                                     <div className="text-sm text-gray-500">Distance: 420km</div>
                                 </div>
                                 <div className="text-xl font-bold text-slate-600">4 hours</div>
@@ -285,7 +286,7 @@ export default function MadinahPage() {
                                     <AlertCircle className="w-6 h-6 text-red-500" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">Airport Distance Challenge</h3>
-                                <p className="text-gray-600 mb-4">Prince Mohammad Bin Abdulaziz Airport is 20km+ from most hotels. Finding reliable airport transfers can be stressful after a long flight.</p>
+                                <p className="text-gray-600 mb-4"><Link href="/services/madinah-airport-transfer" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">Prince Mohammad Bin Abdulaziz Airport</Link> is 20km+ from most hotels. Finding reliable airport transfers can be stressful after a long flight.</p>
                                 <div className="flex items-center text-slate-600 font-medium">
                                     <CheckCircle2 className="w-5 h-5 mr-2" />
                                     <span>Solution: Pre-arranged Meet & Greet with flight tracking</span>
@@ -350,7 +351,7 @@ export default function MadinahPage() {
                                         </div>
                                         <div>
                                             <h4 className="font-semibold text-gray-900">Trip Type</h4>
-                                            <p className="text-gray-600 text-sm">Airport transfers are priced based on distance from local Ziyarat tours or intercity trips to Makkah.</p>
+                                            <p className="text-gray-600 text-sm">Airport transfers are priced based on distance from local Ziyarat tours or <Link href="/routes/makkah-to-madinah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">intercity trips to Makkah</Link>.</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start">
@@ -605,7 +606,7 @@ export default function MadinahPage() {
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className="text-4xl font-bold mb-6">Ready to Book Your Madinah Taxi?</h2>
                         <p className="text-xl mb-8 opacity-90">
-                            Professional taxi service in Madinah available 24/7. Book now for instant confirmation!
+                            <Link href="/services" className="text-white hover:text-brand-gold underline decoration-white/30">Professional taxi service</Link> in Madinah available 24/7. Book now for instant confirmation!
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/booking">

@@ -24,13 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: service.title,
-        description: service.description,
+        title: `${service.title} [2026 Updated]`,
+        description: `Experience a 100% reliable ${service.title.split('|')[0].trim()} with our premium chauffeur service. Professional drivers, pristine cars, and competitive pricing for your spiritual journey. [Get Instant Quote].`,
         alternates: {
             canonical: `https://haramtaxiservice.com/services/${slug}`,
         },
         openGraph: {
-            title: service.title,
+            title: `${service.title} | Haram Taxi`,
             description: service.description,
             type: 'website',
             url: `https://haramtaxiservice.com/services/${slug}`,
@@ -68,6 +68,19 @@ export default async function ServicePage({ params }: Props) {
         "description": service.description
     };
 
+    const faqSchema = service.faqs && service.faqs.length > 0 ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": service.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    } : null;
+
 
     return (
         <div className="bg-white min-h-screen">
@@ -75,6 +88,12 @@ export default async function ServicePage({ params }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
             />
+            {faqSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+            )}
 
             {/* Breadcrumb */}
             <div className="bg-gray-100 py-3 border-b border-gray-200">
@@ -121,6 +140,19 @@ export default async function ServicePage({ params }: Props) {
                 </div>
             </div>
 
+            {/* Quick Navigation / Table of Contents */}
+            <div className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <nav className="flex flex-wrap items-center gap-6 text-sm">
+                        <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
+                        <a href="#overview" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Service Overview</a>
+                        <a href="#features" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Fleet Standards</a>
+                        <a href="#pricing" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Transparent Pricing</a>
+                        <a href="#faq" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Service FAQs</a>
+                    </nav>
+                </div>
+            </div>
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
                 <div className="grid lg:grid-cols-3 gap-12">
 
@@ -128,7 +160,7 @@ export default async function ServicePage({ params }: Props) {
                     <div className="lg:col-span-2 space-y-12">
 
                         {/* Description */}
-                        <div>
+                        <div id="overview" className="scroll-mt-24">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">{service.title} Overview</h2>
                             <p className="text-lg text-gray-600 leading-relaxed">
                                 {service.content}
@@ -136,7 +168,7 @@ export default async function ServicePage({ params }: Props) {
                         </div>
 
                         {/* Features Grid */}
-                        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                        <div id="features" className="bg-gray-50 rounded-2xl p-8 border border-gray-100 scroll-mt-24">
                             <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose This Service?</h3>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {service.features.map((feature, idx) => (
@@ -152,7 +184,7 @@ export default async function ServicePage({ params }: Props) {
 
                         {/* Pricing Table */}
                         {service.pricing && service.pricing.length > 0 && (
-                            <div>
+                            <div id="pricing" className="scroll-mt-24">
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Competitive Quotes</h3>
                                 <div className="overflow-hidden bg-white border border-gray-200 rounded-2xl shadow-sm">
                                     <table className="w-full text-left">
@@ -178,7 +210,7 @@ export default async function ServicePage({ params }: Props) {
 
                         {/* FAQ Section */}
                         {service.faqs && service.faqs.length > 0 && (
-                            <div>
+                            <div id="faq" className="bg-white rounded-2xl p-8 border border-gray-100 scroll-mt-24">
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h3>
                                 <div className="space-y-4">
                                     {service.faqs.map((faq, idx) => (

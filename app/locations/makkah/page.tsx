@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/makkah',
     },
-    title: 'VIP Chauffeur Service in Makkah | Sacred Journey Transfers - Haram Chauffeur',
-    description: 'Elite chauffeur service in Makkah for distinguished pilgrims. VIP airport transfers, hotel pickups, and sacred Ziyarat tours. Available 24/7 with absolute dignity.',
+    title: 'VIP Chauffeur Service in Makkah [2026] | 100% Reliable Umrah Transfers',
+    description: 'Experience absolute dignity with our elite Makkah chauffeur service. VIP airport transfers & sacred Ziyarat tours available 24/7. [Book Your Sacred Journey Now].',
     keywords: ['Makkah chauffeur', 'VIP transport Makkah', 'executive car Makkah', 'sacred journey Makkah', 'Umrah chauffeur Makkah', 'private chauffeur Makkah', 'distinguished pilgrimage transport'],
 };
 
@@ -116,9 +116,23 @@ export default function MakkahPage() {
         }
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-white min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* Hero Section */}
             <section className="relative h-[500px] bg-gray-900">
                 <Image
@@ -127,7 +141,8 @@ export default function MakkahPage() {
                     width={1200}
                     height={500}
                     className="w-full h-full object-cover opacity-60"
-                    priority
+                    sizes="100vw"
+                        priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
 
@@ -144,7 +159,7 @@ export default function MakkahPage() {
                             </h1>
 
                             <p className="text-xl text-gray-200 mb-6 leading-relaxed">
-                                Distinguished chauffeur service in the Holy City of Makkah. We provide 24/7 executive transfers to Masjid Al-Haram, guided Ziyarat tours to sacred sites, and reliable intercity transport with the utmost dignity.
+                                Distinguished chauffeur service in the Holy City of Makkah. We provide 24/7 executive transfers to <Link href="/services/hotel-to-haram-transport" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">Masjid Al-Haram</Link>, guided <Link href="/services/makkah-ziyarat" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">Ziyarat tours</Link> to sacred sites, and reliable <Link href="/routes" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">intercity transport</Link> with the utmost dignity.
                             </p>
 
                             <div className="flex items-center gap-2 mb-8 text-slate-100 font-medium bg-white/10 w-fit px-4 py-2 rounded-lg backdrop-blur-sm">
@@ -196,21 +211,21 @@ export default function MakkahPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                             <div>
-                                <div className="font-semibold text-gray-900">Jeddah Airport</div>
+                                <div className="font-semibold text-gray-900"><Link href="/locations/jeddah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20 transition-colors">Jeddah Airport</Link></div>
                                 <div className="text-sm text-gray-500">Distance: 80km</div>
                             </div>
                             <div className="text-xl font-bold text-brand-navy">60 mins</div>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                             <div>
-                                <div className="font-semibold text-gray-900">Madinah</div>
+                                <div className="font-semibold text-gray-900"><Link href="/locations/madinah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20 transition-colors">Madinah</Link></div>
                                 <div className="text-sm text-gray-500">Distance: 450km</div>
                             </div>
                             <div className="text-xl font-bold text-slate-600">4.5 hours</div>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
                             <div>
-                                <div className="font-semibold text-gray-900">Taif</div>
+                                <div className="font-semibold text-gray-900"><Link href="/locations/taif" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20 transition-colors">Taif</Link></div>
                                 <div className="text-sm text-gray-500">Distance: 90km</div>
                             </div>
                             <div className="text-xl font-bold text-slate-600">1.5 hours</div>
@@ -314,7 +329,7 @@ export default function MakkahPage() {
                         <div className="bg-brand-navy p-8 rounded-2xl text-white flex flex-col justify-center shadow-xl">
                             <h3 className="text-2xl font-bold mb-6">No Ramadan Surges</h3>
                             <p className="mb-6 opacity-90 text-lg">
-                                Many services triple their prices during Ramadan and Hajj. We believe in serving pilgrims with honesty and maintain consistent, fair pricing throughout the year.
+                                Many services triple their prices during Ramadan and Hajj. We believe in serving pilgrims with honesty and maintain consistent, <Link href="/pricing" className="text-white hover:text-brand-gold underline decoration-white/30">fair pricing</Link> throughout the year.
                             </p>
                             <Link href="/booking">
                                 <Button className="bg-white text-slate-600 hover:bg-gray-100 w-full text-lg h-12">
@@ -358,7 +373,7 @@ export default function MakkahPage() {
                                 <span className="text-3xl font-bold text-slate-500">3</span>
                             </div>
                             <h3 className="text-xl font-bold text-center text-gray-900 mb-3">Arrive Safely</h3>
-                            <p className="text-center text-gray-600">Comfortable ride to your destination, whether Jeddah Airport, Madinah, or local Ziyarat sites.</p>
+                            <p className="text-center text-gray-600">Comfortable ride to your destination, whether <Link href="/locations/jeddah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">Jeddah Airport</Link>, <Link href="/locations/madinah" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">Madinah</Link>, or local Ziyarat sites.</p>
                         </div>
                     </div>
                 </div>
@@ -503,7 +518,7 @@ export default function MakkahPage() {
                         Ready to Book Your Makkah Taxi?
                     </h2>
                     <p className="text-xl mb-8 opacity-90">
-                        Professional taxi service available 24/7. Book now for instant confirmation!
+                        <Link href="/services" className="text-white hover:text-brand-gold underline decoration-white/30">Professional taxi service</Link> available 24/7. Book now for instant confirmation!
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/booking">

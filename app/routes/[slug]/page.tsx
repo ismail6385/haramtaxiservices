@@ -27,13 +27,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: route.title,
-        description: route.description,
+        title: `${route.title} [2026 Updated]`,
+        description: `Experience a 100% reliable ${route.h1} with our professional taxi service. Enjoy a spiritual journey with peace of mind, competitive pricing, and modern cars. [Book Your Ride Now].`,
         alternates: {
             canonical: `https://haramtaxiservice.com/routes/${slug}`,
         },
         openGraph: {
-            title: route.title,
+            title: `${route.title} | Haram Taxi`,
             description: route.description,
             type: 'website',
             url: `https://haramtaxiservice.com/routes/${slug}`,
@@ -71,13 +71,14 @@ export default async function RoutePage({ params }: Props) {
         "offers": route.pricing.map(p => ({
             "@type": "Offer",
             "priceCurrency": "SAR",
-            "price": p.price.replace(/[^Get Quote]/g, '') || "0",
+            "price": p.price.replace(/[^0-9]/g, '') || "0",
             "itemOffered": {
                 "@type": "Service",
                 "name": p.vehicle
             }
         }))
     };
+
 
     const breadcrumbSchema = {
         "@context": "https://schema.org",
@@ -104,10 +105,24 @@ export default async function RoutePage({ params }: Props) {
         ]
     };
 
+    const faqSchema = route.faqs && route.faqs.length > 0 ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": route.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    } : null;
+
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-white min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
             {/* Breadcrumb */}
             <div className="bg-slate-700 text-slate-100 py-3 border-b border-slate-600">
@@ -120,19 +135,16 @@ export default async function RoutePage({ params }: Props) {
                 </div>
             </div>
 
-            {/* Hero Header */}
-            <div className="bg-slate-600 text-white py-16">
-                <div className="container mx-auto px-4">
-                    <h1 className="text-3xl md:text-5xl font-bold mb-4">{route.h1}</h1>
-                    <p className="text-xl opacity-90">{route.description}</p>
-                    <div className="flex gap-6 mt-6 text-sm font-semibold">
-                        <div className="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full">
-                            <MapPin className="w-4 h-4" /> {route.distance}
-                        </div>
-                        <div className="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full">
-                            <Clock className="w-4 h-4" /> {route.duration}
-                        </div>
-                    </div>
+            {/* Quick Navigation / Table of Contents */}
+            <div className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <nav className="flex flex-wrap items-center gap-6 text-sm">
+                        <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
+                        <a href="#about" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Route Details</a>
+                        <a href="#benefits" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Exclusive Benefits</a>
+                        <a href="#pricing" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Competitive Pricing</a>
+                        <a href="#faq" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Route FAQs</a>
+                    </nav>
                 </div>
             </div>
 
@@ -140,13 +152,13 @@ export default async function RoutePage({ params }: Props) {
                 <div className="grid lg:grid-cols-3 gap-8">
                     {/* Main Content */}
                     <div className="lg:col-span-2 space-y-8">
-                        <div className="bg-white rounded-2xl p-8 shadow-sm">
+                        <div id="about" className="bg-white rounded-2xl p-8 shadow-sm scroll-mt-24">
                             <h2 className="text-2xl font-bold mb-4">About {route.h1} Taxi Service</h2>
                             <p className="text-gray-600 leading-relaxed text-lg">{route.content}</p>
                         </div>
 
                         {/* Pricing Table */}
-                        <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <div id="pricing" className="bg-white rounded-2xl shadow-sm overflow-hidden scroll-mt-24">
                             <div className="bg-gray-900 text-white p-6">
                                 <h2 className="text-2xl font-bold">{route.h1} Taxi Rates 2026</h2>
                                 <p className="opacity-80">Competitive quotes for {route.h1}</p>
@@ -177,7 +189,7 @@ export default async function RoutePage({ params }: Props) {
 
                         {/* FAQs */}
                         {route.faqs && route.faqs.length > 0 && (
-                            <div className="bg-white rounded-2xl p-8 shadow-sm">
+                            <div id="faq" className="bg-white rounded-2xl p-8 shadow-sm scroll-mt-24">
                                 <h2 className="text-2xl font-bold mb-6">{route.h1} FAQ</h2>
                                 <div className="space-y-6">
                                     {route.faqs.map((faq, idx) => (
@@ -190,7 +202,9 @@ export default async function RoutePage({ params }: Props) {
                             </div>
                         )}
 
-                        <PilgrimTips />
+                        <div id="tips" className="scroll-mt-24">
+                            <PilgrimTips />
+                        </div>
                     </div>
 
                     {/* Sidebar Booking Form */}

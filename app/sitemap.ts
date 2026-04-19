@@ -77,8 +77,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const locationSitemap = locationPages.map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7, // Locations are important landing pages
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
     }))
 
     // Add dynamic routes (from lib/routesData)

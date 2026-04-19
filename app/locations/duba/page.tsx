@@ -86,9 +86,23 @@ export default function DubaLocationPage() {
         "priceRange": "$$"
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-slate-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Breadcrumbs */}
             <div className="bg-slate-100 py-4 border-b border-slate-200">
@@ -112,6 +126,7 @@ export default function DubaLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover"
+                        sizes="100vw"
                         priority
                     />
                 </div>
@@ -144,7 +159,7 @@ export default function DubaLocationPage() {
             {/* AI Overview Block */}
             <section className="py-12 bg-white border-b border-slate-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Duba</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi cost in Duba?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         Local rides within Duba are typically <span className="font-bold text-slate-700">affordable rates</span>.
                         Transfers to Tabuk Airport cost around <span className="font-bold text-slate-700">Get Quote</span>.

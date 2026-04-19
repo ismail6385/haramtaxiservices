@@ -86,9 +86,23 @@ export default function AlRassLocationPage() {
         "priceRange": "$$"
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-emerald-50 min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Breadcrumbs */}
             <div className="bg-emerald-100 py-4 border-b border-emerald-200">
@@ -112,6 +126,7 @@ export default function AlRassLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover"
+                        sizes="100vw"
                         priority
                     />
                 </div>
@@ -144,7 +159,7 @@ export default function AlRassLocationPage() {
             {/* AI Overview Block */}
             <section className="py-12 bg-white border-b border-emerald-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Taxi Fares in Al Rass</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi cost in Al Rass?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         Transfers to Qassim Airport cost around <span className="font-bold text-emerald-700">Get Quote</span>.
                         Rides to Buraidah city center are typically <span className="font-bold text-emerald-700">affordable rates</span>.

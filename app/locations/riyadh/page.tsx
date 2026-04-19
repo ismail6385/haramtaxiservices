@@ -92,9 +92,23 @@ export default function RiyadhLocationPage() {
         "priceRange": "$$"
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="bg-white min-h-screen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Breadcrumbs */}
             <div className="bg-gray-50 py-4 border-b border-gray-100">
@@ -118,6 +132,7 @@ export default function RiyadhLocationPage() {
                         width={1200}
                         height={500}
                         className="w-full h-full object-cover opacity-60"
+                        sizes="100vw"
                         priority
                     />
                 </div>

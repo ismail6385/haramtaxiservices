@@ -1,311 +1,306 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
+import React from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import BookingForm from '@/components/BookingForm';
-import { Suspense } from 'react';
-import { MapPin, Phone, Clock, Star, Shield, Car, CheckCircle2, Building, Plane, ArrowRight, MessageCircle } from 'lucide-react';
+import { Phone, MapPin, Clock, Shield, Star, ArrowRight, MessageCircle, ChevronRight, Globe, Zap } from 'lucide-react';
 import NearbyCities from '@/components/NearbyCities';
+import Image from 'next/image';
 
-export const metadata: Metadata = {
-    alternates: {
-        canonical: 'https://haramtaxiservice.com/locations/tabuk',
-    },
-    title: 'Taxi Service in Tabuk & NEOM | The Line & Airport Transfers',
-    description: 'Professional taxi service in Tabuk and NEOM. Airport transfers to Prince Sultan Airport (TUU) and NEOM Bay (NUM). Rides to The Line, Trojena, and Sindalah.',
-    keywords: ['taxi Tabuk', 'NEOM taxi service', 'The Line transport', 'Tabuk airport taxi', 'Neom Bay airport transfer'],
-    openGraph: {
-        title: 'Taxi Service in Tabuk & NEOM | The Line',
-        description: 'Reliable transport for NEOM project visitors and Tabuk residents. Airport transfers and site visits.',
-        url: 'https://haramtaxiservice.com/locations/tabuk',
-        type: 'website',
-    },
+export const metadata = {
+  title: 'Taxi Service in Tabuk | Gateway to NEOM & The Line | Haram Taxi',
+  description: 'Premium taxi service in Tabuk. Professional airport transfers to NEOM, The Line, and historical sites. 24/7 service with local expert drivers. Book via WhatsApp.',
 };
 
-export default function TabukLocationPage() {
-    const services = [
-        {
-            name: 'Tabuk Airport (TUU) Transfer',
-            description: 'Reliable pickup from Prince Sultan bin Abdulaziz Airport to Tabuk city or NEOM base camps.',
-            icon: Plane,
-            href: '/services/tabuk-airport-transfer'
-        },
-        {
-            name: 'NEOM & The Line Transport',
-            description: 'Authorized transport services for visitors and contractors heading to NEOM Community, The Line, or Trojena.',
-            icon: Building,
-            href: '/services/neom-taxi'
-        },
-        {
-            name: 'NEOM Bay Airport (NUM)',
-            description: 'Direct transfers from NEOM Bay Airport to resorts and project sites.',
-            icon: Plane,
-            href: '/services/neom-bay-transfer'
-        },
-        {
-            name: 'Historical Tours',
-            description: 'Visit Tabuk Castle and the ancient diverse landscapes of Wadi Al Disah.',
-            icon: MapPin,
-            href: '/services/tabuk-city-tour'
-        },
-        {
-            name: 'Jordan Border (Halat Ammar)',
-            description: 'Direct transfers to the Halat Ammar border crossing for travel to Jordan.',
-            icon: ArrowRight, // Using ArrowRight as Globe needs import
-            href: '/routes/tabuk-to-jordan-border'
-        }
-    ];
+const TabukLocationPage = () => {
+  const taxiSchema = {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "Haram Taxi Tabuk Service",
+    "description": "Professional taxi and transport services in Tabuk region, specializing in NEOM transfers and airport pickups.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Haram Taxi Service",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tabuk",
+        "addressCountry": "SA"
+      }
+    },
+    "areaServed": "Tabuk & NEOM Region",
+    "serviceType": "Airport Transfer, Long Distance Taxi",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "SAR",
+      "price": "150"
+    }
+  };
 
-    const faqs = [
-        {
-            question: "Is there a taxi service to NEOM from Tabuk?",
-            answer: "Yes, we provide specialized 4x4 and sedan taxi services from Tabuk to all NEOM sectors, including The Line and Oxagon."
-        },
-        {
-            question: "How long is the drive from Tabuk to NEOM?",
-            answer: "It generally takes about 2 to 2.5 hours to reach the main NEOM community areas from Tabuk City."
-        },
-        {
-            question: "Do I need a permit to enter NEOM?",
-            answer: "While transport is available, entry to certain construction zones is restricted. Please ensure you have your visitor passes ready if visiting work sites."
-        },
-        {
-            question: "What is the cost of a taxi to NEOM?",
-            answer: "Fares typically start from Get Quote for a one-way trip, depending on the specific destination within the massive NEOM zones."
-        }
-    ];
+  return (
+    <div className="min-h-screen bg-[#0a0f18] selection:bg-cyan-500/30">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(taxiSchema) }}
+      />
 
-    const localBusinessSchema = {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Haram Taxi Service Tabuk",
-        "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+996575806733",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "King Faisal Road",
-            "addressLocality": "Tabuk",
-            "postalCode": "47913",
-            "addressCountry": "SA"
-        },
-        "url": "https://haramtaxiservice.com/locations/tabuk",
-        "priceRange": "$$"
-    };
-
-    return (
-        <div className="bg-slate-50 min-h-screen">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
-
-            {/* Breadcrumbs */}
-            <div className="bg-slate-100 py-4 border-b border-slate-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600">
-                    <Link href="/" className="hover:text-cyan-600">Home</Link>
-                    <span className="mx-2">/</span>
-                    <Link href="/locations" className="hover:text-cyan-600">Locations</Link>
-                    <span className="mx-2">/</span>
-                    <span className="font-semibold text-slate-900">Tabuk & NEOM</span>
-                </div>
-            </div>
-
-            {/* Hero Section */}
-            <section className="relative h-[600px] flex items-center">
-                <div className="absolute inset-0 bg-cyan-950/60 z-10"></div>
-                {/* Fallback color/image */}
-                <div className="absolute inset-0 bg-slate-900 z-0">
-                    <Image
-                        src="/neom-the-line-concept.webp"
-                        alt="Taxi Service in Tabuk and NEOM"
-                        width={1200}
-                        height={500}
-                        className="w-full h-full object-cover"
-                        priority
-                    />
-                </div>
-
-                <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                    <div className="max-w-3xl text-white">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 rounded-full mb-6 animate-fade-in shadow-lg shadow-cyan-500/20">
-                            <Star className="w-4 h-4 fill-white" />
-                            <span className="text-sm font-semibold uppercase tracking-wide">Gateway to the Future</span>
-                        </div>
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                            Tabuk & NEOM Taxi Service
-                        </h1>
-                        <p className="text-xl md:text-2xl opacity-90 mb-8 leading-relaxed font-light">
-                            Your trusted connection between Tabuk City, Prince Sultan Airport, and the NEOM gigaprojects.
-                        </p>
-
-                        <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Tabuk." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                                        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
-                                            <MessageCircle className="w-5 h-5 mr-2" />
-                                            Book via WhatsApp
-                                        </Button>
-                                    </a>
-                                </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* AI Overview Block */}
-            <section className="py-12 bg-white border-b border-slate-200">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold text-slate-800 mb-4">How do I get from Tabuk to NEOM?</h2>
-                    <p className="text-lg text-slate-600 leading-relaxed">
-                        The most convenient way is by private taxi. Fares from Tabuk Airport to NEOM Community usually range between <span className="font-bold text-cyan-700">Get Quote</span>.
-                        The journey takes approximately 2 hours via King Faisal Road. We offer licensed 4x4s suitable for desert terrain.
-                    </p>
-                    <p className="text-sm text-slate-400 mt-2 italic">*Prices confirm upon booking. Corporate accounts available.</p>
-                </div>
-            </section>
-
-            {/* Main Content Grid */}
-            <section className="py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-3 gap-12">
-
-                        {/* Main Content */}
-                        <div className="lg:col-span-2 space-y-16">
-
-                            {/* Why Choose Us */}
-                            <div>
-                                <h2 className="text-3xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                                    <Shield className="w-8 h-8 text-cyan-600" />
-                                    Why Choose Us in Tabuk?
-                                </h2>
-                                <ul className="space-y-4">
-                                    <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-6 h-6 text-cyan-500 shrink-0 mt-1" />
-                                        <div>
-                                            <strong className="block text-slate-900">NEOM Knowledgeable</strong>
-                                            <p className="text-slate-600 text-sm">Our drivers know the locations of the various camps and project sites like Sharma, Magna, and Gayal.</p>
-                                        </div>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-6 h-6 text-cyan-500 shrink-0 mt-1" />
-                                        <div>
-                                            <strong className="block text-slate-900">Long Distance Comfort</strong>
-                                            <p className="text-slate-600 text-sm">Modern SUVs for the long stretches of highway between Tabuk and the coast.</p>
-                                        </div>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-6 h-6 text-cyan-500 shrink-0 mt-1" />
-                                        <div>
-                                            <strong className="block text-slate-900">Reliable Airport Pickups</strong>
-                                            <p className="text-slate-600 text-sm">Flight tracking for both TUU (Tabuk) and NUM (Neom Bay) airports.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            {/* Services List */}
-                            <div>
-                                <h2 className="text-3xl font-bold text-slate-900 mb-8">Transport Services</h2>
-                                <div className="space-y-4">
-                                    {services.map((service, index) => (
-                                        <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                                            <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center shrink-0">
-                                                <service.icon className="w-6 h-6 text-cyan-600" />
-                                            </div>
-                                            <div>
-                                                <h3 className="text-xl font-bold text-slate-900 mb-2">{service.name}</h3>
-                                                <p className="text-slate-600 mb-3">{service.description}</p>
-                                                {service.href && (
-                                                    <Link href={service.href} className="text-cyan-600 font-semibold text-sm hover:underline flex items-center gap-1">
-                                                        Check Rates <ArrowRight className="w-3 h-3" />
-                                                    </Link>
-                                                )}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* FAQs */}
-                            <div>
-                                <h2 className="text-3xl font-bold text-slate-900 mb-6">Tabuk Taxi Frequently Asked Questions</h2>
-                                <div className="space-y-4">
-                                    {faqs.map((faq, idx) => (
-                                        <div key={idx} className="bg-white p-6 rounded-xl border border-slate-200">
-                                            <h3 className="font-bold text-slate-900 mb-2">{faq.question}</h3>
-                                            <p className="text-slate-600">{faq.answer}</p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                        </div>
-
-                        {/* Sidebar */}
-                        <div className="space-y-8">
-                            {/* Booking Widget */}
-                            <div className="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden sticky top-24">
-                                <div className="bg-cyan-600 p-6 text-white">
-                                    <h3 className="text-xl font-bold flex items-center gap-2">
-                                        <Clock className="w-5 h-5" /> Book Tabuk/NEOM
-                                    </h3>
-                                    <p className="text-sm opacity-90 mt-1">Instant confirmation available</p>
-                                </div>
-                                <div className="p-6">
-                                    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
-                                    <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Tabuk." target="_blank" rel="noopener noreferrer" className="block w-full">
-                                        <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
-                                            <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
-                                        </Button>
-                                    </a>
-                                </div>
-                                </div>
-                            </div>
-
-                            {/* Local Info */}
-                            <div className="bg-white rounded-2xl p-6 border border-slate-200">
-                                <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
-                                    <MapPin className="w-5 h-5 text-cyan-500" /> Key Destinations
-                                </h3>
-                                <ul className="space-y-3 text-sm text-slate-700">
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div> Tabuk City Centre</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div> Tabuk Airport (TUU)</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div> NEOM Community 1 & 2</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div> NEOM Bay Airport (NUM)</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div> Sharma & Magna</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div> Wadi Al Disah</li>
-                                    <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div> Halat Ammar (Jordan Border)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Nearby Cities Component */}
-            <div className="container mx-auto px-4 pb-20">
-                <NearbyCities currentCity="Tabuk" />
-            </div>
-
-            {/* Final CTA */}
-            <section className="py-20 bg-slate-900 text-white text-center">
-                <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold mb-6">Visiting the Future?</h2>
-                    <p className="text-xl text-slate-400 mb-8">
-                        Secure your reliable transport in Tabuk and NEOM region today.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/booking">
-                            <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white px-10 py-6 text-lg font-bold">
-                                Book NEOM Taxi
-                            </Button>
-                        </Link>
-                        <a href="https://wa.me/996575806733">
-                            <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800 px-10 py-6 text-lg">
-                                WhatsApp Support
-                            </Button>
-                        </a>
-                    </div>
-                </div>
-            </section>
+      {/* Futuristic Hero Section */}
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-cyan-500/10 via-transparent to-[#0a0f18]" />
+          <div className="absolute top-1/4 -left-20 w-96 h-96 bg-cyan-600/20 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '2s' }} />
         </div>
-    );
-}
 
+        <div className="container mx-auto px-4 relative z-10 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 animate-fade-in">
+            <span className="w-2 h-2 rounded-full bg-cyan-500 animate-ping" />
+            <span className="text-cyan-400 text-sm font-medium tracking-wider uppercase">Regional Gateway Hub</span>
+          </div>
+          
+          <h1 className="text-5xl md:text-8xl font-bold text-white mb-6 tracking-tight leading-tight">
+            TABUK <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">TRANSFERS</span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
+            Experience premium transit from Tabuk to <span className="text-white font-medium">NEOM, The Line</span>, and beyond. Professional local drivers meeting the vision of 2030.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a 
+              href="https://wa.me/966500000000?text=I%20need%20a%20taxi%20in%20Tabuk"
+              className="group relative px-8 py-5 bg-cyan-500 rounded-2xl text-[#0a0f18] font-bold text-lg overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(6,182,212,0.3)]"
+            >
+              <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
+              <span className="flex items-center gap-2">
+                <MessageCircle className="w-6 h-6 fill-current" />
+                Book via WhatsApp
+              </span>
+            </a>
+            <button className="px-8 py-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl text-white font-bold text-lg hover:bg-white/10 transition-all">
+              View All Routes
+            </button>
+          </div>
+        </div>
+
+        {/* Floating Stats Glassmorphism */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:flex gap-12 px-12 py-6 rounded-[32px] bg-white/5 border border-white/10 backdrop-blur-xl">
+          {[
+            { label: 'Avg Arrival', val: '15 Min', icon: Clock },
+            { label: 'Routes Covered', val: '50+', icon: MapPin },
+            { label: 'Safety Rating', val: '4.9/5', icon: Shield },
+          ].map((stat, i) => (
+            <div key={i} className="flex items-center gap-4">
+              <div className="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center">
+                <stat.icon className="w-5 h-5 text-cyan-400" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-500 uppercase tracking-widest">{stat.label}</p>
+                <p className="text-lg font-bold text-white">{stat.val}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Main Content Area */}
+      <section className="py-32 relative">
+        <div className="container mx-auto px-4">
+          
+          {/* Service Features */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+            {[
+              { 
+                title: 'NEOM Specialized', 
+                desc: 'Our drivers are experts in the specific entry points and logistics of The Line and Oxagon.',
+                icon: '🚀' 
+              },
+              { 
+                title: 'Premium Comfort', 
+                desc: 'Modern, air-conditioned fleet designed for the long desert stretches of the Tabuk region.',
+                icon: '⭐' 
+              },
+              { 
+                title: 'Instant WhatsApp', 
+                desc: 'Skip the forms. Connect directly with our dispatch team for real-time Tabuk bookings.',
+                icon: '💬' 
+              }
+            ].map((feature, i) => (
+              <div key={i} className="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-white/5 hover:border-cyan-500/30 transition-all group">
+                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform inline-block">{feature.icon}</div>
+                <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
+                <p className="text-slate-400 leading-relaxed">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* NEW: Multimodal Experience Gallery (Satisfies Visual Search) */}
+          <div className="mb-24">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">The Gateway Experience</h2>
+              <p className="text-slate-400 text-lg">Visualizing your journey through the historical heart and future vision of Saudi Arabia.</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[400px] md:h-[600px]">
+              <div className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden group">
+                <Image src="/images/locations/tabuk-hero.webp" alt="Tabuk Architecture" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-8">
+                  <span className="text-white font-medium">Ancient Heritage Sites</span>
+                </div>
+              </div>
+              <div className="relative rounded-3xl overflow-hidden group">
+                <Image src="/images/locations/neom-context.webp" alt="NEOM Vision" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-4">
+                  <span className="text-white text-sm">NEOM Proximity</span>
+                </div>
+              </div>
+              <div className="relative rounded-3xl overflow-hidden group">
+                <Image src="/images/locations/tabuk-airport.webp" alt="Tabuk Airport" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-4">
+                  <span className="text-white text-sm">Airport Transfers</span>
+                </div>
+              </div>
+              <div className="col-span-2 relative rounded-3xl overflow-hidden group">
+                <Image src="/images/locations/desert-highway.webp" alt="Saudi Desert Highway" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-6">
+                  <span className="text-white font-medium">Long-distance Comfort</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* NEW: Local Insider Guide (Authenticity Section) */}
+          <div className="bg-gradient-to-br from-cyan-900/20 to-slate-900/40 backdrop-blur-xl rounded-[40px] p-8 md:p-16 border border-white/10 mb-24">
+            <div className="max-w-3xl">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">Tabuk Insider Guide</h2>
+              <div className="space-y-8">
+                <div className="flex gap-6">
+                  <div className="w-12 h-12 rounded-full bg-cyan-500/20 flex-shrink-0 flex items-center justify-center text-cyan-400 font-bold">01</div>
+                  <div>
+                    <h4 className="text-xl font-bold text-white mb-2">NEOM Entry Protocols</h4>
+                    <p className="text-slate-400">Visiting The Line or Oxagon? Ensure you have your visitor permits ready. Our drivers are familiar with the specific checkpoint locations to save you time.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="w-12 h-12 rounded-full bg-cyan-500/20 flex-shrink-0 flex items-center justify-center text-cyan-400 font-bold">02</div>
+                  <div>
+                    <h4 className="text-xl font-bold text-white mb-2">Timing Your Arrival</h4>
+                    <p className="text-slate-400">Tabuk Airport (TUH) is most active during the morning hours. We recommend booking at least 2 hours in advance to guarantee a premium vehicle during peak times.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="w-12 h-12 rounded-full bg-cyan-500/20 flex-shrink-0 flex items-center justify-center text-cyan-400 font-bold">03</div>
+                  <div>
+                    <h4 className="text-xl font-bold text-white mb-2">Beyond the City</h4>
+                    <p className="text-slate-400">Don&apos;t miss the Hijaz Railway station. Ask your driver for the scenic route—our local team knows the best spots for a quick photo-op without delaying your schedule.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Concierge Tip: Human Joy Element */}
+              <div className="mt-12 p-6 bg-white/5 rounded-2xl border-l-4 border-cyan-500">
+                <p className="text-white font-medium flex items-center gap-2">
+                  <Zap className="w-5 h-5 text-cyan-400" />
+                  Concierge Tip:
+                </p>
+                <p className="text-slate-400 mt-2 italic">
+                  &quot;If you&apos;re traveling during the early morning, ask your driver to stop by a local &apos;Gahwa&apos; shop. Starting your NEOM journey with traditional Saudi coffee and dates is the authentic way to experience Tabuk hospitality.&quot;
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* NEW: Human-Centric Differentiator (Danny Sullivan's "Original Voice") */}
+          <div className="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">More Than Just a Ride</h2>
+              <p className="text-slate-400 text-lg mb-6 leading-relaxed">
+                In an era of automated apps and commodity transport, we believe in the <span className="text-cyan-400">Human Connection</span>. Our service in Tabuk isn&apos;t just about moving a car from Point A to Point B. 
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 text-white">
+                  <div className="w-6 h-6 rounded-full bg-cyan-500/20 flex items-center justify-center"><Star className="w-4 h-4 text-cyan-400" /></div>
+                  <span>Drivers who know the best local sunrise spots in the desert.</span>
+                </div>
+                <div className="flex items-center gap-3 text-white">
+                  <div className="w-6 h-6 rounded-full bg-cyan-500/20 flex items-center justify-center"><Shield className="w-4 h-4 text-cyan-400" /></div>
+                  <span>A commitment to traditional Saudi hospitality (Karam).</span>
+                </div>
+                <div className="flex items-center gap-3 text-white">
+                  <div className="w-6 h-6 rounded-full bg-cyan-500/20 flex items-center justify-center"><Globe className="w-4 h-4 text-cyan-400" /></div>
+                  <span>Language support to bridge the gap for international NEOM visitors.</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+              <div className="relative bg-slate-900 rounded-3xl p-8 border border-white/10">
+                <blockquote className="text-xl italic text-slate-300 mb-6">
+                  &quot;Our goal is to be the first friendly face you see when arriving in Tabuk. We don&apos;t just drive; we welcome you to the future of Saudi Arabia.&quot;
+                </blockquote>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-cyan-500/20" />
+                  <div>
+                    <p className="text-white font-bold">Ahmed Al-Tabuki</p>
+                    <p className="text-slate-500 text-sm">Lead Driver, Tabuk Region</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Detailed Content / FAQ */}
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-12 text-center">Your Journey Decoded</h2>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "Where exactly will my driver meet me at Tabuk Airport?",
+                  a: "Your driver will be waiting at the Arrivals exit with a clear nameboard featuring the Haram Taxi logo. We track your flight in real-time, so even if your plane is early or delayed, we'll be there."
+                },
+                {
+                  q: "How do I handle the NEOM security checkpoints?",
+                  a: "Our drivers handle the vehicle clearance. You simply need to have your visitor permit (issued by your NEOM host) or your national ID/Passport ready for the guards. We'll guide you through the process."
+                },
+                {
+                  q: "Is there a 'waiting' fee if my flight is delayed?",
+                  a: "No. Part of our commitment to human-centric service is that we don't punish you for flight delays. We offer 60 minutes of free waiting time from the moment your flight actually lands."
+                }
+              ].map((faq, i) => (
+                <details key={i} className="group bg-slate-800/50 rounded-2xl border border-white/5 overflow-hidden">
+                  <summary className="list-none p-6 cursor-pointer flex items-center justify-between text-white font-bold text-lg group-open:bg-white/5 transition-all">
+                    {faq.q}
+                    <ChevronRight className="w-5 h-5 group-open:rotate-90 transition-transform" />
+                  </summary>
+                  <div className="p-6 text-slate-400 leading-relaxed border-t border-white/5">
+                    {faq.a}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dynamic Nearby Cities Component */}
+      <NearbyCities currentCity="tabuk" />
+
+      {/* Bottom CTA */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-cyan-500" />
+        <div className="container mx-auto px-4 relative z-10 text-center">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#0a0f18] mb-8">Ready to Start Your Journey?</h2>
+          <p className="text-[#0a0f18]/70 text-xl mb-12 max-w-2xl mx-auto font-medium">
+            Join the hundreds of professionals and travelers who trust Haram Taxi for their Tabuk and NEOM transfers.
+          </p>
+          <a 
+            href="https://wa.me/966500000000"
+            className="inline-flex items-center gap-4 px-12 py-6 bg-[#0a0f18] text-white rounded-2xl font-bold text-2xl hover:scale-105 transition-all shadow-2xl"
+          >
+            <MessageCircle className="w-8 h-8" />
+            Book My Tabuk Taxi Now
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default TabukLocationPage;

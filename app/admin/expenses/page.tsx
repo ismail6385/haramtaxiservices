@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
@@ -44,19 +44,14 @@ export default function ExpensesPage() {
     const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
     const router = useRouter();
 
-    useEffect(() => {
-        checkUser();
-        fetchExpenses();
-    }, []);
-
-    const checkUser = async () => {
+    const checkUser = useCallback(async () => {
         const { data: { session } } = await supabase.auth.getSession();
         if (!session) {
             router.push('/admin/login');
         }
-    };
+    }, [router]);
 
-    const fetchExpenses = async () => {
+    const fetchExpenses = useCallback(async () => {
         try {
             // Note: Since 'expenses' table hasn't been explicitly created on the DB,
             // this is an optimistic implementation. You'll need an expenses table in Supabase. 
@@ -80,7 +75,12 @@ export default function ExpensesPage() {
         } finally {
             setLoading(false);
         }
-    };
+    }, []);
+
+    useEffect(() => {
+        checkUser();
+        fetchExpenses();
+    }, [checkUser, fetchExpenses]);
 
     const handleAddExpense = async (e: React.FormEvent) => {
         e.preventDefault();
