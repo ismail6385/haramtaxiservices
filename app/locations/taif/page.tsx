@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/taif',
     },
-    title: 'Elite Chauffeur Service in Taif | VIP Mountain Tours - Haram Chauffeur',
-    description: 'Book premium chauffeur service in Taif. Mountain tours, city transfers, and hotel pickups. Available 24/7. Excellence in high-altitude travel.',
-    keywords: ['chauffeur service Taif', 'Taif luxury transport', 'executive car Taif', 'Taif to Makkah private car', 'Taif mountain tour chauffeur'],
+    title: 'Taif Taxi to Makkah | Hajj 2026 Miqat Transfer & Mountain Tours',
+    description: 'Trusted Taif taxi for Hajj 2026. Miqat transfers to Makkah (90 min), Al Hada mountain tours, and hotel pickups â€” fixed fares, no surge, 24/7 WhatsApp booking.',
+    keywords: ['Taif taxi', 'Taif to Makkah taxi', 'Taif Miqat taxi Hajj 2026', 'Hajj 2026 Taif transport', 'Taif taxi service', 'Taif mountain tour taxi', 'Taif Al Hada Shafa tour', 'Taif chauffeur service'],
     openGraph: {
-        title: 'Taxi Service in Taif | Mountain Tours & City Rides',
-        description: 'Professional taxi service in Taif. Mountain tours, city transfers, hotel pickups. Book now!',
+        title: 'Taif Taxi Service | Miqat & Mountain Tours',
+        description: 'Professional taxi service in Taif. Miqat transfers for Hajj/Umrah, mountain tours, city transfers. Book now!',
         url: 'https://haramtaxiservice.com/locations/taif',
         type: 'website',
     },
@@ -32,7 +32,7 @@ export default function TaifPage() {
         { name: 'Mountain Tours', description: 'Scenic tours to Al Hada & Shafa mountains.', icon: MapPin },
         { name: 'Transfer to Makkah', description: 'Comfortable ride from Taif to Makkah via the scenic Al Hada road.', icon: ArrowRight },
         { name: 'Hotel Pickup', description: 'Prompt pickups from any hotel or resort in Taif.', icon: MapPin },
-        { name: 'Rose Farm Tours', description: 'Visits to Taif’s world-famous rose farms and distilleries.', icon: Car },
+        { name: 'Rose Farm Tours', description: 'Visits to Taifâ€™s world-famous rose farms and distilleries.', icon: Car },
         { name: '24/7 Service', description: 'Round-the-clock availability for all transport needs.', icon: Clock },
     ];
 
@@ -51,16 +51,16 @@ export default function TaifPage() {
             answer: "The taxi journey from Taif to Makkah takes approximately 1.5 to 2 hours depending on traffic and the chosen route (Al Hada vs. As Sail Al Kabir). Prices are fixed based on vehicle type."
         },
         {
+            question: "Do you offer Miqat transfers for Hajj and Umrah?",
+            answer: "Yes, we provide direct transportation from Taif to the Miqat (Qarn al-Manazil/As-Sail Al-Kabir) and onwards to Makkah for Hajj 2026 and Umrah pilgrims."
+        },
+        {
             question: "Do you provide mountain tour services in Taif?",
             answer: "Yes, we offer specialized mountain tours to Al-Hada and Shafa. Our chauffeurs are highly experienced with Taif's uniquely scenic and winding mountain roads."
         },
         {
             question: "Is taxi service available 24/7 in Taif?",
-            answer: "Yes, our taxi services in Taif are available 24 hours a day. We recommend pre-booking for early morning airport transfers or late-night mountain returns."
-        },
-        {
-            question: "Can you take us to the Taif rose farms?",
-            answer: "Absolutely. During the rose season (spring), we provide dedicated tours to the most famous farms and traditional rose water factories in the highland areas."
+            answer: "Yes, our taxi services in Taif are available 24 hours a day. We recommend pre-booking for early morning airport transfers or late-night returns."
         },
         {
             question: "Is there Uber available in Taif?",
@@ -69,10 +69,10 @@ export default function TaifPage() {
     ];
 
     const popularRoutes = [
-        { from: 'Taif', to: 'Makkah', duration: '1.5 hrs', price: 'Get Quote' },
-        { from: 'Taif', to: 'Jeddah', duration: '2.5 hrs', price: 'Get Quote' },
-        { from: 'Taif City', to: 'Al-Hada', duration: '30 min', price: 'Get Quote' },
-        { from: 'Taif', to: 'Shafa Mountains', duration: '45 min', price: 'Get Quote' },
+        { from: 'Taif', to: 'Makkah', duration: '1.5 hrs', price: 'Get Quote', href: '/locations/makkah' },
+        { from: 'Taif', to: 'Jeddah Airport (KAIA)', duration: '2.5 hrs', price: 'Get Quote', href: '/locations/jeddah' },
+        { from: 'Taif City', to: 'Al-Hada Mountain', duration: '30 min', price: 'Get Quote', href: '/booking' },
+        { from: 'Taif', to: 'Shafa Mountains', duration: '45 min', price: 'Get Quote', href: '/booking' },
     ];
 
     const localBusinessSchema = {
@@ -82,7 +82,7 @@ export default function TaifPage() {
         "image": "https://haramtaxiservice.com/taif-mountains-view.webp",
         "@id": "https://haramtaxiservice.com/locations/taif",
         "url": "https://haramtaxiservice.com/locations/taif",
-        "telephone": "+996575806733",
+        "telephone": "+966575806733",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
@@ -131,6 +131,12 @@ export default function TaifPage() {
                     </div>
                 </div>
 
+                {/* Hajj 2026 Urgency Banner */}
+                <div className="bg-amber-500 text-black py-3 px-4 text-center font-bold text-sm flex items-center justify-center gap-3">
+                    <span className="w-2 h-2 rounded-full bg-black animate-pulse inline-block" />
+                    <span>Hajj 2026 Miqat transfers from Taif are booking fast. <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20Taif%20to%20Makkah%20Miqat%20transfer%20for%20Hajj%202026" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">Secure your seat via WhatsApp now.</a></span>
+                </div>
+
                 <section className="relative h-[500px] bg-gray-900 border-b-4 border-slate-500">
                     <Image
                         src="/taif-mountains-view.webp"
@@ -152,15 +158,15 @@ export default function TaifPage() {
                                 </div>
 
                                 <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-display">
-                                    Elite Chauffeur in <span className="text-brand-gold">Taif</span>
+                                    Taif Taxi to Makkah â€” Miqat & <span className="text-brand-gold">Hajj 2026</span> Transfer
                                 </h1>
 
                                 <p className="text-xl text-gray-200 mb-6 font-light leading-relaxed">
-                                    Experience the &quot;City of Roses&quot; with our elite VIP chauffeur service. We offer scenic mountain tours to Al Hada & Shafa, visits to historic rose farms, and dignified transfers to Makkah and Jeddah.
+                                    Trusted Taif taxi service for Hajj 2026 pilgrims in <strong>Taif, Saudi Arabia</strong>. Fixed-rate Miqat transfers to <Link href="/locations/makkah" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">Makkah</Link> (90 min), scenic Al Hada &amp; Shafa mountain tours, and reliable hotel pickups â€” 24/7 with no surge pricing.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Taif." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/966575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Taif." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center border-0">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -296,7 +302,7 @@ export default function TaifPage() {
                             <div className="bg-slate-500 p-8 rounded-2xl text-white flex flex-col justify-center shadow-lg">
                                 <h3 className="text-2xl font-bold mb-6">No Summer Surcharges</h3>
                                 <p className="mb-6 opacity-95 text-lg font-light leading-relaxed">
-                                    While the summer season brings high demand to Taif, Haram Taxi maintains ethical pricing. Get your fixed quote today and enjoy the mountain air without worrying about the meter.
+                                    While the summer season brings high demand to <strong>Taif, Saudi Arabia</strong>, Haram Taxi maintains ethical pricing. Whether you need a Miqat transfer to <Link href="/locations/makkah" className="text-white hover:text-brand-gold underline decoration-white/30">Makkah</Link> or a mountain tour to Al Hada, your rate is locked before you travel.
                                 </p>
                                 <Link href="/booking">
                                     <Button className="bg-white text-brand-navy-dark hover:bg-gray-100 w-full text-lg h-12 border-0 shadow-md">
@@ -316,25 +322,27 @@ export default function TaifPage() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {popularRoutes.map((route, index) => (
-                                <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <div className="flex-1">
-                                            <div className="text-xs text-gray-500 mb-1">From</div>
-                                            <div className="font-bold text-gray-900">{route.from}</div>
+                                <Link key={index} href={route.href} className="block group">
+                                    <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-slate-400 hover:shadow-md transition-all">
+                                        <div className="flex items-center justify-between mb-4">
+                                            <div className="flex-1">
+                                                <div className="text-xs text-gray-500 mb-1">From</div>
+                                                <div className="font-bold text-gray-900">{route.from}</div>
+                                            </div>
+                                            <ArrowRight className="w-6 h-6 text-slate-500 mx-4 group-hover:translate-x-1 transition-transform" />
+                                            <div className="flex-1 text-right">
+                                                <div className="text-xs text-gray-500 mb-1">To</div>
+                                                <div className="font-bold text-gray-900">{route.to}</div>
+                                            </div>
                                         </div>
-                                        <ArrowRight className="w-6 h-6 text-slate-500 mx-4" />
-                                        <div className="flex-1 text-right">
-                                            <div className="text-xs text-gray-500 mb-1">To</div>
-                                            <div className="font-bold text-gray-900">{route.to}</div>
+                                        <div className="flex items-center justify-between text-sm">
+                                            <div className="flex items-center gap-2 text-gray-600 font-medium font-sans">
+                                                <Clock className="w-4 h-4" />{route.duration}
+                                            </div>
+                                            <div className="font-bold text-slate-500 font-sans group-hover:text-slate-700">{route.price}</div>
                                         </div>
                                     </div>
-                                    <div className="flex items-center justify-between text-sm">
-                                        <div className="flex items-center gap-2 text-gray-600 font-medium font-sans">
-                                            <Clock className="w-4 h-4" />{route.duration}
-                                        </div>
-                                        <div className="font-bold text-slate-500 font-sans">{route.price}</div>
-                                    </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -363,27 +371,31 @@ export default function TaifPage() {
 
                 <section className="py-20 bg-slate-500 text-white">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        <h2 className="text-4xl font-bold mb-6">Plan Your Journey to Taif</h2>
-                        <p className="text-xl mb-8 opacity-95 font-light">Professional taxi service in Taif available 24/7. Book now for a safe and comfortable ride!</p>
+                        <h2 className="text-4xl font-bold mb-4">Book Your Taif Taxi for Hajj 2026</h2>
+                        <p className="text-xl mb-2 opacity-95 font-light">Miqat transfers, mountain tours & Makkah intercity â€” all fixed-rate, no surprises.</p>
+                        <p className="text-sm mb-8 opacity-80">No pre-payment. Instant WhatsApp confirmation. 24/7 service.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/booking">
-                                <Button size="lg" className="bg-white text-slate-500 hover:bg-gray-100 px-8 py-6 text-lg border-0 shadow-lg">
-                                    Book Transport Online
-                                </Button>
-                            </Link>
-                            <a href="https://wa.me/996575806733">
-                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-500 px-8 py-6 text-lg">
-                                    <MessageCircle className="w-5 h-5 mr-2" />WhatsApp for Support
+                            <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20Taif%20taxi%20for%20Hajj%202026" target="_blank" rel="noopener noreferrer">
+                                <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-8 py-6 text-lg border-0 shadow-lg flex items-center gap-2">
+                                    <MessageCircle className="w-5 h-5" />Book via WhatsApp Now
                                 </Button>
                             </a>
+                            <Link href="/booking">
+                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-500 px-8 py-6 text-lg">
+                                    Get Online Quote
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
             </div>
             <div className="container mx-auto px-4 py-20">
-                <NearbyCities currentCity="Taif" />
+                <NearbyCities currentCity="taif" />
             </div>
         </>
     );
 }
+
+
+
 

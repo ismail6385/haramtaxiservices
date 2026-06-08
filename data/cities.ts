@@ -37,9 +37,9 @@ export const cityRelationships: Record<string, NearbyCity[]> = {
     { name: 'Makkah', slug: 'makkah', distance: '530km', description: 'Holy city of Makkah' }
   ],
   'riyadh': [
-    { name: 'Makkah', slug: 'makkah', distance: '870km', description: 'Holy city pilgrimage transfer' },
-    { name: 'Madinah', slug: 'madinah', distance: '840km', description: 'Prophet\'s Mosque transfer' },
-    { name: 'Dammam', slug: 'dammam', distance: '400km', description: 'Coastal city transfer' }
+    { name: 'Jeddah', slug: 'jeddah', distance: '950km', description: 'Red Sea gateway — direct taxi available' },
+    { name: 'Madinah', slug: 'madinah', distance: '840km', description: 'Prophet\'s Mosque — Umrah transfer' },
+    { name: 'Makkah', slug: 'makkah', distance: '870km', description: 'Holy city — Umrah & Hajj transfer' },
   ],
   'dammam': [
     { name: 'Riyadh', slug: 'riyadh', distance: '400km', description: 'Capital city transfer' },

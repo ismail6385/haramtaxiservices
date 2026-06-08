@@ -1,4 +1,4 @@
-export interface RoutePricing {
+﻿export interface RoutePricing {
     vehicle: string;
     price: string;
     capacity: string;
@@ -46,7 +46,7 @@ export const routesData: RouteData[] = [
         h1: "Jeddah to Madinah Taxi Service",
         distance: "400 km",
         duration: "4 hours",
-        content: "Travel seamlessly from Jeddah to the Prophet's City of Madinah with our private door-to-door taxi. Whether departing from a Jeddah hotel or King Abdulaziz International Airport (KAIA), we deliver you directly to any Madinah hotel near Masjid Nabawi via the fast Hijrah Highway in approximately 4 hours. No shared rides, no detours — just you, your family, and a professional driver.",
+        content: "Travel seamlessly from Jeddah to the Prophet's City of Madinah with our private door-to-door taxi. Whether departing from a Jeddah hotel or King Abdulaziz International Airport (KAIA), we deliver you directly to any Madinah hotel near Masjid Nabawi via the fast Hijrah Highway in approximately 4 hours. No shared rides, no detours â€” just you, your family, and a professional driver.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
@@ -141,7 +141,7 @@ export const routesData: RouteData[] = [
         faqs: [
                   {
                             "question": "How far is Madinah city from Madinah Airport?",
-                            "answer": "Most Madinah hotels are 20–30 km from Prince Mohammad Bin Abdulaziz Airport, approximately 25 minutes by taxi."
+                            "answer": "Most Madinah hotels are 20â€“30 km from Prince Mohammad Bin Abdulaziz Airport, approximately 25 minutes by taxi."
                   },
                   {
                             "question": "How early should I leave my hotel for my flight?",
@@ -168,7 +168,7 @@ export const routesData: RouteData[] = [
         faqs: [
                   {
                             "question": "How long is the drive from Dammam to Makkah?",
-                            "answer": "The journey is approximately 1,250 km and takes 12–13 hours by private taxi."
+                            "answer": "The journey is approximately 1,250 km and takes 12â€“13 hours by private taxi."
                   },
                   {
                             "question": "Is a rest stop included on this long journey?",
@@ -195,7 +195,7 @@ export const routesData: RouteData[] = [
         faqs: [
                   {
                             "question": "How long is the drive from Riyadh to Makkah?",
-                            "answer": "The journey is approximately 870 km and takes 8–9 hours by private taxi via the Makkah–Madinah highway."
+                            "answer": "The journey is approximately 870 km and takes 8â€“9 hours by private taxi via the Makkahâ€“Madinah highway."
                   },
                   {
                             "question": "Can I book a Riyadh to Makkah taxi for Umrah?",
@@ -230,7 +230,7 @@ export const routesData: RouteData[] = [
                   },
                   {
                             "question": "How long does the border crossing take?",
-                            "answer": "Border processing usually takes 30–60 minutes depending on traffic. We account for this in our quoted journey time."
+                            "answer": "Border processing usually takes 30â€“60 minutes depending on traffic. We account for this in our quoted journey time."
                   }
         ]
     },
@@ -467,7 +467,7 @@ export const routesData: RouteData[] = [
                   },
                   {
                             "question": "Can I book a return trip?",
-                            "answer": "Yes, we offer flexible return trip bookings for the Buraidah–Unayzah route."
+                            "answer": "Yes, we offer flexible return trip bookings for the Buraidahâ€“Unayzah route."
                   }
         ]
     },
@@ -655,7 +655,7 @@ export const routesData: RouteData[] = [
                   },
                   {
                             "question": "Is the Makkah Ziyarat tour a private service?",
-                            "answer": "Yes, the tour is 100% private — just you and your family with your dedicated driver and vehicle."
+                            "answer": "Yes, the tour is 100% private â€” just you and your family with your dedicated driver and vehicle."
                   }
         ]
     },
@@ -737,7 +737,7 @@ export const routesData: RouteData[] = [
                   },
                   {
                             "question": "How far in advance should I book Hajj transport?",
-                            "answer": "We strongly recommend booking Hajj transport at least 3–4 months in advance as demand is very high during Hajj season."
+                            "answer": "We strongly recommend booking Hajj transport at least 3â€“4 months in advance as demand is very high during Hajj season."
                   }
         ]
     },
@@ -829,7 +829,7 @@ export const routesData: RouteData[] = [
         faqs: [
                   {
                             "question": "How long does it take from Aziziyah to the Haram by taxi?",
-                            "answer": "From Aziziyah, the drive to the Clock Tower area near Masjid Al-Haram takes approximately 15–20 minutes."
+                            "answer": "From Aziziyah, the drive to the Clock Tower area near Masjid Al-Haram takes approximately 15â€“20 minutes."
                   },
                   {
                             "question": "Can I book daily hotel to Haram transfers?",
@@ -975,7 +975,7 @@ export const routesData: RouteData[] = [
                   },
                   {
                             "question": "Is this a private taxi or shared?",
-                            "answer": "This is a completely private transfer — no other passengers."
+                            "answer": "This is a completely private transfer â€” no other passengers."
                   }
         ]
     },
@@ -1002,7 +1002,7 @@ export const routesData: RouteData[] = [
                   },
                   {
                             "question": "Is this a private cross-border taxi?",
-                            "answer": "Yes, all our Kuwait–Saudi transfers are 100% private door-to-door services."
+                            "answer": "Yes, all our Kuwaitâ€“Saudi transfers are 100% private door-to-door services."
                   }
         ]
     },
@@ -1153,7 +1153,7 @@ export const routesData: RouteData[] = [
                   },
                   {
                             "question": "Can I book a return trip from Al Ahsa to Riyadh?",
-                            "answer": "Yes, we offer both one-way and round-trip transfers on the Riyadh–Al Ahsa route."
+                            "answer": "Yes, we offer both one-way and round-trip transfers on the Riyadhâ€“Al Ahsa route."
                   }
         ]
     },
@@ -1297,7 +1297,7 @@ export const routesData: RouteData[] = [
         faqs: [
                   {
                             "question": "How long is the drive from Jeddah to Riyadh?",
-                            "answer": "The journey is approximately 950 km and takes 9–10 hours by private taxi."
+                            "answer": "The journey is approximately 950 km and takes 9â€“10 hours by private taxi."
                   },
                   {
                             "question": "Why choose a taxi over flying from Jeddah to Riyadh?",
@@ -1324,11 +1324,11 @@ export const routesData: RouteData[] = [
         faqs: [
                   {
                             "question": "How long is the drive from Riyadh to Abha?",
-                            "answer": "The journey is approximately 1,050 km and takes 10–11 hours, including the scenic mountain ascent to Abha."
+                            "answer": "The journey is approximately 1,050 km and takes 10â€“11 hours, including the scenic mountain ascent to Abha."
                   },
                   {
                             "question": "What is the best vehicle for Riyadh to Abha?",
-                            "answer": "We recommend the GMC Yukon XL for this long-haul mountain route — maximum comfort and space."
+                            "answer": "We recommend the GMC Yukon XL for this long-haul mountain route â€” maximum comfort and space."
                   },
                   {
                             "question": "Does the Riyadh to Abha taxi make stops along the way?",
@@ -1432,7 +1432,7 @@ export const routesData: RouteData[] = [
         faqs: [
                   {
                             "question": "How long is the drive from Riyadh to NEOM?",
-                            "answer": "The journey is approximately 1,500 km and takes 14–15 hours. We recommend an overnight rest stop for VIP passengers."
+                            "answer": "The journey is approximately 1,500 km and takes 14â€“15 hours. We recommend an overnight rest stop for VIP passengers."
                   },
                   {
                             "question": "What vehicle is used for the Riyadh to NEOM transfer?",
@@ -1451,7 +1451,7 @@ export const routesData: RouteData[] = [
         h1: "Dammam Airport to Makkah Taxi Transfer",
         distance: "1,250 km",
         duration: "12 - 13 hours",
-        content: "Arriving at King Fahd International Airport (DMM) and heading directly to Makkah for Umrah? We provide dedicated private taxi transfers from Dammam Airport all the way to your hotel in Makkah — whether that's the Clock Tower, Ajyad, or Aziziyah area. Our experienced long-haul drivers ensure maximum comfort throughout the 12+ hour journey with modern, spacious vehicles. Avoid connecting flights and go straight to the Holy City from the moment you land. Stops for prayer, meals, and rest are accommodated at your request.",
+        content: "Arriving at King Fahd International Airport (DMM) and heading directly to Makkah for Umrah? We provide dedicated private taxi transfers from Dammam Airport all the way to your hotel in Makkah â€” whether that's the Clock Tower, Ajyad, or Aziziyah area. Our experienced long-haul drivers ensure maximum comfort throughout the 12+ hour journey with modern, spacious vehicles. Avoid connecting flights and go straight to the Holy City from the moment you land. Stops for prayer, meals, and rest are accommodated at your request.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
@@ -1471,14 +1471,14 @@ export const routesData: RouteData[] = [
         h1: "Dammam Airport to Madinah Taxi Service",
         distance: "1,200 km",
         duration: "11 - 12 hours",
-        content: "Starting your Umrah or Ziyarat journey from Dammam Airport and heading to the City of the Prophet? We offer a premium direct taxi service from King Fahd International Airport (DMM) straight to your hotel in Madinah, near Masjid Nabawi. Our long-distance fleet consists of spacious, well-maintained vehicles that ensure a comfortable overnight or daytime journey. No transfers, no waiting — just direct, private, door-to-door service.",
+        content: "Starting your Umrah or Ziyarat journey from Dammam Airport and heading to the City of the Prophet? We offer a premium direct taxi service from King Fahd International Airport (DMM) straight to your hotel in Madinah, near Masjid Nabawi. Our long-distance fleet consists of spacious, well-maintained vehicles that ensure a comfortable overnight or daytime journey. No transfers, no waiting â€” just direct, private, door-to-door service.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
             { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
         ],
         faqs: [
-            { question: "Is this a direct route from Dammam to Madinah?", answer: "Yes, this is a fully private, non-stop transfer. There are no shared passengers or detours — only prayer and meal breaks you request." },
+            { question: "Is this a direct route from Dammam to Madinah?", answer: "Yes, this is a fully private, non-stop transfer. There are no shared passengers or detours â€” only prayer and meal breaks you request." },
             { question: "How do I book a taxi from Dammam Airport to Madinah?", answer: "Simply WhatsApp us your flight details and hotel address in Madinah. We confirm your booking and have your driver ready at arrivals." }
         ]
     },
@@ -1514,7 +1514,7 @@ export const routesData: RouteData[] = [
             { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
         ],
         faqs: [
-            { question: "Can you pick me up from my Madinah hotel?", answer: "Yes, we pick up directly from your hotel lobby in Madinah — including hotels near Masjid Nabawi — at your schedule time." },
+            { question: "Can you pick me up from my Madinah hotel?", answer: "Yes, we pick up directly from your hotel lobby in Madinah â€” including hotels near Masjid Nabawi â€” at your schedule time." },
             { question: "Do you serve Dhahran and Jubail as well?", answer: "Yes, our Eastern Province drop-off covers Dammam, Al Khobar, Dhahran, Jubail, and surrounding areas." }
         ]
     },
@@ -1543,7 +1543,7 @@ export const routesData: RouteData[] = [
         h1: "Taif to Jeddah Airport Taxi Transfer",
         distance: "250 km",
         duration: "2.5 hours",
-        content: "Don't miss your flight from Jeddah! Book our reliable taxi from anywhere in Taif — including Al-Hawiya, Al-Shafa, or central Taif — directly to King Abdulaziz International Airport. We recommend departing at least 4-5 hours before your flight to account for mountain traffic. Our vehicles are punctual, clean, and equipped for family-sized luggage.",
+        content: "Don't miss your flight from Jeddah! Book our reliable taxi from anywhere in Taif â€” including Al-Hawiya, Al-Shafa, or central Taif â€” directly to King Abdulaziz International Airport. We recommend departing at least 4-5 hours before your flight to account for mountain traffic. Our vehicles are punctual, clean, and equipped for family-sized luggage.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
@@ -1666,7 +1666,7 @@ export const routesData: RouteData[] = [
         h1: "Madinah to Riyadh Taxi Service",
         distance: "870 km",
         duration: "8 - 9 hours",
-        content: "Returning to Riyadh from the Prophet's City of Madinah? We provide a seamless direct private taxi covering the 870km route. Your driver will pick you up from any Madinah hotel — from those near Masjid Nabawi to those in the Al-Wurood district — and drop you off at any Riyadh destination, including KAFD, Olaya, or RUH Airport.",
+        content: "Returning to Riyadh from the Prophet's City of Madinah? We provide a seamless direct private taxi covering the 870km route. Your driver will pick you up from any Madinah hotel â€” from those near Masjid Nabawi to those in the Al-Wurood district â€” and drop you off at any Riyadh destination, including KAFD, Olaya, or RUH Airport.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
@@ -1735,7 +1735,7 @@ export const routesData: RouteData[] = [
         h1: "Bahrain to Makkah Taxi Service",
         distance: "1,350 km",
         duration: "13 hours",
-        content: "Embarking on Umrah from Bahrain? We offer the most convenient travel option — a private door-to-door taxi from anywhere in Bahrain, crossing the King Fahd Causeway, straight to your Makkah hotel. No airline connections, no airport queues. Our experienced cross-border drivers make the journey safe and spiritually focused.",
+        content: "Embarking on Umrah from Bahrain? We offer the most convenient travel option â€” a private door-to-door taxi from anywhere in Bahrain, crossing the King Fahd Causeway, straight to your Makkah hotel. No airline connections, no airport queues. Our experienced cross-border drivers make the journey safe and spiritually focused.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
@@ -1824,7 +1824,7 @@ export const routesData: RouteData[] = [
         h1: "Taif to Makkah Taxi Service",
         distance: "90 km",
         duration: "1.5 hours",
-        content: "Heading from the cool heights of Taif to Makkah for Umrah or Hajj? Our experienced mountain-route drivers provide a safe and smooth 1.5-hour transfer from any location in Taif — including Al-Shafa, Al-Hawiya, or central Taif — directly to your Makkah hotel. 24/7 availability for your Miqat-timing needs.",
+        content: "Heading from the cool heights of Taif to Makkah for Umrah or Hajj? Our experienced mountain-route drivers provide a safe and smooth 1.5-hour transfer from any location in Taif â€” including Al-Shafa, Al-Hawiya, or central Taif â€” directly to your Makkah hotel. 24/7 availability for your Miqat-timing needs.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
@@ -1833,6 +1833,369 @@ export const routesData: RouteData[] = [
         faqs: [
             { question: "Can I book a Taif to Makkah taxi at midnight?", answer: "Yes, we operate 24/7 and can accommodate late-night or early-morning pickups from Taif to Makkah for Fajr Umrah." },
             { question: "Is Taif a Miqat point?", answer: "Yes, Al-Sa'adiyah (near Taif) is one of the designated Miqat points for pilgrims entering Ihram from the eastern direction." }
+        ]
+    },
+    {
+        slug: "riyadh-to-jeddah",
+        title: "Riyadh to Jeddah Taxi | Private Car Service â€” 950km Direct Transfer",
+        description: "Book a private taxi from Riyadh to Jeddah. 950km direct transfer via King Abdulaziz Highway â€” fixed rate, no stops, door-to-door. Ideal for business travel and families. 24/7 WhatsApp booking.",
+        h1: "Riyadh to Jeddah Private Taxi â€” 950km Direct Transfer",
+        distance: "950 km",
+        duration: "9â€“10 hours",
+        content: "The Riyadh to Jeddah corridor is one of Saudi Arabia's most-travelled intercity routes, connecting the Kingdom's capital to its commercial and cultural gateway on the Red Sea. Our private taxi covers the full 950km via King Abdulaziz Highway (Route 40), passing through the Taif highlands, with a comfortable rest and prayer stop at a well-lit service station mid-route. Whether you are travelling for business to Jeddah's Al-Hamdaniyah district, catching a flight from King Abdulaziz International Airport (KAIA), or visiting family in North Jeddah, we offer a door-to-door, fixed-rate service that eliminates the hassle of stopovers and schedule uncertainty. Choose from a premium Camry for solo or couple travel, a GMC Yukon XL for families with heavy luggage, or a Toyota Staria for groups. All vehicles are 2022â€“2025 model year, fully air-conditioned, and equipped for long-distance comfort. Departure from anywhere in Riyadh â€” King Abdullah Financial District (KAFD), Olaya, Diplomatic Quarter, or directly from King Khalid International Airport (KKIA/RUH) for connecting passengers.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does the Riyadh to Jeddah drive take by private taxi?", answer: "The Riyadh to Jeddah journey is approximately 950km and takes 9â€“10 hours via King Abdulaziz Highway (Route 40). We include one scheduled rest and prayer stop. Departure time and traffic conditions can affect the arrival window by 30â€“60 minutes." },
+            { question: "What is the price of a taxi from Riyadh to Jeddah?", answer: "We provide fixed-rate quotes agreed in full before you travel â€” the price on WhatsApp is the exact amount you pay. Fares depend on the vehicle type (Camry, Yukon XL, or Hiace) and your specific pickup and drop-off addresses. Message us on WhatsApp for an instant quote." },
+            { question: "Can I book a taxi from Riyadh Airport (KKIA) to Jeddah Airport (KAIA)?", answer: "Yes. We provide airport-to-airport transfers from King Khalid International Airport in Riyadh directly to King Abdulaziz International Airport in Jeddah. This is popular for passengers with connecting journeys or whose schedules don't align with flight times. Provide both flight numbers and we coordinate both pickups." },
+            { question: "Which highway connects Riyadh to Jeddah?", answer: "The primary route is King Abdulaziz Highway (Route 40), which runs west from Riyadh to Jeddah via the Taif bypass. The total distance is approximately 950km. Our drivers are experienced on this long-haul corridor and know the best rest stop locations." },
+            { question: "Is the Riyadh to Jeddah road safe at night?", answer: "Yes. Route 40 is a modern dual carriageway with lighting and petrol station facilities throughout. Our drivers are specifically selected for long-distance intercity routes and are not permitted to drive more than their regulated hours without a rest stop." },
+            { question: "Can I book a Riyadh to Jeddah taxi for a large group?", answer: "Yes. For groups of 8 or more, we can arrange multiple vehicles or a Toyota Hiace (11 seats). We can coordinate convoy-style travel so the group arrives together. Contact us on WhatsApp for multi-vehicle group quotes." },
+            { question: "Is there a faster way from Riyadh to Jeddah than a taxi?", answer: "Riyadh to Jeddah flights take approximately 1.5 hours, but when you add airport check-in (2hrs early), baggage claim, and transfers to/from both airports, the total door-to-door time for short-notice travel is often comparable to a private taxi â€” especially for families. A taxi also offers no luggage restrictions and no schedule dependency." }
+        ]
+    },
+    {
+        slug: "riyadh-to-madinah",
+        title: "Riyadh to Madinah Taxi | Private Umrah & Ziyarat Transfer â€” 840km",
+        description: "Book a trusted private taxi from Riyadh to Madinah (Al Madinah Al Munawwarah). 840km door-to-door transfer for Umrah pilgrims and Ziyarat visits â€” fixed rate, 24/7, WhatsApp booking. No pre-payment.",
+        h1: "Riyadh to Madinah Private Taxi â€” Umrah & Ziyarat Transfer",
+        distance: "840 km",
+        duration: "8â€“9 hours",
+        content: "Travelling from Riyadh to the Prophet's City â€” Al Madinah Al Munawwarah â€” is a journey of faith and intention. Our private taxi covers the 840km route via the Riyadhâ€“Madinah Expressway (Route 60/65), passing through the central Najd plateau and into the Hejaz region. This is the preferred mode of travel for families and Umrah groups from Riyadh who want to arrive directly at their Madinah hotel â€” whether in the Central Area (Al Markaziyah), near Masjid Al-Nabawi, or in the outer residential zones â€” without transfers or shared schedules. We include scheduled prayer and rest stops on this long-distance route, and all drivers are trained for overnight intercity travel. Departures available from any Riyadh district: King Abdullah Financial District (KAFD), Olaya, Diplomatic Quarter, King Khalid International Airport (RUH), or any hotel. Drop-off at all Madinah hotels, Prince Mohammad Bin Abdulaziz Airport (MED), or the Haramain High Speed Railway Station.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Riyadh to Madinah by private taxi?", answer: "The Riyadh to Madinah journey is approximately 840km and takes 8â€“9 hours via Route 65. We include scheduled prayer and rest stops. For overnight travel (recommended to avoid daytime heat), we recommend departing after Isha prayer and arriving in Madinah before Fajr." },
+            { question: "Can I book a Riyadh to Madinah taxi for Umrah?", answer: "Yes â€” this is one of our most requested routes for Riyadh-based pilgrims performing Umrah. We provide direct, door-to-door transfer from your Riyadh address to your Madinah hotel. Families with children, elderly pilgrims, and those with heavy luggage find a private taxi far more comfortable than the bus or train alternatives." },
+            { question: "What is the cheapest way to travel from Riyadh to Madinah?", answer: "The SAPTCO bus is the cheapest option at approximately SAR 100â€“150 per person. The Haramain Train from Riyadh's King Abdulaziz Station connects via Qassim but is not a direct Riyadhâ€“Madinah service. A private taxi is priced per vehicle, making it cost-effective for families of 4â€“7 when split per head." },
+            { question: "Can I be dropped off directly at Masjid Al-Nabawi in Madinah?", answer: "Our drivers drop you at the closest permitted vehicle access point to your specific hotel in Madinah. If your hotel is within the Markaziyah zone near the Prophet's Mosque, you will be within a very short walk of the mosque entrance." },
+            { question: "Is there a Riyadh to Madinah train?", answer: "There is no direct train from Riyadh to Madinah currently. The Haramain High Speed Rail connects Madinah to Makkah, Jeddah, and KAEC â€” but not directly to Riyadh. A private taxi remains the most direct, flexible door-to-door option from Riyadh." },
+            { question: "Can you pick me up from King Khalid Airport (KKIA) and drop me at Madinah Airport (MED)?", answer: "Yes. We provide airport-to-airport transfers between KKIA (RUH) in Riyadh and Prince Mohammad Bin Abdulaziz Airport (MED) in Madinah. We track both flights and coordinate departure timing accordingly." },
+            { question: "What time should I depart Riyadh to reach Madinah before Fajr?", answer: "For Fajr timing in Madinah, we recommend departing Riyadh no later than 10pm. A 9-hour drive with one rest stop brings you to Madinah around 7am. For overnight Umrah departures, many pilgrims choose to leave after Isha prayer (approx. 9:30â€“10pm) to arrive fresh for morning prayers at Masjid Al-Nabawi." }
+        ]
+    },
+    {
+        slug: "riyadh-to-khobar",
+        title: "Riyadh to Al Khobar Taxi | Private Transfer to Eastern Province â€” 400km",
+        description: "Book a private taxi from Riyadh to Al Khobar, Saudi Arabia. 400km direct transfer via Route 40 â€” Aramco HQ, Al Khobar Corniche, King Fahad Causeway access. Fixed rate, 24/7, WhatsApp booking.",
+        h1: "Riyadh to Al Khobar Private Taxi â€” Eastern Province Transfer",
+        distance: "400 km",
+        duration: "4â€“4.5 hours",
+        content: "The Riyadh to Al Khobar route is one of the Kingdom's primary business corridors, connecting the capital to the heart of the Eastern Province â€” home to Saudi Aramco, the King Fahad Causeway gateway to Bahrain, the Al Khobar Corniche, and the twin city of Dammam. Our private taxi covers the full 400km via King Abdulaziz Highway (Route 40), with no stops required. This route is popular among business travellers commuting between Riyadh's KAFD or King Fahad Road and Al Khobar's Aramco compound, Half Moon Bay, Prince Turki Road, and Thuqbah district. For families, the Al Khobar area is the Eastern Province's most vibrant commercial hub â€” and a private taxi with no luggage limits is far more comfortable than the SAPTCO bus. We can also extend any Al Khobar transfer to Dammam, Dhahran, Bahrain (King Fahad Causeway), Jubail, or Ras Tanura at no extra coordination cost â€” simply message us your final destination.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from Riyadh to Al Khobar?", answer: "The Riyadh to Al Khobar drive is approximately 400km and takes 4â€“4.5 hours via King Abdulaziz Highway (Route 40) under normal traffic conditions. No rest stop is required on this route, though we can make a brief fuel stop if needed." },
+            { question: "What is the price of a Riyadh to Al Khobar taxi?", answer: "We provide fixed-rate quotes via WhatsApp before you travel. The fare depends on your vehicle choice (Camry or Yukon XL) and exact pickup/drop-off addresses in Riyadh and Al Khobar. Message us for an instant quote â€” the number you receive is the exact amount you pay." },
+            { question: "Can I book a Riyadh to Al Khobar taxi for Aramco business travel?", answer: "Yes. We have significant experience serving corporate clients travelling between Riyadh and the Saudi Aramco compound in Dhahran/Al Khobar. We provide meet & greet at KKIA, professional drivers, and can arrange corporate account billing for regular routes." },
+            { question: "Is Al Khobar the same as Dammam?", answer: "Al Khobar and Dammam are separate cities located approximately 20km apart in the Eastern Province. We serve both â€” if your final destination is Dammam, Dhahran, or anywhere in the Eastern Province including Jubail, we can route your transfer accordingly. Simply mention your exact address when booking." },
+            { question: "Can the Riyadh to Al Khobar taxi continue to Bahrain?", answer: "Yes. Many passengers request a Riyadhâ€“Al Khobarâ€“Bahrain transfer in a single booking. We can take you across the King Fahad Causeway to Manama, Bahrain. Cross-border passengers need a valid Saudi exit permit and Bahraini entry visa. We handle the crossing paperwork coordination." },
+            { question: "Is there an alternative to a taxi for Riyadh to Al Khobar?", answer: "Saudi Railways (SAR) operates a Riyadhâ€“Dammam train that stops near Al Khobar (Hadiqa Station). The journey takes 3.5 hours but requires transit to/from both stations. A private taxi provides door-to-door service with no station transfers, no luggage restrictions, and 24/7 departure flexibility â€” making it the preferred option for business travel and families." }
+        ]
+    }
+,
+    {
+        slug: "khobar-to-riyadh",
+        title: "Al Khobar to Riyadh Taxi | Private Transfer Eastern Province to Capital — 400km",
+        description: "Book a private Al Khobar to Riyadh taxi. Fixed rate, door-to-door, 4–4.5 hours via Route 40. Corporate Aramco transfers, families and groups.",
+        h1: "Al Khobar to Riyadh Private Taxi — 400km Direct Transfer",
+        distance: "400 km",
+        duration: "4–4.5 hours",
+        content: "The Al Khobar to Riyadh route is the Eastern Province's primary business corridor. Covering 400km via King Abdulaziz Highway (Route 40), this is one of Saudi Arabia's most-travelled intercity roads — used daily by Aramco executives, government officials, and families commuting between the Eastern Province and the capital. Our private taxi offers fixed-rate, door-to-door service with no surge pricing and no station transfers. Vehicle options range from Toyota Camry for business solo travel to GMC Yukon XL for families and groups.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Al Khobar to Riyadh?", answer: "The Al Khobar to Riyadh drive is approximately 400km and takes 4–4.5 hours via Route 40 under normal conditions. No rest stop is required, though we can stop for fuel or prayers on request." },
+            { question: "What is the taxi fare from Al Khobar to Riyadh?", answer: "We provide a fixed fare via WhatsApp before you travel — no surprises. The rate depends on your vehicle type and exact pickup/drop-off addresses. Message us for an instant quote." },
+            { question: "Can I get a taxi from Al Khobar to KKIA Airport in Riyadh?", answer: "Yes. We regularly transfer passengers from Al Khobar and Dhahran directly to King Khalid International Airport (KKIA). We track your flight and ensure you arrive with ample check-in time." },
+            { question: "Does the Al Khobar to Riyadh taxi go through Dammam?", answer: "Depending on your exact pickup address, the route may pass near Dammam on Route 40. We can make a pickup stop in Dammam if needed — just mention it when booking." },
+            { question: "Can I book a return trip Al Khobar–Riyadh–Al Khobar?", answer: "Yes. Many clients book a round trip. We can schedule the return leg for the same day or a different date — both are confirmed with a fixed rate at booking time." }
+        ]
+    },
+    {
+        slug: "taif-to-riyadh",
+        title: "Taif to Riyadh Taxi | Private Transfer from City of Roses — 900km",
+        description: "Book a private Taif to Riyadh taxi. Fixed rate, door-to-door, approximately 8.5–9 hours via Route 15 and Route 65 through Makkah bypass.",
+        h1: "Taif to Riyadh Private Taxi — 900km Direct Transfer",
+        distance: "900 km",
+        duration: "8.5–9 hours",
+        content: "The Taif to Riyadh corridor connects the cool mountain city of Taif — renowned for its roses, honey, and temperate climate — with the Saudi capital. The 900km journey travels via Route 15 descending from the Hejaz Highlands, bypassing Makkah, then joining Route 65 across the Najd plateau to Riyadh. This is a popular route for Taif residents travelling to Riyadh for business, government appointments, medical treatment at King Faisal Specialist Hospital, or onward international travel from KKIA.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Taif to Riyadh?", answer: "The Taif to Riyadh drive is approximately 900km and takes 8.5–9 hours. One scheduled prayer and rest stop is included. Your driver departs at your preferred time — no fixed schedule." },
+            { question: "What is the best route from Taif to Riyadh?", answer: "The standard route goes from Taif via Route 15 northwest toward Makkah, then joins Route 65 heading northeast across the Najd plateau to Riyadh. Non-Muslim passengers use the designated bypass around the Makkah restricted zone." },
+            { question: "Is there a direct bus from Taif to Riyadh?", answer: "SAPTCO operates a Taif–Riyadh service but it takes significantly longer with multiple stops and luggage restrictions. A private taxi provides door-to-door service, departure at your chosen time, and is more practical for families and groups." },
+            { question: "Can the Taif to Riyadh taxi stop at a Miqat?", answer: "Yes. Passengers wishing to enter Ihram can request a stop at Qarn Al Manazil (Miqat of Taif) en route. This adds approximately 20–30 minutes. Please mention this when booking." },
+            { question: "Can I travel Taif to Riyadh overnight?", answer: "Yes. Many passengers prefer an overnight departure to arrive in Riyadh in the early morning. Your driver is experienced with night travel on Saudi highways. One rest stop at a fuel station is standard on overnight trips." }
+        ]
+    },
+    {
+        slug: "abha-to-riyadh",
+        title: "Abha to Riyadh Taxi | Private Transfer from Asir to Capital — 850km",
+        description: "Book a private Abha to Riyadh taxi. Fixed rate, door-to-door, approximately 8–9 hours via Route 15 and Route 10 through the Asir highlands.",
+        h1: "Abha to Riyadh Private Taxi — 850km Direct Transfer",
+        distance: "850 km",
+        duration: "8–9 hours",
+        content: "Abha, the capital of the Asir Region and one of Saudi Arabia's top domestic tourism destinations, sits at 2,200m elevation in the Asir Mountains. The Abha to Riyadh route covers approximately 850km via Route 15 north through the highlands before descending to the Najd plateau. This journey is one of Saudi Arabia's most scenic road routes — passing terraced mountains, ancient villages, and the Asir National Park. The drive is popular with Asiri families travelling to Riyadh for business, education, and medical appointments.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from Abha to Riyadh?", answer: "The Abha to Riyadh drive is approximately 850km and takes 8–9 hours via Route 15 and Route 10. One scheduled rest stop is included. The Asir mountain section requires careful driving and an experienced driver." },
+            { question: "Is the Abha to Riyadh road safe?", answer: "Yes. Route 15 through the Asir highlands is a well-maintained dual carriageway. The mountain section between Abha and Khamis Mushait requires an experienced driver familiar with the gradient and curves — all our Asir-route drivers are." },
+            { question: "What is the cheapest way to get from Abha to Riyadh?", answer: "Saudi Airlines and flynas both operate Abha–Riyadh flights in under 2 hours. A private taxi is better for groups of 4+ splitting the cost, families with significant luggage, or travellers with flexible departure times and no airport transfer hassle." },
+            { question: "Can we make a stop in Khamis Mushait on the way to Riyadh?", answer: "Yes. Khamis Mushait is immediately adjacent to Abha. If you need a pickup or stop in Khamis Mushait, simply mention it when booking — no extra charge for the short diversion." },
+            { question: "Can I book Abha to Riyadh and return?", answer: "Yes. Round trips are available at a discounted combined rate. The return can be scheduled for any date — we hold your driver preference." }
+        ]
+    },
+    {
+        slug: "riyadh-to-yanbu",
+        title: "Riyadh to Yanbu Taxi | Private Transfer to Red Sea Industrial City — 1100km",
+        description: "Book a private Riyadh to Yanbu taxi. Fixed rate, door-to-door, approximately 10–11 hours. Serving Aramco, SABIC, and petrochemical industry workers.",
+        h1: "Riyadh to Yanbu Private Taxi — 1100km Red Sea Transfer",
+        distance: "1100 km",
+        duration: "10–11 hours",
+        content: "Yanbu Al Bahr (Yanbu) is Saudi Arabia's second-largest industrial city on the Red Sea coast — home to major Aramco and SABIC refineries, NEOM's southern gateway, and a growing tourism scene at Yanbu Corniche. The 1,100km Riyadh to Yanbu route travels via Route 65 northwest through Al Majmaah and Al Qassim region before turning west through the Hejaz to the coast. This corridor serves petrochemical industry workers, government contractors, and increasingly, Red Sea tourism travellers.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Riyadh to Yanbu?", answer: "The Riyadh to Yanbu drive is approximately 1,100km and takes 10–11 hours via Route 65. Two scheduled prayer and rest stops are included — typically at Al Majmaah and near Al Hanakiyah." },
+            { question: "Is there a direct flight from Riyadh to Yanbu?", answer: "Yes, Saudia and flynas operate Riyadh–Yanbu flights (approx. 1.5 hours). A private taxi is better for groups, families with luggage, petrochemical workers with equipment, or travellers needing door-to-compound delivery." },
+            { question: "Can the Riyadh to Yanbu taxi go to the Aramco/SABIC industrial complex?", answer: "Yes. We have extensive experience delivering workers to the Yanbu Industrial City (YIC) and Royal Commission compounds. Provide your exact gate/compound address when booking." },
+            { question: "Can we stop in Madinah on the way from Riyadh to Yanbu?", answer: "The standard route does not pass through Madinah (which is further north). A Madinah diversion adds approximately 1.5 hours but is possible for Ziyarat. Please mention this when booking." },
+            { question: "What vehicles are available for Riyadh to Yanbu?", answer: "For 10+ hour routes we strongly recommend GMC Yukon XL or Toyota Staria for comfort. Toyota Camry is available for solo or duo travel on a budget. For groups of 8–11, Toyota Hiace is available." }
+        ]
+    },
+    {
+        slug: "riyadh-to-khamis-mushait",
+        title: "Riyadh to Khamis Mushait Taxi | Private Transfer to Asir Region — 850km",
+        description: "Book a private Riyadh to Khamis Mushait taxi. Fixed rate, door-to-door, approximately 8–9 hours. Serving Asir tourism, King Khalid Airport, and military city.",
+        h1: "Riyadh to Khamis Mushait Private Taxi — 850km Asir Transfer",
+        distance: "850 km",
+        duration: "8–9 hours",
+        content: "Khamis Mushait is the Eastern gateway to the Asir Region and home to King Khalid Airport (AHB) — the main aviation hub for Abha and the surrounding mountains. The 850km Riyadh to Khamis Mushait route covers the Najd plateau via Route 10 southwest before ascending into the Asir highlands. This corridor is used by Asiri families returning home, tourists heading to Abha and the Asir National Park, and government/military personnel serving at Khamis Mushait Military City.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from Riyadh to Khamis Mushait?", answer: "Riyadh to Khamis Mushait is approximately 850km and takes 8–9 hours via Route 10. One scheduled rest stop is included. The final section ascending into the Asir mountains is scenic but requires an experienced driver." },
+            { question: "What is the fare for a Riyadh to Khamis Mushait taxi?", answer: "We quote a fixed rate via WhatsApp — no meter, no surge pricing. The fare depends on your vehicle type and pickup/drop-off addresses. Message us for an instant quote." },
+            { question: "Can the taxi drop me at King Khalid Airport (AHB) near Khamis Mushait?", answer: "Yes. King Khalid Airport is approximately 20km from Khamis Mushait city centre. We drop directly at departures — provide your flight time and we ensure you arrive with ample check-in time." },
+            { question: "Is Khamis Mushait the same as Abha?", answer: "Khamis Mushait and Abha are twin cities approximately 25km apart in the Asir Region. King Khalid Airport serves both cities. We serve both — if your destination is Abha, the transfer continues at no additional routing charge." },
+            { question: "Are there rest stops on the Riyadh to Khamis Mushait route?", answer: "Yes. We schedule one stop at a fuel station and rest area approximately halfway through the journey. Prayer stops are accommodated on request throughout the route." }
+        ]
+    },
+    {
+        slug: "riyadh-to-tabuk",
+        title: "Riyadh to Tabuk Taxi | Private Transfer to NEOM Gateway — 1350km",
+        description: "Book a private Riyadh to Tabuk taxi. Fixed rate, door-to-door, approximately 12–13 hours. NEOM gateway, AlUla, and northwest Saudi Arabia access.",
+        h1: "Riyadh to Tabuk Private Taxi — 1350km Northwest Transfer",
+        distance: "1350 km",
+        duration: "12–13 hours",
+        content: "Tabuk is the gateway to northwest Saudi Arabia — connecting NEOM, AlUla, Hegra (Mada'in Saleh), and the Red Sea coastline. The 1,350km Riyadh to Tabuk journey crosses the entire width of the Arabian Peninsula, travelling via Route 65 through Al Qassim, then Route 80 northwest through Hail and the Nefud Desert. This long-haul route serves NEOM project workers, AlUla tourism travellers, government contractors, and increasing numbers of adventure tourists exploring Saudi Arabia's northwest.",
+        pricing: [
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from Riyadh to Tabuk?", answer: "Riyadh to Tabuk is approximately 1,350km and takes 12–13 hours. Two scheduled rest stops are included. An overnight departure from Riyadh (after Isha) arrives in Tabuk by early morning." },
+            { question: "Is there a train from Riyadh to Tabuk?", answer: "There is no passenger rail service between Riyadh and Tabuk as of 2026. A private taxi is the most direct door-to-door option. Flights operate Riyadh–Tabuk in approximately 2 hours but require airport transfers at both ends." },
+            { question: "Can the taxi take me from Riyadh to NEOM via Tabuk?", answer: "Yes. From Tabuk we can continue to NEOM Bay Airport (NEOM), The Line construction site, or Sharma. NEOM leg adds approximately 2.5–3 hours from Tabuk city centre. Book as a single journey." },
+            { question: "Can we stop at AlUla on the way from Riyadh to Tabuk?", answer: "AlUla is approximately 300km south of Tabuk via Route 375. A Riyadh–AlUla–Tabuk routing is possible and adds approximately 3 hours. Many travellers use this to visit Hegra (Mada'in Saleh) en route — mention it when booking." },
+            { question: "What vehicle is best for Riyadh to Tabuk?", answer: "For 12+ hour routes we recommend GMC Yukon XL or Toyota Staria for passenger comfort. Toyota Hiace for groups of 8–11. Minimum two rest stops are included on all Tabuk transfers." }
+        ]
+    }
+,
+    {
+        slug: "riyadh-to-alula",
+        title: "Riyadh to AlUla Taxi | Private Car to Saudi Arabia's #1 Tourism Destination — 1100km",
+        description: "Book a private Riyadh to AlUla taxi. Fixed rate, door-to-door, approximately 10–11 hours via Route 65 and Route 375. Hegra, Old Town, and Maraya Concert Hall transfers.",
+        h1: "Riyadh to AlUla Private Taxi — 1100km Direct Transfer",
+        distance: "1100 km",
+        duration: "10–11 hours",
+        content: "AlUla is Saudi Arabia's most significant tourism destination under Vision 2030 — home to Hegra (Mada'in Saleh), Saudi Arabia's first UNESCO World Heritage Site, the old walled city, Dadan, and the iconic Maraya Concert Hall. The 1,100km journey from Riyadh travels northwest via Route 65 through Al Majmaah and Qassim, then joins Route 375 westward through the Hejaz highlands before descending into the AlUla Valley. The landscape transforms dramatically along this route — from the flat Najd plateau to the dramatic sandstone canyons and rock formations of AlUla. This is one of Saudi Arabia's most scenic road journeys. Our private taxi provides door-to-hotel delivery at AlUla Old Town, Hegra, or your resort, with two scheduled rest stops and a comfortable, modern vehicle.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from Riyadh to AlUla?", answer: "Riyadh to AlUla is approximately 1,100km and takes 10–11 hours via Route 65 and Route 375. Two scheduled rest stops are included. An overnight departure from Riyadh arrives in AlUla in the early morning." },
+            { question: "Is there a direct flight from Riyadh to AlUla?", answer: "Saudia and flynas operate Riyadh–AlUla (RJAO) flights in approximately 1.5 hours. A private taxi is better for groups, families with luggage, and travellers wanting to experience the dramatic landscape between Riyadh and AlUla — one of Saudi Arabia's most scenic drives." },
+            { question: "Can the taxi drop me at Hegra (Mada'in Saleh) directly?", answer: "Yes. Hegra is approximately 20km north of AlUla city. We deliver you directly to the Hegra visitor centre, your resort near the site, or AlUla Old Town — door to door." },
+            { question: "What is the best time to travel Riyadh to AlUla?", answer: "AlUla's desert climate means cooler months (October–March) are ideal. Overnight departure from Riyadh after Isha (10pm) delivers you to AlUla around 8–9am — morning light in the valley is spectacular and ideal for photography at Hegra." },
+            { question: "Can we stop at Madinah on the way from Riyadh to AlUla?", answer: "Madinah is approximately 200km east of the standard Riyadh–AlUla route. A Madinah detour for Ziyarat adds approximately 2.5 hours. Many travellers combine a Riyadh–Madinah–AlUla multi-day journey — we can route accordingly." },
+            { question: "What is the Maraya Concert Hall and can I get a taxi there?", answer: "Maraya is the world's largest mirrored building, located in the Ashar Valley near AlUla — famous for international concerts and the MDL Beast festival. We deliver directly to the venue entrance. Pre-book your return pickup for after the event." }
+        ]
+    }
+,
+    {
+        slug: "bahrain-to-riyadh",
+        title: "Bahrain to Riyadh Taxi | Private Transfer via King Fahad Causeway — 450km",
+        description: "Book a private Bahrain to Riyadh taxi. Fixed rate, door-to-door, approximately 4–4.5 hours via King Fahad Causeway and Route 40. Manama, Muharraq, and all Bahrain areas served.",
+        h1: "Bahrain to Riyadh Private Taxi — 450km via King Fahad Causeway",
+        distance: "450 km",
+        duration: "4–4.5 hours",
+        content: "The Bahrain to Riyadh route crosses the King Fahad Causeway — the 25km bridge connecting Bahrain to Saudi Arabia's Eastern Province — then continues 400km west via Route 40 to Riyadh. This is a popular business corridor connecting Manama's financial district with KAFD, the Saudi government ministries, and Aramco's Dhahran compound. Our private taxi provides door-to-door transfer with pre-arranged border crossing coordination. Passengers must hold valid Saudi entry visas and Bahrain exit clearance.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from Bahrain to Riyadh?", answer: "Bahrain to Riyadh is approximately 450km and takes 4–4.5 hours via the King Fahad Causeway and Route 40. Border crossing time at King Fahad Causeway varies — allow 30–60 minutes extra during peak weekends (Thursday–Friday evenings)." },
+            { question: "Do I need a visa to travel from Bahrain to Saudi Arabia by taxi?", answer: "Yes. You need a valid Saudi entry visa (or eVisa) and your passport must be valid for at least 6 months. Saudi nationals and GCC residents have streamlined crossing procedures. Your driver will guide you through the Causeway immigration process." },
+            { question: "What is the King Fahad Causeway and how long does it take to cross?", answer: "The King Fahad Causeway is a 25km bridge-and-causeway complex linking Bahrain to Saudi Arabia's Eastern Province. Border crossing (exit Bahrain, enter Saudi) takes 20–60 minutes depending on traffic. It is significantly busier on Thursday and Friday evenings." },
+            { question: "Can the taxi pick me up from Manama city centre?", answer: "Yes. We pick up from your hotel, office, or residence in Manama, Muharraq, Juffair, or anywhere in Bahrain and deliver directly to your Riyadh destination." }
+        ]
+    },
+    {
+        slug: "yanbu-to-riyadh",
+        title: "Yanbu to Riyadh Taxi | Private Transfer from Red Sea Industrial City — 1100km",
+        description: "Book a private Yanbu to Riyadh taxi. Fixed rate, door-to-door, approximately 10–11 hours. Serving Aramco workers, SABIC staff, and Red Sea travellers.",
+        h1: "Yanbu to Riyadh Private Taxi — 1100km Direct Transfer",
+        distance: "1100 km",
+        duration: "10–11 hours",
+        content: "Yanbu to Riyadh covers 1,100km via Route 15 east through the Hejaz highlands before joining Route 65 southeast across the Najd plateau to Riyadh. This corridor serves petrochemical workers returning from Yanbu Industrial City rotations, business travellers, and families. Our private taxi provides fixed-rate, door-to-door transfer with two scheduled rest stops.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Yanbu to Riyadh?", answer: "Yanbu to Riyadh is approximately 1,100km and takes 10–11 hours via Route 15 and Route 65. Two scheduled prayer and rest stops are included." },
+            { question: "Can I get a taxi from Yanbu Industrial City directly to Riyadh?", answer: "Yes. We pick up from Yanbu Industrial City (YIC) compounds, port areas, and hotels in central Yanbu and deliver door-to-door in Riyadh. Provide your exact compound or building address when booking." },
+            { question: "Is there a flight from Yanbu to Riyadh?", answer: "Yes, Saudia and flynas operate Yanbu–Riyadh flights in approximately 1.5 hours. A private taxi is preferred by groups, families, workers with equipment, and those needing door-to-door delivery without airport transfers at both ends." }
+        ]
+    },
+    {
+        slug: "khamis-mushait-to-riyadh",
+        title: "Khamis Mushait to Riyadh Taxi | Private Transfer from Asir Region — 850km",
+        description: "Book a private Khamis Mushait to Riyadh taxi. Fixed rate, door-to-door, approximately 8–9 hours. King Khalid Airport pickups, Asir families, and military city transfers.",
+        h1: "Khamis Mushait to Riyadh Private Taxi — 850km Direct Transfer",
+        distance: "850 km",
+        duration: "8–9 hours",
+        content: "Khamis Mushait to Riyadh covers 850km via Route 10 northeast across the Asir highlands and Najd plateau to the capital. This is one of Saudi Arabia's most scenic intercity routes — descending from the cool Asir mountains through dramatic escarpment landscapes before reaching the flat Najd. The journey serves Asiri families travelling to Riyadh for government appointments, medical treatment, education, and KKIA international connections.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from Khamis Mushait to Riyadh?", answer: "Khamis Mushait to Riyadh is approximately 850km and takes 8–9 hours via Route 10. One scheduled rest stop is included. The Asir highlands section is scenic but requires an experienced driver familiar with the mountain roads." },
+            { question: "Can I get a taxi from King Khalid Airport (AHB) near Khamis Mushait to Riyadh?", answer: "Yes. King Khalid Airport is approximately 20km from Khamis Mushait. We meet you at arrivals and provide direct transfer to Riyadh — approximately 8–9 hours. Book in advance with your flight number for flight-tracked pickup." },
+            { question: "Is Khamis Mushait the same as Abha?", answer: "Khamis Mushait and Abha are twin cities approximately 25km apart. If your origin is Abha, we pick up from there — no additional charge for the short diversion. Both cities share King Khalid Airport (AHB)." }
+        ]
+    },
+    {
+        slug: "tabuk-to-riyadh",
+        title: "Tabuk to Riyadh Taxi | Private Transfer from Northwest Saudi Arabia — 1350km",
+        description: "Book a private Tabuk to Riyadh taxi. Fixed rate, door-to-door, approximately 12–13 hours. NEOM workers, AlUla visitors, and northwest Saudi Arabia transfers.",
+        h1: "Tabuk to Riyadh Private Taxi — 1350km Northwest Transfer",
+        distance: "1350 km",
+        duration: "12–13 hours",
+        content: "Tabuk to Riyadh covers 1,350km via Route 80 southeast through the Nefud Desert and Hail region, then Route 65 south to Riyadh. This long-haul corridor serves NEOM project workers completing rotations, AlUla tourists returning to Riyadh, government contractors, and Tabuk residents travelling to the capital for medical or government appointments. Two scheduled rest stops are included.",
+        pricing: [
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from Tabuk to Riyadh?", answer: "Tabuk to Riyadh is approximately 1,350km and takes 12–13 hours via Route 80 and Route 65. Two scheduled rest stops are included. An overnight departure from Tabuk arrives in Riyadh in the early morning." },
+            { question: "Is there a direct flight from Tabuk to Riyadh?", answer: "Yes, Saudia and flynas operate Tabuk–Riyadh flights in approximately 2 hours. A private taxi is preferred by NEOM workers with equipment, groups splitting costs, and travellers needing door-to-door delivery." },
+            { question: "Can the Tabuk to Riyadh taxi pick up from NEOM?", answer: "Yes. If your origin is NEOM Bay, The Line site, or Sharma, we pick up from there and route via Tabuk to Riyadh. NEOM to Riyadh adds approximately 2.5–3 hours to the Tabuk leg. Book as a single journey." }
+        ]
+    },
+    {
+        slug: "alula-to-riyadh",
+        title: "AlUla to Riyadh Taxi | Private Transfer from UNESCO Heritage to Capital — 1100km",
+        description: "Book a private AlUla to Riyadh taxi. Fixed rate, door-to-door, approximately 10–11 hours via Route 375 and Route 65. Hotel pickups at Hegra, Old Town, and all AlUla resorts.",
+        h1: "AlUla to Riyadh Private Taxi — 1100km Direct Transfer",
+        distance: "1100 km",
+        duration: "10–11 hours",
+        content: "AlUla to Riyadh covers 1,100km via Route 375 east through the Hejaz highlands and Nefud Desert edge, then Route 65 southeast to Riyadh. This is one of Saudi Arabia's most dramatic road journeys — leaving AlUla's sandstone canyon valley, crossing vast desert plateaus, and arriving in the Saudi capital. The journey serves tourists completing their AlUla visit, NEOM-adjacent workers, and government contractors.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does it take to drive from AlUla to Riyadh?", answer: "AlUla to Riyadh is approximately 1,100km and takes 10–11 hours via Route 375 and Route 65. Two scheduled rest stops are included. An overnight departure from AlUla arrives in Riyadh in the early morning." },
+            { question: "Can I fly back from AlUla to Riyadh instead of taking a taxi?", answer: "Yes. AlUla has a regional airport (RJAO) with Saudia and flynas flights to Riyadh in approximately 1.5 hours. Many visitors drive one-way with us to AlUla and fly back — or vice versa. We handle either direction." },
+            { question: "Can the taxi pick me up at my resort or Hegra directly?", answer: "Yes. We pick up from all AlUla hotels, Hegra visitor area, Old Town, and Dadan. Provide your exact resort or accommodation name when booking." }
+        ]
+    },
+    {
+        slug: "neom-city-to-riyadh",
+        title: "NEOM to Riyadh Taxi | Private Transfer from The Line & NEOM Bay — 1600km",
+        description: "Book a private NEOM to Riyadh taxi. Fixed rate, door-to-door, approximately 14–15 hours. NEOM Bay Airport pickups, The Line site, and Sharma transfers.",
+        h1: "NEOM to Riyadh Private Taxi — 1600km Direct Transfer",
+        distance: "1600 km",
+        duration: "14–15 hours",
+        content: "NEOM to Riyadh is one of Saudi Arabia's longest intercity taxi routes — covering approximately 1,600km from the NEOM construction zone in Tabuk Province southeast through the Hejaz and Najd to Riyadh. This corridor serves NEOM project workers completing rotations, contractors, and government personnel. The route travels via Tabuk, then Route 80 through the Nefud, then Route 65 south to Riyadh. An overnight departure is strongly recommended.",
+        pricing: [
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How far is NEOM from Riyadh?", answer: "NEOM is approximately 1,600km from Riyadh — one of the longest intercity routes in Saudi Arabia. By private taxi the journey takes 14–15 hours with two scheduled rest stops. Most NEOM workers fly via NEOM Bay Airport (NUM) or Tabuk Airport." },
+            { question: "Is there a flight from NEOM to Riyadh?", answer: "NEOM Bay Airport (NUM) operates connections to Riyadh via Saudia and flynas. The flight is approximately 2.5 hours. A private taxi is used by workers with significant equipment, groups, or those needing door-to-compound delivery at NEOM sites." },
+            { question: "Can the taxi pick up from The Line site or NEOM Bay?", answer: "Yes. We pick up from NEOM Bay, The Line construction zone, Sharma, and Gayal. Provide your site address or accommodation and we coordinate the pickup." }
+        ]
+    },
+    {
+        slug: "al-ahsa-to-riyadh",
+        title: "Al-Ahsa to Riyadh Taxi | Private Transfer from Eastern Province — 350km",
+        description: "Book a private Al-Ahsa to Riyadh taxi. Fixed rate, door-to-door, approximately 3.5–4 hours. Al Hofuf, Mubarraz, and all Al-Ahsa districts served.",
+        h1: "Al-Ahsa to Riyadh Private Taxi — 350km Direct Transfer",
+        distance: "350 km",
+        duration: "3.5–4 hours",
+        content: "Al-Ahsa (Al-Hasa) is Saudi Arabia's largest governorate by area and home to the historic oases of Al Hofuf and Mubarraz. The 350km journey to Riyadh via Route 10 west is one of the Eastern Province's busiest intercity corridors — used by Al-Ahsa residents travelling to the capital for government services, medical treatment at Riyadh hospitals, education, and business. No rest stop is required for this relatively short journey.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Al-Ahsa to Riyadh?", answer: "Al-Ahsa (Al Hofuf) to Riyadh is approximately 350km via Route 10 and takes 3.5–4 hours under normal traffic conditions. No scheduled rest stop is required." },
+            { question: "Can the taxi pick up from Al Hofuf city centre?", answer: "Yes. We pick up from Al Hofuf, Mubarraz, and all Al-Ahsa districts. Provide your exact address and we deliver directly to your Riyadh destination." },
+            { question: "Is there a direct bus from Al-Ahsa to Riyadh?", answer: "SAPTCO operates an Al-Ahsa–Riyadh intercity bus service. A private taxi provides door-to-door flexibility, no fixed schedule, and is competitive for groups of 3–4 passengers sharing the cost." }
         ]
     }
 ];

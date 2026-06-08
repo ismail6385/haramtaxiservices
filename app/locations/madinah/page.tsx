@@ -1,8 +1,8 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { MapPin, Clock, CheckCircle2, Car, Phone, ArrowRight, AlertCircle, Wallet } from 'lucide-react';
+import { MapPin, Clock, CheckCircle2, Car, Phone, ArrowRight, AlertCircle, Wallet, Star } from 'lucide-react';
 import {
     Accordion,
     AccordionContent,
@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/madinah',
     },
-    title: 'Executive Chauffeur Service in Madinah [2026 Updated] | Elite Ziyarat Tours',
-    description: 'Book distinguished chauffeur service in Madinah. VIP airport transfers, hotel pickups, and exclusive Ziyarat tours. Experience the City of the Prophet with absolute peace of mind. [100% Reliable Service].',
-    keywords: ['Madinah chauffeur service', 'VIP transport Madinah', 'executive car Madinah', 'distinguished Madinah transport', 'Madinah Ziyarat chauffeur', 'luxury Madinah travel'],
+    title: 'Madinah Taxi & Hajj 2026 Transport | Ziyarat Tours & Airport Transfer',
+    description: 'Trusted taxi service in Madinah for Hajj 2026. MED airport pickup, hotel transfers, Quba & Uhud Ziyarat tours â€” fixed fares, no surge, 24/7 WhatsApp booking. Book now before slots fill.',
+    keywords: ['Madinah taxi', 'Hajj transport Madinah', 'Hajj 2026 taxi Madinah', 'Madinah airport transfer', 'Madinah Ziyarat taxi', 'Madinah to Makkah taxi', 'Prophet mosque taxi Madinah', 'MED airport taxi Madinah'],
     openGraph: {
-        title: 'Executive Chauffeur Service in Madinah | Elite Ziyarat Tours',
-        description: 'Elite chauffeur and VIP transport in Madinah. Airport transfers, Ziyarat tours, and intercity travel.',
+        title: 'Madinah Taxi & Hajj Transport [2026] | Elite Ziyarat Tours',
+        description: 'Elite taxi and VIP transport in Madinah. Airport transfers, Ziyarat tours, and intercity travel for Hajj 2026.',
         url: 'https://haramtaxiservice.com/locations/madinah',
         type: 'website',
     },
@@ -79,24 +79,32 @@ export default function MadinahPage() {
 
     const faqs = [
         {
-            question: "How much is a taxi from Madinah Airport to hotels?",
-            answer: "The taxi fare from Prince Mohammad bin Abdulaziz Airport to Madinah hotels is fixed based on hotel location and vehicle type. The journey takes approximately 20 to 30 minutes."
+            question: "How do I book a taxi from Madinah Airport (MED) to my hotel?",
+            answer: "Simply message us on WhatsApp with your flight number, arrival date, and hotel name. We confirm instantly and send your driver's details before you land. Your driver meets you at arrivals with a name board and assists with luggage. The journey to central Madinah hotels takes 20â€“30 minutes."
         },
         {
-            question: "Do you provide Ziyarat tours in Madinah?",
-            answer: "Yes, we provide comprehensive Ziyarat tours in Madinah including visits to Quba Mosque, Mount Uhud, Qiblatain Mosque, and other historic Islamic sites. Our drivers are knowledgeable about all Ziyarat locations."
+            question: "Are you offering Hajj 2026 transport services from Madinah?",
+            answer: "Yes. We handle the full Madinah leg of your Hajj journey â€” airport arrival, hotel pickups, and the Madinah to Makkah intercity transfer (4.5 hrs). Hajj slots are limited, so we recommend booking at least 3â€“4 weeks before your travel dates. Contact us on WhatsApp to check availability."
         },
         {
-            question: "How long does it take from Madinah to Makkah by taxi?",
-            answer: "The taxi journey from Madinah to Makkah takes approximately 4.5 hours via the Hijrah Highway. We provide comfortable vehicles with experienced drivers for this intercity trip."
+            question: "What Ziyarat sites do you cover in Madinah?",
+            answer: "Our knowledgeable drivers cover all major Ziyarat sites: Quba Mosque, Mount Uhud, Qiblatain Mosque, the Seven Mosques, Jannat al-Baqi, and Masjid al-Qiblatayn. We offer optimized half-day and full-day Ziyarat packages so you visit every site at the right time without rushing."
         },
         {
-            question: "Is taxi service available 24/7 in Madinah?",
-            answer: "Yes, our taxi service in Madinah operates 24 hours a day, 7 days a week. Whether you need early morning airport transfer or late-night hotel pickup, we're always available."
+            question: "How long does the Madinah to Makkah taxi journey take?",
+            answer: "Approximately 4.5 hours via the Hijrah Highway under normal conditions. During Hajj season, allow up to 5â€“5.5 hours due to checkpoint traffic. All our vehicles are fully air-conditioned with comfortable seating for the journey. We recommend booking 48 hours in advance."
         },
         {
-            question: "Can I book a taxi for multiple days in Madinah?",
-            answer: "Yes, we offer multi-day taxi rental services in Madinah. Perfect for families or groups who want dedicated transportation during their stay. Contact us for special rates."
+            question: "Is your taxi service available for late-night arrivals in Madinah?",
+            answer: "Yes. We operate 24 hours a day, 7 days a week in Madinah. Many Hajj and Umrah flights arrive after midnight â€” we cover all arrival windows with no extra charge for late-night pickups. Your driver will be there regardless of the hour."
+        },
+        {
+            question: "Can I book a dedicated taxi for my full stay in Madinah?",
+            answer: "Yes. Multi-day private driver packages are available for families and groups wanting dedicated transportation throughout their Madinah stay. This is ideal for pilgrims who have multiple Ziyarat visits and don't want to arrange transport each time. Message us on WhatsApp for a tailored quote."
+        },
+        {
+            question: "What is the best way to travel from Madinah to Makkah for Hajj 2026?",
+            answer: "The best way is a pre-booked private taxi, especially for families with Hajj luggage. The Madinah to Makkah journey is approximately 450km and takes 4.5 hours via the Hijrah Highway. Private taxi means no stops, no luggage restrictions, and door-to-door delivery to your specific Makkah hotel. We recommend booking 48+ hours in advance during Hajj season. Message us on WhatsApp for instant availability and your confirmed quote."
         }
     ];
 
@@ -114,7 +122,7 @@ export default function MadinahPage() {
         "image": "https://haramtaxiservice.com/madinah-prophets-mosque.webp",
         "@id": "https://haramtaxiservice.com/locations/madinah",
         "url": "https://haramtaxiservice.com/locations/madinah",
-        "telephone": "+996575806733",
+        "telephone": "+966575806733",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
@@ -195,11 +203,11 @@ export default function MadinahPage() {
                                 </div>
 
                                 <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-display">
-                                    Premium Chauffeur in <span className="text-brand-gold">Madinah</span>
+                                    Premium Taxi & Hajj Transport in <span className="text-brand-gold">Madinah</span>
                                 </h1>
 
                                 <p className="text-xl text-gray-200 mb-6 leading-relaxed">
-                                    Premier chauffeur service in Madinah, the sanctuary of the Prophet (ﷺ). We provide elite airport arrivals, <Link href="/services/madinah-ziyarat" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">bespoke Ziyarat experiences</Link> to historical sites, and dignified <Link href="/routes" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">intercity transit</Link>.
+                                    Premier taxi service in Madinah, the sanctuary of the Prophet (ï·º), ready for Hajj 2026. We provide elite airport arrivals, <Link href="/services/madinah-ziyarat" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">bespoke Ziyarat experiences</Link> to historical sites, and dignified <Link href="/routes" className="text-brand-gold hover:text-white underline decoration-brand-gold/30">intercity transit</Link> for pilgrims.
                                 </p>
 
                                 <div className="flex items-center gap-2 mb-8 text-slate-100 font-medium bg-white/10 w-fit px-4 py-2 rounded-lg backdrop-blur-sm">
@@ -208,7 +216,7 @@ export default function MadinahPage() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Madinah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/966575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Madinah." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <WhatsAppIcon className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -219,6 +227,12 @@ export default function MadinahPage() {
                         </div>
                     </div>
                 </section>
+
+                {/* Hajj 2026 Urgency Banner */}
+                <div className="bg-amber-500 text-black py-3 px-4 text-center font-bold text-sm flex items-center justify-center gap-3">
+                    <span className="w-2 h-2 rounded-full bg-black animate-pulse inline-block" />
+                    <span>Hajj 2026 transport booking is now open â€” <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20in%20Madinah%20for%20Hajj%202026" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">Reserve your Madinah taxi via WhatsApp today.</a></span>
+                </div>
 
                 {/* Quick Stats */}
                 <section className="py-12 bg-brand-navy text-white">
@@ -233,12 +247,12 @@ export default function MadinahPage() {
                                 <div className="text-sm opacity-90">To Makkah</div>
                             </div>
                             <div>
-                                <div className="text-3xl font-bold mb-2">30+</div>
+                                <div className="text-3xl font-bold mb-2">50+</div>
                                 <div className="text-sm opacity-90">Hotels Covered</div>
                             </div>
                             <div>
-                                <div className="text-3xl font-bold mb-2">800+</div>
-                                <div className="text-sm opacity-90">Happy Customers</div>
+                                <div className="text-3xl font-bold mb-2">10 yrs</div>
+                                <div className="text-sm opacity-90">Serving Pilgrims</div>
                             </div>
                         </div>
                     </div>
@@ -553,7 +567,7 @@ export default function MadinahPage() {
                                     Why Choose Our Madinah Taxi Service?
                                 </h2>
                                 <p className="text-gray-600 mb-8 text-lg">
-                                    We provide reliable, professional taxi services throughout Madinah with experienced drivers who know the city and Ziyarat locations well.
+                                    We provide reliable, professional taxi services throughout <strong>Madinah, Saudi Arabia</strong> â€” from <Link href="/routes/madinah-hotel-to-madinah-airport" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">Prince Mohammad bin Abdulaziz Airport (MED)</Link> transfers to comprehensive <Link href="/routes/madinah-ziyarat-tour" className="text-brand-navy hover:text-brand-gold underline decoration-brand-navy/20">Ziyarat tours</Link> covering Quba Mosque, Mount Uhud, the Seven Mosques, and beyond.
                                 </p>
                                 <ul className="space-y-4">
                                     {features.map((feature, index) => (
@@ -572,6 +586,51 @@ export default function MadinahPage() {
                                     className="object-cover"
                                 />
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Pilgrim Reviews */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-12">
+                            <p className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-3">Real Pilgrim Reviews</p>
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">Pilgrims From Around the World Trust Our Madinah Service</h2>
+                            <div className="flex flex-wrap justify-center gap-2 mt-4 max-w-2xl mx-auto">
+                                {['United Kingdom', 'Pakistan', 'Indonesia', 'Malaysia', 'South Africa', 'India', 'Nigeria'].map(c => (
+                                    <span key={c} className="px-3 py-1 bg-gray-100 rounded-full text-gray-600 text-sm">{c}</span>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {[
+                                {
+                                    name: 'Br. Yusuf A.',
+                                    country: 'Johannesburg, South Africa',
+                                    review: 'Arrived at Prince Mohammad bin Abdulaziz Airport at 2am. Our driver was waiting with a name board, calm and professional. He knew exactly where our hotel in Markaziah Madinah was. Zero stress after a long journey.'
+                                },
+                                {
+                                    name: 'Ustaz Rahimullah',
+                                    country: 'Dhaka, Bangladesh',
+                                    review: 'Booked a Ziyarat tour for our group of 8. The driver took us to Quba Mosque, Uhud, and 4 other sites in perfect sequence. He shared knowledge about each location. Truly the best way to visit Madinah.'
+                                },
+                                {
+                                    name: 'Sister Maryam T.',
+                                    country: 'Birmingham, United Kingdom',
+                                    review: 'We needed a Madinah to Makkah transfer for Hajj. The journey was comfortable, the van was clean and cold, and we arrived in 4.5 hours exactly as promised. Booking on WhatsApp was instant.'
+                                }
+                            ].map((review, i) => (
+                                <div key={i} className="bg-gray-50 p-8 rounded-2xl border border-gray-100 flex flex-col">
+                                    <div className="flex gap-1 mb-4">
+                                        {[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 text-amber-400 fill-amber-400" />)}
+                                    </div>
+                                    <p className="text-gray-700 text-base leading-relaxed mb-6 italic flex-1">&quot;{review.review}&quot;</p>
+                                    <div className="border-t border-gray-200 pt-4">
+                                        <p className="text-gray-900 font-bold text-sm">{review.name}</p>
+                                        <p className="text-gray-400 text-xs mt-1">{review.country}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>
@@ -604,22 +663,23 @@ export default function MadinahPage() {
                 {/* CTA */}
                 <section className="py-20 bg-brand-navy text-white shadow-2xl">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        <h2 className="text-4xl font-bold mb-6">Ready to Book Your Madinah Taxi?</h2>
-                        <p className="text-xl mb-8 opacity-90">
-                            <Link href="/services" className="text-white hover:text-brand-gold underline decoration-white/30">Professional taxi service</Link> in Madinah available 24/7. Book now for instant confirmation!
+                        <h2 className="text-4xl font-bold mb-4">Book Your Madinah Taxi for Hajj 2026</h2>
+                        <p className="text-xl mb-2 opacity-90">
+                            Airport pickup, Ziyarat tours & Makkah intercity â€” all in one trusted service.
                         </p>
+                        <p className="text-sm mb-8 opacity-70">No pre-payment. Fixed rates. Instant WhatsApp confirmation.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/booking">
-                                <Button size="lg" className="bg-white text-slate-500 hover:bg-gray-100 px-8 py-6 text-lg">
-                                    Book Madinah Taxi Online
-                                </Button>
-                            </Link>
-                            <a href="https://wa.me/996575806733">
-                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-[#25D366] hover:text-white px-8 py-6 text-lg">
-                                    <WhatsAppIcon className="w-5 h-5 mr-2" />
-                                    WhatsApp for Booking
+                            <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20in%20Madinah%20for%20Hajj%202026" target="_blank" rel="noopener noreferrer">
+                                <Button size="lg" className="bg-[#25D366] hover:bg-[#1ebd5b] text-white px-8 py-6 text-lg flex items-center gap-2">
+                                    <WhatsAppIcon className="w-5 h-5" />
+                                    Book via WhatsApp Now
                                 </Button>
                             </a>
+                            <Link href="/booking">
+                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-500 px-8 py-6 text-lg">
+                                    Get Online Quote
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -627,3 +687,6 @@ export default function MadinahPage() {
         </>
     );
 }
+
+
+

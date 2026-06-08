@@ -1,4 +1,4 @@
-import { LucideIcon, Plane, MapPin, Crown, Building2, User } from 'lucide-react';
+﻿import { LucideIcon, Plane, MapPin, Crown, Building2, User } from 'lucide-react';
 
 export interface ServiceData {
     slug: string;
@@ -1367,5 +1367,139 @@ export const servicesData: ServiceData[] = [
         features: ["Port Access", "Ferry Connection", "Egypt Route", "Reliable"],
         pricing: [{ title: "From Tabuk", price: "Get Quote" }],
         faqs: []
+    }
+,
+    {
+        slug: "riyadh-kafd-corporate-chauffeur",
+        title: "KAFD Corporate Chauffeur Riyadh",
+        description: "Dedicated corporate chauffeur service for King Abdullah Financial District — KKIA airport transfers, business circuits, and intercity executive travel.",
+        content: "Professional corporate chauffeur service serving KAFD businesses and executives. Named drivers, fixed rates, and flexible scheduling for daily KKIA airport runs, KAFD to Diplomatic Quarter circuits, and long-haul intercity trips to Jeddah or Madinah.",
+        features: ["Named Driver", "Fixed Rate", "Flight Tracking", "Corporate Account", "24/7 Availability", "KAFD Tower Pickup"],
+        pricing: [
+            { title: "KAFD to KKIA Airport", price: "Get Quote" },
+            { title: "KAFD to Diplomatic Quarter", price: "Get Quote" },
+            { title: "KAFD to Jeddah (Intercity)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Can I set up a corporate account for regular KAFD transfers?", answer: "Yes. We support corporate accounts for businesses in KAFD with consolidated monthly billing and priority booking. Contact us via WhatsApp to discuss your requirements." },
+            { question: "How long does it take from KAFD to KKIA Airport?", answer: "KAFD to KKIA is approximately 32km and takes 35–45 minutes depending on Riyadh traffic. We track your flight and adjust pickup timing accordingly." }
+        ]
+    },
+    {
+        slug: "riyadh-to-makkah-umrah-taxi",
+        title: "Riyadh to Makkah Umrah Private Taxi",
+        description: "Private Umrah taxi from Riyadh to Makkah — direct door-to-hotel transfer, Hajj-permitted vehicles, 24/7 departure flexibility.",
+        content: "The most requested intercity route in Saudi Arabia — Riyadh to Makkah for Umrah. Covering approximately 870km via Route 65 and Route 15, our private Umrah taxi provides door-to-hotel delivery at your Makkah accommodation. All vehicles are Hajj and Umrah-permitted. Departure at your preferred time — early morning before Fajr or after Isha for optimal arrival.",
+        features: ["Hajj-Permitted Vehicles", "Door-to-Makkah-Hotel", "Fajr Arrival Option", "Group Vehicles", "Fixed Rate", "24/7 Departure"],
+        pricing: [
+            { title: "Toyota Camry (4 Pax)", price: "Get Quote" },
+            { title: "GMC Yukon XL (7 Pax)", price: "Get Quote" },
+            { title: "Toyota Staria (7 Pax)", price: "Get Quote" },
+            { title: "Toyota Hiace (11 Pax)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "How long is the drive from Riyadh to Makkah for Umrah?", answer: "Riyadh to Makkah is approximately 870km and takes 8–9 hours via Route 65 and Route 15 through the Hejaz. One rest and prayer stop is included near Al Majmaah." },
+            { question: "Can the Riyadh to Makkah Umrah taxi drop directly at my Makkah hotel?", answer: "Yes. We deliver door-to-hotel in the Aziziyah, Ajyad, or Markaziyah areas — all within walking distance of Masjid Al-Haram. Your driver knows all the hotel access routes." },
+            { question: "What is the best time to depart Riyadh for Makkah Umrah?", answer: "Departing after Isha (9:30–10pm) delivers you to Makkah around 6–7am — ideal for Fajr Tawaf at Masjid Al-Haram. Alternatively, a morning departure gets you there for Dhuhr." }
+        ]
+    },
+    {
+        slug: "riyadh-hourly-chauffeur",
+        title: "Riyadh Hourly Chauffeur Service",
+        description: "Hire a private chauffeur by the hour in Riyadh — business meetings circuit, shopping, medical appointments, and day programmes.",
+        content: "Riyadh's business districts, hospitals, and malls are spread across a large metro area. An hourly chauffeur eliminates the need to book separate rides for each stop — your driver waits at each location and moves when you do. Ideal for executives running a full-day KAFD–Ministry–hospital–hotel circuit, medical tourists visiting multiple clinics, and tourists covering Diriyah, Kingdom Tower, and Riyadh Season venues.",
+        features: ["Hourly Rate", "Driver Waits at Each Stop", "KAFD Business Circuits", "Medical Tourism", "Riyadh Season", "Flexible Hours"],
+        pricing: [
+            { title: "Toyota Camry (per hour, min 3hrs)", price: "Get Quote" },
+            { title: "GMC Yukon XL (per hour, min 3hrs)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "What is the minimum booking for Riyadh hourly chauffeur?", answer: "Minimum booking is 3 hours. We quote a fixed hourly rate via WhatsApp — no meter running. Tell us your programme and we confirm the total before you travel." },
+            { question: "Can the hourly chauffeur take me to multiple Riyadh malls?", answer: "Yes. A popular shopping circuit covers Riyadh Park, Granada Mall, and Centria — your driver waits at each location. Much more efficient than rebooking separate rides." }
+        ]
+    }
+,
+    {
+        slug: "riyadh-medical-transfer",
+        title: "Riyadh Medical Transfer — Hospital Taxi & Airport to Hospital Service",
+        description: "Private taxi for medical appointments in Riyadh. King Faisal Specialist Hospital, Saudi German Hospital, KKIA airport to hospital transfers. Fixed rate, door-to-door.",
+        content: "Riyadh is one of the Middle East's premier medical tourism destinations — home to King Faisal Specialist Hospital & Research Centre (internationally accredited), Saudi German Hospital, King Abdulaziz Medical City, and National Guard Health Affairs. International medical patients, their families, and Saudi residents travelling for treatment need a reliable transfer that accommodates medical equipment, wheelchairs, and hospital schedules. Our medical transfer service provides fixed-rate KKIA airport-to-hospital delivery, inter-hospital transfers, and daily appointment runs.",
+        features: ["KKIA Airport to Hospital", "Wheelchair Accessible Options", "Flight Tracked Arrivals", "Fixed Rate", "24/7 Including Emergency Hours", "Door to Ward Entrance"],
+        pricing: [
+            { title: "KKIA to King Faisal Specialist Hospital", price: "Get Quote" },
+            { title: "KKIA to Saudi German Hospital", price: "Get Quote" },
+            { title: "KKIA to King Abdulaziz Medical City", price: "Get Quote" },
+            { title: "Daily Appointment Transfer (hourly)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Can you take a patient from KKIA Airport directly to King Faisal Specialist Hospital?", answer: "Yes. We meet you at KKIA arrivals with a name board, assist with luggage and any medical equipment, and deliver directly to the hospital entrance. Journey time is approximately 35–45 minutes depending on traffic." },
+            { question: "Do you have wheelchair-accessible vehicles in Riyadh?", answer: "Please mention accessibility requirements when booking. We will confirm vehicle suitability for your specific needs." },
+            { question: "Can you arrange daily transfers for multiple hospital appointments?", answer: "Yes. Many medical tourists book a recurring daily transfer for the duration of their treatment programme. We quote a fixed daily rate and assign the same driver where possible." }
+        ]
+    }
+,
+    {
+        slug: "riyadh-group-minibus-transfer",
+        title: "Riyadh Group Minibus Transfer — Toyota Hiace & Coaster for Corporate & Family Groups",
+        description: "Group taxi and minibus service in Riyadh. Toyota Hiace (11 pax) and Coaster (22 pax) for corporate groups, large families, school trips, and intercity group travel.",
+        content: "Large families, corporate delegations, and event groups need more than a standard 4-seater. Our Riyadh group transfer service offers Toyota Hiace (11 passengers) and Coaster (22 passengers) — fully air-conditioned, professional drivers, fixed group rates. Ideal for KKIA airport group arrivals, KAFD to hotel shuttles, Diriyah and Riyadh Season group trips, and intercity group travel to Jeddah, Madinah, or Makkah.",
+        features: ["Toyota Hiace 11 Pax", "Coaster 22 Pax", "KKIA Group Arrivals", "Corporate Shuttle", "Intercity Groups", "Fixed Group Rate"],
+        pricing: [
+            { title: "Toyota Hiace (11 Pax)", price: "Get Quote" },
+            { title: "Toyota Coaster (22 Pax)", price: "Get Quote" },
+            { title: "Multiple Vehicles (22+ Pax)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "What is the largest group vehicle available in Riyadh?", answer: "We offer Toyota Coaster (22 passengers) for large groups. For groups above 22, we coordinate multiple vehicles — all departing together. Quote via WhatsApp with your group size and route." },
+            { question: "Can I book a group minibus from KKIA Airport for a corporate delegation?", answer: "Yes. We meet your group at KKIA arrivals (all on the same or different flights) and transfer together to your hotel or KAFD office. Meet-and-greet with name board included." }
+        ]
+    },
+    {
+        slug: "riyadh-hajj-2026-transfer",
+        title: "Riyadh Hajj 2026 Transfer — Hajj-Permitted Private Taxi to Makkah & Mina",
+        description: "Official Hajj 2026 transfer from Riyadh to Makkah and Mina. Hajj-permitted vehicles, fixed rate, KKIA airport pickup for Hajj pilgrims — pre-booking essential.",
+        content: "Hajj 2026 falls in late May/early June. Pilgrims travelling from Riyadh or arriving at KKIA need Hajj-permitted vehicles to pass the Makkah and Mina security cordons — unauthorised vehicles are turned back at checkpoints. Our fleet carries full Hajj permits issued by the Saudi Ministry of Hajj and Umrah. Pre-booking is essential — Hajj period capacity fills weeks in advance. We transfer from KKIA Airport, central Riyadh, KAFD, and all Riyadh hotels directly to your Makkah hotel or Mina camp.",
+        features: ["Ministry Hajj Permit", "KKIA Airport Pickup", "Makkah Hotel Drop", "Mina Camp Transfer", "Pre-Book Required", "24/7 Hajj Season"],
+        pricing: [
+            { title: "KKIA to Makkah Hotel (Hajj 2026)", price: "Get Quote" },
+            { title: "Riyadh City to Makkah (Hajj 2026)", price: "Get Quote" },
+            { title: "Makkah to Mina (Hajj Days)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Why do I need a Hajj-permitted taxi to get to Makkah during Hajj 2026?", answer: "During Hajj season (Dhul Hijja 1–15), Saudi authorities operate strict vehicle checkpoints on all routes into Makkah and Mina. Only vehicles with Ministry of Hajj-issued permits can pass. Unlicensed taxis and rideshare apps are turned back. Our fleet carries full permits." },
+            { question: "When should I pre-book my Riyadh to Makkah Hajj 2026 transfer?", answer: "Pre-book as early as possible — ideally 4–8 weeks before your Hajj travel date. Hajj capacity is limited by permit allocation. Contact us via WhatsApp with your flight arrival details and Makkah accommodation." }
+        ]
+    },
+    {
+        slug: "riyadh-vip-luxury-chauffeur",
+        title: "Riyadh VIP Luxury Chauffeur Service — Executive Car Hire for Business & Events",
+        description: "VIP luxury chauffeur in Riyadh. Mercedes S-Class, GMC Yukon XL, and premium SUV fleet for business executives, dignitaries, and special occasions. Fixed rate, named driver, 24/7.",
+        content: "For executives requiring a premium experience, dignitaries visiting Riyadh, and high-profile occasions, our VIP chauffeur service provides luxury vehicles, formally presented drivers, and a white-glove experience from KKIA arrivals through every leg of your Riyadh programme. Available for KKIA airport meet-and-greet, KAFD business circuit, Ministry and government meeting transfers, gala events, and intercity VIP transfers.",
+        features: ["Premium Fleet", "Formally Presented Driver", "KKIA VIP Arrivals", "Discrete Service", "Account Billing", "24/7 Availability"],
+        pricing: [
+            { title: "GMC Yukon XL Executive (per transfer)", price: "Get Quote" },
+            { title: "Full Day VIP Chauffeur (8 hrs)", price: "Get Quote" },
+            { title: "KKIA VIP Meet & Greet + Transfer", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Do you offer Mercedes S-Class or luxury sedans in Riyadh?", answer: "Our premium fleet includes GMC Yukon XL Executive and Toyota Staria VIP. For specific luxury sedan requests, contact us via WhatsApp — we confirm availability and pricing." },
+            { question: "Can you arrange a VIP meet-and-greet at KKIA for an executive arrival?", answer: "Yes. We provide a formally presented driver at KKIA arrivals with a professional name board, fast-track assistance through the terminal, and direct transfer to your Riyadh destination." }
+        ]
+    },
+    {
+        slug: "riyadh-school-run-service",
+        title: "Riyadh School Run Service — Expat Family School Transfer (DQ, Olaya & North Riyadh)",
+        description: "Reliable daily school run taxi in Riyadh for expat families. Diplomatic Quarter, Olaya, and north Riyadh areas. Fixed weekly rate, consistent driver, WhatsApp scheduling.",
+        content: "Riyadh's international school community — French School Lycée Théodore Monod, British International School, American International School, and others — is centred in the Diplomatic Quarter, Al Malqa, and north Riyadh. Expat families need a reliable, consistent driver for morning drop-off and afternoon collection. Our school run service provides a fixed weekly rate, same driver where possible, and WhatsApp confirmation each morning.",
+        features: ["Consistent Driver", "Fixed Weekly Rate", "Morning & Afternoon Runs", "DQ & North Riyadh", "WhatsApp Scheduling", "Safe Child Transfer"],
+        pricing: [
+            { title: "Morning Drop (per trip)", price: "Get Quote" },
+            { title: "Afternoon Collection (per trip)", price: "Get Quote" },
+            { title: "Weekly Package (5 days both ways)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Do you provide school runs for international schools in Riyadh?", answer: "Yes. We serve the French Lycée, British International School, American International School, and other international schools in the DQ, Al Malqa, and north Riyadh areas. Contact us with your school, home address, and schedule for a fixed weekly quote." },
+            { question: "Can I get the same driver every day for my child's school run?", answer: "We assign the same driver wherever possible for school runs — consistency and familiarity is important for families with children. Driver details are confirmed with you before the first run." }
+        ]
     }
 ];
