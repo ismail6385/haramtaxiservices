@@ -14891,5 +14891,572 @@ export const blogData: BlogPost[] = [
       { question: "Can I book a minibus from KKIA Airport for our family of 9?", answer: "Yes. A Toyota Hiace comfortably seats 9–11 passengers with luggage. We meet your family at KKIA arrivals and transfer to your hotel or destination in a single vehicle." },
       { question: "Do you offer group Umrah transfers from Riyadh to Makkah?", answer: "Yes. Umrah group transfers in Toyota Hiace (11 pax) are one of our most popular services. Our vehicles are Umrah-permitted for Makkah access. Fixed rate for the full group — depart at your preferred time." }
     ]
+  },
+  {
+    slug: "things-to-do-in-taif-complete-guide",
+    title: "Things to Do in Taif 2026 — Complete Attractions & Activity Guide",
+    excerpt: "Complete guide to Taif's best attractions. Al Hada cable car, rose farms, Shubra Palace, mountain tours, honey markets, and family activities — all with taxi tips.",
+    content: `
+<h2>Things to Do in Taif — Saudi Arabia's Mountain City</h2>
+<p><strong>Taif</strong> is one of the most underrated destinations in Saudi Arabia. Known as the <em>City of Roses</em> and <em>Summer Capital of the Hejaz</em>, this highland city at 1,800m elevation offers a unique combination of natural mountain scenery, Islamic heritage, agricultural tourism, and cool climate that no other Saudi city can match.</p>
+
+<p>Whether you are visiting for a day trip from Makkah or spending a week in the mountain resorts, here is the complete guide to Taif's best experiences.</p>
+
+<div class="cta-box">
+    <h3>Book a Taif Tour Taxi</h3>
+    <p>Half-day and full-day driver available from your hotel. Fixed rate via WhatsApp.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20would%20like%20to%20book%20a%20Taif%20tour" target="_blank" rel="noopener noreferrer">Book via WhatsApp</a>
+</div>
+
+<h3>1. Al Hada Cable Car (Telefric Al Hada)</h3>
+<p>The <strong>Al Hada Cable Car</strong> is Taif's most iconic attraction. The gondola crosses over the famous zigzag mountain road, offering panoramic views of the Hejaz range. Located 30 minutes from Taif city center. Best visited in the morning to avoid queues.</p>
+
+<h3>2. Al Hada Zigzag Road</h3>
+<p>Even if you don't take the cable car, the <strong>Al Hada mountain road</strong> itself is an experience. Thirty-plus switchback turns carved into dramatic cliff faces, with viewpoints where you can stop and photograph the mountain descent. Our drivers navigate this road daily and know every viewpoint stop.</p>
+
+<h3>3. Wadi Naaman Rose Farms</h3>
+<p>Visit the <strong>Damask rose farms</strong> of Wadi Naaman — best in March and April when the fields are in full pink bloom. Watch traditional rose water distillation, buy fresh attar (rose oil), and browse the honey market. A bucket-list experience unique to Taif.</p>
+
+<h3>4. Shubra Palace Museum</h3>
+<p>An Ottoman-era royal palace converted into a heritage museum. <strong>Shubra Palace</strong> was the residence of King Abdul Aziz Al Saud and is architecturally unlike anything else in the Hejaz. Located in Taif city center — 10 minutes by taxi from any city hotel.</p>
+
+<h3>5. Abdullah Ibn Abbas Mosque</h3>
+<p>A deeply significant Islamic site — this mosque is named after the cousin of Prophet Muhammad ﷺ and first governor of Taif. Beautiful historic architecture and an important Ziyarat stop for pilgrims visiting Taif.</p>
+
+<h3>6. Shafa Mountain Viewpoints & Camping</h3>
+<p><strong>Al Shafa</strong> (45 minutes from Taif city) is the highest and coolest district, with dramatic highland viewpoints, mountain camping grounds, and the feeling of complete escape from the Saudi lowland heat. Families rent chalets here for weeks during summer.</p>
+
+<h3>7. Al Rudaf Park</h3>
+<p>Taif's largest public park — green, well-maintained, and popular with local families. Good for an evening walk with views over the city. <strong>Taif Zoo</strong> is adjacent to Al Rudaf and popular with children.</p>
+
+<h3>8. Taif Honey Market</h3>
+<p>The mountain honey of Taif — particularly <strong>sidr honey</strong> from wild sidr trees — is among the finest in the world. Buy directly from the Wadi Naaman market for authentic, unprocessed honey at farm prices.</p>
+
+<h3>9. Taif Traditional Souq</h3>
+<p>Browse perfumes, rose water products, traditional oud blends, fresh produce, and local handicrafts at Taif's historic market area. The best place to buy Taif souvenirs including authentic rose oil and mountain honey.</p>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-city-tour",
+    faqs: [
+      { question: "What is Taif famous for?", answer: "Taif is famous for three things: its Damask roses (the rose capital of Saudi Arabia), its cool mountain climate (1,800m elevation), and its Islamic heritage including the Mosque of Abdullah Ibn Abbas. It is also known for its mountain fruits — grapes, pomegranates — and its honey." },
+      { question: "How long should I spend in Taif?", answer: "A minimum of 2 days is recommended to do Taif justice — day 1 for Al Hada cable car, mountain tour, and Shafa; day 2 for Wadi Naaman rose farms, Shubra Palace, and the souq. If visiting during rose season (March–April), add an extra day." },
+      { question: "What is the best area to stay in Taif?", answer: "Al Hada mountain resort area is ideal for mountain scenery and access to the cable car. Taif city center hotels (Hilton Taif, Marriott) are best for access to the souq, palace, and mosque. Shafa is the coolest and most exclusive but furthest from city sights." },
+      { question: "Is Taif worth visiting in summer?", answer: "Absolutely — in fact summer is peak season in Taif. When Jeddah and Makkah are 45°C, Taif is 28–32°C and Shafa is 22–26°C. It is the most sought-after summer escape for western Saudi Arabia families." }
+    ]
+  },
+  {
+    slug: "taif-summer-vacation-guide-2026",
+    title: "Taif Summer Vacation Guide 2026 — Best Resorts, Activities & How to Get There",
+    excerpt: "Planning a Taif summer holiday 2026? Complete guide to the best resorts, mountain activities, family attractions, and how to travel from Jeddah or Makkah.",
+    content: `
+<h2>Taif Summer 2026 — Saudi Arabia's Highland Escape</h2>
+<p>Every summer, hundreds of thousands of families from Jeddah, Makkah, and across western Saudi Arabia make the journey up the mountain to <strong>Taif</strong>. The reason is simple: when temperatures in Jeddah reach 45°C and the humidity is oppressive, <strong>Taif sits at 1,800m elevation with temperatures of 28–32°C</strong> — and the mountain resort areas of Al Hada and Shafa are even cooler at 22–26°C.</p>
+
+<p>For 2026, Taif's summer season runs from approximately <strong>June through September</strong>. Here's everything you need to plan your trip.</p>
+
+<div class="cta-box">
+    <h3>Book Your Jeddah or Makkah to Taif Transfer</h3>
+    <p>Fixed rate, mountain-expert drivers. Family vehicles available.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20from%20Jeddah%20to%20Taif%20for%20the%20summer" target="_blank" rel="noopener noreferrer">Book via WhatsApp</a>
+</div>
+
+<h3>Where to Stay — Taif's Best Summer Areas</h3>
+<ul>
+    <li><strong>Al Hada Mountain Resort:</strong> Home to the InterContinental Al Hada, cable car, and zigzag road. Most popular family destination. Approximately 30 minutes from Taif city center.</li>
+    <li><strong>Shafa (Al Shafa):</strong> The highest and coolest part of Taif, at 2,000m+. Private villas, chalets, and camping sites. Ideal for extended family stays.</li>
+    <li><strong>Al Hawiya:</strong> Mountain residential area between city and Al Hada. Popular with families renting villas for the season.</li>
+    <li><strong>Taif City Center:</strong> Best for access to markets, Shubra Palace, and the airport. Slightly warmer than mountain areas but still comfortable.</li>
+</ul>
+
+<h3>Summer Activities in Taif</h3>
+<ul>
+    <li>Al Hada cable car and zigzag road scenic drive</li>
+    <li>Mountain hiking and nature trails in Shafa</li>
+    <li>Camping in Shafa designated camping grounds</li>
+    <li>Taif Zoo and Al Rudaf Park (family-friendly)</li>
+    <li>Shopping at Taif souq — rose products, honey, perfume</li>
+    <li>Mountain cafe-hopping with highland views</li>
+    <li>Day trip to Wadi Naaman agricultural valley</li>
+</ul>
+
+<h3>Getting to Taif for Summer</h3>
+<p>The most popular routes for summer travel to Taif:</p>
+<ul>
+    <li><strong>From Jeddah:</strong> 170km, 2.5 hours by private taxi. Pre-book 1–2 days ahead during peak season.</li>
+    <li><strong>From Makkah:</strong> 90km, 1.5–2 hours via Al Hada mountain road.</li>
+    <li><strong>From Riyadh:</strong> 780km, 8 hours. Many families drive or fly to Taif Regional Airport (TIF).</li>
+    <li><strong>By air:</strong> Saudia and flynas operate Taif Regional Airport (TIF) with connections from Riyadh, Dammam, and major Saudi cities.</li>
+</ul>
+
+<h3>Summer 2026 Tips</h3>
+<p>Peak summer weekends (Thursday–Friday evenings) see heavy traffic on the Al Hada mountain road. Travel midweek or arrive before 3pm on weekends to avoid the mountain road congestion. Pre-book your accommodation well in advance — Taif resort chalets book up months ahead for July–August.</p>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-mountain-tour",
+    faqs: [
+      { question: "When is the best time to visit Taif?", answer: "Summer (June–September) is peak season for Taif's mountain climate escape. Spring (March–April) is ideal for the rose season with milder weather. Winter (December–February) is cool and quiet — some mornings near freezing in Shafa, which is a novelty for Saudi visitors." },
+      { question: "How do I get from Jeddah to Taif in summer?", answer: "Pre-book a private taxi from your Jeddah address. The 170km journey takes 2.5 hours. During summer weekends, the mountain road can be busier — we recommend departing before 3pm on Thursdays. WhatsApp us for a fixed-price family vehicle booking." },
+      { question: "Is Taif safe for families?", answer: "Yes. Taif is one of the most family-friendly destinations in Saudi Arabia. Al Rudaf Park, the zoo, Al Hada cable car, and the mountain environments are all popular with Saudi and Gulf families. Crime is extremely low." },
+      { question: "How expensive is a summer holiday in Taif?", answer: "Accommodation in Al Hada and Shafa can be expensive during July–August peak season — book early for the best rates. Day trips from Jeddah or Makkah are cost-effective since no accommodation is needed. Our taxi fares are fixed regardless of season." }
+    ]
+  },
+  {
+    slug: "taif-airport-guide-tif-transfers",
+    title: "Taif Regional Airport (TIF) Guide 2026 — Transfers, Airlines & Tips",
+    excerpt: "Complete guide to Taif Regional Airport (TIF). Which airlines fly to Taif, how to get from TIF to your hotel, and booking airport transfer taxis.",
+    content: `
+<h2>Taif Regional Airport (TIF) — Complete Guide 2026</h2>
+<p><strong>Taif Regional Airport</strong> (IATA: TIF) is the main airport serving the Taif region, located approximately 15–20 minutes from Taif city center. It serves as the gateway for domestic travelers arriving from Riyadh, Dammam, and other Saudi cities — avoiding the longer road journey.</p>
+
+<div class="cta-box">
+    <h3>Book Your TIF Airport Transfer</h3>
+    <p>Pre-book your taxi from Taif Airport (TIF) to your hotel, resort, or Al Hada/Shafa.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20an%20airport%20transfer%20from%20Taif%20Airport%20TIF" target="_blank" rel="noopener noreferrer">Book Airport Transfer via WhatsApp</a>
+</div>
+
+<h3>Airlines Flying to Taif (TIF)</h3>
+<ul>
+    <li><strong>Saudia (Saudi Arabian Airlines):</strong> Operates regular flights from Riyadh (RUH), Dammam (DMM), and major Saudi cities</li>
+    <li><strong>flynas:</strong> Budget carrier with routes from Riyadh and other domestic destinations</li>
+    <li><strong>Flyadeal:</strong> Budget carrier with seasonal Taif service</li>
+</ul>
+<p>Flight time from Riyadh is approximately 1 hour — significantly faster than the 8-hour road journey. For summer travel from the Eastern Province and Riyadh, flying to TIF and taking a taxi to Al Hada or Shafa is the most efficient option.</p>
+
+<h3>TIF Airport to Hotel — Transfer Times</h3>
+<ul>
+    <li><strong>TIF to Taif City Center hotels:</strong> 15–20 minutes</li>
+    <li><strong>TIF to Al Hada Mountain Resort:</strong> 45–50 minutes</li>
+    <li><strong>TIF to Shafa highlands:</strong> 55–65 minutes</li>
+    <li><strong>TIF to Al Hawiya:</strong> 40 minutes</li>
+</ul>
+
+<h3>Booking Your TIF Airport Transfer</h3>
+<p>We recommend pre-booking your airport transfer before your flight. App-based taxis at TIF can be unreliable — especially for transfers to mountain resort areas. Our drivers track your flight and are waiting at arrivals with a name board. All Taif areas served including Al Hada, Shafa, and city center hotels.</p>
+
+<h3>TIF to Makkah, Jeddah, or Madinah</h3>
+<p>If arriving at TIF and needing to continue to Makkah (1.5 hrs), Jeddah (2.5 hrs), or Madinah (4.5 hrs), we can arrange a seamless connection — your Taif airport pickup driver continues directly to your onward destination.</p>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-taxi",
+    faqs: [
+      { question: "How far is Taif Airport (TIF) from the city center?", answer: "Taif Regional Airport (TIF) is approximately 10–15km from Taif city center and 15–20 minutes by taxi. To Al Hada mountain resort it is 45–50 minutes, and to Shafa highlands approximately 55–65 minutes." },
+      { question: "How do I get from Taif Airport to Al Hada?", answer: "Pre-book a private taxi via WhatsApp with your flight details. Your driver meets you at TIF arrivals and drives 45–50 minutes to Al Hada. App-based rides have limited availability for mountain resort transfers — pre-booking guarantees a driver." },
+      { question: "Which airlines fly to Taif Airport?", answer: "Saudia (Saudi Arabian Airlines) and flynas operate regular domestic flights to Taif (TIF) from Riyadh, Dammam, and other major Saudi cities. Flyadeal has seasonal service. Flight time from Riyadh is approximately 1 hour." },
+      { question: "Can I book a taxi from Taif Airport to Makkah?", answer: "Yes. TIF to Makkah is approximately 1.5–2 hours. We offer seamless airport arrival transfers that continue directly to Makkah. This is popular for pilgrims flying into TIF and proceeding to Makkah for Umrah." }
+    ]
+  },
+  {
+    slug: "taif-with-family-kids-activities-guide",
+    title: "Taif with Family — Best Kids Activities, Parks & Family-Friendly Attractions 2026",
+    excerpt: "Best family activities in Taif. Al Rudaf Park, Taif Zoo, cable car, rose farm visits, and mountain picnics — complete guide for families visiting with children.",
+    content: `
+<h2>Taif with Family — The Best Family Destination in Western Saudi Arabia</h2>
+<p>Taif is one of the most family-friendly cities in Saudi Arabia. Its cool mountain climate, green parks, child-friendly attractions, and safe environment make it a perfect destination for families with young children. Here is a complete guide to the best family activities in Taif.</p>
+
+<div class="cta-box">
+    <h3>Book a Family Taxi in Taif</h3>
+    <p>GMC Yukon XL (7 pax) or Toyota Hiace (11 pax) for large families. Fixed rate.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20family%20taxi%20in%20Taif" target="_blank" rel="noopener noreferrer">Book Family Vehicle via WhatsApp</a>
+</div>
+
+<h3>Best Family Activities in Taif</h3>
+
+<h4>1. Al Hada Cable Car — Ages 4+</h4>
+<p>Children love the cable car experience. The 15–20 minute gondola ride over the mountain scenery is exciting and safe. Our family taxi picks you up from your hotel and the driver waits during the ride.</p>
+
+<h4>2. Taif Zoo — All Ages</h4>
+<p>Taif Zoo, located near Al Rudaf Park, is one of the better-maintained zoos in the region with a good variety of animals. Ideal for a morning visit with young children before the afternoon heat.</p>
+
+<h4>3. Al Rudaf Park — All Ages</h4>
+<p>Taif's main public park with walking tracks, playgrounds, open picnic areas, and green lawns. A perfect evening family outing with the cool highland air. Entrance is free or minimal.</p>
+
+<h4>4. Wadi Naaman Rose Farms — Ages 6+</h4>
+<p>During rose season (March–April), children enjoy seeing the pink and red rose fields and watching the traditional distillation process. The honey market also has free tastings that children love.</p>
+
+<h4>5. Shafa Mountain Camping</h4>
+<p>For older children and teenagers, Shafa mountain camping grounds offer a genuine highland camping experience with fire pits and mountain views — an activity simply not possible in coastal Saudi cities.</p>
+
+<h4>6. Mountain Picnics at Al Hada Viewpoints</h4>
+<p>Pack a picnic and drive up to the Al Hada viewpoints. Children find the dramatic mountain scenery exciting and there is plenty of open space to run around.</p>
+
+<h3>Family Vehicle Options</h3>
+<p>For families:</p>
+<ul>
+    <li><strong>4–6 people:</strong> GMC Yukon XL — spacious, child seat friendly, large luggage area</li>
+    <li><strong>7–11 people:</strong> Toyota Hiace — full minibus, ideal for extended family groups</li>
+    <li><strong>3 people or fewer:</strong> Toyota Camry — comfortable, economical</li>
+</ul>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-city-tour",
+    faqs: [
+      { question: "Is Taif good for families with young children?", answer: "Yes. Taif Zoo, Al Rudaf Park, the Al Hada cable car, and the gentle mountain environment are all excellent for young children. The cooler climate compared to coastal cities makes outdoor activities comfortable for kids year-round." },
+      { question: "What is the best family vehicle for Taif tours?", answer: "The GMC Yukon XL seats 7 and has a large boot for strollers and luggage — ideal for families of 4–7. For extended families of 8–11, the Toyota Hiace minibus is the best option. Both are available for full-day family tours in Taif." },
+      { question: "Is there a water park or theme park in Taif?", answer: "Taif has some recreational facilities but no major water park or theme park as of 2026. The main family attractions are Al Rudaf Park, Taif Zoo, Al Hada cable car, and the mountain scenery. For theme parks, Jeddah and Riyadh have more options." }
+    ]
+  },
+  {
+    slug: "taif-weather-best-time-to-visit-guide",
+    title: "Taif Weather Guide 2026 — Best Time to Visit & What to Expect Month by Month",
+    excerpt: "Complete Taif weather guide. What to expect in each month, best time for rose season, summer escape, and how weather affects travel. Taxi tips included.",
+    content: `
+<h2>Taif Weather — Month by Month Guide 2026</h2>
+<p><strong>Taif's climate</strong> is the defining reason to visit. At 1,800m elevation in the Hejaz mountains, Taif is one of only a handful of places in the Arabian Peninsula with a genuinely temperate climate. No other city in western Saudi Arabia offers such a dramatic contrast to the coastal heat.</p>
+
+<h3>Taif Climate Summary</h3>
+<ul>
+    <li><strong>Summer (June–September):</strong> 28–35°C in Taif city, 22–28°C in Al Hada, 20–26°C in Shafa. Mild by Saudi standards — the reason for the summer migration from Jeddah.</li>
+    <li><strong>Spring (March–May):</strong> 18–28°C. Perfect weather. Peak rose season (March–April). Highly recommended.</li>
+    <li><strong>Autumn (October–November):</strong> 18–26°C. Comfortable, quiet, good for tourism without crowds.</li>
+    <li><strong>Winter (December–February):</strong> 8–20°C in city, sometimes near 0°C in Shafa. Cold by Saudi standards. Occasional frost in mountain areas. Quiet season.</li>
+</ul>
+
+<div class="cta-box">
+    <h3>Plan Your Taif Visit — Book Transport</h3>
+    <p>Airport transfers, city tours, and mountain trips. Fixed rate, all seasons.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20am%20planning%20a%20visit%20to%20Taif%20and%20need%20transport" target="_blank" rel="noopener noreferrer">Book via WhatsApp</a>
+</div>
+
+<h3>Month-by-Month Breakdown</h3>
+
+<p><strong>January–February:</strong> Cool and quiet. 10–20°C. Low tourist numbers — good for budget travelers. Shafa can be cold enough for jackets. Rose farms are dormant.</p>
+
+<p><strong>March–April:</strong> The best months to visit. 18–26°C, blue skies, and the famous Damask rose bloom. Rose farms in full flower, honey market busy, Taif Rose Festival typically in March. Book transport in advance for this period.</p>
+
+<p><strong>May:</strong> Transitioning to summer. 22–30°C. Rose season ending but still pleasant. Fewer tourists than peak summer.</p>
+
+<p><strong>June–August:</strong> Peak summer season. 28–35°C in city, 20–28°C in mountain resorts. Hotels and chalets in Al Hada and Shafa are fully booked. Mountain roads are busy on weekends. Pre-book all transport well in advance.</p>
+
+<p><strong>September:</strong> Summer winding down. Still warm (28–33°C) but weekday traffic noticeably lighter. Good value accommodation returns.</p>
+
+<p><strong>October–November:</strong> Ideal shoulder season. 18–26°C, clear mountain air, minimal crowds. Best value for money period.</p>
+
+<p><strong>December:</strong> Getting cold. 10–18°C in city. Some families still visit for the novelty of cool winter air. Shafa can see occasional fog and near-zero nights.</p>
+
+<h3>When to Visit for Specific Activities</h3>
+<ul>
+    <li><strong>Rose farms:</strong> March–April only (bloom season)</li>
+    <li><strong>Summer escape:</strong> June–September</li>
+    <li><strong>Cable car and mountain tours:</strong> Year-round (avoid foggy winter mornings)</li>
+    <li><strong>Hajj/Umrah Miqat transfers:</strong> Year-round (peak demand during Hajj season June 2026)</li>
+    <li><strong>Mountain camping:</strong> March–May and October–November (ideal temperature range)</li>
+</ul>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-mountain-tour",
+    faqs: [
+      { question: "What is the temperature in Taif in summer?", answer: "Taif city center averages 28–35°C in summer (June–September). Al Hada mountain resort is 5–7°C cooler at 22–28°C, and Shafa highlands can be as cool as 18–24°C. Compare this to Jeddah at 40–45°C in the same period." },
+      { question: "Does it rain in Taif?", answer: "Taif receives more rainfall than other Saudi cities due to its mountain elevation — typically October–January sees occasional rain and mist. March–April can also have light spring showers. The mountain moisture is part of what makes Taif green and cool." },
+      { question: "What is the best month to visit Taif for the rose season?", answer: "March is the peak of the Damask rose bloom season in Taif. Late February and early April also see roses but the peak density and festival activity is in March. Rose water distilleries are most active during this period." },
+      { question: "Is Taif hot in winter?", answer: "By Saudi standards, Taif is cold in winter. December–February temperatures average 10–20°C in the city and can approach freezing in Shafa at night. Pack a warm layer if visiting between December and February." }
+    ]
+  },
+  {
+    slug: "taif-best-hotels-resorts-guide-2026",
+    title: "Best Hotels & Resorts in Taif 2026 — Al Hada, Shafa, City Center Accommodation Guide",
+    excerpt: "Complete guide to the best hotels and resorts in Taif. Al Hada mountain resorts, Shafa chalets, and city center hotels — with taxi transfer times from each location.",
+    content: `
+<h2>Best Hotels & Resorts in Taif 2026</h2>
+<p>Choosing the right accommodation in Taif determines your entire experience. The city has three distinct zones — each with different vibes, prices, and access to attractions. Here's an honest guide to help you decide.</p>
+
+<h3>Zone 1: Al Hada Mountain Resort Area</h3>
+<p><strong>Best for:</strong> Couples, first-time visitors, cable car access, dramatic mountain scenery.</p>
+
+<p>Al Hada is the most popular and iconic accommodation zone. You wake up in the mountains with views over the Hejaz range, walk to the cable car station, and enjoy the famous zigzag road at your doorstep.</p>
+
+<ul>
+    <li><strong>InterContinental Al Hada Mountain Resort:</strong> Taif's most prestigious hotel — set on the mountain with stunning views, multiple restaurants, and excellent service. Book months ahead for summer.</li>
+    <li><strong>Shubra Hotel Al Hada:</strong> More affordable option in the Al Hada area. Good mountain location.</li>
+    <li><strong>Mountain chalets and villas:</strong> Available for rent for families wanting a self-catered option with full mountain views.</li>
+</ul>
+
+<p><strong>Taxi times from Al Hada:</strong> 30 min to Taif city, 60–75 min to Makkah, 20 min to Shafa.</p>
+
+<div class="cta-box">
+    <h3>Book Your Al Hada Hotel Transfer</h3>
+    <p>Airport pickup or intercity transfer to your Al Hada accommodation. Fixed rate.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20transfer%20to%20my%20hotel%20in%20Al%20Hada%20Taif" target="_blank" rel="noopener noreferrer">Book via WhatsApp</a>
+</div>
+
+<h3>Zone 2: Shafa (Al Shafa) Highlands</h3>
+<p><strong>Best for:</strong> Extended family stays, genuine cool escape, camping, privacy, lower density.</p>
+
+<p>Shafa is higher, cooler, and quieter than Al Hada. Families who want a genuine highland retreat — not the cable car tourist experience — choose Shafa. Chalets and private villas are the main accommodation type.</p>
+
+<ul>
+    <li>Private villas and chalets (weekly rental, books out fast for summer)</li>
+    <li>Mountain rest houses and small hotels</li>
+    <li>Camping grounds for adventurous families</li>
+</ul>
+
+<p><strong>Taxi times from Shafa:</strong> 45 min to Taif city, 20 min to Al Hada, 90–100 min to Makkah.</p>
+
+<h3>Zone 3: Taif City Center</h3>
+<p><strong>Best for:</strong> Business travelers, short stays, access to souq and heritage sites.</p>
+
+<ul>
+    <li><strong>Hilton Taif Hotel:</strong> 5-star, central location, business facilities.</li>
+    <li><strong>Marriott Taif:</strong> 5-star, city center, good for corporate stays.</li>
+    <li><strong>Ascott Taif:</strong> Serviced apartments, ideal for longer stays.</li>
+    <li><strong>Holiday Inn Taif:</strong> Mid-range, well-located for souq access.</li>
+</ul>
+
+<p><strong>Taxi times from City Center:</strong> 20 min to TIF airport, 15 min to Al Rudaf Park, 30 min to Al Hada, 1.5 hrs to Makkah.</p>
+
+<h3>Which Zone is Right for You?</h3>
+<ul>
+    <li>If you want mountain views, cable car, and a resort feel → <strong>Al Hada</strong></li>
+    <li>If you want the coolest temperatures and a genuine highland escape → <strong>Shafa</strong></li>
+    <li>If you need city access, airport proximity, and business facilities → <strong>City Center</strong></li>
+</ul>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-mountain-tour",
+    faqs: [
+      { question: "What is the best hotel in Al Hada Taif?", answer: "The InterContinental Al Hada Mountain Resort is widely considered the best hotel in Taif, offering mountain views, full resort facilities, and the most dramatic setting. It should be booked well in advance for summer and rose season." },
+      { question: "How do I get from Taif Airport to Al Hada?", answer: "Pre-book a private taxi from Taif Airport (TIF). The drive to Al Hada takes 45–50 minutes. We recommend pre-booking before your flight — our driver will meet you at arrivals with a name board and deliver you directly to your hotel or resort." },
+      { question: "What is the cheapest area to stay in Taif?", answer: "Taif city center hotels offer the most affordable rates outside peak season. Budget options are limited in Al Hada and Shafa, which are dominated by luxury resorts and private villa rentals." },
+      { question: "How far is Al Hada from Taif city center?", answer: "Al Hada is approximately 30km and 30 minutes by taxi from Taif city center. Most visitors combine a city center tour and the Al Hada cable car in a single day trip with a hired driver." }
+    ]
+  },
+  {
+    slug: "al-hada-cable-car-taif-complete-guide",
+    title: "Al Hada Cable Car Taif: Complete Guide 2026 — Telefric, Zigzag Road & How to Get There",
+    excerpt: "Everything you need to know about Al Hada cable car (Telefric) in Taif. Timings, tips, the famous zigzag road, and how to book a taxi from your Taif hotel.",
+    content: `
+<h2>Al Hada Cable Car (Telefric) — Taif's Most Iconic Attraction</h2>
+<p>The <strong>Al Hada Cable Car</strong> — locally known as the Telefric Al Hada — is the most visited attraction in the Taif highlands. Located in the Al Hada mountain area approximately 30km from Taif city center, it offers panoramic views over the dramatic Hejaz mountain range and the descent toward the Makkah plain below.</p>
+
+<p>The cable car stretches over the zigzag road descent, giving riders a bird's-eye view of the famous Al Hada mountain road — a series of 30+ switchback turns carved into the cliffs that has been connecting the Taif highlands to the lowlands since the early 20th century.</p>
+
+<div class="cta-box">
+    <h3>Book a Taxi to Al Hada Cable Car</h3>
+    <p>Pick up from your hotel in Taif city or Al Hada. Driver waits during your cable car ride.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20to%20Al%20Hada%20Cable%20Car%20in%20Taif" target="_blank" rel="noopener noreferrer">Book via WhatsApp</a>
+</div>
+
+<h3>The Al Hada Zigzag Road — What to Expect</h3>
+<p>The road to Al Hada from either direction is an experience in itself. Coming from Taif city, the mountain road rises through dense mountain greenery before reaching the Al Hada plateau. Coming from Makkah side (Route 15), the famous zigzag road descends in a series of dramatic hairpin turns — this is the section visible from the cable car.</p>
+
+<ul>
+    <li><strong>Length:</strong> The zigzag descent section is approximately 7km</li>
+    <li><strong>Turns:</strong> Over 30 switchback bends</li>
+    <li><strong>Elevation change:</strong> Approximately 1,000m drop in altitude</li>
+    <li><strong>Safety:</strong> Requires an experienced local driver — do not attempt in an unfamiliar vehicle at night or in fog</li>
+</ul>
+
+<h3>Al Hada Cable Car — Practical Information</h3>
+<p>The cable car operates from the Al Hada Mountain Resort area. Tickets are available at the station. The ride takes approximately 15–20 minutes and can operate in both directions. During summer and weekends, queues form — arrive early in the morning for the best experience.</p>
+
+<h3>What Else to See Near Al Hada</h3>
+<p>While at Al Hada, your taxi driver can take you to additional highlights in the area:</p>
+<ul>
+    <li><strong>Mountain viewpoints:</strong> Several official viewpoint platforms overlooking the descent</li>
+    <li><strong>Al Hada Mountain Resort hotels:</strong> Excellent mountain restaurants with views</li>
+    <li><strong>Waterfall areas:</strong> Seasonal waterfalls in the rocky gorges near Al Hada</li>
+    <li><strong>Shafa highlands:</strong> 20 minutes further for even cooler temperatures and Shafa mountain views</li>
+</ul>
+
+<h3>Getting to Al Hada from Taif — Taxi Options</h3>
+<p>The easiest and safest way to reach Al Hada cable car from Taif city is by pre-booked private taxi. Our drivers pick you up from your hotel entrance and drive the 30-minute mountain road to Al Hada. Your driver waits during the cable car ride and mountain exploration, then returns you to Taif or continues to any other destination (Makkah, Shafa, rose farms).</p>
+
+<blockquote>
+    "The zigzag road drive alone was worth the trip. Our driver from Haram Taxi knew every turn and pointed out the best viewpoints. The cable car over the mountains was breathtaking. Cannot recommend enough."
+    <br/><span class="text-sm font-bold mt-2 block not-italic">— Khalid H., visiting from Riyadh</span>
+</blockquote>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-mountain-tour",
+    faqs: [
+      { question: "What is the Al Hada Cable Car (Telefric) in Taif?", answer: "The Al Hada Cable Car (Telefric) is a scenic gondola ride in the Al Hada mountain area of Taif. It crosses over the famous zigzag road descent, offering panoramic views of the Hejaz mountains and the plain below. It is approximately 30 minutes from Taif city center by taxi." },
+      { question: "How do I get to Al Hada Cable Car from Taif?", answer: "Book a taxi via WhatsApp with your hotel name in Taif city or Al Hada resort area. The drive to the cable car station takes approximately 30 minutes from Taif city center. Your driver waits during your cable car ride." },
+      { question: "Is the Al Hada zigzag road safe by taxi?", answer: "Yes, with an experienced local driver. Our Al Hada chauffeurs drive this road daily and are trained for all conditions. We do not recommend unfamiliar or app-based drivers on this mountain road, especially at night." },
+      { question: "Can I book a taxi from Makkah to Al Hada cable car?", answer: "Yes. From Makkah, Al Hada is approximately 60–70km and takes 60–75 minutes via the scenic mountain route. Many pilgrims book a day trip from Makkah to Al Hada cable car and return in the evening." }
+    ]
+  },
+  {
+    slug: "taif-rose-festival-guide-2026",
+    title: "Taif Rose Festival 2026 — Guide to the Rose Season, Farm Tours & How to Get There",
+    excerpt: "Everything you need to know about the Taif Rose Festival 2026. When to visit, what to see at the rose farms, how to book a taxi from Makkah or Taif hotels.",
+    content: `
+<h2>Taif Rose Festival 2026 — The Saudi Rose Capital</h2>
+<p><strong>Taif</strong> is the undisputed rose capital of Saudi Arabia and one of the most important rose-producing regions in the world. The city's <strong>Damask rose (Rosa damascena)</strong> — known locally as <em>Ward Taifi</em> — blooms every year between late February and early April, filling the valleys around Wadi Naaman with pink and red blossoms and the air with one of the world's most treasured fragrances.</p>
+
+<p>The <strong>Taif Rose Festival</strong> — held annually during the peak bloom season — celebrates this ancient tradition with farm tours, cultural exhibitions, rose water demonstrations, and local markets. Thousands of visitors travel from across Saudi Arabia and the Gulf to experience it.</p>
+
+<div class="cta-box">
+    <h3>Book Your Taif Rose Farm Taxi</h3>
+    <p>From your hotel in Taif, Makkah, or Jeddah. Full-day and half-day tours available.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20would%20like%20to%20book%20a%20rose%20farm%20tour%20in%20Taif" target="_blank" rel="noopener noreferrer">Book Rose Farm Tour via WhatsApp</a>
+</div>
+
+<h3>Where Are the Rose Farms? — Wadi Naaman</h3>
+<p>The majority of Taif's Damask rose farms are concentrated in <strong>Wadi Naaman</strong>, a fertile agricultural valley approximately 30km south of Taif city center. This is where traditional rose-water distilleries have operated for centuries, producing the attar used in Saudi perfumes, oud blends, and rose water sprinkled in mosques across the region.</p>
+
+<h3>What to Expect on a Rose Farm Visit</h3>
+<ul>
+    <li><strong>Rose harvest in progress (March–April):</strong> Farmers pick roses by hand before dawn and bring them for same-day distillation</li>
+    <li><strong>Steam distillation demonstration:</strong> Traditional copper stills produce pure rose water (rose hydrosol) and concentrated rose oil (attar)</li>
+    <li><strong>Honey market:</strong> Taif is also famous for mountain sidr honey — the markets near the rose farms sell fresh, unprocessed honey</li>
+    <li><strong>Pomegranate and grape orchards:</strong> Taif's higher altitude produces exceptional pomegranates — available in season</li>
+    <li><strong>Direct shopping:</strong> Buy rose water, rose oil, and honey at farm prices — significantly cheaper than city shops</li>
+</ul>
+
+<h3>Visiting from Makkah or Jeddah</h3>
+<p>Taif is 90km from Makkah (1.5 hours) and 170km from Jeddah (2.5 hours). Many Umrah pilgrims and Jeddah residents plan a day trip to Taif specifically for the rose season. Our taxi service offers:</p>
+<ul>
+    <li>Makkah to Taif rose farm day trip and return</li>
+    <li>Jeddah to Taif rose farm day trip and return</li>
+    <li>Full-day Taif tour combining rose farms, Al Hada cable car, and mountain scenery</li>
+</ul>
+
+<blockquote>
+    "We came from Makkah for the rose season. Our driver from Haram Taxi took us to three different farms in Wadi Naaman. We watched the distillation, bought fresh rose water and sidr honey, and were back in Makkah for Isha prayer. Perfect day."
+    <br/><span class="text-sm font-bold mt-2 block not-italic">— Umm Khalid, travelling from Malaysia</span>
+</blockquote>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-rose-farm-tour",
+    faqs: [
+      { question: "When is the Taif Rose Festival 2026?", answer: "The Taif Rose Season runs from late February through April 2026, with peak bloom in March. The official festival events are typically scheduled in March. Check Taif municipality announcements for exact 2026 festival dates." },
+      { question: "How do I get to the Taif rose farms from Makkah?", answer: "Book a taxi via WhatsApp. Makkah to Wadi Naaman rose farms is approximately 2 hours. We offer full-day return packages including time at the farms and return to Makkah in the evening. Pre-booking 1–2 days in advance is recommended during the rose season." },
+      { question: "Can I buy Taif rose water directly at the farms?", answer: "Yes. Wadi Naaman farms sell rose water (rose hydrosol), concentrated rose oil (attar), dried roses, and rose-based products directly. Prices are lower than city shops. Our drivers know the best farms for quality and authentic products." },
+      { question: "Is a guide needed for the rose farm tour?", answer: "Our driver serves as a knowledgeable local guide. They know which farms to visit, when distillation is active, and the best places to buy. No separate guide is required — the driver is included in the tour price." }
+    ]
+  },
+  {
+    slug: "taif-hajj-2026-miqat-transport-guide",
+    title: "Taif Hajj 2026 Transport Guide — Miqat Transfer, Ihram Point & Getting to Makkah",
+    excerpt: "Complete guide for Hajj 2026 pilgrims in Taif. How to reach the Miqat at Qarn al-Manazil, what to expect at the Ihram point, and how to book your Makkah transfer from Taif.",
+    content: `
+<h2>Hajj 2026 from Taif — A Complete Transport Guide</h2>
+<p>For pilgrims staying in <strong>Taif</strong> before Hajj 2026, the journey to Makkah involves an important stop: the <strong>Miqat</strong>. Unlike pilgrims arriving by air who must enter Ihram before landing, pilgrims travelling by road from Taif must enter the state of Ihram at the designated boundary point before approaching Makkah.</p>
+
+<h3>The Taif Miqat — Qarn al-Manazil (As-Sail Al-Kabir)</h3>
+<p>Pilgrims travelling from Taif use the Miqat of <strong>Qarn al-Manazil</strong>, also known as <strong>As-Sail Al-Kabir</strong>. This is one of the five designated Miqat points established by the Prophet Muhammad ﷺ for pilgrims approaching Makkah.</p>
+
+<ul>
+    <li><strong>Location:</strong> Approximately 45km east of Makkah, en route from Taif via Route 15</li>
+    <li><strong>Distance from Taif city center:</strong> Approximately 45 minutes</li>
+    <li><strong>Facilities:</strong> Ablution areas, prayer halls, changing rooms, food and drink stalls</li>
+    <li><strong>Timing:</strong> Open 24 hours during Hajj season</li>
+</ul>
+
+<div class="cta-box">
+    <h3>Book Your Taif Miqat Transfer for Hajj 2026</h3>
+    <p>Pre-booking is essential. Demand peaks during 8th–13th Dhul Hijjah 2026.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20Miqat%20transfer%20from%20Taif%20for%20Hajj%202026" target="_blank" rel="noopener noreferrer">Book Miqat Transfer via WhatsApp</a>
+</div>
+
+<h3>What Happens at the Miqat?</h3>
+<p>Your taxi driver will stop at the Qarn al-Manazil Miqat facilities. At the Miqat, pilgrims:</p>
+<ol>
+    <li>Perform Ghusl (ritual bath) if not already done</li>
+    <li>Put on Ihram garments (two white cloths for men; modest clothing for women)</li>
+    <li>Make the intention (Niyyah) for Hajj or Umrah</li>
+    <li>Begin reciting the Talbiyah</li>
+</ol>
+<p>Your driver will wait patiently — there is no rush. Once you are ready, he will continue the final 45-minute drive to your Makkah hotel.</p>
+
+<h3>Hajj 2026 — When to Travel from Taif</h3>
+<p>Hajj 2026 corresponds to <strong>June 2026</strong> (Dhul Hijjah 1447H). The critical travel days from Taif to Makkah for Hajj are:</p>
+<ul>
+    <li><strong>8th Dhul Hijjah:</strong> Pilgrims travel to Mina</li>
+    <li><strong>9th Dhul Hijjah:</strong> Day of Arafah — the most critical day</li>
+    <li><strong>10th–12th Dhul Hijjah:</strong> Days in Mina for Tashreeq</li>
+</ul>
+<p>During these days, road traffic to Makkah is intense and only registered Hajj-permitted vehicles are allowed past certain checkpoints. Our fleet carries the necessary permits for Hajj season access.</p>
+
+<h3>Why Pre-Book Your Taif Hajj Transfer?</h3>
+<p>During Hajj 2026, ad-hoc taxis from Taif to Makkah become extremely scarce. Drivers who are available charge 3–5x normal rates. Pilgrims who have not pre-booked have been stranded at their Taif hotels unable to reach the Miqat on time.</p>
+<p><strong>Book your Taif Hajj transfer at least 3–4 weeks before your travel date.</strong> WhatsApp us now to secure your vehicle.</p>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-miqat-transfer",
+    faqs: [
+      { question: "Which Miqat do pilgrims from Taif use for Hajj?", answer: "Pilgrims from Taif use the Miqat of Qarn al-Manazil (As-Sail Al-Kabir), located approximately 45 minutes from Taif city center on Route 15 toward Makkah. This is one of the five Miqat points designated by the Prophet ﷺ." },
+      { question: "Does my Taif taxi driver stop at the Miqat?", answer: "Yes. All our Taif Hajj transfer drivers are instructed to stop at the Qarn al-Manazil Miqat facilities and wait while you prepare your Ihram. There is no time pressure — your driver will wait as long as needed." },
+      { question: "How far in advance should I book my Taif Hajj 2026 transfer?", answer: "We recommend booking at least 3–4 weeks before your planned travel dates. During peak Hajj days (8th–13th Dhul Hijjah), vehicles are fully committed. Contact us via WhatsApp as soon as your travel dates are confirmed." },
+      { question: "Can I book a return transfer from Makkah to Taif after Hajj?", answer: "Yes. We offer round-trip Hajj packages: Taif to Makkah before Hajj and Makkah back to Taif after completing the rites. Book both directions together for a discounted combined rate." },
+      { question: "What if I am staying in Al Hada or Shafa — can I still get a Miqat transfer?", answer: "Yes. We pick up from all Taif areas including Al Hada mountain resort, Shafa, Al Hawiya, and all city hotels for the Miqat and Makkah transfer. Provide your exact accommodation name when booking." }
+    ]
+  },
+  {
+    slug: "shafa-mountains-taif-travel-guide",
+    title: "Al Shafa Mountains Taif — Complete Travel Guide 2026 | Cool Highland Retreat",
+    excerpt: "Complete guide to visiting Al Shafa in Taif. Best time to visit, what to see, how to get there from Jeddah or Makkah, and booking a mountain taxi to the highland resorts.",
+    content: `
+<h2>Al Shafa — Taif's Premier Highland Resort</h2>
+<p><strong>Al Shafa</strong> is the highest and coolest district of Taif, sitting at an elevation that makes it one of the most refreshing summer escapes in western Saudi Arabia. While Taif city center is already considerably cooler than Jeddah (at sea level), Al Shafa sits even higher — with temperatures that can be 5–10°C cooler than Taif city and 20°C cooler than Jeddah on a summer afternoon.</p>
+
+<p>This extreme temperature difference makes Al Shafa enormously popular with Gulf families escaping the summer heat from June through September. Resorts, chalets, and private villas fill quickly during peak season.</p>
+
+<div class="cta-box">
+    <h3>Book a Taxi to Al Shafa, Taif</h3>
+    <p>From Jeddah Airport, Makkah, or Taif city. Mountain-expert drivers, fixed rate.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20to%20Al%20Shafa%20Taif" target="_blank" rel="noopener noreferrer">Book via WhatsApp</a>
+</div>
+
+<h3>What to Do in Al Shafa</h3>
+<ul>
+    <li><strong>Mountain viewpoints:</strong> Al Shafa has several dramatic overlook platforms with views over the highland valleys</li>
+    <li><strong>Hiking and nature walks:</strong> Mountain trails through juniper forest and rocky terrain</li>
+    <li><strong>Camping:</strong> Al Shafa has designated camping sites with fire pit areas — a rare highland camping experience in the Hejaz</li>
+    <li><strong>Local markets:</strong> Fresh mountain produce including pomegranates, grapes, and honey</li>
+    <li><strong>Mountain cafes:</strong> Traditional Arabic coffee and light meals at high-altitude cafes with view terraces</li>
+    <li><strong>Al Hada connection:</strong> Al Hada cable car is 20 minutes from Shafa — combine both in a day</li>
+</ul>
+
+<h3>Getting to Al Shafa</h3>
+<p>Al Shafa is accessed via the mountain road from Taif city center (40–50 minutes) or via the Al Hada road from the Makkah direction. The roads to Shafa require an experienced driver familiar with highland mountain roads — particularly on the upper sections close to Shafa where the road narrows.</p>
+
+<p>From <strong>Jeddah Airport</strong>, the most common route is Jeddah → Makkah bypass → Taif → Shafa (approximately 3 hours total). From <strong>Makkah</strong>, it is 90–100 minutes to Shafa via the mountain road.</p>
+
+<h3>Best Time to Visit Al Shafa</h3>
+<p>Al Shafa is pleasant year-round but the peak season is <strong>June through September</strong> when the summer heat makes coastal cities uncomfortable. Spring (March–April) is excellent for combining with Taif's rose season. Winter visits (December–February) can be genuinely cold — some mornings near freezing — which is extraordinary by Saudi standards.</p>
+
+<blockquote>
+    "We booked a mountain taxi from Jeddah Airport directly to our chalet in Shafa. The driver knew the mountain roads perfectly and we arrived safely after dark — something we wouldn't have attempted with an unfamiliar driver."
+    <br/><span class="text-sm font-bold mt-2 block not-italic">— Ibrahim Al-Ghamdi, Jeddah resident</span>
+</blockquote>
+`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-mountain-tour",
+    faqs: [
+      { question: "How far is Al Shafa from Jeddah Airport?", answer: "Al Shafa is approximately 200km from Jeddah Airport (KAIA) and the drive takes 2.5–3 hours via the mountain road through Taif. We recommend our mountain-experienced drivers for this route, especially for evening arrivals." },
+      { question: "What is the temperature in Al Shafa in summer?", answer: "Al Shafa summer temperatures typically range from 18–28°C during the day — approximately 20°C cooler than Jeddah at the same time. Evenings can be cool enough for a jacket in July and August." },
+      { question: "Is there public transport to Al Shafa from Taif city?", answer: "There is no reliable public transport to Al Shafa. A private pre-booked taxi is the standard and safest way to access the highland resorts. App-based rides have very limited availability in mountain areas." },
+      { question: "Can I combine Al Shafa with Al Hada cable car in one day?", answer: "Yes. Al Shafa and Al Hada are 20 minutes apart. A full-day mountain tour can cover both — Al Hada cable car and zigzag road in the morning, Al Shafa viewpoints and lunch in the afternoon. Contact us for a custom all-day mountain tour." }
+    ]
   }
 ];

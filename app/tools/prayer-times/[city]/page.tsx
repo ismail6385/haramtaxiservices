@@ -66,7 +66,7 @@ export default async function CityPrayerPage({ params }: Props) {
                             <p className="text-sm text-gray-600 mb-4">
                                 We provide reliable taxi services in {cityName} for all prayer times.
                             </p>
-                            <Link href={`/locations/${citySlug === 'makkah' || citySlug === 'madinah' || citySlug === 'jeddah' ? citySlug : 'makkah'}`}>
+                            <Link href={`/locations/${['makkah','madinah','jeddah','taif','riyadh','dammam','khobar','abha','tabuk','hail','yanbu','madinah','al-ula','alula','neom'].includes(citySlug) ? citySlug : 'makkah'}`}>
                                 <Button className="bg-slate-600 hover:bg-slate-700 w-full">
                                     Book Taxi in {cityName}
                                 </Button>

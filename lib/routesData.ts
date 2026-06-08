@@ -2197,5 +2197,182 @@ export const routesData: RouteData[] = [
             { question: "Can the taxi pick up from Al Hofuf city centre?", answer: "Yes. We pick up from Al Hofuf, Mubarraz, and all Al-Ahsa districts. Provide your exact address and we deliver directly to your Riyadh destination." },
             { question: "Is there a direct bus from Al-Ahsa to Riyadh?", answer: "SAPTCO operates an Al-Ahsa–Riyadh intercity bus service. A private taxi provides door-to-door flexibility, no fixed schedule, and is competitive for groups of 3–4 passengers sharing the cost." }
         ]
+    },
+    {
+        slug: "jeddah-to-taif",
+        title: "Jeddah to Taif Taxi | City Center to Mountain Transfer — 170km",
+        description: "Private taxi from Jeddah city center to Taif. Escape the coastal heat for the cool Taif highlands. Fixed rate, approximately 2.5 hours, all Jeddah areas served.",
+        h1: "Jeddah to Taif Taxi — 170km Mountain Transfer",
+        distance: "170 km",
+        duration: "2.5 hours",
+        content: "Escape the intense Jeddah summer heat by booking a private taxi to the cool mountain city of Taif. The 170km journey from central Jeddah to Taif takes approximately 2.5 hours via the mountain highway, climbing from sea level to 1,800m elevation. Popular with Jeddah families heading to Al Hada resorts, Shafa highlands, and Taif rose farms. This route is distinct from Jeddah Airport to Taif — we pick up from any Jeddah address including Al Hamra, Al Rawdah, Al Zahra, Corniche hotels, and all residential districts.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Jeddah to Taif?", answer: "Jeddah to Taif city center is approximately 170km and takes 2.5 hours via the mountain highway. Al Hada mountain resort takes an additional 30 minutes, and Shafa highlands adds approximately 45 minutes to the total." },
+            { question: "What is the best vehicle for Jeddah to Taif with a family?", answer: "The GMC Yukon XL is ideal for families of up to 7 with luggage — spacious, powerful enough for the mountain climb, and air-conditioned. For larger families of 8–11, the Toyota Hiace minibus is the best option." },
+            { question: "Do you pick up from all Jeddah areas?", answer: "Yes. We pick up from all Jeddah areas including Al Hamra, Al Rawdah, Al Zahra, North Jeddah, South Jeddah, Al Corniche, Obhur, and all residential districts and hotels." },
+            { question: "Can I book a Jeddah to Taif round trip?", answer: "Yes. Round-trip packages with a discounted return are available. WhatsApp us with your Jeddah address, Taif accommodation, and travel dates for a combined fixed quote." }
+        ]
+    },
+    {
+        slug: "taif-to-khobar",
+        title: "Taif to Al Khobar Taxi | Eastern Province Transfer — 900km",
+        description: "Private taxi from Taif to Al Khobar. Door-to-door long-haul transfer via Route 65 and Route 40. Fixed rate, approximately 9 hours, one rest stop.",
+        h1: "Taif to Al Khobar Private Taxi — 900km Eastern Province",
+        distance: "900 km",
+        duration: "9 hours",
+        content: "Taif to Al Khobar is one of the longer intercity routes in Saudi Arabia, connecting the Hejaz highland city with the Aramco hub and Eastern Province coastal strip. The journey follows Route 15 north to the Taif–Riyadh highway (Route 65), then Route 40 east to Al Khobar — approximately 9 hours with one scheduled prayer and rest stop. Popular with Eastern Province residents who holiday in Taif or with expats connecting to Aramco Dhahran Compound after pilgrimage travel. We also serve Dammam, Dhahran, and Jubail on this corridor.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the Taif to Al Khobar drive?", answer: "Taif to Al Khobar is approximately 900km and takes 9 hours with one scheduled rest stop. The route goes via the Taif–Riyadh highway then east on Route 40 to the Eastern Province." },
+            { question: "Can the taxi continue to Dammam or Dhahran from Khobar?", answer: "Yes. Al Khobar, Dammam, and Dhahran are all on the same Eastern Province corridor — approximately 30 minutes apart. We deliver to your specific address anywhere in the Eastern Province." },
+            { question: "Is this a good route for Aramco employees?", answer: "Yes. We regularly serve Aramco compound residents travelling to/from Taif and Makkah for Umrah or holidays. We can arrange pickup from the Aramco residential compound gate." }
+        ]
+    },
+    {
+        slug: "khobar-to-taif",
+        title: "Al Khobar to Taif Taxi | Eastern Province to Highland Transfer — 900km",
+        description: "Private taxi from Al Khobar to Taif. Door-to-door intercity transfer via Route 40 and Route 65. Fixed rate, approximately 9 hours.",
+        h1: "Al Khobar to Taif Private Taxi — 900km Direct Transfer",
+        distance: "900 km",
+        duration: "9 hours",
+        content: "Travel from Al Khobar and the Eastern Province to the cool mountain city of Taif. Popular for Eastern Province families escaping the summer humidity for Taif's highland resorts, and for Aramco employees connecting to the Hejaz for Umrah. The 900km journey follows Route 40 west to Route 65, then Route 15 south to Taif. One prayer and rest stop included. We also pick up from Dammam, Dhahran, Jubail, and all Eastern Province locations.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the Al Khobar to Taif drive?", answer: "Al Khobar to Taif is approximately 900km and takes 9 hours with one rest stop. The route goes west on Route 40 then south on Route 65 toward Taif." },
+            { question: "Can I be dropped at Al Hada or Shafa resort?", answer: "Yes. We deliver to any Taif location including Al Hada mountain resort, Shafa highlands, Al Hawiya, and all Taif city hotels. Provide your exact accommodation when booking." },
+            { question: "Do you serve Dammam and Jubail for this route?", answer: "Yes. We pick up from Al Khobar, Dammam, Dhahran Aramco compound, and Jubail for the Taif transfer. All Eastern Province locations are served." }
+        ]
+    },
+    {
+        slug: "taif-to-yanbu",
+        title: "Taif to Yanbu Taxi | Red Sea Industrial City Transfer — 350km",
+        description: "Private taxi from Taif to Yanbu. Direct transfer via Route 15 north and coastal highway. Fixed rate, approximately 4 hours.",
+        h1: "Taif to Yanbu Private Taxi — 350km Direct Transfer",
+        distance: "350 km",
+        duration: "4 hours",
+        content: "Taif to Yanbu connects the Hejaz highland city with the Red Sea industrial port and petrochemical hub. The 350km journey takes approximately 4 hours via Route 15 north toward Madinah, then west on the coastal highway to Yanbu. Used by Yanbu refinery and petrochemical plant workers who holiday in Taif or visit family in the Makkah Region, and by Taif residents with connections to the Red Sea coast.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the Taif to Yanbu drive?", answer: "Taif to Yanbu is approximately 350km and takes 4 hours. No rest stop is typically required, though we can arrange a prayer stop on request." },
+            { question: "Which route does the Taif to Yanbu taxi use?", answer: "We use Route 15 north from Taif toward Madinah, then branch west on the Red Sea coastal highway toward Yanbu. This avoids passing through any restricted zones." },
+            { question: "Do you serve Yanbu Industrial City and Yanbu Al Bahr?", answer: "Yes. We serve both Yanbu Al Sinaiyah (industrial city) and Yanbu Al Bahr (coastal residential area). Provide your compound gate or address when booking." }
+        ]
+    },
+    {
+        slug: "taif-to-tabuk",
+        title: "Taif to Tabuk Taxi | Northern Saudi Transfer — 1,100km",
+        description: "Private taxi from Taif to Tabuk. Long-haul intercity transfer via Route 15 and Route 65 north. Fixed rate, approximately 11 hours, two rest stops.",
+        h1: "Taif to Tabuk Private Taxi — 1,100km Long-Haul Transfer",
+        distance: "1,100 km",
+        duration: "11 hours",
+        content: "Taif to Tabuk is a long-haul intercity route connecting the Hejaz highland city with the northwest Saudi gateway to NEOM, AlUla, and the Jordan border. The 1,100km journey follows Route 15 north toward Madinah then continues north on Route 65 (Hijaz Road) to Tabuk — approximately 11 hours with two scheduled prayer and rest stops. Popular for NEOM and Tabuk project workers travelling from the Makkah Region, and for travelers connecting to Jordan via Haql and Aqaba.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the Taif to Tabuk drive?", answer: "Taif to Tabuk is approximately 1,100km via Route 15 and Route 65 north. The journey takes around 11 hours with two scheduled rest stops." },
+            { question: "Can I continue to NEOM or Haql from Tabuk?", answer: "Yes. Tabuk is the regional hub for NEOM (130km northwest), Haql (230km northwest for the Jordan crossing), and AlUla (350km south). We can arrange a door-to-destination transfer from Taif to any northwest Saudi location." },
+            { question: "Is an overnight stop needed for Taif to Tabuk?", answer: "An 11-hour journey can be completed in a single day with two rest stops if you depart early morning (5–6am). Alternatively, we can arrange an overnight stop in Madinah and continue to Tabuk the next morning." }
+        ]
+    },
+    {
+        slug: "taif-to-abha",
+        title: "Taif to Abha Taxi | Mountain Highway Transfer — 470km",
+        description: "Private taxi from Taif to Abha. Scenic mountain highway Route 15 south through the Hejaz and Asir highlands. Fixed rate, door-to-door, approximately 5 hours.",
+        h1: "Taif to Abha Private Taxi — 470km Mountain Highway",
+        distance: "470 km",
+        duration: "5 hours",
+        content: "The Taif to Abha corridor follows Route 15 south through the dramatic Hejaz and Asir mountain ranges — one of the most scenic intercity drives in Saudi Arabia. From the rose city of Taif at 1,800m elevation, the road descends and climbs through mountain passes before reaching Abha, the capital of Asir Province at 2,270m. This is a popular route for families connecting between the two highland resort cities, and for visitors combining Taif's rose season with Abha's cultural festivals. One scheduled prayer stop is included. Allow extra time during summer peak season when the mountain road attracts high traffic.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Taif to Abha?", answer: "Taif to Abha is approximately 470km via Route 15 south and takes around 5 hours. The mountain highway is well-maintained but involves winding sections — our drivers are experienced on this route." },
+            { question: "Which route does the Taif to Abha taxi use?", answer: "We use Route 15 south (the Hejaz-Asir highland highway), passing through Al Baha and continuing south to Abha. This is the most direct and scenic mountain route connecting the two highland cities." },
+            { question: "Can I stop in Al Baha on the way from Taif to Abha?", answer: "Yes. Al Baha is approximately 220km south of Taif — roughly halfway to Abha. We can include a stop in Al Baha for a meal or sightseeing. Inform us when booking and we will plan the schedule accordingly." },
+            { question: "Do you pick up from Al Hada or Shafa for the Taif to Abha route?", answer: "Yes. We pick up from any Taif location including Al Hada mountain resort, Shafa, Al Hawiya, and all city center hotels." }
+        ]
+    },
+    {
+        slug: "taif-to-al-baha",
+        title: "Taif to Al Baha Taxi | Mountain Transfer — 220km",
+        description: "Private taxi from Taif to Al Baha. Scenic Route 15 mountain highway through the Hejaz highlands. Fixed rate, approximately 3 hours, all Taif districts served.",
+        h1: "Taif to Al Baha Private Taxi — 220km Direct Transfer",
+        distance: "220 km",
+        duration: "3 hours",
+        content: "Taif to Al Baha follows the spectacular Route 15 mountain highway south through the Hejaz highlands. Al Baha Province is famous for its cool climate, ancient stone villages, Al Shallal waterfall area, and Al Baha forests — making it a popular destination for Taif residents on extended mountain holidays. The 220km route takes approximately 3 hours and involves some of the most dramatic scenery in western Saudi Arabia. No rest stop is typically required for this duration, though we can arrange a mid-route prayer and coffee stop on request.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Taif to Al Baha?", answer: "Taif to Al Baha is approximately 220km via Route 15 and takes around 3 hours. The route follows the Hejaz mountain highway south with spectacular highland scenery." },
+            { question: "Is the Taif to Al Baha road safe?", answer: "Yes. Route 15 from Taif to Al Baha is a well-maintained mountain highway. Our drivers are experienced with the mountain driving conditions and winding sections along this route." },
+            { question: "Can I book a round trip from Taif to Al Baha?", answer: "Yes. We offer round-trip packages with driver waiting or a scheduled return time. WhatsApp us with your dates and we will arrange a discounted round-trip rate." },
+            { question: "Do you serve all Al Baha areas and Baljurashi?", answer: "Yes. We deliver to Al Baha city, Baljurashi, Al Shallal, Al Namas, and all Al Baha Province destinations. Provide your specific address when booking." }
+        ]
+    },
+    {
+        slug: "al-baha-to-taif",
+        title: "Al Baha to Taif Taxi | Mountain Transfer — 220km",
+        description: "Private taxi from Al Baha to Taif. Scenic Route 15 mountain highway north through the Hejaz highlands. Fixed rate, approximately 3 hours.",
+        h1: "Al Baha to Taif Private Taxi — 220km Direct Transfer",
+        distance: "220 km",
+        duration: "3 hours",
+        content: "Travel from the lush Al Baha highlands north to Taif along the spectacular Route 15 mountain highway. Many visitors combine Al Baha's forest scenery and ancient stone villages with Taif's rose farms, Al Hada cable car, and mountain resorts. The 220km journey takes approximately 3 hours. We pick up from Al Baha city, Baljurashi, Al Shallal, Al Namas, and all Al Baha Province locations.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Al Baha to Taif?", answer: "Al Baha to Taif is approximately 220km via Route 15 north and takes around 3 hours. Our mountain-experienced drivers handle the highland highway sections safely." },
+            { question: "Can I continue from Taif to Makkah or Jeddah Airport?", answer: "Yes. We offer door-to-door transfers from Al Baha through Taif and onward to Makkah (additional 1.5 hrs) or Jeddah Airport (additional 2.5 hrs from Taif). Book the full route for a single fixed price." },
+            { question: "Do you pick up from all Al Baha locations?", answer: "Yes. We serve Al Baha city, Baljurashi, Al Shallal waterfall area, and all villages and resorts across Al Baha Province." }
+        ]
+    },
+    {
+        slug: "abha-to-taif",
+        title: "Abha to Taif Taxi | Mountain Highway Transfer — 470km",
+        description: "Private taxi from Abha to Taif. Scenic Route 15 north through the Asir and Hejaz highlands. Fixed rate, approximately 5 hours, all Abha areas served.",
+        h1: "Abha to Taif Private Taxi — 470km Mountain Highway",
+        distance: "470 km",
+        duration: "5 hours",
+        content: "Travel from Abha, Asir Province's highland capital, north to the rose city of Taif along Route 15. The reverse of one of Saudi Arabia's most scenic mountain highway routes, this 470km corridor connects two of the Kingdom's premier highland resort destinations. Popular for families and visitors connecting mountain holiday areas. One prayer stop is included. We pick up from all Abha areas including Abha city, Khamis Mushait, and Soudah.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the Abha to Taif drive?", answer: "Abha to Taif is approximately 470km via Route 15 north and takes around 5 hours with one prayer stop. Mountain conditions and seasonal traffic may add time during summer peak season." },
+            { question: "Do you serve Khamis Mushait and Soudah?", answer: "Yes. We pick up from Abha city, Khamis Mushait, Soudah Peak area, and all Asir Province locations for the Taif transfer." },
+            { question: "Can I continue from Taif to Makkah?", answer: "Yes. We offer seamless transfers from Abha through Taif and onward to Makkah for one fixed price. The total journey Abha to Makkah via Taif is approximately 6.5–7 hours." }
+        ]
     }
 ];

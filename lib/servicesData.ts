@@ -260,12 +260,89 @@ export const servicesData: ServiceData[] = [
     },
     {
         slug: "taif-taxi",
-        title: "Taxi Service in Taif",
-        description: "City and mountain transport in Taif.",
-        content: "Visit Al Hada, Shafa, and Taif city center.",
-        features: ["Mountain Safe", "Cable Car"],
-        pricing: [{ title: "City Tour", price: "Get Quote" }],
-        faqs: []
+        title: "Taxi Service in Taif — City, Mountain & Intercity Transfers",
+        description: "Complete taxi service in Taif covering Al Hada, Shafa, Al Hawiya, City Center, and intercity routes to Makkah, Jeddah, and Madinah.",
+        content: "Haram Taxi provides comprehensive taxi service across all Taif districts and mountain areas. From Al Hada cable car tours to Miqat transfers for Hajj and Umrah, city center sightseeing to airport pickups at Taif Regional Airport (TIF). All Taif areas served including Al Hada, Shafa, Al Hawiya, Al Rudaf, and Wadi Naaman rose farms.",
+        features: ["Mountain-Expert Drivers", "Al Hada Cable Car", "Miqat Transfers", "Rose Farm Tours", "Airport Pickups", "24/7 Availability"],
+        pricing: [
+            { title: "City Transfer (within Taif)", price: "Get Quote" },
+            { title: "Mountain Tour (Al Hada/Shafa)", price: "Get Quote" },
+            { title: "Taif to Makkah", price: "Get Quote" },
+            { title: "Taif to Jeddah Airport", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "What areas in Taif do you serve?", answer: "We serve all Taif districts: Al Hada, Shafa, Al Hawiya, City Center, Al Rudaf, and Wadi Naaman. We also cover all hotels, resorts, and residential areas across the Taif highlands." },
+            { question: "Do you serve the Taif Regional Airport (TIF)?", answer: "Yes. We provide airport pickups and drop-offs at Taif Regional Airport (TIF) for all Saudia and flynas flights. The airport is approximately 15–20 minutes from Taif city center." }
+        ]
+    },
+    {
+        slug: "taif-rose-farm-tour",
+        title: "Taif Rose Farm Tour | Wadi Naaman Damask Rose & Honey Market",
+        description: "Full-day rose farm tour in Taif. Visit Damask rose farms in Wadi Naaman, traditional perfume distilleries, and honey markets. Best March–April. Fixed rate, expert guide-driver.",
+        content: "Taif is the undisputed rose capital of Saudi Arabia, producing Damask roses (Rosa damascena) used in the world's finest perfumes and oud blends. Our rose farm tour takes you to Wadi Naaman — where the majority of Taif's rose farms are concentrated — during the March–April bloom season. You'll visit 2–3 authentic farms, watch the traditional steam distillation process that produces pure rose water (attar), browse the honey market, and return with fresh produce. Our drivers know the best farms for quality and value. The tour is also available year-round for rose product shopping and farm visits, though the bloom season provides the most spectacular experience.",
+        features: ["Wadi Naaman Rose Farms", "Attar Distillery Visit", "Honey Market", "Pomegranate Orchards", "Fresh Product Shopping", "All-Day Driver"],
+        pricing: [
+            { title: "Half-Day Rose Tour (3–4 hours)", price: "Get Quote" },
+            { title: "Full-Day Rose & Honey Tour (7–8 hours)", price: "Get Quote" },
+            { title: "Makkah to Taif Rose Day Trip (return)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "When is the best time for the Taif rose farm tour?", answer: "March through April is the Damask rose bloom season — the farms are in full flower and distilleries are actively producing. Year-round visits are possible for product shopping, but the bloom season is the most spectacular." },
+            { question: "Can I book the rose farm tour from Makkah as a day trip?", answer: "Yes. Many Umrah pilgrims book a return day trip from Makkah to Taif's rose farms. Makkah to Wadi Naaman takes approximately 2 hours. We offer a full round-trip package with time at the farms and return to Makkah in the evening." },
+            { question: "Is there a set itinerary for the tour?", answer: "We customize the tour based on your interests and available time. A typical full-day tour includes: 2–3 rose farm visits, a distillery demonstration, honey market, and optional stop at Al Hada cable car. Half-day tours cover 2 farms and the honey market." }
+        ]
+    },
+    {
+        slug: "taif-mountain-tour",
+        title: "Taif Mountain Tour | Al Hada Cable Car, Zigzag Road & Shafa Highlands",
+        description: "Full-day Taif mountain tour. Al Hada cable car (Telefric), zigzag road scenic viewpoints, Shafa highland resorts, and mountain cafes. Fixed rate, expert mountain driver.",
+        content: "The Taif mountain tour is one of the most memorable experiences in Saudi Arabia. Starting from your hotel in Taif city or Al Hada, your expert mountain driver takes you along the famous Al Hada zigzag road — 30+ switchback turns with breathtaking Hejaz mountain scenery. Highlights include the Al Hada Cable Car (Telefric) with panoramic views over the mountains, waterfall viewpoints, mountain cafes and restaurants, and optional extension to the cooler Shafa highlands. The tour can be combined with a Wadi Naaman rose farm visit for a complete Taif day experience. All our mountain tour drivers have years of experience on the Al Hada and Shafa routes.",
+        features: ["Al Hada Cable Car", "Zigzag Road Viewpoints", "Shafa Highlands", "Mountain Cafes", "Waterfall Stops", "Expert Mountain Driver"],
+        pricing: [
+            { title: "Al Hada Half-Day Tour (4 hours)", price: "Get Quote" },
+            { title: "Al Hada + Shafa Full-Day Tour (8 hours)", price: "Get Quote" },
+            { title: "Mountains + Rose Farm Combo (Full Day)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Is the Al Hada zigzag road safe?", answer: "Yes — when driven by an experienced local driver. Our mountain tour drivers navigate Al Hada's 30+ switchback turns daily and are fully trained for all conditions including night driving and fog. We strongly advise against unfamiliar drivers on this road." },
+            { question: "What is included in the Al Hada cable car tour?", answer: "Your driver picks you up from your hotel and drives to the Al Hada Cable Car (Telefric) station. You can ride the cable car independently while your driver waits. After the cable car, the tour continues with zigzag road viewpoints and mountain cafes." },
+            { question: "Can I combine the mountain tour with a Makkah transfer?", answer: "Yes. Many pilgrims book an Al Hada mountain tour in the morning and then transfer to Makkah in the afternoon. We can arrange a single booking covering both — tour in Taif and then onward transfer to Makkah hotel." }
+        ]
+    },
+    {
+        slug: "taif-miqat-transfer",
+        title: "Taif Miqat Transfer | Qarn al-Manazil Ihram Stop for Hajj & Umrah",
+        description: "Dedicated Miqat transfer from Taif to Qarn al-Manazil (As-Sail Al-Kabir) for Hajj 2026 and Umrah. Fixed rate, driver waits at Miqat, 24/7 service.",
+        content: "For pilgrims in Taif preparing for Hajj or Umrah, the Miqat point is Qarn al-Manazil (also called As-Sail Al-Kabir), located en route to Makkah approximately 45 minutes from Taif city center. Our dedicated Miqat transfer service picks you up from any Taif hotel or resort, drives you to the Miqat facilities where you can shower, wear your Ihram, and make your intention (niyyah), then continues directly to your Makkah hotel. For Hajj 2026, this service is in extremely high demand — pre-booking weeks in advance is essential. We are available 24/7 and can accommodate early Fajr departures for those planning to arrive in Makkah for morning prayers.",
+        features: ["Miqat Stop Included", "Driver Waits at Miqat", "Direct to Makkah Hotel", "Hajj 2026 Permitted Vehicles", "24/7 Availability", "Pre-Booking Available"],
+        pricing: [
+            { title: "Taif to Miqat + Makkah (Camry)", price: "Get Quote" },
+            { title: "Taif to Miqat + Makkah (Yukon XL)", price: "Get Quote" },
+            { title: "Taif to Miqat + Makkah (Staria — group)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Which Miqat do pilgrims from Taif use?", answer: "Pilgrims from Taif use the Miqat of Qarn al-Manazil (As-Sail Al-Kabir), located approximately 75km east of Makkah on Route 15. For pilgrims already in Taif, this Miqat is passed naturally on the way down to Makkah via the Al Hada mountain road." },
+            { question: "Does the driver wait while we put on Ihram?", answer: "Yes. Your driver stops at the Qarn al-Manazil Miqat facilities, which include ablution areas, prayer spaces, and changing rooms. He will wait as long as needed and then continue to Makkah once you are ready." },
+            { question: "Do I need to pre-book my Hajj 2026 Miqat transfer?", answer: "Yes — strongly recommended. During Hajj 2026 (June 2026), demand for Miqat transfers from Taif surges dramatically and ad-hoc taxis become unavailable. We advise booking at least 3–4 weeks before your Hajj travel dates." },
+            { question: "Can the same driver take me back from Makkah to Taif after Hajj?", answer: "Yes. We offer round-trip Hajj packages: Taif to Makkah before Hajj and Makkah back to Taif after. Contact us on WhatsApp with your Hajj dates for a combined package." }
+        ]
+    },
+    {
+        slug: "taif-city-tour",
+        title: "Taif City Tour | Shubra Palace, Abdullah Ibn Abbas Mosque & Historic Sites",
+        description: "Guided taxi tour of Taif city. Shubra Palace Museum, Abdullah Ibn Abbas Mosque, Al Baz Tower, traditional souq, and Al Rudaf Park. Half-day or full-day. Fixed rate.",
+        content: "Taif's city center holds rich historical and Islamic significance. Our city tour takes you to Shubra Palace Museum (an Ottoman-era royal palace now converted to a heritage museum), the Mosque of Abdullah Ibn Abbas (a companion of the Prophet and governor of Taif), Al Baz Tower with panoramic city views, Taif's traditional souq markets, and Al Rudaf Park. The tour can be combined with a rose farm visit or mountain tour for a complete Taif experience. Our drivers are knowledgeable about the historical context of each site and can answer questions about Taif's Islamic history.",
+        features: ["Shubra Palace Museum", "Abdullah Ibn Abbas Mosque", "Al Baz Tower", "Traditional Souq", "Al Rudaf Park", "Flexible Itinerary"],
+        pricing: [
+            { title: "City Half-Day Tour (3–4 hours)", price: "Get Quote" },
+            { title: "City + Rose Farm Full Day", price: "Get Quote" },
+            { title: "City + Mountain Full Day", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "What is Shubra Palace in Taif?", answer: "Shubra Palace is an Ottoman-era palace built in the early 20th century that served as a royal residence for King Abdul Aziz Al Saud. It has been converted into a heritage museum showcasing Taif's history and royal artifacts. It is one of the most architecturally significant buildings in the Hejaz region." },
+            { question: "Is the Abdullah Ibn Abbas Mosque open to visitors?", answer: "Yes. The Mosque of Abdullah Ibn Abbas (cousin of Prophet Muhammad ﷺ and governor of Taif) is open for prayers and visitors. Our drivers can take you there at any time of day and explain the historical significance of this important Islamic landmark." },
+            { question: "How long does the Taif city tour take?", answer: "A half-day city tour covers the main sites in 3–4 hours. A full-day tour allows for a more relaxed pace with additional stops including the souq, Al Rudaf Park, and a traditional lunch break." }
+        ]
     },
     {
         slug: "abha-taxi",
