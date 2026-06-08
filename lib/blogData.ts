@@ -15458,5 +15458,1079 @@ export const blogData: BlogPost[] = [
       { question: "Is there public transport to Al Shafa from Taif city?", answer: "There is no reliable public transport to Al Shafa. A private pre-booked taxi is the standard and safest way to access the highland resorts. App-based rides have very limited availability in mountain areas." },
       { question: "Can I combine Al Shafa with Al Hada cable car in one day?", answer: "Yes. Al Shafa and Al Hada are 20 minutes apart. A full-day mountain tour can cover both — Al Hada cable car and zigzag road in the morning, Al Shafa viewpoints and lunch in the afternoon. Contact us for a custom all-day mountain tour." }
     ]
+  },
+  {
+    slug: "taif-to-madinah-taxi-guide",
+    title: "Taif to Madinah Taxi Guide 2026 | Direct Transfer Bypassing Makkah",
+    excerpt: "Complete guide to taking a private taxi from Taif to Madinah. Route details, travel time, Makkah bypass, vehicle options, and what to expect on this 430km pilgrim route.",
+    content: `
+<h2>Taif to Madinah by Private Taxi</h2>
+<p>The <strong>Taif to Madinah</strong> route is one of the most spiritually meaningful intercity journeys in Saudi Arabia — connecting the cool rose city of Taif with the Prophet's City of Madinah Al Munawwarah. At approximately <strong>430km</strong>, the drive takes around <strong>4.5 hours</strong> by private taxi, with the added advantage of bypassing central Makkah traffic entirely.</p>
+
+<div class="cta-box">
+    <h3>Book Your Taif to Madinah Transfer</h3>
+    <p>Fixed rate, door-to-hotel. Makkah bypass route available for all passengers.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20from%20Taif%20to%20Madinah" target="_blank" rel="noopener noreferrer" class="inline-cta">Book via WhatsApp — Instant Confirmation</a>
+</div>
+
+<h2>The Taif–Madinah Route Explained</h2>
+<p>There are two main ways to travel from Taif to Madinah:</p>
+<ul>
+    <li><strong>Via Makkah bypass (Route 15 northwest):</strong> The most common route. Descends from Taif's highlands via Route 15, uses the designated non-Muslim bypass around Makkah, then continues north via the Hijrah Highway to Madinah. Total: approximately 430km, 4.5 hours.</li>
+    <li><strong>Via Makkah city center (for Muslim passengers with Makkah access):</strong> Passes through Makkah and then continues north via the Madinah Expressway. This route can be faster in low-traffic periods but is subject to Makkah city congestion and checkpoint delays during pilgrimage season.</li>
+</ul>
+
+<div class="tip-box">
+    <strong>Tip for Non-Muslim Passengers</strong>
+    The Makkah bypass is a well-maintained highway that allows non-Muslim travellers to complete the Taif–Madinah route without entering the restricted zone. Our drivers are experienced on this route and navigate it smoothly.
+</div>
+
+<h2>What to Expect on the Journey</h2>
+<p>The Taif to Madinah drive passes through some of the most dramatic landscape changes in the Kingdom:</p>
+<ul>
+    <li><strong>Taif to Makkah plains:</strong> The road descends from Taif's 1,800m plateau through mountain switchbacks before flattening into the hot Hejaz lowlands near Makkah. This section is approximately 90km.</li>
+    <li><strong>Makkah bypass to Madinah:</strong> After the bypass, the road heads north on the Makkah–Madinah Expressway (Route 15/60) through a mix of desert and mountain foothills. This is the longest stretch — approximately 340km — passing through relatively open highway with clear lanes.</li>
+    <li><strong>Arrival in Madinah:</strong> The highway enters Madinah from the south, with the minarets of Masjid Al-Nabawi visible on the horizon approximately 20km before the city center.</li>
+</ul>
+
+<h2>Travel Time: Taif to Madinah</h2>
+<p>Under normal conditions: <strong>4 hours 30 minutes</strong>. During pilgrimage season (Ramadan, Dhul Hijjah), add 30–60 minutes for highway congestion near the Makkah bypass area. Our drivers depart at your chosen time — there is no fixed schedule.</p>
+
+<h2>Pickup Points in Taif</h2>
+<p>We pick up from all Taif locations for the Madinah transfer:</p>
+<ul>
+    <li>Al Hada mountain resort hotels and chalets</li>
+    <li>Shafa highland areas</li>
+    <li>Al Hawiya mountain residential areas</li>
+    <li>Taif city center hotels</li>
+    <li>Taif Regional Airport (TIF)</li>
+    <li>Al Rudaf area and Wadi Naaman</li>
+</ul>
+
+<h2>Drop-Off in Madinah</h2>
+<p>We deliver directly to your hotel in Madinah — including hotels in the central Markaziyah zone near Masjid Al-Nabawi, Al Wurood district, and the outer residential zones. We can also drop off at Prince Mohammad Bin Abdulaziz Airport (MED) or the Haramain High Speed Railway Station.</p>
+
+<h2>Taif to Madinah: Vehicle Options</h2>
+<ul>
+    <li><strong>Toyota Camry:</strong> Best for 1–3 passengers with moderate luggage. Comfortable for a 4.5-hour drive.</li>
+    <li><strong>GMC Yukon XL:</strong> Ideal for families of 4–7 with significant luggage. Spacious and powerful for the mountain descent.</li>
+    <li><strong>Toyota Staria:</strong> Excellent for groups up to 7 needing extra luggage space.</li>
+    <li><strong>Toyota Hiace:</strong> Best for groups of 8–11 passengers.</li>
+</ul>
+
+<blockquote>
+    "We stayed at Al Hada resort after Umrah and wanted to visit Madinah before flying home. The taxi departed from our chalet in the mountains and took us directly to our Madinah hotel near the Prophet's Mosque — 4.5 hours, fixed price, no surprises."
+    <br/><span class="text-sm font-bold mt-2 block not-italic">— Khalid Al-Anazi, Riyadh</span>
+</blockquote>
+
+<h2>How to Book</h2>
+<p>WhatsApp us your pickup location in Taif, your hotel in Madinah, the date and time, and the number of passengers. We confirm your booking instantly with a fixed price.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-taxi",
+    faqs: [
+      { question: "How long does the Taif to Madinah taxi take?", answer: "The Taif to Madinah drive is approximately 430km and takes around 4.5 hours via the Makkah bypass route. During Ramadan or Hajj season, allow an extra 30–60 minutes for highway congestion near the Makkah bypass area." },
+      { question: "Does the Taif to Madinah taxi go through Makkah?", answer: "Our standard route uses the designated Makkah bypass (Route 15) so passengers do not need to enter the Makkah restricted zone. Non-Muslim passengers can therefore travel this route. For Muslim passengers who wish to stop in Makkah for prayer, we can route through the city on request." },
+      { question: "Can I book a taxi from Al Hada to Madinah directly?", answer: "Yes. We pick up from Al Hada mountain resort, Shafa, Al Hawiya, and all Taif areas for direct transfer to Madinah. The total drive from Al Hada to Madinah is approximately 5 hours including the mountain descent." },
+      { question: "What is the best time to depart Taif for Madinah?", answer: "An early morning departure (after Fajr, around 5–6am) allows you to arrive in Madinah by late morning, with time for Duhr prayer at Masjid Al-Nabawi. Alternatively, a post-Asr departure (around 4–5pm) brings you to Madinah in the evening for Maghrib and Isha prayers." }
+    ]
+  },
+  {
+    slug: "wadi-naaman-rose-farms-taif-guide",
+    title: "Wadi Naaman Taif: Complete Guide to the Damask Rose Farms",
+    excerpt: "Everything you need to know about visiting Wadi Naaman — Taif's famous rose valley. Best time to visit, what to see, rose distilleries, honey markets, and how to get there by taxi.",
+    content: `
+<h2>Wadi Naaman: The Heart of Taif's Rose Country</h2>
+<p><strong>Wadi Naaman</strong> is the most famous rose-growing valley in Taif — and arguably in all of Saudi Arabia. Located approximately <strong>30 minutes southwest of Taif city center</strong>, this fertile highland valley produces the Damask roses (<em>Rosa damascena</em>) that give Taif its title as the "City of Roses." The valley is renowned across the Arabian Peninsula for its rose water, rose oil (attar), and the traditional perfumeries that have operated here for centuries.</p>
+
+<div class="cta-box">
+    <h3>Book a Rose Farm Tour from Taif or Makkah</h3>
+    <p>Private taxi tour to Wadi Naaman. Round-trip from Makkah available.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20want%20to%20book%20a%20Wadi%20Naaman%20rose%20farm%20tour%20in%20Taif" target="_blank" rel="noopener noreferrer" class="inline-cta">Book via WhatsApp — Instant Confirmation</a>
+</div>
+
+<h2>Best Time to Visit Wadi Naaman</h2>
+<p>The Damask rose blooms in Wadi Naaman during a narrow window: <strong>late February through April</strong>, with peak bloom usually in <strong>March</strong>. During this period:</p>
+<ul>
+    <li>The valley floors are carpeted in pink and white blossoms</li>
+    <li>Traditional distilleries run 24 hours a day to process the harvest</li>
+    <li>The air is fragrant with rose scent for miles around</li>
+    <li>You can watch the rose-picking process in the early morning (4–7am)</li>
+</ul>
+<p>Outside of bloom season (May–January), Wadi Naaman is still worth visiting for its rose water shops, honey markets, and scenery — but the dramatic bloom display is absent.</p>
+
+<h2>What to See and Do in Wadi Naaman</h2>
+
+<h3>1. The Damask Rose Farms</h3>
+<p>The rose farms of Wadi Naaman are family-owned plots that have been cultivated for generations. During bloom season, you can walk among the rose bushes, photograph the harvest, and purchase fresh-cut roses directly from farmers. Some farms welcome visitors; our drivers know which farms are open to tourists and can arrange short guided stops.</p>
+
+<h3>2. Traditional Rose Distilleries (Ma'asir)</h3>
+<p>The <em>ma'asar</em> (distillery) is where rose petals are transformed into rose water (<em>ma' ward</em>) and concentrated rose oil (<em>attar al-ward</em>). The distillation process uses ancient copper stills heated over wood fires. During March–April, the distilleries run continuously and are fascinating to observe. The rose oil produced in Taif is among the most expensive in the world — prized in perfumery from Paris to Riyadh.</p>
+
+<h3>3. Honey Markets</h3>
+<p>Wadi Naaman and the surrounding Taif highlands are also famous for <strong>Sidr honey</strong> — one of Saudi Arabia's most prized natural products. The valley's roadside stalls sell raw Taif Sidr honey at prices ranging from SAR 150 to SAR 800+ per kilogram depending on purity and grade. Our drivers can take you to reputable honey vendors.</p>
+
+<h3>4. Local Fruit and Produce</h3>
+<p>Taif's highland climate also produces excellent grapes, pomegranates, figs, and peaches. In autumn (September–November), the fruit stalls along Wadi Naaman road are loaded with freshly harvested produce at prices far below city markets.</p>
+
+<div class="tip-box">
+    <strong>Tip: Start Early for Rose Picking</strong>
+    The best rose-picking experience is before sunrise (4–6am) when farmers harvest the blooms at their peak fragrance. If you want to watch the harvest, ask us to arrange a very early morning departure from your Taif hotel or Makkah accommodation.
+</div>
+
+<h2>Getting to Wadi Naaman</h2>
+<p>Wadi Naaman is approximately 20km southwest of Taif city center and 110km from Makkah. There is no public transport to the valley. Options:</p>
+<ul>
+    <li><strong>From Taif city center:</strong> 25–30 minutes by private taxi</li>
+    <li><strong>From Makkah (day trip):</strong> 2 hours each way — we offer a full round-trip rose farm day trip package</li>
+    <li><strong>From Al Hada mountain resort:</strong> 20 minutes by taxi</li>
+    <li><strong>From Jeddah (full day trip):</strong> 3 hours each way via the mountain highway</li>
+</ul>
+
+<h2>Rose Farm Tour Package</h2>
+<p>Our Wadi Naaman rose farm tour includes:</p>
+<ul>
+    <li>Private taxi pickup from your Taif hotel or Makkah accommodation</li>
+    <li>Visit to at least one working rose farm (bloom season)</li>
+    <li>Stop at a traditional rose distillery to observe the production process</li>
+    <li>Time at the honey and rose water market stalls</li>
+    <li>Optional: Al Rudaf Park visit en route back to Taif city</li>
+    <li>Return transfer to your hotel</li>
+</ul>
+
+<blockquote>
+    "We drove from Makkah to Wadi Naaman during Ramadan — just after rose season but the distilleries were still running. The rose oil aroma was extraordinary. Our driver knew the best family farms and we bought rose water and honey directly from producers."
+    <br/><span class="text-sm font-bold mt-2 block not-italic">— Fatima Al-Amri, Kuwait</span>
+</blockquote>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-rose-farm.webp",
+    relatedServiceSlug: "taif-rose-farm-tour",
+    faqs: [
+      { question: "When do the roses bloom in Wadi Naaman Taif?", answer: "The Damask rose bloom season in Wadi Naaman is late February through April, with peak bloom typically in March. The valley is at its most spectacular during this window when distilleries run around the clock and the air is heavy with rose fragrance." },
+      { question: "Can I visit Wadi Naaman from Makkah in a day?", answer: "Yes. Wadi Naaman is approximately 110km from Makkah and the drive takes 2 hours each way via the Al Hada mountain road. We offer a full round-trip day trip package covering the rose farms, a distillery visit, and the honey market — all within a day's journey from Makkah." },
+      { question: "Is Taif rose oil (attar) available to buy in Wadi Naaman?", answer: "Yes. Wadi Naaman's roadside stalls and distillery shops sell Taif rose oil (attar al-ward), rose water (ma' ward), and rose-based perfumes directly at producer prices. Our drivers know the most reputable vendors selling genuine Taif product." },
+      { question: "How far is Wadi Naaman from Taif city center?", answer: "Wadi Naaman is approximately 20km southwest of Taif city center — about 25–30 minutes by taxi. It is one of the most accessible day-trip destinations from any Taif hotel or resort." }
+    ]
+  },
+  {
+    slug: "al-rudaf-park-taif-guide",
+    title: "Al Rudaf Park Taif: Complete Guide 2026 | Green Lung of the Rose City",
+    excerpt: "Complete guide to Al Rudaf Park in Taif — the city's most popular green space. Facilities, best visiting times, what to see, and how to get there by taxi from any Taif hotel.",
+    content: `
+<h2>Al Rudaf Park: Taif's Favourite Green Escape</h2>
+<p><strong>Al Rudaf Park</strong> (حديقة الردف) is the largest and most popular public park in Taif, located in the northeast of the city at an elevation of approximately 1,800 metres. Spanning more than 200 hectares of highland green space, it offers a cool, shaded refuge from the summer heat that makes Taif a popular domestic tourism destination. The park is a natural woodland area featuring native trees, walking trails, picnic grounds, and — famously — a healthy population of baboons that have become one of Taif's most photographed wildlife attractions.</p>
+
+<div class="cta-box">
+    <h3>Book a Taxi to Al Rudaf Park Taif</h3>
+    <p>Private taxi from your Taif hotel to Al Rudaf Park. Fixed rate, door-to-entrance.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20to%20Al%20Rudaf%20Park%20in%20Taif" target="_blank" rel="noopener noreferrer" class="inline-cta">Book via WhatsApp — Instant Confirmation</a>
+</div>
+
+<h2>What to See and Do at Al Rudaf Park</h2>
+
+<h3>The Taif Baboons</h3>
+<p>Al Rudaf Park is home to large troops of Hamadryas baboons (<em>Papio hamadryas</em>) — the same species depicted in ancient Egyptian art. These bold, semi-habituated animals roam freely throughout the park and have become one of the most distinctive wildlife encounters in Saudi Arabia. They congregate near the park entrance and picnic areas, often approaching vehicles and visitors. Feeding them is technically prohibited but widely practiced — locals bring fruit and bread. The baboons are particularly active in the early morning and late afternoon.</p>
+
+<h3>Walking Trails and Viewpoints</h3>
+<p>Al Rudaf Park's walking trails wind through native Taif highland vegetation — juniper, acacia, and wild olive trees. The highest trails offer clear views over Taif city and the surrounding mountain escarpments. The park's elevation means temperatures are noticeably cooler than the surrounding city, making it genuinely pleasant even on summer afternoons.</p>
+
+<h3>Picnic and Family Areas</h3>
+<p>The park is extensively used by Taif families and summer visitors for picnics. Shaded seating areas, BBQ zones, and children's play facilities are scattered throughout the lower sections. On weekends and public holidays, the park fills with Saudi families from across the Makkah Region.</p>
+
+<h3>Al Rudaf Lake Area</h3>
+<p>A small lake within the park provides a scenic focal point for walks and photography. The surrounding reed beds and water attract birds and add to the park's variety of habitats.</p>
+
+<h2>Getting to Al Rudaf Park from Taif</h2>
+<p>Al Rudaf Park is approximately 8km northeast of Taif city center — about 15 minutes by taxi. From Al Hada mountain resort, the drive is approximately 35 minutes. There is no public transport to the park; a private taxi from your Taif hotel is the standard way to visit.</p>
+
+<h2>Best Time to Visit</h2>
+<ul>
+    <li><strong>Early morning (6–9am):</strong> Best for baboon sightings and cooler temperatures. The park is quiet and the wildlife is most active.</li>
+    <li><strong>Sunset (5–7pm):</strong> Beautiful light on the mountain views and the baboon troops return to their sleeping areas in the trees.</li>
+    <li><strong>Avoid midday:</strong> Even at Taif's elevation, summer midday temperatures can be warm. The park is busiest Friday and Saturday afternoons with family picnickers.</li>
+</ul>
+
+<div class="tip-box">
+    <strong>Wildlife Safety Note</strong>
+    The Taif baboons are wild animals. Do not reach into a vehicle window or hold food out near a baboon — they can and do snatch food aggressively. Keep car windows raised in baboon areas and observe from a safe distance. Our drivers are familiar with baboon behaviour and will advise you on safety.
+</div>
+
+<h2>Combining Al Rudaf with Other Taif Attractions</h2>
+<p>Al Rudaf Park pairs well with a morning or afternoon Taif city tour. A suggested itinerary:</p>
+<ul>
+    <li>9am: Al Rudaf Park (baboon observation, nature walk)</li>
+    <li>11am: Drive to Taif city center — Shubra Palace Museum</li>
+    <li>1pm: Lunch at a Taif restaurant (lamb with rice, local bread)</li>
+    <li>3pm: Abdullah Ibn Abbas Mosque and old souq</li>
+    <li>5pm: Return to hotel or onward to Wadi Naaman for sunset and honey market</li>
+</ul>
+
+<blockquote>
+    "The baboons at Al Rudaf are absolutely wild — pun intended. One climbed onto our bonnet while we were parked. The kids loved it. The views from the upper trails over Taif are genuinely beautiful."
+    <br/><span class="text-sm font-bold mt-2 block not-italic">— Abdullah Al-Qahtani, Riyadh</span>
+</blockquote>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-saiysad-park.webp",
+    relatedServiceSlug: "taif-city-tour",
+    faqs: [
+      { question: "Are there baboons at Al Rudaf Park Taif?", answer: "Yes. Al Rudaf Park is famous for its semi-habituated Hamadryas baboon population. Large troops roam freely throughout the park and frequently approach vehicles and visitors. Early morning (6–9am) and late afternoon are the best times to observe them. Keep windows raised and do not feed them from close range." },
+      { question: "How far is Al Rudaf Park from Taif city center?", answer: "Al Rudaf Park is approximately 8km northeast of Taif city center — about 15 minutes by private taxi. From Al Hada mountain resort, the drive is approximately 35 minutes." },
+      { question: "Is Al Rudaf Park free to enter?", answer: "Al Rudaf Park is a public municipal park. Entry is generally free, though parking fees may apply during busy periods. Our taxi drops you at the main entrance — contact us when you are ready to be picked up for the return journey." },
+      { question: "Can I combine Al Rudaf Park with a full Taif city tour?", answer: "Yes. Al Rudaf Park is commonly the first stop on a Taif city tour, followed by Shubra Palace, the old souq, and Abdullah Ibn Abbas Mosque. Our drivers can arrange a full-day Taif itinerary that covers all the major sites." }
+    ]
+  },
+  {
+    slug: "al-hawiya-taif-mountain-guide",
+    title: "Al Hawiya Taif: Complete Guide to the Mountain Residential District",
+    excerpt: "Everything to know about Al Hawiya — Taif's upscale mountain residential district. Attractions, the waterfall area, resorts, and how to get there by taxi from Taif city or Makkah.",
+    content: `
+<h2>Al Hawiya: Taif's Mountain Residential Heartland</h2>
+<p><strong>Al Hawiya</strong> (الحوية) is one of Taif's most prestigious mountain districts, perched on the highland escarpment at over 1,800 metres elevation. Located approximately <strong>35 minutes from Taif city center</strong>, Al Hawiya is a predominantly residential area characterized by wealthy Saudi families' summer villas, private chalets, small boutique resorts, and dramatic mountain scenery. Unlike the more tourist-focused Al Hada (cable car, zigzag road) and Shafa (large resort complexes), Al Hawiya has a quieter, more local character — the mountain retreat preferred by established Jeddah and Makkah families for generations.</p>
+
+<div class="cta-box">
+    <h3>Book a Taxi to Al Hawiya, Taif</h3>
+    <p>Mountain-expert drivers for Al Hawiya. Fixed rate from Taif city, Makkah, or Jeddah Airport.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20to%20Al%20Hawiya%2C%20Taif" target="_blank" rel="noopener noreferrer" class="inline-cta">Book via WhatsApp — Instant Confirmation</a>
+</div>
+
+<h2>What Makes Al Hawiya Special</h2>
+
+<h3>The Waterfall and Gorge Area</h3>
+<p>Al Hawiya is home to one of the most visited natural sites in the Taif highlands — a seasonal waterfall and gorge area that flows strongly in spring and after winter rains. The surrounding escarpment drops dramatically into the lowlands, offering spectacular viewpoints over the valley. The waterfall area is particularly popular during and after the winter rain season (November–February). In summer, the stream reduces to a trickle, but the gorge itself remains photogenic.</p>
+
+<h3>Mountain Roads and Viewpoints</h3>
+<p>Al Hawiya's mountain roads wind through residential terraces and highland forest to a series of natural viewpoints overlooking the Hejaz lowlands. On clear days, the visibility extends 50–80km across the plain. These roads are best navigated with a local driver who knows the correct turns — the area lacks the clear signage of more tourist-oriented districts.</p>
+
+<h3>Villa and Chalet Accommodation</h3>
+<p>Unlike Al Hada or Shafa which have large branded resort hotels, Al Hawiya's accommodation is primarily private villa rentals and small family-run chalets. Many Taif summer visitors prefer this style of accommodation for its privacy and authenticity. We regularly transfer guests to specific chalet addresses in Al Hawiya that require a driver with local knowledge.</p>
+
+<h2>Getting to Al Hawiya</h2>
+<ul>
+    <li><strong>From Taif city center:</strong> 35 minutes by private taxi. The road climbs steadily into the mountain district.</li>
+    <li><strong>From Makkah:</strong> 2 hours via the Al Hada mountain road (Route 15). Many pilgrims travel directly from Makkah to Al Hawiya chalets.</li>
+    <li><strong>From Jeddah Airport:</strong> 3 hours via the mountain highway. Al Hawiya is slightly further than Al Hada from this direction.</li>
+    <li><strong>From Al Hada:</strong> 20–25 minutes. The two mountain districts are connected by highland roads.</li>
+</ul>
+
+<h2>Al Hawiya Climate</h2>
+<p>At over 1,800m elevation, Al Hawiya enjoys the same cool highland climate that draws summer visitors to Taif. Summer highs (July–August) average 25–30°C — dramatically cooler than Makkah, Jeddah, or Riyadh at the same time. Winter (December–February) can see temperatures drop to 5–10°C at night, with occasional frost in the coldest months. Fog is common in winter mornings.</p>
+
+<div class="tip-box">
+    <strong>Local Knowledge Required</strong>
+    Al Hawiya's private residential roads and chalet addresses are not well-mapped on navigation apps. Our drivers have local knowledge of Al Hawiya's mountain roads and can reach specific chalet addresses that GPS systems frequently misroute. Always book a driver who specifically covers Al Hawiya.
+</div>
+
+<h2>Al Hawiya vs Al Hada vs Shafa</h2>
+<p>The three main mountain districts of Taif each have a different character:</p>
+<ul>
+    <li><strong>Al Hada:</strong> Tourist-focused. Cable car, zigzag road, viewpoints, family restaurants. Best for day visitors and first-time Taif visitors.</li>
+    <li><strong>Shafa:</strong> Resort-focused. Large branded hotels, conference facilities, family resorts. Best for extended stays with families.</li>
+    <li><strong>Al Hawiya:</strong> Residential and private. Chalets, villas, local character, waterfall area. Best for those wanting a quieter, more authentic mountain experience.</li>
+</ul>
+
+<blockquote>
+    "We rented a chalet in Al Hawiya for a week every summer. The address is not on any map app and normal taxis can't find it. Haram Taxi sent a driver who knew exactly where we were — he'd taken guests to that compound before."
+    <br/><span class="text-sm font-bold mt-2 block not-italic">— Nadia Al-Harbi, Jeddah</span>
+</blockquote>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-mountains-view.webp",
+    relatedServiceSlug: "taif-mountain-tour",
+    faqs: [
+      { question: "How far is Al Hawiya from Taif city center?", answer: "Al Hawiya is approximately 25–30km from Taif city center — about 35 minutes by private taxi. The road climbs steadily into the highland residential district. From Makkah, Al Hawiya is approximately 2 hours via the Al Hada mountain road." },
+      { question: "Is there a waterfall in Al Hawiya Taif?", answer: "Yes. Al Hawiya has a seasonal waterfall and gorge area that flows during and after the winter rain season (November–February). The surrounding escarpment provides dramatic viewpoints over the Hejaz valley. In summer the water reduces significantly but the gorge and viewpoints remain worth visiting." },
+      { question: "What type of accommodation is available in Al Hawiya?", answer: "Al Hawiya is predominantly a residential district with private villa rentals and small family-run chalet complexes rather than large resort hotels. Most accommodation is booked through Airbnb, Booking.com, or local rental agencies. We transfer guests to specific Al Hawiya chalet addresses including those not on navigation apps." },
+      { question: "Do taxis serve Al Hawiya in Taif?", answer: "Our service specifically covers Al Hawiya, including private chalet addresses and villa compounds that are not well-mapped on navigation apps. We have local knowledge of all Al Hawiya mountain roads. App-based taxis have very limited coverage in Al Hawiya, especially at night." }
+    ]
+  },
+  {
+    slug: "taif-islamic-history-guide",
+    title: "Taif Islamic History Guide | Mosques, Battle of Taif & Prophet's Visit",
+    excerpt: "The complete guide to Taif's Islamic history — the Prophet Muhammad's visit in 620 CE, the Battle of Taif, Abdullah Ibn Abbas Mosque, Qarn al-Manazil Miqat, and sacred sites to visit by taxi.",
+    content: `
+<h2>Taif in Islamic History</h2>
+<p><strong>Taif</strong> (الطائف) holds a profound and often painful significance in the history of Islam. It was the site of one of the most emotionally significant moments in the Prophet Muhammad's ﷺ life, a key battleground in the early Islamic conquests, and home to some of the most important Miqat points for pilgrims entering Ihram. For Muslim visitors, Taif is not merely a scenic highland resort — it is a city layered with spiritual and historical meaning.</p>
+
+<div class="cta-box">
+    <h3>Explore Taif's Islamic Heritage Sites by Taxi</h3>
+    <p>Private guided taxi tour to Taif's mosques, historical sites, and Ziyarat locations.</p>
+    <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20want%20to%20book%20a%20Taif%20Ziyarat%20and%20history%20tour" target="_blank" rel="noopener noreferrer" class="inline-cta">Book Taif Ziyarat Tour via WhatsApp</a>
+</div>
+
+<h2>The Prophet Muhammad's ﷺ Visit to Taif (619 CE)</h2>
+<p>In the Year of Sorrow (619 CE), following the deaths of Khadijah RA and Abu Talib, the Prophet Muhammad ﷺ traveled to Taif seeking support from the Banu Thaqif tribe. The tribe not only rejected his message but drove him from the city, instructing their children and servants to throw stones at him until his feet bled. He sought shelter in a garden outside the city walls, where the famous supplication known as <em>Du'a al-Taif</em> is attributed to him — one of the most moving prayers in Islamic tradition.</p>
+
+<p>The place where the Prophet ﷺ rested after being driven from Taif is marked today by the <strong>Mosque of Addas</strong> — named for the Christian slave Addas who brought the Prophet grapes and became the first person from Taif to embrace Islam. This location is visited by pilgrims and Ziyarat-seekers who come to Taif.</p>
+
+<h2>The Battle of Taif (630 CE)</h2>
+<p>Following the conquest of Makkah in Ramadan 8 AH (630 CE), the Muslims faced the combined forces of the Hawazin and Thaqif tribes at the Battle of Hunayn. After the Muslim victory at Hunayn, the Thaqif retreated to Taif and the Muslim army laid siege to the city. Despite using catapults and siege towers — some of the earliest use of such equipment in Arabia — the siege was ultimately abandoned after approximately 20 days. Taif capitulated peacefully to Islam the following year (631 CE), and the famous temple of Al-Lat was destroyed.</p>
+
+<h2>Masjid Abdullah Ibn Abbas RA</h2>
+<p>The <strong>Mosque of Abdullah Ibn Abbas</strong> is one of the most important Islamic heritage sites in Taif. Abdullah Ibn Abbas RA — the cousin of the Prophet ﷺ, scholar of the Quran, and nicknamed "Interpreter of the Quran" (Tarjuman Al-Quran) — served as the governor of Taif and is buried here. The mosque complex includes his tomb and has been a site of visitation for scholars and pilgrims for over a millennium. It is one of the few mosques in the Arabian Peninsula that houses the grave of a major Companion of the Prophet ﷺ.</p>
+
+<h2>Qarn Al-Manazil Miqat (As-Sail Al-Kabir)</h2>
+<p>Located approximately 75km east of Makkah on Route 15 — the road that descends from Taif toward Makkah — the <strong>Miqat of Qarn Al-Manazil</strong> (also known as As-Sail Al-Kabir) is the Miqat designated for pilgrims approaching from the direction of Taif and Najd. It is one of the five principal Miqat points established by the Prophet ﷺ. Pilgrims departing from Taif for Umrah or Hajj pass through this Miqat and can stop to enter the state of Ihram — our drivers know the exact location and facilities available there.</p>
+
+<h2>Shubra Palace — Taif's Ottoman-Era Heritage</h2>
+<p>While not strictly an Islamic site, <strong>Shubra Palace</strong> in Taif city center is an Ottoman-influenced palace built in 1905 that served as a summer residence for King Abdul Aziz bin Saud and later King Faisal. It is now a heritage museum displaying artifacts, royal memorabilia, and architectural elements from the early Saudi period. The palace's blend of Italian, Ottoman, and Hejazi architectural styles makes it one of the most distinctive historic buildings in western Saudi Arabia.</p>
+
+<h2>Islamic Heritage Taxi Tour of Taif</h2>
+<p>A suggested Taif Ziyarat and history tour by private taxi:</p>
+<ul>
+    <li><strong>Morning:</strong> Masjid Abdullah Ibn Abbas RA — visit the mosque and tomb</li>
+    <li><strong>Mid-morning:</strong> Old Taif market area — traditional heritage buildings</li>
+    <li><strong>Noon prayer:</strong> Abdullah Ibn Abbas Mosque (Jumu'ah on Friday)</li>
+    <li><strong>Afternoon:</strong> Shubra Palace Museum — architectural and historical exhibits</li>
+    <li><strong>Late afternoon:</strong> Drive toward Makkah to stop at Qarn Al-Manazil Miqat (if the guest wishes to enter Ihram for Umrah)</li>
+    <li><strong>Evening:</strong> Transfer to Makkah hotel if proceeding for Umrah (90 minutes)</li>
+</ul>
+
+<blockquote>
+    "Standing near the area where the Prophet ﷺ made Du'a al-Taif was deeply moving. Our driver knew the historical significance of every location and drove us to sites we would never have found on our own. This was not just a taxi tour — it was a Ziyarat."
+    <br/><span class="text-sm font-bold mt-2 block not-italic">— Yusuf Al-Maliki, Pakistan</span>
+</blockquote>
+
+<h2>How to Book a Taif Islamic History Tour</h2>
+<p>WhatsApp us with your hotel or accommodation in Taif or Makkah, the number of passengers, and your preferred date. We will arrange a private taxi tour covering Taif's Islamic heritage sites with a driver who can guide you through the historical significance of each location.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Taif",
+    image: "/taif-shubra-palace.webp",
+    relatedServiceSlug: "taif-city-tour",
+    faqs: [
+      { question: "Did Prophet Muhammad ﷺ visit Taif?", answer: "Yes. In 619 CE (the Year of Sorrow), the Prophet Muhammad ﷺ traveled to Taif seeking support from the Banu Thaqif tribe. He was rejected and driven out, taking shelter in a garden outside the city where the Du'a al-Taif was made. A mosque marks the location where he rested, named after Addas — the Christian slave who became the first Taif resident to embrace Islam." },
+      { question: "What is the Miqat near Taif?", answer: "The Miqat serving pilgrims from Taif and the Najd direction is Qarn Al-Manazil (also called As-Sail Al-Kabir), located approximately 75km east of Makkah on Route 15 — the main road descending from Taif toward Makkah. Our drivers know the exact Miqat location and facilities and will stop there for pilgrims wishing to enter Ihram." },
+      { question: "Where is the Mosque of Abdullah Ibn Abbas in Taif?", answer: "The Mosque and tomb of Abdullah Ibn Abbas RA is located in Taif city center. It is one of the most important Islamic heritage sites in Taif — Abbas RA served as governor of Taif and is buried here. Our taxis can take you directly to the mosque from any Taif hotel or mountain resort." },
+      { question: "Can I book a Ziyarat tour of Taif's Islamic heritage sites?", answer: "Yes. We offer private Ziyarat and heritage tours covering Taif's Islamic historical sites — including Masjid Abdullah Ibn Abbas, the Mosque of Addas, Shubra Palace Museum, and the Qarn Al-Manazil Miqat if you wish to proceed to Umrah afterward. Contact us on WhatsApp to arrange a custom itinerary." }
+    ]
+  },
+  {
+    slug: "jeddah-al-balad-complete-guide",
+    title: "Al Balad Jeddah Complete Guide 2026 — UNESCO Historic Jeddah by Private Taxi",
+    excerpt: "Navigate UNESCO-listed Al Balad (Historic Jeddah) — coral merchant houses, Naseef House, Al-Shafi'i Mosque, and the old souq. Private taxi access, opening times, and best visit strategy.",
+    content: `
+<h2>What Is Al Balad (Historic Jeddah)?</h2>
+<p>Al Balad — Arabic for "The Town" — is the historic heart of Jeddah. Recognised as a UNESCO World Heritage Site in 2014, the district preserves over 700 years of Hejazi merchant architecture along the eastern shore of the Red Sea. At its peak between the 12th and 19th centuries, Jeddah was the primary entry port for pilgrims travelling by sea to Makkah — and the city's merchant elite grew extraordinarily wealthy from trade, constructing the elaborate coral-block towers and carved-wood rowshan balcony houses that survive today.</p>
+
+<h2>The Architecture of Al Balad</h2>
+<p>Al Balad's defining visual feature is the <strong>rowshan</strong> — intricately carved wooden latticework screens projecting from upper-floor windows and balconies. These screens served multiple functions: they provided shade and captured sea breezes for natural cooling, maintained privacy for residents while allowing views of the street below, and displayed the wealth and artisanal sophistication of the family within. No two rowshan designs are identical — each is a custom work carved by master craftsmen, often incorporating Quranic calligraphy, geometric patterns, and floral motifs.</p>
+<p>The construction material is equally distinctive: <strong>fossilised coral</strong> quarried from the Red Sea floor. Coral blocks are porous and naturally insulating, keeping interior temperatures cooler than stone or brick — vital before air conditioning in Jeddah's Red Sea humidity. Lime plaster coats the exterior. Many Al Balad towers reach 5–7 storeys, with ground floors dedicated to merchants' warehouses and upper floors to family residential quarters.</p>
+
+<h2>Key Landmarks in Al Balad</h2>
+<h3>Naseef House Museum</h3>
+<p>The most celebrated building in Al Balad, Naseef House was constructed in the 19th century by the Naseef family — prominent Hejazi merchants — and was later used as a temporary residence by King Abdulaziz during his early visits to Jeddah. The building is a masterwork of Hejazi architecture: a seven-storey coral tower with elaborately carved rowshan screens on every facade. The courtyard and internal reception rooms have been restored as a museum showcasing traditional Hejazi domestic life, furniture, and the merchant lifestyle that made Jeddah prosperous. Open during daylight hours — check current hours with the tourism authority.</p>
+
+<h3>Al-Shafi'i Mosque</h3>
+<p>Jeddah's oldest standing mosque, Al-Shafi'i Mosque dates to the early Islamic period and was expanded over centuries. Its most distinctive feature is the <strong>cylindrical minaret</strong> — a Hejazi style unique to the western coast of Arabia, visually distinct from the square-sectioned minarets of Egypt and the pencil minarets of Ottoman Turkey. Named after Imam Al-Shafi'i — founder of the Shafi'i school of Islamic jurisprudence — the mosque is an active place of worship and accessible outside prayer times.</p>
+
+<h3>Al Alawi Mosque</h3>
+<p>Adjacent to Al-Shafi'i, the Al Alawi Mosque is another historic Hejazi mosque with a similar cylindrical minaret style. The two mosques are often photographed together from the nearby rooftop viewpoints. The surrounding neighbourhood retains much of its original coral-house character.</p>
+
+<h3>Bab Makkah (Gate of Makkah)</h3>
+<p>The main historical entrance to Al Balad from the inland pilgrim road to Makkah. Pilgrims arriving overland from the Hejaz passed through Bab Makkah before entering the city. The gate area is a good starting point for walking tours of the old city — taxis and buses stop here, and a market extends along the approach road.</p>
+
+<h3>Al Balad Souq</h3>
+<p>The covered market lanes of Al Balad retain much of their historic character — narrow stone-paved alleys lined with spice merchants, fabric sellers, incense traders, and small food stalls. The Friday market is the most atmospheric time to visit. The souq connects the main Al Balad streets with side alleys that reveal the most intact sections of the old city, away from the main tourist circuit.</p>
+
+<h2>How to Visit Al Balad by Private Taxi</h2>
+<p>Al Balad's narrow lanes make private car access impractical once inside the heritage district — vehicles cannot enter the pedestrian interior. The practical approach is to arrive by private taxi, be dropped at one of the main gates (Bab Makkah or Bab Sharif), explore on foot, and call your driver when ready for collection or the next stop.</p>
+<p>Haram Taxi Service offers Al Balad drop-and-wait transfers from all Jeddah hotels and KAIA airport. Your driver waits at a designated collection point — typically 200–300 metres from the heritage zone pedestrian area — and you WhatsApp them when you are done. No time pressure, no meter running.</p>
+
+<h2>Best Time to Visit Al Balad</h2>
+<p>Al Balad is best visited in the <strong>early morning (7–10am)</strong> for photography — the coral facades are lit by angled morning light, and tourist crowds are light. The <strong>late afternoon (4–7pm)</strong> is cooler and the light is warm, but afternoons in spring and autumn can be busy with visitors. The <strong>evening</strong> is popular for dining in Al Balad's restored restaurants, with some of the heritage lanes illuminated. <strong>Avoid midday from June to September</strong> — Jeddah's Red Sea humidity and 40°C+ temperatures make outdoor walking extremely uncomfortable in summer.</p>
+
+<h2>Al Balad and Umrah / Pilgrimage Visitors</h2>
+<p>For pilgrims visiting Makkah who have a free day — or for visitors arriving via KAIA Jeddah Airport and overnighting before continuing to Makkah — Al Balad is an excellent and meaningful half-day itinerary. Jeddah was the gateway of the Haramain for centuries, and walking Al Balad's lanes connects you to the history of millions of pilgrims who passed through this port city on their way to Makkah.</p>
+<p>KAIA airport to Al Balad is 20 minutes by private taxi. From your Makkah hotel, Al Balad is approximately 90 minutes. We can arrange Al Balad excursions from Makkah with KAIA airport drop-off at the end of the tour for departing pilgrims.</p>
+
+<blockquote class="border-l-4 border-amber-500 pl-6 italic text-gray-700 my-6">
+"We had one free day in Jeddah before flying home from Umrah. Our driver took us to Bab Makkah, waited three hours while we explored, then drove us straight to KAIA terminal. Al Balad was a beautiful way to end the pilgrimage."
+<br/><span class="text-sm font-bold mt-2 block not-italic">— Amina Khalid, Malaysia</span>
+</blockquote>
+
+<h2>Book an Al Balad City Tour from Your Jeddah Hotel</h2>
+<p>WhatsApp us with your hotel, number of passengers, and preferred visiting time. We confirm your driver's name and vehicle and meet you at your hotel entrance. Fixed rate — no meter, no surprises.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Jeddah",
+    image: "/images/locations/jeddah-al-balad.webp",
+    relatedServiceSlug: "jeddah-al-balad-tour",
+    faqs: [
+      { question: "Where should I start a walking tour of Al Balad Jeddah?", answer: "Bab Makkah (the Gate of Makkah) is the most accessible starting point — taxis drop off here, and the main heritage lanes radiate from this entrance. Start at Naseef House, then walk to Al-Shafi'i Mosque, continue through the souq lanes, and exit at Bab Sharif on the far side." },
+      { question: "Is Al Balad in Jeddah free to visit?", answer: "Al Balad's streets and lanes are free to walk. Some heritage sites such as Naseef House Museum may charge a small entrance fee. Check current admission requirements with the Heritage Commission." },
+      { question: "How far is Al Balad from Jeddah Corniche?", answer: "Al Balad is approximately 3–5km from the main Jeddah Corniche strip — a 10-minute taxi ride. Combining an Al Balad morning visit with a Corniche afternoon and King Fahd Fountain evening makes a perfect full-day Jeddah itinerary." },
+      { question: "Can I visit Al Balad from Makkah by taxi?", answer: "Yes. Makkah to Al Balad Jeddah is approximately 90 minutes by private taxi. We can arrange a full Al Balad day trip from Makkah — departing in the morning, spending 3–4 hours in the heritage district, and returning to Makkah in the afternoon. WhatsApp us for a fixed round-trip rate." }
+    ]
+  },
+  {
+    slug: "jeddah-corniche-guide-2026",
+    title: "Jeddah Corniche 2026 — Complete Guide to King Fahd Fountain & Red Sea Waterfront",
+    excerpt: "Everything about Jeddah's 30km Red Sea Corniche — King Fahd Fountain times, best viewpoints, Corniche hotels, and how to explore by private taxi without parking nightmares.",
+    content: `
+<h2>Jeddah Corniche — The Red Sea Waterfront</h2>
+<p>Jeddah's Corniche is one of the most iconic waterfronts in the Arab world — a 30km promenade stretching north from the Balad district along the Red Sea coast to Obhur Creek. For residents and visitors alike, the Corniche is Jeddah's living room: families picnic on the grass verges, children play near the fountain features, couples walk the waterfront restaurants, and tourists photograph the world's most famous fountain at dusk.</p>
+
+<h2>King Fahd Fountain — The World's Tallest</h2>
+<p>The <strong>King Fahd Fountain</strong> (Nافورة الملك فهد) is Jeddah's most photographed landmark — and one of the most spectacular fountain installations in the world. Rising 312 metres above the Red Sea at its peak, it surpasses the Eiffel Tower in height when at full jet. The fountain was inaugurated in 1985 and is officially the world's tallest fountain by jet height.</p>
+<p>The fountain shoots a single central jet of 180°C-resistant desalinated Red Sea water to its full 312m height — the equivalent of a 70-storey building. At full flow, 17,500 horsepower of pumps push 624 tonnes of water per second through the system. The mist radius extends over 150 metres, often felt as a light spray along the adjacent Corniche promenade on windy evenings.</p>
+<p><strong>When to see it:</strong> The fountain typically operates during cooler months (October–April) from approximately 7pm to midnight, and during summer evenings (May–September) from approximately 8pm. It is illuminated by 500 spotlights and visible from much of coastal Jeddah on clear nights. The best viewpoint is the dedicated viewing park on the South Corniche, approximately 400 metres from the fountain base.</p>
+
+<h2>Corniche Sections — North to South</h2>
+<h3>South Corniche (Al Hamra to King Fahd Fountain)</h3>
+<p>The most visited section of the Corniche, this stretch runs from the upscale Al Hamra district north to the King Fahd Fountain area. The promenade is wide, well-maintained, and lined with sculptures, rest pavilions, and cafes. The <strong>Al Hamra Corniche</strong> in particular has developed into a quality dining destination with Red Sea-view restaurants, shisha cafes, and weekend street markets. This is where most tourist visits are focused.</p>
+
+<h3>Jeddah Waterfront (JW) Development</h3>
+<p>The Jeddah Waterfront (Al Hamra Corniche redevelopment, sometimes called JW) is an ongoing mixed-use project adding modern seafront development, hotels, restaurants, and public space to the central Corniche strip. The <strong>Four Seasons Hotel Jeddah</strong> opened here in 2023 — along with Rosewood Jeddah — adding the Red Sea waterfront to the premium hotel circuit. The area between the Four Seasons and the King Fahd Fountain is now a high-density dining and hospitality zone.</p>
+
+<h3>North Corniche — Obhur Creek</h3>
+<p>Continuing north from the main tourist strip, the Corniche passes through increasingly residential areas before reaching Obhur Creek — a natural inlet 30km north of the city center used as a marina and leisure zone. Obhur is popular with Jeddah's boating community and has resort hotels, beach clubs, and seafood restaurants with a less crowded feel than the main Corniche. Taxi from central Jeddah: 35–40 minutes.</p>
+
+<h2>Getting Around Jeddah Corniche Without a Car</h2>
+<p>Parking along Jeddah Corniche is the most common headache for visitors — especially on Thursday and Friday evenings when the promenade fills with thousands of families. Designated car parks exist but fill well before sunset on peak evenings. The practical solution for tourists, hotel guests, and visitors unfamiliar with Jeddah's traffic patterns is a private taxi driver who drops you at the relevant section, finds a waiting area, and returns on call via WhatsApp.</p>
+<p>This approach works particularly well for King Fahd Fountain visits — your driver drops you at the viewing park, finds the nearest waiting area (typically 500m–1km away), and you WhatsApp when you have seen the fountain and are ready to continue to dinner or return to your hotel. No circling for parking, no rushed viewing, no meter anxiety.</p>
+
+<h2>Corniche Dining — Best Restaurants on the Waterfront</h2>
+<p>The Jeddah Corniche has developed into one of Saudi Arabia's premier dining destinations. Key dining areas include the Four Seasons Jeddah restaurants (for upscale sit-down dining), Al Hamra Corniche strip (for mid-range Hejazi and international restaurants with sea views), and the informal family restaurants and cafes along the central promenade. Most restaurants are packed on Thursday and Friday evenings — booking ahead is recommended for weekends.</p>
+
+<blockquote class="border-l-4 border-sky-500 pl-6 italic text-gray-700 my-6">
+"We asked our driver to wait while we watched King Fahd Fountain and then drove to dinner on the Corniche — perfect evening in Jeddah. The parking would have been a nightmare if we'd tried to drive ourselves."
+<br/><span class="text-sm font-bold mt-2 block not-italic">— Tariq Hassan, Visiting Businessman</span>
+</blockquote>
+
+<h2>Book a Jeddah Corniche Tour</h2>
+<p>WhatsApp us your hotel, preferred starting time, and whether you want a fountain evening visit, half-day Corniche tour, or combined Al Balad + Corniche full-day tour. We confirm a fixed rate before departure.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Jeddah",
+    image: "/images/locations/jeddah-corniche-view.webp",
+    relatedServiceSlug: "jeddah-corniche-tour",
+    faqs: [
+      { question: "What time does King Fahd Fountain operate?", answer: "King Fahd Fountain typically operates evenings from approximately 7–8pm onwards during cooler months (October–April), and later (8pm+) in summer. It is illuminated after dark and most spectacular when fully lit. Check current timings with your hotel concierge as hours can vary seasonally." },
+      { question: "How do I get to the Jeddah Corniche from my hotel?", answer: "Private taxi is the recommended approach for Corniche visits, especially in the evenings when parking is severely congested. A private driver drops you at your desired Corniche section, waits nearby, and collects you on call — no parking search, no meter running. Most central Jeddah hotels are 10–25 minutes from the main Corniche strip." },
+      { question: "Is the Jeddah Corniche free to visit?", answer: "Yes. The public Corniche promenade, viewing areas, and parks are free. Individual restaurants, cafes, and some attractions like Fakieh Aquarium and Al Shallal Theme Park charge entry. King Fahd Fountain viewing is free from the public promenade." },
+      { question: "How far is Jeddah Corniche from KAIA airport?", answer: "King Abdulaziz International Airport (KAIA) is approximately 25–30km from the main Corniche strip — a 25-minute drive. An evening Corniche visit before or after a KAIA flight connection is entirely practical." }
+    ]
+  },
+  {
+    slug: "jeddah-city-tour-guide-2026",
+    title: "Jeddah City Tour 2026 — Complete Visitor's Guide to Saudi Arabia's Red Sea Capital",
+    excerpt: "Plan your Jeddah visit in 2026. Al Balad UNESCO heritage district, King Fahd Fountain, Corniche, KAIA airport connections, Hajj 2026, and private taxi touring options.",
+    content: `
+<h2>Why Visit Jeddah in 2026?</h2>
+<p>Jeddah — the Gateway to the Haramain — is Saudi Arabia's second city and its most cosmopolitan. Sitting on the eastern shore of the Red Sea, Jeddah has been the entry point for Muslim pilgrims for over a thousand years, and today combines that deep Islamic heritage with a thriving modern city of 5 million people, world-class hotels, excellent dining, and Saudi Vision 2030's most ambitious urban transformation projects.</p>
+<p>2026 is a significant year for Jeddah. <strong>Hajj 2026</strong> will bring more than two million pilgrims through KAIA airport — the largest annual human movement on earth — beginning in June 2026. Beyond Hajj, Jeddah is increasingly positioned as a leisure and cultural destination: Al Balad (UNESCO World Heritage) has been substantially restored, the Corniche development has added major international hotels, and the city's food and arts scene has flourished since Saudi Arabia opened to international tourism in 2019.</p>
+
+<h2>The Top Jeddah Attractions in 2026</h2>
+<h3>1. Al Balad (Historic Jeddah)</h3>
+<p>The UNESCO-listed old city is the cultural soul of Jeddah. Spend at least half a day in Al Balad: Naseef House Museum, Al-Shafi'i Mosque, the covered souq, and the extraordinary rowshan-balcony architecture. Best experienced on foot — private taxi for drop-off and pickup at the gates. See our full Al Balad guide for a walking itinerary.</p>
+
+<h3>2. King Fahd Fountain &amp; Corniche</h3>
+<p>The 312-metre King Fahd Fountain is Jeddah's signature sight — best viewed illuminated after 7pm from the South Corniche viewing park. The 30km Corniche promenade has become a major dining and leisure destination following the opening of Four Seasons Jeddah, Rosewood Jeddah, and the Jeddah Waterfront redevelopment.</p>
+
+<h3>3. Jeddah Waterfront (JW) Development</h3>
+<p>The new waterfront development area — centred on Four Seasons and Rosewood — is where upscale dining, beach clubs, and the city's most curated retail experience are concentrated. An evening here combined with the fountain is a natural itinerary.</p>
+
+<h3>4. Fakieh Aquarium</h3>
+<p>One of the Red Sea's best marine attractions — dolphin and sea lion shows, touch pools, and a large Red Sea coral reef display. Particularly good for families with children. 20 minutes from KAIA airport.</p>
+
+<h3>5. Al Shallal Theme Park</h3>
+<p>Jeddah's main family entertainment complex on the northern Corniche — rides, ice skating, bowling, and arcade games in a large complex on the Red Sea waterfront. 35 minutes from KAIA airport.</p>
+
+<h3>6. Obhur Creek &amp; North Jeddah Resorts</h3>
+<p>A natural Red Sea inlet 30km north of the city center — marinas, beach clubs, seafood restaurants, and a more relaxed atmosphere than the busy central Corniche. Popular with Jeddah families and expats for weekend outings.</p>
+
+<h2>Jeddah as a Base for Umrah &amp; Hajj</h2>
+<p>For international pilgrims, Jeddah plays a crucial role in the Umrah and Hajj journey. KAIA airport is the world's busiest airport during the Hajj season, and the Makkah-Jeddah corridor (75 minutes by taxi) is one of the most-travelled pilgrimage roads in Islam. Many pilgrims overnight in Jeddah before proceeding to Makkah, or return to Jeddah to explore after completing their Umrah.</p>
+<p>Jeddah's proximity to Makkah (100km, 75 min) and Madinah (400km, 4 hrs) makes it an ideal base for a pilgrimage itinerary that incorporates sightseeing. An Al Balad half-day visit on the way to or from KAIA airport adds depth and meaning to any Umrah trip — connecting the modern journey to the centuries of pilgrims who passed through this Red Sea port before you.</p>
+
+<h2>How to Get Around Jeddah</h2>
+<p>Jeddah is a large, sprawling city without a metro system. Uber and Careem operate for short city trips, but have limitations: they cannot enter Makkah during Hajj (require Ministry permits), are not ideal for large families with luggage, and lack the flexibility of a private driver who knows the city and waits at your destination.</p>
+<p>For visitors — especially those combining Jeddah sightseeing with KAIA airport connections, Makkah transfers, or intercity routes — a pre-booked private taxi from Haram Taxi Service offers the most practical and cost-effective solution. Fixed rates are confirmed before departure; no surprise surge pricing, no checkpoint complications, and a driver who can guide you between Al Balad, the Corniche, and your hotel without navigation stress.</p>
+
+<h2>Best Jeddah Day Itinerary (One Day)</h2>
+<p><strong>Morning (8am–12pm):</strong> Private taxi from hotel to Bab Makkah → walk Al Balad (Naseef House, Al-Shafi'i Mosque, souq lanes) → driver collects at Bab Sharif at 12pm.</p>
+<p><strong>Afternoon (12pm–5pm):</strong> Lunch at an Al Balad restaurant → driver takes you to the Corniche → walk the Al Hamra promenade → Four Seasons waterfront area for coffee.</p>
+<p><strong>Evening (7pm–10pm):</strong> King Fahd Fountain viewing from the South Corniche park → dinner at a Corniche waterfront restaurant → taxi to hotel or KAIA airport.</p>
+
+<blockquote class="border-l-4 border-brand-gold pl-6 italic text-gray-700 my-6">
+"One day in Jeddah — we did Al Balad in the morning and the Corniche fountain in the evening. Our driver made it seamless — dropped us at the old town gate, waited, then drove us to dinner by the sea."
+<br/><span class="text-sm font-bold mt-2 block not-italic">— Dr. Aisha Al-Mansouri, UAE Visitor</span>
+</blockquote>
+
+<h2>Book a Jeddah City Tour</h2>
+<p>WhatsApp Haram Taxi Service with your hotel or KAIA arrival details, group size, and preferred dates. We confirm a fixed-rate Jeddah city tour itinerary within minutes — no pre-payment required.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Jeddah",
+    image: "/images/locations/jeddah-airport.webp",
+    relatedServiceSlug: "jeddah-al-balad-tour",
+    faqs: [
+      { question: "Is Jeddah worth visiting as a tourist in 2026?", answer: "Absolutely. Jeddah has transformed dramatically since Saudi Arabia opened to international tourism in 2019. UNESCO-listed Al Balad, the King Fahd Fountain, the Corniche redevelopment, and the city's excellent food scene make it one of the most interesting cities to visit in the Arabian Peninsula. Hajj 2026 will bring millions through KAIA — but for leisure visitors, the best times are outside peak pilgrimage season." },
+      { question: "Do I need a visa to visit Jeddah?", answer: "Most nationalities can obtain a Saudi tourist e-visa or visa-on-arrival. Citizens of many countries including USA, UK, EU, Canada, Australia, Japan, and others are eligible for the Saudi tourist visa online. Muslim pilgrims require a specific Umrah or Hajj visa for religious visits. Check the Saudi Tourism Authority website for current visa requirements for your nationality." },
+      { question: "Is Jeddah safe for tourists?", answer: "Yes. Jeddah is a safe, family-friendly city with a welcoming culture toward visitors. Tourism infrastructure has developed significantly since 2019. Standard urban safety precautions apply — be aware of your surroundings in the souq and keep valuables secure in crowds." },
+      { question: "How many days should I spend in Jeddah?", answer: "One full day is enough for the main highlights (Al Balad + Corniche + King Fahd Fountain). Two days allows a more relaxed pace with Obhur Creek, shopping, and better dining experiences. Three or more days if combining Jeddah with Taif, a dive trip, or using it as a base for Makkah/Madinah visits." }
+    ]
+  },
+  {
+    slug: "jeddah-to-abha-taxi-guide",
+    title: "Jeddah to Abha by Taxi — Asir Highlands Guide: Al Soudah, Habala & Khamis Mushait",
+    excerpt: "Complete guide to the Jeddah to Abha taxi route. Asir Mountains, Al Soudah cable car, Habala village, Rijal Almaa, and how to plan the 550km highland transfer.",
+    content: `
+<h2>Jeddah to Abha — The Asir Highland Transfer</h2>
+<p>The Jeddah to Abha route is one of Saudi Arabia's most dramatic long-distance drives — a 550km journey that begins at sea level on the Red Sea coast and ends at 2,200 metres in the cool mountain capital of Asir Province. The 5.5-hour route follows Route 15 south through the Hejaz coastal plain before climbing the dramatic Asir escarpment — one of the most spectacular mountain roads in the Arabian Peninsula.</p>
+
+<h2>What Makes Abha Special?</h2>
+<p>Abha sits on the Asir Plateau — a high-altitude region that receives the highest rainfall in Saudi Arabia (mainly from the Indian Ocean monsoon), supporting green terraced hillsides, cedar and juniper forests, and a cooler climate that stands in vivid contrast to the rest of the Kingdom. Summer temperatures in Abha average 20–25°C when Jeddah and Riyadh are enduring 42–45°C. This cool summer climate makes Abha the most popular domestic tourism destination in Saudi Arabia from June to September.</p>
+
+<h2>Key Asir Attractions from Abha</h2>
+<h3>Al Soudah &amp; Al Soudah Cable Car</h3>
+<p>Al Soudah is the highest point of the Asir Plateau — approximately 3,015m above sea level — offering panoramic views across the Asir escarpment, the Tihama coastal plain far below, and on clear days, the Red Sea. The Al Soudah Cable Car descends from the plateau edge into the valley below, providing a dramatic aerial perspective of the mountain terrain. Al Soudah is approximately 30km from Abha city — our taxi can take you there as part of a day tour from Abha.</p>
+
+<h3>Habala — The Hanging Village</h3>
+<p>Habala is perhaps the most remarkable heritage village in Saudi Arabia — a settlement built on a vertical cliff face accessible only by rope, where the Qahtan tribe lived for centuries to escape tribal raids. Saudi Aramco built a cable car in the 1980s to connect the village with the road above. The cable car operates seasonally — the village itself has been partially restored as a heritage site. Located approximately 40km from Abha.</p>
+
+<h3>Rijal Almaa Heritage Village</h3>
+<p>One of the best-preserved traditional villages in Saudi Arabia — a UNESCO-nominated settlement of multi-storey stone towers in the Wadi Rijal valley. The village has operated for 1,500 years and features a remarkable local museum (Rijal Almaa Museum) with historical artefacts from the surrounding tribes. Located approximately 70km west of Abha toward the Tihama coast.</p>
+
+<h3>Abha Old Town &amp; Green Mountain</h3>
+<p>Abha's Green Mountain (Jabal Al Akhdar) is a distinctive landmark — a hillside rising from the center of the city decorated with colourful murals and offering cable car rides and a summit restaurant with panoramic views. The Abha old town market area is lively on weekends with traditional Asiri dress, local crafts, and the famous Asiri basket weaving and jewellery.</p>
+
+<h3>Asir National Park</h3>
+<p>Saudi Arabia's largest national park covers the highlands and escarpment zone around Abha. The park contains endemic species including the Hamadryas baboon (the famous park monkeys that are hand-fed at Abha Dam area), mountain leopard, and over 300 bird species. Habala and Al Soudah are both within the national park boundary.</p>
+
+<h2>Practical Guide: Jeddah to Abha Taxi</h2>
+<p>The Jeddah to Abha drive takes 5–5.5 hours with one rest stop. We recommend an early morning departure (7–8am) from Jeddah to arrive in Abha by early afternoon, giving you the afternoon to settle in and explore Abha old town. The mountain ascent section (final 80km) is best driven in daylight — spectacular scenery but not recommended at night for first-time visitors.</p>
+<p>Haram Taxi Service picks up from all Jeddah districts including KAIA airport, Al Hamra, North Jeddah, and the Corniche. We deliver to all Abha locations: city center hotels, Al Soudah resort area, Khamis Mushait, and all Asir tourism sites.</p>
+
+<h2>Khamis Mushait — Abha's Twin City</h2>
+<p>Khamis Mushait is the larger commercial city adjacent to Abha — approximately 30km east — and has a different character: where Abha is the tourism and government hub, Khamis is the business and residential center. Most major Saudi chains, hypermarkets, and commercial activity are in Khamis. Many visitors stay in Khamis hotels for better rates while visiting Abha's attractions. King Khalid Military City (KKMC) is also in the Khamis area. Our taxis serve all Khamis Mushait locations.</p>
+
+<blockquote class="border-l-4 border-green-500 pl-6 italic text-gray-700 my-6">
+"The Jeddah to Abha drive was incredible — the Asir escarpment section is unlike anything else in Saudi Arabia. We could see the Tihama coastal plain below and the mountains above simultaneously. The driver knew the road perfectly."
+<br/><span class="text-sm font-bold mt-2 block not-italic">— Rashid Al-Shahrani, Riyadh Family</span>
+</blockquote>
+
+<h2>Book Jeddah to Abha Taxi</h2>
+<p>WhatsApp us your Jeddah pickup address, Abha hotel or destination, group size, and travel date. We confirm a fixed rate and driver details before departure.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Jeddah",
+    image: "/images/locations/jeddah-airport.webp",
+    relatedServiceSlug: "jeddah-airport-transfer",
+    faqs: [
+      { question: "How long is the drive from Jeddah to Abha?", answer: "Jeddah to Abha is approximately 550km and takes 5–5.5 hours via Route 15 south. One rest stop is included. The Asir escarpment section — final 80km approaching Abha — involves mountain driving with dramatic scenery and switchback roads." },
+      { question: "What is the best time of year to visit Abha?", answer: "June to September is peak season — Abha's 20–25°C summer temperatures draw Saudi families escaping the coastal heat. Accommodation books up early in summer. October to April offers quieter tourism, occasional cool-to-cold temperatures (can drop to 5°C in winter nights), and green terraced hills after the monsoon. Spring (March–May) has the most pleasant weather." },
+      { question: "Can I travel from Jeddah to Abha and include Al Baha?", answer: "Al Baha is on Route 15 between Jeddah and Abha — approximately midway. We can plan a Jeddah → Al Baha stop (marble village Dhee Ayn) → continue to Abha multi-leg itinerary. WhatsApp us for a custom combined route and fixed rate." },
+      { question: "Is the Jeddah to Abha road safe?", answer: "Route 15 is well-maintained and a major Saudi highway. The Asir escarpment section involves mountain switchbacks — drivers should be alert. We use experienced long-distance drivers familiar with the Asir mountain road. Night driving is not recommended for the mountain section if unfamiliar with the route." }
+    ]
+  },
+  {
+    slug: "north-jeddah-obhur-guide",
+    title: "North Jeddah & Obhur Guide 2026 — KAUST, Resorts, and Red Sea Beach Clubs",
+    excerpt: "Explore North Jeddah beyond the tourist trail. Obhur Creek marina, KAUST campus at Thuwal, beach clubs, expat compounds, and how to get there by private taxi.",
+    content: `
+<h2>North Jeddah — Beyond the Tourist Strip</h2>
+<p>Most Jeddah visitors concentrate on Al Balad and the central Corniche — but North Jeddah offers a different side of the city: wider spaces, beach clubs, a major international research university, Saudi Arabia's most spectacular marina complex, and the upper-income residential compounds where much of Jeddah's expat population lives. Understanding North Jeddah is essential for business travelers, expats, KAUST visitors, and anyone wanting to experience the Red Sea beyond the tourist strip.</p>
+
+<h2>Obhur Creek — Jeddah's Northern Marina</h2>
+<p>Obhur Creek is a natural Red Sea inlet approximately 30km north of Jeddah city center, forming a sheltered lagoon that Jeddah's boating community has made its home. The creek is lined with marinas, yacht clubs, seafood restaurants, and beach hotels. On weekends, Obhur fills with Saudi and expat families — kayaking, jet skiing, boat trips, and the excellent crab and fresh fish restaurants that line the creek banks.</p>
+<p>Key Obhur highlights: Al Baik (the legendary Saudi fast food chain originated in Jeddah — Obhur branch is popular), fresh fish market directly on the creek, water sports rentals, and the beach clubs at the northern end of the creek near the small Red Sea islands accessible by water taxi.</p>
+<p>Obhur Creek is approximately 35–40 minutes from KAIA airport and 40 minutes from central Jeddah (Al Balad area). Driving yourself on the narrow Obhur Creek road on a busy weekend can take significantly longer — a private taxi driver who knows the area is a significant advantage.</p>
+
+<h2>KAUST — King Abdullah University of Science and Technology</h2>
+<p>Located in Thuwal — approximately 60km north of central Jeddah — KAUST is one of the most unusual university campuses in the world. Established in 2009 as King Abdullah's flagship Vision project, KAUST is a fully self-contained research university community on the Red Sea coast: 8,000 residents (students, faculty, staff, families), its own hospital, schools, beach, marina, and an extraordinary Red Sea coral reef directly offshore used as a living marine research laboratory. KAUST's reef is one of the most pristine in the Red Sea and its marine research facilities are world-class.</p>
+<p>For visitors: KAUST is a closed campus — access requires an invitation or business reason. However, the surrounding Thuwal area and the coastal road north from Jeddah to KAUST is beautiful, and several dive operators use KAUST-adjacent waters for dive trips. We regularly transfer KAUST faculty, students, and visitors from KAIA Jeddah Airport — approximately 60 minutes from the terminal.</p>
+
+<h2>Red Sea Mall &amp; North Jeddah Shopping</h2>
+<p>Red Sea Mall is North Jeddah's major shopping complex — a large, modern mall on Palestine Road with international and Saudi brand retail, restaurants, a cinema, and a large food court. Approximately 30 minutes from KAIA airport and 30 minutes from Al Balad. Al Andalus Mall is adjacent and combined they form one of Jeddah's largest retail concentrations.</p>
+
+<h2>Al Shallal Theme Park</h2>
+<p>Al Shallal is Jeddah's main family entertainment complex — an extensive park on the northern Corniche featuring outdoor rides, an indoor ice rink (one of Saudi Arabia's most popular), bowling, arcade games, and a waterfront promenade. Popular with families, Al Shallal is particularly busy on Thursday and Friday evenings and school holidays. 35 minutes from KAIA airport.</p>
+
+<h2>North Jeddah Expat Compounds</h2>
+<p>A large proportion of Jeddah's expat community lives in the gated compounds of North and Northwest Jeddah — Hayat Compound, Seder Compound, Al Rabwa, Saudi Aramco communities, and others. These compounds have internal facilities (pools, parks, social clubs) and are largely self-contained. For expats needing transport to KAIA airport, city errands, or intercity routes to Makkah or Riyadh, Haram Taxi Service provides reliable, vetted private transfers with drivers who know compound gate access procedures.</p>
+
+<h2>Fakieh Aquarium</h2>
+<p>One of the best family attractions on the Jeddah Corniche — Fakieh Aquarium offers dolphin and sea lion shows, touch pools, a dedicated marine turtle exhibit, and an extensive Red Sea fish display showing the extraordinary marine diversity of the adjacent sea. Children under 10 in particular love the shows and interactive exhibits. Located on the central-northern Corniche, approximately 20 minutes from KAIA airport.</p>
+
+<blockquote class="border-l-4 border-stone-500 pl-6 italic text-gray-700 my-6">
+"Our driver picked us up at KAIA and took us to our compound in North Jeddah — he knew exactly which gate and who to call. Then the same driver took us to KAUST the following morning. Knowing Jeddah's geography made all the difference."
+<br/><span class="text-sm font-bold mt-2 block not-italic">— Dr. Marcus Webb, KAUST Faculty Visitor</span>
+</blockquote>
+
+<h2>Book North Jeddah Transfers</h2>
+<p>WhatsApp us your KAIA arrival details or Jeddah hotel address, compound or North Jeddah destination, and travel date. Fixed rate, driver confirmed before departure.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Jeddah",
+    image: "/images/locations/jeddah-corniche-view.webp",
+    relatedServiceSlug: "jeddah-airport-transfer",
+    faqs: [
+      { question: "How far is Obhur Creek from Jeddah city center?", answer: "Obhur Creek is approximately 30km north of Jeddah's central Al Balad district — a 35–40 minute drive via the coastal road. From KAIA airport it is approximately 35 minutes. Private taxi is recommended for Obhur visits as creek-side parking is extremely limited on weekends." },
+      { question: "Can tourists visit KAUST?", answer: "KAUST is a closed campus requiring an invitation or business reason for access. However, the Thuwal coastal road and surrounding Red Sea area near KAUST has some of the most spectacular diving in the northern Red Sea. Several Jeddah dive operators run day trips to the KAUST reef area. We regularly transfer KAUST visitors from KAIA airport." },
+      { question: "What are the best beach clubs near Jeddah?", answer: "North Jeddah and Obhur have several beach clubs and resorts. The beach clubs near Obhur Creek (approximately 30–35km north of central Jeddah) are the most popular for day visits. Several hotels including those in the KAEC area (90km north) have excellent Red Sea beach access. WhatsApp us for a transfer to any specific Jeddah area beach club." },
+      { question: "How do I get from KAIA airport to an expat compound in North Jeddah?", answer: "Private taxi from KAIA to North Jeddah compounds is 25–40 minutes depending on location. We are familiar with the main expat compounds, their gates, and access procedures. Your driver will contact the compound security gate on arrival if needed. WhatsApp us your compound name and gate details when booking." }
+    ]
+  },
+  {
+    slug: "madinah-complete-ziyarat-guide-2026",
+    title: "Madinah Ziyarat Complete Guide 2026 — Every Sacred Site with Transport Advice",
+    excerpt: "The definitive guide to Ziyarat in Madinah — Quba Mosque, Mount Uhud, Qiblatain, Seven Mosques, Jannat Al-Baqi, and more. Optimal visiting order, timings, and private taxi tips.",
+    content: `
+<h2>Ziyarat in Madinah Al Munawwarah</h2>
+<p>Madinah Al Munawwarah — the Radiant City — is the second holiest city in Islam and home to the Prophet's Mosque (Masjid Al-Nabawi), where the Prophet Muhammad ﷺ lived, taught, and is buried. Beyond the Prophet's Mosque, Madinah contains an extraordinary collection of Islamic heritage sites — mosques, battlefields, cemeteries, and natural landmarks — that carry deep Quranic and prophetic significance. This guide covers every major Ziyarat site with visiting advice, historical context, and transport information.</p>
+
+<h2>Masjid Al-Nabawi (The Prophet's Mosque)</h2>
+<p>The spiritual heart of Madinah and the second most sacred mosque in Islam. The original structure was built by the Prophet ﷺ himself upon his arrival in Madinah in 622 CE. The mosque has been expanded dozens of times and now accommodates over one million worshippers at peak capacity. The <strong>Green Dome</strong> (Qubbat Al-Khadra) marks the location of the Prophet's tomb and the tombs of Abu Bakr RA and Umar RA — the first two Caliphs. Visiting and sending blessings upon the Prophet ﷺ at his tomb is among the most spiritually significant acts a Muslim can perform in Madinah.</p>
+<p>The Rawdah Al-Sharifah — the area between the Prophet's tomb and the original minbar (pulpit) — is described in a hadith as a garden from the gardens of Paradise. Access to the Rawdah requires queuing, and separate times are designated for men and women. Most Markaziah hotels are a 5–15 minute walk from the mosque's various entrance gates.</p>
+
+<h2>Masjid Quba — The First Mosque in Islam</h2>
+<p>Masjid Quba was established by the Prophet ﷺ in 622 CE upon arriving in Madinah — the first mosque ever built in Islam. The Prophet spent 14 days in Quba before entering the city. A hadith states that praying two Rak'ah in Quba carries the reward of Umrah — making it a near-mandatory visit for every pilgrim in Madinah. The Prophet ﷺ visited Quba every Monday. The mosque is approximately 10–15 minutes by taxi from Markaziah hotels, located in the Quba district south of the city center.</p>
+
+<h2>Jannat Al-Baqi (The Cemetery of Baqi)</h2>
+<p>Jannat Al-Baqi is the main Islamic cemetery of Madinah, immediately east of the Prophet's Mosque. Thousands of Companions of the Prophet ﷺ, his wives, children, and family members are buried here. The Prophet ﷺ regularly visited Baqi and made Du'a for those buried there. Visiting and making Du'a for the deceased is a Sunnah act. Note: women have restricted visiting hours at Baqi — check current schedules with your hotel or guide. From most Markaziah hotels, Baqi is within walking distance.</p>
+
+<h2>Mount Uhud (Jabal Uhud)</h2>
+<p>Mount Uhud is a large red-granite mountain approximately 7km north of the Prophet's Mosque. The Battle of Uhud took place at its base in 625 CE (3 AH) — the second major battle of Islam. Seventy Companions were martyred, including Hamza ibn Abdul-Muttalib RA (the Prophet's uncle, known as the Lion of Allah). The Prophet ﷺ said: "Uhud loves us and we love Uhud." The Martyrs' Cemetery (Shuhada Uhud) at the mountain's base is the burial place of the 70 martyrs and is visited by millions of pilgrims annually.</p>
+<p>The small hill of Jabal Ar-Rumat (Archers' Hill) nearby marks where the Prophet placed 50 archers during the battle — whose partial abandonment of position during the battle's later phase became a pivotal tactical lesson. Mount Uhud is a 10–15 minute taxi ride from Markaziah.</p>
+
+<h2>Masjid Al-Qiblatain (Mosque of the Two Qiblas)</h2>
+<p>Masjid Al-Qiblatain has a unique distinction in Islamic history: it is where the Qibla (the direction of prayer) changed from Jerusalem to Makkah during the prayer in 2 AH / 624 CE, by divine command revealed to the Prophet ﷺ mid-prayer. The worshippers behind him physically turned during the prayer — hence the name "Two Qiblas." The mosque is located approximately 5km northwest of the Prophet's Mosque — a 15–20 minute taxi ride from Markaziah.</p>
+
+<h2>Sab'a Masajid — The Seven Mosques</h2>
+<p>The Seven Mosques (Sab'a Masajid) are a collection of small mosques built at the site of the Battle of the Trench (Ghazwat Al-Khandaq / Battle of Ahzab) in 5 AH / 627 CE. The Confederates (Ahzab) — a coalition of Arab tribes — besieged Madinah for 27 days before being forced to retreat. The trench (khandaq) dug on Salman Al-Farisi RA's advice formed the defensive perimeter. The seven mosques mark the positions where the Prophet ﷺ and various Companions prayed during the siege — including Masjid Al-Fath (where the Prophet's Du'a for victory was accepted), Masjid Salman Al-Farisi, and others. Located approximately 5km northwest of the Prophet's Mosque.</p>
+
+<h2>Masjid Al-Ijabah</h2>
+<p>A smaller but spiritually significant mosque where the Prophet Muhammad ﷺ made three specific Du'a — and two of the three were accepted (the third was withheld in mercy). The mosque is named Al-Ijabah (The Answer/Acceptance). Located approximately 3–4km northeast of the Prophet's Mosque in the Al-Anbariya area — a 10-minute taxi ride from Markaziah.</p>
+
+<h2>Wadi Al-Jinn (Al-Baida Valley)</h2>
+<p>Located 40km north of Madinah, Wadi Al-Jinn is not a traditional Ziyarat site but is the most popular day trip from Madinah for pilgrims with a free day. The valley creates a striking optical illusion — cars appear to roll uphill and water appears to flow against gravity. The phenomenon is scientifically explained as an optical illusion caused by the surrounding mountain profile reversing the perceived slope. A visit takes approximately 3–4 hours including the drive.</p>
+
+<h2>Optimal Ziyarat Visiting Order</h2>
+<p>To minimise travel time and maximise Ziyarat quality, we recommend this sequence for half-day and full-day tours departing from Markaziah hotels:</p>
+<p><strong>Half-Day (4 sites — 3–4 hours):</strong> Masjid Quba (south) → Masjid Al-Qiblatain (northwest) → Sab'a Masajid (northwest, 5 min from Qiblatain) → Mount Uhud (north). Return to hotel.</p>
+<p><strong>Full-Day (6+ sites — 6–7 hours):</strong> Masjid Quba → Masjid Al-Qiblatain → Sab'a Masajid → Masjid Al-Ijabah → Mount Uhud → Jannat Al-Baqi walk (if time permits). Optional: add Wadi Al-Jinn for a full-day + afternoon trip (8+ hours).</p>
+
+<h2>Ziyarat Timing — Important Notes</h2>
+<p><strong>Jannat Al-Baqi:</strong> Women have restricted visiting hours (typically morning times only — check current regulations as these change). Men can visit most times outside prayer times when gates are open.</p>
+<p><strong>Masjid Quba on Mondays:</strong> Particularly blessed as the Prophet ﷺ visited every Monday. Expect larger crowds than usual.</p>
+<p><strong>Rawdah Al-Sharifah:</strong> Separate men's and women's times. Check your hotel or the mosque authority for current scheduling during your visit period.</p>
+<p><strong>Summer heat:</strong> June–September temperatures in Madinah reach 42–45°C. Early morning departures for Ziyarat (before 9am) are strongly recommended. Bring sufficient water for outdoor sites like Uhud and Sab'a Masajid.</p>
+
+<h2>Book a Madinah Ziyarat Tour</h2>
+<p>WhatsApp Haram Taxi Service with your hotel, preferred dates, and whether you want a half-day or full-day Ziyarat tour. We confirm a fixed rate and driver details before departure. Our drivers understand the significance of each site and can share historical context at each location.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Madinah",
+    image: "/masjid-nabawi-madinah.webp",
+    relatedServiceSlug: "madinah-full-ziyarat-tour",
+    faqs: [
+      { question: "How many days should I spend in Madinah for Ziyarat?", answer: "A minimum of 3–4 days allows you to visit all major Ziyarat sites at a comfortable pace — spending quality time at the Prophet's Mosque and Rawdah, covering the half-day Ziyarat circuit, and visiting Wadi Al-Jinn. Many pilgrims spend 7–8 days in Madinah to fully absorb the spiritual atmosphere and pray multiple Fajr prayers in the Rawdah." },
+      { question: "Is there a specific time to pray in the Rawdah Al-Sharifah?", answer: "The Rawdah (the garden between the Prophet's tomb and original minbar) has a powerful spiritual significance, but there are no specific times mandated. Access is by queuing — it is busiest after Fajr and Isha prayers. Women have designated Rawdah access times — check with your hotel or the mosque authority for current scheduling." },
+      { question: "Can I visit Madinah's Ziyarat sites without a guide?", answer: "Yes. The main Ziyarat sites are clearly signposted and accessible independently. A knowledgeable taxi driver who understands the significance of each site adds depth to the experience. Formal tour guides are also available at the Prophet's Mosque visitors' centre for those wanting comprehensive historical narration." },
+      { question: "What should I wear for Madinah Ziyarat tours?", answer: "Modest Islamic dress is appropriate for all Ziyarat sites in Madinah. Women should wear full modest covering and hijab at all times. Men should wear modest trousers and a shirt. For entering mosques, shoes are removed at the entrance. Comfortable walking shoes are important as you may walk significant distances within mosque grounds." }
+    ]
+  },
+  {
+    slug: "wadi-al-jinn-madinah-complete-guide",
+    title: "Wadi Al-Jinn Madinah — Complete Guide to the Magnetic Valley Day Trip 2026",
+    excerpt: "Everything about Wadi Al-Jinn (Al-Baida Magnetic Valley) — what makes cars roll uphill, how to get there from Madinah, the science behind the illusion, and how to book a day trip.",
+    content: `
+<h2>Wadi Al-Jinn — Madinah's Most Intriguing Day Trip</h2>
+<p>Wadi Al-Jinn — officially named Wadi Al-Baida — is a desert valley approximately 40km north of Madinah that has fascinated visitors for decades. The valley is famous for a striking phenomenon: cars placed in neutral appear to roll uphill by themselves, and water poured on the road appears to flow against gravity. The effect is so convincing that it earned the valley the name "Wadi Al-Jinn" (Valley of the Jinn), as early observers attributed the mysterious force to supernatural entities.</p>
+
+<h2>The Science Behind the Illusion</h2>
+<p>Wadi Al-Jinn's uphill-rolling effect is a well-documented <strong>gravity hill</strong> — an optical illusion caused by the landscape geometry. Here's how it works:</p>
+<p>The valley floor appears flat or gently uphill in the direction objects roll — but GPS elevation measurements and topographical surveys confirm it is actually slightly <em>downhill</em> in that direction. The surrounding mountain ridges create a false visual horizon that tricks the human brain into perceiving the slope in reverse. When your visual reference for "horizontal" is distorted by the surrounding landscape, your brain incorrectly interprets which direction is uphill.</p>
+<p>The same optical illusion occurs at dozens of sites around the world — the Electric Brae in Scotland, Magnetic Hill in New Brunswick Canada, Gravity Hill in Pennsylvania USA, and others. In each case, the landscape geometry creates a perfect conditions for the illusion. Wadi Al-Jinn is simply one of the most dramatic examples of this natural phenomenon.</p>
+
+<h2>The Experience at Wadi Al-Jinn</h2>
+<p>The magnetic gravity section of Wadi Al-Jinn is a specific stretch of road in the valley. Visitors typically:</p>
+<ul>
+    <li>Pull into the designated area and put the car in neutral</li>
+    <li>The car appears to roll uphill, gaining speed as it goes</li>
+    <li>Pour water on the road and watch it appear to flow the wrong way</li>
+    <li>Take photos and videos of the phenomenon</li>
+    <li>Explore the dramatic desert valley landscape</li>
+</ul>
+<p>The designated magnetic section is marked, and many visitors stop multiple times to repeat the experiment from different positions. The valley itself — with its dramatic rocky desert scenery — is photogenic and worth exploring beyond the magnetic section.</p>
+
+<h2>Practical Information for Your Visit</h2>
+<p><strong>Distance from Madinah:</strong> Approximately 40km north — a 40-minute drive via Route 15 toward Tabuk.</p>
+<p><strong>Best time to visit:</strong> Morning (before 10am) for cooler temperatures. The desert valley can reach 45°C+ in summer afternoons. Evening visits are also pleasant in winter months.</p>
+<p><strong>What to bring:</strong> Water bottles (more than you think you need), camera/phone for videos, sun protection. There are a few roadside vendors selling water and snacks near the site.</p>
+<p><strong>Duration:</strong> Most visitors spend 1–2 hours — enough to experience the phenomenon, take photos, and enjoy the landscape. If combining with the half-day Ziyarat circuit, plan for a full 7–8 hour day.</p>
+<p><strong>Facilities:</strong> Limited facilities at the site itself — basic roadside services. Use the mosque facilities in Madinah before departing.</p>
+
+<h2>Wadi Al-Jinn in Islamic Context</h2>
+<p>Despite its supernatural-sounding name, there is no Islamic text specifically referencing Wadi Al-Jinn. The name is a colloquial description by early Saudi visitors who witnessed the unexplained rolling effect. Visiting Wadi Al-Jinn is not a religious obligation or Sunnah act — it is a natural curiosity that many pilgrims in Madinah choose to include in their itinerary as a memorable side trip.</p>
+<p>Madinah's actual Ziyarat circuit (Quba Mosque, Mount Uhud, Qiblatain, Seven Mosques) should take priority for pilgrims with limited time. Wadi Al-Jinn is best added as an afternoon excursion after completing the main Ziyarat sites.</p>
+
+<h2>How to Get to Wadi Al-Jinn from Madinah</h2>
+<p>The most practical way is a private taxi with a driver who knows the route. Haram Taxi Service offers Wadi Al-Jinn day trips from your Madinah hotel — the driver takes you there, waits at the valley while you experience the phenomenon (usually 1–2 hours), and returns you to your hotel. Round-trip fixed rate confirmed before departure.</p>
+<p>Combined Ziyarat + Wadi Al-Jinn full-day tours are our most popular Madinah package: morning Ziyarat circuit (Quba, Uhud, Qiblatain, Seven Mosques) followed by Wadi Al-Jinn in the afternoon — all in one booking, one fixed rate.</p>
+
+<blockquote class="border-l-4 border-purple-500 pl-6 italic text-gray-700 my-6">
+"We put the car in neutral and it started rolling toward what looked like the top of the hill. My children couldn't believe their eyes. The driver explained it perfectly — once you understand it's an optical illusion, you spend another 30 minutes trying to see through the illusion and failing. Extraordinary."
+<br/><span class="text-sm font-bold mt-2 block not-italic">— Ibrahim Al-Rasheed, Family Pilgrim from Kuwait</span>
+</blockquote>
+
+<h2>Book a Wadi Al-Jinn Day Trip</h2>
+<p>WhatsApp Haram Taxi Service your hotel name, preferred morning departure time, and group size. We confirm a fixed round-trip rate for Wadi Al-Jinn or the combined Ziyarat + Wadi Al-Jinn full-day tour.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Madinah",
+    image: "/masjid-nabawi-madinah.webp",
+    relatedServiceSlug: "madinah-wadi-jinn-tour",
+    faqs: [
+      { question: "Is Wadi Al-Jinn a religious Ziyarat site?", answer: "No. Wadi Al-Jinn is a natural curiosity — a gravity hill optical illusion — not a traditional Islamic Ziyarat site. There is no specific hadith or Sunnah act associated with it. It is a popular day trip from Madinah that many pilgrims add to their itinerary after completing the actual Ziyarat circuit (Quba, Uhud, Qiblatain, Seven Mosques)." },
+      { question: "How far is Wadi Al-Jinn from Madinah?", answer: "Wadi Al-Jinn (Wadi Al-Baida) is approximately 40km north of Madinah — a 35–40 minute drive via Route 15 toward Tabuk. The site is clearly signposted on the highway." },
+      { question: "Can children visit Wadi Al-Jinn?", answer: "Yes — Wadi Al-Jinn is particularly popular with families and children who are delighted by the car-rolling effect. It requires no walking or physical exertion. Young children and elderly passengers find it equally accessible." },
+      { question: "What is the best time of day to visit Wadi Al-Jinn?", answer: "Morning (before 10am) is best in all seasons — cooler temperatures and fewer visitors. Evening in cooler months (October–March) is also pleasant. Avoid midday in summer when valley temperatures exceed 45°C." }
+    ]
+  },
+  {
+    slug: "madinah-markaziah-hotel-guide-2026",
+    title: "Madinah Markaziah Hotel Zone 2026 — Prophet's Mosque Hotels Taxi Guide",
+    excerpt: "Guide to Madinah's Markaziah hotel district — inner ring vs mid-ring vs outer ring hotels, how to navigate the zone, taxi access to the Prophet's Mosque, and Ziyarat transport.",
+    content: `
+<h2>Understanding Madinah's Markaziah Hotel Zone</h2>
+<p>Madinah Al Munawwarah's hotel district is called <strong>Markaziah</strong> (Arabic for "central") — a multi-ring development of hotels, apartment buildings, and service facilities built around Masjid Al-Nabawi (the Prophet's Mosque). Understanding the three-ring structure of Markaziah is essential for pilgrims choosing accommodation and planning taxi transfers.</p>
+
+<h2>The Three Rings of Markaziah</h2>
+<h3>Inner Ring — Haram-Facing Properties</h3>
+<p>The inner ring properties directly face the Masjid Al-Nabawi plaza — many with views of the Green Dome from their upper floors. These hotels include: Pullman Zamzam Madinah, Hilton Madinah (Al-Madinah Hilton), Dar Al Taqwa Hotel, and the Anbar Al-Madinah complex. Inner ring properties offer a 2–5 minute walk to the nearest mosque gate — some open directly onto the Haram plaza extension.</p>
+<p>The premium for inner-ring accommodation is significant — but for short stays focused on maximum prayer time in the Prophet's Mosque, the proximity is worth it. Taxis serve inner-ring hotels but cannot access the immediate Haram pedestrian zone — drop-off is typically 100–300 metres from the hotel entrance at designated taxi points.</p>
+
+<h3>Mid Ring — 300–700m from Haram</h3>
+<p>The mid-ring properties are slightly further from the mosque but still within comfortable walking distance (5–10 minutes). Hotels in this zone include: Mövenpick Hotel Madinah, Anwar Al Madinah Mövenpick, Marriott Madinah, Taiba Hotel, Le Méridien Madinah, and dozens of other Saudi and international brands. Mid-ring hotels offer excellent value while maintaining close proximity to the mosque.</p>
+<p>Taxi access to mid-ring hotels is generally straightforward — clear street addresses and hotel entrances accessible to vehicles. Most taxi drop-offs to mid-ring hotels can be completed without navigating the pedestrian Haram zone restrictions.</p>
+
+<h3>Outer Ring — 700m+ from Haram (Al-Aziziah, Al-Rawabi)</h3>
+<p>The outer ring extends to the Al-Aziziah and Al-Rawabi areas — 700m to 2km from the mosque. These areas have large mid-range and budget hotels popular with group pilgrims and Hajj travel packages. Taxi service is straightforward. The 10–20 minute walk to the mosque is manageable for most but requires planning for elderly passengers or those with mobility needs — in which case a taxi from the outer ring directly to the Haram taxi drop zone is recommended for each prayer.</p>
+
+<h2>How Taxi Transfers Work in Markaziah</h2>
+<p>Taxi access to Markaziah requires local knowledge. The area has a complex network of pedestrian zones, restricted vehicle access areas, hotel drop-off bays, and time-restricted roads. Drivers unfamiliar with Madinah's Markaziah layout frequently drop passengers at the wrong entrance or get stuck in one-way systems.</p>
+<p>Our Haram Taxi Service drivers know every Markaziah hotel's precise location, preferred approach route, and drop-off point. When you share your hotel name at booking, we know exactly where to deliver you — including late-night MED airport arrivals, where the Haram zone configuration after midnight differs from daytime access.</p>
+
+<h2>Navigating Markaziah on Foot</h2>
+<p>The Markaziah zone is best navigated on foot once you are in your hotel. The mosque's multiple gates mean pilgrims from most hotels have a reasonably direct walking route regardless of their specific property. Key orientation landmarks:</p>
+<ul>
+    <li><strong>Bab Al-Salam</strong> (Gate of Peace) — the main western entrance, traditional entry point</li>
+    <li><strong>Bab Jibreel</strong> — northern entrance facing the Rawdah</li>
+    <li><strong>Bab Al-Baqi</strong> — eastern entrance facing Jannat Al-Baqi cemetery</li>
+    <li><strong>The Central Plaza</strong> — the vast open plaza with retractable umbrellas north and west of the mosque</li>
+</ul>
+
+<h2>Markaziah Taxi Tips for Pilgrims</h2>
+<p><strong>MED Airport arrival:</strong> Pre-book your Markaziah hotel transfer before departure. MED to Markaziah is 20–30 minutes — straightforward if pre-arranged, stressful if negotiating with random taxi drivers at midnight with Hajj luggage.</p>
+<p><strong>Ziyarat pickups from Markaziah:</strong> Our drivers know all hotel vehicle access points and can collect you precisely at your hotel entrance for Ziyarat tours — no walking to a general taxi point.</p>
+<p><strong>Madinah to Makkah departure:</strong> Confirm your hotel's vehicle exit route when booking departure transfers. Some Markaziah hotels have restricted vehicle access at certain times — our drivers know the current access schedule.</p>
+
+<blockquote class="border-l-4 border-green-500 pl-6 italic text-gray-700 my-6">
+"We arrived at MED at 1am with 7 family members and 14 bags. Our driver was at arrivals with a board showing our name. He loaded everything, drove directly to our hotel in Markaziah, and helped carry bags to the lobby. We were in our rooms within 45 minutes of landing. Alhamdulillah — a perfect start to our Hajj."
+<br/><span class="text-sm font-bold mt-2 block not-italic">— Habib Chaudhry, Hajj Family from Bradford, UK</span>
+</blockquote>
+
+<h2>Book Your Markaziah Hotel Transfer</h2>
+<p>WhatsApp us your hotel name, MED flight number, arrival date, and group size. We confirm your driver and vehicle before you board your flight.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Madinah",
+    image: "/masjid-nabawi-madinah.webp",
+    relatedServiceSlug: "madinah-airport-transfer",
+    faqs: [
+      { question: "Which Markaziah ring is the best for pilgrims?", answer: "Inner-ring hotels are ideal for maximum time in the Prophet's Mosque without commuting — best for short 3–5 day visits. Mid-ring properties offer an excellent balance of proximity and value for 7–10 day stays. Outer-ring (Al-Aziziah) hotels suit group Hajj packages where value is prioritised — a taxi for the elderly or less mobile members to the Haram taxi drop zone is a practical supplement." },
+      { question: "How do I tell my Madinah taxi driver which hotel to go to?", answer: "Simply tell our driver your hotel name when booking via WhatsApp — we confirm the exact location before your arrival. If using a random taxi, note that some drivers may not know smaller or newer Markaziah properties by name — having your hotel's Arabic name and GPS coordinates in your phone is helpful." },
+      { question: "Is there a shuttle bus in Madinah's Markaziah?", answer: "Some hotel groups operate shuttles between their Markaziah properties. The Haramain High Speed Railway station has connecting buses. For most pilgrims, walking within the Markaziah zone and using private taxis for longer trips (MED airport, Ziyarat, Makkah departure) is the practical approach." }
+    ]
+  },
+  {
+    slug: "quba-mosque-and-uhud-ziyarat-guide",
+    title: "Quba Mosque & Mount Uhud Ziyarat Guide — Transport from Madinah Hotels",
+    excerpt: "Complete guide to visiting Masjid Quba and Mount Uhud — the two most-visited Ziyarat sites outside Masjid Al-Nabawi. History, visiting tips, and private taxi information.",
+    content: `
+<h2>Masjid Quba &amp; Mount Uhud — The Essential Madinah Ziyarat Pair</h2>
+<p>For most pilgrims visiting Madinah, Masjid Quba and Mount Uhud are the two Ziyarat sites visited after spending time in the Prophet's Mosque. They sit on opposite sides of the city — Quba approximately 10km south, Uhud approximately 7km north — making them natural bookends for a half-day Ziyarat circuit departing from Markaziah hotels.</p>
+
+<h2>Masjid Quba — The First Mosque</h2>
+<h3>Historical Significance</h3>
+<p>When the Prophet Muhammad ﷺ made the Hijra (migration) from Makkah to Madinah in 622 CE, he stopped first in the Quba area — an agricultural district south of the city — and remained there for 14 days before formally entering Madinah. During these 14 days, he laid the foundation stones of the first mosque in Islam with his own blessed hands. This mosque is Masjid Quba.</p>
+<p>The Quranic verse (At-Tawbah 9:108) — "A mosque founded on piety from the first day is more worthy for you to stand in" — is traditionally interpreted by the classical scholars as referring to Masjid Quba, though the verse's broader context also refers to the Prophet's Mosque itself.</p>
+
+<h3>The Reward of Praying at Quba</h3>
+<p>A hadith in Sahih Bukhari and Sahih Muslim records that the Prophet ﷺ said: "Whoever purifies himself in his home, then comes to Masjid Quba and prays two Rak'ah, will get the reward equal to Umrah." Because of this extraordinary reward, Quba is visited by virtually every Muslim who stays in Madinah — and many pilgrims visit multiple times.</p>
+<p>The Prophet ﷺ visited Quba every Monday — either by riding or walking. The Monday visit became a Sunnah that Companions and scholars maintained.</p>
+
+<h3>The Mosque Today</h3>
+<p>The current Masjid Quba structure was extensively renovated by King Fahd in the 1980s and significantly expanded in the 2000s. It is a large, modern mosque capable of accommodating tens of thousands of worshippers. The original foundation stones from the Prophet's time are preserved within the structure and marked. The mosque has separate entrances, prayer halls, and ablution facilities for men and women.</p>
+<p>Visiting hours are generally the same as regular prayer times — the mosque is accessible before and after prayers. Arrive early morning before the mid-morning prayer rush for the most peaceful visit.</p>
+
+<h2>Mount Uhud (Jabal Uhud)</h2>
+<h3>The Battle of Uhud — Historical Background</h3>
+<p>The Battle of Uhud took place on the slopes and plain at the base of Jabal Uhud in the month of Shawwal, 3 AH (625 CE). The Quraysh army from Makkah — led by Abu Sufyan, including his wife Hind who had hired an Abyssinian warrior named Wahshi to kill Hamza RA — marched on Madinah with approximately 3,000 fighters and 200 cavalry.</p>
+<p>The Prophet ﷺ led 1,000 Madinah fighters out to meet them at the base of Uhud. Initially, the Muslims prevailed — but the Prophet ﷺ had stationed 50 archers on a small hill (Jabal Ar-Rumat) with strict orders not to abandon their position regardless of the battle's outcome. When it appeared the battle was won, approximately 40 of the 50 archers descended from their position to collect war spoils. The Quraysh cavalry — led by Khalid ibn Walid (before his conversion to Islam) — circled around the unguarded hill and attacked from the rear. The Muslim lines were disrupted, and 70 Companions were martyred, including Hamza ibn Abdul-Muttalib RA.</p>
+
+<h3>The Martyrs of Uhud</h3>
+<p>Seventy Companions are buried at the base of Jabal Uhud in the Martyrs' Cemetery (Shuhada Uhud). The most prominent is Sayyiduna Hamza RA — the Prophet's uncle, whose martyrdom affected the Prophet ﷺ deeply. The Prophet ﷺ regularly visited the martyrs of Uhud and encouraged their visitation.</p>
+
+<h3>The Prophet's Love for Uhud</h3>
+<p>"Uhud is a mountain that loves us and we love it," the Prophet ﷺ said. The mountain itself carries this extraordinary spiritual distinction — of being named in a hadith as an entity that loves the Prophet ﷺ and his Companions. Pilgrims who stand at the base of Jabal Uhud and reflect on this hadith report a profound emotional experience.</p>
+
+<h2>Combining Quba and Uhud in One Trip</h2>
+<p>The standard half-day Ziyarat tour from Markaziah hotels typically visits Quba first (south), then continues northwest to Masjid Al-Qiblatain and Sab'a Masajid before heading north to Uhud. The full circuit — Quba → Qiblatain → Sab'a Masajid → Uhud — takes approximately 3–4 hours including travel time between sites.</p>
+<p>Our private taxi Ziyarat tours use this optimised route, departing from your hotel in the morning and returning by early afternoon — leaving the rest of the day for the Prophet's Mosque and personal worship.</p>
+
+<blockquote class="border-l-4 border-stone-500 pl-6 italic text-gray-700 my-6">
+"Standing at the Martyrs' Cemetery at Uhud, knowing that Hamza RA and 69 Companions lie beneath the earth just metres away — it was unlike anything I've experienced in any other place on earth. Our driver gave us 45 minutes there, which felt both too long and not long enough."
+<br/><span class="text-sm font-bold mt-2 block not-italic">— Fatima Al-Zahrani, Madinah Pilgrim from Malaysia</span>
+</blockquote>
+
+<h2>Book Your Quba and Uhud Ziyarat Tour</h2>
+<p>WhatsApp us your hotel name, preferred morning departure time, and group size. We arrange a half-day or full-day Ziyarat tour including Quba and Uhud with a fixed all-inclusive rate.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Madinah",
+    image: "/masjid-nabawi-madinah.webp",
+    relatedServiceSlug: "madinah-full-ziyarat-tour",
+    faqs: [
+      { question: "Can I visit both Quba Mosque and Uhud in one day?", answer: "Yes. Masjid Quba and Mount Uhud are the two anchor sites of the standard Madinah Ziyarat half-day tour. Combined with Masjid Al-Qiblatain and the Seven Mosques, all four can be completed in 3–4 hours from Markaziah hotels." },
+      { question: "Is Monday the best day to visit Quba Mosque?", answer: "Monday is considered especially auspicious for Quba — the Prophet ﷺ visited every Monday. Expect larger crowds than usual but an enhanced communal spiritual atmosphere. Any day of the week is valid for the full Umrah-reward hadith of praying two Rak'ah at Quba." },
+      { question: "How long should I spend at Mount Uhud?", answer: "A respectful visit to Mount Uhud — standing at the Martyrs' Cemetery, making Du'a for the martyrs, walking the battle plain area, and viewing Jabal Ar-Rumat (Archers' Hill) — takes approximately 45 minutes to 1 hour. More reflective visitors may want 90 minutes." }
+    ]
+  },
+  {
+    slug: "madinah-to-makkah-hajj-2026-transport-guide",
+    title: "Madinah to Makkah for Hajj 2026 — Private Taxi vs Haramain Train Guide",
+    excerpt: "Complete transport guide for the Madinah to Makkah journey during Hajj 2026. Private taxi vs Haramain High Speed Train — pros, cons, timings, Ihram at Miqat, and booking advice.",
+    content: `
+<h2>The Most Important Journey of Your Life</h2>
+<p>The Madinah to Makkah transfer is one of the most spiritually charged journeys in Islam — following the Hijrah Highway through the Hejaz, passing through the Miqat of Dhul Hulayfah where you enter Ihram, and arriving in the Blessed City. Whether you choose private taxi or the Haramain High Speed Train, this journey demands careful planning — particularly for Hajj 2026 when millions of pilgrims are making the same transfer within a concentrated period.</p>
+
+<h2>The Route: Madinah to Makkah</h2>
+<p>Madinah and Makkah are approximately 420–450km apart via the Hijrah Highway (Route 60 west to Jeddah, then southeast to Makkah). The Miqat of Dhul Hulayfah (Abyar Ali) — where Madinah-route pilgrims enter Ihram — is located approximately 9km southwest of Madinah, 15 minutes before the main highway departure from the city. The total transfer time is approximately 4–4.5 hours under normal conditions, with the Miqat stop adding 30–45 minutes.</p>
+
+<h2>Option 1: Private Taxi — Madinah to Makkah</h2>
+<h3>Advantages</h3>
+<p><strong>Door to door:</strong> Pickup from your Markaziah hotel entrance, stop at the Miqat for Ihram, deliver directly to your Makkah hotel. No connecting transport, no luggage handling at stations.</p>
+<p><strong>Ihram at Miqat:</strong> Private taxi is the only option that allows you to stop at Miqat Dhul Hulayfah for Ghusl, Ihram, and the two Rak'ah Sunnah before assuming Ihram. The Haramain Train requires Ihram before boarding (at Madinah station) or a separate taxi to the Miqat then rejoining the train route — complex logistics.</p>
+<p><strong>Heavy luggage:</strong> Families with full Hajj luggage — large suitcases, Ihram bags, prayer mats, food supplies — travel far more comfortably by private GMC Yukon XL or Toyota Staria than by train with multiple bag restrictions and platform changes.</p>
+<p><strong>Timing flexibility:</strong> Depart your hotel when you are ready — 3am, 5am, or noon. Train schedules are fixed and must be booked in advance.</p>
+<p><strong>Group cohesion:</strong> Your family or travel group stays together in one vehicle throughout. No risk of separation at crowded train stations during Hajj peak.</p>
+<h3>Disadvantages</h3>
+<p>Higher cost than train (especially for small groups). Subject to road traffic — during peak Hajj, the Madinah–Jeddah–Makkah highway can experience significant congestion, adding 1–2 hours.</p>
+
+<h2>Option 2: Haramain High Speed Train</h2>
+<h3>Advantages</h3>
+<p><strong>Speed:</strong> Madinah to KAIA Jeddah in approximately 2 hours. With a connection at KAIA, Madinah to Makkah by train takes approximately 2.5–3 hours — faster than driving under normal conditions.</p>
+<p><strong>Lower cost:</strong> Economy class fares are significantly lower than private taxi rates, especially for solo travelers or couples.</p>
+<p><strong>Avoids road congestion:</strong> The train route is immune to highway traffic jams during Hajj season.</p>
+<h3>Disadvantages</h3>
+<p><strong>Ihram complication:</strong> The Madinah station is inside the Miqat boundary — meaning you must enter Ihram before boarding (in your hotel, without Ghusl at the Miqat facility) or take a separate taxi to Dhul Hulayfah Miqat, enter Ihram, return to the station, and board. This is logistically complex during Hajj.</p>
+<p><strong>Luggage restrictions:</strong> Train platform handling of heavy Hajj luggage is physically demanding, especially for elderly pilgrims or families with children.</p>
+<p><strong>Booking difficulty during Hajj:</strong> Haramain Train tickets for Hajj peak dates sell out months in advance and require the Hajj visa number to purchase.</p>
+<p><strong>Not door to door:</strong> You need a separate taxi from Madinah hotel to the Haramain station (15 minutes), and another taxi from Makkah station to your Makkah hotel (10–30 minutes depending on hotel location).</p>
+
+<h2>Our Recommendation for Hajj 2026</h2>
+<p>For families, elderly pilgrims, and groups with Hajj luggage, <strong>private taxi is the better choice</strong> — the door-to-door convenience, Miqat stop, luggage handling, and group cohesion outweigh the speed advantage of the train. The additional cost is negligible compared to the total Hajj investment and the peace of mind of not managing Hajj logistics at crowded train platforms during peak season.</p>
+<p>For solo travelers or couples with light luggage and no Miqat stop requirement, the Haramain Train offers excellent value and speed.</p>
+
+<h2>The Miqat Question</h2>
+<p>Every Muslim proceeding to Makkah for Hajj or Umrah must enter Ihram at or before the Miqat. For pilgrims coming from Madinah, the Miqat is Dhul Hulayfah (Abyar Ali / Bir Ali) — approximately 9km southwest of Madinah on the Makkah road. Our Madinah-to-Makkah taxi service always includes a Miqat stop — your driver knows exactly where Masjid Al-Shajarah is, waits while you complete Ghusl, change into Ihram, and pray two Rak'ah, and then continues to Makkah.</p>
+
+<h2>Booking Your Madinah to Makkah Hajj Transfer</h2>
+<p>WhatsApp Haram Taxi Service with your Madinah hotel, departure date and time, Makkah hotel name, and group size. We confirm a fixed rate — GMC Yukon XL for families, Toyota Camry for individuals, Hiace for larger groups. Hajj 2026 bookings are filling up — reserve your transfer well in advance of Dhul Hijjah.</p>
+    `,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Madinah",
+    image: "/masjid-nabawi-madinah.webp",
+    relatedServiceSlug: "madinah-ziyarat",
+    faqs: [
+      { question: "Should I take the Haramain Train or a private taxi from Madinah to Makkah for Hajj?", answer: "For families with Hajj luggage, elderly pilgrims, and groups wanting to stop at the Miqat of Dhul Hulayfah for Ihram, private taxi is strongly recommended. Door-to-door service, Miqat stop, and luggage handling make it worth the higher cost vs the train. Solo travelers or couples with light luggage may prefer the train for speed and lower cost." },
+      { question: "Where do I enter Ihram when travelling from Madinah to Makkah?", answer: "The Miqat for Madinah-route pilgrims is Dhul Hulayfah (Abyar Ali / Bir Ali) — approximately 9km southwest of Madinah. By private taxi, your driver stops at Masjid Al-Shajarah at the Miqat — you perform Ghusl, change into Ihram, pray two Rak'ah, and make your intention (Niyyah). By train, you must enter Ihram before boarding at Madinah station (which is inside the Miqat boundary) — consult a scholar for the correct approach if using the train." },
+      { question: "How far in advance should I book the Madinah to Makkah Hajj transfer?", answer: "As far in advance as possible — at least 3–4 weeks before your travel dates for Hajj 2026. Hajj season (first 10 days of Dhul Hijjah) sees the highest demand and vehicles fill up quickly. For Umrah, 48 hours advance booking is usually sufficient." }
+    ]
+  },
+  {
+    slug: "makkah-complete-ziyarat-guide-2026",
+    title: "Makkah Ziyarat Complete Guide 2026 — Every Sacred Site Beyond the Haram",
+    excerpt: "The complete guide to Makkah's Ziyarat sites — Cave of Hira (Jabal Al-Nour), Cave of Thawr (Jabal Thawr), Mina, Arafat, Muzdalifah, and Jannat Al-Mualla. Visiting tips, historical context, and taxi guide.",
+    content: `<h2>Makkah Beyond Masjid Al-Haram</h2><p>For most pilgrims, Makkah means the Grand Mosque — the Kaaba, Tawaf, Sa'i, and the Zamzam well. But Makkah Al-Mukarramah is surrounded by an extraordinary collection of prophetic and Quranic historical sites that most pilgrims never visit. This guide covers every major Ziyarat site outside Masjid Al-Haram.</p><h2>Jabal Al-Nour (Cave of Hira)</h2><p>Jabal Al-Nour — the Mountain of Light — is approximately 5km north of Masjid Al-Haram. The Cave of Hira (Ghar Hira) at its summit is where the Prophet ﷺ received the first Quranic revelation from the Angel Jibreel AS around 610 CE. The climb involves approximately 1,200 paved steps — 40–60 minutes ascent. Best visited before 9am.</p><h2>Jabal Thawr (Cave of Thawr)</h2><p>Jabal Thawr is approximately 4km south of Makkah. The Cave of Thawr (Ghar Thawr) is where the Prophet ﷺ and Abu Bakr RA hid for three days during the Hijrah in 622 CE. The Quran references this event in Surah At-Tawbah (9:40): "When the two were in the cave, and he said to his companion: Do not grieve; indeed Allah is with us."</p><h2>Jannat Al-Mualla</h2><p>The historic cemetery of Makkah, 500 metres north of Masjid Al-Haram. Khadijah RA (first wife of the Prophet ﷺ), Abdul Muttalib, and many of the Prophet's family are buried here. Within walking distance of the Haram.</p><h2>Mina, Arafat, Muzdalifah</h2><p>The three Hajj ritual sites east of Makkah — Mina (5km), Arafat (14km), Muzdalifah (9km) — can be visited outside Hajj season for Ziyarat. During Hajj season access requires registered transport permits.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Makkah",
+    image: "/makkah-royal-clock-tower.webp",
+    relatedServiceSlug: "makkah-ziyarat-private-tour",
+    faqs: [
+      { question: "Which Makkah Ziyarat sites can be visited outside Hajj season?", answer: "All Makkah Ziyarat sites can be visited outside Hajj season. Jabal Al-Nour, Jabal Thawr, Jannat Al-Mualla, the Jamarat Bridge in Mina, and the Plain of Arafat with Jabal Al-Rahma are all accessible year-round. During Hajj (8th–13th Dhul Hijjah), access to Mina and Arafat requires registered Hajj transport." },
+      { question: "Is Jabal Al-Nour or Jabal Thawr more important Islamically?", answer: "Both are profoundly significant but for different reasons. Jabal Al-Nour (Cave of Hira) marks the beginning of revelation and prophethood. Jabal Thawr (Cave of Thawr) marks the Hijrah — the beginning of the Islamic state. Both are included in our full-day Makkah Ziyarat tour." },
+      { question: "How far are the Makkah Ziyarat sites from the city centre?", answer: "Jabal Al-Nour: 5km north of Haram (10–15 min taxi). Jabal Thawr: 4km south (10 min taxi). Mina: 5km east (10–15 min taxi). Arafat: 14km east (20–30 min taxi). Muzdalifah: 9km east (15 min taxi). Jannat Al-Mualla: 0.5km north of Haram (walking distance)." }
+    ]
+  },
+  {
+    slug: "hajj-2026-makkah-transport-planning-guide",
+    title: "Hajj 2026 Makkah Transport Guide — Complete Planning from KAIA to Mina",
+    excerpt: "The complete Hajj 2026 transport planning guide for Makkah. KAIA airport transfer, Haram hotel logistics, Mina-Arafat-Muzdalifah circuit, and private vs group transport comparison.",
+    content: `<h2>Transport Planning for Hajj 2026</h2><p>Hajj 2026 (expected late May / early June 2026, subject to moon sighting) will bring over 2 million pilgrims to Makkah. Transport logistics are the single greatest practical challenge for independent Hajj pilgrims — and the one area where poor planning has the most severe consequences.</p><h2>Step 1: KAIA Airport to Makkah Hotel</h2><p>Critical point: during Hajj peak arrival days, only vehicles with Ministry of Interior Hajj transport permits can pass Makkah security checkpoints. Unregistered taxis and ride-hailing apps are turned back. Pre-booking with a registered Hajj transport operator before your flight is essential.</p><h2>Step 2: Makkah Hotel to Haram</h2><p>For pilgrims in Aziziyah or outer districts (3–5km from Haram), pre-scheduled private taxi is the reliable option — ensuring you arrive for every prayer without walking in extreme heat.</p><h2>Step 3: The Hajj Movement Circuit (8–13 Dhul Hijjah)</h2><p>Day 8: Makkah to Mina. Day 9: Mina to Arafat (Wuquf — the pillar of Hajj). Night 9–10: Arafat to Muzdalifah (overnight, collect pebbles). Day 10 (Eid): Muzdalifah to Mina — stone Jamarat Al-Aqaba, sacrifice, exit Ihram, Tawaf Al-Ifadah. Days 11–13: Stone all three Jamaras in Mina. All Hajj site movement requires registered Hajj transport permits.</p><h2>Step 4: Post-Hajj Departures</h2><p>Makkah to Madinah (4.5 hrs) — book 48 hours in advance minimum. Makkah to KAIA Airport (1.5–2 hrs) — allow extra time during peak post-Hajj departure days.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Makkah",
+    image: "/makkah-royal-clock-tower.webp",
+    relatedServiceSlug: "makkah-hajj-airport-transfer",
+    faqs: [
+      { question: "When should I book Hajj 2026 transport?", answer: "As early as possible — minimum 4–6 weeks before departure. KAIA airport transfers and Haram hotel transport can be booked closer to the date, but Hajj ritual site transport (Mina, Arafat, Muzdalifah circuit) requires advance coordination with Hajj permit details." },
+      { question: "What happens if I don't pre-book transport and try to arrange it at KAIA?", answer: "During Hajj peak arrival days, KAIA is one of the world's busiest airports. Unlicensed taxi touts operate in the arrivals area. If you board an unregistered taxi, there is a high probability the vehicle will be turned back at Makkah security checkpoints — leaving you stranded on the highway with all your Hajj luggage. Pre-booking is a necessity." },
+      { question: "Does Haram Taxi provide transport for the full Mina-Arafat-Muzdalifah Hajj circuit?", answer: "Yes — for independent pilgrims not travelling with organised Hajj packages. This requires advance coordination and your Hajj permit details. Contact us at least 6 weeks before Dhul Hijjah." }
+    ]
+  },
+  {
+    slug: "cave-of-hira-jabal-al-nour-complete-guide",
+    title: "Cave of Hira (Ghar Hira) Complete Guide — Jabal Al-Nour, Makkah 2026",
+    excerpt: "Complete visitor guide to Ghar Hira (Cave of Hira) on Jabal Al-Nour — the site of the first Quranic revelation. The climb, historical significance, what to do at the cave, and taxi booking.",
+    content: `<h2>Ghar Hira — Where the Quran Began</h2><p>Of all the Ziyarat sites in Makkah Al-Mukarramah, Ghar Hira (the Cave of Hira) on Jabal Al-Nour carries perhaps the most direct connection to the Quran itself. It was here — in this small cave near the summit of the Mountain of Light, approximately 5km north of Masjid Al-Haram — that the first words of the Quran were revealed to the Prophet Muhammad ﷺ by the Angel Jibreel AS around 610 CE.</p><h2>The First Revelation — Historical Background</h2><p>In approximately 610 CE during Ramadan, when the Prophet ﷺ was around 40 years old and in seclusion at Ghar Hira, the Angel Jibreel AS appeared and embraced him three times, saying "Iqra!" (Read!). After the third embrace, the first five verses of Surah Al-Alaq were revealed: "Read in the name of your Lord who created — created man from a clinging substance. Read, and your Lord is the Most Generous — who taught by the pen — taught man that which he knew not."</p><h2>The Climb</h2><p>Jabal Al-Nour involves approximately 1,200 paved steps. Ascent: 40–60 minutes. Descent: 30–45 minutes. Total visit: 2–3 hours. Bring water. Best time: before 9am. The cave is small — 4m long, 1.7m wide. Queues form during peak season.</p><h2>Practical Tips</h2><p>Comfortable closed-toe shoes essential. Visit in early morning. Not recommended for those with serious mobility limitations. No prescribed prayer or ritual at the cave — most pilgrims recite Surah Al-Alaq and make Du'a.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Makkah",
+    image: "/jabal-al-nour-hira-cave.webp",
+    relatedServiceSlug: "makkah-ziyarat-private-tour",
+    faqs: [
+      { question: "Is visiting Cave of Hira obligatory during Hajj or Umrah?", answer: "No — visiting Ghar Hira is not a Fard or Wajib act of Hajj or Umrah. It is a Ziyarat site visited for historical and spiritual significance. Consult your Hajj guide or scholar for guidance on the appropriate attention to give this site." },
+      { question: "How physically difficult is the climb to Jabal Al-Nour?", answer: "Moderately challenging — approximately 1,200 paved steps, 40–60 minutes ascent. Bring water. Wear closed-toe shoes with grip. Visit in the morning before peak heat. Elderly visitors with mobility limitations may find it very difficult." },
+      { question: "What should I do or recite at Ghar Hira?", answer: "There is no specifically prescribed prayer or Sunnah ritual at Ghar Hira. Many pilgrims recite Surah Al-Alaq (96:1–5 — the first revealed Surah) at the cave entrance and make sincere Du'a. Reflecting on the significance of revelation is the most meaningful act." }
+    ]
+  },
+  {
+    slug: "kaia-airport-to-makkah-hajj-2026-guide",
+    title: "KAIA Airport to Makkah Hotel Guide — Hajj 2026 Transport from Jeddah",
+    excerpt: "Complete guide to the KAIA Jeddah Airport to Makkah transfer for Hajj 2026. Hajj Terminal logistics, checkpoint procedures, and why pre-booking is essential.",
+    content: `<h2>Arriving at KAIA for Hajj 2026</h2><p>King Abdulaziz International Airport (KAIA) in Jeddah is the primary international arrival point for most Hajj 2026 pilgrims. During the Hajj season, KAIA processes millions of passengers. Understanding what to expect and how your transfer to Makkah is handled is essential for a smooth Hajj experience.</p><h2>The Hajj Terminal</h2><p>KAIA has a dedicated Hajj Terminal — a separate facility with a distinctive tent-inspired roof exclusively for Hajj pilgrims. It has dedicated immigration lanes, a large arrivals hall, and baggage handling designed for Hajj season volumes. Allow 1–2 hours for immigration and baggage collection during peak arrival days.</p><h2>The Makkah Checkpoint System</h2><p>All roads into Makkah are controlled by Ministry of Interior checkpoints during Hajj. Only vehicles registered with the Ministry's Hajj transport system carry permits to pass. An unregistered taxi — regardless of what the driver promises — will be turned back at the checkpoint, leaving you stranded far from your hotel with all your Hajj luggage. This is not a theoretical risk; it happens every year to unprepared pilgrims.</p><h2>The KAIA to Makkah Journey</h2><p>Approximately 90km via the Haramain Highway — 1.5 hours normally, 2.5–3 hours during peak Hajj arrival days due to checkpoint queues. Our vehicles carry current Ministry permits. Our drivers know the Makkah hotel zone access rules and drop-off protocols for every hotel in every zone.</p><h2>How to Book</h2><p>WhatsApp us your full name, group size, KAIA flight number and date, and Makkah hotel name. We assign your driver and send details before your flight departs.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Makkah",
+    image: "/makkah-royal-clock-tower.webp",
+    relatedServiceSlug: "makkah-hajj-airport-transfer",
+    faqs: [
+      { question: "Does KAIA have a specific Hajj Terminal?", answer: "Yes — King Abdulaziz International Airport has a dedicated Hajj Terminal (Al-Matar Al-Hajj) with a distinctive tent-inspired roof structure. It handles pilgrims on Hajj visas during the Hajj season. Follow signage for 'Hajj Terminal' upon landing." },
+      { question: "How long should I allow at KAIA before reaching Makkah?", answer: "Allow 3–4 hours from landing to arriving at your Makkah hotel during peak Hajj arrival days. Immigration and baggage: 1–2 hours. Pre-booked transfer: 2–2.5 hours including checkpoints. Pre-booking eliminates transport waiting time." },
+      { question: "Can my non-Muslim travel companion enter Makkah?", answer: "No. Makkah is restricted to Muslims only. Non-Muslims are turned back at the entry checkpoints. We can arrange separate transport for a non-Muslim companion to a Jeddah hotel." }
+    ]
+  },
+  {
+    slug: "makkah-aziziyah-hotel-transport-guide",
+    title: "Makkah Aziziyah Hotel Zone — Complete Transport & Taxi Guide 2026",
+    excerpt: "Everything pilgrims in Aziziyah need to know about getting to the Haram, KAIA airport transfers, Ziyarat tours, and navigating Makkah's outer hotel district.",
+    content: `<h2>Staying in Aziziyah — What to Know</h2><p>Aziziyah is a large residential and hotel district approximately 2.5–4km east of Masjid Al-Haram. It is one of Makkah's primary pilgrim accommodation zones — particularly for Hajj group packages and budget Umrah visitors who choose value over Haram proximity.</p><h2>Getting to the Haram from Aziziyah</h2><p><strong>Walking:</strong> 30–45 minutes in cooler months. In summer (45°C+), walking is strongly discouraged — heat exhaustion risk is serious for pilgrims from cooler climates.</p><p><strong>Makkah Metro:</strong> The Al-Mashaaer Al-Muqaddassah Metro connects Aziziyah to the Haram during Hajj season. Convenient for routine journeys. During peak Hajj movement days, station wait times can reach 1–2 hours.</p><p><strong>Pre-booked private taxi:</strong> 10–20 minutes door-to-door. Pre-schedule your Fajr and Isha journeys in advance — your driver arrives at your hotel entrance at the confirmed time, delivers you to the closest Haram drop-off, and collects you at an agreed time. The most reliable option for elderly pilgrims or families.</p><h2>KAIA Airport to Aziziyah</h2><p>1.5–2 hours via Haramain Highway with Hajj-permitted vehicle. Driver meets you at KAIA arrivals with name board — direct to your hotel entrance. GMC Yukon XL for families with large Hajj luggage.</p><h2>Ziyarat Tours from Aziziyah</h2><p>Full Makkah Ziyarat tour from Aziziyah: Jabal Al-Nour (Cave of Hira), Jabal Thawr, Jannat Al-Mualla, Mina, Arafat — all in one day from your hotel. Fixed rate confirmed before departure.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Makkah",
+    image: "/makkah-grand-mosque.webp",
+    relatedServiceSlug: "hotel-to-haram-transport",
+    faqs: [
+      { question: "Is Aziziyah a good area to stay for Hajj and Umrah?", answer: "Aziziyah is good value for pilgrims. It is close enough to the Haram to be convenient (10–20 min taxi), significantly cheaper than inner Markaziah hotels, and well-served by taxi and metro during Hajj. The tradeoff is that you cannot walk to every prayer in summer heat — transport is needed." },
+      { question: "Does the Makkah Metro serve Aziziyah?", answer: "Yes — the Makkah Metro (Al-Mashaaer Al-Muqaddassah Metro) connects Aziziyah to the Haram during Hajj season, and also serves Mina, Arafat, and Muzdalifah. Outside Hajj season, service may be limited. During peak Hajj days, station wait times can be 1–2 hours." },
+      { question: "How early should I book my KAIA to Aziziyah transfer for Hajj?", answer: "At least 4 weeks before your arrival date, ideally earlier for peak Hajj arrival days. Our vehicles are allocated on a first-come, first-served basis — late booking during Hajj peak risks unavailability." }
+    ]
+  },
+  {
+    slug: "tabuk-travel-guide-2026",
+    title: "Tabuk Travel Guide 2026 — NEOM, AlUla, Haql & Getting Around",
+    excerpt: "Complete travel guide to Tabuk Region — Saudi Arabia's northwest gateway to NEOM, AlUla heritage, the Red Sea coast, and Jordan border. Distances, transport, and what to see.",
+    content: `<h2>Tabuk — Saudi Arabia's Northwest Gateway</h2><p>Tabuk is the capital of Tabuk Province in northwest Saudi Arabia — a regional hub connecting travelers to some of the kingdom's most extraordinary destinations: NEOM (the world's most ambitious development project), AlUla (UNESCO World Heritage Nabataean heritage), Haql and the Gulf of Aqaba Red Sea coast, and Wadi Disah's dramatic sandstone canyon.</p><h2>Getting to Tabuk</h2><p>Prince Sultan bin Abdulaziz Airport (IATA: TUU) connects Tabuk to Riyadh, Jeddah, and Dammam with Saudia, flynas, and flyadeal flights. By road: Madinah to Tabuk is 620km (6 hrs); Jeddah to Tabuk is 1,200km (12 hrs); Riyadh to Tabuk is 1,350km (13 hrs).</p><h2>From Tabuk: Key Destinations & Travel Times</h2><p><strong>NEOM Bay (Sharma):</strong> 200km northwest, 2.5 hours. NEOM permits required.<br/><strong>AlUla (Hegra/Madain Saleh):</strong> 340km south, 3.5 hours via Route 375.<br/><strong>Haql (Shipwreck):</strong> 200km northwest, 2 hours. No permit required.<br/><strong>Wadi Disah Canyon:</strong> 60km south, 50 minutes via Route 70.<br/><strong>Jordan border (Halat Ammar):</strong> 150km north, 1.5 hours.</p><h2>Tabuk City Highlights</h2><p>Tabuk Castle (Al-Qal'a) — Ottoman fort and site of the Prophet Muhammad's ﷺ Tabuk Expedition camp (630 CE / 9 AH). Hijaz Railway Station Museum — one of the best-preserved stations on the Ottoman Hejaz Railway (1908), complete with historic locomotive. Jabal Al-Lawz — Saudi Arabia's highest peak at 2,580m, 100km east of Tabuk.</p><h2>Transport in Tabuk</h2><p>Ride-hailing apps (Careem, Uber) have limited coverage in Tabuk's outlying areas and zero coverage on the roads to NEOM, Haql, and Wadi Disah. For all excursions outside the city, a pre-booked private taxi with a driver who waits is the only reliable option. WhatsApp booking, fixed rates confirmed before travel.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Tabuk",
+    image: "/haql-shipwreck.webp",
+    relatedServiceSlug: "tabuk-airport-transfer",
+    faqs: [
+      { question: "What is Tabuk famous for?", answer: "Tabuk is famous for: (1) being the gateway to NEOM — Saudi Arabia's Vision 2030 megaproject; (2) proximity to AlUla and Hegra (UNESCO Nabataean heritage); (3) the Haql Red Sea coast and shipwreck site; (4) the historic Tabuk Castle (Tabuk Expedition of the Prophet ﷺ, 630 CE); (5) the Wadi Disah sandstone canyon." },
+      { question: "Is Tabuk worth visiting as a tourist?", answer: "Yes — Tabuk itself has the castle and Hijaz Railway museum, but the region is the main draw. As a base for AlUla day trips, NEOM visits, Haql Red Sea, and Wadi Disah canyon, Tabuk is an excellent base for 3–5 days of exploration in northwest Saudi Arabia." },
+      { question: "How do I get around Tabuk without a car?", answer: "Pre-booked private taxi is the most reliable option for all excursions outside the city. For within the city, ride-hailing apps have partial coverage. For NEOM, AlUla, Haql, and Wadi Disah — all require private hire as apps don't cover these routes." }
+    ]
+  },
+  {
+    slug: "neom-tabuk-transport-guide-2026",
+    title: "NEOM from Tabuk — Complete Transfer Guide 2026 (The Line, NEOM Bay, Sindalah)",
+    excerpt: "Everything you need to know about getting from Tabuk to NEOM — The Line, NEOM Bay, Sindalah, Gayal, and Trojena. Permits, distances, worker rotations, and pre-booking.",
+    content: `<h2>NEOM — Saudi Arabia's Vision 2030 Megaproject</h2><p>NEOM is a 26,500 km² development zone in northwest Saudi Arabia's Tabuk Province — the most ambitious urban development project in human history. It encompasses multiple sub-destinations: NEOM Bay (Sharma coastal hub), The Line (170km linear city), Sindalah (Gulf of Aqaba island resort), Gayal (highland mountain zone), and Trojena (ski resort, 2029 Asian Winter Games venue).</p><h2>Tabuk — The Gateway to NEOM</h2><p>Tabuk city is the closest major city to NEOM — approximately 200km southeast of NEOM Bay. Prince Sultan Airport (TUU) in Tabuk serves NEOM workers and visitors flying into the region. NEOM Bay Airport (NUM / Sharma Airport) is NEOM's own airport for direct NEOM-bound flights.</p><h2>How to Get from Tabuk to NEOM</h2><p>Tabuk to NEOM Bay: 200km northwest via Route 55 — approximately 2.5 hours. Tabuk Airport (TUU) to NEOM Bay: 215km, 2.5 hours.<br/>Checkpoint awareness: The NEOM development zone has access checkpoints. All visitors and workers require valid NEOM-issued permits. General tourist access to NEOM Bay waterfront areas is available; construction zone access requires contractor ID.</p><h2>NEOM Worker Rotation Transport</h2><p>The most common transport need is worker rotation: contractors fly into Tabuk Airport (TUU) and need immediate transfer to their NEOM project site. For this service: WhatsApp your flight number, project site, and worker count. Driver meets you at TUU arrivals with name board. 215km to NEOM Bay, 2.5 hours. Group vehicles available.</p><h2>NEOM Bay Airport (NUM)</h2><p>NEOM Bay Airport (Sharma Airport, IATA: NUM) opened in 2022. It handles NEOM-specific and charter flights. Arriving at NUM: pre-book your transfer for direct connection to NEOM Bay hotels or other NEOM sub-destinations.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Tabuk",
+    image: "/haql-shipwreck.webp",
+    relatedServiceSlug: "tabuk-neom-transfer",
+    faqs: [
+      { question: "Do I need a permit to visit NEOM as a tourist?", answer: "NEOM Bay's waterfront and hospitality areas (restaurants, beach clubs) are increasingly accessible to general visitors. Construction zones (The Line, active Gayal sites) require a NEOM-issued contractor permit or visitor pass. Sindalah Island will have normal tourist entry when its resort opens. Check the NEOM website for current visitor access status for each sub-destination." },
+      { question: "Is there public transport from Tabuk to NEOM?", answer: "No — there is no bus, train, or ride-hailing service between Tabuk and NEOM. A pre-booked private taxi is the standard transport for workers and visitors. NEOM Bay Airport (NUM) handles NEOM-specific flights." },
+      { question: "How do NEOM workers typically get to their sites from Tabuk?", answer: "Most NEOM workers arrive at Tabuk Airport (TUU) and are picked up by pre-arranged taxis or company-contracted transport. The Tabuk–NEOM Bay route (215km, 2.5 hrs) is the standard worker rotation transfer." }
+    ]
+  },
+  {
+    slug: "haql-shipwreck-tabuk-guide",
+    title: "Haql Shipwreck — Complete Guide to Tabuk's Red Sea Landmark 2026",
+    excerpt: "Everything about the Haql shipwreck — how to get there from Tabuk, what to expect, diving and photography tips, and the Jordan border crossing nearby.",
+    content: `<h2>The Haql Shipwreck — Saudi Arabia's Most Photographed Maritime Ruin</h2><p>On the Gulf of Aqaba shore near Haql town in Tabuk Province, a large cargo vessel lies stranded in the shallow turquoise water — rusting, windswept, and utterly photogenic. The Haql shipwreck has become one of Saudi Arabia's most-shared travel images: the combination of pristine Gulf of Aqaba water, desert mountains behind, and the dramatic rusting hulk has captivated photographers since Saudi Arabia opened to tourism in 2019.</p><h2>Getting There from Tabuk</h2><p>Haql is 200km northwest of Tabuk city — approximately 2 hours via the coastal highway. The road passes through dramatic desert-meets-sea scenery along the Gulf of Aqaba. A private taxi from Tabuk with a driver who waits at Haql is the standard arrangement — there is no ride-hailing coverage on this route.</p><h2>What to Do at Haql</h2><p><strong>Shipwreck photography:</strong> The wreck is visible from the shore — no boat or diving equipment needed for the iconic photo. Beach access is free. Best light: early morning (golden hour) and 1 hour before sunset. <strong>Snorkelling and diving:</strong> The Gulf of Aqaba has some of the world's clearest water (30m+ visibility in season). Local dive operators in Haql offer guided reef and wreck dives. Contact in advance for equipment rental. <strong>Jordan border (Al Durra crossing):</strong> The Saudi–Jordan border crossing near Haql is approximately 10km from the shipwreck. Day-trippers crossing to Aqaba, Jordan for a few hours use this crossing. Saudi exit permits required for expatriates.</p><h2>Practical Tips</h2><p>No facilities at the shipwreck beach — bring food, water, and sunscreen. Best season: October–April. Summer temperatures exceed 42°C in Haql. The beach area is publicly accessible — no entry fee or booking required.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Tabuk",
+    image: "/haql-shipwreck.webp",
+    relatedServiceSlug: "tabuk-to-jordan-border",
+    faqs: [
+      { question: "Is the Haql shipwreck still there in 2026?", answer: "Yes — the stranded vessel is a permanent feature of the Haql shoreline. It has been there for decades and continues to rust gradually. It is not going anywhere soon." },
+      { question: "Is diving allowed at the Haql shipwreck?", answer: "Yes — underwater diving around the Haql wreck is permitted. Local dive operators in Haql provide guided dives. The wreck's shallow depth (5–15m in parts) makes it accessible to recreational divers. Gulf of Aqaba visibility is exceptional — often 25–30m+." },
+      { question: "How do I get from the Haql shipwreck to Jordan?", answer: "The Al Durra border crossing is approximately 10km from the Haql shipwreck beach. Our taxi drops you at the Saudi border gate. Jordan side: taxis to Aqaba are available from the Jordanian crossing side. Round-trip same-day crossings are common for visitors wanting to visit Aqaba." }
+    ]
+  },
+  {
+    slug: "alula-day-trip-from-tabuk-guide",
+    title: "AlUla Day Trip from Tabuk — Hegra, Elephant Rock & Dadan Complete Guide 2026",
+    excerpt: "How to do a day trip from Tabuk to AlUla — including Hegra (Madain Saleh), Elephant Rock, Dadan, and AlUla Old Town. Distances, booking tips, and what to skip if time is short.",
+    content: `<h2>Why AlUla is the Best Day Trip from Tabuk</h2><p>AlUla — home to Hegra (Madain Saleh), Saudi Arabia's first UNESCO World Heritage Site — is 340km south of Tabuk. A day trip is feasible: depart Tabuk at 6am, arrive AlUla by 9:30am, 5–6 hours at sites, depart by 4pm, back in Tabuk by 7:30pm. The 3.5-hour drive on Route 375 through the Hejaz desert highlands is itself extraordinary — eroded sandstone formations, ancient lava fields, and dramatic skies.</p><h2>The Sites — What to Prioritise</h2><p><strong>Hegra (Madain Saleh):</strong> Saudi Arabia's first UNESCO World Heritage Site. 111 Nabataean tombs carved into freestanding sandstone outcrops — larger than anything at Petra and far less crowded. Mandatory advance booking via alula.sa app. Allow 2.5–3 hours minimum. <strong>Elephant Rock (Jabal Al-Fil):</strong> A 52m sandstone formation shaped exactly like an elephant. 10-minute walk from the car park. Spectacular at sunset. No booking required. <strong>AlUla Old Town:</strong> Abandoned 14th-century mud-brick village — 900 homes, preserved as a heritage site. 1–1.5 hours. Free to walk through. <strong>Dadan:</strong> Ancient Dadanite and Lihyanite kingdom ruins with lion cliff tombs. Guided tours via Experience AlUla. Pre-booking recommended.</p><h2>Day Trip Recommendation: Where to Start</h2><p>If you can only do one site: Hegra. Book your Hegra entry slot for 10am on the day. This allows arrival from Tabuk at 9:30am (depart 6am), 2.5 hours at Hegra, then Elephant Rock or AlUla Old Town in the afternoon before the return drive.</p><h2>Overnight vs. Day Trip</h2><p>An overnight stay in AlUla covers all sites thoroughly. AlUla has good hotels including Banyan Tree AlUla, Habitas AlUla, and the Shaden Resort. Return to Tabuk the next day or continue south to Madinah (4 hours).</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Tabuk",
+    image: "/haql-shipwreck.webp",
+    relatedServiceSlug: "tabuk-alula-day-trip",
+    faqs: [
+      { question: "Is it worth doing AlUla as a day trip from Tabuk or should I stay overnight?", answer: "A day trip covers Hegra + Elephant Rock + AlUla Old Town comfortably if you depart Tabuk at 6am. To cover Dadan, Jabal Ikmah, Maraya, and experience AlUla at sunset — an overnight is strongly recommended. The drive itself (3.5 hours each way) is tiring if done both ways in one day." },
+      { question: "Do I need to book Hegra tickets in advance?", answer: "Yes — Hegra has limited daily visitor numbers. Book through the Experience AlUla app (alula.sa) at least 1–2 weeks before in peak season (October–April). Peak months (December–January) can sell out 3–4 weeks in advance. Morning slots (9am–12pm) offer better light for photography." },
+      { question: "Can I drive myself from Tabuk to AlUla?", answer: "Yes if you have your own vehicle or a rental. Route 375 south is well-paved and straightforward. Our service is for those without a vehicle who want a private taxi with a driver who waits in AlUla." }
+    ]
+  },
+  {
+    slug: "wadi-disah-tabuk-canyon-guide",
+    title: "Wadi Disah (Wadi Qaraqir) — Complete Tabuk Canyon Guide 2026",
+    excerpt: "Everything about Wadi Disah — the spectacular sandstone canyon 60km from Tabuk. What to see, when to visit, how to get there, and why it rivals any canyon landscape in the Middle East.",
+    content: `<h2>Wadi Disah — Saudi Arabia's Hidden Canyon</h2><p>Sixty kilometres south of Tabuk, a narrow road turns off Route 70 and leads into one of the most dramatic landscapes in Saudi Arabia: Wadi Disah (Wadi Qaraqir). Towering sandstone walls rise 200–300m on either side of a valley floor lush with date palms, freshwater springs, and the neat farms of a small Bedouin community. The contrast — fierce orange cliffs framing a green, water-fed valley — is extraordinary.</p><h2>The Canyon Floor</h2><p>The main canyon is approximately 15km long. A vehicle track runs the length of the canyon floor — driveable in a standard car (no 4x4 required on the main track, though SUV is more comfortable). Side wadis branch off the main canyon — these require walking. The canyon narrows significantly in its deeper sections, blocking direct sunlight mid-afternoon for spectacular natural lighting.</p><h2>The Palm Grove and Springs</h2><p>Underground water feeds the Wadi Disah oasis. Freshwater spring pools exist at multiple points along the canyon floor — popular for wading in summer (when the surrounding desert is 40°C+). The date palm groves are centuries old. The Bedouin community still farms here — goats, vegetables, dates — one of very few inhabited canyons in Saudi Arabia. Respectful visits are welcomed.</p><h2>Photography</h2><p>Wadi Disah is one of Saudi Arabia's most photogenic natural sites. Best light: 7–9am (low sun on eastern wall) and 4–6pm (golden light on western wall). The canyon "sky gap" shots looking straight up through the narrow slot are extraordinary at midday. Sand dunes at the canyon entrance provide foreground interest for wide shots.</p><h2>Practical Guide</h2><p>Best season: October–April. Summer (May–September) temperature inside the canyon reaches 38–42°C — feasible before 9am. No facilities inside — bring 3+ litres of water per person, food, sunscreen. Mobile signal is limited inside — download offline maps. Entry is free.</p>`,
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "Tabuk",
+    image: "/haql-shipwreck.webp",
+    relatedServiceSlug: "tabuk-wadi-disah-tour",
+    faqs: [
+      { question: "What is the best time of year to visit Wadi Disah?", answer: "October to April — daytime temperatures in the canyon are 12–25°C. November to February is peak season with ideal photography light and comfortable hiking temperatures. Summer (May–September) peaks at 40°C+ inside the canyon — only visit in very early morning." },
+      { question: "Is Wadi Disah accessible without a 4x4?", answer: "The main canyon floor track is passable in a standard sedan or hatchback in dry conditions. A SUV handles the rougher sections more comfortably and is recommended if you want to explore the deeper side wadis. Our taxis include both sedan and SUV options for Wadi Disah day trips." },
+      { question: "How long should I spend in Wadi Disah?", answer: "Minimum half-day (3–4 hours) for the main canyon drive and palm grove walk. Full day (5–6 hours) to explore side wadis, photograph golden-hour light, and experience the canyon at different times of day. The full-day version is deeply rewarding." }
+    ]
   }
 ];

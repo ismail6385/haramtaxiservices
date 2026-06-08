@@ -8,18 +8,30 @@ import { blogData } from '@/lib/blogData'
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://haramtaxiservice.com'
 
-    // Get all location directories dynamically
+    // Get all location directories dynamically (including nested sub-districts)
     const locationsDir = path.join(process.cwd(), 'app/locations')
     let locationPages: string[] = []
 
     try {
         if (fs.existsSync(locationsDir)) {
-            locationPages = fs.readdirSync(locationsDir)
+            const topLevel = fs.readdirSync(locationsDir)
                 .filter(file => {
                     const fullPath = path.join(locationsDir, file)
-                    return fs.statSync(fullPath).isDirectory() && file !== '[slug]' // Exclude dynamic placeholders if present
+                    return fs.statSync(fullPath).isDirectory() && file !== '[slug]'
                 })
-                .map(city => `/locations/${city}`)
+
+            for (const city of topLevel) {
+                locationPages.push(`/locations/${city}`)
+                // Include sub-district pages (e.g. /locations/taif/al-hada)
+                const cityDir = path.join(locationsDir, city)
+                const subDirs = fs.readdirSync(cityDir).filter(sub => {
+                    const fullPath = path.join(cityDir, sub)
+                    return fs.statSync(fullPath).isDirectory() && sub !== '[slug]'
+                })
+                for (const sub of subDirs) {
+                    locationPages.push(`/locations/${city}/${sub}`)
+                }
+            }
         }
     } catch (e) {
         console.error('Error reading locations directory for sitemap:', e)

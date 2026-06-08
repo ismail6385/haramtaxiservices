@@ -2374,5 +2374,508 @@ export const routesData: RouteData[] = [
             { question: "Do you serve Khamis Mushait and Soudah?", answer: "Yes. We pick up from Abha city, Khamis Mushait, Soudah Peak area, and all Asir Province locations for the Taif transfer." },
             { question: "Can I continue from Taif to Makkah?", answer: "Yes. We offer seamless transfers from Abha through Taif and onward to Makkah for one fixed price. The total journey Abha to Makkah via Taif is approximately 6.5–7 hours." }
         ]
+    },
+    {
+        slug: "madinah-to-taif",
+        title: "Madinah to Taif Taxi | Direct Transfer Bypassing Makkah — 430km",
+        description: "Private taxi from Madinah to Taif. Direct 4.5-hour transfer via Route 60/15 bypassing Makkah city. Fixed rate, door-to-door, all Taif districts served.",
+        h1: "Madinah to Taif Private Taxi — 430km Direct Transfer",
+        distance: "430 km",
+        duration: "4.5 hours",
+        content: "Travel from the Prophet's City of Madinah directly to the cool mountain resort city of Taif without passing through central Makkah. The 430km journey takes approximately 4.5 hours via Route 60 south to the Makkah bypass, then Route 15 east up into the Hejaz highlands to Taif. This is a popular route for pilgrims completing Ziyarat in Madinah who wish to visit Taif's rose farms, Al Hada cable car, and mountain resorts before connecting onward to Makkah or flying from Taif Regional Airport (TIF). We pick up from all Madinah hotels, including those near Masjid Al-Nabawi, Prince Mohammad Bin Abdulaziz Airport (MED), and the Haramain Train Station. Drop-off at all Taif locations including Al Hada, Shafa, Al Hawiya, and city center.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Madinah to Taif?", answer: "Madinah to Taif is approximately 430km and takes around 4.5 hours by private taxi. The route uses the Makkah bypass so non-Muslim passengers and those without Makkah entry permission can travel directly without entering the restricted zone." },
+            { question: "Does the Madinah to Taif taxi pass through Makkah?", answer: "No. Our route uses the designated Makkah bypass (Route 15 east), allowing passengers to travel from Madinah to Taif without passing through the Makkah restricted zone. Non-Muslim passengers can therefore complete this journey." },
+            { question: "Can I book from Madinah Airport to Taif?", answer: "Yes. We provide pickups from Prince Mohammad Bin Abdulaziz Airport (MED) in Madinah for direct transfer to Taif. Provide your flight number and we will track your arrival and have a driver ready." },
+            { question: "Can I continue from Taif to Makkah after arriving from Madinah?", answer: "Yes. We offer seamless door-to-door transfers from Madinah through Taif and onward to Makkah as a single booking. The Taif to Makkah leg adds approximately 1.5 hours. Contact us on WhatsApp for a combined route quote." },
+            { question: "What vehicles are available for Madinah to Taif?", answer: "We offer Toyota Camry for individuals and couples, GMC Yukon XL for families with luggage, Toyota Staria for groups up to 7, and Toyota Hiace for groups of 8–11. All vehicles are modern, air-conditioned, and fully maintained." }
+        ]
+    },
+    {
+        slug: "yanbu-to-taif",
+        title: "Yanbu to Taif Taxi | Red Sea to Highland Transfer — 350km",
+        description: "Private taxi from Yanbu to Taif. Direct transfer via coastal highway and Route 15. Fixed rate, approximately 4 hours, Yanbu Industrial City and residential areas served.",
+        h1: "Yanbu to Taif Private Taxi — 350km Direct Transfer",
+        distance: "350 km",
+        duration: "4 hours",
+        content: "Travel from Yanbu — Saudi Arabia's Red Sea industrial port and petrochemical hub — east into the cool Hejaz highlands to Taif. The 350km route follows the Red Sea coastal highway east, then joins Route 15 southeast ascending into the mountains to Taif. Popular with Yanbu refinery and SABIC workers holidaying in Taif's mountain resorts, and with Taif residents working rotations at Yanbu Industrial City (YIC). We pick up from Yanbu Al Sinaiyah (industrial city), Yanbu Al Bahr (coastal residential), and Yanbu Airport (YNB). Drop-off at all Taif locations including Al Hada, Shafa, Al Hawiya, and city center.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Yanbu to Taif?", answer: "Yanbu to Taif is approximately 350km and takes around 4 hours. No rest stop is typically required for this duration, though we can arrange a prayer break on request." },
+            { question: "Do you pick up from Yanbu Industrial City (YIC)?", answer: "Yes. We pick up from all Yanbu Industrial City compounds, port areas, and residential areas, as well as Yanbu Al Bahr and Yanbu Airport (YNB)." },
+            { question: "Can I be dropped at Al Hada or Shafa resort from Yanbu?", answer: "Yes. We deliver to any Taif location including Al Hada mountain resort, Shafa highlands, Al Hawiya, Wadi Naaman rose farms, and all city center hotels. Provide your exact accommodation when booking." },
+            { question: "Is there a direct road from Yanbu to Taif?", answer: "Yes. The route uses the Red Sea coastal highway east to Route 15, which climbs into the Hejaz highlands toward Taif. The ascent into the mountains is scenic and the roads are well-maintained." }
+        ]
+    },
+    {
+        slug: "tabuk-to-taif",
+        title: "Tabuk to Taif Taxi | Northwest Saudi to Hejaz Highlands — 1,100km",
+        description: "Private taxi from Tabuk to Taif. Long-haul intercity transfer via Route 65 and Route 15 south. Fixed rate, approximately 11 hours, two rest stops.",
+        h1: "Tabuk to Taif Private Taxi — 1,100km Long-Haul Transfer",
+        distance: "1,100 km",
+        duration: "11 hours",
+        content: "Travel from the northwest Saudi city of Tabuk — gateway to NEOM, AlUla, and the Jordan border — south to the Hejaz highland city of Taif. The 1,100km route follows Route 65 (Hijaz Road) south through the Nefud Desert toward Madinah, then continues south on Route 15 through the highlands to Taif — approximately 11 hours with two scheduled prayer and rest stops. This corridor is used by NEOM and Tabuk project workers connecting to the Makkah Region for Umrah, and by Taif residents travelling north for work assignments or Jordan border crossings. We pick up from Tabuk city, Prince Sultan Airport (TUU), and all NEOM-area accommodations.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Tabuk to Taif?", answer: "Tabuk to Taif is approximately 1,100km via Route 65 south and Route 15. The journey takes around 11 hours with two scheduled rest stops. An early morning departure from Tabuk arrives in Taif by evening." },
+            { question: "Can I stop in Madinah on the way from Tabuk to Taif?", answer: "Yes. Madinah is approximately mid-route between Tabuk and Taif. We can plan a Ziyarat stop in Madinah — typically 2–3 hours — before continuing south to Taif. Mention this when booking for an adjusted itinerary." },
+            { question: "Do you pick up from NEOM for a Taif transfer?", answer: "Yes. If your origin is NEOM Bay, The Line site, or Sharma, we pick up from there and route via Tabuk south to Taif. NEOM to Taif adds approximately 2.5–3 hours to the Tabuk leg." },
+            { question: "Is an overnight stop needed for Tabuk to Taif?", answer: "An 11-hour journey can be completed in a single day with two rest stops if departing early morning (5–6am). Alternatively, we can plan an overnight stop in Madinah and continue to Taif the next morning — ideal for pilgrims wanting to pray at Masjid Al-Nabawi." }
+        ]
+    },
+    {
+        slug: "taif-to-jeddah",
+        title: "Taif to Jeddah Taxi | Highland to Red Sea City Transfer — 170km",
+        description: "Private taxi from Taif to Jeddah city. Scenic mountain descent to the Red Sea coast. Fixed rate, approximately 2.5 hours, all Taif districts and Jeddah areas served.",
+        h1: "Taif to Jeddah Taxi — 170km City Transfer",
+        distance: "170 km",
+        duration: "2.5 hours",
+        content: "Travel from the cool Hejaz highlands of Taif down to the vibrant Red Sea city of Jeddah. The 170km journey descends approximately 1,800m from Taif's mountain plateau to sea level in Jeddah — a scenic drive taking around 2.5 hours. Popular with Taif families heading to Jeddah for shopping, Al Balad sightseeing, Corniche dining, or to catch a domestic flight. This route is distinct from the Taif to Jeddah Airport transfer — we drop off at any Jeddah address including Al Hamra, Al Rawdah, Al Zahra, the Corniche, North Jeddah, and all residential and hotel districts. We pick up from all Taif areas including Al Hada, Shafa, Al Hawiya, Wadi Naaman, and city center.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Taif to Jeddah city?", answer: "Taif to Jeddah city center is approximately 170km and takes 2.5 hours via the mountain highway. The descent from Taif's highlands to Jeddah's coast is one of the most scenic drives in the Hejaz region." },
+            { question: "What is the difference between Taif to Jeddah city and Taif to Jeddah Airport?", answer: "The Taif to Jeddah city transfer drops you at any Jeddah address — hotel, residential, Corniche, or mall. The Taif to Jeddah Airport (KAIA) transfer is specifically for flight departures. If you are catching a flight, book the airport route; for sightseeing or shopping in Jeddah, book this city transfer." },
+            { question: "Do you pick up from Al Hada and Shafa for the Jeddah city transfer?", answer: "Yes. We pick up from all Taif areas including Al Hada mountain resort, Shafa highlands, Al Hawiya, and all Taif city center hotels. Simply provide your pickup location when booking." },
+            { question: "Can I book a return Taif–Jeddah–Taif round trip?", answer: "Yes. We offer round-trip bookings with a discounted combined rate. WhatsApp us with your Taif address, Jeddah destination, and travel dates for a fixed round-trip quote." },
+            { question: "Do you drop off at Al Balad (Jeddah Old Town) and the Corniche?", answer: "Yes. We deliver to all Jeddah areas including Al Balad (Historic Jeddah), the Corniche, Al Hamra, Al Rawdah, Al Zahra, Obhur, and North Jeddah. Provide your exact address when booking." }
+        ]
+    },
+    {
+        slug: "jeddah-to-abha",
+        title: "Jeddah to Abha Taxi | Red Sea to Asir Mountains Transfer — 550km",
+        description: "Private taxi from Jeddah to Abha, capital of Asir Province. Scenic Hejaz to Asir highlands transfer — 550km, approximately 5.5 hours. Fixed rate, all Jeddah and Abha areas.",
+        h1: "Jeddah to Abha Taxi — 550km Highland Transfer",
+        distance: "550 km",
+        duration: "5.5 hours",
+        content: "Travel from Jeddah's Red Sea coast deep into the Asir highlands to Abha — Saudi Arabia's highland garden city sitting at 2,200m above sea level. The 550km journey follows Route 15 south through Lith, Al Qunfudhah, and the dramatic Asir escarpment before arriving in Abha. Abha is one of Saudi Arabia's most visited domestic tourism destinations, known for its cool climate, Al Soudah cable car, Habala village, Asir National Park, and vibrant weekend markets. A popular route for Jeddah families seeking a highland escape during the summer months. We pick up from all Jeddah districts including KAIA airport, Al Hamra, Al Rawdah, North Jeddah, and the Corniche. We deliver to all Abha areas including city center, Green Mountain (Jabal Al Akhdar), Al Soudah, Khamis Mushait, and all Asir tourism sites.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Jeddah to Abha?", answer: "Jeddah to Abha is approximately 550km and takes 5–5.5 hours via Route 15 south. The route passes through Al Qunfudhah and climbs dramatically up the Asir escarpment into the highlands. Scenery is spectacular on the final mountain ascent section." },
+            { question: "What is there to do in Abha?", answer: "Abha is Saudi Arabia's premier highland tourism destination. Key attractions include Al Soudah Cable Car, Habala (the hanging village), Asir National Park, Green Mountain viewpoint, Rijal Almaa heritage village, and weekend markets. The cool summer climate (18–25°C vs 40°C in Jeddah) is the main draw for Saudi families." },
+            { question: "Can I book Jeddah to Abha and then continue to Al Baha?", answer: "Yes. We can plan a multi-city itinerary — Jeddah to Al Baha (midway) with a stop, then continue to Abha, or reverse. WhatsApp us for a multi-leg itinerary with a combined fixed rate." },
+            { question: "Is the Jeddah to Abha route scenic?", answer: "Yes. The Asir escarpment section — approximately the last 80km approaching Abha — is one of the most dramatic mountain roads in Saudi Arabia. The road climbs from near sea level to 2,200m through terraced hillsides, mist, and mountain villages." },
+            { question: "Do you serve Khamis Mushait near Abha?", answer: "Yes. Khamis Mushait is just 30km from Abha and is the larger commercial city in the Asir Region. We drop off at all Khamis Mushait locations including hotels, hospitals, and residential areas." }
+        ]
+    },
+    {
+        slug: "abha-to-jeddah",
+        title: "Abha to Jeddah Taxi | Asir Mountains to Red Sea City Transfer — 550km",
+        description: "Private taxi from Abha to Jeddah. Asir highlands to the Red Sea coast — 550km, 5.5 hours. Pick up from all Abha areas, Khamis Mushait, and Asir tourism sites.",
+        h1: "Abha to Jeddah Taxi — 550km Asir to Hejaz Transfer",
+        distance: "550 km",
+        duration: "5.5 hours",
+        content: "Travel from the cool Asir highlands of Abha back to the Red Sea city of Jeddah — descending from 2,200m down through the dramatic Asir escarpment to the Hejaz coast. The 550km route follows Route 15 north, passing through Al Qunfudhah and Lith before arriving in Jeddah approximately 5.5 hours later. We pick up from all Abha areas including Al Soudah, Green Mountain (Jabal Al Akhdar), city center, Khamis Mushait, and all Asir tourism sites. We deliver to all Jeddah addresses including KAIA airport, Al Hamra, Corniche, Al Balad, North Jeddah, and all hotels. Early morning departures from Abha arriving in Jeddah by early afternoon are recommended for KAIA flight connections.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Abha to Jeddah?", answer: "Abha to Jeddah is approximately 550km and takes 5–5.5 hours via Route 15 north. The descent from Abha's 2,200m altitude to Jeddah's sea-level coast includes spectacular mountain scenery on the Asir escarpment section." },
+            { question: "What time should I leave Abha to catch a Jeddah flight?", answer: "For a KAIA Jeddah Airport departure, add your travel time (5.5 hours) plus at least 2 hours check-in buffer. For a 2pm flight, depart Abha by 6am. We can arrange very early morning pickups — just WhatsApp your flight details when booking." },
+            { question: "Do you pick up from Al Soudah and Habala for the Jeddah transfer?", answer: "Yes. We pick up from Al Soudah Cable Car area, Habala village, Rijal Almaa, and all Asir tourism sites within reasonable distance of Abha. Mention your exact pickup location when booking for accurate scheduling." },
+            { question: "Can you drop me at Jeddah Al Balad (Historic Jeddah) instead of a hotel?", answer: "Yes. We drop off at any Jeddah address — Al Balad old town, Corniche hotels, Al Hamra, North Jeddah compounds, or KAIA airport. Provide your exact destination when booking." }
+        ]
+    },
+    {
+        slug: "jeddah-to-yanbu",
+        title: "Jeddah to Yanbu Taxi | Red Sea Coast North Transfer — 350km",
+        description: "Private taxi from Jeddah to Yanbu city. 350km coastal highway, approximately 3.5 hours. Yanbu Al Bahr dive resort area and Yanbu industrial zone served. Fixed rate.",
+        h1: "Jeddah to Yanbu Taxi — 350km Red Sea Coast Transfer",
+        distance: "350 km",
+        duration: "3.5 hours",
+        content: "Travel north from Jeddah along the Red Sea coast to Yanbu — the second-largest port city on Saudi Arabia's western coast. The 350km route follows the coastal highway northward, passing through Rabigh and KAEC before arriving in Yanbu approximately 3.5 hours later. Yanbu has two distinct areas: Yanbu Al Bahr (Old Town and dive resort area) and Yanbu Al Sinaiyah (the vast industrial port complex). We serve both. Popular with dive tourism visitors heading to Yanbu's world-class Red Sea reefs, and business travelers connecting to the industrial zone's factories and port operations. We pick up from all Jeddah districts.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Jeddah to Yanbu?", answer: "Jeddah to Yanbu city is approximately 350km along the coastal highway and takes 3–3.5 hours. The route passes through Rabigh and the King Abdullah Economic City (KAEC) area along the Red Sea coast." },
+            { question: "What is Yanbu Al Bahr?", answer: "Yanbu Al Bahr is the historic old town and coastal resort area of Yanbu. It is known for its coral reefs, dive sites, corniche, and traditional architecture. It is approximately 10km from Yanbu Al Sinaiyah (the industrial port area)." },
+            { question: "Is Yanbu a good diving destination?", answer: "Yes. Yanbu is often called the City of Flowers and Divers. Its Red Sea reefs are considered among the best beginner-to-intermediate dive sites on the Red Sea's northern coast, with warm water, good visibility, and abundant marine life." },
+            { question: "Can I travel from Jeddah to Yanbu and then continue to Madinah?", answer: "Yes. Yanbu to Madinah is approximately 220km and 2.5 hours east via Route 60. We can plan a Jeddah → Yanbu → Madinah multi-leg transfer. WhatsApp us for a combined itinerary and fixed rate." }
+        ]
+    },
+    {
+        slug: "yanbu-to-jeddah",
+        title: "Yanbu to Jeddah Taxi | Red Sea Coast South Transfer — 350km",
+        description: "Private taxi from Yanbu to Jeddah. 350km Red Sea coastal highway, 3.5 hours. Pick up from Yanbu Al Bahr, Yanbu industrial zone, and all Yanbu addresses. KAIA airport connections.",
+        h1: "Yanbu to Jeddah Taxi — 350km Coastal Transfer",
+        distance: "350 km",
+        duration: "3.5 hours",
+        content: "Travel south from Yanbu along the Red Sea coast to Jeddah — the 350km coastal highway takes approximately 3.5 hours via Rabigh and KAEC. Popular for divers and tourists finishing a Yanbu Red Sea itinerary and heading to Jeddah for KAIA flight departures or onward travel to Makkah and Madinah. We pick up from all Yanbu areas including Yanbu Al Bahr (dive resort area), Yanbu Al Sinaiyah (industrial port), and all residential areas. We deliver to all Jeddah addresses and KAIA airport.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Yanbu to Jeddah?", answer: "Yanbu to Jeddah is approximately 350km and takes 3–3.5 hours via the Red Sea coastal highway." },
+            { question: "Can I connect from Yanbu to KAIA Jeddah Airport for a flight?", answer: "Yes. Allow 3.5 hours travel time plus 2 hours airport check-in buffer — depart Yanbu at least 5.5 hours before your flight departure time." },
+            { question: "Do you pick up from the Yanbu dive resort area?", answer: "Yes. We pick up from all Yanbu Al Bahr addresses including dive centres, hotels, the waterfront Corniche, and residential areas. Also from Yanbu Al Sinaiyah and all industrial zone facilities." }
+        ]
+    },
+    {
+        slug: "madinah-to-jeddah",
+        title: "Madinah to Jeddah Taxi | Holy City to Red Sea City Transfer — 400km",
+        description: "Private taxi from Madinah to Jeddah. 400km via Hijrah Highway, approximately 4 hours. Hajj-permitted for Makkah connections. From all Madinah hotels and Masjid Al-Nabawi area.",
+        h1: "Madinah to Jeddah Taxi — 400km Hijrah Highway Transfer",
+        distance: "400 km",
+        duration: "4 hours",
+        content: "Travel from the blessed city of Madinah to Jeddah's Red Sea metropolis — 400km via the Hijrah Highway taking approximately 4 hours. This is one of the most-travelled pilgrimage routes in Saudi Arabia, used by pilgrims completing Ziyarat in Madinah before flying home from KAIA Jeddah Airport, and by Umrah visitors moving between the two holy cities via Jeddah. We pick up from all Madinah areas including Masjid Al-Nabawi hotels, Quba area, and all central Madinah addresses. We deliver to all Jeddah addresses including KAIA airport and all Jeddah hotels. If you require onward connection from Jeddah to Makkah, we have Hajj-permitted vehicles for the full Madinah → Jeddah → Makkah itinerary.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Madinah to Jeddah?", answer: "Madinah to Jeddah is approximately 400km and takes 4 hours via the Hijrah Highway (Route 60 west). The route is a fast, well-maintained dual carriageway through the Hejaz desert." },
+            { question: "Can I go from Madinah to Jeddah Airport (KAIA) for a flight?", answer: "Yes. We offer direct Madinah to KAIA airport transfers. Allow 4 hours travel time plus 2 hours airport buffer — depart Madinah at least 6 hours before your flight departure time." },
+            { question: "Is the Haramain Express Train faster than a taxi from Madinah to Jeddah?", answer: "The Haramain High Speed Railway connects Madinah to KAIA Jeddah Airport in about 2 hours at much lower cost. For solo travellers, the train is generally preferable. For families with heavy luggage, elderly passengers, or groups requiring door-to-door service, a private taxi is more practical." },
+            { question: "Do you offer Madinah to Jeddah to Makkah three-city transfer?", answer: "Yes. Madinah → Jeddah → Makkah is a popular Umrah itinerary. We offer the full three-city route with Hajj-permitted vehicles for Makkah entry. WhatsApp us for a combined fixed rate." }
+        ]
+    },
+    {
+        slug: "al-baha-to-jeddah",
+        title: "Al Baha to Jeddah Taxi | Hejaz Highlands to Red Sea City — 390km",
+        description: "Private taxi from Al Baha to Jeddah. Hejaz highlands to Red Sea coast — 390km, approximately 4.5 hours. All Al Baha districts and Jeddah areas served. Fixed rate.",
+        h1: "Al Baha to Jeddah Taxi — 390km Highlands to Coast",
+        distance: "390 km",
+        duration: "4.5 hours",
+        content: "Travel from Al Baha's cool Hejaz highlands down to Jeddah's Red Sea coast — a 390km journey descending from 1,700m altitude to sea level in approximately 4.5 hours. Al Baha Province is one of Saudi Arabia's most beautiful highland regions, known for ancient stone villages, pomegranate orchards, and forested mountains. The route follows Route 15 north through the Hejaz escarpment, passing through Al Qunfudhah before reaching Jeddah. We pick up from all Al Baha areas including Al Baha city, Al Aqiq, Baljurashi, Dhee Ayn (the marble village), and Al Sarat highlands. We deliver to all Jeddah addresses and KAIA airport.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Al Baha to Jeddah?", answer: "Al Baha to Jeddah is approximately 390km and takes 4–4.5 hours via Route 15 north through the Hejaz highlands. The route is scenic — especially the section descending from Al Baha's mountain plateau." },
+            { question: "What is Al Baha famous for?", answer: "Al Baha Province is known for ancient stone villages (Dhee Ayn, Al Ain), pomegranate orchards, cedar forests on the Al Sarat plateau, and traditional Hejazi highland architecture. It is a popular domestic tourism destination for Saudi families escaping the summer heat." },
+            { question: "Do you pick up from Dhee Ayn marble village for the Jeddah transfer?", answer: "Yes. We pick up from Dhee Ayn, Al Aqiq, Baljurashi, and all Al Baha Province locations. Provide your exact address when booking." }
+        ]
+    },
+    {
+        slug: "jeddah-to-al-baha",
+        title: "Jeddah to Al Baha Taxi | Red Sea City to Hejaz Highlands — 390km",
+        description: "Private taxi from Jeddah to Al Baha Province. 390km, approximately 4.5 hours via Route 15 south. Marble village Dhee Ayn, highland villages, and Baljurashi served. Fixed rate.",
+        h1: "Jeddah to Al Baha Taxi — 390km Hejaz Highlands Transfer",
+        distance: "390 km",
+        duration: "4.5 hours",
+        content: "Travel from Jeddah's Red Sea coast up into the cool Hejaz highlands of Al Baha Province — ascending from sea level to approximately 1,700m over 390km. The journey takes around 4.5 hours via Route 15 south through Lith and Al Qunfudhah before climbing the escarpment into Al Baha. A popular route for Jeddah families seeking a mountain summer break, visiting the famous marble village of Dhee Ayn, ancient stone settlements, Al Sarat forested highlands, or the vibrant markets of Al Aqiq and Baljurashi. We pick up from all Jeddah districts including KAIA airport, Al Hamra, North Jeddah, the Corniche, and all residential areas.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Jeddah to Al Baha?", answer: "Jeddah to Al Baha is approximately 390km and takes 4–4.5 hours via Route 15 south. The final 80km is a mountain ascent from the Red Sea coastal plain up to Al Baha's 1,700m highland plateau — particularly scenic with terraced agriculture and mountain villages." },
+            { question: "What are the main tourist attractions in Al Baha?", answer: "Al Baha's key attractions include Dhee Ayn (the white marble village), ancient stone villages, Al Sarat Nature Reserve cedar forests, Al Aqiq market town, Baljurashi agricultural markets, and the Hejaz highlands scenery. Best visited October–April for cooler temperatures." },
+            { question: "Can I combine Jeddah to Al Baha with a stop in Taif?", answer: "Taif and Al Baha are not on the same axis — Taif is east of Jeddah while Al Baha is south. A Jeddah → Taif → Al Baha multi-stop route is possible but adds distance. WhatsApp us with your itinerary for a custom combined route." }
+        ]
+    },
+    {
+        slug: "tabuk-to-jeddah",
+        title: "Tabuk to Jeddah Taxi | Northwest Saudi to Red Sea City — 1,200km",
+        description: "Long-distance private taxi from Tabuk to Jeddah. 1,200km, approximately 12 hours via Route 65 south and Hijrah Highway. Scheduled rest stops. Fixed rate.",
+        h1: "Tabuk to Jeddah Taxi — 1,200km Northwest to Red Sea",
+        distance: "1,200 km",
+        duration: "12 hours",
+        content: "Long-haul private taxi from Tabuk in northwest Saudi Arabia to the Red Sea city of Jeddah — a 1,200km journey taking approximately 12 hours with two scheduled rest stops. The route follows Route 65 south from Tabuk through Al Ula and Madinah before joining the Hijrah Highway west to Jeddah. Overnight or split-day options available. Popular for Tabuk residents and NEOM workers relocating to or from Jeddah, and pilgrims connecting from northwest Saudi Arabia to KAIA airport. We pick up from Tabuk city, Tabuk Airport, NEOM Bay, The Line site, and Al Ula. We deliver to all Jeddah addresses including KAIA airport.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Tabuk to Jeddah?", answer: "Tabuk to Jeddah is approximately 1,200km and takes 11–12 hours with two scheduled rest stops. An early morning departure from Tabuk (5–6am) arrives in Jeddah in the early evening." },
+            { question: "Can I stop in Madinah on the way from Tabuk to Jeddah?", answer: "Yes. Madinah is approximately mid-route. We can plan a Madinah Ziyarat stop — typically 2–3 hours — before continuing to Jeddah. Mention this when booking." },
+            { question: "Do you pick up from NEOM for a Jeddah transfer?", answer: "Yes. If your origin is NEOM Bay, The Line site, Sharma, or Gayal, we pick up from there and route via Tabuk south to Jeddah. Add approximately 1.5–2 hours to the journey time." },
+            { question: "Is an overnight stop available on Tabuk to Jeddah?", answer: "Yes. We offer an overnight option with a stop in Madinah — departing Tabuk one day, staying overnight in Madinah, then continuing to Jeddah the following morning. Ideal for pilgrims wanting to pray at Masjid Al-Nabawi." }
+        ]
+    },
+    {
+        slug: "madinah-to-yanbu",
+        title: "Madinah to Yanbu Taxi | Prophet's City to Red Sea Port — 220km",
+        description: "Private taxi from Madinah to Yanbu city. 220km west via Route 60, approximately 2.5 hours. Yanbu Al Bahr dive resort and Yanbu industrial zone served. Fixed rate.",
+        h1: "Madinah to Yanbu Taxi — 220km Red Sea Coast Transfer",
+        distance: "220 km",
+        duration: "2.5 hours",
+        content: "Travel from Madinah west to Yanbu on the Red Sea coast — a 220km drive taking approximately 2.5 hours via Route 60 through the Hejaz desert. Yanbu is a popular destination for Madinah-based pilgrims and expats heading to the Red Sea for diving, seafood, or connecting to Jeddah via the coastal highway. The route passes through the Hejaz plains before descending to the Red Sea coastal corridor. We pick up from all Madinah hotels and deliver to all Yanbu areas: Yanbu Al Bahr (old town and dive resort area), Yanbu Al Sinaiyah (industrial port), and all residential addresses.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Madinah to Yanbu?", answer: "Madinah to Yanbu is approximately 220km and takes 2–2.5 hours via Route 60 west through the Hejaz plain to the Red Sea coast." },
+            { question: "What is Yanbu Al Bahr?", answer: "Yanbu Al Bahr is the historic old town and coastal resort area of Yanbu — known for world-class Red Sea diving, coral reefs, a waterfront corniche, and excellent seafood restaurants. It is distinct from the industrial port area (Yanbu Al Sinaiyah) 10km away." },
+            { question: "Can I go from Madinah to Jeddah via Yanbu?", answer: "Yes, though it adds significant distance compared to the direct Madinah–Jeddah Hijrah Highway route. Madinah → Yanbu → Jeddah via the coastal highway is approximately 580km and 6 hours. The direct Madinah → Jeddah route via Route 60 is 415km and 4 hours. The coastal route is scenic but not recommended purely for speed." }
+        ]
+    },
+    {
+        slug: "tabuk-to-madinah",
+        title: "Tabuk to Madinah Taxi | Northwest Saudi to the Prophet's City — 500km",
+        description: "Private taxi from Tabuk to Madinah Al Munawwarah. 500km via Route 65 south, approximately 5 hours. Scheduled rest stop. Pick up from Tabuk city, Tabuk Airport, NEOM, and Al Ula.",
+        h1: "Tabuk to Madinah Taxi — 500km Northwest to Holy City",
+        distance: "500 km",
+        duration: "5 hours",
+        content: "Private taxi from Tabuk — capital of northwestern Saudi Arabia — south to Madinah Al Munawwarah, City of the Prophet ﷺ. The 500km journey follows Route 65 south through the Hejaz Mountains, passing through Al Ula and its famous Nabataean heritage before arriving in Madinah approximately 5 hours later. A popular route for Tabuk residents, NEOM workers, and northwest Saudi Arabia pilgrims heading to Madinah for Ziyarat and onward to Makkah for Umrah or Hajj. We pick up from Tabuk city, Tabuk Airport, NEOM Bay/The Line, and Al Ula (Hegra). We deliver to all Madinah hotels.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Tabuk to Madinah?", answer: "Tabuk to Madinah is approximately 500km and takes 5–5.5 hours via Route 65 south. One rest stop is included. Early morning departures from Tabuk arrive in Madinah by early afternoon." },
+            { question: "Can I stop at Al Ula on the way from Tabuk to Madinah?", answer: "Yes. Al Ula (Hegra / Mada'in Saleh) is approximately midway between Tabuk and Madinah on Route 65. We can plan a heritage stop at Al Ula — Hegra Nabataean tombs, Dadan ancient city, or the Al Ula old town — before continuing south to Madinah. Allow an extra 2–3 hours for the Al Ula stop." },
+            { question: "Do you pick up from NEOM for a Madinah transfer?", answer: "Yes. We pick up from NEOM Bay, The Line site, Sharma, and the broader Tabuk/northwest area. NEOM to Madinah is approximately 550–600km depending on your specific NEOM location — 6–6.5 hours." }
+        ]
+    },
+    {
+        slug: "madinah-to-alula",
+        title: "Madinah to Al Ula Taxi | Holy City to Nabataean Heritage — 340km",
+        description: "Private taxi from Madinah to Al Ula (Hegra / Mada'in Saleh). 340km north via Route 65, approximately 3.5 hours. Hegra UNESCO site, Dadan, and Al Ula old town served.",
+        h1: "Madinah to Al Ula Taxi — 340km Nabataean Heritage Transfer",
+        distance: "340 km",
+        duration: "3.5 hours",
+        content: "Travel from Madinah north to Al Ula — home of Hegra (Mada'in Saleh), Saudi Arabia's first UNESCO World Heritage Site, and one of the most extraordinary archaeological destinations in the world. The 340km journey follows Route 65 north through the Hejaz highland desert, arriving in Al Ula approximately 3.5 hours later. Al Ula has been significantly developed as a tourism destination under Vision 2030, with luxury desert camps, the Maraya Concert Hall (world's largest mirrored building), Hegra Nabataean tombs, and the ancient Dadan civilization site. Popular with pilgrims extending their Madinah visit with a heritage excursion before or after Umrah. We pick up from all Madinah hotels and deliver to all Al Ula locations including Hegra, the old town, and all Al Ula resorts and camps.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Madinah to Al Ula?", answer: "Madinah to Al Ula is approximately 340km and takes 3–3.5 hours via Route 65 north. The road passes through the rocky Hejaz highland desert — an impressive landscape in its own right." },
+            { question: "What is Hegra (Mada'in Saleh)?", answer: "Hegra — also called Mada'in Saleh — is a Nabataean city dating from the 1st century BCE, contemporaneous with Petra in Jordan. It features over 100 rock-carved monumental tombs in dramatic sandstone outcrops. It became Saudi Arabia's first UNESCO World Heritage Site in 2008 and is the centrepiece of Al Ula's tourism offering." },
+            { question: "Can I do a day trip to Al Ula from Madinah?", answer: "A day trip is possible — departing Madinah at 6am, arriving Al Ula by 9:30am, with 4–5 hours for Hegra and the old town, returning to Madinah by 9pm. However, Al Ula is better experienced with at least one overnight stay. We can arrange the transfer both ways with flexible scheduling." },
+            { question: "Is there a Haramain Train from Madinah to Al Ula?", answer: "No. The Haramain High Speed Railway only connects Madinah–KAIA Jeddah–Makkah. There is no rail link from Madinah to Al Ula. Private taxi is the primary transport option for this route." }
+        ]
+    },
+    {
+        slug: "madinah-to-abha",
+        title: "Madinah to Abha Taxi | Prophet's City to Asir Highlands — 900km",
+        description: "Long-distance private taxi from Madinah to Abha, Asir Province. 900km, approximately 9 hours via Taif or Jeddah connection. Scheduled rest stops. Fixed rate.",
+        h1: "Madinah to Abha Taxi — 900km Hejaz to Asir Transfer",
+        distance: "900 km",
+        duration: "9 hours",
+        content: "Long-haul private taxi from Madinah Al Munawwarah south to Abha — capital of Asir Province and Saudi Arabia's highland garden city. The 900km journey can be routed via Taif (through the Hejaz highlands) or via Jeddah (coastal highway). The Taif routing adds scenic mountain driving; the Jeddah routing is faster on highway. Either way, the journey takes approximately 9 hours with two scheduled rest stops. An early morning departure from Madinah (5–6am) arrives in Abha by early evening. We pick up from all Madinah hotels. We deliver to all Abha locations including city center, Green Mountain, Al Soudah, and Khamis Mushait.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Madinah to Abha?", answer: "Madinah to Abha is approximately 900km and takes 9–9.5 hours via the most direct route (through Taif or Jeddah). Two rest stops are included. An early morning departure is strongly recommended." },
+            { question: "Can I stop in Taif on the way from Madinah to Abha?", answer: "Yes. Taif is on the Madinah–Abha route via the highland highway. A Taif stop — to visit Al Hada, Shubra Palace, or the Taif rose farm area — adds 2–3 hours to the journey. WhatsApp us for a multi-leg itinerary." },
+            { question: "Is it possible to do Madinah to Abha in one day?", answer: "Yes, with an early departure (5am). With two rest stops and 9 hours of driving, you arrive in Abha by 3–4pm. For passengers preferring comfort over speed, an overnight stop in Taif or Jeddah is available." }
+        ]
+    },
+    {
+        slug: "abha-to-madinah",
+        title: "Abha to Madinah Taxi | Asir Highlands to Prophet's City — 900km",
+        description: "Long-distance private taxi from Abha to Madinah Al Munawwarah. 900km, approximately 9 hours. Pick up from all Abha areas and Khamis Mushait. Scheduled rest stops.",
+        h1: "Abha to Madinah Taxi — 900km Asir to Hejaz Transfer",
+        distance: "900 km",
+        duration: "9 hours",
+        content: "Travel from Abha's cool Asir highlands north to Madinah Al Munawwarah — the City of the Prophet ﷺ. The 900km journey can be routed via Taif (scenic highland route) or via Jeddah (coastal highway) and takes approximately 9 hours with two rest stops. A popular route for Asir residents making Umrah or Hajj pilgrimage via Madinah before proceeding to Makkah. We pick up from all Abha locations including city center, Green Mountain (Jabal Al Akhdar), Al Soudah, and Khamis Mushait. We deliver to all Madinah hotels. For onward connections to Makkah, we can arrange the full Abha → Madinah → Makkah three-city itinerary.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Abha to Madinah?", answer: "Abha to Madinah is approximately 900km and takes 9–9.5 hours with two scheduled rest stops. Departure at 5am from Abha arrives in Madinah by early-to-mid afternoon." },
+            { question: "Can I go from Abha to Madinah and then to Makkah for Umrah?", answer: "Yes. Abha → Madinah (9 hrs) → Makkah (4.5 hrs) is a popular two-day Umrah itinerary — arriving in Madinah in the afternoon for Ziyarat and overnight stay, then continuing to Makkah the next morning. We can book the full multi-leg journey at a combined rate." },
+            { question: "Do you pick up from Al Soudah for the Madinah transfer?", answer: "Yes. We pick up from Al Soudah resort area, Green Mountain (Jabal Al Akhdar), and all Abha Province tourism sites including Habala village and Rijal Almaa. Provide your exact pickup location when booking." }
+        ]
+    },
+    {
+        slug: "makkah-to-yanbu",
+        title: "Makkah to Yanbu Taxi | Private Transfer — 350km, 3.5 Hours",
+        description: "Private taxi from Makkah to Yanbu Al-Bahr. 350km along the Red Sea coastal highway, approximately 3.5 hours. Fixed rate, Hajj-permitted vehicles available.",
+        h1: "Makkah to Yanbu Taxi — 350km Red Sea Coastal Transfer",
+        distance: "350 km",
+        duration: "3.5 hours",
+        content: "Travel from the Holy City of Makkah to Yanbu Al-Bahr — the historic Red Sea port city and Saudi Arabia's petrochemical hub — along the coastal highway north. The 350km journey passes through Jeddah and continues up the Red Sea coast, taking approximately 3.5 hours. Popular for Umrah pilgrims continuing travel northward after their pilgrimage, as well as business travellers connecting to Yanbu's industrial city. Fixed rates from any Makkah hotel.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Makkah to Yanbu?", answer: "Makkah to Yanbu is approximately 350km and takes 3–3.5 hours via the coastal highway through Jeddah." },
+            { question: "Does the Makkah to Yanbu route pass through Jeddah?", answer: "Yes — the route passes through or near Jeddah. If you need to make a stop in Jeddah city, we can arrange this at your request." }
+        ]
+    },
+    {
+        slug: "yanbu-to-makkah",
+        title: "Yanbu to Makkah Taxi | Private Transfer — 350km, 3.5 Hours",
+        description: "Private taxi from Yanbu Al-Bahr to Makkah Al-Mukarramah. 350km, approximately 3.5 hours. Direct hotel-to-hotel transfer. Fixed rate, WhatsApp booking.",
+        h1: "Yanbu to Makkah Taxi — 350km Red Sea to Holy City Transfer",
+        distance: "350 km",
+        duration: "3.5 hours",
+        content: "Travel from Yanbu Al-Bahr on the Red Sea coast south to Makkah Al-Mukarramah. The 350km journey follows the Red Sea coastal highway south through Jeddah and into Makkah, taking approximately 3.5 hours. Popular with Umrah pilgrims from the Yanbu and Madinah regions and with travellers combining a Red Sea coast visit with an Umrah pilgrimage.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "Do you pick up from Yanbu Industrial City for the Makkah transfer?", answer: "Yes — we serve both Yanbu Al-Bahr (old town) and Yanbu Al-Sinaiyah (Industrial City) for Makkah transfers." },
+            { question: "Which Miqat applies when travelling from Yanbu to Makkah for Umrah?", answer: "If departing from Yanbu southward directly toward Makkah, consult a scholar about the applicable Miqat for your specific route. We can plan the transfer accordingly and include any Miqat stop." }
+        ]
+    },
+    {
+        slug: "makkah-to-abha",
+        title: "Makkah to Abha Taxi | Private Transfer — 500km, 5 Hours",
+        description: "Private taxi from Makkah to Abha (Asir Region). 500km via Taif and the Asir highland road, approximately 5 hours. Scenic mountain route. Fixed rate.",
+        h1: "Makkah to Abha Taxi — 500km Holy City to Asir Highlands Transfer",
+        distance: "500 km",
+        duration: "5 hours",
+        content: "Travel from Makkah Al-Mukarramah to Abha — the mountain city capital of Asir Region at 2,200 metres altitude — via the spectacular highland road through Taif and Al Hada. The 500km journey climbs from the Tihama coastal plain through the Asir escarpment to Abha's cool highland altitude. Total journey time is approximately 5 hours. Popular with Hajj and Umrah pilgrims from Asir Region returning home after Makkah, and with Makkah-based travellers heading to Abha's famous tourism circuit.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Makkah to Abha?", answer: "Makkah to Abha is approximately 500km and takes 4.5–5 hours via Taif and the Asir highland road." },
+            { question: "Does the Makkah to Abha route pass through Taif?", answer: "Yes — the most scenic and direct route passes through Taif and then climbs the Asir escarpment via the mountain highway. A brief Taif stop can be included on request." }
+        ]
+    },
+    {
+        slug: "abha-to-makkah",
+        title: "Abha to Makkah Taxi | Private Transfer — 500km, 5 Hours",
+        description: "Private taxi from Abha (Asir Region) to Makkah Al-Mukarramah. 500km via Taif highland road, approximately 5 hours. Door-to-door service. Fixed rate.",
+        h1: "Abha to Makkah Taxi — 500km Asir Highlands to Holy City",
+        distance: "500 km",
+        duration: "5 hours",
+        content: "Travel from Abha — the highland capital of Asir Region — down the spectacular mountain escarpment through Taif to Makkah Al-Mukarramah. The 500km journey takes 5 hours via the scenic highland road. We pick up from all Abha locations including Green Mountain, Al Soudah, Khamis Mushait, and Rijal Almaa, and deliver to any Makkah hotel.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "Can I go from Abha to Makkah and then to Madinah?", answer: "Yes. Abha → Makkah (5 hrs) for Umrah, then Makkah → Madinah (4.5 hrs) for Ziyarat is a classic Umrah itinerary. We can arrange both legs." },
+            { question: "Do you pick up from Khamis Mushait?", answer: "Yes — Khamis Mushait is included in our Abha pickup zone at no extra charge. We also cover all Abha Province areas including Al Namas and Bisha." }
+        ]
+    },
+    {
+        slug: "makkah-to-al-baha",
+        title: "Makkah to Al Baha Taxi | Private Transfer — 340km, 3.5 Hours",
+        description: "Private taxi from Makkah to Al Baha (Al Bahah Region). 340km via Taif, approximately 3.5 hours. Fixed rate, door-to-door service.",
+        h1: "Makkah to Al Baha Taxi — 340km Holy City to Thee Ain Highlands",
+        distance: "340 km",
+        duration: "3.5 hours",
+        content: "Travel from Makkah to Al Baha — the highland province famous for Thee Ain Historic Village and the Al Bahah escarpment. The 340km route goes via Taif into the Al Baha highlands, taking approximately 3.5 hours. Al Baha is a common origin for Umrah pilgrims from the southwestern highlands of Saudi Arabia.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Makkah to Al Baha?", answer: "Makkah to Al Baha is approximately 340km and takes 3–3.5 hours via Taif and the Al Baha highland road." },
+            { question: "Can I stop at Thee Ain Village en route?", answer: "Thee Ain is a short detour from the main Al Baha road. We can include a stop on request — let us know when booking." }
+        ]
+    },
+    {
+        slug: "al-baha-to-makkah",
+        title: "Al Baha to Makkah Taxi | Private Transfer — 340km, 3.5 Hours",
+        description: "Private taxi from Al Baha to Makkah Al-Mukarramah. 340km, approximately 3.5 hours. Door-to-door service. Fixed rate.",
+        h1: "Al Baha to Makkah Taxi — 340km Highlands to Holy City Transfer",
+        distance: "340 km",
+        duration: "3.5 hours",
+        content: "Travel from Al Baha province down to Makkah Al-Mukarramah via the Taif highland road. The 340km journey descends the escarpment through dramatic mountain scenery before arriving in Makkah, taking approximately 3.5 hours. We pick up from all Al Baha areas including Thee Ain, Al Mandaq, and Biljurashi.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "Do you pick up from Thee Ain for the Makkah transfer?", answer: "Yes — Thee Ain and surrounding Al Baha villages are in our pickup zone. Provide your exact location when booking." },
+            { question: "Can I combine Al Baha to Makkah with a Taif stop?", answer: "Yes — Taif is on the route between Al Baha and Makkah. A stop at Al Hada, Shafa, or central Taif can be included on request." }
+        ]
+    },
+    {
+        slug: "makkah-to-tabuk",
+        title: "Makkah to Tabuk Taxi | Long Distance Transfer — 1,400km, 13 Hours",
+        description: "Long-distance private taxi from Makkah to Tabuk Region. 1,400km via the Red Sea coastal highway north. Scheduled rest stops, two drivers for safety. Fixed rate.",
+        h1: "Makkah to Tabuk Taxi — 1,400km Holy City to Northwest Saudi Transfer",
+        distance: "1,400 km",
+        duration: "13 hours",
+        content: "Long-distance private taxi from Makkah Al-Mukarramah to Tabuk — gateway to northwest Saudi Arabia including Neom, Al Ula, and Haql. The 1,400km journey follows the Red Sea coastal highway north through Jeddah, Yanbu, and Al Wajh into Tabuk, taking approximately 13 hours with scheduled rest stops. Popular with Tabuk residents returning home after Hajj or Umrah. We assign two drivers for this distance to ensure safe and comfortable travel.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does the Makkah to Tabuk drive take?", answer: "Makkah to Tabuk is approximately 1,400km and takes 13–14 hours via the Red Sea coastal highway through Yanbu and Al Wajh. Scheduled rest stops approximately every 3–4 hours." },
+            { question: "Do you assign two drivers for the Makkah to Tabuk journey?", answer: "Yes — for journeys over 10 hours, we assign two drivers who alternate. This ensures safety and that no single driver exceeds regulated driving hours." }
+        ]
+    },
+    {
+        slug: "tabuk-to-makkah",
+        title: "Tabuk to Makkah Taxi | Long Distance Transfer — 1,400km, 13 Hours",
+        description: "Long-distance private taxi from Tabuk to Makkah Al-Mukarramah. 1,400km via the Red Sea coastal highway south. Overnight transfer with rest stops. Fixed rate.",
+        h1: "Tabuk to Makkah Taxi — 1,400km Northwest Saudi to Holy City",
+        distance: "1,400 km",
+        duration: "13 hours",
+        content: "Long-distance private taxi from Tabuk south to Makkah Al-Mukarramah via the Red Sea coastal highway. The 1,400km journey passes through Al Wajh, Yanbu, and Jeddah before arriving in Makkah, taking approximately 13 hours. Popular with Tabuk and northwest Saudi Arabia residents making annual Hajj and Umrah. We provide two drivers for safety on this long route.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "Where do we stop on the Tabuk to Makkah road?", answer: "Scheduled rest stops approximately every 3–4 hours — typically at Yanbu (midpoint) for a 30-minute break with prayers, plus fuel stops at Al Wajh and near Jeddah." },
+            { question: "Can pilgrims from Tabuk use this service for Hajj 2026?", answer: "Yes. The Miqat for pilgrims from the direction of Tabuk is Al-Juhfah (Rabigh) — approximately 187km north of Makkah on the Red Sea coast. We include a Miqat stop at Rabigh mosque on request." }
+        ]
     }
 ];
