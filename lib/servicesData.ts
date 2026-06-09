@@ -1712,6 +1712,38 @@ export const servicesData: ServiceData[] = [
         ]
     },
     {
+        slug: "dammam-khobar-bahrain-transfer",
+        title: "Dammam, Khobar & Bahrain Causeway Transfer Service",
+        description: "Private taxi across the King Fahd Causeway — Dammam or Khobar to Manama, Bahrain. Also KFAC Airport transfers and Eastern Province intercity routes. Licensed cross-border driver.",
+        content: "Our Eastern Province transfer service covers the full triangle: Dammam, Al Khobar, and the Bahrain Causeway. For Bahrain Causeway crossings, we use only licensed cross-border taxis — standard Saudi app taxis cannot cross into Bahrain. Our drivers know both immigration checkpoints (Saudi exit at Al Aziziyah, Bahrain entry at the Bahrain side) and all document requirements for GCC and non-GCC travellers. We also handle KFAC Airport (DMM) arrivals pickups with flight tracking, intercity transfers between Dammam and Khobar, and Dhahran/Aramco compound transfers. For regular Causeway commuters and Aramco families, ask about monthly fixed-rate accounts.",
+        features: ["Licensed cross-border Causeway taxi", "KFAC Airport arrivals pickup (flight tracked)", "Dammam ↔ Khobar intercity", "Dhahran/Aramco compound transfers", "Bahrain door-to-door (any Manama address)", "Monthly accounts for regular commuters"],
+        pricing: [
+            { title: "Khobar to Manama, Bahrain", price: "Get Quote" },
+            { title: "Dammam to Manama, Bahrain", price: "Get Quote" },
+            { title: "KFAC Airport to Khobar / Dammam", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Does the Bahrain Causeway taxi cover the toll?", answer: "Yes — the King Fahd Causeway toll is included in the quoted fare. No additional toll payment from passengers." },
+            { question: "What documents do non-GCC residents need to cross?", answer: "Passport, valid Saudi Iqama, and a Bahrain visa or confirmed eVisa eligibility. Our driver advises on the checkpoint procedure but cannot obtain visas. Check Bahrain eVisa requirements before booking." }
+        ]
+    },
+    {
+        slug: "jubail-contractor-transfer",
+        title: "Jubail Industrial City Contractor Transfer Service",
+        description: "Contractor and corporate taxi to Jubail Industrial City from Dammam, Al Khobar, and KFAC Airport. SABIC, SADAF, SAFCO facilities. Group vehicles, shift rotations, monthly accounts.",
+        content: "Jubail Industrial City — one of the world's largest planned industrial cities — is 100km north of Dammam along the Arabian Gulf coast. Our Jubail contractor transfer service is designed for the specific needs of petrochemical workers, site managers, and corporate visitors: gate-specific drop-off to SABIC, SADAF, SAFCO, National Petrochemical Company, and the dozens of downstream facilities; group vehicles for shift rotations (Toyota Hiace, 11 passengers); KFAC Airport arrivals pickups for contractors arriving from international rotations; and monthly account billing for companies with regular staff movements. For executives and visitors, we also handle ITHRA (Dhahran) transfers and Khobar corporate hotel pickups.",
+        features: ["Gate-specific facility drop-off in Jubail", "KFAC Airport arrivals for contractor rotations", "Group vehicles (4–12 passengers)", "Monthly fixed-rate corporate accounts", "Shift rotation scheduling (morning and evening)", "Jubail to Dammam / KFAC return trips"],
+        pricing: [
+            { title: "Dammam to Jubail (single)", price: "Get Quote" },
+            { title: "KFAC Airport to Jubail", price: "Get Quote" },
+            { title: "Group Shift Rotation (10–11 pax)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Can I book a regular daily driver for KFAC–Jubail contractor runs?", answer: "Yes — for regular rotation cycles, we offer a fixed monthly contract with priority booking and dedicated vehicles. Contact us with your rotation schedule." },
+            { question: "Which Jubail facilities do you serve?", answer: "All major facilities: SABIC Jubail Complex, SADAF, SAFCO, National Petrochemical (NPC), Saudi Yanbu Petrochemical (YANPET), Arabian Petrochemical (PETROKEMYA), and the Royal Commission residential/commercial zone." }
+        ]
+    },
+    {
         slug: "tabuk-wadi-disah-tour",
         title: "Wadi Disah Canyon Tour from Tabuk — Half-Day & Full-Day Driver-Waits",
         description: "Private taxi day trip from Tabuk to Wadi Disah (Wadi Qaraqir) — 60km south, 50 minutes. Dramatic 200–300m sandstone canyon, palm groves, freshwater springs. Driver waits while you explore. Half-day or full-day.",

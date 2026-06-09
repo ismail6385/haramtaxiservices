@@ -2860,6 +2860,177 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "dammam-to-jeddah",
+        title: "Dammam to Jeddah Taxi | Eastern Province to Red Sea — 1,100km, 10 Hours",
+        description: "Private taxi from Dammam or Al Khobar to Jeddah. 1,100km via Route 40 through Riyadh. Fixed rate, long-distance comfort vehicle, two drivers on request.",
+        h1: "Dammam to Jeddah Taxi — Eastern Province to Red Sea Gateway",
+        distance: "1,100 km",
+        duration: "10 hours",
+        content: "Private taxi from Dammam (or Al Khobar) to Jeddah — 1,100km via Route 40 through Riyadh, continuing west on the Riyadh–Makkah–Jeddah highway. A 10-hour journey through the heart of Saudi Arabia, passing the Hejaz escarpment and descending to Jeddah on the Red Sea coast. Popular for expat relocations, business travellers, and families moving between the Eastern Province and the Hejaz. We provide two drivers on request for full-day journeys.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long does Dammam to Jeddah take by taxi?", answer: "Approximately 10–11 hours depending on traffic through Riyadh and at the Hejaz mountain descent. We schedule a rest stop in Riyadh or Al-Dawadmi (midpoint) for 30 minutes." },
+            { question: "Is two drivers available for Dammam to Jeddah?", answer: "Yes — for this long journey, two-driver option is available on request. Drivers alternate every 4 hours. Same fixed price — ask when booking." }
+        ]
+    },
+    {
+        slug: "jeddah-to-dammam",
+        title: "Jeddah to Dammam Taxi | Red Sea to Eastern Province — 1,100km, 10 Hours",
+        description: "Private taxi from Jeddah to Dammam or Al Khobar. 1,100km via Route 40 through Riyadh. Fixed rate, long-distance comfort vehicle.",
+        h1: "Jeddah to Dammam Taxi — Red Sea to Eastern Province",
+        distance: "1,100 km",
+        duration: "10 hours",
+        content: "Private taxi from Jeddah to Dammam (Eastern Province). 1,100km via Route 40 — ascending the Hejaz escarpment east of Jeddah, crossing the Najd plateau through Riyadh, then descending to the flat eastern lowlands and the Arabian Gulf coast. Return leg of the Dammam–Jeddah corridor. Pickup from Jeddah hotels, King Abdulaziz Airport (JED), or any Jeddah address.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be picked up at Jeddah King Abdulaziz Airport for the Dammam journey?", answer: "Yes — we provide flight-tracked pickup at KAIA (JED) arrivals. Confirm your flight number when booking. Name board at arrivals hall exit." },
+            { question: "What is the road like from Jeddah to Dammam?", answer: "The Jeddah–Riyadh highway is a well-maintained dual carriageway. The Hejaz mountain section (first 100km east of Jeddah) has winding roads requiring careful driving — all our long-distance drivers are experienced on this route." }
+        ]
+    },
+    {
+        slug: "dammam-to-bahrain",
+        title: "Dammam to Bahrain Taxi | King Fahd Causeway Transfer to Manama",
+        description: "Taxi from Dammam or Al Khobar to Bahrain via King Fahd Causeway. Door-to-door Manama transfer. Licensed cross-border taxi, immigration experienced. Fixed rate.",
+        h1: "Dammam to Bahrain Taxi — King Fahd Causeway to Manama",
+        distance: "100 km",
+        duration: "1.5 hours",
+        content: "Private taxi from Dammam (or Al Khobar) to Manama, Bahrain via the King Fahd Causeway. Door-to-door service — pickup at your Dammam hotel or address, drop-off at your Bahrain destination. Our driver is licensed for cross-border Saudi–Bahrain crossings and experienced with both immigration checkpoints. The Causeway is 25km long — allow 20–90 minutes at checkpoints depending on the day.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "Can all nationalities cross the Bahrain Causeway by taxi?", answer: "GCC nationals can cross freely. Non-GCC residents require a valid Bahrain visa (or eVisa). Some nationalities receive Bahrain visa on arrival. Check Bahrain eVisa eligibility before travel." },
+            { question: "How long does the Causeway crossing take on a normal day?", answer: "Driving the Causeway: 20–30 minutes. Immigration checkpoints (Saudi exit + Bahrain entry): 15–45 minutes on a weekday. Thursday evening / Friday peak: 1.5–2 hours at checkpoints." }
+        ]
+    },
+    {
+        slug: "bahrain-to-dammam",
+        title: "Bahrain to Dammam Taxi | King Fahd Causeway Return Transfer",
+        description: "Taxi from Manama Bahrain to Dammam or Al Khobar via King Fahd Causeway. Licensed cross-border taxi. Airport drop-off to KFAC or city hotels. Fixed rate.",
+        h1: "Bahrain to Dammam Taxi — Manama to Eastern Province via Causeway",
+        distance: "100 km",
+        duration: "1.5 hours",
+        content: "Return taxi from Manama (or any Bahrain city) to Dammam, Al Khobar, KFAC Airport, or Dhahran via the King Fahd Causeway. Pickup from your Bahrain hotel or address, door-to-door to your Saudi destination. Pre-book the return leg when booking your outward Dammam–Bahrain journey.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be dropped at KFAC Airport from Bahrain?", answer: "Yes — pickup in Manama, Bahrain and drop-off at KFAC Airport (DMM) is a common route. Allow 2–2.5 hours total for normal days — add extra buffer if crossing on Thursday/Friday." },
+            { question: "Do I need to pre-book a return from Bahrain?", answer: "Yes — we recommend booking both outward and return at the same time. Pre-booking ensures a licensed cross-border taxi is available for your return regardless of timing." }
+        ]
+    },
+    {
+        slug: "khobar-to-jeddah",
+        title: "Khobar to Jeddah Taxi | Eastern Province to Red Sea — 1,100km",
+        description: "Private taxi from Al Khobar to Jeddah. 1,100km via Riyadh and Route 40. Fixed rate, long-distance comfortable vehicle.",
+        h1: "Khobar to Jeddah Taxi — Eastern Province to Jeddah",
+        distance: "1,100 km",
+        duration: "10 hours",
+        content: "Private taxi from Al Khobar to Jeddah — same highway as Dammam–Jeddah, departing from Al Khobar. 1,100km via Route 40 west through Riyadh. Pickup from Khobar hotels, the Gulf Corniche area, or Aramco compound.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "Is there a difference between Dammam to Jeddah and Khobar to Jeddah?", answer: "The journey time is similar — Al Khobar is 30km from central Dammam so departure point differs slightly but route and duration are the same. Both cities use Route 40 west." }
+        ]
+    },
+    {
+        slug: "jeddah-to-khobar",
+        title: "Jeddah to Khobar Taxi | Red Sea to Eastern Province Transfer",
+        description: "Private taxi from Jeddah to Al Khobar. 1,100km via Route 40 through Riyadh. Fixed rate, door-to-door.",
+        h1: "Jeddah to Khobar Taxi — Red Sea to Eastern Province",
+        distance: "1,100 km",
+        duration: "10 hours",
+        content: "Private taxi from Jeddah to Al Khobar. Return leg of the Khobar–Jeddah corridor. Drop-off to Khobar Corniche hotels, Aramco compound, Dhahran, or anywhere in the Eastern Province. Pickup from Jeddah King Abdulaziz Airport (JED) with flight tracking available.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be dropped at the Aramco compound in Dhahran from Jeddah?", answer: "Yes — drop-off to Dhahran, Aramco compound, KFUPM campus, or anywhere in the Eastern Province is available. Confirm your specific destination when booking." }
+        ]
+    },
+    {
+        slug: "dammam-to-khobar",
+        title: "Dammam to Khobar Taxi | Eastern Province Intercity Transfer",
+        description: "Taxi from Dammam to Al Khobar. 30km, 30 minutes. Hotel transfers, KFAC Airport connections, business districts. Fixed rate.",
+        h1: "Dammam to Khobar Taxi — Eastern Province Intercity",
+        distance: "30 km",
+        duration: "30 minutes",
+        content: "Short intercity taxi from Dammam city to Al Khobar — 30km along the Dammam–Khobar arterial highway, approximately 30 minutes. Common for airport connections (KFAC to Khobar hotels), business meetings, and accessing the Khobar Gulf Corniche from Dammam accommodation.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "What is the best route from Dammam to Khobar?", answer: "The main Dammam–Khobar highway (King Fahd Road) is the standard route — 30km, 25–30 minutes without traffic. King Abdullah Road is an alternative if there are delays." }
+        ]
+    },
+    {
+        slug: "khobar-to-dammam",
+        title: "Khobar to Dammam Taxi | Eastern Province Intercity Transfer",
+        description: "Taxi from Al Khobar to Dammam. 30km, 30 minutes. Hotel pickups, business transfers, KFAC Airport connections.",
+        h1: "Khobar to Dammam Taxi — Eastern Province Intercity",
+        distance: "30 km",
+        duration: "30 minutes",
+        content: "Intercity taxi from Al Khobar to Dammam city centre. Return leg of the Dammam–Khobar route. Common for KFAC Airport drop-offs from Khobar hotels, Corniche area pickups, and business district transfers.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "Can I get a taxi from the Khobar Corniche to Dammam centre?", answer: "Yes — pickup at any Khobar Corniche hotel or address, drop-off anywhere in Dammam. Fixed rate, 30 minutes on the main highway." }
+        ]
+    },
+    {
+        slug: "dammam-to-jubail",
+        title: "Dammam to Jubail Taxi | Eastern Province to Jubail Industrial City",
+        description: "Taxi from Dammam to Jubail Industrial City. 100km, 1 hour via coastal Highway 5. Contractor transfers, corporate pickups, group vehicles available.",
+        h1: "Dammam to Jubail Taxi — Eastern Province to Industrial City",
+        distance: "100 km",
+        duration: "1 hour",
+        content: "Private taxi from Dammam to Jubail Industrial City — 100km north along the Arabian Gulf coastal highway (Route 5). Popular for contractor arrivals at KFAC Airport transiting to Jubail, corporate staff between Dammam and Jubail, and executives visiting SABIC, SADAF, and other Jubail facilities. Group vehicles (4–12 passengers) are available for shift rotations.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How do I specify which gate or facility in Jubail?", answer: "Jubail Industrial City is vast — tell us the company name and gate number (or facility name) when booking. Our drivers know the major facilities: SABIC, SADAF, SAFCO, National Petrochemical Company, etc." },
+            { question: "Do you offer group transport for shift rotations to Jubail?", answer: "Yes — Toyota Hiace (11 passengers) and GMC Yukon XL (7 passengers) are available for group shift transfers. Contact us with group size and shift schedule for a fixed monthly rate." }
+        ]
+    },
+    {
+        slug: "jubail-to-dammam",
+        title: "Jubail to Dammam Taxi | Jubail Industrial City to Eastern Province",
+        description: "Taxi from Jubail Industrial City to Dammam or KFAC Airport. 100km, 1 hour. Contractor transfers, KFAC airport drop-offs, return trip booking.",
+        h1: "Jubail to Dammam Taxi — Industrial City to Eastern Province",
+        distance: "100 km",
+        duration: "1 hour",
+        content: "Private taxi from Jubail Industrial City to Dammam city or KFAC Airport. Return leg of the Dammam–Jubail contractor corridor. Pickup at Jubail facility gates, guesthouses, or residential areas. Common route for contractors completing rotation and transferring to KFAC for departing flights.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be picked up at Jubail and dropped at KFAC Airport?", answer: "Yes — Jubail to KFAC Airport is 140km, approximately 1.5 hours. This is a very common route for contractor rotation departures. Book in advance and provide your flight time." }
+        ]
+    },
+    {
         slug: "tabuk-to-makkah",
         title: "Tabuk to Makkah Taxi | Long Distance Transfer — 1,400km, 13 Hours",
         description: "Long-distance private taxi from Tabuk to Makkah Al-Mukarramah. 1,400km via the Red Sea coastal highway south. Overnight transfer with rest stops. Fixed rate.",
