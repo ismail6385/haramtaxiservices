@@ -3014,6 +3014,86 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "abha-to-jizan",
+        title: "Abha to Jizan Taxi | Asir Mountain to Red Sea Coast — 200km",
+        description: "Private taxi from Abha to Jizan (Jazan) — 200km, 2.5 hours. Mountain plateau to Red Sea coast. Fixed rate.",
+        h1: "Abha to Jizan Taxi — Asir Mountains to the Red Sea",
+        distance: "200 km",
+        duration: "2.5 hours",
+        content: "Private taxi from Abha to Jizan (Jazan) — the Red Sea port city at the southern tip of Saudi Arabia's Hejaz coast. The 200km journey descends from Abha's 2,200m plateau through the Asir escarpment to the hot, humid Tihama coastal plain and Jizan city. The drive offers dramatic scenery as the road drops from cool mountains to tropical coast. Jizan is known for its seafood, Farasan Islands, and as Saudi Arabia's most tropical city.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "What is the road like from Abha to Jizan?", answer: "The first 80km from Abha descends the Asir escarpment on a winding mountain road with dramatic views. The road then straightens as you reach the Tihama coastal plain. Total journey: 200km, approximately 2.5 hours." }
+        ]
+    },
+    {
+        slug: "jizan-to-abha",
+        title: "Jizan to Abha Taxi | Red Sea Coast to Asir Mountains — 200km",
+        description: "Private taxi from Jizan (Jazan) to Abha — 200km, 2.5 hours. Red Sea coast to cool Asir mountains. Fixed rate.",
+        h1: "Jizan to Abha Taxi — Red Sea to Asir Mountains",
+        distance: "200 km",
+        duration: "2.5 hours",
+        content: "Return taxi from Jizan on the Red Sea coast up to Abha in the Asir mountains. The road climbs from sea level to 2,200m over 80km of winding mountain road — one of the most dramatic elevation changes in Saudi Arabia. Jizan Airport (GIZ) pickups available with flight tracking.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be picked up at Jizan Airport (GIZ) for the Abha journey?", answer: "Yes — flight-tracked pickup at Jizan Airport with name board at arrivals. Direct to Abha city or Khamis Mushait. Confirm flight number when booking." }
+        ]
+    },
+    {
+        slug: "abha-to-najran",
+        title: "Abha to Najran Taxi | Asir Mountains to Najran — 300km",
+        description: "Private taxi from Abha to Najran — 300km, 3.5 hours east through the Asir highlands. Fixed rate.",
+        h1: "Abha to Najran Taxi — Asir to the Deep South",
+        distance: "300 km",
+        duration: "3.5 hours",
+        content: "Private taxi from Abha east to Najran — Saudi Arabia's southernmost city, near the Yemen border. The 300km journey crosses the Asir highlands on Route 15, descending into the Najran Valley where an ancient oasis city and historical sites (Ukhdood, Najran Old Town) await. A less-travelled but scenically dramatic route.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "What is in Najran that is worth visiting from Abha?", answer: "Najran has Al-Ukhdood (an ancient pre-Islamic archaeological site mentioned in the Quran), Najran Palace Museum, the old mud-brick city, and the Najran Valley with dramatic palm-lined wadis. The Najran Corniche along Wadi Najran is the most scenic area." }
+        ]
+    },
+    {
+        slug: "najran-to-abha",
+        title: "Najran to Abha Taxi | Southern Saudi to Asir Mountains — 300km",
+        description: "Private taxi from Najran to Abha — 300km, 3.5 hours through the Asir highlands. Fixed rate.",
+        h1: "Najran to Abha Taxi — Southern Saudi to Asir",
+        distance: "300 km",
+        duration: "3.5 hours",
+        content: "Return taxi from Najran west to Abha through the Asir mountain highlands. Pickup from Najran city, hotel, or Najran Airport (EAM) with flight tracking. Drop-off in Abha city or Khamis Mushait.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be picked up at Najran Airport (EAM) for Abha?", answer: "Yes — flight-tracked pickup at Najran Airport (EAM) with name board at arrivals. Direct to Abha city or Khamis Mushait." }
+        ]
+    },
+    {
+        slug: "khamis-mushait-to-abha",
+        title: "Khamis Mushait to Abha Taxi | Asir Twin Cities Intercity Transfer",
+        description: "Taxi from Khamis Mushait to Abha — 25km, 30 minutes. Twin city intercity transfer. Fixed rate.",
+        h1: "Khamis Mushait to Abha Taxi — Asir Twin City Transfer",
+        distance: "25 km",
+        duration: "30 minutes",
+        content: "Short intercity taxi from Khamis Mushait to Abha — the two largest cities in the Asir region, 25km apart. Common for hotel connections, business meetings, and accessing Abha attractions (Green Mountain, Dam Lake, Old Town) from Khamis Mushait accommodation.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "Is it better to stay in Abha or Khamis Mushait?", answer: "Abha has more tourist infrastructure (Green Mountain, Dam Lake, cable car, Old Town). Khamis Mushait is closer to the airport and often has more affordable hotels. Many visitors stay in Khamis Mushait and taxi to Abha for sightseeing." }
+        ]
+    },
+    {
         slug: "jubail-to-dammam",
         title: "Jubail to Dammam Taxi | Jubail Industrial City to Eastern Province",
         description: "Taxi from Jubail Industrial City to Dammam or KFAC Airport. 100km, 1 hour. Contractor transfers, KFAC airport drop-offs, return trip booking.",

@@ -1712,6 +1712,38 @@ export const servicesData: ServiceData[] = [
         ]
     },
     {
+        slug: "abha-asir-mountain-tour",
+        title: "Abha & Asir Mountain Tour — Al-Soudah, Habala, Asir National Park",
+        description: "Private taxi day tour from Abha — Al-Soudah peak (2,910m), Habala Village cable car, Asir National Park cloud forest. Driver waits throughout. Half-day or full-day.",
+        content: "Abha is the base for the Asir mountain circuit — one of Saudi Arabia's most spectacular day-trip sequences. Our mountain tour service provides a taxi with a driver who waits at each site while you explore. Standard circuit: Abha city → Al-Soudah peak (2,910m, 40 min drive) → Al-Soudah Adventure Park → cable car descent to Habala Village → cable car return → Asir National Park scenic drive → return to Abha. The full circuit takes approximately 6–7 hours and covers all major Asir sites. Half-day version (Al-Soudah + Habala only): 3.5 hours. For groups, Toyota Hiace (11 passengers) and GMC Yukon XL (7 passengers) are available.",
+        features: ["Driver waits at all sites", "Al-Soudah summit (2,910m)", "Habala cable car (driver covers road — you take the cable car)", "Asir National Park cloud forest", "Half-day or full-day options", "Group vehicles available"],
+        pricing: [
+            { title: "Half-Day (Al-Soudah + Habala)", price: "Get Quote" },
+            { title: "Full-Day (full Asir circuit)", price: "Get Quote" },
+            { title: "Group Vehicle (7–11 passengers)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "What is the best season for the Abha mountain tour?", answer: "July–September (khareef season) for the mist and lush green landscapes. October–April for clear skies, cool temperatures, and best photography light. Summer (July–August) is peak season — book accommodation far in advance." },
+            { question: "Do I need to book cable car tickets in advance?", answer: "Yes — pre-book cable car tickets at asirpark.com, especially in khareef season (July–September) when demand is very high. Your driver can advise on current availability." }
+        ]
+    },
+    {
+        slug: "abha-airport-transfer",
+        title: "Abha Airport Transfer — Prince Sultan Airport (AHB) Arrivals & Departures",
+        description: "Pre-booked taxi at Abha Airport (AHB). Flight tracked, name board. Transfer to Abha, Khamis Mushait, Al-Soudah, or anywhere in Asir. Fixed rate, 24/7.",
+        content: "Professional airport transfer service at Abha Airport (AHB / Prince Sultan bin Abdulaziz Airport). We provide flight-tracked arrivals pickup with name board at the arrivals exit. Destinations from the airport: Abha city (20km, 25 min), Khamis Mushait (15km, 20 min), Al-Soudah (45km, 55 min), Habala Village cable car station (60km, 70 min), and Asir National Park. For departures, we provide hotel pickup and drop-off at AHB departures. All rates are fixed and confirmed by WhatsApp before travel.",
+        features: ["Flight tracking — no extra charge for delays", "Name board at AHB arrivals exit", "Transfer to Abha, Khamis Mushait, or any Asir destination", "Departures pickup from any Abha or Khamis Mushait hotel", "Group vehicles (Hiace, Yukon XL) for families"],
+        pricing: [
+            { title: "AHB to Abha City", price: "Get Quote" },
+            { title: "AHB to Khamis Mushait", price: "Get Quote" },
+            { title: "AHB to Al-Soudah", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Which airlines use Abha Airport (AHB)?", answer: "Saudia (domestic routes to Riyadh, Jeddah, Madinah), flyadeal, and flynas. Limited international routes. Most international travellers connect via Riyadh (RUH) or Jeddah (JED)." },
+            { question: "Can I get an airport transfer to start my Asir tour directly from AHB?", answer: "Yes — many visitors pre-book AHB arrivals pickup combined with a first stop at Al-Soudah or Habala before checking into their hotel. Possible same-day if the flight arrives by morning." }
+        ]
+    },
+    {
         slug: "dammam-khobar-bahrain-transfer",
         title: "Dammam, Khobar & Bahrain Causeway Transfer Service",
         description: "Private taxi across the King Fahd Causeway — Dammam or Khobar to Manama, Bahrain. Also KFAC Airport transfers and Eastern Province intercity routes. Licensed cross-border driver.",
