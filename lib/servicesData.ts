@@ -391,6 +391,38 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
+        slug: "hail-jubbah-day-trip",
+        title: "Hail to Jubbah UNESCO Day Trip — Driver Waits Round Trip",
+        description: "Pre-booked taxi day trip from Hail to Jubbah UNESCO World Heritage petroglyphs. 100km, 1 hour each way. Driver waits at site 2–3 hours. No taxis at Jubbah — essential to pre-book.",
+        content: "A day trip from Hail to the Jubbah UNESCO rock art site requires a pre-booked driver-waits taxi — there are no local taxis or app taxis at Jubbah. Our driver departs Hail in the morning, takes you to the Jabal Umm Sinman petroglyph panels and visitor centre, waits 2–3 hours, and returns to Hail. Early morning departure recommended for best photography light on the 10,000-year-old rock carvings.",
+        features: ["Driver Waits at Site", "No Jubbah Taxis Available", "Round Trip Fixed Rate", "Early Morning Recommended", "Visitor Centre Stop", "Photography Time Included"],
+        pricing: [
+            { title: "Round Trip (driver waits 2–3 hrs)", price: "Get Quote" },
+            { title: "Extended Day (full day, multiple sites)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "Why can't I just get a taxi home from Jubbah?", answer: "Jubbah is a small oasis town 100km from Hail with no local taxis, Careem, or Uber. Without a pre-booked return driver, there is no way to get back to Hail. This makes a driver-waits booking essential — not optional." },
+            { question: "How long does the driver wait at Jubbah?", answer: "Standard package: driver waits 2–3 hours — enough for the visitor centre, main petroglyph panels at Jabal Umm Sinman, and the oasis walk. Extended packages are available if you want a full day at the site." },
+            { question: "What time should I depart Hail for Jubbah?", answer: "7:00–7:30am departure is ideal — arriving at Jubbah by 8:30am when the light is low and perfect for photographing the carved rock panels. Midday light is flat and harsh on the open sandstone." }
+        ]
+    },
+    {
+        slug: "hail-heritage-circuit",
+        title: "Hail Heritage City Circuit — A'arif Fort, Qasr Barzan & Al-Qishla",
+        description: "Driver-waits heritage circuit of Hail city covering A'arif Fort (hilltop panorama), Qasr Barzan (Shammar palace), and Al-Qishla (Ottoman barracks). 3.5–4 hours, fixed rate.",
+        content: "Hail's three major heritage sites — A'arif Fort, Qasr Barzan, and Al-Qishla Palace — are all within the central city area and cover the layered history of northern Arabia: Shammar tribal fortress, Al Rashid dynasty palace, and Ottoman military architecture. Our driver takes you between all three sites and waits at each. Combine with Jabal Aja mountain for a full Hail discovery day.",
+        features: ["A'arif Fort — 360° Panorama", "Qasr Barzan — Shammar Palace", "Al-Qishla — Ottoman Heritage", "Driver Waits at Each Site", "3.5–4 Hours", "Fixed Rate"],
+        pricing: [
+            { title: "Heritage Circuit (3 sites)", price: "Get Quote" },
+            { title: "Heritage + Jabal Aja (full day)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "What is the best order to visit the Hail heritage sites?", answer: "Recommended order: start at A'arif Fort at sunset for the panoramic city views → Qasr Barzan (closes before sunset, good afternoon light) → Al-Qishla (evening, nearby). For morning visitors: A'arif Fort first (good morning light), then Barzan, then Al-Qishla." },
+            { question: "Can I combine the heritage circuit with Jubbah?", answer: "Yes — Hail heritage circuit in the morning, return to city for lunch, then drive to Jubbah in the afternoon. A full-day rate covers both. Best done in reverse (Jubbah first, morning light) if photography is the priority." },
+            { question: "Are the heritage sites free to enter?", answer: "A'arif Fort and Qasr Barzan are managed by the Saudi Heritage Commission — entry may be free or require a small fee. Al-Qishla is a cultural centre. Confirm current arrangements on the day." }
+        ]
+    },
+    {
         slug: "qassim-airport-taxi",
         title: "Prince Naif Airport (Qassim) Taxi",
         description: "Taxi from ELQ Airport to Buraidah and Unaizah.",

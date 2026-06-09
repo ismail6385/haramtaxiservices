@@ -368,6 +368,114 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "riyadh-to-hail",
+        title: "Riyadh to Hail Taxi | Long-Distance Desert Highway Transfer",
+        description: "Private taxi from Riyadh to Hail — 640km, 6 hours on Highway 65 through the Najd plateau. Direct transfer to Hail city, UNESCO Jubbah, or any Hail destination.",
+        h1: "Riyadh to Hail Taxi — Desert Highway Transfer",
+        distance: "640 km",
+        duration: "6 hours",
+        content: "Private long-distance taxi from Riyadh to Hail — 640km north through the central Najd desert on Highway 65. Direct to Hail city, Jubbah, Qasr Barzan, or your hotel. Fixed rate confirmed on WhatsApp before departure.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Riyadh to Hail?", answer: "The journey is approximately 640km and takes around 6 hours by private taxi on Highway 65 through the Najd plateau." },
+            { question: "Can I be picked up from Riyadh Airport (RUH) and taken to Hail?", answer: "Yes — we pick up from King Khalid International Airport (RUH) or any Riyadh address and transfer directly to Hail city or Jubbah." },
+            { question: "Is there a bus or train from Riyadh to Hail?", answer: "SAPTCO buses operate Riyadh–Hail but take longer and require a transfer. Private taxi is the most practical option for visitors, especially families or those with luggage." }
+        ]
+    },
+    {
+        slug: "hail-to-madinah",
+        title: "Hail to Madinah Taxi | Northern Route Private Transfer",
+        description: "Taxi from Hail to Madinah — approximately 450km, 4.5 hours west through the Hejaz highlands. Drop-off at Madinah hotels, Masjid al-Nabawi, or Prince Mohammad bin Abdulaziz Airport (MED).",
+        h1: "Hail to Madinah Taxi Transfer",
+        distance: "450 km",
+        duration: "4.5 hours",
+        content: "Private taxi from Hail to Madinah — 450km west on Highway 60 through the northern Hejaz. Drop-off at any Madinah hotel, Al-Masjid an-Nabawi, or MED airport. Fixed rate confirmed before departure.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the Hail to Madinah drive?", answer: "Approximately 450km — around 4.5 hours by private taxi on the highway west through the Hejaz highlands." },
+            { question: "Can I be dropped at Al-Masjid an-Nabawi?", answer: "Yes — direct drop to the mosque's main entrances, the hotel district, or Prince Mohammad bin Abdulaziz Airport (MED)." },
+            { question: "Is the road from Hail to Madinah a good road?", answer: "Yes — modern dual carriageway for the majority of the route. The last section approaching Madinah is well-developed." }
+        ]
+    },
+    {
+        slug: "madinah-to-hail",
+        title: "Madinah to Hail Taxi | Return Northern Route Transfer",
+        description: "Private taxi from Madinah to Hail — 450km east on Highway 60. Pickup at Madinah hotels, Masjid al-Nabawi, or MED airport. Fixed rate.",
+        h1: "Madinah to Hail Taxi Transfer",
+        distance: "450 km",
+        duration: "4.5 hours",
+        content: "Return taxi from Madinah to Hail — pickup from your Madinah hotel, Masjid al-Nabawi, or MED airport. Direct transfer to Hail city or Jubbah. Fixed rate confirmed on WhatsApp.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be picked up from MED Madinah Airport and taken to Hail?", answer: "Yes — we pickup from Prince Mohammad bin Abdulaziz Airport (MED) with flight tracking and name board, then drive directly to Hail." },
+            { question: "Can I go directly to Jubbah UNESCO from Madinah?", answer: "Yes — Madinah to Jubbah is approximately 550km. We can transfer directly to the Jubbah rock art site on arrival, then continue to Hail." },
+            { question: "Is the Madinah to Hail route through desert?", answer: "Yes — the route passes through the northern Hejaz and central Najd plateau. Sparse desert highway with service stations at regular intervals." }
+        ]
+    },
+    {
+        slug: "hail-to-tabuk",
+        title: "Hail to Tabuk Taxi | Northern Saudi Long-Distance Transfer",
+        description: "Private taxi from Hail to Tabuk — approximately 500km northwest. Transfer to Tabuk city, AlUla, NEOM, or Tabuk Airport (TUU). Fixed rate.",
+        h1: "Hail to Tabuk Taxi Transfer",
+        distance: "500 km",
+        duration: "5 hours",
+        content: "Long-distance private taxi from Hail to Tabuk — 500km northwest through northern Saudi Arabia. Transfer to Tabuk city, Tabuk Airport (TUU), AlUla, or NEOM. Fixed rate confirmed before departure.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the Hail to Tabuk drive?", answer: "Approximately 500km — around 5 hours by private taxi on the northern highway through the Hejaz." },
+            { question: "Can I continue from Tabuk to AlUla or NEOM?", answer: "Yes — Tabuk is the jumping-off point for both AlUla (220km south) and NEOM (200km northwest). We can arrange onward transfer." },
+            { question: "Is there a stopover option at Jubbah on the way?", answer: "Jubbah UNESCO is not directly on the Hail–Tabuk route but can be added as a detour north before continuing to Tabuk. Confirm with us when booking." }
+        ]
+    },
+    {
+        slug: "tabuk-to-hail",
+        title: "Tabuk to Hail Taxi | Return Northern Saudi Transfer",
+        description: "Private taxi from Tabuk to Hail — 500km southeast. Pickup at Tabuk city, TUU Airport, AlUla, or NEOM. Direct transfer to Hail city.",
+        h1: "Tabuk to Hail Taxi Transfer",
+        distance: "500 km",
+        duration: "5 hours",
+        content: "Return taxi from Tabuk to Hail — pickup from Tabuk city, Tabuk Airport (TUU), AlUla, or NEOM. Direct transfer to Hail city, Jubbah, or Hail Airport (HAS). Fixed rate confirmed on WhatsApp.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be picked up from AlUla and taken to Hail?", answer: "Yes — AlUla to Hail is approximately 720km (7 hours). We offer this as a full-day transfer with a rest stop. Fixed rate confirmed before booking." },
+            { question: "Can I connect from Hail to the Jubbah UNESCO site from this route?", answer: "Yes — Jubbah is 100km north of Hail city. We can route directly to Jubbah on arrival if pre-arranged." },
+            { question: "Is there an overnight option for Tabuk to Hail?", answer: "For early morning pickups from Tabuk, a same-day Tabuk–Hail transfer is standard. If departing Tabuk late, an overnight option with hotel stop at a midpoint can be arranged." }
+        ]
+    },
+    {
+        slug: "hail-to-jubbah",
+        title: "Hail to Jubbah Taxi | UNESCO Rock Art Day Trip",
+        description: "Taxi from Hail to Jubbah UNESCO petroglyphs — 100km north, 1 hour. Driver waits at site. No taxis at Jubbah — pre-book essential. Fixed rate.",
+        h1: "Hail to Jubbah UNESCO Day Trip Taxi",
+        distance: "100 km",
+        duration: "1 hour",
+        content: "Day trip taxi from Hail to Jubbah — 100km north on Highway 65 to the UNESCO World Heritage rock art site. Driver waits 2–3 hours at the petroglyphs, then returns to Hail. No taxis at Jubbah — pre-booking is essential. Fixed round-trip rate.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "Why do I need to pre-book the Hail to Jubbah taxi?", answer: "Jubbah has no local taxis, Careem, or Uber. Without a pre-booked driver, you are stranded 100km from Hail with no return options. Always pre-book a round-trip driver-waits transfer." },
+            { question: "How long should I spend at Jubbah?", answer: "2–3 hours is adequate for the main Jabal Umm Sinman rock art panels, visitor centre, and oasis walk. Full morning (4 hours) gives time to explore thoroughly." },
+            { question: "Is Jubbah suitable for children?", answer: "Yes — the boardwalk paths at Jubbah are stroller-accessible. Young children find the massive rock carvings engaging. Bring sun protection and water regardless of season." }
+        ]
+    },
+    {
         slug: "jazan-to-abha",
         title: "Jazan to Abha Taxi Transfer",
         description: "Scenic drive from Jazan to Abha.",
