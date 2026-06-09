@@ -502,6 +502,60 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "abha-to-jazan",
+        title: "Abha to Jazan Taxi | Asir Mountain to Red Sea Coast Transfer",
+        description: "Private taxi from Abha to Jazan — 200km, 2.5 hours descending the Asir escarpment to the Red Sea coast. Transfer to Jazan city, Jizan Corniche, or Farasan Islands ferry port.",
+        h1: "Abha to Jazan Taxi Transfer",
+        distance: "200 km",
+        duration: "2.5 hours",
+        content: "Scenic descent from Abha (2,200m) to Jazan on the Red Sea coast — one of Saudi Arabia's most dramatic highway transitions. Fixed rate, experienced mountain-road drivers. Drop-off at Jazan city, Corniche hotels, or Farasan ferry port.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "Can I go directly from Abha to Farasan Islands ferry port?", answer: "Yes — Abha to Farasan ferry port is approximately 215km. We can take you directly to the port for a morning ferry. Confirm your ferry departure time so we plan the departure time from Abha accordingly." },
+            { question: "What is the drive from Abha to Jazan like?", answer: "The Abha–Jazan highway is one of Saudi Arabia's most scenic — descending the Asir escarpment from 2,200m to sea level, passing through cloud forest, terraced farms, and Tihama coastal plain. The descent section has switchbacks and spectacular valley views." },
+            { question: "How long is the Abha to Jazan drive?", answer: "Approximately 200km and 2.5 hours. The mountain descent section takes more time per km due to the winding road, but the total journey is straightforward on this well-maintained highway." }
+        ]
+    },
+    {
+        slug: "jazan-to-najran",
+        title: "Jazan to Najran Taxi | Southern Saudi Long-Distance Transfer",
+        description: "Private taxi from Jazan to Najran — approximately 430km, 4.5 hours southeast through southern Saudi Arabia. Transfer to Najran city, Ukhdood archaeological site, or Najran Airport.",
+        h1: "Jazan to Najran Taxi Transfer",
+        distance: "430 km",
+        duration: "4.5 hours",
+        content: "Long-distance private taxi from Jazan to Najran — 430km southeast through southern Saudi Arabia. Direct to Najran city, Ukhdood (pre-Islamic archaeological site), or Najran Airport (EAM). Fixed rate confirmed before departure.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the Jazan to Najran drive?", answer: "Approximately 430km — about 4.5 hours by private taxi through southern Saudi Arabia." },
+            { question: "Can I stop at Abha or Khamis Mushait en route?", answer: "Abha and Khamis Mushait are approximately midway on the Jazan–Najran route. We can stop for an hour in either city before continuing to Najran — add this as a combined day transfer when booking." },
+            { question: "Is there a domestic flight from Jazan to Najran?", answer: "Domestic flights between Jazan and Najran are limited. Private taxi is often more practical for this route, especially with luggage and flexible timing." }
+        ]
+    },
+    {
+        slug: "najran-to-jazan",
+        title: "Najran to Jazan Taxi | Return Southern Saudi Transfer",
+        description: "Private taxi from Najran to Jazan — 430km northwest. Transfer from Najran city, Ukhdood, or Najran Airport to Jazan city, Corniche, or GIZ Airport.",
+        h1: "Najran to Jazan Taxi Transfer",
+        distance: "430 km",
+        duration: "4.5 hours",
+        content: "Return taxi from Najran to Jazan — pickup from Najran city, Ukhdood archaeological site, or Najran Airport (EAM). Direct to Jazan city, Jizan Corniche hotels, or Farasan Islands ferry port. Fixed rate.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be picked up from Najran Airport (EAM)?", answer: "Yes — we pickup from Najran Airport with flight tracking and name board, then drive directly to Jazan city or any Jazan destination." },
+            { question: "Is the Najran to Jazan route through Yemen border areas?", answer: "The route stays well within Saudi Arabia on the main southern highway. No Yemen border crossings are involved." },
+            { question: "Can I continue to the Farasan Islands on the same day from Najran?", answer: "Possible for early departures from Najran (pre-dawn) — arriving at Jazan ferry port by noon for an afternoon crossing. Confirm timing when booking." }
+        ]
+    },
+    {
         slug: "hafr-to-riyadh",
         title: "Hafr Al Batin to Riyadh Taxi",
         description: "Taxi from Hafr Al Batin to Riyadh.",

@@ -363,6 +363,38 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
+        slug: "jazan-farasan-ferry-transfer",
+        title: "Jazan to Farasan Islands Ferry Port Transfer — Morning Drop & Return Pickup",
+        description: "Pre-booked taxi from Jazan hotel to Farasan Islands ferry port (Al-Minaab Terminal) — morning drop-off for ferry departure and return pickup when ferry arrives back. Essential pre-booking: no taxis at port in evenings.",
+        content: "The Farasan Islands are reached by ferry from Jazan Port — and getting to and from the ferry terminal requires a pre-booked taxi. Our service covers: morning pickup from your Jazan hotel, drop at the ferry terminal in time for departure, and return pickup from the terminal when your ferry arrives back. The evening return is the most critical booking — app taxis are scarce at the port in the late afternoon and evening.",
+        features: ["Morning Ferry Drop-off", "Return Port Pickup", "Hotel to Terminal", "Flexible Return Timing", "No Taxi at Port at Night", "Fixed Round-Trip Rate"],
+        pricing: [
+            { title: "One-way to ferry port", price: "Get Quote" },
+            { title: "Round trip (drop + return pickup)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "What time does the Farasan Islands ferry depart from Jazan?", answer: "Ferry departure times vary and change seasonally. Check current schedules before booking. Morning departures are typical — we recommend confirming your ferry time first, then booking your taxi pickup time to arrive at the port 30–45 minutes before departure." },
+            { question: "Do I need to pre-book the return pickup?", answer: "Yes — pre-booking the return pickup is essential. The Jazan ferry port area has very limited app taxis in the late afternoon and evening. Without a pre-booked return, you risk being stranded at the port. Book both ways when you arrange the morning drop-off." },
+            { question: "Can I change my return time if the ferry is delayed?", answer: "Yes — notify us via WhatsApp if your return ferry is delayed. We adjust the pickup time accordingly." }
+        ]
+    },
+    {
+        slug: "jazan-to-abha-mountain-transfer",
+        title: "Jazan to Abha Mountain Highway Transfer — Asir Escarpment Route",
+        description: "Private taxi from Jazan to Abha on the Asir escarpment mountain highway — 200km, 2.5–3 hours. One of Saudi Arabia's most scenic drives. Experienced mountain-road drivers. Fixed rate.",
+        content: "The Jazan to Abha transfer is one of Saudi Arabia's most spectacular road journeys — ascending from sea level at Jazan to 2,200m at Abha through the Asir escarpment. The drive covers flat Tihama coastal plain, transitional foothills, and dramatic mountain switchbacks with cloud forest and valley views. Our drivers know the mountain highway well. Drop-off at any Abha or Khamis Mushait hotel, airport, or attraction. Return Abha–Jazan transfers also available.",
+        features: ["Asir Escarpment Route", "200km, 2.5–3 Hours", "Experienced Mountain Drivers", "Drop at Abha Hotels", "Khamis Mushait Option", "Return Transfers Available"],
+        pricing: [
+            { title: "Jazan to Abha (one way)", price: "Get Quote" },
+            { title: "Jazan to Abha (round trip)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "Is the Jazan to Abha road safe?", answer: "Yes — the main Jazan–Abha highway is a well-maintained modern road. The mountain section has guardrails and is routinely maintained. Our drivers are experienced on this route and know the conditions in different weather and seasons." },
+            { question: "Can I make stops en route from Jazan to Abha?", answer: "Yes — we can stop at Al Dayer (70km, mountain gateway), Hamdah Fort at Abu Arish (60km, detour), or at scenic mountain viewpoints on the Asir escarpment. Confirm any stops when booking so we plan the timing." },
+            { question: "Can I arrive at Abha Airport (AHB) via this route?", answer: "Yes — Abha Airport (AHB) is on the approach to Abha and easy to include as a drop-off. If your final destination is AHB, confirm the flight time so we depart Jazan with enough buffer for the 2.5-hour journey." }
+        ]
+    },
+    {
         slug: "najran-airport-taxi",
         title: "Najran Airport Taxi",
         description: "Transfer from Najran Domestic Airport.",
