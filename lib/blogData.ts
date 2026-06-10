@@ -16918,6 +16918,61 @@ export const blogData: BlogPost[] = [
     ]
   },
   {
+    slug: "najran-travel-guide-2026",
+    title: "Najran Travel Guide 2026 — Al-Ukhdood, Bir Hima UNESCO, Emara Palace & Getting Around",
+    excerpt: "Complete guide to Najran — Al-Ukhdood Quranic ruins (Surah Al-Burooj), Bir Hima UNESCO World Heritage rock art, Emara Palace traditional architecture, Wadi Najran, and how to get around by private taxi.",
+    date: "2026-05-14",
+    author: "Haram Taxi Team",
+    category: "Travel Guide",
+    image: "/najran-al-ukhdood.webp",
+    relatedServiceSlug: "najran-al-ukhdood-tour",
+    content: "Najran is one of the most historically significant cities in Saudi Arabia — and one of the least visited by international tourists. This guide covers everything you need to know."
+  },
+  {
+    slug: "al-ukhdood-quran-heritage-guide-2026",
+    title: "Al-Ukhdood Najran — Surah Al-Burooj, Sabaean Ruins & Visitor Guide 2026",
+    excerpt: "Complete guide to Al-Ukhdood Archaeological Site in Najran — the pre-Islamic city referenced in Surah Al-Burooj of the Quran as the site of the People of the Trench. What to see, how to visit, and how to get there.",
+    date: "2026-05-15",
+    author: "Haram Taxi Team",
+    category: "Heritage Guide",
+    image: "/najran-al-ukhdood.webp",
+    relatedServiceSlug: "najran-al-ukhdood-tour",
+    content: "Al-Ukhdood is where the Quran and archaeology meet — one of the few sites in Saudi Arabia explicitly mentioned in the Quran and visible as an excavated archaeological park."
+  },
+  {
+    slug: "bir-hima-rock-art-guide-2026",
+    title: "Bir Hima UNESCO Rock Art Guide 2026 — 25,000 Carvings, How to Visit from Najran",
+    excerpt: "Everything you need to know about Bir Hima Cultural Area — UNESCO World Heritage Site (2021). 25,000+ rock carvings near Najran. How to book tickets, how to get there, what to see.",
+    date: "2026-05-16",
+    author: "Haram Taxi Team",
+    category: "UNESCO Heritage Guide",
+    image: "/najran-bir-hima.webp",
+    relatedServiceSlug: "najran-bir-hima-day-trip",
+    content: "Bir Hima was inscribed as a UNESCO World Heritage Site in July 2021 — and remains one of the least-visited UNESCO sites in Saudi Arabia despite its extraordinary significance."
+  },
+  {
+    slug: "riyadh-to-najran-taxi-guide-2026",
+    title: "Riyadh to Najran by Taxi 2026 — Distance, Time, Route & What to Expect",
+    excerpt: "Complete guide to the Riyadh to Najran taxi journey — 980km, 10 hours via Wadi Al-Dawasir. Route options, rest stops, overnight vs daytime departures, and arrival tips for Al-Ukhdood.",
+    date: "2026-05-17",
+    author: "Haram Taxi Team",
+    category: "Transfer Guide",
+    image: "/najran-city.webp",
+    relatedServiceSlug: "najran-al-ukhdood-tour",
+    content: "Riyadh to Najran is one of the longest domestic taxi routes in Saudi Arabia — a 980km journey south through the heart of the Arabian Peninsula."
+  },
+  {
+    slug: "najran-airport-transfer-guide-2026",
+    title: "Najran Airport (EAM) Transfer Guide 2026 — Taxi from Prince Abdulmajeed Airport",
+    excerpt: "Pre-booking your Najran Airport (EAM) taxi — why on-demand transport is unreliable, how to arrange a pickup, flight tracking, and transfer distances to Najran city and heritage sites.",
+    date: "2026-05-18",
+    author: "Haram Taxi Team",
+    category: "Airport Guide",
+    image: "/najran-airport.webp",
+    relatedServiceSlug: "najran-al-ukhdood-tour",
+    content: "Najran Airport (IATA: EAM) — Prince Abdulmajeed bin Abdulaziz Domestic Airport — has limited on-demand taxi availability at arrivals. Pre-booking is essential."
+  },
+  {
     slug: "buraidah-travel-guide-2026",
     title: "Buraidah Travel Guide 2026 — Dates Market, Qassim Heritage & Getting Around",
     excerpt: "Complete guide to Buraidah — the Dates Market (world's largest), Sukkari varieties, Unaizah day trip, ELQ Airport connections, and how to get around Qassim by private taxi.",

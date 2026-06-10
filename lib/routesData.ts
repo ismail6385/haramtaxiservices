@@ -3380,6 +3380,39 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "riyadh-to-najran",
+        title: "Riyadh to Najran Taxi | Private Car Al-Ukhdood, Bir Hima UNESCO & EAM Airport",
+        description: "Private taxi from Riyadh to Najran — 980km, 10 hours. Al-Ukhdood Quranic ruins, Bir Hima UNESCO, EAM Airport. Fixed rate with two rest stops.",
+        h1: "Riyadh to Najran Taxi — Al-Ukhdood, Bir Hima UNESCO & Airport Transfer",
+        distance: "980 km",
+        duration: "10 hours",
+        content: "Full-day private taxi from Riyadh south to Najran through Wadi Al-Dawasir and the southern plateau. Overnight or early-morning departures from Riyadh arrive in Najran by morning. Pickup from Riyadh city, airport (RUH), or hotel. Drop-off at Najran hotel, EAM Airport, or direct to Al-Ukhdood archaeological site on arrival.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "How long does Riyadh to Najran take by taxi?", answer: "Approximately 10 hours — 980km via the southern highway through Wadi Al-Dawasir. Two rest stops are standard. An overnight departure from Riyadh arrives in Najran at morning, allowing a full day at Al-Ukhdood and Emara Palace." },
+            { question: "Can I go directly to Al-Ukhdood from Riyadh?", answer: "Yes — for early arrivals, the driver can route directly to Al-Ukhdood (5km from Najran city) before hotel check-in, especially useful for morning light at the site." }
+        ]
+    },
+    {
+        slug: "najran-to-riyadh",
+        title: "Najran to Riyadh Taxi | Private Car from EAM Airport & Heritage Sites",
+        description: "Private taxi from Najran to Riyadh — 980km, 10 hours. Pickup from EAM Airport, Al-Ukhdood, hotels. Fixed rate with rest stops.",
+        h1: "Najran to Riyadh Taxi — EAM Airport, Al-Ukhdood & Direct Transfer",
+        distance: "980 km",
+        duration: "10 hours",
+        content: "Return private taxi from Najran north to Riyadh. Pickup from Najran city, EAM Airport, or any heritage site in Najran Province. Two scheduled rest stops. Evening departures arrive in Riyadh by early morning.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "Can I be picked up at Najran Airport (EAM) for Riyadh?", answer: "Yes — flight-tracked pickup at EAM Airport with name board at arrivals, then direct to Riyadh. Or arrange an evening pickup from your Najran hotel after a full day's sightseeing." }
+        ]
+    },
+    {
         slug: "khamis-mushait-to-abha",
         title: "Khamis Mushait to Abha Taxi | Asir Twin Cities Intercity Transfer",
         description: "Taxi from Khamis Mushait to Abha — 25km, 30 minutes. Twin city intercity transfer. Fixed rate.",

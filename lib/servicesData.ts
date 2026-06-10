@@ -783,6 +783,36 @@ export const servicesData: ServiceData[] = [
         ]
     },
     {
+        slug: "najran-al-ukhdood-tour",
+        title: "Najran Al-Ukhdood Heritage Tour | Quranic Site, Emara Palace & Museum — Driver Waits",
+        description: "Najran heritage tour — Al-Ukhdood Quranic archaeological site, Emara Palace, Najran Regional Museum. Driver waits between all sites. Half-day.",
+        content: "Half-day Najran heritage circuit covering the three most significant heritage sites in the city. Begins at Al-Ukhdood (45–60 minutes) with the Quranic ruins, inscriptions, and excavated city blocks. Continues to Emara Palace for exterior architecture viewing and then the Najran Regional Museum (45 minutes). Driver waits between all sites and departs from your hotel and returns you at end of tour.",
+        features: ["Al-Ukhdood Archaeological Park", "Emara Palace & Regional Museum", "Driver Waits Between All Sites", "Hotel Pickup & Dropoff", "Flexible Half-Day Itinerary"],
+        pricing: [
+            { title: "Toyota Camry (4 Pax)", price: "Get Quote" },
+            { title: "GMC Yukon XL (7 Pax)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "Does the driver wait at all Najran sites?", answer: "Yes — the driver waits throughout the Al-Ukhdood tour. At Al-Ukhdood, Emara Palace, and the Regional Museum the driver waits outside while you visit. No transport is available at these sites independently." },
+            { question: "Can I add Wadi Najran to the Al-Ukhdood tour?", answer: "Yes — the half-day tour can be extended to include the Wadi Najran drive and dam reservoir. This extends the tour by 1.5–2 hours. Mention this when booking." }
+        ]
+    },
+    {
+        slug: "najran-bir-hima-day-trip",
+        title: "Najran to Bir Hima UNESCO Day Trip | Rock Art Day Trip — Driver Waits",
+        description: "Day trip from Najran to Bir Hima UNESCO World Heritage Site — 100km each way, driver waits. 25,000+ rock carvings. No transport at site — driver-waits essential.",
+        content: "Full-day excursion from Najran to Bir Hima Cultural Area — UNESCO World Heritage Site (inscribed 2021), 100km north on the ancient caravan route. The driver waits at the site while you explore the 25,000+ rock carvings (Neolithic to Islamic period), inscriptions in multiple ancient scripts, and ancient wells. No public transport, Uber, or taxi available at Bir Hima — the driver is essential for your return. Confirm Bir Hima ticket booking separately on the Nusuk app before departure.",
+        features: ["Bir Hima UNESCO Rock Art Site", "200km Round-Trip Transfer", "Driver Waits 2–3 Hours On Site", "Rock Art Panels & Ancient Wells", "Return to Najran Hotel"],
+        pricing: [
+            { title: "Toyota Camry (4 Pax)", price: "Get Quote" },
+            { title: "GMC Yukon XL (7 Pax)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "Why is a driver-waits taxi essential for Bir Hima?", answer: "Bir Hima is 100km from Najran in open desert with no transport of any kind at the site. The nearest town with any services is significantly further. Without a pre-booked driver who explicitly confirms they will wait, you cannot return from the site. Always confirm driver waiting before entering." },
+            { question: "How long does the Bir Hima day trip take?", answer: "Full day: 1 hour drive each way + 2–3 hours at the site = 5–6 hours minimum from Najran. An early departure (7am) returns by early afternoon, leaving the evening free for Najran city sites." }
+        ]
+    },
+    {
         slug: "hofuf-taxi",
         title: "Taxi Service in Hofuf",
         description: "Taxi in Hofuf and Al Mubarraz, Al Ahsa region.",
