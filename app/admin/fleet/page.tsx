@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { supabase } from '@/lib/supabase';
-import { useRouter } from 'next/navigation';
 import {
     Car, Users, Luggage, Plus, Pencil, Trash2,
     AlertTriangle, CheckCircle, Wrench, X
@@ -49,7 +48,6 @@ export default function FleetPage() {
     const [editing, setEditing] = useState<Vehicle | null>(null);
     const [saving, setSaving] = useState(false);
     const [form, setForm] = useState(emptyForm);
-    const router = useRouter();
 
     const fetchVehicles = useCallback(async () => {
         const { data, error } = await supabase.from('vehicles').select('*').order('created_at', { ascending: true });
@@ -62,13 +60,8 @@ export default function FleetPage() {
     }, []);
 
     useEffect(() => {
-        const init = async () => {
-            const { data: { session } } = await supabase.auth.getSession();
-            if (!session) { router.push('/admin/login'); return; }
-            fetchVehicles();
-        };
-        init();
-    }, [router, fetchVehicles]);
+        fetchVehicles();
+    }, [fetchVehicles]);
 
     const openAdd = () => {
         setEditing(null);

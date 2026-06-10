@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
-import { useRouter } from 'next/navigation';
 import { MapPin, TrendingUp, Navigation } from 'lucide-react';
 
 interface LocationStat {
@@ -16,13 +15,9 @@ export default function LocationsPage() {
     const [pickups, setPickups] = useState<LocationStat[]>([]);
     const [total, setTotal] = useState(0);
     const [loading, setLoading] = useState(true);
-    const router = useRouter();
 
     useEffect(() => {
         const init = async () => {
-            const { data: { session } } = await supabase.auth.getSession();
-            if (!session) { router.push('/admin/login'); return; }
-
             const { data, error } = await supabase
                 .from('bookings')
                 .select('destination, pickup_location');
@@ -47,7 +42,7 @@ export default function LocationsPage() {
             setLoading(false);
         };
         init();
-    }, [router]);
+    }, []);
 
     if (loading) {
         return (

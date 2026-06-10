@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
-import { useRouter } from 'next/navigation';
 import { TrendingUp, DollarSign, CalendarDays, Car } from 'lucide-react';
 
 interface Booking {
@@ -25,12 +24,9 @@ interface MonthStat {
 export default function ReportsPage() {
     const [bookings, setBookings] = useState<Booking[]>([]);
     const [loading, setLoading] = useState(true);
-    const router = useRouter();
 
     useEffect(() => {
         const init = async () => {
-            const { data: { session } } = await supabase.auth.getSession();
-            if (!session) { router.push('/admin/login'); return; }
             const { data, error } = await supabase
                 .from('bookings')
                 .select('id, created_at, pickup_date, status, total_price, vehicle_type, destination')
@@ -39,7 +35,7 @@ export default function ReportsPage() {
             setLoading(false);
         };
         init();
-    }, [router]);
+    }, []);
 
     if (loading) {
         return (

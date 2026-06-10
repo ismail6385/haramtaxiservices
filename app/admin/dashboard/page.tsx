@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
     Calendar,
@@ -70,13 +69,9 @@ function StatusBar({ label, count, total, color }: { label: string; count: numbe
 export default function AdminDashboard() {
     const [bookings, setBookings] = useState<Booking[]>([]);
     const [loading, setLoading] = useState(true);
-    const router = useRouter();
 
     useEffect(() => {
         const checkAndFetch = async () => {
-            const { data: { session } } = await supabase.auth.getSession();
-            if (!session) { router.push('/admin/login'); return; }
-
             const { data, error } = await supabase
                 .from('bookings')
                 .select('id, created_at, customer_name, customer_phone, pickup_location, destination, pickup_date, pickup_time, vehicle_type, status, total_price')
@@ -86,7 +81,7 @@ export default function AdminDashboard() {
             setLoading(false);
         };
         checkAndFetch();
-    }, [router]);
+    }, []);
 
     if (loading) {
         return (

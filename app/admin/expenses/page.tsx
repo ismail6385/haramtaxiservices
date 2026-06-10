@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { supabase } from '@/lib/supabase';
-import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -42,14 +41,6 @@ export default function ExpensesPage() {
     const [amount, setAmount] = useState('');
     const [category, setCategory] = useState('Fuel');
     const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
-    const router = useRouter();
-
-    const checkUser = useCallback(async () => {
-        const { data: { session } } = await supabase.auth.getSession();
-        if (!session) {
-            router.push('/admin/login');
-        }
-    }, [router]);
 
     const fetchExpenses = useCallback(async () => {
         try {
@@ -78,9 +69,8 @@ export default function ExpensesPage() {
     }, []);
 
     useEffect(() => {
-        checkUser();
         fetchExpenses();
-    }, [checkUser, fetchExpenses]);
+    }, [fetchExpenses]);
 
     const handleAddExpense = async (e: React.FormEvent) => {
         e.preventDefault();
