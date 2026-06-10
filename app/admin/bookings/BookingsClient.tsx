@@ -264,6 +264,21 @@ export default function BookingsClient({ initialBookings }: Props) {
         }
     }, [filteredBookings])
 
+    const handleDriverAssign = useCallback(async (id: string, driver: string) => {
+        try {
+            const { error } = await supabase
+                .from('bookings')
+                .update({ driver_assigned: driver, status: 'confirmed' })
+                .eq('id', id)
+            if (error) throw error
+            setBookings((bs) => bs.map((b) => b.id === id ? { ...b, driver_assigned: driver, status: 'confirmed' } : b))
+            setSelectedBooking((s) => s?.id === id ? { ...s, driver_assigned: driver, status: 'confirmed' } : s)
+            toast.success('Driver assigned', { description: `${driver} assigned — status set to Confirmed` })
+        } catch {
+            toast.error('Failed to assign driver')
+        }
+    }, [supabase])
+
     const handleReset = useCallback(() => {
         setSearch('')
         setStatusFilter('all')
@@ -406,6 +421,7 @@ export default function BookingsClient({ initialBookings }: Props) {
                 open={!!selectedBooking}
                 onClose={() => setSelectedBooking(null)}
                 onStatusChange={handleStatusChange}
+                onDriverAssign={handleDriverAssign}
                 updatingId={updatingId}
             />
 

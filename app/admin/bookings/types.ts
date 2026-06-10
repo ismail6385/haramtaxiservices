@@ -16,6 +16,7 @@ export interface Booking {
     special_requests?: string
     status: BookingStatus
     total_price?: number
+    driver_assigned?: string
 }
 
 export type SortField = 'created_at' | 'customer_name' | 'pickup_date'

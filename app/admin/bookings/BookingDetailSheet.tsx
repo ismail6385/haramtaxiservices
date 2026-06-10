@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import {
     MessageCircle,
     Mail,
@@ -13,6 +14,10 @@ import {
     StickyNote,
     BadgeDollarSign,
     CalendarClock,
+    UserCheck,
+    Pencil,
+    Check,
+    X,
 } from 'lucide-react'
 import {
     Sheet,
@@ -29,6 +34,7 @@ import {
     SelectValue,
 } from '@/components/ui/select'
 import { Separator } from '@/components/ui/separator'
+import { Input } from '@/components/ui/input'
 import StatusBadge from './StatusBadge'
 import type { Booking, BookingStatus } from './types'
 
@@ -37,6 +43,7 @@ interface Props {
     open: boolean
     onClose: () => void
     onStatusChange: (id: string, status: BookingStatus) => void
+    onDriverAssign: (id: string, driver: string) => Promise<void>
     updatingId: string | null
 }
 
@@ -71,11 +78,24 @@ function DetailRow({
 }
 
 export default function BookingDetailSheet({
-    booking, open, onClose, onStatusChange, updatingId,
+    booking, open, onClose, onStatusChange, onDriverAssign, updatingId,
 }: Props) {
+    const [driverEdit, setDriverEdit] = useState(false)
+    const [driverInput, setDriverInput] = useState('')
+    const [savingDriver, setSavingDriver] = useState(false)
+
     if (!booking) return null
 
     const isUpdating = updatingId === booking.id
+
+    const handleDriverSave = async () => {
+        if (!driverInput.trim()) return
+        setSavingDriver(true)
+        await onDriverAssign(booking.id, driverInput.trim())
+        setSavingDriver(false)
+        setDriverEdit(false)
+        setDriverInput('')
+    }
     const phone = booking.customer_phone.replace(/\D/g, '')
     const waMessage = encodeURIComponent(
         `Hello ${booking.customer_name}, regarding your booking from ${booking.pickup_location} to ${booking.destination} on ${booking.pickup_date} at ${booking.pickup_time}. `
@@ -229,6 +249,49 @@ export default function BookingDetailSheet({
                         <div>
                             <SectionLabel>Other</SectionLabel>
                             <div className="space-y-3">
+
+                                {/* Driver Assignment */}
+                                <div className="flex items-start gap-3">
+                                    <div className="w-8 h-8 rounded-lg bg-neutral-800 flex items-center justify-center shrink-0 mt-0.5">
+                                        <UserCheck className="w-4 h-4 text-neutral-500" />
+                                    </div>
+                                    <div className="flex-1 min-w-0">
+                                        <p className="text-[11px] text-neutral-500 mb-1">Driver Assigned</p>
+                                        {driverEdit ? (
+                                            <div className="flex items-center gap-2">
+                                                <Input
+                                                    autoFocus
+                                                    placeholder="Driver name or ID"
+                                                    value={driverInput}
+                                                    onChange={e => setDriverInput(e.target.value)}
+                                                    onKeyDown={e => { if (e.key === 'Enter') handleDriverSave(); if (e.key === 'Escape') setDriverEdit(false); }}
+                                                    className="h-8 text-sm bg-neutral-800 border-neutral-600 text-white"
+                                                />
+                                                <button onClick={handleDriverSave} disabled={savingDriver} className="text-green-400 hover:text-green-300 transition-colors">
+                                                    {savingDriver ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
+                                                </button>
+                                                <button onClick={() => setDriverEdit(false)} className="text-neutral-500 hover:text-neutral-300 transition-colors">
+                                                    <X className="w-4 h-4" />
+                                                </button>
+                                            </div>
+                                        ) : booking.driver_assigned ? (
+                                            <div className="flex items-center gap-2">
+                                                <span className="text-sm font-medium text-green-400">{booking.driver_assigned}</span>
+                                                <button onClick={() => { setDriverInput(booking.driver_assigned || ''); setDriverEdit(true); }} className="text-neutral-600 hover:text-neutral-300 transition-colors">
+                                                    <Pencil className="w-3 h-3" />
+                                                </button>
+                                            </div>
+                                        ) : (
+                                            <button
+                                                onClick={() => setDriverEdit(true)}
+                                                className="text-sm text-brand-gold hover:text-yellow-300 transition-colors flex items-center gap-1"
+                                            >
+                                                <UserCheck className="w-3.5 h-3.5" /> Assign Driver
+                                            </button>
+                                        )}
+                                    </div>
+                                </div>
+
                                 <DetailRow icon={BadgeDollarSign} label="Price">
                                     {booking.total_price ? (
                                         <span className="text-green-400 text-base font-bold">

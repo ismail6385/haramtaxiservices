@@ -4,29 +4,58 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import {
-    CalendarDays,
+    LayoutDashboard,
+    CalendarCheck,
     Car,
+    MapPin,
+    Wallet,
+    Settings,
     LogOut,
     Menu,
     X,
-    Settings,
-    Wallet
+    BarChart2,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 const menuItems = [
-    { name: 'Dashboard', href: '/admin/dashboard', icon: CalendarDays },
-    { name: 'Bookings', href: '/admin/bookings', icon: Car },
-    { name: 'Expenses', href: '/admin/expenses', icon: Wallet },
-    { name: 'Settings', href: '/admin/settings', icon: Settings },
+    { name: 'Dashboard',  href: '/admin/dashboard',  icon: LayoutDashboard },
+    { name: 'Bookings',   href: '/admin/bookings',   icon: CalendarCheck,  badge: true },
+    { name: 'Fleet',      href: '/admin/fleet',      icon: Car },
+    { name: 'Locations',  href: '/admin/locations',  icon: MapPin },
+    { name: 'Expenses',   href: '/admin/expenses',   icon: Wallet },
+    { name: 'Reports',    href: '/admin/reports',    icon: BarChart2 },
+    { name: 'Settings',   href: '/admin/settings',   icon: Settings },
 ];
 
 export default function AdminSidebar() {
     const pathname = usePathname();
     const router = useRouter();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [pendingCount, setPendingCount] = useState(0);
+
+    // Live pending bookings count
+    useEffect(() => {
+        const fetchPending = async () => {
+            const { count } = await supabase
+                .from('bookings')
+                .select('id', { count: 'exact', head: true })
+                .eq('status', 'pending');
+            setPendingCount(count ?? 0);
+        };
+
+        fetchPending();
+
+        const channel = supabase
+            .channel('sidebar-pending')
+            .on('postgres_changes', { event: '*', schema: 'public', table: 'bookings' }, () => {
+                fetchPending();
+            })
+            .subscribe();
+
+        return () => { supabase.removeChannel(channel); };
+    }, []);
 
     const handleLogout = async () => {
         await supabase.auth.signOut();
@@ -36,7 +65,7 @@ export default function AdminSidebar() {
 
     return (
         <>
-            {/* Mobile Menu Button */}
+            {/* Mobile toggle */}
             <div className="md:hidden fixed top-4 left-4 z-50">
                 <Button
                     variant="outline"
@@ -45,6 +74,11 @@ export default function AdminSidebar() {
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? <X /> : <Menu />}
+                    {pendingCount > 0 && !isMobileMenuOpen && (
+                        <span className="absolute -top-1 -right-1 bg-yellow-500 text-black text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                            {pendingCount > 9 ? '9+' : pendingCount}
+                        </span>
+                    )}
                 </Button>
             </div>
 
@@ -54,22 +88,23 @@ export default function AdminSidebar() {
                 isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             )}>
                 <div className="flex flex-col h-full">
-                    {/* Logo Section - Website Color Matches */}
+                    {/* Logo */}
                     <div className="h-20 flex items-center px-6 border-b border-slate-800">
                         <Link href="/admin/dashboard" className="flex items-center gap-2">
                             <div className="bg-brand-gold/20 p-2 rounded-lg border border-brand-gold/30">
                                 <Car className="h-6 w-6 text-brand-gold" />
                             </div>
-                            <span className="text-xl font-bold text-white tracking-wide">Haram<span className="text-brand-gold">Admin</span></span>
+                            <span className="text-xl font-bold text-white tracking-wide">
+                                Haram<span className="text-brand-gold">Admin</span>
+                            </span>
                         </Link>
                     </div>
 
-                    {/* Navigation Links */}
-                    <nav className="flex-1 overflow-y-auto py-6 px-4 space-y-2">
+                    {/* Nav */}
+                    <nav className="flex-1 overflow-y-auto py-6 px-4 space-y-1">
                         {menuItems.map((item) => {
                             const Icon = item.icon;
-                            // Exact match for dashboard to prevent highlighting it when on /admin/bookings
-                            const isActive = item.href === '/admin/dashboard' 
+                            const isActive = item.href === '/admin/dashboard'
                                 ? pathname === '/admin/dashboard'
                                 : pathname.startsWith(item.href);
 
@@ -78,21 +113,31 @@ export default function AdminSidebar() {
                                     key={item.href}
                                     href={item.href}
                                     className={cn(
-                                        "flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group",
+                                        "flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group relative",
                                         isActive
                                             ? "bg-brand-gold text-brand-navy font-bold shadow-[0_0_15px_rgba(212,175,55,0.3)]"
                                             : "text-slate-400 hover:bg-white/5 hover:text-white"
                                     )}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    <Icon className={cn("w-5 h-5", isActive ? "text-brand-navy" : "text-slate-500 group-hover:text-brand-gold")} />
-                                    {item.name}
+                                    <Icon className={cn("w-5 h-5 shrink-0", isActive ? "text-brand-navy" : "text-slate-500 group-hover:text-brand-gold")} />
+                                    <span className="flex-1">{item.name}</span>
+                                    {item.badge && pendingCount > 0 && (
+                                        <span className={cn(
+                                            "text-[10px] font-bold rounded-full px-1.5 py-0.5 min-w-[20px] text-center",
+                                            isActive
+                                                ? "bg-brand-navy text-brand-gold"
+                                                : "bg-yellow-500 text-black"
+                                        )}>
+                                            {pendingCount > 99 ? '99+' : pendingCount}
+                                        </span>
+                                    )}
                                 </Link>
                             );
                         })}
                     </nav>
 
-                    {/* Logout Section */}
+                    {/* Logout */}
                     <div className="p-4 border-t border-slate-800">
                         <Button
                             onClick={handleLogout}
@@ -106,7 +151,7 @@ export default function AdminSidebar() {
                 </div>
             </aside>
 
-            {/* Overlay for mobile */}
+            {/* Mobile overlay */}
             {isMobileMenuOpen && (
                 <div
                     className="fixed inset-0 bg-black/60 z-30 md:hidden backdrop-blur-sm"
@@ -116,4 +161,3 @@ export default function AdminSidebar() {
         </>
     );
 }
-
