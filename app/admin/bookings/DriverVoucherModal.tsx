@@ -1,8 +1,11 @@
 'use client'
 
+import { useRef, useState } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
-import { Printer } from 'lucide-react'
+import { Download, Loader2 } from 'lucide-react'
+import { toast } from 'sonner'
+import { downloadPDF } from './downloadPDF'
 import type { Booking } from './types'
 
 interface Props {
@@ -12,161 +15,158 @@ interface Props {
 }
 
 export default function DriverVoucherModal({ booking, open, onClose }: Props) {
+    const ref = useRef<HTMLDivElement>(null)
+    const [busy, setBusy] = useState(false)
+
     if (!booking) return null
+
+    const filename = `VOC-HT${booking.id.slice(0, 8).toUpperCase()}-${booking.pickup_date}.pdf`
+
+    const handleDownload = async () => {
+        if (!ref.current) return
+        setBusy(true)
+        try { await downloadPDF(ref.current, filename) }
+        catch { toast.error('Download failed') }
+        setBusy(false)
+    }
 
     const today = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })
 
-    const handlePrint = () => {
-        const win = window.open('', '_blank', 'width=760,height=620')
-        if (!win) return
-        win.document.write(`<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>
-<title>Driver Voucher – ${booking.id.slice(0,8).toUpperCase()}</title>
-<style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Segoe UI',Arial,sans-serif; color:#1a1a2e; background:#fff; }
-.page { max-width:640px; margin:0 auto; padding:36px 44px; }
-.top-bar { height:6px; background:linear-gradient(90deg,#001f3f,#d4af37); border-radius:4px; margin-bottom:28px; }
-.header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; }
-.brand { font-size:26px; font-weight:900; color:#001f3f; }
-.brand span { color:#d4af37; }
-.brand-sub { font-size:10px; color:#888; letter-spacing:2px; text-transform:uppercase; margin-top:2px; }
-.voucher-badge { background:#001f3f; color:#d4af37; font-size:11px; font-weight:800; letter-spacing:2px; text-transform:uppercase; padding:6px 14px; border-radius:6px; }
-.driver-box { background:#f8f9fb; border:2px dashed #d4af37; border-radius:12px; padding:16px 20px; margin-bottom:20px; display:flex; align-items:center; gap:16px; }
-.driver-icon { width:52px; height:52px; background:#001f3f; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#d4af37; font-size:22px; font-weight:900; }
-.driver-label { font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px; }
-.driver-name { font-size:18px; font-weight:800; color:#001f3f; margin-top:2px; }
-.section { margin-bottom:16px; }
-.section-title { font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:2px; color:#888; margin-bottom:8px; padding-bottom:4px; border-bottom:1px solid #eee; }
-.row { display:flex; justify-content:space-between; padding:5px 0; }
-.row-label { font-size:11px; color:#888; }
-.row-value { font-size:12px; font-weight:600; color:#1a1a2e; text-align:right; max-width:55%; }
-.route-box { background:#001f3f; border-radius:10px; padding:14px 18px; margin-bottom:16px; display:flex; align-items:center; gap:12px; }
-.route-icon { color:#d4af37; font-size:18px; }
-.route-from { font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:1px; }
-.route-name { font-size:13px; font-weight:700; color:#fff; margin-top:2px; }
-.route-arrow { color:#d4af37; font-size:20px; font-weight:900; flex-shrink:0; }
-.special-box { background:#fffbeb; border:1px solid #fef08a; border-radius:8px; padding:10px 14px; font-size:12px; color:#92400e; line-height:1.5; }
-.footer { border-top:2px dashed #e5e7eb; padding-top:14px; display:flex; justify-content:space-between; align-items:center; margin-top:20px; }
-.footer-brand { font-size:12px; font-weight:700; color:#001f3f; }
-.footer-brand span { color:#d4af37; }
-.footer-contact { font-size:10px; color:#aaa; }
-.sign-box { border:1px solid #ddd; border-radius:8px; padding:10px 20px; text-align:center; }
-.sign-label { font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px; }
-.sign-line { margin-top:20px; border-bottom:1px solid #ccc; width:140px; }
-.bottom-bar { height:4px; background:linear-gradient(90deg,#d4af37,#001f3f); border-radius:4px; margin-top:24px; }
-@media print { body{-webkit-print-color-adjust:exact;print-color-adjust:exact;} .page{padding:20px 28px;} }
-</style>
-</head>
-<body>
-<div class="page">
-<div class="top-bar"></div>
-<div class="header">
-  <div>
-    <div class="brand">Haram<span>Taxi</span></div>
-    <div class="brand-sub">Driver Trip Voucher</div>
-  </div>
-  <div class="voucher-badge">VOUCHER</div>
-</div>
-
-<div class="driver-box">
-  <div class="driver-icon">${(booking.driver_assigned || 'D').charAt(0).toUpperCase()}</div>
-  <div>
-    <div class="driver-label">Assigned Driver</div>
-    <div class="driver-name">${booking.driver_assigned || 'Not Assigned'}</div>
-  </div>
-</div>
-
-<div class="route-box">
-  <div>
-    <div class="route-from">From</div>
-    <div class="route-name">${booking.pickup_location}</div>
-  </div>
-  <div class="route-arrow">→</div>
-  <div>
-    <div class="route-from">To</div>
-    <div class="route-name">${booking.destination}</div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">Trip Details</div>
-  <div class="row"><span class="row-label">Date</span><span class="row-value">${booking.pickup_date}</span></div>
-  <div class="row"><span class="row-label">Pickup Time</span><span class="row-value">${booking.pickup_time}</span></div>
-  <div class="row"><span class="row-label">Vehicle Type</span><span class="row-value">${booking.vehicle_type}</span></div>
-  <div class="row"><span class="row-label">Passengers</span><span class="row-value">${booking.passengers}</span></div>
-  <div class="row"><span class="row-label">Luggage</span><span class="row-value">${booking.luggage} bags</span></div>
-  ${booking.is_round_trip ? `<div class="row"><span class="row-label">Trip Type</span><span class="row-value" style="color:#d4af37;font-weight:800;">Round Trip ↩</span></div>` : ''}
-  ${booking.return_date ? `<div class="row"><span class="row-label">Return Date</span><span class="row-value">${booking.return_date} ${booking.return_time || ''}</span></div>` : ''}
-</div>
-
-<div class="section">
-  <div class="section-title">Customer</div>
-  <div class="row"><span class="row-label">Name</span><span class="row-value">${booking.customer_name}</span></div>
-  <div class="row"><span class="row-label">Phone</span><span class="row-value" style="color:#16a34a;font-weight:700;">${booking.customer_phone}</span></div>
-</div>
-
-${booking.special_requests ? `
-<div class="section">
-  <div class="section-title">Special Instructions</div>
-  <div class="special-box">${booking.special_requests}</div>
-</div>
-` : ''}
-
-${booking.admin_notes ? `
-<div class="section">
-  <div class="section-title">Admin Notes</div>
-  <div class="special-box" style="background:#eff6ff;border-color:#bfdbfe;color:#1e40af;">${booking.admin_notes}</div>
-</div>
-` : ''}
-
-<div class="footer">
-  <div>
-    <div class="footer-brand">Haram<span>Taxi</span> Service</div>
-    <div class="footer-contact">+966 57 580 6733 · Voucher: #${booking.id.slice(0,8).toUpperCase()} · ${today}</div>
-  </div>
-  <div class="sign-box">
-    <div class="sign-label">Driver Signature</div>
-    <div class="sign-line"></div>
-  </div>
-</div>
-<div class="bottom-bar"></div>
-</div>
-<script>window.onload=function(){window.print();}<\/script>
-</body>
-</html>`)
-        win.document.close()
-    }
+    const tripRows = [
+        ['Date', booking.pickup_date],
+        ['Pickup Time', booking.pickup_time],
+        ['Vehicle', booking.vehicle_type],
+        ['Passengers', String(booking.passengers)],
+        ['Luggage', `${booking.luggage} bags`],
+        ...(booking.is_round_trip ? [['Trip Type', 'Round Trip ↩']] : [['Trip Type', 'One Way']]),
+        ...(booking.return_date ? [['Return Date', `${booking.return_date}${booking.return_time ? ' at ' + booking.return_time : ''}`]] : []),
+    ]
 
     return (
         <Dialog open={open} onOpenChange={o => !o && onClose()}>
-            <DialogContent className="max-w-sm bg-neutral-950 border-neutral-800 text-white">
-                <DialogHeader className="flex flex-row items-center justify-between pr-8">
-                    <DialogTitle className="text-white">Driver Voucher</DialogTitle>
-                    <Button onClick={handlePrint} className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold gap-2" size="sm">
-                        <Printer className="w-4 h-4" /> Print
+            <DialogContent className="max-w-2xl bg-neutral-950 border-neutral-800 text-white max-h-[90vh] overflow-y-auto">
+                <DialogHeader className="flex flex-row items-center justify-between pr-8 shrink-0">
+                    <div>
+                        <DialogTitle className="text-white">Driver Voucher</DialogTitle>
+                        <p className="text-[11px] text-neutral-500 mt-0.5 font-mono">{filename}</p>
+                    </div>
+                    <Button onClick={handleDownload} disabled={busy}
+                        className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold gap-2" size="sm">
+                        {busy ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
+                        {busy ? 'Generating...' : 'Download PDF'}
                     </Button>
                 </DialogHeader>
-                <div className="space-y-3 text-sm pt-2">
-                    <div className="bg-neutral-800 rounded-xl p-4 space-y-2">
-                        <p className="text-[10px] text-neutral-500 uppercase tracking-widest">Driver</p>
-                        <p className="font-bold text-yellow-400 text-base">{booking.driver_assigned || 'Not assigned'}</p>
+
+                {/* A4 document */}
+                <div ref={ref} className="bg-white text-gray-900 rounded-lg"
+                    style={{ fontFamily: '"Segoe UI", Arial, sans-serif', width: '210mm', padding: '14mm 18mm' }}>
+
+                    {/* Top bar */}
+                    <div style={{ height: '6px', background: 'linear-gradient(90deg,#001f3f,#d4af37)', borderRadius: '4px', marginBottom: '24px' }} />
+
+                    {/* Header */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '20px' }}>
+                        <div>
+                            <div style={{ fontSize: '26px', fontWeight: 900, color: '#001f3f' }}>
+                                Haram<span style={{ color: '#d4af37' }}>Taxi</span>
+                            </div>
+                            <div style={{ fontSize: '10px', color: '#888', letterSpacing: '2px', textTransform: 'uppercase', marginTop: '2px' }}>Driver Trip Voucher</div>
+                        </div>
+                        <div style={{ background: '#001f3f', color: '#d4af37', fontSize: '11px', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase', padding: '6px 14px', borderRadius: '6px' }}>
+                            VOUCHER
+                        </div>
                     </div>
-                    <div className="bg-neutral-800 rounded-xl p-4 space-y-1.5">
-                        <p className="text-[10px] text-neutral-500 uppercase tracking-widest mb-2">Trip</p>
-                        <p className="text-white"><span className="text-neutral-500">From: </span>{booking.pickup_location}</p>
-                        <p className="text-white"><span className="text-neutral-500">To: </span>{booking.destination}</p>
-                        <p className="text-white"><span className="text-neutral-500">Date: </span>{booking.pickup_date} at {booking.pickup_time}</p>
-                        <p className="text-white"><span className="text-neutral-500">Vehicle: </span>{booking.vehicle_type} · {booking.passengers} pax</p>
-                        {booking.is_round_trip && <p className="text-yellow-400 font-semibold">↩ Round Trip — Return: {booking.return_date} {booking.return_time}</p>}
+
+                    {/* Driver box */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px', background: '#f8f9fb', border: '2px dashed #d4af37', borderRadius: '12px', padding: '14px 18px', marginBottom: '18px' }}>
+                        <div style={{ width: '50px', height: '50px', background: '#001f3f', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4af37', fontSize: '20px', fontWeight: 900, flexShrink: 0 }}>
+                            {(booking.driver_assigned || 'D').charAt(0).toUpperCase()}
+                        </div>
+                        <div>
+                            <div style={{ fontSize: '10px', color: '#888', textTransform: 'uppercase', letterSpacing: '1px' }}>Assigned Driver</div>
+                            <div style={{ fontSize: '18px', fontWeight: 800, color: '#001f3f', marginTop: '2px' }}>{booking.driver_assigned || 'Not Assigned'}</div>
+                        </div>
                     </div>
-                    <div className="bg-neutral-800 rounded-xl p-4 space-y-1">
-                        <p className="text-[10px] text-neutral-500 uppercase tracking-widest mb-2">Customer</p>
-                        <p className="text-white font-medium">{booking.customer_name}</p>
-                        <p className="text-green-400">{booking.customer_phone}</p>
+
+                    {/* Route box */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '14px', background: '#001f3f', borderRadius: '10px', padding: '14px 18px', marginBottom: '18px' }}>
+                        <div>
+                            <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '1px' }}>From</div>
+                            <div style={{ fontSize: '13px', fontWeight: 700, color: '#fff', marginTop: '2px' }}>{booking.pickup_location}</div>
+                        </div>
+                        <div style={{ color: '#d4af37', fontSize: '20px', fontWeight: 900, flexShrink: 0 }}>→</div>
+                        <div>
+                            <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '1px' }}>To</div>
+                            <div style={{ fontSize: '13px', fontWeight: 700, color: '#fff', marginTop: '2px' }}>{booking.destination}</div>
+                        </div>
                     </div>
+
+                    {/* Trip details */}
+                    <div style={{ fontSize: '9px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1.5px', color: '#888', borderBottom: '1px solid #e5e7eb', paddingBottom: '5px', marginBottom: '10px' }}>
+                        Trip Details
+                    </div>
+                    <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '18px', fontSize: '12px' }}>
+                        <tbody>
+                            {tripRows.map(([l, v]) => (
+                                <tr key={l}>
+                                    <td style={{ padding: '7px 0', color: '#888', width: '40%' }}>{l}</td>
+                                    <td style={{ padding: '7px 0', fontWeight: 600, color: '#1a1a2e', borderBottom: '1px solid #f5f5f5' }}>{v}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+
+                    {/* Customer */}
+                    <div style={{ fontSize: '9px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1.5px', color: '#888', borderBottom: '1px solid #e5e7eb', paddingBottom: '5px', marginBottom: '10px' }}>
+                        Customer
+                    </div>
+                    <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '18px', fontSize: '12px' }}>
+                        <tbody>
+                            <tr>
+                                <td style={{ padding: '7px 0', color: '#888', width: '40%' }}>Name</td>
+                                <td style={{ padding: '7px 0', fontWeight: 600, color: '#1a1a2e', borderBottom: '1px solid #f5f5f5' }}>{booking.customer_name}</td>
+                            </tr>
+                            <tr>
+                                <td style={{ padding: '7px 0', color: '#888' }}>Phone</td>
+                                <td style={{ padding: '7px 0', fontWeight: 700, color: '#16a34a' }}>{booking.customer_phone}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    {/* Special instructions */}
+                    {(booking.special_requests || booking.admin_notes) && (
+                        <>
+                            <div style={{ fontSize: '9px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1.5px', color: '#888', borderBottom: '1px solid #e5e7eb', paddingBottom: '5px', marginBottom: '10px' }}>
+                                Instructions
+                            </div>
+                            {booking.special_requests && (
+                                <div style={{ background: '#fffbeb', border: '1px solid #fef08a', borderRadius: '8px', padding: '10px 13px', fontSize: '12px', color: '#92400e', marginBottom: '8px' }}>
+                                    <strong>Customer: </strong>{booking.special_requests}
+                                </div>
+                            )}
+                            {booking.admin_notes && (
+                                <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '10px 13px', fontSize: '12px', color: '#1e40af', marginBottom: '8px' }}>
+                                    <strong>Admin: </strong>{booking.admin_notes}
+                                </div>
+                            )}
+                        </>
+                    )}
+
+                    {/* Footer + signature */}
+                    <div style={{ borderTop: '2px dashed #e5e7eb', paddingTop: '14px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginTop: '8px' }}>
+                        <div>
+                            <div style={{ fontSize: '12px', fontWeight: 700, color: '#001f3f' }}>
+                                Haram<span style={{ color: '#d4af37' }}>Taxi</span> Service
+                            </div>
+                            <div style={{ fontSize: '10px', color: '#aaa', marginTop: '3px' }}>+966 57 580 6733 · #{booking.id.slice(0,8).toUpperCase()} · {today}</div>
+                        </div>
+                        <div style={{ border: '1px solid #ddd', borderRadius: '8px', padding: '8px 18px', textAlign: 'center' }}>
+                            <div style={{ fontSize: '9px', color: '#888', textTransform: 'uppercase', letterSpacing: '1px' }}>Driver Signature</div>
+                            <div style={{ marginTop: '18px', borderBottom: '1px solid #ccc', width: '130px' }} />
+                        </div>
+                    </div>
+
+                    <div style={{ height: '4px', background: 'linear-gradient(90deg,#d4af37,#001f3f)', borderRadius: '4px', marginTop: '20px' }} />
                 </div>
             </DialogContent>
         </Dialog>
