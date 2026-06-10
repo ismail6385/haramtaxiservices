@@ -158,6 +158,9 @@ export default function BookingDetailSheet({
     const [resending, setResending] = useState(false)
     const [duplicating, setDuplicating] = useState(false)
 
+    // Drivers list
+    const [availableDrivers, setAvailableDrivers] = useState<{ id: string; name: string; status: string }[]>([])
+
     const supabase = useMemo(() => createBrowserClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
@@ -180,6 +183,13 @@ export default function BookingDetailSheet({
         setLogs([])
         setLogsSetupNeeded(false)
     }, [booking?.id])
+
+    // Fetch drivers list
+    useEffect(() => {
+        supabase.from('drivers').select('id, name, status').order('name').then(({ data }) => {
+            if (data) setAvailableDrivers(data)
+        })
+    }, [supabase])
 
     // Fetch logs when timeline tab opened
     useEffect(() => {
@@ -559,15 +569,35 @@ export default function BookingDetailSheet({
                                             <div className="flex-1 min-w-0">
                                                 <p className="text-[11px] text-neutral-500 mb-1">Driver Assigned</p>
                                                 {driverEdit ? (
-                                                    <div className="flex items-center gap-2">
-                                                        <Input autoFocus placeholder="Driver name" value={driverInput}
-                                                            onChange={e => setDriverInput(e.target.value)}
-                                                            onKeyDown={e => { if (e.key === 'Enter') handleDriverSave(); if (e.key === 'Escape') setDriverEdit(false) }}
-                                                            className="h-8 text-sm bg-neutral-800 border-neutral-600 text-white" />
-                                                        <button onClick={handleDriverSave} disabled={savingDriver} className="text-green-400 hover:text-green-300">
-                                                            {savingDriver ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
-                                                        </button>
-                                                        <button onClick={() => setDriverEdit(false)} className="text-neutral-500 hover:text-neutral-300"><X className="w-4 h-4" /></button>
+                                                    <div className="space-y-2">
+                                                        {availableDrivers.length > 0 ? (
+                                                            <Select value={driverInput} onValueChange={setDriverInput}>
+                                                                <SelectTrigger className="h-8 text-sm bg-neutral-800 border-neutral-600 text-white">
+                                                                    <SelectValue placeholder="Select driver..." />
+                                                                </SelectTrigger>
+                                                                <SelectContent className="bg-neutral-800 border-neutral-700 text-white">
+                                                                    {availableDrivers.map(d => (
+                                                                        <SelectItem key={d.id} value={d.name}>
+                                                                            {d.name}
+                                                                            {d.status === 'available' && <span className="ml-2 text-green-400 text-[10px]">● available</span>}
+                                                                            {d.status === 'on_trip' && <span className="ml-2 text-yellow-400 text-[10px]">● on trip</span>}
+                                                                            {d.status === 'off_duty' && <span className="ml-2 text-neutral-500 text-[10px]">● off duty</span>}
+                                                                        </SelectItem>
+                                                                    ))}
+                                                                </SelectContent>
+                                                            </Select>
+                                                        ) : (
+                                                            <Input autoFocus placeholder="Driver name" value={driverInput}
+                                                                onChange={e => setDriverInput(e.target.value)}
+                                                                onKeyDown={e => { if (e.key === 'Enter') handleDriverSave(); if (e.key === 'Escape') setDriverEdit(false) }}
+                                                                className="h-8 text-sm bg-neutral-800 border-neutral-600 text-white" />
+                                                        )}
+                                                        <div className="flex gap-2">
+                                                            <button onClick={handleDriverSave} disabled={savingDriver} className="text-green-400 hover:text-green-300">
+                                                                {savingDriver ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
+                                                            </button>
+                                                            <button onClick={() => setDriverEdit(false)} className="text-neutral-500 hover:text-neutral-300"><X className="w-4 h-4" /></button>
+                                                        </div>
                                                     </div>
                                                 ) : booking.driver_assigned ? (
                                                     <div className="flex items-center gap-2">

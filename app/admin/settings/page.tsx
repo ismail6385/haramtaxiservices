@@ -11,6 +11,7 @@ import {
     User, Lock, Loader2, CheckCircle, AlertCircle,
     Building2, Phone, Mail, MapPin, ExternalLink,
     Globe, Database, MessageCircle, Save, RefreshCw,
+    Percent, Clock,
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
@@ -21,6 +22,10 @@ interface BusinessSettings {
     email: string;
     address: string;
     tagline: string;
+    vat_rate: string;
+    business_hours_open: string;
+    business_hours_close: string;
+    business_days: string;
 }
 
 const DEFAULTS: BusinessSettings = {
@@ -29,6 +34,10 @@ const DEFAULTS: BusinessSettings = {
     email: 'haramtaxiservice@gmail.com',
     address: 'Makkah Al-Mukarramah, Saudi Arabia',
     tagline: 'Premium taxi service across Saudi Arabia',
+    vat_rate: '15',
+    business_hours_open: '00:00',
+    business_hours_close: '23:59',
+    business_days: 'Mon-Sun',
 };
 
 function Section({ title, icon: Icon, children }: {
@@ -99,6 +108,10 @@ export default function SettingsPage() {
                     email: map.email ?? DEFAULTS.email,
                     address: map.address ?? DEFAULTS.address,
                     tagline: map.tagline ?? DEFAULTS.tagline,
+                    vat_rate: map.vat_rate ?? DEFAULTS.vat_rate,
+                    business_hours_open: map.business_hours_open ?? DEFAULTS.business_hours_open,
+                    business_hours_close: map.business_hours_close ?? DEFAULTS.business_hours_close,
+                    business_days: map.business_days ?? DEFAULTS.business_days,
                 });
             }
             setBizLoading(false);
@@ -270,6 +283,93 @@ CREATE POLICY "Admin can manage settings" ON site_settings
                             )}
                         </div>
                     )}
+                </Section>
+
+                {/* ── VAT & Pricing ── */}
+                <Section title="VAT & Pricing" icon={Percent}>
+                    <div className="space-y-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div className="space-y-1.5">
+                                <Label className="text-slate-400 text-xs flex items-center gap-1">
+                                    <Percent className="w-3 h-3" /> VAT Rate (%)
+                                </Label>
+                                <Input
+                                    type="number"
+                                    min="0"
+                                    max="100"
+                                    step="0.01"
+                                    value={biz.vat_rate}
+                                    onChange={e => setBiz(b => ({ ...b, vat_rate: e.target.value }))}
+                                    disabled={!bizTableExists}
+                                    placeholder="15"
+                                    className="bg-slate-800/50 border-slate-700 text-white"
+                                />
+                                <p className="text-xs text-slate-600">Currently used: {biz.vat_rate || '15'}% on all invoices & receipts</p>
+                            </div>
+                        </div>
+                        {bizTableExists && (
+                            <Button
+                                onClick={handleBizSave}
+                                disabled={bizSaving}
+                                className="bg-brand-gold text-brand-navy hover:bg-yellow-400 font-bold"
+                            >
+                                {bizSaving ? <Loader2 className="w-4 h-4 animate-spin mr-2" /> : <Save className="w-4 h-4 mr-2" />}
+                                Save
+                            </Button>
+                        )}
+                    </div>
+                </Section>
+
+                {/* ── Business Hours ── */}
+                <Section title="Business Hours" icon={Clock}>
+                    <div className="space-y-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div className="space-y-1.5">
+                                <Label className="text-slate-400 text-xs flex items-center gap-1">
+                                    <Clock className="w-3 h-3" /> Opening Time
+                                </Label>
+                                <Input
+                                    type="time"
+                                    value={biz.business_hours_open}
+                                    onChange={e => setBiz(b => ({ ...b, business_hours_open: e.target.value }))}
+                                    disabled={!bizTableExists}
+                                    className="bg-slate-800/50 border-slate-700 text-white"
+                                />
+                            </div>
+                            <div className="space-y-1.5">
+                                <Label className="text-slate-400 text-xs flex items-center gap-1">
+                                    <Clock className="w-3 h-3" /> Closing Time
+                                </Label>
+                                <Input
+                                    type="time"
+                                    value={biz.business_hours_close}
+                                    onChange={e => setBiz(b => ({ ...b, business_hours_close: e.target.value }))}
+                                    disabled={!bizTableExists}
+                                    className="bg-slate-800/50 border-slate-700 text-white"
+                                />
+                            </div>
+                            <div className="space-y-1.5">
+                                <Label className="text-slate-400 text-xs">Operating Days</Label>
+                                <Input
+                                    value={biz.business_days}
+                                    onChange={e => setBiz(b => ({ ...b, business_days: e.target.value }))}
+                                    disabled={!bizTableExists}
+                                    placeholder="Mon-Sun"
+                                    className="bg-slate-800/50 border-slate-700 text-white"
+                                />
+                            </div>
+                        </div>
+                        {bizTableExists && (
+                            <Button
+                                onClick={handleBizSave}
+                                disabled={bizSaving}
+                                className="bg-brand-gold text-brand-navy hover:bg-yellow-400 font-bold"
+                            >
+                                {bizSaving ? <Loader2 className="w-4 h-4 animate-spin mr-2" /> : <Save className="w-4 h-4 mr-2" />}
+                                Save
+                            </Button>
+                        )}
+                    </div>
                 </Section>
 
                 {/* ── Account ── */}

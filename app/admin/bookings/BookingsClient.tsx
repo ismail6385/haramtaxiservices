@@ -10,6 +10,9 @@ import MobileBookingCard from './MobileBookingCard'
 import BookingDetailSheet from './BookingDetailSheet'
 import DeleteDialog from './DeleteDialog'
 import TableSkeleton from './TableSkeleton'
+import CreateBookingModal from './CreateBookingModal'
+import { Plus } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 const PAGE_SIZE = 10
 
@@ -56,6 +59,7 @@ export default function BookingsClient({ initialBookings }: Props) {
     // Bulk selection
     const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set())
     const [bulkUpdating, setBulkUpdating] = useState(false)
+    const [createOpen, setCreateOpen] = useState(false)
 
     // Stable ref for bookings (used in callbacks to avoid stale closures)
     const bookingsRef = useRef(bookings)
@@ -67,6 +71,13 @@ export default function BookingsClient({ initialBookings }: Props) {
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
     ), [])
+
+    // ── Browser notification permission ────────────────────────────────────────
+    useEffect(() => {
+        if (typeof window !== 'undefined' && 'Notification' in window && Notification.permission === 'default') {
+            Notification.requestPermission()
+        }
+    }, [])
 
     // ── Real-time subscription ──────────────────────────────────────────────────
     // NOTE: Enable Realtime for the 'bookings' table in Supabase dashboard → Database → Replication
@@ -83,6 +94,12 @@ export default function BookingsClient({ initialBookings }: Props) {
                         toast.success('New booking received!', {
                             description: `From ${newBooking.customer_name}`,
                         })
+                        if (typeof window !== 'undefined' && 'Notification' in window && Notification.permission === 'granted') {
+                            new Notification('New Booking — Haram Taxi', {
+                                body: `${newBooking.customer_name} · ${newBooking.pickup_location} → ${newBooking.destination}`,
+                                icon: '/favicon.ico',
+                            })
+                        }
                     }
                     if (payload.eventType === 'UPDATE') {
                         setBookings((prev) =>
@@ -445,7 +462,20 @@ export default function BookingsClient({ initialBookings }: Props) {
                         {bookings.length} total · real-time updates active
                     </p>
                 </div>
+                <Button onClick={() => setCreateOpen(true)}
+                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold gap-2 shrink-0">
+                    <Plus className="w-4 h-4" /> New Booking
+                </Button>
             </div>
+
+            <CreateBookingModal
+                open={createOpen}
+                onClose={() => setCreateOpen(false)}
+                onCreated={(b) => {
+                    setBookings(prev => [b, ...prev])
+                    setSelectedBooking(b)
+                }}
+            />
 
             {/* Filters bar */}
             <FiltersBar

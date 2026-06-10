@@ -70,6 +70,9 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
     const [calculatedPrice, setCalculatedPrice] = useState<number | null>(null);
     const [countryCode, setCountryCode] = useState('+1');
     const [open, setOpen] = useState(false);
+    const [isRoundTrip, setIsRoundTrip] = useState(false);
+    const [returnDate, setReturnDate] = useState('');
+    const [returnTime, setReturnTime] = useState('');
 
     const [formData, setFormData] = useState<BookingData>({
         customer_name: '',
@@ -154,13 +157,15 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
             // eslint-disable-next-line
             const { vehicle_image, ...restFormData } = formData;
 
-            const finalFormData = {
+            const finalFormData: Record<string, unknown> = {
                 ...restFormData,
                 customer_phone: fullPhoneNumber,
                 // confirmation_token: confirmationToken, // Disabled due to missing DB column
                 special_requests: calculatedPrice
                     ? `${formData.special_requests ? formData.special_requests + '. ' : ''}Quoted Price: SAR ${calculatedPrice}`
-                    : formData.special_requests
+                    : formData.special_requests,
+                is_round_trip: isRoundTrip,
+                ...(isRoundTrip && returnDate ? { return_date: returnDate, return_time: returnTime || null } : {}),
             };
 
             const { data, error } = await supabase
@@ -526,6 +531,45 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                             </div>
                         </div>
 
+                        {/* Round trip toggle */}
+                        <div className={`p-3 rounded-xl border ${isHero ? 'bg-white/5 border-white/10' : 'bg-gray-50 border-gray-200'}`}>
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <p className={`text-sm font-semibold ${textPrimary}`}>Round Trip</p>
+                                    <p className={`text-xs ${textSecondary}`}>Need a return journey?</p>
+                                </div>
+                                <button
+                                    type="button"
+                                    onClick={() => setIsRoundTrip(v => !v)}
+                                    className={`relative w-12 h-6 rounded-full transition-colors ${isRoundTrip ? 'bg-brand-navy' : isHero ? 'bg-white/20' : 'bg-gray-300'}`}
+                                >
+                                    <span className={`absolute top-1 w-4 h-4 rounded-full bg-white transition-transform shadow-sm ${isRoundTrip ? 'translate-x-7' : 'translate-x-1'}`} />
+                                </button>
+                            </div>
+                            {isRoundTrip && (
+                                <div className="grid grid-cols-2 gap-3 mt-3">
+                                    <div className="flex flex-col gap-1.5">
+                                        <label className={`text-xs font-semibold ml-1 ${labelColor}`}>Return Date</label>
+                                        <Input
+                                            type="date"
+                                            value={returnDate}
+                                            onChange={e => setReturnDate(e.target.value)}
+                                            className={`h-11 text-sm ${inputBg}`}
+                                        />
+                                    </div>
+                                    <div className="flex flex-col gap-1.5">
+                                        <label className={`text-xs font-semibold ml-1 ${labelColor}`}>Return Time</label>
+                                        <Input
+                                            type="time"
+                                            value={returnTime}
+                                            onChange={e => setReturnTime(e.target.value)}
+                                            className={`h-11 text-sm ${inputBg}`}
+                                        />
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
                         <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 pt-2">
                             <Button
                                 type="button"
@@ -576,6 +620,12 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                 </div>
 
                                 <div className={`border-t my-2 sm:my-3 ${isHero ? 'border-white/10' : 'border-gray-200'}`}></div>
+                                {isRoundTrip && returnDate && (
+                                    <div className="flex justify-between items-start gap-2">
+                                        <span className="shrink-0">Return:</span>
+                                        <span className={`font-semibold text-right ${textPrimary}`}>{returnDate}{returnTime ? ` at ${returnTime}` : ''}</span>
+                                    </div>
+                                )}
                                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 bg-brand-navy-pale/10 p-3 rounded-lg border border-brand-navy-pale/20">
                                     <span className="text-brand-navy font-bold flex items-center text-sm sm:text-base">
                                         <Wallet className="w-4 h-4 mr-2 shrink-0" /> Total Price:
@@ -625,6 +675,9 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                 setSuccess(false);
                                 setCalculatedPrice(null);
                                 setCountryCode('+1');
+                                setIsRoundTrip(false);
+                                setReturnDate('');
+                                setReturnTime('');
                                 setFormData({
                                     customer_name: '',
                                     customer_email: '',

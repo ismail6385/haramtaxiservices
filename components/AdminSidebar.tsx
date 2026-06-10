@@ -16,6 +16,8 @@ import {
     BarChart2,
     Users,
     UserCheck,
+    DollarSign,
+    Calendar,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
@@ -24,10 +26,12 @@ import { cn } from '@/lib/utils';
 const menuItems = [
     { name: 'Dashboard',  href: '/admin/dashboard',  icon: LayoutDashboard },
     { name: 'Bookings',   href: '/admin/bookings',   icon: CalendarCheck,  badge: true },
+    { name: 'Calendar',   href: '/admin/calendar',   icon: Calendar },
     { name: 'Customers',  href: '/admin/customers',  icon: Users },
     { name: 'Drivers',    href: '/admin/drivers',    icon: UserCheck },
     { name: 'Fleet',      href: '/admin/fleet',      icon: Car },
     { name: 'Locations',  href: '/admin/locations',  icon: MapPin },
+    { name: 'Pricing',    href: '/admin/pricing',    icon: DollarSign },
     { name: 'Expenses',   href: '/admin/expenses',   icon: Wallet },
     { name: 'Reports',    href: '/admin/reports',    icon: BarChart2 },
     { name: 'Settings',   href: '/admin/settings',   icon: Settings },
