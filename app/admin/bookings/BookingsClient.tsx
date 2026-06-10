@@ -53,6 +53,10 @@ export default function BookingsClient({ initialBookings }: Props) {
     const [deletingId, setDeletingId] = useState<string | null>(null)
     const [exportingCSV, setExportingCSV] = useState(false)
 
+    // Bulk selection
+    const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set())
+    const [bulkUpdating, setBulkUpdating] = useState(false)
+
     // Stable ref for bookings (used in callbacks to avoid stale closures)
     const bookingsRef = useRef(bookings)
     useEffect(() => { bookingsRef.current = bookings }, [bookings])
@@ -266,18 +270,86 @@ export default function BookingsClient({ initialBookings }: Props) {
 
     const handleDriverAssign = useCallback(async (id: string, driver: string) => {
         try {
-            const { error } = await supabase
-                .from('bookings')
-                .update({ driver_assigned: driver, status: 'confirmed' })
-                .eq('id', id)
+            const { error } = await supabase.from('bookings').update({ driver_assigned: driver, status: 'confirmed' }).eq('id', id)
             if (error) throw error
             setBookings((bs) => bs.map((b) => b.id === id ? { ...b, driver_assigned: driver, status: 'confirmed' } : b))
             setSelectedBooking((s) => s?.id === id ? { ...s, driver_assigned: driver, status: 'confirmed' } : s)
-            toast.success('Driver assigned', { description: `${driver} assigned — status set to Confirmed` })
-        } catch {
-            toast.error('Failed to assign driver')
-        }
+            toast.success('Driver assigned', { description: `${driver} — status set to Confirmed` })
+        } catch { toast.error('Failed to assign driver') }
     }, [supabase])
+
+    const handlePriceUpdate = useCallback(async (id: string, price: number) => {
+        try {
+            const { error } = await supabase.from('bookings').update({ total_price: price }).eq('id', id)
+            if (error) throw error
+            setBookings((bs) => bs.map((b) => b.id === id ? { ...b, total_price: price } : b))
+            setSelectedBooking((s) => s?.id === id ? { ...s, total_price: price } : s)
+            toast.success('Price updated', { description: `SAR ${price.toLocaleString()}` })
+        } catch { toast.error('Failed to update price') }
+    }, [supabase])
+
+    const handleNoteSave = useCallback(async (id: string, note: string) => {
+        try {
+            const { error } = await supabase.from('bookings').update({ admin_notes: note || null }).eq('id', id)
+            if (error) throw error
+            setBookings((bs) => bs.map((b) => b.id === id ? { ...b, admin_notes: note || undefined } : b))
+            setSelectedBooking((s) => s?.id === id ? { ...s, admin_notes: note || undefined } : s)
+            toast.success('Note saved')
+        } catch { toast.error('Failed to save note') }
+    }, [supabase])
+
+    const handleToggleSelect = useCallback((id: string) => {
+        setSelectedIds(prev => {
+            const next = new Set(prev)
+            next.has(id) ? next.delete(id) : next.add(id)
+            return next
+        })
+    }, [])
+
+    const handleToggleSelectAll = useCallback(() => {
+        setSelectedIds(prev => {
+            const pageIds = paginatedBookings.map(b => b.id)
+            const allSelected = pageIds.every(id => prev.has(id))
+            if (allSelected) {
+                const next = new Set(prev)
+                pageIds.forEach(id => next.delete(id))
+                return next
+            }
+            const next = new Set(prev)
+            pageIds.forEach(id => next.add(id))
+            return next
+        })
+    }, [paginatedBookings])
+
+    const handleBulkStatus = useCallback(async (newStatus: BookingStatus) => {
+        if (selectedIds.size === 0 || bulkUpdating) return
+        setBulkUpdating(true)
+        try {
+            const ids = Array.from(selectedIds)
+            const { error } = await supabase.from('bookings').update({ status: newStatus }).in('id', ids)
+            if (error) throw error
+            setBookings(bs => bs.map(b => selectedIds.has(b.id) ? { ...b, status: newStatus } : b))
+            toast.success(`${ids.length} bookings marked as ${newStatus}`)
+            setSelectedIds(new Set())
+        } catch { toast.error('Bulk update failed') }
+        setBulkUpdating(false)
+    }, [selectedIds, bulkUpdating, supabase])
+
+    const handleBulkDelete = useCallback(async () => {
+        if (selectedIds.size === 0 || bulkUpdating) return
+        if (!confirm(`Delete ${selectedIds.size} booking(s)? This cannot be undone.`)) return
+        setBulkUpdating(true)
+        try {
+            const ids = Array.from(selectedIds)
+            for (const id of ids) {
+                await fetch(`/api/admin/bookings/${id}`, { method: 'DELETE' })
+            }
+            setBookings(bs => bs.filter(b => !selectedIds.has(b.id)))
+            toast.success(`${ids.length} bookings deleted`)
+            setSelectedIds(new Set())
+        } catch { toast.error('Bulk delete failed') }
+        setBulkUpdating(false)
+    }, [selectedIds, bulkUpdating])
 
     const handleReset = useCallback(() => {
         setSearch('')
@@ -319,6 +391,37 @@ export default function BookingsClient({ initialBookings }: Props) {
                 exportingCSV={exportingCSV}
             />
 
+            {/* Bulk action bar */}
+            {selectedIds.size > 0 && (
+                <div className="flex items-center gap-3 px-4 py-2.5 bg-yellow-500/10 border border-yellow-500/30 rounded-xl">
+                    <span className="text-sm font-medium text-yellow-400">
+                        {selectedIds.size} selected
+                    </span>
+                    <div className="h-4 w-px bg-yellow-500/30" />
+                    <div className="flex items-center gap-2 flex-wrap">
+                        <button onClick={() => handleBulkStatus('confirmed')} disabled={bulkUpdating}
+                            className="px-3 py-1 text-xs font-semibold rounded-lg bg-blue-600/20 text-blue-300 border border-blue-600/40 hover:bg-blue-600/30 disabled:opacity-50 transition-colors">
+                            Mark Confirmed
+                        </button>
+                        <button onClick={() => handleBulkStatus('completed')} disabled={bulkUpdating}
+                            className="px-3 py-1 text-xs font-semibold rounded-lg bg-green-600/20 text-green-300 border border-green-600/40 hover:bg-green-600/30 disabled:opacity-50 transition-colors">
+                            Mark Completed
+                        </button>
+                        <button onClick={() => handleBulkStatus('cancelled')} disabled={bulkUpdating}
+                            className="px-3 py-1 text-xs font-semibold rounded-lg bg-orange-600/20 text-orange-300 border border-orange-600/40 hover:bg-orange-600/30 disabled:opacity-50 transition-colors">
+                            Mark Cancelled
+                        </button>
+                        <button onClick={handleBulkDelete} disabled={bulkUpdating}
+                            className="px-3 py-1 text-xs font-semibold rounded-lg bg-red-600/20 text-red-300 border border-red-600/40 hover:bg-red-600/30 disabled:opacity-50 transition-colors">
+                            Delete Selected
+                        </button>
+                    </div>
+                    <button onClick={() => setSelectedIds(new Set())} className="ml-auto text-neutral-500 hover:text-neutral-300 text-xs transition-colors">
+                        Clear
+                    </button>
+                </div>
+            )}
+
             {/* Desktop table */}
             <div className="hidden md:block">
                 {loading ? (
@@ -334,6 +437,9 @@ export default function BookingsClient({ initialBookings }: Props) {
                         onView={setSelectedBooking}
                         onStatusChange={handleStatusChange}
                         onDelete={setBookingToDelete}
+                        selectedIds={selectedIds}
+                        onToggleSelect={handleToggleSelect}
+                        onToggleSelectAll={handleToggleSelectAll}
                     />
                 )}
             </div>
@@ -422,6 +528,8 @@ export default function BookingsClient({ initialBookings }: Props) {
                 onClose={() => setSelectedBooking(null)}
                 onStatusChange={handleStatusChange}
                 onDriverAssign={handleDriverAssign}
+                onPriceUpdate={handlePriceUpdate}
+                onNoteSave={handleNoteSave}
                 updatingId={updatingId}
             />
 

@@ -14,6 +14,8 @@ import {
     Menu,
     X,
     BarChart2,
+    Users,
+    UserCheck,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
@@ -22,6 +24,8 @@ import { cn } from '@/lib/utils';
 const menuItems = [
     { name: 'Dashboard',  href: '/admin/dashboard',  icon: LayoutDashboard },
     { name: 'Bookings',   href: '/admin/bookings',   icon: CalendarCheck,  badge: true },
+    { name: 'Customers',  href: '/admin/customers',  icon: Users },
+    { name: 'Drivers',    href: '/admin/drivers',    icon: UserCheck },
     { name: 'Fleet',      href: '/admin/fleet',      icon: Car },
     { name: 'Locations',  href: '/admin/locations',  icon: MapPin },
     { name: 'Expenses',   href: '/admin/expenses',   icon: Wallet },
@@ -34,6 +38,7 @@ export default function AdminSidebar() {
     const router = useRouter();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [pendingCount, setPendingCount] = useState(0);
+    const [adminEmail, setAdminEmail] = useState<string | null>(null);
 
     // Live pending bookings count
     useEffect(() => {
@@ -55,6 +60,12 @@ export default function AdminSidebar() {
             .subscribe();
 
         return () => { supabase.removeChannel(channel); };
+    }, []);
+
+    useEffect(() => {
+        supabase.auth.getSession().then(({ data }) => {
+            setAdminEmail(data.session?.user?.email ?? null);
+        });
     }, []);
 
     const handleLogout = async () => {
@@ -137,8 +148,21 @@ export default function AdminSidebar() {
                         })}
                     </nav>
 
-                    {/* Logout */}
-                    <div className="p-4 border-t border-slate-800">
+                    {/* Profile + Logout */}
+                    <div className="p-4 border-t border-slate-800 space-y-3">
+                        {adminEmail && (
+                            <div className="flex items-center gap-3 px-3 py-2.5 bg-white/5 rounded-xl border border-slate-700/50">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-yellow-500/30 to-yellow-600/20 border border-yellow-500/30 flex items-center justify-center shrink-0">
+                                    <span className="text-xs font-bold text-brand-gold">
+                                        {adminEmail.charAt(0).toUpperCase()}
+                                    </span>
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-xs font-semibold text-white truncate">Admin</p>
+                                    <p className="text-[10px] text-slate-500 truncate">{adminEmail}</p>
+                                </div>
+                            </div>
+                        )}
                         <Button
                             onClick={handleLogout}
                             className="w-full justify-start bg-red-500/10 hover:bg-red-500/20 text-red-500 hover:text-red-400 border border-red-500/20 transition-all font-medium rounded-xl h-12"
