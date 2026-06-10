@@ -696,6 +696,50 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
+        slug: "al-baha-dhee-ain-heritage-tour",
+        title: "Al-Baha Dhee Ain Heritage Tour | White Marble Village & Zahran Stone Houses — Driver Waits",
+        description: "Half-day heritage circuit from Al-Baha — Dhee Ain white marble village (25km) + Zahran Heritage Village stone tower houses. Driver waits at both sites. Most photographed village in Al-Baha Province.",
+        content: "Half-day private heritage tour from Al-Baha covering the two defining heritage sites of the Province: Dhee Ain (the white quartz village on a rocky cliff — most photographed site in Al-Baha, 25km west) and Zahran Heritage Village (traditional granite tower houses, heritage museum, honey stalls). Driver waits at both sites: typically 1 hour at Dhee Ain, 45 minutes at Zahran. Best run in the morning for the Dhee Ain light (sunrise or early morning). No public transport to either site — driver is essential.",
+        features: [
+            "Dhee Ain White Marble Village",
+            "Zahran Stone Tower Houses",
+            "Driver Waits Both Sites",
+            "Heritage Museum Entry Assistance",
+            "Morning Light Photography",
+            "Honey Stall Stop Option"
+        ],
+        pricing: [
+            { title: "Half-Day Heritage Circuit (Toyota Camry)", price: "Get Quote" },
+            { title: "Half-Day Heritage Circuit (Toyota Staria)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "How long does the Dhee Ain heritage tour take?", answer: "Approximately 3.5–4.5 hours for the full circuit: Al-Baha → Dhee Ain (30 min drive) + 60 min at the village + Zahran Heritage Village (20 min drive) + 45 min at Zahran + return to Al-Baha (25 min). Can be extended to include Raghadan Forest for a full-day circuit." },
+            { question: "Can the driver take us for sunrise at Dhee Ain?", answer: "Yes — sunrise at Dhee Ain is the definitive photography experience. We pick up from your hotel 30–45 minutes before sunrise and arrive at Dhee Ain for the first golden light on the white stone. WhatsApp us with your sunrise time (changes by season) when booking." }
+        ]
+    },
+    {
+        slug: "al-baha-highland-full-day-circuit",
+        title: "Al-Baha Full-Day Highland Circuit | Raghadan Forest, Dhee Ain, Zahran & Baljurashi",
+        description: "Full-day private circuit from Al-Baha — Raghadan Forest cable car + Dhee Ain marble village + Zahran Heritage Village + optional Baljurashi. Driver waits throughout. Best of Al-Baha Province in one day.",
+        content: "Full-day private circuit covering Al-Baha Province's four main destinations. Typical routing: Raghadan Forest Park (cable car + forest walk, 5km) → Dhee Ain white marble village (25km west) → Zahran Heritage Village (stone tower houses + museum, 15km) → optional Baljurashi market town (55km south). Driver waits at all sites. Recommended for visitors with one full day in Al-Baha who want to see everything. Best combined with an early start to catch Dhee Ain in morning light.",
+        features: [
+            "Raghadan Forest Cable Car",
+            "Dhee Ain White Marble Village",
+            "Zahran Heritage Village & Museum",
+            "Baljurashi Market Town Option",
+            "Driver Waits All Stops",
+            "Full-Day — All Al-Baha Highlights"
+        ],
+        pricing: [
+            { title: "Full-Day Circuit (Toyota Camry)", price: "Get Quote" },
+            { title: "Full-Day Circuit (Toyota Staria / 7 Pax)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "What is included in the full-day Al-Baha circuit?", answer: "Driver + vehicle for the full day with waiting time at all sites. You pay separately for cable car tickets at Raghadan and any museum entry fees. Suggested itinerary: 7:30am Raghadan Forest (cable car + walk), 10am Dhee Ain (marble village + viewpoint), 12:30pm Zahran Heritage Village (museum + honey stall), 2:30pm Baljurashi (market, optional), return to Al-Baha by 5pm." },
+            { question: "Can we add Wadi Al-Aqiq to the circuit?", answer: "Yes — Wadi Al-Aqiq is on the western escarpment route between Al-Baha and Dhee Ain. Adding a 30-minute Wadi Al-Aqiq stop (dam viewpoint) extends the full-day circuit by about 45 minutes. Ask for the extended circuit when booking." }
+        ]
+    },
+    {
         slug: "al-baha-airport-taxi",
         title: "Al Baha Airport Taxi",
         description: "Transfer from Al Baha Domestic Airport.",

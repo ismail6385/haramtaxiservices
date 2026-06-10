@@ -16973,6 +16973,61 @@ export const blogData: BlogPost[] = [
     content: "Najran Airport (IATA: EAM) — Prince Abdulmajeed bin Abdulaziz Domestic Airport — has limited on-demand taxi availability at arrivals. Pre-booking is essential."
   },
   {
+    slug: "al-baha-travel-guide-2026",
+    title: "Al-Baha Travel Guide 2026 — Dhee Ain Marble Village, Raghadan Forest & Getting Around",
+    excerpt: "Complete guide to Al-Baha — Dhee Ain white marble village, Raghadan Forest cable car, Zahran heritage village, Baljurashi market, and how to get around by private taxi from Jeddah, Taif, or Riyadh.",
+    date: "2026-05-20",
+    author: "Haram Taxi Team",
+    category: "Travel Guide",
+    image: "/al-baha-dhee-ain.webp",
+    relatedServiceSlug: "al-baha-highland-full-day-circuit",
+    content: "Al-Baha is one of Saudi Arabia's most rewarding highland destinations — a province at 1,700m altitude on the western Hejaz escarpment with relict cedar forests, ancient stone villages, and the most photographed heritage site in the western region: Dhee Ain, the white quartz village on a rocky cliff. Getting around Al-Baha requires a private driver. Dhee Ain (25km west), Zahran Heritage Village (15km), and Baljurashi (55km south) have no on-demand transport — pre-booked private taxi is the only practical option. The standard Al-Baha visit: Raghadan Forest (cable car, 5km) + Dhee Ain (marble village, morning light) + Zahran Heritage Village (stone tower houses) in a full day. The city is accessible from Jeddah (390km, 4.5hrs), Taif (220km, 3hrs), and Riyadh (660km, 7hrs)."
+  },
+  {
+    slug: "dhee-ain-marble-village-guide-2026",
+    title: "Dhee Ain Marble Village Guide 2026 — Al-Baha White Stone Village Photography & Taxi",
+    excerpt: "Everything about visiting Dhee Ain (Thee Ain) — the white quartz village on a rocky cliff in Al-Baha Province. Best photography times, what to see, how far from Al-Baha city, and how to get there.",
+    date: "2026-05-22",
+    author: "Haram Taxi Team",
+    category: "Heritage Guide",
+    image: "/al-baha-dhee-ain.webp",
+    relatedServiceSlug: "al-baha-dhee-ain-heritage-tour",
+    content: "Dhee Ain (also: Zee Ain, Thee Ain, Al-Dhee Ain) is the single most photographed heritage site in Al-Baha Province — a pre-Islamic stone village perched on a rocky hilltop 25km west of Al-Baha city, built from locally quarried white quartz and cream limestone that gives the village its characteristic luminous appearance. The village is one of the most distinctive pre-Islamic settlements in western Arabia, with multi-story tower houses built directly into and against the cliff face. Photography: sunrise and late afternoon are the optimal times — the white stone catches warm golden tones in low-angle light that are absent in harsh midday conditions. No public transport reaches Dhee Ain — a taxi with the driver waiting is essential. Allow 60–90 minutes at the village for a full exploration including the upper viewpoint."
+  },
+  {
+    slug: "al-baha-weekend-getaway-guide-2026",
+    title: "Al-Baha Weekend Getaway 2026 — From Jeddah, Riyadh & Taif by Private Taxi",
+    excerpt: "Planning a weekend trip to Al-Baha from Jeddah (4.5hrs), Taif (3hrs), or Riyadh (7hrs). What to see, where to stay, and how to arrange a private taxi for the highland circuit.",
+    date: "2026-05-25",
+    author: "Haram Taxi Team",
+    category: "Travel Guide",
+    image: "/al-baha-raghadan.webp",
+    relatedServiceSlug: "al-baha-highland-full-day-circuit",
+    content: "Al-Baha makes an excellent 2-3 day weekend getaway from Jeddah (390km, 4.5 hours south via Route 15), Taif (220km, 3 hours south), or Riyadh (660km, 7 hours west). The city is at 1,700m altitude — significantly cooler than the coast or the plateau, making it particularly popular in summer (May–September) when Al-Baha averages 25–30°C versus Jeddah at 38–42°C. Recommended 2-day itinerary: Day 1 — arrive, check in, afternoon Raghadan Forest (cable car + forest walk, 5km). Day 2 — early morning Dhee Ain marble village (sunrise light), late morning Zahran Heritage Village, afternoon Baljurashi market town (55km south). Return on Day 2 evening or Day 3 morning. Private taxi is essential throughout — arrange a car with driver for your full stay."
+  },
+  {
+    slug: "raghadan-forest-al-baha-guide-2026",
+    title: "Raghadan Forest Al-Baha 2026 — Cable Car, Highland Cedar Forest & How to Visit",
+    excerpt: "Guide to Raghadan Forest Park — Al-Baha's highland cedar and juniper forest, cable car with panoramic valley views, walking trails. Best time to visit, how to get there, and what to expect.",
+    date: "2026-05-27",
+    author: "Haram Taxi Team",
+    category: "Nature Guide",
+    image: "/al-baha-raghadan.webp",
+    relatedServiceSlug: "al-baha-highland-full-day-circuit",
+    content: "Raghadan Forest Park is the most accessible major attraction from Al-Baha city — 5km, 10 minutes by taxi. The park is a rare relict highland forest at 1,700m: African juniper, wild olive, and highland Acacia — species that exist here because of Al-Baha's unusual position on the southwestern Hejaz escarpment, which captures Indian Ocean monsoon moisture that doesn't reach the rest of Arabia. The defining feature: the Raghadan Cable Car (Teleferik), which descends from the forest plateau edge to the valley below, giving panoramic views of the Hejaz escarpment, highland villages, and in clear weather, the coastal plain toward the Red Sea. The park is busiest on Thursdays and weekends — arrive early for a quieter experience and better photography. Best combined with Dhee Ain as a morning circuit: Raghadan (7:30–9am) + Dhee Ain (9:30am–11:30am) + return to city."
+  },
+  {
+    slug: "al-baha-airport-transfer-guide-2026",
+    title: "Al-Baha Airport Transfer Guide 2026 — ABT Taxi, Flight Info & Pre-Booking",
+    excerpt: "Guide to Al-Baha Airport (ABT) — King Saud bin Abdulaziz Airport. Why on-demand taxis are unreliable, how to pre-book, airlines, distances to city and heritage sites.",
+    date: "2026-05-29",
+    author: "Haram Taxi Team",
+    category: "Airport Guide",
+    image: "/al-baha-airport.webp",
+    relatedServiceSlug: "al-baha-airport-taxi",
+    content: "Al-Baha Regional Airport (IATA: ABT) — officially King Saud bin Abdulaziz Airport — is a domestic-only airport approximately 15km from Al-Baha city centre. Saudia and flynas serve ABT with flights to Riyadh (RUH) and Jeddah (JED). On-demand taxi availability at ABT arrivals is limited — particularly in evenings and off-peak hours. Pre-booking a private transfer is strongly recommended. A pre-booked driver meets you at arrivals with a name board and takes you directly to your destination: Al-Baha city hotels (15km, 20 min), Raghadan Forest (18km, 25 min), or Dhee Ain marble village (38km, 45 min). For travellers planning to see Al-Baha's heritage sites, a direct airport-to-Dhee-Ain transfer for afternoon light is a popular option — arriving at the marble village for the sunset photography window before checking into the hotel."
+  },
+  {
     slug: "buraidah-travel-guide-2026",
     title: "Buraidah Travel Guide 2026 — Dates Market, Qassim Heritage & Getting Around",
     excerpt: "Complete guide to Buraidah — the Dates Market (world's largest), Sukkari varieties, Unaizah day trip, ELQ Airport connections, and how to get around Qassim by private taxi.",

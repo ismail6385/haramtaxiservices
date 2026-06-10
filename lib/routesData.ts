@@ -2907,6 +2907,46 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "riyadh-to-al-baha",
+        title: "Riyadh to Al-Baha Taxi | Capital to Hejaz Highlands — 660km Private Transfer",
+        description: "Private taxi from Riyadh to Al-Baha. 660km, approximately 7 hours via Taif and Route 15 south. Al-Baha highland destination: Dhee Ain marble village, Raghadan Forest, ABT Airport. Fixed rate.",
+        h1: "Riyadh to Al-Baha Taxi — 660km Capital to Hejaz Highlands",
+        distance: "660 km",
+        duration: "7 hours",
+        content: "Private taxi from Riyadh to the highland city of Al-Baha — a 660km journey taking approximately 7 hours via the main highway west to Taif, then south on Route 15 descending to the Al-Baha plateau. Al-Baha is one of Saudi Arabia's most scenically dramatic highland destinations: Dhee Ain (the white marble village), Raghadan Forest Park (cedar forest and cable car), and traditional Zahrani heritage villages. The city sits at 1,700m altitude — one of the coolest in Saudi Arabia in summer. Popular weekend escape from Riyadh's heat (May–September) and for leisure travel in the highland spring and autumn.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is Riyadh to Al-Baha by taxi?", answer: "Approximately 660km — about 7 hours driving time. The route goes west from Riyadh through Taif (~440km, 4.5 hours) then south on Route 15 to Al-Baha (~220km more, 2.5 hours). One scheduled rest stop is recommended on this journey." },
+            { question: "What is the route from Riyadh to Al-Baha?", answer: "Riyadh → Taif via the main dual carriageway (~440km), then Route 15 south from Taif through the Hejaz highlands toward Al-Baha. The second half of the journey (Taif to Al-Baha) passes through some of the most scenic mountain terrain in the Hejaz escarpment — traditional villages, terraced hillsides, and dramatic valley views." },
+            { question: "Is Al-Baha worth the drive from Riyadh?", answer: "Yes — Al-Baha is one of Saudi Arabia's most underrated highland destinations. Dhee Ain marble village, Raghadan Forest cable car, and the stone tower-house architecture of Zahran village are genuinely impressive. The 7-hour drive is best done as part of a 2-3 day trip. Riyadh to Al-Baha is popular for summer weekends when Al-Baha at 1,700m is significantly cooler than Riyadh." }
+        ]
+    },
+    {
+        slug: "al-baha-to-riyadh",
+        title: "Al-Baha to Riyadh Taxi | Hejaz Highlands to Capital — 660km Private Transfer",
+        description: "Private taxi from Al-Baha to Riyadh. 660km, approximately 7 hours via Route 15 north and Taif. All Al-Baha pickup points: city hotels, ABT Airport, Dhee Ain, Raghadan Forest. Fixed rate.",
+        h1: "Al-Baha to Riyadh Taxi — 660km Hejaz Highlands to Capital",
+        distance: "660 km",
+        duration: "7 hours",
+        content: "Private taxi from Al-Baha to Riyadh — 660km, approximately 7 hours via Route 15 north to Taif, then east to Riyadh. We pick up from all Al-Baha locations: city hotels, ABT Airport, Dhee Ain marble village, Raghadan Forest, Zahran Heritage Village, and Baljurashi. We deliver to all Riyadh addresses including King Khalid International Airport (RUH). Al-Baha Airport (ABT) has limited domestic service — many Al-Baha visitors choose ground transfer to Riyadh rather than domestic connection.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
+        ],
+        faqs: [
+            { question: "How long is Al-Baha to Riyadh by taxi?", answer: "Approximately 660km — about 7 hours driving time via Route 15 north through the Hejaz highlands to Taif, then east across the plateau to Riyadh. One scheduled rest stop recommended." },
+            { question: "Can you pick up from Al-Baha Airport (ABT) for the Riyadh transfer?", answer: "Yes — we pick up from ABT Airport arrivals and drive directly to Riyadh. Pre-booking is essential as ABT has very limited on-demand transport. Confirm your flight arrival time when booking." },
+            { question: "Can I get a taxi from Dhee Ain or Raghadan to Riyadh directly?", answer: "Yes — we do end-of-visit pickups from heritage sites. Common routing: last morning at Dhee Ain marble village → pickup at noon → arrive Riyadh evening. WhatsApp us with your itinerary." }
+        ]
+    },
+    {
         slug: "tabuk-to-jeddah",
         title: "Tabuk to Jeddah Taxi | Northwest Saudi to Red Sea City — 1,200km",
         description: "Long-distance private taxi from Tabuk to Jeddah. 1,200km, approximately 12 hours via Route 65 south and Hijrah Highway. Scheduled rest stops. Fixed rate.",
