@@ -1056,6 +1056,36 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
+        slug: "al-ahsa-oasis-heritage-tour",
+        title: "Al-Ahsa Oasis Heritage Tour — Al-Qara Mountain, Jawatha Mosque & Qasr Ibrahim",
+        description: "Full-day private taxi tour of Al-Ahsa UNESCO heritage sites: Al-Qara Mountain caves (18°C), Jawatha Mosque (7th century CE, oldest in Eastern Arabia), Qasr Ibrahim Ottoman fortress, Al-Qaysariyya Market.",
+        content: "Al-Ahsa Heritage Tour covers the full UNESCO oasis circuit in one day. Starting at Al-Qara Mountain — sandstone caves at a constant 18°C regardless of the outside temperature, the most dramatic natural feature in the Eastern Province — then continuing to Jawatha Mosque in Al-Kilabiyah village (one of the oldest mosques in the Arabian Peninsula, 7th century CE), and concluding in central Hofuf at Qasr Ibrahim (16th-century Ottoman fortress with Al-Khamis Mosque inside the walls) and the Al-Qaysariyya traditional covered market for dates, Al-Sadu weaving, and traditional crafts. Driver plans optimal routing to avoid midday heat at outdoor sites.",
+        features: ["Al-Qara Mountain Caves (18°C)", "Jawatha Mosque 7th Century", "Qasr Ibrahim Ottoman Fortress", "Al-Qaysariyya Market", "UNESCO Oasis Area", "Driver Waits All Sites", "Full-Day Circuit"],
+        pricing: [
+            { title: "Heritage Circuit (Al-Qara + Jawatha + Qasr Ibrahim + Market)", price: "Get Quote" },
+            { title: "Half-Day (Al-Qara + Jawatha only)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "What does the Al-Ahsa Heritage Tour include?", answer: "Al-Qara Mountain caves (45–60 minute walk, 18°C year-round), Jawatha Mosque in Al-Kilabiyah (7th-century CE, oldest mosque in Eastern Arabia), Qasr Ibrahim Ottoman fortress in central Hofuf (16th century), and Al-Qaysariyya traditional covered market. Driver waits at all sites and plans optimal routing." },
+            { question: "How long does the full-day Al-Ahsa heritage circuit take?", answer: "The full circuit (Al-Qara + Jawatha + Qasr Ibrahim + market) takes approximately 7–8 hours from Hofuf departure. Depart at 8am, return by 4–5pm. From Dammam: add 3 hours total for the round-trip drive." }
+        ]
+    },
+    {
+        slug: "al-ahsa-al-uqair-coastal-trip",
+        title: "Al-Uqair Coastal Day Trip from Al-Ahsa — Arabian Gulf Ruins & Beach",
+        description: "Private taxi from Al-Ahsa to Al-Uqair — 80km east, 1 hour. Ancient Arabian Gulf port ruins, 1922 border treaty site (Uqair Protocol), isolated beach. Driver waits. No public transport.",
+        content: "Al-Uqair is the most remote and distinctive day trip from Al-Ahsa — an ancient coastal settlement 80km east of Hofuf on the Arabian Gulf. The site was the primary maritime gateway for Al-Ahsa trade for centuries; in 1922 it was the location of the Uqair Conference, where Sir Percy Cox presided over the border definition between Saudi Arabia (then Najd), Iraq, and Kuwait — borders that largely persist today. The site has ruins of an ancient fortified settlement, a watchtower, and the remnants of port infrastructure. Combined with an isolated Arabian Gulf beach with fine sand and calm water, Al-Uqair offers a uniquely quiet historical and coastal experience. Driver waits throughout — no public transport or alternative return from this location.",
+        features: ["Ancient Port Ruins", "1922 Uqair Protocol Site", "Isolated Arabian Gulf Beach", "80km from Hofuf", "Driver Waits", "No Public Transport", "Historical Context"],
+        pricing: [
+            { title: "Al-Uqair Day Trip (from Hofuf, driver waits)", price: "Get Quote" },
+            { title: "Al-Uqair from Dammam / Al-Khobar", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Why is Al-Uqair historically significant?", answer: "Al-Uqair was the main Arabian Gulf port for the Al-Ahsa region for centuries — a landing point for Persian Gulf trade. In 1922 the Uqair Conference was held here: the border agreement signed by Sir Percy Cox that defined Saudi Arabia, Iraq, and Kuwait's modern frontiers." },
+            { question: "Is there anything to see at Al-Uqair besides ruins?", answer: "Yes — Al-Uqair has an isolated Arabian Gulf beach with fine sand and shallow calm water. No facilities, but clean and peaceful. Best visited October–March when the beach weather is comfortable. The ruins walk takes approximately 45 minutes." }
+        ]
+    },
+    {
         slug: "soudah-tour",
         title: "Soudah Mountain Tour",
         description: "Tour the highest point in Saudi Arabia at Soudah Peak near Abha.",

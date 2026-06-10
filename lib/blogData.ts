@@ -17028,6 +17028,61 @@ export const blogData: BlogPost[] = [
     content: "Al-Baha Regional Airport (IATA: ABT) — officially King Saud bin Abdulaziz Airport — is a domestic-only airport approximately 15km from Al-Baha city centre. Saudia and flynas serve ABT with flights to Riyadh (RUH) and Jeddah (JED). On-demand taxi availability at ABT arrivals is limited — particularly in evenings and off-peak hours. Pre-booking a private transfer is strongly recommended. A pre-booked driver meets you at arrivals with a name board and takes you directly to your destination: Al-Baha city hotels (15km, 20 min), Raghadan Forest (18km, 25 min), or Dhee Ain marble village (38km, 45 min). For travellers planning to see Al-Baha's heritage sites, a direct airport-to-Dhee-Ain transfer for afternoon light is a popular option — arriving at the marble village for the sunset photography window before checking into the hotel."
   },
   {
+    slug: "al-ahsa-travel-guide-2026",
+    title: "Al-Ahsa Travel Guide 2026 — UNESCO Oasis, Al-Qara Mountain Caves & Hofuf Heritage",
+    excerpt: "Complete guide to Al-Ahsa (Hofuf) — UNESCO World Heritage oasis (2.5 million date palms), Al-Qara Mountain caves at 18°C year-round, Jawatha Mosque (7th century CE), Qasr Ibrahim Ottoman fortress, Khalas dates, and how to get around by private taxi.",
+    date: "2026-06-05",
+    author: "Haram Taxi Team",
+    category: "Travel Guide",
+    image: "/al-ahsa-oasis.webp",
+    relatedServiceSlug: "al-ahsa-oasis-heritage-tour",
+    content: "Al-Ahsa (Al-Hasa, Hofuf) is one of Saudi Arabia's most distinctive destinations — a UNESCO World Heritage oasis containing 2.5 million date palm trees and 32 natural springs in the middle of the Eastern Province desert. The Al-Ahsa Oasis was inscribed on UNESCO's World Heritage List in 2018 as a cultural landscape, recognised as the largest oasis in the world. The contrast of the oasis — green, productive, historically continuous for millennia — against the surrounding flat desert is extraordinary. Al-Ahsa's defining attraction is Al-Qara Mountain: a sandstone mountain containing extensive natural cave networks that maintain 18°C year-round. In summer, when Al-Ahsa regularly reaches 45–50°C, entering Al-Qara Mountain provides an abrupt transition to natural cool — one of the most physically striking experiences in the Kingdom. Jawatha Mosque (Al-Kilabiyah village, 25km from Hofuf) is among the oldest mosques in the Arabian Peninsula — built in the early Islamic period (7th century CE), according to traditional accounts the site of the first Jumu'ah prayer outside Makkah and Madinah. Qasr Ibrahim is a 16th-century Ottoman fortress in central Hofuf with Al-Khamis Mosque within its walls. Al-Qaysariyya Market is the traditional covered souq for Al-Sadu weaving (UNESCO Intangible Cultural Heritage), Khalas dates (the finest variety from 2.5 million palms), silver jewellery, and spices. The coastal extension: Al-Uqair (80km east) is an ancient Arabian Gulf port with ruins, a deserted beach, and the 1922 Uqair Protocol site where modern Gulf borders were defined."
+  },
+  {
+    slug: "al-qara-mountain-caves-guide-2026",
+    title: "Al-Qara Mountain Caves Guide 2026 — 18°C Natural Cool in Al-Ahsa, Saudi Arabia",
+    excerpt: "Everything you need to know about Al-Qara Mountain (Jabal Al-Qara) in Al-Ahsa — the sandstone mountain cave system that stays at 18°C year-round inside a 45°C desert. How to get there, what to see, and best visiting times.",
+    date: "2026-06-06",
+    author: "Haram Taxi Team",
+    category: "Heritage Guide",
+    image: "/al-ahsa-oasis.webp",
+    relatedServiceSlug: "al-ahsa-oasis-heritage-tour",
+    content: "Al-Qara Mountain (Jabal Al-Qara) is the most unusual natural attraction in Saudi Arabia — a sandstone mountain approximately 15km from Hofuf in the Al-Ahsa oasis that contains an extensive cave network inside. The caves maintain a constant temperature of approximately 18°C year-round due to the thermal mass of the surrounding rock, which insulates the cave interior against heat transfer from outside. In summer (June–September), when Al-Ahsa regularly records 45–50°C in the open, the transition from the parking area into Al-Qara Mountain is one of the most dramatic temperature contrasts available naturally anywhere in the world. The cave network is well-developed for visitors — illuminated passageways, a maintained walking circuit of approximately 45–60 minutes, interconnected chambers ranging from narrow passages requiring ducking to large cathedral-like vaulted spaces, and mineral deposits and rock formations throughout. The standard Al-Ahsa day circuit pairs Al-Qara Mountain (morning — 1.5 hours including travel and cave walk) with Jawatha Mosque (mid-morning — 30 minutes at the mosque, 25km from Hofuf) and Qasr Ibrahim in central Hofuf (afternoon). Best visiting time: summer mornings for the maximum temperature contrast experience, or any morning October–March for comfortable overall conditions. Bring a light jacket — 18°C is noticeably cool after desert heat but not cold. No public transport serves the mountain; a pre-booked taxi with driver waiting is essential."
+  },
+  {
+    slug: "jawatha-mosque-guide-2026",
+    title: "Jawatha Mosque Guide 2026 — Oldest Mosque in Eastern Arabia, Al-Ahsa",
+    excerpt: "Guide to Jawatha Mosque in Al-Ahsa — one of the oldest mosques in the Arabian Peninsula, built in the 7th century CE. Location, significance, how to visit, and combining with Al-Qara Mountain.",
+    date: "2026-06-07",
+    author: "Haram Taxi Team",
+    category: "Heritage Guide",
+    image: "/al-ahsa-oasis.webp",
+    relatedServiceSlug: "al-ahsa-oasis-heritage-tour",
+    content: "Jawatha Mosque is located in Al-Kilabiyah village in the Al-Ahsa oasis area, approximately 25km from central Hofuf. It is one of the oldest mosques in the Arabian Peninsula — built in the early Islamic period, 7th century CE (1st Hijra), when the Bani Abd Al-Qais tribe of the Al-Ahsa region converted to Islam. According to traditional Islamic historical accounts, Jawatha Mosque is the site where the first Jumu'ah (Friday congregational prayer) was held outside Makkah and Madinah — making it foundational in the history of Islamic worship. The original structure is a restoration and preservation of the ancient site — archaeological excavation has identified the original mosque footprint and early Islamic construction materials (mud brick, plaster). The restored mosque maintains the original proportions and qibla orientation. An interpretive display documents the site history. The mosque remains an active place of worship and a significant pilgrimage site for Muslims seeking to pray at one of the earliest mosques in Islamic history. The surrounding landscape — date palm groves of the Al-Ahsa oasis, irrigation channels, and traditional village setting — provides appropriate historical context. Jawatha Mosque is best combined with Al-Qara Mountain as a morning circuit: Al-Qara (8–10am) + Jawatha Mosque (10:30–11:30am) + return to Hofuf for Qasr Ibrahim in the afternoon. A taxi from Hofuf takes 30 minutes; pre-book a driver who waits."
+  },
+  {
+    slug: "al-ahsa-oasis-unesco-guide-2026",
+    title: "Al-Ahsa Oasis UNESCO World Heritage Guide 2026 — Dates, Springs & Khalas",
+    excerpt: "Guide to the Al-Ahsa Oasis UNESCO World Heritage Site (2018) — the largest oasis in the world, 2.5 million date palms, 32 natural springs, Khalas dates, and the living agricultural landscape of Eastern Arabia.",
+    date: "2026-06-08",
+    author: "Haram Taxi Team",
+    category: "UNESCO Guide",
+    image: "/al-ahsa-oasis.webp",
+    relatedServiceSlug: "al-ahsa-taxi",
+    content: "The Al-Ahsa Oasis was inscribed on UNESCO's World Heritage List in 2018 as a cultural landscape — the largest oasis in the world by UNESCO's characterisation. The oasis covers approximately 85,000 hectares and contains: 2.5 million date palm trees across hundreds of farms and gardens; 32 natural springs supplying an ancient irrigation system of qanats (underground channels) and open canals; archaeological remains spanning pre-Islamic settlements through Islamic-period agricultural infrastructure; and active farms and communities that have maintained continuous cultivation for over 5,000 years. The most famous product of the oasis: Khalas dates. Khalas is the most prized Saudi date variety — soft, honey-caramel, intensely sweet at Rutab stage (fresh ripe dates, available July–October). The 2.5 million date palms of Al-Ahsa produce Khalas and over 100 other varieties, sold at the Al-Qaysariyya traditional market in Hofuf and directly from farm stalls during harvest season. The physical experience of the oasis is remarkable — arriving from Riyadh or Dammam across the flat desert plain and entering the oasis, the visual transition from sand and scrub to the dense green canopy of 2.5 million palm trees is striking. The oasis is a living, working agricultural landscape — not a preserved museum — which gives it a vitality absent from many heritage sites. Al-Ahsa's UNESCO inscription recognises the integrated system: the palms, the water management, the human settlements, and the cultural practices (including Al-Sadu weaving, also UNESCO-listed) as a unified cultural heritage."
+  },
+  {
+    slug: "al-ahsa-airport-transfer-guide-2026",
+    title: "Al-Ahsa Airport Transfer Guide 2026 — HOF Taxi, Pre-Book Essential",
+    excerpt: "Guide to Al-Ahsa International Airport (HOF) — limited on-demand taxi at arrivals, how to pre-book, Saudia and flynas routes, transfer distances to Al-Qara Mountain, Hofuf city, and intercity connections.",
+    date: "2026-06-09",
+    author: "Haram Taxi Team",
+    category: "Airport Guide",
+    image: "/al-ahsa-airport.webp",
+    relatedServiceSlug: "al-ahsa-airport-taxi",
+    content: "Al-Ahsa International Airport (IATA: HOF) serves Hofuf and the broader Al-Ahsa governorate in the Eastern Province. Domestic routes operated by Saudia and flynas connect to Riyadh (RUH) and Jeddah (JED); flight frequency is limited and many Eastern Province visitors prefer the 135km drive from Dammam (1.5 hours) or 350km from Riyadh (3.5 hours) over flying. The airport is approximately 30km from central Hofuf — about 35 minutes by taxi. On-demand taxi availability at HOF Airport arrivals is limited; pre-booking a private transfer is strongly recommended, particularly for evening arrivals and off-peak hours. A pre-booked driver meets you at arrivals with a name board, monitors your flight for delays, and takes you directly to your destination: Hofuf city (30km, 35 min), Al-Qara Mountain (40km, 45 min for a direct airport-to-caves visit — popular for morning arrivals), or Qasr Ibrahim and the traditional market area. For intercity transfers from HOF: Riyadh (350km, 3.5 hours), Dammam (160km, 1.75 hours), Al-Khobar (180km, 2 hours), Qatar border at Salwa (150km, 1.5 hours). Book 24 hours in advance for standard transfers; same-day available for urgent trips."
+  },
+  {
     slug: "buraidah-travel-guide-2026",
     title: "Buraidah Travel Guide 2026 — Dates Market, Qassim Heritage & Getting Around",
     excerpt: "Complete guide to Buraidah — the Dates Market (world's largest), Sukkari varieties, Unaizah day trip, ELQ Airport connections, and how to get around Qassim by private taxi.",

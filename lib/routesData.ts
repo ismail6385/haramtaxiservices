@@ -2501,6 +2501,44 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "dammam-to-al-ahsa",
+        title: "Dammam to Al-Ahsa Taxi | Eastern Province to UNESCO Oasis — 135km",
+        description: "Private taxi from Dammam to Al-Ahsa (Hofuf) — 135km, approximately 1.5 hours via Abqaiq. UNESCO oasis, Al-Qara Mountain caves, Jawatha Mosque. Popular day-trip corridor from the Eastern Province.",
+        h1: "Dammam to Al-Ahsa Taxi — 135km Eastern Province Transfer",
+        distance: "135 km",
+        duration: "1.5 hours",
+        content: "Dammam to Al-Ahsa (Hofuf) is the Eastern Province's most popular day-trip corridor — 135km via Route 605 through Abqaiq, approximately 1.5 hours. Al-Ahsa (Al-Hasa) is the largest governorate by area in Saudi Arabia and home to the UNESCO World Heritage Al-Ahsa Oasis (2018) — 2.5 million date palms, 32 natural springs, and the world's largest oasis system. From Dammam, the standard day circuit: Al-Qara Mountain (cool caves at 18°C, 15km from Hofuf) + Jawatha Mosque (oldest mosque in Eastern Arabia, 7th century CE) + Qasr Ibrahim Ottoman fortress + Al-Qaysariyya traditional souq. Return to Dammam by evening. An Al-Uqair coastal addition (80km east of Hofuf) is better suited to a 2-day trip.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How far is Dammam from Al-Ahsa (Hofuf)?", answer: "Dammam to Al-Ahsa is approximately 135km via Route 605 through Abqaiq — about 1.5 hours. Al-Ahsa is one of the most popular day trips from Dammam and Al-Khobar, particularly in summer when Al-Qara Mountain's cool caves provide dramatic relief from Eastern Province heat." },
+            { question: "What are the main things to see on a Dammam–Al-Ahsa day trip?", answer: "The standard day circuit from Dammam: Al-Qara Mountain caves (18°C inside, year-round cool) + Jawatha Mosque (7th-century CE, oldest mosque in Eastern Arabia) + Qasr Ibrahim (16th-century Ottoman fortress) + Al-Qaysariyya traditional market. A well-paced day trip departing Dammam at 8am returns by 7–8pm." },
+            { question: "Can I go directly from Dammam to Al-Qara Mountain?", answer: "Yes — direct Dammam to Al-Qara Mountain is approximately 155km (under 2 hours). Many visitors book a Dammam-to-Al-Qara direct transfer and then tour Al-Ahsa sites before returning. Confirm your routing and driver waiting requirements when booking." }
+        ]
+    },
+    {
+        slug: "al-ahsa-to-dammam",
+        title: "Al-Ahsa to Dammam Taxi | UNESCO Oasis to Eastern Province — 135km",
+        description: "Private taxi from Al-Ahsa (Hofuf) to Dammam — 135km, approximately 1.5 hours via Abqaiq. Hotel pickups in Hofuf, Al-Mubarraz. Fixed rate, early morning available.",
+        h1: "Al-Ahsa to Dammam Taxi — 135km Return Transfer",
+        distance: "135 km",
+        duration: "1.5 hours",
+        content: "Al-Ahsa to Dammam is the return corridor of the Eastern Province's most popular intercity day-trip route — 135km via Route 605 through Abqaiq, approximately 1.5 hours. We pick up from anywhere in the Al-Ahsa governorate: Hofuf, Al-Mubarraz, Kilabiyah, and the oasis area. Drivers are available for early morning departures to connect with Dammam–Jubail industrial area morning shifts, or later departures for those who need the full Al-Ahsa day. Al-Khobar is a further 20km beyond Dammam (total approximately 155km).",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Al-Ahsa to Dammam?", answer: "Al-Ahsa (Hofuf) to Dammam is approximately 135km via Route 605 through Abqaiq — about 1.5 hours under normal traffic conditions. Al-Khobar is a further 20km beyond Dammam." },
+            { question: "Can I book a taxi from Al-Ahsa to Dammam for an early morning departure?", answer: "Yes — early morning departures from Al-Ahsa are available for industrial workers heading to Jubail and Dammam facilities. Confirm departure time when booking. Driver picks up from your Al-Ahsa location." },
+            { question: "Do you pick up from Al-Mubarraz as well as Hofuf?", answer: "Yes — we serve all Al-Ahsa districts including Al Hofuf, Al Mubarraz, Kilabiyah, and the oasis farming areas. Provide your exact address when booking." }
+        ]
+    },
+    {
         slug: "jeddah-to-taif",
         title: "Jeddah to Taif Taxi | City Center to Mountain Transfer — 170km",
         description: "Private taxi from Jeddah city center to Taif. Escape the coastal heat for the cool Taif highlands. Fixed rate, approximately 2.5 hours, all Jeddah areas served.",
