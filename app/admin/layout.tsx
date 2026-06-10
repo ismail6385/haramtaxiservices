@@ -1,11 +1,22 @@
-import AdminSidebar from '@/components/AdminSidebar'
-import { Toaster } from '@/components/ui/sonner'
+'use client';
 
-export default function AdminLayout({
-    children,
-}: {
-    children: React.ReactNode
-}) {
+import { usePathname } from 'next/navigation';
+import AdminSidebar from '@/components/AdminSidebar';
+import { Toaster } from '@/components/ui/sonner';
+
+export default function AdminLayout({ children }: { children: React.ReactNode }) {
+    const pathname = usePathname();
+    const isLoginPage = pathname === '/admin/login';
+
+    if (isLoginPage) {
+        return (
+            <>
+                {children}
+                <Toaster position="bottom-right" theme="dark" />
+            </>
+        );
+    }
+
     return (
         <div className="flex min-h-screen bg-brand-navy-dark">
             <AdminSidebar />
@@ -27,5 +38,5 @@ export default function AdminLayout({
                 }}
             />
         </div>
-    )
-} 
+    );
+}
