@@ -38,6 +38,8 @@ import { Separator } from '@/components/ui/separator'
 import { Input } from '@/components/ui/input'
 import StatusBadge from './StatusBadge'
 import QuotationModal from './QuotationModal'
+import InvoiceModal from './InvoiceModal'
+import ReceiptModal from './ReceiptModal'
 import type { Booking, BookingStatus } from './types'
 
 interface Props {
@@ -86,6 +88,8 @@ export default function BookingDetailSheet({
     const [driverInput, setDriverInput] = useState('')
     const [savingDriver, setSavingDriver] = useState(false)
     const [quoteOpen, setQuoteOpen] = useState(false)
+    const [invoiceOpen, setInvoiceOpen] = useState(false)
+    const [receiptOpen, setReceiptOpen] = useState(false)
 
     if (!booking) return null
 
@@ -178,6 +182,22 @@ export default function BookingDetailSheet({
                         >
                             <FileText className="w-4 h-4" />
                             Quote
+                        </button>
+                    </div>
+                    <div className="flex gap-2 mt-2">
+                        <button
+                            onClick={() => setInvoiceOpen(true)}
+                            className="flex-1 flex items-center justify-center gap-2 h-9 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 text-sm font-medium border border-blue-500/20 transition-colors"
+                        >
+                            <FileText className="w-4 h-4" />
+                            Invoice
+                        </button>
+                        <button
+                            onClick={() => setReceiptOpen(true)}
+                            className="flex-1 flex items-center justify-center gap-2 h-9 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-sm font-medium border border-emerald-500/20 transition-colors"
+                        >
+                            <FileText className="w-4 h-4" />
+                            Receipt
                         </button>
                     </div>
                 </div>
@@ -344,11 +364,9 @@ export default function BookingDetailSheet({
             </SheetContent>
         </Sheet>
 
-        <QuotationModal
-            booking={booking}
-            open={quoteOpen}
-            onClose={() => setQuoteOpen(false)}
-        />
+        <QuotationModal booking={booking} open={quoteOpen} onClose={() => setQuoteOpen(false)} />
+        <InvoiceModal booking={booking} open={invoiceOpen} onClose={() => setInvoiceOpen(false)} />
+        <ReceiptModal booking={booking} open={receiptOpen} onClose={() => setReceiptOpen(false)} />
     </>
     )
 }
