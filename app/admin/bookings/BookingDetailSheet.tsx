@@ -18,6 +18,7 @@ import {
     Pencil,
     Check,
     X,
+    FileText,
 } from 'lucide-react'
 import {
     Sheet,
@@ -36,6 +37,7 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { Input } from '@/components/ui/input'
 import StatusBadge from './StatusBadge'
+import QuotationModal from './QuotationModal'
 import type { Booking, BookingStatus } from './types'
 
 interface Props {
@@ -83,6 +85,7 @@ export default function BookingDetailSheet({
     const [driverEdit, setDriverEdit] = useState(false)
     const [driverInput, setDriverInput] = useState('')
     const [savingDriver, setSavingDriver] = useState(false)
+    const [quoteOpen, setQuoteOpen] = useState(false)
 
     if (!booking) return null
 
@@ -111,6 +114,7 @@ export default function BookingDetailSheet({
     })
 
     return (
+    <>
         <Sheet open={open} onOpenChange={(o) => !o && onClose()}>
             <SheetContent className="w-full sm:max-w-[480px] bg-neutral-950 border-neutral-800 text-white p-0 flex flex-col overflow-hidden">
                 {/* ── Header ── */}
@@ -168,6 +172,13 @@ export default function BookingDetailSheet({
                             <Mail className="w-4 h-4" />
                             Email
                         </a>
+                        <button
+                            onClick={() => setQuoteOpen(true)}
+                            className="flex-1 flex items-center justify-center gap-2 h-9 rounded-lg bg-yellow-500/10 hover:bg-yellow-500/20 text-yellow-400 text-sm font-medium border border-yellow-500/20 transition-colors"
+                        >
+                            <FileText className="w-4 h-4" />
+                            Quote
+                        </button>
                     </div>
                 </div>
 
@@ -332,5 +343,12 @@ export default function BookingDetailSheet({
                 </div>
             </SheetContent>
         </Sheet>
+
+        <QuotationModal
+            booking={booking}
+            open={quoteOpen}
+            onClose={() => setQuoteOpen(false)}
+        />
+    </>
     )
 }
