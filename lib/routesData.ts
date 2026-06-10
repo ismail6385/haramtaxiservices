@@ -556,6 +556,126 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "riyadh-to-buraidah",
+        title: "Riyadh to Buraidah Taxi | Qassim Transfer — 330km, 3.5 Hours",
+        description: "Private taxi from Riyadh to Buraidah — 330km north on Highway 65, 3.5 hours. Dates market, ELQ Airport, hotel drops. Fixed rate, door-to-door.",
+        h1: "Riyadh to Buraidah Taxi Transfer",
+        distance: "330 km",
+        duration: "3.5 hours",
+        content: "Private taxi from Riyadh to Buraidah — the main Qassim route north on Highway 65 (Qassim Expressway). Door-to-door from any Riyadh address to Buraidah city, ELQ Airport, hotel, or the Dates Market complex. Standard vehicle for 1–4 passengers; SUV available for larger groups or luggage. Fixed rate confirmed on WhatsApp before departure.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from Riyadh to Buraidah?", answer: "Approximately 330km — 3 to 3.5 hours on the Qassim Expressway (Highway 65) with normal traffic. The road is a well-maintained 4-lane divided highway for most of the route." },
+            { question: "What is the best time to travel Riyadh to Buraidah?", answer: "Early morning (before 7am) or mid-morning departures avoid Riyadh exit traffic. The highway itself is uncongested for most of the route. Avoid Friday afternoon return traffic (Riyadh-bound, opposite direction)." },
+            { question: "Can I go to ELQ Airport directly from Riyadh?", answer: "Yes — we drop directly at Prince Naif bin Abdulaziz Airport (ELQ). Confirm your flight time when booking so we plan the departure from Riyadh accordingly." },
+            { question: "Is the Riyadh to Buraidah route safe?", answer: "Yes — Highway 65 (Qassim Road) is one of the safest and busiest intercity highways in Saudi Arabia. Well-maintained, well-lit, patrol presence, and service stations throughout the route." },
+            { question: "Can I stop at the Dates Market on arrival in Buraidah?", answer: "Yes — the Souq Al-Tamr is the most popular arrival stop for visitors from Riyadh during harvest season (August–September). Mention this when booking and we route directly to the market." }
+        ]
+    },
+    {
+        slug: "buraidah-to-riyadh",
+        title: "Buraidah to Riyadh Taxi | Qassim to Capital — 330km",
+        description: "Private taxi from Buraidah to Riyadh — 330km south on Highway 65, 3.5 hours. ELQ Airport pickups, hotel pickups, door-to-door. Fixed rate.",
+        h1: "Buraidah to Riyadh Taxi Transfer",
+        distance: "330 km",
+        duration: "3.5 hours",
+        content: "Private taxi from Buraidah to Riyadh — 330km south on the Qassim Expressway. Pickup from ELQ Airport, Buraidah hotels, the Dates Market, or any city address. Drop to any Riyadh destination. Fixed rate confirmed on WhatsApp.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How do I get from Buraidah to Riyadh by taxi?", answer: "Book a private taxi via WhatsApp. We pick up from your hotel, the airport (ELQ), or any Buraidah address and drive directly to your Riyadh destination. No shared rides, no stops." },
+            { question: "What time should I leave Buraidah for a Riyadh morning meeting?", answer: "For a 9am arrival in Riyadh, depart Buraidah by 5:30–6:00am to allow for morning traffic near Riyadh. For a 10am meeting, 6:30am departure is typically comfortable." },
+            { question: "Can I be picked up from ELQ Airport to Riyadh?", answer: "Yes — we offer ELQ Airport pickup with flight tracking. Driver meets you at arrivals and drives directly to Riyadh — useful for passengers connecting through Buraidah." },
+            { question: "Is there a shared taxi (minibus) Buraidah to Riyadh?", answer: "SAPTCO coaches run Buraidah–Riyadh. However, for door-to-door, fixed-rate, and flexible-time travel, private taxi is more practical — especially for families or passengers with luggage." },
+            { question: "Can the taxi pick up from Unaizah on the way to Riyadh?", answer: "Yes — Unaizah is 25km south of Buraidah on the Riyadh direction. We can add a Unaizah pickup to a Buraidah–Riyadh transfer for a small additional charge. Confirm when booking." }
+        ]
+    },
+    {
+        slug: "buraidah-to-madinah",
+        title: "Buraidah to Madinah Taxi | Qassim to Hejaz — 430km",
+        description: "Private taxi from Buraidah to Madinah — 430km west, 4.5 hours. Haram hotel drops, Quba Mosque area, Al Anabiya. Fixed rate door-to-door.",
+        h1: "Buraidah to Madinah Taxi Transfer",
+        distance: "430 km",
+        duration: "4.5 hours",
+        content: "Private taxi from Buraidah to Madinah — 430km across the Najd–Hejaz corridor, 4 to 4.5 hours. Drops to the Haram hotel zone, Quba area, or any Madinah address. Fixed rate confirmed before departure.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How long is Buraidah to Madinah by taxi?", answer: "Approximately 430km — 4 to 4.5 hours driving west across the Najd plateau to Madinah Al Munawwarah." },
+            { question: "Can you drop at the Haram hotel zone in Madinah?", answer: "Yes — we drop at any Madinah address including the hotels surrounding Al Masjid Al Nabawi, Quba Mosque, and the Al Anabiya / Bab Al Salam areas." },
+            { question: "Is this route used for Umrah trips from Qassim?", answer: "Yes — many Qassim families travel Buraidah–Madinah for Umrah and ziyarah. We offer this as a standard transfer with prayer stops on request." },
+            { question: "Can I continue from Madinah to Makkah on the same booking?", answer: "Yes — we offer Buraidah–Madinah–Makkah as a full-day transfer. Madinah to Makkah is an additional 4 hours. Confirm the full itinerary when booking." },
+            { question: "Is there an airport connection at Madinah?", answer: "Yes — we drop at Prince Mohammad bin Abdulaziz Airport (MED/OEMA) in Madinah if you are flying onward. Confirm flight time when booking." }
+        ]
+    },
+    {
+        slug: "madinah-to-buraidah",
+        title: "Madinah to Buraidah Taxi | Hejaz to Qassim — 430km",
+        description: "Private taxi from Madinah to Buraidah — 430km east, 4.5 hours. Hotel pickups, airport pickups, door-to-door to Qassim. Fixed rate.",
+        h1: "Madinah to Buraidah Taxi Transfer",
+        distance: "430 km",
+        duration: "4.5 hours",
+        content: "Private taxi from Madinah to Buraidah — pickup from Haram hotels, MED Airport, or any Madinah address. Drop to any Buraidah destination. 430km east across the Hejaz–Najd corridor, 4–4.5 hours. Fixed rate.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "Can you pick up from the Haram hotels in Madinah?", answer: "Yes — we pickup from the full hotel zone surrounding Al Masjid Al Nabawi, Quba area, and MED Airport. Confirm your address when booking." },
+            { question: "How do I get from Madinah Airport to Buraidah by taxi?", answer: "We offer MED Airport pickup with flight tracking — driver meets you at arrivals and drives directly to Buraidah. Journey time approximately 4 to 4.5 hours." },
+            { question: "Can we make prayer stops on the Madinah to Buraidah route?", answer: "Yes — we stop at mosques on the route for prayers on request. Journey time of 4.5 hours typically includes one main stop." },
+            { question: "Is the Madinah to Buraidah highway safe?", answer: "The main highway east from Madinah toward Buraidah (via Highway 60 or 65 north) is a well-maintained, patrolled Saudi highway. Standard long-distance intercity transfer." },
+            { question: "What if I want to stop in Hail on the way from Madinah to Buraidah?", answer: "Madinah to Hail to Buraidah is possible as a multi-stop transfer — Madinah to Hail is approximately 450km, then Hail to Buraidah is 220km further. A full-day journey. Confirm the full routing when booking." }
+        ]
+    },
+    {
+        slug: "buraidah-to-hail",
+        title: "Buraidah to Hail Taxi | Qassim to Shammar — 220km",
+        description: "Private taxi from Buraidah to Hail — 220km northwest, 2.5 hours. Jabal Aja, A'arif Fort, Hail city transfers. Fixed rate.",
+        h1: "Buraidah to Hail Taxi Transfer",
+        distance: "220 km",
+        duration: "2.5 hours",
+        content: "Private taxi from Buraidah to Hail — 220km northwest across the Najd into the Shammar heartland, 2.5 hours. Drop to Hail city, Hail Airport (HAS), or any Hail area destination. Fixed rate.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How long is Buraidah to Hail by taxi?", answer: "Approximately 220km northwest — 2 to 2.5 hours on the main Hail highway. The drive crosses the Najd plateau with straightforward highway conditions." },
+            { question: "Can you drop at Hail Airport (HAS)?", answer: "Yes — we drop at Hail Regional Airport for connecting flights. Confirm your departure time when booking so we plan the Buraidah pickup accordingly." },
+            { question: "Can I continue to Jubbah from Hail on the same day?", answer: "Yes — Jubbah UNESCO rock art is 100km north of Hail. Buraidah–Hail–Jubbah is a full-day transfer possible with an early departure from Buraidah." },
+            { question: "Is there a direct bus Buraidah to Hail?", answer: "SAPTCO may run intercity coach services on this route. However, private taxi is more flexible for timing and door-to-door delivery." },
+            { question: "What is in Hail worth stopping for?", answer: "Hail is the Shammar tribal heartland — historic A'arif Fort, Qasr Barzan palace, Jabal Aja mountain, and 100km north, the Jubbah UNESCO petroglyphs. A full Hail visit warrants 1–2 days." }
+        ]
+    },
+    {
+        slug: "hail-to-buraidah",
+        title: "Hail to Buraidah Taxi | Shammar to Qassim — 220km",
+        description: "Private taxi from Hail to Buraidah — 220km southeast, 2.5 hours. Hotel pickups, airport pickups, door-to-door. Fixed rate.",
+        h1: "Hail to Buraidah Taxi Transfer",
+        distance: "220 km",
+        duration: "2.5 hours",
+        content: "Private taxi from Hail to Buraidah — pickup from Hail city, Hail Airport (HAS), or any Hail area address. Drop to any Buraidah destination. 220km southeast, 2.5 hours. Fixed rate.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+        ],
+        faqs: [
+            { question: "How do I get from Hail to Buraidah by private taxi?", answer: "Book via WhatsApp. We pickup from your hotel, Hail Airport (HAS), or any Hail address and drive directly to your Buraidah destination. Fixed rate confirmed before booking." },
+            { question: "Can I be picked up from Hail Airport to Buraidah?", answer: "Yes — we offer HAS Airport pickup. Confirm your arrival flight when booking and we&apos;ll be waiting at arrivals with a name board." },
+            { question: "What is the route from Hail to Buraidah?", answer: "The main route takes the highway southeast from Hail toward Qassim — passing through the central Najd plateau. Well-maintained divided highway throughout." },
+            { question: "Is Hail to Buraidah part of a longer route to Riyadh?", answer: "Yes — Hail to Riyadh via Buraidah is possible: Hail–Buraidah (220km) + Buraidah–Riyadh (330km) = 550km total. Can be done in a single day with an early departure. Confirm the full routing." },
+            { question: "Can you pick up from Jubbah and drive to Buraidah?", answer: "Yes — Jubbah to Buraidah is approximately 320km (Jubbah–Hail 100km + Hail–Buraidah 220km). We offer this as a multi-stop transfer with a brief rest in Hail." }
+        ]
+    },
+    {
         slug: "hafr-to-riyadh",
         title: "Hafr Al Batin to Riyadh Taxi",
         description: "Taxi from Hafr Al Batin to Riyadh.",

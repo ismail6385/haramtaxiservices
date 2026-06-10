@@ -719,6 +719,38 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
+        slug: "buraidah-riyadh-express",
+        title: "Buraidah to Riyadh Express Transfer | Private Taxi — 330km Fixed Rate",
+        description: "Private express taxi from Buraidah to Riyadh — 330km, 3.5 hours on Qassim Expressway. ELQ Airport pickup, hotel pickup, door-to-door. Most popular Qassim route.",
+        content: "The Buraidah–Riyadh corridor is the highest-traffic intercity route in Qassim Region — thousands of passengers daily. Our express transfer covers all departure points: ELQ Airport, central Buraidah hotels, Unaizah (25km south), and the Dates Market area. Drop to any Riyadh address. Door-to-door, fixed rate, no shared rides. Early morning departures available.",
+        features: ["330km Direct", "ELQ Airport Pickup", "Hotel Drop", "Dates Market Pickup", "Fixed Rate", "Early Morning"],
+        pricing: [
+            { title: "Saloon (1–4 pax)", price: "Get Quote" },
+            { title: "SUV (1–7 pax)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "How long is Buraidah to Riyadh by private taxi?", answer: "Approximately 3 to 3.5 hours on Highway 65 (Qassim Expressway) — one of Saudi Arabia's best-maintained intercity highways." },
+            { question: "Can the driver pick up from Unaizah as well?", answer: "Yes — Unaizah is 25km south of Buraidah on the Riyadh direction. We add Unaizah pickups to Buraidah–Riyadh transfers for a small supplement." },
+            { question: "Do you offer early morning departures?", answer: "Yes — early morning departures from Buraidah (4am–6am) are popular for passengers needing morning meetings or early Riyadh flights. Confirm timing when booking." }
+        ]
+    },
+    {
+        slug: "buraidah-dates-festival-transfer",
+        title: "Buraidah Dates Festival Transfer | Mahrajan Al-Tamr Taxi Service",
+        description: "Dedicated taxi transfers for the Buraidah Dates Festival (Mahrajan Al-Tamr) — August–September harvest season. Hotel to Souq Al-Tamr, return pickups, festival-season timing.",
+        content: "The Buraidah Dates Festival (Mahrajan Al-Tamr) is the world's largest dates market — running August–September during the Qassim date harvest. The Souq Al-Tamr complex is most active before 9am when the wholesale auctions run and the fresh Sukkari Rutab is at peak quality. Our festival transfer service covers hotel pickups across Buraidah, timed arrivals for early morning market activity, and scheduled return pickups. Dedicated festival-season service — book early as demand is high during the harvest fortnight.",
+        features: ["Festival Season Timing", "Early Morning Pickups", "Hotel to Market", "Return Scheduling", "Sukkari Season", "August–September"],
+        pricing: [
+            { title: "Hotel to Market Return", price: "Get Quote" },
+            { title: "Multi-day Festival Pass", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "What time should I arrive at the Buraidah Dates Market?", answer: "5:00–8:00am is optimal — the wholesale auctions run before 9am and the fresh Rutab dates (soft-ripe Sukkari) are at their best in the early morning. Pre-book an early hotel pickup." },
+            { question: "Can I book a return pickup from the market?", answer: "Yes — we pre-schedule a return pickup at your confirmed time. The market visit typically runs 2–3 hours, so a 9:00–10:00am return is common for 6am arrivals." },
+            { question: "Is the Dates Festival worth visiting from Riyadh?", answer: "Absolutely — the Buraidah Dates Festival is one of Saudi Arabia's most distinctive cultural events. A same-day Riyadh–Buraidah transfer for the festival is very popular in August–September." }
+        ]
+    },
+    {
         slug: "hofuf-taxi",
         title: "Taxi Service in Hofuf",
         description: "Taxi in Hofuf and Al Mubarraz, Al Ahsa region.",
