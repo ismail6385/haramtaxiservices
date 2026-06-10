@@ -146,6 +146,12 @@ export default function BookingsClient({ initialBookings }: Props) {
     useEffect(() => { setPage(1) }, [debouncedSearch, statusFilter, dateFrom, dateTo])
 
     // ── Handlers ────────────────────────────────────────────────────────────────
+    const logAction = useCallback(async (bookingId: string, action: string, details?: string) => {
+        try {
+            await supabase.from('booking_logs').insert([{ booking_id: bookingId, action, details: details ?? null }])
+        } catch { /* silently fail if table not yet created */ }
+    }, [supabase])
+
     const handleSort = useCallback((field: SortField) => {
         setSortField((prev) => {
             if (prev === field) {
@@ -179,6 +185,7 @@ export default function BookingsClient({ initialBookings }: Props) {
             toast.success('Status updated', {
                 description: `Booking marked as ${newStatus}`,
             })
+            logAction(id, `Status changed to ${newStatus}`, `From ${prevStatus}`)
 
             // Fire status email (non-blocking)
             if (['confirmed', 'cancelled', 'completed'].includes(newStatus)) {
@@ -201,7 +208,7 @@ export default function BookingsClient({ initialBookings }: Props) {
         } finally {
             setUpdatingId(null)
         }
-    }, [supabase, updatingId])
+    }, [supabase, updatingId, logAction])
 
     const handleDeleteConfirm = useCallback(async () => {
         if (!bookingToDelete || deletingId) return
@@ -275,8 +282,9 @@ export default function BookingsClient({ initialBookings }: Props) {
             setBookings((bs) => bs.map((b) => b.id === id ? { ...b, driver_assigned: driver, status: 'confirmed' } : b))
             setSelectedBooking((s) => s?.id === id ? { ...s, driver_assigned: driver, status: 'confirmed' } : s)
             toast.success('Driver assigned', { description: `${driver} — status set to Confirmed` })
+            logAction(id, `Driver assigned: ${driver}`)
         } catch { toast.error('Failed to assign driver') }
-    }, [supabase])
+    }, [supabase, logAction])
 
     const handlePriceUpdate = useCallback(async (id: string, price: number) => {
         try {
@@ -285,8 +293,9 @@ export default function BookingsClient({ initialBookings }: Props) {
             setBookings((bs) => bs.map((b) => b.id === id ? { ...b, total_price: price } : b))
             setSelectedBooking((s) => s?.id === id ? { ...s, total_price: price } : s)
             toast.success('Price updated', { description: `SAR ${price.toLocaleString()}` })
+            logAction(id, `Price set to SAR ${price.toLocaleString()}`)
         } catch { toast.error('Failed to update price') }
-    }, [supabase])
+    }, [supabase, logAction])
 
     const handleNoteSave = useCallback(async (id: string, note: string) => {
         try {
@@ -350,6 +359,70 @@ export default function BookingsClient({ initialBookings }: Props) {
         } catch { toast.error('Bulk delete failed') }
         setBulkUpdating(false)
     }, [selectedIds, bulkUpdating])
+
+    const handlePaymentUpdate = useCallback(async (id: string, data: { payment_status: string; payment_method?: string; amount_paid?: number }) => {
+        try {
+            const { error } = await supabase.from('bookings').update(data).eq('id', id)
+            if (error) throw error
+            setBookings(bs => bs.map(b => b.id === id ? ({ ...b, ...data } as Booking) : b))
+            setSelectedBooking(s => s?.id === id ? ({ ...s, ...data } as Booking) : s)
+            toast.success('Payment updated')
+            logAction(id, `Payment: ${data.payment_status}${data.payment_method ? ` via ${data.payment_method}` : ''}`, data.amount_paid ? `SAR ${data.amount_paid} paid` : undefined)
+        } catch { toast.error('Failed to update payment') }
+    }, [supabase, logAction])
+
+    const handleRoundTripUpdate = useCallback(async (id: string, data: { is_round_trip: boolean; return_date?: string; return_time?: string }) => {
+        try {
+            const { error } = await supabase.from('bookings').update(data).eq('id', id)
+            if (error) throw error
+            setBookings(bs => bs.map(b => b.id === id ? ({ ...b, ...data } as Booking) : b))
+            setSelectedBooking(s => s?.id === id ? ({ ...s, ...data } as Booking) : s)
+            toast.success(data.is_round_trip ? 'Round trip enabled' : 'Set to one-way')
+            logAction(id, data.is_round_trip ? `Round trip set — return ${data.return_date} ${data.return_time}` : 'Changed to one-way trip')
+        } catch { toast.error('Failed to update trip type') }
+    }, [supabase, logAction])
+
+    const handleDuplicate = useCallback(async (booking: Booking) => {
+        try {
+            const payload = {
+                customer_name: booking.customer_name,
+                customer_email: booking.customer_email,
+                customer_phone: booking.customer_phone,
+                pickup_location: booking.pickup_location,
+                destination: booking.destination,
+                pickup_date: booking.pickup_date,
+                pickup_time: booking.pickup_time,
+                vehicle_type: booking.vehicle_type,
+                passengers: booking.passengers,
+                luggage: booking.luggage,
+                special_requests: booking.special_requests,
+                total_price: booking.total_price,
+                is_round_trip: booking.is_round_trip,
+                return_date: booking.return_date,
+                return_time: booking.return_time,
+                status: 'pending' as const,
+            }
+            const { data, error } = await supabase.from('bookings').insert([payload]).select().single()
+            if (error) throw error
+            toast.success('Booking duplicated', { description: `New booking for ${booking.customer_name}` })
+            if (data) {
+                setBookings(bs => [data as Booking, ...bs])
+                setSelectedBooking(data as Booking)
+            }
+        } catch { toast.error('Failed to duplicate booking') }
+    }, [supabase])
+
+    const handleResendEmail = useCallback(async (booking: Booking) => {
+        try {
+            const res = await fetch('/api/send-confirmation-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ booking }),
+            })
+            if (!res.ok) throw new Error()
+            toast.success('Confirmation email sent', { description: booking.customer_email })
+        } catch { toast.error('Failed to send email') }
+    }, [])
 
     const handleReset = useCallback(() => {
         setSearch('')
@@ -530,6 +603,11 @@ export default function BookingsClient({ initialBookings }: Props) {
                 onDriverAssign={handleDriverAssign}
                 onPriceUpdate={handlePriceUpdate}
                 onNoteSave={handleNoteSave}
+                onPaymentUpdate={handlePaymentUpdate}
+                onRoundTripUpdate={handleRoundTripUpdate}
+                onDuplicate={handleDuplicate}
+                onResendEmail={handleResendEmail}
+                allBookings={bookings}
                 updatingId={updatingId}
             />
 
