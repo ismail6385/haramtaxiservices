@@ -3,155 +3,90 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import {
     Calendar,
     Clock,
-    MapPin,
     CheckCircle2,
-    Search,
-    Filter,
+    XCircle,
+    TrendingUp,
+    MapPin,
+    Car,
+    ArrowRight,
     MessageCircle,
-    UserPlus
+    AlertCircle,
+    DollarSign,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from '@/components/ui/table';
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from '@/components/ui/select';
 
 interface Booking {
     id: string;
     created_at: string;
+    customer_name: string;
+    customer_phone: string;
     pickup_location: string;
-    dropoff_location: string;
+    destination: string;
     pickup_date: string;
     pickup_time: string;
     vehicle_type: string;
-    passenger_count: number;
-    contact_name: string;
-    contact_phone: string;
-    contact_email: string;
-    status: 'pending' | 'confirmed' | 'cancelled' | 'completed';
+    status: 'pending' | 'confirmed' | 'completed' | 'cancelled';
     total_price?: number;
-    driver_assigned?: string;
+}
+
+function StatCard({ label, value, icon: Icon, color, sub }: {
+    label: string;
+    value: string | number;
+    icon: React.ElementType;
+    color: string;
+    sub?: string;
+}) {
+    return (
+        <div className="bg-brand-navy-light p-5 rounded-xl border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div className={`absolute top-0 right-0 w-28 h-28 ${color}/5 rounded-full blur-3xl -mr-8 -mt-8`}></div>
+            <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">{label}</span>
+                <Icon className={`h-4 w-4 ${color.replace('bg-', 'text-')}`} />
+            </div>
+            <div className={`text-3xl font-bold ${color.replace('bg-', 'text-')} relative z-10`}>{value}</div>
+            {sub && <div className="text-xs text-slate-500 mt-1">{sub}</div>}
+        </div>
+    );
+}
+
+function StatusBar({ label, count, total, color }: { label: string; count: number; total: number; color: string }) {
+    const pct = total > 0 ? Math.round((count / total) * 100) : 0;
+    return (
+        <div className="flex items-center gap-3">
+            <div className="w-20 text-xs text-slate-400 text-right shrink-0">{label}</div>
+            <div className="flex-1 bg-slate-800 rounded-full h-2">
+                <div className={`${color} h-2 rounded-full transition-all duration-500`} style={{ width: `${pct}%` }}></div>
+            </div>
+            <div className="w-12 text-xs text-slate-300 font-medium">{count} <span className="text-slate-500">({pct}%)</span></div>
+        </div>
+    );
 }
 
 export default function AdminDashboard() {
     const [bookings, setBookings] = useState<Booking[]>([]);
     const [loading, setLoading] = useState(true);
-    const [searchTerm, setSearchTerm] = useState('');
-    const [statusFilter, setStatusFilter] = useState('all');
     const router = useRouter();
 
-
     useEffect(() => {
-        const fetchBookings = async () => {
-            try {
-                const { data, error } = await supabase
-                    .from('bookings')
-                    .select('*')
-                    .order('created_at', { ascending: false });
-
-                if (error) throw error;
-                setBookings(data || []);
-            } catch (error) {
-                console.error('Error fetching bookings:', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        const checkSession = async () => {
+        const checkAndFetch = async () => {
             const { data: { session } } = await supabase.auth.getSession();
-            if (!session) {
-                router.push('/admin/login');
-            } else {
-                fetchBookings();
-            }
+            if (!session) { router.push('/admin/login'); return; }
+
+            const { data, error } = await supabase
+                .from('bookings')
+                .select('id, created_at, customer_name, customer_phone, pickup_location, destination, pickup_date, pickup_time, vehicle_type, status, total_price')
+                .order('created_at', { ascending: false });
+
+            if (!error) setBookings(data || []);
+            setLoading(false);
         };
-        checkSession();
+        checkAndFetch();
     }, [router]);
-
-    const updateStatus = async (id: string, newStatus: string) => {
-        try {
-            const { error } = await supabase
-                .from('bookings')
-                .update({ status: newStatus })
-                .eq('id', id);
-
-            if (error) throw error;
-
-            // Update local state
-            setBookings(bookings.map(b =>
-                b.id === id ? { ...b, status: newStatus as Booking['status'] } : b
-            ));
-        } catch (error) {
-            console.error('Error updating status:', error);
-        }
-    };
-
-    const updateDriver = async (booking: Booking) => {
-        const driverName = window.prompt("Enter Driver Name/ID to assign:");
-        if (!driverName) return;
-
-        try {
-            const { error } = await supabase
-                .from('bookings')
-                .update({ driver_assigned: driverName, status: 'confirmed' })
-                .eq('id', booking.id);
-
-            if (error) throw error;
-            
-            setBookings(bookings.map(b =>
-                b.id === booking.id ? { ...b, driver_assigned: driverName, status: 'confirmed' } : b
-            ));
-        } catch (error) {
-            console.error('Error assigning driver:', error);
-        }
-    };
-
-    const sendWhatsApp = (booking: Booking) => {
-        const driverInfo = booking.driver_assigned ? `\nDriver Assigned: ${booking.driver_assigned}` : '';
-        const message = `Hello ${booking.contact_name},\n\nYour Haram Taxi Service booking is *${booking.status.toUpperCase()}*.\n\nPickup: ${booking.pickup_location}\nDrop-off: ${booking.dropoff_location}\nDate: ${booking.pickup_date} at ${booking.pickup_time}${driverInfo}\n\nThank you for choosing us!`;
-        const phone = booking.contact_phone.startsWith('+') ? booking.contact_phone : `+${booking.contact_phone}`;
-        const encodedMessage = encodeURIComponent(message);
-        window.open(`https://wa.me/${phone.replace(/[^0-9+]/g, '')}?text=${encodedMessage}`, '_blank');
-    };
-
-    // Filter Logic
-    const filteredBookings = bookings.filter(booking => {
-        const matchesSearch =
-            booking.contact_name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            booking.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            booking.contact_email?.toLowerCase().includes(searchTerm.toLowerCase());
-
-        const matchesStatus = statusFilter === 'all' || booking.status === statusFilter;
-
-        return matchesSearch && matchesStatus;
-    });
-
-    const getStatusColor = (status: string) => {
-        switch (status) {
-            case 'confirmed': return 'bg-green-500/10 text-green-500 border-green-500/20';
-            case 'pending': return 'bg-yellow-500/10 text-yellow-500 border-yellow-500/20';
-            case 'cancelled': return 'bg-red-500/10 text-red-500 border-red-500/20';
-            case 'completed': return 'bg-blue-500/10 text-blue-500 border-blue-500/20';
-            default: return 'bg-gray-500/10 text-gray-500';
-        }
-    };
 
     if (loading) {
         return (
@@ -161,195 +96,160 @@ export default function AdminDashboard() {
         );
     }
 
+    // — computed metrics —
+    const total = bookings.length;
+    const pending = bookings.filter(b => b.status === 'pending').length;
+    const confirmed = bookings.filter(b => b.status === 'confirmed').length;
+    const completed = bookings.filter(b => b.status === 'completed').length;
+    const cancelled = bookings.filter(b => b.status === 'cancelled').length;
+
+    const revenue = bookings
+        .filter(b => b.status === 'completed' && b.total_price)
+        .reduce((sum, b) => sum + (b.total_price || 0), 0);
+
+    // top destination
+    const destCount: Record<string, number> = {};
+    bookings.forEach(b => {
+        if (b.destination) destCount[b.destination] = (destCount[b.destination] || 0) + 1;
+    });
+    const topDest = Object.entries(destCount).sort((a, b) => b[1] - a[1])[0]?.[0] ?? '—';
+
+    // top vehicle
+    const vehCount: Record<string, number> = {};
+    bookings.forEach(b => {
+        if (b.vehicle_type) vehCount[b.vehicle_type] = (vehCount[b.vehicle_type] || 0) + 1;
+    });
+    const topVehicle = Object.entries(vehCount).sort((a, b) => b[1] - a[1])[0]?.[0] ?? '—';
+
+    // bookings in last 7 days
+    const now = new Date();
+    const week7 = bookings.filter(b => {
+        const diff = (now.getTime() - new Date(b.created_at).getTime()) / (1000 * 60 * 60 * 24);
+        return diff <= 7;
+    }).length;
+
+    // recent 6 bookings
+    const recent = bookings.slice(0, 6);
+
+    const statusColor = (s: string) => {
+        if (s === 'confirmed') return 'bg-green-500/10 text-green-400 border-green-500/20';
+        if (s === 'pending') return 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20';
+        if (s === 'completed') return 'bg-blue-500/10 text-blue-400 border-blue-500/20';
+        return 'bg-red-500/10 text-red-400 border-red-500/20';
+    };
+
+    const sendWhatsApp = (b: Booking) => {
+        const phone = b.customer_phone.replace(/[^0-9+]/g, '');
+        const msg = encodeURIComponent(`Assalamu Alaikum ${b.customer_name},\n\nYour booking status is *${b.status.toUpperCase()}*.\nPickup: ${b.pickup_location}\nDestination: ${b.destination}\nDate: ${b.pickup_date} at ${b.pickup_time}\n\nHaram Taxi Service`);
+        window.open(`https://wa.me/${phone.startsWith('+') ? phone.slice(1) : phone}?text=${msg}`, '_blank');
+    };
+
     return (
         <div className="min-h-screen bg-brand-navy text-white">
-            {/* Main Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+                {/* Header */}
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-4">
                     <div>
                         <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-gold to-yellow-200">
-                            Dashboard Overview
+                            Dashboard
                         </h1>
-                        <div className="text-sm text-slate-400 mt-1">
-                            Welcome back, Super Admin Workspace
-                        </div>
+                        <p className="text-sm text-slate-400 mt-1">Overview &amp; quick stats</p>
                     </div>
+                    {pending > 0 && (
+                        <Link href="/admin/bookings">
+                            <div className="flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-xl text-yellow-400 text-sm font-medium hover:bg-yellow-500/20 transition-colors">
+                                <AlertCircle className="w-4 h-4" />
+                                {pending} pending booking{pending > 1 ? 's' : ''} need attention
+                                <ArrowRight className="w-4 h-4" />
+                            </div>
+                        </Link>
+                    )}
                 </div>
 
-                {/* Stats Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-                    <div className="bg-brand-navy-light p-6 rounded-xl border border-slate-700/50 shadow-lg relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
-                        <div className="flex items-center justify-between pb-2">
-                            <h3 className="text-sm font-medium text-slate-400">Total Bookings</h3>
-                            <Calendar className="h-4 w-4 text-brand-gold" />
-                        </div>
-                        <div className="text-3xl font-bold text-white relative z-10">{bookings.length}</div>
-                    </div>
-                    <div className="bg-brand-navy-light p-6 rounded-xl border border-slate-700/50 shadow-lg relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-500/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
-                        <div className="flex items-center justify-between pb-2">
-                            <h3 className="text-sm font-medium text-slate-400">Pending</h3>
-                            <Clock className="h-4 w-4 text-yellow-500" />
-                        </div>
-                        <div className="text-3xl font-bold text-yellow-500 relative z-10">
-                            {bookings.filter(b => b.status === 'pending').length}
-                        </div>
-                    </div>
-                    <div className="bg-brand-navy-light p-6 rounded-xl border border-slate-700/50 shadow-lg relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
-                        <div className="flex items-center justify-between pb-2">
-                            <h3 className="text-sm font-medium text-slate-400">Confirmed</h3>
-                            <CheckCircle2 className="h-4 w-4 text-green-500" />
-                        </div>
-                        <div className="text-3xl font-bold text-green-500 relative z-10">
-                            {bookings.filter(b => b.status === 'confirmed').length}
-                        </div>
-                    </div>
-                    <div className="bg-brand-navy-light p-6 rounded-xl border border-slate-700/50 shadow-lg relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
-                        <div className="flex items-center justify-between pb-2">
-                            <h3 className="text-sm font-medium text-slate-400">Top Destination</h3>
-                            <MapPin className="h-4 w-4 text-blue-500" />
-                        </div>
-                        <div className="text-3xl font-bold text-blue-400 truncate relative z-10">
-                            Makkah
-                        </div>
-                    </div>
+                {/* Stat Cards — row 1 */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                    <StatCard label="Total Bookings" value={total} icon={Calendar} color="bg-brand-gold" sub={`${week7} this week`} />
+                    <StatCard label="Pending" value={pending} icon={Clock} color="bg-yellow-500" sub="Awaiting action" />
+                    <StatCard label="Confirmed" value={confirmed} icon={CheckCircle2} color="bg-green-500" sub="Upcoming trips" />
+                    <StatCard label="Completed" value={completed} icon={TrendingUp} color="bg-blue-500" sub="All time" />
                 </div>
 
-                {/* Dashboard Actions */}
-                <div className="flex flex-col md:flex-row gap-4 mb-6">
-                    <div className="relative flex-1">
-                        <Search className="absolute left-3 top-3 h-5 w-5 text-slate-500" />
-                        <Input
-                            placeholder="Search by name, email, or ID..."
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            className="pl-10 bg-brand-navy-light border-slate-700 text-white placeholder:text-slate-500 focus:border-brand-gold h-12 rounded-xl"
-                        />
-                    </div>
-                    <div className="w-full md:w-[200px]">
-                        <Select value={statusFilter} onValueChange={setStatusFilter}>
-                            <SelectTrigger className="bg-brand-navy-light border-slate-700 text-white h-12 rounded-xl">
-                                <div className="flex items-center gap-2">
-                                    <Filter className="w-4 h-4 text-brand-gold" />
-                                    <SelectValue placeholder="All Status" />
-                                </div>
-                            </SelectTrigger>
-                            <SelectContent className="bg-brand-navy-light border-slate-700 text-white rounded-xl">
-                                <SelectItem value="all" className="focus:bg-brand-navy focus:text-brand-gold">All Status</SelectItem>
-                                <SelectItem value="pending" className="focus:bg-brand-navy focus:text-brand-gold">Pending</SelectItem>
-                                <SelectItem value="confirmed" className="focus:bg-brand-navy focus:text-brand-gold">Confirmed</SelectItem>
-                                <SelectItem value="completed" className="focus:bg-brand-navy focus:text-brand-gold">Completed</SelectItem>
-                                <SelectItem value="cancelled" className="focus:bg-brand-navy focus:text-brand-gold">Cancelled</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
+                {/* Stat Cards — row 2 */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <StatCard label="Cancelled" value={cancelled} icon={XCircle} color="bg-red-500" />
+                    <StatCard
+                        label="Revenue"
+                        value={revenue > 0 ? `SAR ${revenue.toLocaleString()}` : '—'}
+                        icon={DollarSign}
+                        color="bg-emerald-500"
+                        sub="Completed trips"
+                    />
+                    <StatCard label="Top Destination" value={topDest.length > 16 ? topDest.slice(0, 16) + '…' : topDest} icon={MapPin} color="bg-purple-500" />
+                    <StatCard label="Top Vehicle" value={topVehicle} icon={Car} color="bg-cyan-500" />
                 </div>
 
-                {/* Bookings Table */}
-                <div className="bg-brand-navy border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
-                    <Table>
-                        <TableHeader className="bg-black/40 border-b border-slate-800">
-                            <TableRow className="border-none hover:bg-transparent">
-                                <TableHead className="text-slate-400 font-medium py-5">Booking ID</TableHead>
-                                <TableHead className="text-slate-400 font-medium py-5">Customer</TableHead>
-                                <TableHead className="text-slate-400 font-medium py-5">Trip Details</TableHead>
-                                <TableHead className="text-slate-400 font-medium py-5">Vehicle & Driver</TableHead>
-                                <TableHead className="text-slate-400 font-medium py-5">Date & Time</TableHead>
-                                <TableHead className="text-slate-400 font-medium py-5">Status</TableHead>
-                                <TableHead className="text-slate-400 font-medium py-5 text-right">Actions</TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            {filteredBookings.length === 0 ? (
-                                <TableRow className="border-slate-800">
-                                    <TableCell colSpan={7} className="text-center py-16 text-slate-500">
-                                        No bookings found matching your filters.
-                                    </TableCell>
-                                </TableRow>
-                            ) : (
-                                filteredBookings.map((booking) => (
-                                    <TableRow key={booking.id} className="border-slate-800/80 hover:bg-brand-navy-light/40 transition-colors">
-                                        <TableCell className="font-mono text-[11px] text-slate-400">
-                                            {booking.id.slice(0, 8).toUpperCase()}
-                                        </TableCell>
-                                        <TableCell>
-                                            <div className="flex flex-col">
-                                                <span className="font-semibold text-white">{booking.contact_name}</span>
-                                                <span className="text-[11px] text-slate-400">{booking.contact_phone}</span>
+                {/* Bottom grid: status breakdown + recent bookings */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    {/* Status Breakdown */}
+                    <div className="bg-brand-navy-light rounded-xl border border-slate-700/50 p-6">
+                        <h2 className="text-sm font-semibold text-slate-300 uppercase tracking-wider mb-5">Booking Status</h2>
+                        <div className="space-y-4">
+                            <StatusBar label="Confirmed" count={confirmed} total={total} color="bg-green-500" />
+                            <StatusBar label="Pending" count={pending} total={total} color="bg-yellow-500" />
+                            <StatusBar label="Completed" count={completed} total={total} color="bg-blue-500" />
+                            <StatusBar label="Cancelled" count={cancelled} total={total} color="bg-red-500" />
+                        </div>
+                        <div className="mt-6 pt-4 border-t border-slate-700/50">
+                            <Link href="/admin/bookings">
+                                <Button variant="outline" size="sm" className="w-full border-slate-700 text-slate-300 hover:text-white hover:border-brand-gold gap-2">
+                                    Manage All Bookings <ArrowRight className="w-4 h-4" />
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* Recent Bookings */}
+                    <div className="md:col-span-2 bg-brand-navy-light rounded-xl border border-slate-700/50 p-6">
+                        <div className="flex items-center justify-between mb-5">
+                            <h2 className="text-sm font-semibold text-slate-300 uppercase tracking-wider">Recent Bookings</h2>
+                            <Link href="/admin/bookings" className="text-xs text-brand-gold hover:underline flex items-center gap-1">
+                                View all <ArrowRight className="w-3 h-3" />
+                            </Link>
+                        </div>
+
+                        {recent.length === 0 ? (
+                            <div className="text-slate-500 text-sm text-center py-10">No bookings yet</div>
+                        ) : (
+                            <div className="space-y-3">
+                                {recent.map((b) => (
+                                    <div key={b.id} className="flex items-center justify-between gap-3 py-2.5 border-b border-slate-700/40 last:border-0">
+                                        <div className="min-w-0 flex-1">
+                                            <div className="font-medium text-sm text-white truncate">{b.customer_name}</div>
+                                            <div className="text-[11px] text-slate-400 truncate mt-0.5">
+                                                {b.pickup_location} → {b.destination}
                                             </div>
-                                        </TableCell>
-                                        <TableCell>
-                                            <div className="flex flex-col gap-1.5 text-[13px]">
-                                                <div className="flex items-center gap-2 text-slate-300">
-                                                    <span className="w-1.5 h-1.5 rounded-full bg-brand-gold shadow-[0_0_5px_rgba(212,175,55,0.8)]"></span>
-                                                    {booking.pickup_location}
-                                                </div>
-                                                <div className="flex items-center gap-2 text-slate-300">
-                                                    <span className="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
-                                                    {booking.dropoff_location}
-                                                </div>
-                                            </div>
-                                        </TableCell>
-                                        <TableCell>
-                                            <div className="flex flex-col gap-2 items-start">
-                                                <Badge variant="outline" className="bg-black/30 border-slate-700 text-brand-gold font-medium">
-                                                    {booking.vehicle_type}
-                                                </Badge>
-                                                {booking.driver_assigned ? (
-                                                    <div className="text-[11px] flex items-center gap-1 text-green-400 bg-green-500/10 px-2 py-0.5 rounded-sm border border-green-500/20">
-                                                        <UserPlus className="w-3 h-3" /> {booking.driver_assigned}
-                                                    </div>
-                                                ) : (
-                                                    <button onClick={() => updateDriver(booking)} className="text-[11px] text-slate-400 hover:text-white flex items-center gap-1 transition-colors">
-                                                        <UserPlus className="w-3 h-3" /> Assign Driver
-                                                    </button>
-                                                )}
-                                            </div>
-                                        </TableCell>
-                                        <TableCell className="text-[13px] text-slate-300">
-                                            <div className="font-medium text-white">{booking.pickup_date}</div>
-                                            <div className="text-[11px] text-slate-400">{booking.pickup_time}</div>
-                                        </TableCell>
-                                        <TableCell>
-                                            <Badge variant="outline" className={`${getStatusColor(booking.status)} uppercase text-[10px] tracking-wider font-bold`}>
-                                                {booking.status}
+                                            <div className="text-[11px] text-slate-500 mt-0.5">{b.pickup_date} · {b.vehicle_type}</div>
+                                        </div>
+                                        <div className="flex items-center gap-2 shrink-0">
+                                            <Badge variant="outline" className={`${statusColor(b.status)} text-[10px] uppercase tracking-wider font-bold`}>
+                                                {b.status}
                                             </Badge>
-                                        </TableCell>
-                                        <TableCell className="text-right">
-                                            <div className="flex items-center justify-end gap-2">
-                                                <Button 
-                                                    size="icon" 
-                                                    variant="ghost" 
-                                                    className="h-8 w-8 text-green-500 hover:text-green-400 hover:bg-green-500/10"
-                                                    onClick={() => sendWhatsApp(booking)}
-                                                    title="Send WhatsApp Update"
-                                                >
-                                                    <MessageCircle className="h-4 w-4" />
-                                                </Button>
-                                                <Select
-                                                    defaultValue={booking.status}
-                                                    onValueChange={(val) => updateStatus(booking.id, val)}
-                                                >
-                                                    <SelectTrigger className="h-8 w-[120px] bg-black/40 border-slate-700 text-[11px] focus:ring-1 focus:ring-brand-gold">
-                                                        <SelectValue />
-                                                    </SelectTrigger>
-                                                    <SelectContent className="bg-brand-navy border-slate-700 rounded-lg shadow-xl">
-                                                        <SelectItem value="pending" className="text-xs focus:bg-brand-gold focus:text-black">Pending</SelectItem>
-                                                        <SelectItem value="confirmed" className="text-xs focus:bg-brand-gold focus:text-black">Confirmed</SelectItem>
-                                                        <SelectItem value="completed" className="text-xs focus:bg-brand-gold focus:text-black">Completed</SelectItem>
-                                                        <SelectItem value="cancelled" className="text-xs focus:bg-brand-gold focus:text-black">Cancelled</SelectItem>
-                                                    </SelectContent>
-                                                </Select>
-                                            </div>
-                                        </TableCell>
-                                    </TableRow>
-                                ))
-                            )}
-                        </TableBody>
-                    </Table>
+                                            <button
+                                                onClick={() => sendWhatsApp(b)}
+                                                className="text-green-500 hover:text-green-400 transition-colors"
+                                                title="Send WhatsApp"
+                                            >
+                                                <MessageCircle className="w-4 h-4" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
                 </div>
             </div>
         </div>

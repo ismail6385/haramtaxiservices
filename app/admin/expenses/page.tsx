@@ -13,7 +13,7 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
-import { Plus, Wallet, Trash2, CalendarDays } from 'lucide-react';
+import { Plus, Wallet, Trash2, CalendarDays, AlertTriangle } from 'lucide-react';
 import {
     Dialog,
     DialogContent,
@@ -109,17 +109,7 @@ export default function ExpensesPage() {
             
         } catch (error) {
             console.error('Error adding expense:', error);
-            // Optmistic UI update if no table exists
-            const tempExpense = {
-                id: Math.random().toString(),
-                created_at: new Date().toISOString(),
-                description,
-                amount: parseFloat(amount),
-                category,
-                date
-            };
-            setExpenses([tempExpense, ...expenses]);
-            setIsDialogOpen(false);
+            alert('Failed to save expense. Make sure the expenses table exists in Supabase. Run: supabase-create-expenses-table.sql');
         }
     };
 
@@ -137,6 +127,11 @@ export default function ExpensesPage() {
     };
 
     const totalExpenses = expenses.reduce((sum, exp) => sum + Number(exp.amount), 0);
+    const categories = ['Fuel', 'Maintenance', 'Tolls & Parking', 'Marketing', 'Other'];
+    const catTotals = Object.fromEntries(
+        categories.map(c => [c, expenses.filter(e => e.category === c).reduce((s, e) => s + Number(e.amount), 0)])
+    );
+    const tableNotExist = !loading && expenses.length === 0;
 
     if (loading) {
         return (
@@ -222,9 +217,9 @@ export default function ExpensesPage() {
                     </Dialog>
                 </div>
 
-                {/* Stats Container */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    <div className="bg-brand-navy-light p-6 rounded-xl border border-slate-700/50 shadow-lg relative overflow-hidden">
+                {/* Stats */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div className="md:col-span-2 bg-brand-navy-light p-6 rounded-xl border border-slate-700/50 shadow-lg relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
                         <div className="flex items-center justify-between pb-2">
                             <h3 className="text-sm font-medium text-slate-400">Total Expenses (All Time)</h3>
@@ -233,8 +228,26 @@ export default function ExpensesPage() {
                         <div className="text-3xl font-bold text-white relative z-10 flex items-baseline gap-1">
                             {totalExpenses.toLocaleString('en-SA', { minimumFractionDigits: 2 })} <span className="text-sm text-brand-gold">SAR</span>
                         </div>
+                        <div className="text-xs text-slate-500 mt-1">{expenses.length} records</div>
                     </div>
+                    {['Fuel', 'Maintenance'].map(cat => (
+                        <div key={cat} className="bg-brand-navy-light p-5 rounded-xl border border-slate-700/50">
+                            <div className="text-xs text-slate-400 mb-2">{cat}</div>
+                            <div className="text-xl font-bold text-white">{catTotals[cat].toFixed(2)} <span className="text-xs text-brand-gold">SAR</span></div>
+                        </div>
+                    ))}
                 </div>
+
+                {/* Setup notice */}
+                {tableNotExist && (
+                    <div className="flex items-start gap-3 mb-6 p-4 bg-yellow-500/10 border border-yellow-500/30 rounded-xl text-yellow-300 text-sm">
+                        <AlertTriangle className="w-5 h-5 shrink-0 mt-0.5" />
+                        <div>
+                            <div className="font-semibold mb-1">Expenses table not set up yet</div>
+                            <div className="text-yellow-400/80">Run <code className="bg-black/30 px-1.5 py-0.5 rounded text-xs font-mono">supabase-create-expenses-table.sql</code> in your Supabase SQL Editor to enable persistence.</div>
+                        </div>
+                    </div>
+                )}
 
                 {/* Expenses Table */}
                 <div className="bg-brand-navy border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
