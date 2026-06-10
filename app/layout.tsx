@@ -2,18 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Montserrat, Cormorant_Garamond } from 'next/font/google';
 import Script from 'next/script';
-import { headers } from 'next/headers';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ScrollToTop from '@/components/ScrollToTop';
-import WhatsAppButton from '@/components/WhatsAppButton';
-import JsonLdBreadcrumb from '@/components/JsonLdBreadcrumb';
-import JsonLdOrganization from '@/components/JsonLdOrganization';
-import JsonLdLocalBusiness from '@/components/JsonLdLocalBusiness';
-import JsonLdService from '@/components/JsonLdService';
-import UrgencyTopBar from '@/components/UrgencyTopBar';
-import LeadCapturePopup from '@/components/LeadCapturePopup';
-import MobileBottomCTA from '@/components/MobileBottomCTA';
+import SiteChrome from '@/components/SiteChrome';
 
 
 const inter = Montserrat({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
@@ -101,9 +90,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = headers().get('x-pathname') ?? '';
-  const isAdmin = pathname.startsWith('/admin');
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -200,26 +186,9 @@ try {
         </Script>
       </head>
       <body className={`${inter.variable} ${playfair.variable} ${inter.className}`} suppressHydrationWarning>
-        {isAdmin ? (
-          children
-        ) : (
-          <>
-            <UrgencyTopBar />
-            <Navbar />
-            <JsonLdBreadcrumb />
-            <JsonLdOrganization />
-            <JsonLdLocalBusiness />
-            <JsonLdService />
-            <main id="main-content">
-              {children}
-            </main>
-            <Footer />
-            <WhatsAppButton />
-            <ScrollToTop />
-            <LeadCapturePopup />
-            <MobileBottomCTA />
-          </>
-        )}
+        <SiteChrome>
+          {children}
+        </SiteChrome>
       </body>
     </html>
   );
