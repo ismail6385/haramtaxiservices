@@ -75,7 +75,10 @@ export async function middleware(request: NextRequest) {
         return response;
     }
 
-    return NextResponse.next();
+    // Pass pathname to root layout so it can skip site chrome on admin routes
+    const res = NextResponse.next();
+    res.headers.set('x-pathname', pathname);
+    return res;
 }
 
 export const config = {

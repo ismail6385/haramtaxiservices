@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Montserrat, Cormorant_Garamond } from 'next/font/google';
 import Script from 'next/script';
+import { headers } from 'next/headers';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -100,6 +101,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = headers().get('x-pathname') ?? '';
+  const isAdmin = pathname.startsWith('/admin');
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -196,20 +200,26 @@ try {
         </Script>
       </head>
       <body className={`${inter.variable} ${playfair.variable} ${inter.className}`} suppressHydrationWarning>
-        <UrgencyTopBar />
-        <Navbar />
-        <JsonLdBreadcrumb />
-        <JsonLdOrganization />
-        <JsonLdLocalBusiness />
-        <JsonLdService />
-        <main id="main-content">
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppButton />
-        <ScrollToTop />
-        <LeadCapturePopup />
-        <MobileBottomCTA />
+        {isAdmin ? (
+          children
+        ) : (
+          <>
+            <UrgencyTopBar />
+            <Navbar />
+            <JsonLdBreadcrumb />
+            <JsonLdOrganization />
+            <JsonLdLocalBusiness />
+            <JsonLdService />
+            <main id="main-content">
+              {children}
+            </main>
+            <Footer />
+            <WhatsAppButton />
+            <ScrollToTop />
+            <LeadCapturePopup />
+            <MobileBottomCTA />
+          </>
+        )}
       </body>
     </html>
   );
