@@ -190,6 +190,38 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
+        slug: "alula-hegra-day-trip",
+        title: "AlUla to Hegra Day Trip | Driver-Waits UNESCO Transfer — Madain Saleh",
+        description: "Private taxi day trip from AlUla to Hegra (Madain Saleh) with driver waiting. 20km, driver waits 2–4 hours at site, returns to AlUla. No taxis at Hegra — pre-book essential.",
+        content: "Hegra (Madain Saleh) has no local taxis, no Uber, and no public transport — it is 20km from AlUla in open desert. Once inside the UNESCO site, you cannot leave without a pre-arranged vehicle. Our driver-waits transfer covers the full round trip: pickup from your AlUla resort or hotel, drop to the Hegra Visitor Centre entrance, wait 2–4 hours while you complete your guided site tour, and return to AlUla. We can also combine Hegra with Dadan and Jabal Ikmah as a full-day heritage circuit. Advance booking required — peak season (October–April) books out fast.",
+        features: ["Driver Waits at Site", "20km from AlUla", "UNESCO Site Drop", "Dadan Combo Option", "Peak Season Booking", "No Taxis at Hegra"],
+        pricing: [
+            { title: "Hegra Driver-Waits (2 hrs)", price: "Get Quote" },
+            { title: "Hegra + Dadan + Jabal Ikmah (Full Day)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "How long does the driver wait at Hegra?", answer: "Standard Hegra visits take 2–3 hours for the guided buggy tour and main tomb groups. We typically plan for a 2.5–3 hour wait. For a full visit including Jabal Ithlib and the Visitor Centre, 4 hours. Confirm your expected visit length when booking." },
+            { question: "Can I combine Hegra with Dadan in one day?", answer: "Yes — Hegra (morning, 2.5 hrs) + Dadan (afternoon, 1.5 hrs) + Jabal Ikmah (late afternoon, 1 hr) is a popular full-day AlUla heritage circuit. Start early (8am from your hotel) for this itinerary. Book all site tickets in advance." },
+            { question: "What if my Hegra visit runs longer than expected?", answer: "Driver flexibility is included — if your visit extends, the driver waits. We ask you to WhatsApp us if running significantly over time so we can adjust any afternoon bookings. No additional charge for reasonable overruns." }
+        ]
+    },
+    {
+        slug: "alula-old-town-circuit",
+        title: "AlUla Valley Heritage Circuit | Old Town + Dadan + Jabal Ikmah Half-Day Tour",
+        description: "Private taxi half-day heritage circuit in AlUla valley — Old Town (Al-Ula Al-Qadimah), Dadan ancient city, and Jabal Ikmah open-air library. Driver waits between sites. Fixed rate.",
+        content: "The AlUla Valley heritage circuit covers three key sites in the valley south of the city — all within 15km of each other. AlUla Old Town (900-year mud-brick city, fort view, old souq) + Dadan ancient city (Dadanite/Lihyanite capital, lion tombs on cliff face) + Jabal Ikmah (thousands of ancient inscriptions, sacred valley). Each site takes 1–1.5 hours. The full circuit (3 sites) fits in a half-day (4–5 hours). Driver waits between all sites. These three sites complement Hegra perfectly — cover Hegra in the morning and the valley circuit in the afternoon for a complete AlUla heritage day.",
+        features: ["3 Sites in Half Day", "Driver Waits Between Sites", "Old Town + Dadan + Ikmah", "Valley Circuit", "Complement to Hegra", "Fixed Rate"],
+        pricing: [
+            { title: "Valley Heritage Circuit (Half Day)", price: "Get Quote" },
+            { title: "Full AlUla Day (Hegra + Valley Circuit)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "How long does the valley heritage circuit take?", answer: "AlUla Old Town (60–90 min) + Dadan (60–90 min) + Jabal Ikmah (45–60 min) = approximately 4–5 hours including travel between sites. Start by 8am for a comfortable morning circuit." },
+            { question: "Do I need to pre-book tickets for all three sites?", answer: "Yes — AlUla Old Town, Dadan, and Jabal Ikmah all require Experience AlUla tickets (alula.sa). Book all three before your visit, especially in peak season. Our transfer service covers transport only — tickets are booked separately." },
+            { question: "Is the valley circuit suitable for children?", answer: "Yes — Old Town and Dadan have relatively accessible paths (the Dadan buggy tour is gentle). Jabal Ikmah's valley floor walk is flat. All three are suitable for older children with interest in history. Bring water and sun protection regardless of season." }
+        ]
+    },
+    {
         slug: "alula-airport-transfer",
         title: "AlUla International Airport Transfer",
         description: "Transfer from ULH Airport to AlUla resorts and hotels.",

@@ -1510,6 +1510,26 @@ export const routesData: RouteData[] = [
         ]
     },
     {
+        slug: "alula-to-tabuk",
+        title: "AlUla to Tabuk Taxi | Heritage Valley to Northwest Gateway — 280km",
+        description: "Private taxi from AlUla to Tabuk — 280km northwest via Route 375, 3 hours. Resort pickups, ULH Airport pickups, Tabuk city and TUU Airport drops. Fixed rate.",
+        h1: "AlUla to Tabuk Taxi Transfer",
+        distance: "280 km",
+        duration: "3 hours",
+        content: "Private taxi from AlUla to Tabuk — 280km northwest via the Hejaz highway (Route 375). Pickup from any AlUla resort, heritage site, or ULH Airport. Drop to Tabuk city, Tabuk Airport (TUU), or onward to NEOM and the Jordan border. Fixed rate confirmed on WhatsApp.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+        ],
+        faqs: [
+            { question: "How long is the drive from AlUla to Tabuk?", answer: "Approximately 280km northwest — about 3 hours via Route 375 (the Hejaz highway north). The drive is straightforward on divided highway with desert scenery." },
+            { question: "Can you pick me up from my AlUla resort?", answer: "Yes — we pickup from all AlUla resorts including Habitas, Banyan Tree, Shaden, and Hegra-area camps. Confirm your resort name and preferred departure time when booking." },
+            { question: "Can I be dropped at Tabuk Airport (TUU)?", answer: "Yes — we drop at Prince Sultan bin Abdulaziz Airport (TUU) in Tabuk for connecting flights. Confirm your flight time so we plan the AlUla departure accordingly." },
+            { question: "Can I continue from Tabuk to NEOM or Jordan?", answer: "Yes — Tabuk is the gateway for NEOM (130km northwest) and the Haql Jordan border crossing (230km northwest). We can extend the AlUla–Tabuk transfer to include an onward leg. Confirm the full itinerary when booking." },
+            { question: "Is there a direct flight from AlUla to Tabuk?", answer: "Flights between ULH (AlUla) and TUU (Tabuk) are limited — check current airline schedules. The private taxi at 3 hours is often more practical than the flight connection with airport transfers at both ends." }
+        ]
+    },
+    {
         slug: "taif-to-madinah",
         title: "Taif to Madinah Taxi | Direct Intercity Travel",
         description: "Avoid Makkah traffic with a direct private taxi from Taif to Madinah. Fast and comfortable.",
