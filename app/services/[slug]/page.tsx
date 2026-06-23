@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${service.title} [2026 Updated]`,
-        description: `Experience a 100% reliable ${service.title.split('|')[0].trim()} with our premium chauffeur service. Professional drivers, pristine cars, and competitive pricing for your spiritual journey. [Get Instant Quote].`,
+        title: `${service.title} | Haram Taxi Service`,
+        description: `Book ${service.title.split('|')[0].trim()} with Haram Taxi Service. Licensed drivers, clean modern vehicles, and fixed rates with no hidden charges. WhatsApp us for an instant quote.`,
         alternates: {
             canonical: `https://haramtaxiservice.com/services/${slug}`,
         },
@@ -130,7 +130,7 @@ export default async function ServicePage({ params }: Props) {
                                     Book Now
                                 </Button>
                             </Link>
-                            <a href="https://wa.me/996575806733">
+                            <a href="https://wa.me/966575806733">
                                 <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900 active:bg-gray-100 active:text-gray-900 px-8 py-6 text-lg transition-colors">
                                     <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp Us
                                 </Button>
@@ -169,7 +169,7 @@ export default async function ServicePage({ params }: Props) {
 
                         {/* Features Grid */}
                         <div id="features" className="bg-gray-50 rounded-2xl p-8 border border-gray-100 scroll-mt-24">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose This Service?</h3>
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Why Choose This Service?</h2>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {service.features.map((feature, idx) => (
                                     <div key={idx} className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
@@ -185,7 +185,7 @@ export default async function ServicePage({ params }: Props) {
                         {/* Pricing Table */}
                         {service.pricing && service.pricing.length > 0 && (
                             <div id="pricing" className="scroll-mt-24">
-                                <h3 className="text-2xl font-bold text-gray-900 mb-6">Competitive Quotes</h3>
+                                <h2 className="text-2xl font-bold text-gray-900 mb-6">Competitive Quotes</h2>
                                 <div className="overflow-hidden bg-white border border-gray-200 rounded-2xl shadow-sm">
                                     <table className="w-full text-left">
                                         <thead className="bg-gray-50 border-b border-gray-200">
@@ -211,13 +211,13 @@ export default async function ServicePage({ params }: Props) {
                         {/* FAQ Section */}
                         {service.faqs && service.faqs.length > 0 && (
                             <div id="faq" className="bg-white rounded-2xl p-8 border border-gray-100 scroll-mt-24">
-                                <h3 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h3>
+                                <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {service.faqs.map((faq, idx) => (
                                         <div key={idx} className="bg-white border border-gray-200 rounded-xl p-6 hover:border-slate-200 transition-colors">
-                                            <h4 className="font-bold text-gray-900 mb-2 flex items-start gap-3">
+                                            <h3 className="font-bold text-gray-900 mb-2 flex items-start gap-3 text-base">
                                                 <span className="text-slate-500">Q.</span> {faq.question}
-                                            </h4>
+                                            </h3>
                                             <p className="text-gray-600 pl-7">{faq.answer}</p>
                                         </div>
                                     ))}
@@ -253,7 +253,7 @@ export default async function ServicePage({ params }: Props) {
                         <div className="bg-gray-900 rounded-2xl p-8 text-white text-center">
                             <h3 className="text-xl font-bold mb-4">Need Help?</h3>
                             <p className="text-gray-400 mb-6 text-sm">Our support team is available 24/7 to assist you with your booking.</p>
-                            <a href="https://wa.me/996575806733" className="block mb-4">
+                            <a href="https://wa.me/966575806733" className="block mb-4">
                                 <Button className="w-full bg-[#25D366] hover:bg-[#1ebd5b] text-white group">
                                     <WhatsAppIcon className="w-4 h-4 mr-2" /> WhatsApp Support
                                 </Button>

@@ -41,6 +41,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
+function kmToMiles(kmStr: string): string {
+    const km = parseFloat(kmStr.replace(/[^0-9.]/g, ''));
+    if (isNaN(km)) return '';
+    return `${Math.round(km * 0.621371)} mi`;
+}
+
+function durationToMinutes(duration: string): string {
+    let total = 0;
+    const h = duration.match(/(\d+)\s*hour/i);
+    const m = duration.match(/(\d+)\s*min/i);
+    if (h) total += parseInt(h[1]) * 60;
+    if (m) total += parseInt(m[1]);
+    return total ? `${total} min` : '';
+}
+
 export async function generateStaticParams() {
     return routesData.map((route) => ({
         slug: route.slug,
@@ -139,7 +154,23 @@ export default async function RoutePage({ params }: Props) {
             <section className="bg-slate-800 text-white py-14">
                 <div className="container mx-auto px-4">
                     <h1 className="text-3xl md:text-4xl font-bold mb-3">{route.h1}</h1>
-                    <p className="text-slate-300 mb-8 max-w-2xl">Fixed rates · Professional licensed drivers · Door-to-door service across Saudi Arabia · No pre-payment required</p>
+                    <p className="text-slate-300 mb-4 max-w-2xl">Fixed rates · Professional licensed drivers · Door-to-door service across Saudi Arabia · No pre-payment required</p>
+                    <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-400 mb-8">
+                        {route.distance && (
+                            <span className="flex items-center gap-1.5">
+                                <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
+                                {route.distance} / {kmToMiles(route.distance)}
+                            </span>
+                        )}
+                        {route.duration && (
+                            <span className="flex items-center gap-1.5">
+                                <Clock className="w-3.5 h-3.5 flex-shrink-0" />
+                                {route.duration}{durationToMinutes(route.duration) ? ` / ${durationToMinutes(route.duration)}` : ''}
+                            </span>
+                        )}
+                        <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 flex-shrink-0" /> Door-to-door</span>
+                        <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 flex-shrink-0" /> Available 24/7</span>
+                    </div>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/booking">
                             <Button className="bg-white text-slate-800 hover:bg-gray-100 font-bold px-8">Book This Route</Button>
@@ -158,7 +189,6 @@ export default async function RoutePage({ params }: Props) {
                         <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
                         <a href="#about" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Route Details</a>
                         <a href="#pricing" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Pricing</a>
-                        <a href="#pricing" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Competitive Pricing</a>
                         <a href="#faq" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Route FAQs</a>
                     </nav>
                 </div>
@@ -172,6 +202,26 @@ export default async function RoutePage({ params }: Props) {
                             <h2 className="text-2xl font-bold mb-1">{route.h1}</h2>
                             <p className="text-xs text-gray-400 uppercase tracking-widest mb-4">Taxi Service Overview</p>
                             <p className="text-gray-600 leading-relaxed text-lg">{route.content}</p>
+                            {(route.distance || route.duration) && (
+                                <div className="flex flex-wrap gap-6 mt-4 pt-4 border-t border-gray-100 text-sm">
+                                    {route.distance && (
+                                        <span>
+                                            <span className="font-semibold text-gray-700">Distance: </span>
+                                            <span className="text-gray-600">{route.distance} ({kmToMiles(route.distance)})</span>
+                                        </span>
+                                    )}
+                                    {route.duration && (
+                                        <span>
+                                            <span className="font-semibold text-gray-700">Journey Time: </span>
+                                            <span className="text-gray-600">{route.duration}{durationToMinutes(route.duration) ? ` / ${durationToMinutes(route.duration)}` : ''}</span>
+                                        </span>
+                                    )}
+                                    <span>
+                                        <span className="font-semibold text-gray-700">Service Type: </span>
+                                        <span className="text-gray-600">Private door-to-door, no shared rides</span>
+                                    </span>
+                                </div>
+                            )}
                         </div>
 
                         {/* Pricing Table */}
