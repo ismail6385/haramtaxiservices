@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${route.title} [2026 Updated]`,
-        description: `Experience a 100% reliable ${route.h1} with our professional taxi service. Enjoy a spiritual journey with peace of mind, competitive pricing, and modern cars. [Book Your Ride Now].`,
+        title: `${route.title} | Haram Taxi Service`,
+        description: `Book a reliable ${route.h1} with Haram Taxi Service. Fixed rates, professional licensed drivers, and door-to-door service across Saudi Arabia. Available 24/7 with instant WhatsApp confirmation.`,
         alternates: {
             canonical: `https://haramtaxiservice.com/routes/${slug}`,
         },
@@ -63,7 +63,7 @@ export default async function RoutePage({ params }: Props) {
         "provider": {
             "@type": "LocalBusiness",
             "name": "Haram Taxi Service",
-            "telephone": "+996575806733",
+            "telephone": "+966575806733",
             "image": "https://haramtaxiservice.com/logo.png"
         },
         "areaServed": "Saudi Arabia",
@@ -135,13 +135,29 @@ export default async function RoutePage({ params }: Props) {
                 </div>
             </div>
 
+            {/* Hero */}
+            <section className="bg-slate-800 text-white py-14">
+                <div className="container mx-auto px-4">
+                    <h1 className="text-3xl md:text-4xl font-bold mb-3">{route.h1}</h1>
+                    <p className="text-slate-300 mb-8 max-w-2xl">Fixed rates · Professional licensed drivers · Door-to-door service across Saudi Arabia · No pre-payment required</p>
+                    <div className="flex flex-wrap gap-4">
+                        <Link href="/booking">
+                            <Button className="bg-white text-slate-800 hover:bg-gray-100 font-bold px-8">Book This Route</Button>
+                        </Link>
+                        <a href={`https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20for%20${encodeURIComponent(route.h1)}`} target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8">WhatsApp</Button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
             {/* Quick Navigation / Table of Contents */}
             <div className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     <nav className="flex flex-wrap items-center gap-6 text-sm">
                         <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
                         <a href="#about" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Route Details</a>
-                        <a href="#benefits" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Exclusive Benefits</a>
+                        <a href="#pricing" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Pricing</a>
                         <a href="#pricing" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Competitive Pricing</a>
                         <a href="#faq" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Route FAQs</a>
                     </nav>
@@ -153,7 +169,8 @@ export default async function RoutePage({ params }: Props) {
                     {/* Main Content */}
                     <div className="lg:col-span-2 space-y-8">
                         <div id="about" className="bg-white rounded-2xl p-8 shadow-sm scroll-mt-24">
-                            <h2 className="text-2xl font-bold mb-4">About {route.h1} Taxi Service</h2>
+                            <h2 className="text-2xl font-bold mb-1">{route.h1}</h2>
+                            <p className="text-xs text-gray-400 uppercase tracking-widest mb-4">Taxi Service Overview</p>
                             <p className="text-gray-600 leading-relaxed text-lg">{route.content}</p>
                         </div>
 
@@ -171,7 +188,7 @@ export default async function RoutePage({ params }: Props) {
                                                 <h3 className="font-bold text-lg text-gray-900">{item.vehicle}</h3>
                                                 <div className="text-sm text-gray-500 flex gap-3">
                                                     <span>{item.capacity}</span>
-                                                    <span>â€¢</span>
+                                                    <span>•</span>
                                                     <span>{item.luggage}</span>
                                                 </div>
                                             </div>

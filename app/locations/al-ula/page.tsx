@@ -160,7 +160,7 @@ export default function AlUlaPage() {
                                         <td className="px-6 py-4 text-center text-gray-600">{r.distance}</td>
                                         <td className="px-6 py-4 text-center text-gray-600">{r.time}</td>
                                         <td className="px-6 py-4 text-center">
-                                            <a href={`https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20from%20AlUla%20to%20${encodeURIComponent(r.destination)}`} target="_blank" rel="noopener noreferrer" className="text-amber-700 hover:text-amber-900 font-medium text-xs">WhatsApp →</a>
+                                            <Link href="/booking" className="text-amber-700 hover:text-amber-900 font-medium text-xs">Book →</Link>
                                         </td>
                                     </tr>
                                 ))}

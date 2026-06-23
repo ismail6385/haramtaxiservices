@@ -239,10 +239,10 @@ export default function BuraidahPage() {
                             { title: 'Buraidah to Hail', desc: '310km northwest, 3 hours' },
                             { title: 'Group & Family', desc: 'GMC and Hiace for large groups' },
                         ].map((s, i) => (
-                            <a key={i} href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20in%20Buraidah" target="_blank" rel="noopener noreferrer" className="block bg-gray-50 hover:bg-amber-50 border border-gray-100 hover:border-amber-200 p-5 rounded-xl transition-all">
+                            <Link key={i} href="/booking" className="block bg-gray-50 hover:bg-amber-50 border border-gray-100 hover:border-amber-200 p-5 rounded-xl transition-all">
                                 <h3 className="font-bold text-gray-900 mb-2 text-sm">{s.title}</h3>
                                 <p className="text-xs text-gray-500">{s.desc}</p>
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </div>

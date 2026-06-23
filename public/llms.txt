@@ -1,0 +1,96 @@
+# Haram Taxi Service
+
+> Saudi Arabia's trusted private taxi company specialising in airport transfers, Umrah and Hajj pilgrim transport, intercity routes, and city tours. Fixed rates, no pre-payment, 24/7 availability. Licensed professional drivers. Serving Makkah, Madinah, Jeddah, Riyadh, and all major Saudi cities.
+
+- Contact: haramtaxiservice@gmail.com | WhatsApp: +966575806733
+- Website: https://haramtaxiservice.com
+- Operating area: Kingdom of Saudi Arabia
+
+## Core Pages
+
+- [Home](https://haramtaxiservice.com/): Overview of services, fleet, and booking
+- [Book a Taxi](https://haramtaxiservice.com/booking): Instant booking form for all routes and services
+- [All Routes](https://haramtaxiservice.com/routes): Full list of intercity taxi routes across Saudi Arabia
+- [All Services](https://haramtaxiservice.com/services): Full list of taxi services (airport, Umrah, tours, corporate, etc.)
+- [Fleet](https://haramtaxiservice.com/fleet): Vehicle options — Toyota Camry, GMC Yukon, Hyundai Staria, Hyundai Starex, Toyota Hiace, Toyota Coaster
+- [Locations](https://haramtaxiservice.com/locations): City-level taxi service pages for Saudi Arabia
+- [Blog](https://haramtaxiservice.com/blog): Travel guides, pilgrim tips, and route information
+- [Contact](https://haramtaxiservice.com/contact): WhatsApp, phone, and enquiry form
+
+## Top Intercity Routes
+
+- [Jeddah Airport to Makkah Taxi](https://haramtaxiservice.com/routes/jeddah-airport-to-makkah): Most popular pilgrim route, fixed rate
+- [Makkah to Madinah Taxi](https://haramtaxiservice.com/routes/makkah-to-madinah): 430km intercity transfer
+- [Madinah to Makkah Taxi](https://haramtaxiservice.com/routes/madinah-to-makkah): Reverse pilgrim route
+- [Jeddah to Madinah Taxi](https://haramtaxiservice.com/routes/jeddah-to-madinah): 420km intercity
+- [Riyadh to Makkah Taxi](https://haramtaxiservice.com/routes/riyadh-to-makkah): 900km long-distance
+- [Dammam to Makkah Taxi](https://haramtaxiservice.com/routes/dammam-to-makkah): Eastern Province to Holy City
+- [Makkah to Jeddah Airport Taxi](https://haramtaxiservice.com/routes/makkah-to-jeddah-airport): Post-Umrah airport drop
+- [Madinah Hotel to Jeddah Airport](https://haramtaxiservice.com/routes/madinah-hotel-to-jeddah-airport): Long-distance pilgrim transfer
+- [Riyadh to Hail Taxi](https://haramtaxiservice.com/routes/riyadh-to-hail): Northern Saudi intercity
+- [Riyadh to Buraidah Taxi](https://haramtaxiservice.com/routes/riyadh-to-buraidah): Qassim region transfer
+- [Tabuk to Jordan Border Transfer](https://haramtaxiservice.com/routes/tabuk-to-jordan-border): Cross-border taxi
+- [AlUla to Madinah Taxi](https://haramtaxiservice.com/routes/alula-to-madinah): Heritage site transfer
+- [Najran to Yemen Border Taxi](https://haramtaxiservice.com/routes/najran-to-yemen-border): Southern border transfer
+- [Yanbu to Madinah Taxi](https://haramtaxiservice.com/routes/yanbu-to-madinah): Red Sea coast to Holy City
+- [Jazan to Abha Taxi](https://haramtaxiservice.com/routes/jazan-to-abha): Mountain highway transfer
+- [Abha to Khamis Mushait Transfer](https://haramtaxiservice.com/routes/abha-to-khamis): Twin city corridor
+- [Al Ahsa to UAE Border Transfer](https://haramtaxiservice.com/routes/al-ahsa-to-uae): Eastern Province cross-border
+- [Hafr Al Batin to Kuwait Border](https://haramtaxiservice.com/routes/hafr-to-kuwait-border): Northern border transfer
+- [Arar to Iraq Border Transfer](https://haramtaxiservice.com/routes/arar-to-iraq-border): Northern cross-border taxi
+- [Hail Ziyarat Tour (Jubbah)](https://haramtaxiservice.com/routes/hail-to-jubbah): UNESCO petroglyphs day trip
+
+## Key Services
+
+- [Jeddah Airport Transfer](https://haramtaxiservice.com/services/jeddah-airport-transfer): KAIA arrivals and departures
+- [Madinah Airport Transfer](https://haramtaxiservice.com/services/madinah-airport-transfer): Prince Mohammad bin Abdulaziz Airport
+- [Riyadh Airport Transfer](https://haramtaxiservice.com/services/riyadh-airport-transfer): King Khalid International Airport
+- [Umrah Taxi Service](https://haramtaxiservice.com/services/umrah-taxi): Pilgrim transport between holy cities
+- [Umrah Transport Services](https://haramtaxiservice.com/services/umrah-transport): Group and private Umrah transfers
+- [Luxury Umrah Transport](https://haramtaxiservice.com/services/luxury-umrah-transport): VIP pilgrim vehicles
+- [Hajj Travel Agency Transport](https://haramtaxiservice.com/services/hajj-travel-agency): Bulk Hajj season transfers
+- [Wheelchair Accessible Umrah Taxi](https://haramtaxiservice.com/services/wheelchair-accessible-umrah-taxi): Accessible pilgrim transport
+- [Safe Umrah Taxi for Solo Females](https://haramtaxiservice.com/services/safe-umrah-taxi-solo-females-families): Female-friendly pilgrim transport
+- [Makkah Ziyarat Tour](https://haramtaxiservice.com/services/makkah-ziyarat): Historical sites tour in Makkah
+- [Madinah Ziyarat Tour](https://haramtaxiservice.com/services/madinah-ziyarat): Historical sites tour in Madinah
+- [Hotel to Haram Transport](https://haramtaxiservice.com/services/hotel-to-haram-transport): Daily shuttle service
+- [AlUla Hegra Day Trip](https://haramtaxiservice.com/services/alula-hegra-day-trip): UNESCO Nabataean tombs tour
+- [NEOM Bay Transfer](https://haramtaxiservice.com/services/neom-bay-transfer): Tabuk to NEOM giga-project
+- [Dammam to Bahrain Taxi](https://haramtaxiservice.com/services/dammam-to-bahrain): King Fahd Causeway crossing
+- [Business Travel Taxi](https://haramtaxiservice.com/services/business-travel): Corporate door-to-door service
+- [Hourly Chauffeur](https://haramtaxiservice.com/services/hourly-chauffeur): By-the-hour private driver
+- [Taif Taxi](https://haramtaxiservice.com/services/taif-taxi): Taif city and mountain transfers
+- [Abha Taxi](https://haramtaxiservice.com/services/abha-taxi): Asir region service
+- [Hajj Group Bus (Coaster)](https://haramtaxiservice.com/services/hajj-umrah-group-bus-coaster): Mini-bus for pilgrim groups
+
+## Fleet
+
+- [Toyota Camry](https://haramtaxiservice.com/fleet/toyota-camry): Standard sedan, 4 passengers
+- [Hyundai Staria](https://haramtaxiservice.com/fleet/hyundai-staria): Premium MPV, 7 passengers
+- [Hyundai Starex](https://haramtaxiservice.com/fleet/hyundai-starex): Family van, 7 passengers
+- [GMC Yukon](https://haramtaxiservice.com/fleet/gmc-yukon): Full-size SUV, 6 passengers
+- [Toyota Hiace](https://haramtaxiservice.com/fleet/toyota-hiace): Group van, 11 passengers
+- [Toyota Coaster](https://haramtaxiservice.com/fleet/toyota-coaster): Mini bus, 17 passengers
+
+## Locations Served
+
+- [Makkah Taxi](https://haramtaxiservice.com/locations/makkah): Intra-city and Haram area transfers
+- [Madinah Taxi](https://haramtaxiservice.com/locations/madinah): Prophets Mosque area and city transfers
+- [Jeddah Taxi](https://haramtaxiservice.com/locations/jeddah): Jeddah city, KAIA airport, Al Balad
+- [Riyadh Taxi](https://haramtaxiservice.com/locations/riyadh): Riyadh city and corporate transfers
+- [Dammam Taxi](https://haramtaxiservice.com/locations/dammam): Eastern Province transfers
+- [Abha Taxi](https://haramtaxiservice.com/locations/abha): Asir region mountain transfers
+- [Tabuk Taxi](https://haramtaxiservice.com/locations/tabuk): Tabuk and NEOM region
+- [Taif Taxi](https://haramtaxiservice.com/locations/taif): Mountain city transfers
+- [Hail Taxi](https://haramtaxiservice.com/locations/hail): Hail region and desert transfers
+- [Buraidah Taxi](https://haramtaxiservice.com/locations/buraidah): Qassim region capital
+- [Al-Baha Taxi](https://haramtaxiservice.com/locations/al-baha): Al-Baha highlands
+- [Jazan Taxi](https://haramtaxiservice.com/locations/jazan): Jazan and Farasan Islands area
+- [Najran Taxi](https://haramtaxiservice.com/locations/najran): Southern border city
+- [Al-Ahsa Taxi](https://haramtaxiservice.com/locations/al-ahsa): Al-Ahsa oasis and Eastern region
+- [Al-Ula Taxi](https://haramtaxiservice.com/locations/al-ula): Heritage and tourism transfers
+- [Yanbu Taxi](https://haramtaxiservice.com/locations/yanbu): Red Sea industrial and tourist city
+- [Khobar Taxi](https://haramtaxiservice.com/locations/khobar): Al-Khobar and Dhahran area
+- [Jubail Taxi](https://haramtaxiservice.com/locations/jubail): Industrial city transfers
+- [NEOM Taxi](https://haramtaxiservice.com/locations/neom): NEOM giga-project area
+- [Dhahran Taxi](https://haramtaxiservice.com/locations/dhahran): ARAMCO and KFUPM area
