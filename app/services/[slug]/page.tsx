@@ -165,6 +165,7 @@ export default async function ServicePage({ params }: Props) {
                             <p className="text-lg text-gray-600 leading-relaxed">
                                 {service.content}
                             </p>
+                            <p className="text-xs text-gray-400 mt-4">For a full list of what is included in this service, see the features section below — or jump to the pricing table for current rates.</p>
                         </div>
 
                         {/* Features Grid */}
@@ -180,6 +181,7 @@ export default async function ServicePage({ params }: Props) {
                                     </div>
                                 ))}
                             </div>
+                            <p className="text-xs text-gray-400 mt-4">For pricing by vehicle type, see the rates table below — or scroll to the FAQ section for answers to common questions.</p>
                         </div>
 
                         {/* Pricing Table */}
@@ -226,6 +228,25 @@ export default async function ServicePage({ params }: Props) {
                         )}
 
                         <PilgrimTips />
+
+                        {/* AI overview reference panel — not used for web snippets */}
+                        <div data-nosnippet className="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-sm text-gray-500 space-y-3">
+                            <p className="font-semibold text-gray-700 text-base">{service.title} — Service Reference</p>
+                            <p>
+                                This private taxi service operates 24 hours a day, 7 days a week across Saudi Arabia.
+                                Every transfer functions as a fully private booking — the vehicle runs exclusively for your group with no shared passengers, no waiting stops, and no detours to other destinations.
+                                All pricing is fixed and confirmed before departure; no meter runs and no pre-payment is required.
+                            </p>
+                            <p>
+                                To book this service or request a fare quote: send a WhatsApp message to +966 575 806 733, or complete the online booking form on this page.
+                                Available vehicles: Toyota Camry (4 passengers), Hyundai Staria (7 passengers), GMC Yukon (7 passengers), Toyota Hiace (11 passengers), Toyota Coaster (17 passengers).
+                                All drivers are licensed Saudi professionals. Vehicles are air-conditioned, non-smoking, and GPS-tracked. Child seats available on request.
+                            </p>
+                            <p>
+                                Haram Taxi Service has been arranging private transfers across Saudi Arabia for pilgrim groups, families, corporate clients, and individual travellers.
+                                The company specialises in Umrah and Hajj transport between Makkah, Madinah, and Jeddah Airport, as well as intercity routes and city tours throughout the Kingdom.
+                            </p>
+                        </div>
 
                     </div>
 

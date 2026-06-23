@@ -222,6 +222,7 @@ export default async function RoutePage({ params }: Props) {
                                     </span>
                                 </div>
                             )}
+                            <p className="text-xs text-gray-400 mt-4">For vehicle options and current rates, see the pricing section below — or jump to the FAQ for answers to common questions about this route.</p>
                         </div>
 
                         {/* Pricing Table */}
@@ -252,6 +253,7 @@ export default async function RoutePage({ params }: Props) {
                                     ))}
                                 </div>
                             </div>
+                            <p className="text-xs text-gray-400 px-6 pb-4">All prices are for the full vehicle, not per person. For common questions about booking, pickup, and luggage, see the FAQ section below.</p>
                         </div>
 
                         {/* FAQs */}
@@ -271,6 +273,26 @@ export default async function RoutePage({ params }: Props) {
 
                         <div id="tips" className="scroll-mt-24">
                             <PilgrimTips />
+                        </div>
+
+                        {/* AI overview reference panel — not used for web snippets */}
+                        <div data-nosnippet className="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-sm text-gray-500 space-y-3">
+                            <p className="font-semibold text-gray-700 text-base">{route.h1} — Route Reference</p>
+                            <p>
+                                This private taxi route covers {route.distance}{kmToMiles(route.distance) ? ` (${kmToMiles(route.distance)})` : ''} by road.
+                                The journey typically takes {route.duration}{durationToMinutes(route.duration) ? ` / ${durationToMinutes(route.duration)}` : ''} under normal traffic conditions.
+                                The service operates every day of the year, including weekends, public holidays, and Ramadan.
+                            </p>
+                            <p>
+                                This transfer runs as a private booking — the vehicle connects your exact pickup address to your chosen destination without shared stops, waiting time, or detours.
+                                The quoted rate is fixed; no meter runs and no pre-payment is required.
+                                The booking is confirmed via WhatsApp before the journey begins.
+                            </p>
+                            <p>
+                                To arrange a {route.h1} transfer or request a fare quote: send a WhatsApp message to +966 575 806 733, or complete the online booking form on this page.
+                                Vehicle options: Toyota Camry (4 passengers, 2 bags), Hyundai Staria (7 passengers, 5 bags), GMC Yukon (7 passengers, 6 bags), Toyota Hiace (11 passengers, 10 bags), Toyota Coaster (17 passengers, 15 bags).
+                                All vehicles are air-conditioned, non-smoking, and driven by licensed Saudi professional drivers. Child seats available on request.
+                            </p>
                         </div>
                     </div>
 
