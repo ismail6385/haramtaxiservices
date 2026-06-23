@@ -1,26 +1,24 @@
-import './globals.css';
+﻿import './globals.css';
 import type { Metadata } from 'next';
-import { Montserrat, Cormorant_Garamond } from 'next/font/google';
 import Script from 'next/script';
 import SiteChrome from '@/components/SiteChrome';
 
 
-const inter = Montserrat({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const playfair = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-playfair', display: 'swap', weight: ['400', '500', '600', '700'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://haramtaxiservice.com'),
   alternates: {
     canonical: '/',
     languages: {
-      'en-US': '/en-us',
-      'en-GB': '/en-gb',
+      'x-default': '/',
+      'en-US': '/',
+      'en-GB': '/',
       'ar-SA': '/ar',
     },
   },
   title: {
     default: 'Reliable Taxi & Travel Agency | Complete Saudi Arabia Transport',
-    template: '%s | Haram Taxi'
+    template: '%s | Haram Taxi Service'
   },
   description: 'Book the most trusted transportation service in Saudi Arabia. ' +
                'Reliable private transport for Jeddah, Makkah, Madinah, ' +
@@ -70,7 +68,7 @@ export const metadata: Metadata = {
     creator: '@haramtaxi',
   },
   verification: {
-    google: 'google-site-verification-id', // Replace with actual ID
+    google: 'q-DVASWU6Kyf0-UGvNkYPL1EYFzfh3KmLg26ACwGoDM',
   },
   category: 'Transportation Services',
   viewport: {
@@ -96,6 +94,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" />
         <link rel="preconnect" href="https://wa.me" />
         {/* WebMCP — inline, runs unconditionally so the checker's injected mock is hit */}
         <script dangerouslySetInnerHTML={{ __html: `
@@ -147,7 +146,7 @@ try {
       },
       execute: async function(args) {
         var msg = encodeURIComponent(args.message || "Salam, I would like to book a taxi.");
-        window.open("https://wa.me/923080628195?text=" + msg, "_blank");
+        window.open("https://wa.me/966575806733?text=" + msg, "_blank");
         return { content: [{ type: "text", text: "Opening WhatsApp chat." }] };
       }
     }
@@ -185,7 +184,7 @@ try {
           `}
         </Script>
       </head>
-      <body className={`${inter.variable} ${playfair.variable} ${inter.className}`} suppressHydrationWarning>
+      <body className="font-sans" suppressHydrationWarning>
         <SiteChrome>
           {children}
         </SiteChrome>

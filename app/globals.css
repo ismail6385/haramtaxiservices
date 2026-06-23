@@ -4,6 +4,8 @@
 
 @layer base {
   :root {
+    --font-inter: 'Montserrat', system-ui, sans-serif;
+    --font-playfair: 'Cormorant Garamond', Georgia, serif;
     /* ─────────────────────────────────────────────────────────
      * Haram Taxi Service — Color System (VIP Transport)
      *
