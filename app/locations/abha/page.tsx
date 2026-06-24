@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MapPin } from 'lucide-react';
@@ -22,10 +22,11 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Abha",
     "description": "Private taxi in Abha — Al-Soudah, Habala Village, Rijal Almaa heritage village, Asir National Park, AHB Airport, Khamis Mushait, and intercity routes to Jeddah, Riyadh, and Jizan.",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Abha", "addressRegion": "Asir", "addressCountry": "SA" },
     "url": "https://haramtaxiservice.com/locations/abha",
     "areaServed": "Abha",

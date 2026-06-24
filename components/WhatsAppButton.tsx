@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
     }, []);
 
     const handleWhatsAppClick = () => {
-        const phoneNumber = '996575806733';
+        const phoneNumber = '966575806733';
         const message = "As-salamu alaykum, I want to book a taxi. Please provide details.";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');

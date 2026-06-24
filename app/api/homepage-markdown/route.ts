@@ -1,9 +1,9 @@
-import { NextResponse } from 'next/server'
+﻿import { NextResponse } from 'next/server'
 
 const MARKDOWN = `# Haram Taxi Service — Premium Taxi & Transportation in Saudi Arabia
 
 **Website:** https://haramtaxiservice.com
-**WhatsApp / Phone:** +923080628195
+**WhatsApp / Phone:** +966575806733
 **Available:** 24/7
 
 ---
@@ -52,7 +52,7 @@ Full pricing: https://haramtaxiservice.com/pricing
 
 ## How to Book
 
-1. **WhatsApp:** Send a message to +923080628195 with pickup, destination, date, and number of passengers
+1. **WhatsApp:** Send a message to +966575806733 with pickup, destination, date, and number of passengers
 2. **Online form:** https://haramtaxiservice.com/booking
 
 ---
@@ -77,7 +77,7 @@ Full list: https://haramtaxiservice.com/locations
 
 ## Contact
 
-- **WhatsApp/Phone:** +923080628195
+- **WhatsApp/Phone:** +966575806733
 - **Website:** https://haramtaxiservice.com
 - **Booking:** https://haramtaxiservice.com/booking
 - **Pricing:** https://haramtaxiservice.com/pricing

@@ -1,14 +1,14 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
     absolute: 'Haram Taxi Service | No.1 Private Taxi in Saudi Arabia [2026]',
   },
-  description: 'Experience the #1 most trusted private taxi service in Saudi Arabia. Specializing in Umrah transfers, Makkah to Madinah routes & Jeddah Airport pickups. [Book Now for 100% Peace of Mind].',
+  description: 'Saudi Arabia\'s most trusted private taxi service. Specialising in Umrah transfers, Makkah to Madinah routes, and Jeddah Airport pickups. Fixed rates, no pre-payment, 24/7 availability.',
   keywords: [
-    'taxi service saudi arabia', 'umrah taxi', 'makkah to madinah taxi', 'jeddah airport taxi', 
-    'private driver saudi', 'haram taxi', 'rent a car with driver saudi arabia', 
-    'chauffeur driven car', 'Makkah to Madinah taxi', 'Jeddah airport transfer', 
+    'taxi service saudi arabia', 'umrah taxi', 'makkah to madinah taxi', 'jeddah airport taxi',
+    'private driver saudi', 'haram taxi', 'rent a car with driver saudi arabia',
+    'chauffeur driven car', 'Makkah to Madinah taxi', 'Jeddah airport transfer',
     'Umrah taxi service', 'VIP taxi Jeddah', 'Makkah taxi booking'
   ],
   alternates: {
@@ -44,6 +44,7 @@ import FounderNote from '@/components/FounderNote';
 import TrustMarkers from '@/components/TrustMarkers';
 import BookingProcess from '@/components/BookingProcess';
 import PilgrimTips from '@/components/PilgrimTips';
+import HomeFAQ from '@/components/HomeFAQ';
 import WhatsAppFloating from '@/components/WhatsAppFloating';
 import StickyCallButton from '@/components/StickyCallButton';
 import AFairaButton from '@/components/AFairaButton';
@@ -63,15 +64,35 @@ export default async function Home() {
     }
   };
 
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Haram Taxi Service — No.1 Private Taxi in Saudi Arabia",
+    "url": "https://haramtaxiservice.com",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", "h2", ".speakable"]
+    },
+    "description": "Haram Taxi Service is Saudi Arabia's most trusted private taxi. We specialise in Umrah and Hajj transfers between Makkah, Madinah and Jeddah Airport. Fixed rates, 24/7 service, no pre-payment required."
+  };
+
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service",
-    "image": "https://haramtaxiservice.com/gmc-yukon-xl-taxi.webp",
+    "image": [
+      "https://haramtaxiservice.com/gmc-yukon-xl-taxi.webp",
+      "https://haramtaxiservice.com/makkah-clock-tower-new.webp"
+    ],
+    "logo": "https://haramtaxiservice.com/logo.png",
     "priceRange": "$$",
+    "currenciesAccepted": "SAR",
+    "paymentAccepted": "Cash, Bank Transfer",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Makkah",
+      "streetAddress": "Al Aziziyah, Misfalah District",
+      "addressLocality": "Makkah Al Mukarramah",
+      "addressRegion": "Makkah Province",
       "addressCountry": "SA"
     },
     "geo": {
@@ -79,8 +100,23 @@ export default async function Home() {
       "latitude": 21.4225,
       "longitude": 39.8262
     },
+    "hasMap": "https://maps.google.com/?q=Haram+Taxi+Service+Makkah",
     "url": "https://haramtaxiservice.com",
-    "telephone": "+996575806733",
+    "telephone": "+966575806733",
+    "email": "booking@haramtaxiservice.com",
+    "sameAs": [
+      "https://www.facebook.com/haramtaxiservice",
+      "https://www.instagram.com/haramtaxiservice",
+      "https://wa.me/966575806733"
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Makkah" },
+      { "@type": "City", "name": "Madinah" },
+      { "@type": "City", "name": "Jeddah" },
+      { "@type": "City", "name": "Riyadh" },
+      { "@type": "City", "name": "Dammam" },
+      { "@type": "Country", "name": "Saudi Arabia" }
+    ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
@@ -88,6 +124,28 @@ export default async function Home() {
       ],
       "opens": "00:00",
       "closes": "23:59"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "500",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://haramtaxiservice.com/booking",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Taxi Booking"
+      }
     }
   };
 
@@ -122,6 +180,11 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
+      <Script
+        id="speakable-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+      />
       <JsonLdFAQ faqs={faqs} />
       <JsonLdService />
       
@@ -144,8 +207,8 @@ export default async function Home() {
             <div key={i} className="bg-white rounded-3xl p-6 shadow-2xl border border-gray-100 flex flex-col items-center text-center transform hover:-translate-y-2 transition-all">
               <stat.icon className="w-8 h-8 text-brand-gold mb-3" />
               <h3 className="text-2xl sm:text-3xl font-black text-brand-navy leading-none">{stat.val}</h3>
-              <p className="text-[10px] font-black uppercase tracking-widest text-gray-400 mt-2">{stat.label}</p>
-              <p className="text-[9px] font-bold text-brand-gold/80">{stat.sub}</p>
+              <p className="text-xs font-black uppercase tracking-widest text-gray-400 mt-2">{stat.label}</p>
+              <p className="text-xs font-bold text-brand-gold/80">{stat.sub}</p>
             </div>
           ))}
         </div>
@@ -175,7 +238,7 @@ export default async function Home() {
                       </div>
                       <div>
                           <p className="text-3xl font-black text-brand-navy">Licensed</p>
-                          <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">By Ministry of Transport</p>
+                          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">By Ministry of Transport</p>
                       </div>
                   </div>
                   <p className="text-xs font-bold text-gray-500 max-w-[200px] leading-relaxed">
@@ -185,11 +248,11 @@ export default async function Home() {
             </div>
             
             <div className="space-y-10">
-              <div className="inline-flex items-center gap-3 px-6 py-3 bg-brand-navy text-white rounded-full font-black text-[10px] uppercase tracking-[0.3em] shadow-xl">
+              <div className="inline-flex items-center gap-3 px-6 py-3 bg-brand-navy text-white rounded-full font-black text-xs uppercase tracking-[0.3em] shadow-xl">
                 <Crown className="w-4 h-4 text-brand-gold animate-pulse" /> THE KSA ROYAL STANDARD
               </div>
               
-              <h2 className="text-5xl md:text-8xl font-display font-black text-brand-navy leading-[0.9] tracking-tighter">
+              <h2 className="text-4xl md:text-6xl font-display font-black text-brand-navy leading-[1] tracking-tighter">
                 Haram Taxi: <br />
                 <span className="text-brand-gold">10 Years</span> of <br />
                 Trust & Safety
@@ -236,7 +299,7 @@ export default async function Home() {
           <div className="bg-white/5 backdrop-blur-2xl rounded-[4rem] p-12 md:p-20 border border-white/10 shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-gold/20 text-brand-gold rounded-full text-[10px] font-black uppercase tracking-widest mb-8">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-gold/20 text-brand-gold rounded-full text-xs font-black uppercase tracking-widest mb-8">
                   <span className="w-2 h-2 rounded-full bg-brand-gold animate-ping" /> Beyond The Algorithm
                 </div>
                 <h2 className="text-4xl md:text-6xl font-display font-black text-white leading-none mb-8">
@@ -282,11 +345,11 @@ export default async function Home() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="p-6 bg-white/5 rounded-2xl border border-white/5 text-center">
                       <p className="text-3xl font-black text-white">0</p>
-                      <p className="text-[10px] font-black text-brand-gold uppercase tracking-widest mt-1">Pre-payment Required</p>
+                      <p className="text-xs font-black text-brand-gold uppercase tracking-widest mt-1">Pre-payment Required</p>
                     </div>
                     <div className="p-6 bg-white/5 rounded-2xl border border-white/5 text-center">
                       <p className="text-3xl font-black text-white">100%</p>
-                      <p className="text-[10px] font-black text-brand-gold uppercase tracking-widest mt-1">Managed Performance</p>
+                      <p className="text-xs font-black text-brand-gold uppercase tracking-widest mt-1">Managed Performance</p>
                     </div>
                   </div>
                 </div>
@@ -305,11 +368,12 @@ export default async function Home() {
               <h2 className="text-5xl md:text-7xl font-display font-black text-white mb-6 leading-none">Global Routes, <br/><span className="text-brand-gold">Local Excellence.</span></h2>
               <p className="text-gray-400 text-xl font-bold uppercase tracking-widest italic leading-relaxed">Exclusive Makkah to Madinah Transit • Riyadh Corporate • Jeddah Airport Specialists</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-xl p-8 rounded-[2rem] border border-white/10 text-center flex flex-col items-center">
-                 <div className="flex -space-x-4 mb-4">
-                    {[1,2,3,4,5].map(i => <div key={i} className="w-12 h-12 rounded-full border-4 border-brand-navy-dark bg-gray-600 shadow-xl" />)}
+            <div className="bg-white/5 backdrop-blur-xl p-8 rounded-[2rem] border border-white/10 text-center flex flex-col items-center gap-3">
+                 <div className="flex items-center gap-2 text-brand-gold">
+                    {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 fill-brand-gold" />)}
                  </div>
-                 <p className="text-white text-xs font-black uppercase tracking-widest leading-none">Trust by 50,000+ Pilgrims Worldwide</p>
+                 <p className="text-3xl font-black text-white">50,000+</p>
+                 <p className="text-white/60 text-xs font-bold uppercase tracking-widest">Pilgrims Served Worldwide</p>
             </div>
           </div>
           
@@ -319,19 +383,19 @@ export default async function Home() {
               { title: "Jeddah Airport to Makkah Taxi", p: "Fixed Rate • Get Quote", d: "Direct KAIA Terminal transfer with flight tracking and 60min free waiting.", tags: ["VIP Pickup", "Fixed Tolls", "Luggage Help"], link: "/routes/jeddah-airport-to-makkah-taxi" },
               { title: "VIP Madinah City Ziyarat", p: "Fixed Rate • Get Quote", d: "Visit Uhud, Quba, and 7 Mosques with our expert bilingual guides.", tags: ["Knowledgeable", "Hydration Incl.", "Flexible Time"], link: "/services/ziyarat" }
             ].map((service, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-3xl border border-white/10 p-12 rounded-[4rem] hover:bg-brand-gold group transition-all duration-500 cursor-pointer">
+              <div key={i} className="bg-white/10 backdrop-blur-3xl border border-white/10 p-10 rounded-3xl hover:bg-brand-gold group transition-all duration-500 cursor-pointer">
                 <h3 className="text-3xl font-black text-white group-hover:text-brand-navy mb-4 leading-tight">{service.title}</h3>
                 <div className="text-brand-gold group-hover:text-brand-navy font-black text-2xl mb-8 italic">{service.p}</div>
                 <p className="text-gray-300 group-hover:text-brand-navy/70 font-bold text-sm leading-relaxed mb-8">{service.d}</p>
                 <div className="flex flex-wrap gap-2 mb-10">
                     {service.tags.map((t, j) => (
-                        <span key={j} className="text-[9px] font-black uppercase bg-white/10 group-hover:bg-brand-navy group-hover:text-white px-3 py-1.5 rounded-full tracking-tighter">
+                        <span key={j} className="text-xs font-black uppercase bg-white/10 group-hover:bg-brand-navy group-hover:text-white px-3 py-1.5 rounded-full tracking-tighter">
                             {t}
                         </span>
                     ))}
                 </div>
                 <Link href={service.link} className="inline-flex items-center text-white group-hover:text-brand-navy font-black text-xs uppercase tracking-[0.3em]">
-                  SECURE RIDE NOW <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-3 transition-transform" />
+                  BOOK THIS ROUTE <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-3 transition-transform" />
                 </Link>
               </div>
             ))}
@@ -354,7 +418,7 @@ export default async function Home() {
                 <p className="text-xl text-gray-500 font-bold leading-relaxed uppercase tracking-widest">From Tabuk to Abha, and every holy site in between.</p>
                 <div className="p-8 bg-gray-50 rounded-[3rem] border border-gray-100 flex flex-col items-center text-center">
                     <p className="text-4xl font-black text-brand-navy mb-2">55+</p>
-                    <p className="text-[10px] font-black uppercase tracking-widest text-brand-gold">Cities Serviced 24/7</p>
+                    <p className="text-xs font-black uppercase tracking-widest text-brand-gold">Cities Serviced 24/7</p>
                 </div>
                 <Button asChild className="w-full h-20 bg-brand-gold hover:bg-brand-gold-light text-brand-navy font-black text-sm rounded-2xl">
                     <Link href="/locations">VIEW INTERACTIVE MAP <MapPin className="ml-3" /></Link>
@@ -432,7 +496,7 @@ export default async function Home() {
                              <step.icon className="w-10 h-10" />
                          </div>
                          <h4 className="text-xl font-black text-brand-navy mb-4">{step.t}</h4>
-                         <p className="text-xs font-bold text-gray-500 leading-relaxed uppercase tracking-widest">{step.d}</p>
+                         <p className="text-sm font-medium text-gray-500 leading-relaxed">{step.d}</p>
                      </div>
                  ))}
              </div>
@@ -455,29 +519,16 @@ export default async function Home() {
       </section>
 
       {/* TESTIMONIALS & GOOGLE RATINGS */}
-      <section className="py-32 bg-white relative overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-brand-gold" />
-        <div className="max-w-7xl mx-auto px-4 mb-20 text-center">
-             <div className="inline-flex items-center gap-2 mb-6">
-                 {[1,2,3,4,5].map(i => <Star key={i} className="w-8 h-8 text-brand-gold fill-brand-gold" />)}
-             </div>
-             <h2 className="text-5xl md:text-8xl font-display font-black text-brand-navy mb-6 tracking-tighter italic">Verified Pilgrims Love Us</h2>
-             <div className="flex justify-center items-center gap-4">
-                 <div className="bg-gray-100 px-6 py-2 rounded-xl flex items-center gap-2 text-xs font-black text-gray-500 uppercase tracking-widest border border-gray-200">
-                    <Star className="w-4 h-4 fill-brand-gold text-brand-gold" /> GOOGLE REVIEWS
-                 </div>
-                 <div className="bg-gray-100 px-6 py-2 rounded-xl flex items-center gap-2 text-xs font-black text-gray-500 uppercase tracking-widest border border-gray-200">
-                    <Crown className="w-4 h-4 text-brand-navy" /> TRIPADVISOR
-                 </div>
-             </div>
-        </div>
+      <section className="bg-gray-900 relative overflow-hidden">
         <Testimonials />
       </section>
 
       <BookingProcess />
 
       <TrustMarkers />
-      
+
+      <HomeFAQ />
+
       <div className="bg-white py-32 border-t border-gray-100">
          <div className="max-w-7xl mx-auto px-4">
              <PilgrimTips />
@@ -495,18 +546,18 @@ export default async function Home() {
       {/* FOOTER NAP (FOR LOCAL SEO) */}
       <footer className="bg-brand-navy py-10 px-4">
           <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8">
-              <div className="vcard flex flex-col items-center text-white/40 font-bold text-[10px] uppercase tracking-widest gap-2">
+              <div className="vcard flex flex-col items-center text-white/40 font-bold text-xs uppercase tracking-widest gap-2">
                   <div className="fn text-brand-gold text-lg font-black mb-2">HARAM TAXI SERVICE HQ</div>
                   <div className="adr text-center">
                       <div className="street-address">Al Aziziyah, Misfalah District</div>
                       <span className="locality">Makkah Al Mukarramah</span>, <span className="country-name">Kingdom of Saudi Arabia</span>
                   </div>
                   <div className="tel flex items-center gap-2">
-                      <Phone className="w-3 h-3" /> +996 57 580 6733
+                      <Phone className="w-3 h-3" /> +966 57 580 6733
                   </div>
                   <div className="email">booking@haramtaxiservice.com</div>
               </div>
-              <div className="flex flex-wrap justify-center gap-8 text-[10px] font-black text-white/20 uppercase tracking-[0.2em] border-t border-white/5 pt-8 w-full">
+              <div className="flex flex-wrap justify-center gap-8 text-xs font-black text-white/20 uppercase tracking-[0.2em] border-t border-white/5 pt-8 w-full">
                   <Link href="/locations/makkah">Makkah Taxi</Link>
                   <Link href="/locations/madinah">Madinah Taxi</Link>
                   <Link href="/locations/jeddah">Jeddah Taxi</Link>

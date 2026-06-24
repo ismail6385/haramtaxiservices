@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Landmark, Star, CheckCircle2 } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Diriyah Riyadh",
     "@id": "https://haramtaxiservice.com/locations/riyadh/diriyah",
     "url": "https://haramtaxiservice.com/locations/riyadh/diriyah",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Taxi and private transfer service to Diriyah UNESCO Heritage Site and Diriyah Gate district from Riyadh hotels, KAFD, KKIA, and all Riyadh areas.",
     "address": {
         "@type": "PostalAddress",

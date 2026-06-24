@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   if (!('modelContext' in navigator)) return;
 
   var tools = [
@@ -55,7 +55,7 @@
       },
       execute: async function (args) {
         var msg = encodeURIComponent(args.message || 'Salam, I would like to book a taxi.');
-        window.open('https://wa.me/923080628195?text=' + msg, '_blank');
+        window.open('https://wa.me/966575806733?text=' + msg, '_blank');
         return { content: [{ type: 'text', text: 'Opening WhatsApp chat with Haram Taxi Service.' }] };
       }
     }

@@ -1,4 +1,4 @@
-﻿import './globals.css';
+import './globals.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import SiteChrome from '@/components/SiteChrome';
@@ -17,16 +17,18 @@ export const metadata: Metadata = {
     },
   },
   title: {
-    default: 'Reliable Taxi & Travel Agency | Complete Saudi Arabia Transport',
+    default: 'Haram Taxi Service | Private Taxi & Airport Transfers Saudi Arabia',
     template: '%s | Haram Taxi Service'
   },
-  description: 'Book the most trusted transportation service in Saudi Arabia. ' +
-               'Reliable private transport for Jeddah, Makkah, Madinah, ' +
-               'Airport Transfers and Border Crossings. 24/7 Professional Travel Agency.',
+  description: 'Book the most trusted private taxi & chauffeur service in Saudi Arabia. ' +
+               'Airport transfers from Jeddah (KAIA), Makkah, Madinah & Riyadh. ' +
+               'Umrah taxi, VIP transfers & intercity routes. Available 24/7.',
   keywords: [
     'taxi service Saudi Arabia', 'Haram Taxi Service', 'private taxi Makkah', 'private taxi Madinah',
-    'Jeddah airport taxi', 'Umrah taxi', 'makkah to madinah taxi', 'madinah to makkah taxi',
-    'taxi Saudi Arabia', 'chauffeur service Saudi Arabia', 'airport transfer Saudi Arabia',
+    'Jeddah airport taxi', 'KAIA airport transfer', 'Umrah taxi', 'makkah to madinah taxi',
+    'madinah to makkah taxi', 'taxi Saudi Arabia', 'chauffeur service Saudi Arabia',
+    'airport transfer Jeddah', 'airport transfer Makkah', 'airport transfer Madinah',
+    'VIP chauffeur Riyadh', 'ziyarat tours Makkah', 'intercity taxi KSA',
   ],
   authors: [{ name: 'Haram Taxi Service' }],
   creator: 'Haram Taxi Service',
@@ -43,9 +45,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'No 1. Private Umrah Taxi Service in Saudi Arabia | Book Now',
-    description: 'Trusted by thousands. Book your Umrah taxi from Jeddah to Makkah, ' +
-                 'Madinah to Makkah. VIP & Economy cars available. 24/7 Service.',
+    title: 'Haram Taxi Service | #1 Private Umrah Taxi Saudi Arabia | Book Now',
+    description: 'Trusted by thousands of pilgrims. Book your Umrah taxi from Jeddah to Makkah, ' +
+                 'Madinah to Makkah. VIP & Economy cars. Airport transfers 24/7.',
     url: 'https://haramtaxiservice.com',
     siteName: 'Haram Taxi Service',
     locale: 'en_US',
@@ -55,15 +57,15 @@ export const metadata: Metadata = {
         url: 'https://haramtaxiservice.com/makkah-clock-tower-new.webp',
         width: 1200,
         height: 630,
-        alt: 'Haram Taxi Service - Online Taxi Booking in Saudi Arabia',
+        alt: 'Haram Taxi Service - Private Taxi & Airport Transfers in Saudi Arabia',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Online Taxi Service in Saudi Arabia | Book Now',
-    description: 'Professional taxi service in Makkah, Madinah, Jeddah. ' +
-                 'Airport transfers, city rides. Available 24/7.',
+    title: 'Haram Taxi Service | Private Taxi Saudi Arabia | Book Now',
+    description: 'Professional taxi & chauffeur service in Makkah, Madinah, Jeddah, Riyadh. ' +
+                 'Airport transfers, Umrah taxi, intercity routes. Available 24/7.',
     images: ['https://haramtaxiservice.com/makkah-clock-tower-new.webp'],
     creator: '@haramtaxi',
   },
@@ -88,9 +90,80 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Organization schema — root-level entity signal for Google
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "@id": "https://haramtaxiservice.com/#organization",
+    "name": "Haram Taxi Service",
+    "alternateName": ["Haram Taxi", "HTS Saudi"],
+    "url": "https://haramtaxiservice.com",
+    "logo": "https://haramtaxiservice.com/icon.png",
+    "image": "https://haramtaxiservice.com/makkah-clock-tower-new.webp",
+    "description": "Haram Taxi Service is the most trusted private taxi and chauffeur service in Saudi Arabia. We specialise in airport transfers from KAIA Jeddah, Prince Mohammad Airport Madinah, and King Khalid Airport Riyadh. We provide Umrah taxi, Ziyarat tours, VIP chauffeur, and intercity transport across KSA, available 24/7.",
+    "telephone": "+966575806733",
+    "email": "info@haramtaxiservice.com",
+    "priceRange": "$$",
+    "currenciesAccepted": "SAR, USD",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Bank Transfer, WhatsApp Pay",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA",
+      "addressRegion": "Makkah Province"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 21.3891,
+      "longitude": 39.8579
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Jeddah", "sameAs": "https://www.wikidata.org/wiki/Q79286" },
+      { "@type": "City", "name": "Makkah", "sameAs": "https://www.wikidata.org/wiki/Q43292" },
+      { "@type": "City", "name": "Madinah", "sameAs": "https://www.wikidata.org/wiki/Q40452" },
+      { "@type": "City", "name": "Riyadh", "sameAs": "https://www.wikidata.org/wiki/Q3692" },
+      { "@type": "City", "name": "Taif" },
+      { "@type": "City", "name": "Dammam" },
+      { "@type": "City", "name": "Abha" }
+    ],
+    "serviceType": [
+      "Airport Transfer",
+      "Umrah Taxi",
+      "Chauffeur Service",
+      "VIP Transport",
+      "Ziyarat Tours",
+      "Intercity Transfer"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "547",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "sameAs": [
+      "https://wa.me/966575806733"
+    ]
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Organization Schema — Local SEO entity signal */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        {/* Geo Meta Tags — Local relevance signals */}
+        <meta name="geo.region" content="SA" />
+        <meta name="geo.placename" content="Makkah, Jeddah, Madinah, Riyadh, Saudi Arabia" />
+        <meta name="geo.position" content="21.3891;39.8579" />
+        <meta name="ICBM" content="21.3891, 39.8579" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     title: 'Toyota Camry Taxi in Saudi Arabia | Sedan Rental - Haram Taxi',
     description: 'Book Toyota Camry sedan taxi in Saudi Arabia. Comfortable 4-seater for business and city travel in Makkah, Madinah, Jeddah. Professional drivers.',
     keywords: ['Toyota Camry taxi', 'sedan rental Saudi Arabia', 'business taxi Makkah', 'city taxi Jeddah', '4 seater taxi'],
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/fleet/toyota-camry',
+        languages: {
+            'x-default': 'https://haramtaxiservice.com/fleet/toyota-camry',
+            'en': 'https://haramtaxiservice.com/fleet/toyota-camry',
+        },
+    },
     openGraph: {
         title: 'Toyota Camry Sedan Taxi | Business & City Travel',
         description: 'Book Toyota Camry for comfortable business and city travel in Saudi Arabia.',

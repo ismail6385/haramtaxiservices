@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
@@ -94,7 +94,7 @@ export default function UmrahEstimator() {
                         <div className="text-slate-200 text-sm mb-1">Your Trip Summary is Ready</div>
                         <div className="text-xl font-bold mb-3">Contact us for your fixed quote</div>
                         <a
-                            href={`https://wa.me/923080628195?text=${encodeURIComponent('Salam, I would like a quote for my Umrah transport.')}`}
+                            href={`https://wa.me/966575806733?text=${encodeURIComponent('Salam, I would like a quote for my Umrah transport.')}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block bg-[#25D366] text-white font-black px-6 py-3 rounded-xl text-sm hover:bg-[#20BD5A] transition-colors"

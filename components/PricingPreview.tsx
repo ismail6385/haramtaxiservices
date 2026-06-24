@@ -16,12 +16,12 @@ const pricingData = {
         startPrice: "",
         icon: Car,
         rates: [
-            { route: "Jeddah Airport to Makkah", price: "Get Quote", popular: true },
-            { route: "Makkah to Madinah Taxi", price: "Get Quote" },
-            { route: "Madinah Airport to Madinah Hotel", price: "Get Quote" },
-            { route: "Riyadh Airport Transfer", price: "Get Quote" },
-            { route: "Dammam City Ride", price: "Get Quote" },
-            { route: "Ziyarat Makkah (4 Hours)", price: "Get Quote" },
+            { route: "Jeddah Airport to Makkah", price: "From 280 SAR", popular: true },
+            { route: "Makkah to Madinah Taxi", price: "From 750 SAR" },
+            { route: "Madinah Airport to Madinah Hotel", price: "From 150 SAR" },
+            { route: "Riyadh Airport Transfer", price: "From 120 SAR" },
+            { route: "Dammam City Ride", price: "From 100 SAR" },
+            { route: "Ziyarat Makkah (4 Hours)", price: "From 350 SAR" },
         ]
     },
     staria: {
@@ -33,12 +33,12 @@ const pricingData = {
         startPrice: "",
         icon: Users,
         rates: [
-            { route: "Jeddah Airport to Makkah", price: "Get Quote", popular: true },
-            { route: "Makkah to Madinah Taxi", price: "Get Quote" },
-            { route: "Madinah Airport to Madinah Hotel", price: "Get Quote" },
-            { route: "Riyadh Airport Transfer", price: "Get Quote" },
-            { route: "NEOM & Project Sites", price: "Get Quote" },
-            { route: "Ziyarat Madinah (4 Hours)", price: "Get Quote" },
+            { route: "Jeddah Airport to Makkah", price: "From 450 SAR", popular: true },
+            { route: "Makkah to Madinah Taxi", price: "From 1,000 SAR" },
+            { route: "Madinah Airport to Madinah Hotel", price: "From 200 SAR" },
+            { route: "Riyadh Airport Transfer", price: "From 180 SAR" },
+            { route: "NEOM & Project Sites", price: "From 800 SAR" },
+            { route: "Ziyarat Madinah (4 Hours)", price: "From 450 SAR" },
         ]
     },
     gmc: {
@@ -50,12 +50,12 @@ const pricingData = {
         startPrice: "",
         icon: Briefcase,
         rates: [
-            { route: "Jeddah Airport to Makkah (VIP)", price: "Get Quote", popular: true },
-            { route: "Makkah to Madinah (VIP)", price: "Get Quote" },
-            { route: "Riyadh Corporate Full Day", price: "Get Quote" },
-            { route: "NEOM Business Delegation", price: "Get Quote" },
-            { route: "Border Crossing (Bahrain)", price: "Get Quote" },
-            { route: "VIP Ziyarat Tour", price: "Get Quote" },
+            { route: "Jeddah Airport to Makkah (VIP)", price: "From 550 SAR", popular: true },
+            { route: "Makkah to Madinah (VIP)", price: "From 1,200 SAR" },
+            { route: "Riyadh Corporate Full Day", price: "From 800 SAR" },
+            { route: "NEOM Business Delegation", price: "From 1,500 SAR" },
+            { route: "Border Crossing (Bahrain)", price: "From 400 SAR" },
+            { route: "VIP Ziyarat Tour", price: "From 600 SAR" },
         ]
     },
     hiace: {
@@ -67,12 +67,12 @@ const pricingData = {
         startPrice: "",
         icon: Users,
         rates: [
-            { route: "Jeddah Airport to Makkah (Group)", price: "Get Quote", popular: true },
-            { route: "Makkah to Madinah (Group)", price: "Get Quote" },
-            { route: "Full Day Group Ziyarat", price: "Get Quote" },
-            { route: "Airport to City Group Transfer", price: "Get Quote" },
-            { route: "Corporate Event Transport", price: "Get Quote" },
-            { route: "Hajj/Umrah Group Logistics", price: "Get Quote" },
+            { route: "Jeddah Airport to Makkah (Group)", price: "From 550 SAR", popular: true },
+            { route: "Makkah to Madinah (Group)", price: "From 1,100 SAR" },
+            { route: "Full Day Group Ziyarat", price: "From 600 SAR" },
+            { route: "Airport to City Group Transfer", price: "From 250 SAR" },
+            { route: "Corporate Event Transport", price: "From 500 SAR" },
+            { route: "Hajj/Umrah Group Logistics", price: "From 800 SAR" },
         ]
     }
 };
@@ -121,7 +121,7 @@ export default function PricingPreview() {
                             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <activeData.icon className="w-20 h-20 mx-auto mb-6 text-brand-gold" />
                             <h3 className="text-3xl font-display font-black tracking-tight mb-2">{activeData.title}</h3>
-                            <div className="inline-block px-4 py-1.5 bg-brand-gold text-brand-navy text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-4">
+                            <div className="inline-block px-4 py-1.5 bg-brand-gold text-brand-navy text-xs font-black uppercase tracking-[0.2em] rounded-full mb-4">
                                 {activeData.type}
                             </div>
                             <div className="text-2xl font-black text-brand-gold mt-4 uppercase tracking-widest">
@@ -149,13 +149,13 @@ export default function PricingPreview() {
                             </div>
                             
                             <div className="pt-6 space-y-4">
-                                <Button asChild className="w-full bg-brand-navy hover:bg-brand-navy-light text-white h-20 text-xl font-black rounded-2xl shadow-2xl transition-all hover:scale-105 active:scale-95 group">
+                                <Button asChild className="w-full bg-brand-navy hover:bg-brand-navy-light text-white h-14 text-base font-black rounded-2xl shadow-2xl transition-all hover:scale-105 active:scale-95 group">
                                     <Link href="/booking">
                                         BOOK THIS VEHICLE
-                                        <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
+                                        <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
                                     </Link>
                                 </Button>
-                                <p className="text-center text-[10px] font-black text-gray-400 uppercase tracking-widest flex items-center justify-center gap-2">
+                                <p className="text-center text-xs font-bold text-gray-400 flex items-center justify-center gap-2">
                                     <ShieldCheck className="w-3 h-3 text-green-500" />
                                     Instant confirmation via WhatsApp
                                 </p>
@@ -174,7 +174,7 @@ export default function PricingPreview() {
                                             <div>
                                                 <div className="flex items-center gap-3">
                                                     <span className="font-black text-gray-900 text-xl group-hover:text-brand-navy transition-colors">{rate.route}</span>
-                                                    {rate.popular && <span className="text-[10px] font-black bg-brand-gold text-brand-navy px-2 py-1 rounded inline-block">MOST POPULAR</span>}
+                                                    {rate.popular && <span className="text-xs font-black bg-brand-gold text-brand-navy px-2 py-1 rounded inline-block">MOST POPULAR</span>}
                                                 </div>
                                                 <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mt-1">Direct Way • All Inclusive</p>
                                             </div>
@@ -182,12 +182,11 @@ export default function PricingPreview() {
                                         <div className="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-10">
                                             <div className="text-right">
                                                 <span className="font-black text-xl text-brand-gold">{rate.price}</span>
-                                                <p className="text-[10px] text-gray-400 font-bold">FIXED RATE</p>
+                                                <p className="text-xs text-gray-400 font-bold">STARTING FROM</p>
                                             </div>
                                             <Link href="/booking">
-                                                <Button size="lg" className="bg-white border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-black px-8 py-6 rounded-xl transition-all group-hover:scale-105 flex flex-col items-center h-auto min-h-[64px]">
-                                                    <span>BOOK NOW</span>
-                                                    <span className="text-[9px] text-red-500 group-hover:text-brand-gold animate-pulse mt-0.5 tracking-wider">LIMITED AVAILABILITY</span>
+                                                <Button size="lg" className="bg-white border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-black px-8 rounded-xl transition-all group-hover:scale-105 h-12">
+                                                    Get Quote
                                                 </Button>
                                             </Link>
                                         </div>
@@ -196,11 +195,9 @@ export default function PricingPreview() {
                             </div>
                         </div>
                         <div className="mt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
-                            <div className="flex items-center gap-4">
-                               <div className="flex -space-x-3">
-                                   {[1,2,3,4].map(i => <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200" />)}
-                               </div>
-                               <p className="text-sm font-bold text-gray-500">Joined by 250+ passengers this week</p>
+                            <div className="flex items-center gap-3">
+                               <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                               <p className="text-sm font-bold text-gray-500">Pay after journey — no upfront payment required</p>
                             </div>
                             <Link href="/pricing" className="text-brand-navy font-black hover:text-brand-navy-light flex items-center gap-3 text-sm group tracking-widest uppercase">
                                 VIEW ALL 50+ ROUTES

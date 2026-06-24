@@ -50,7 +50,7 @@ export default function FleetCard({ name, image, passengers, luggage, features, 
                                 <Users className="w-4 h-4 text-yellow-500" />
                             </div>
                             <div>
-                                <div className="text-[10px] uppercase tracking-widest text-neutral-500">Passengers</div>
+                                <div className="text-xs uppercase tracking-widest text-neutral-500">Passengers</div>
                                 <div className="font-bold">{passengers}</div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ export default function FleetCard({ name, image, passengers, luggage, features, 
                                 <Briefcase className="w-4 h-4 text-yellow-500" />
                             </div>
                             <div>
-                                <div className="text-[10px] uppercase tracking-widest text-neutral-500">Luggage</div>
+                                <div className="text-xs uppercase tracking-widest text-neutral-500">Luggage</div>
                                 <div className="font-bold">{luggage}</div>
                             </div>
                         </div>

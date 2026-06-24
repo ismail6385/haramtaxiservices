@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import NearbyCities from '@/components/NearbyCities';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
+import LocationNAP from '@/components/LocationNAP';
 
 export const metadata: Metadata = {
     alternates: { canonical: 'https://haramtaxiservice.com/locations/dammam' },
@@ -24,21 +25,45 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Dammam & Eastern Province",
     "description": "Professional taxi service in Dammam, Al Khobar, Dhahran, and Jubail. Bahrain Causeway crossings, KFAC Airport transfers, Aramco trips, intercity routes.",
     "@id": "https://haramtaxiservice.com/locations/dammam",
     "url": "https://haramtaxiservice.com/locations/dammam",
     "telephone": "+966575806733",
+    "email": "booking@haramtaxiservice.com",
     "priceRange": "$$",
+    "currenciesAccepted": "SAR",
+    "paymentAccepted": "Cash, Bank Transfer",
+    "hasMap": "https://maps.google.com/?q=Haram+Taxi+Service+Dammam+Saudi+Arabia",
     "address": { "@type": "PostalAddress", "streetAddress": "Dammam City", "addressLocality": "Dammam", "addressRegion": "Eastern Province", "addressCountry": "SA" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 26.4207, "longitude": 50.0888 },
     "areaServed": [
         { "@type": "City", "name": "Dammam" },
         { "@type": "City", "name": "Al Khobar" },
         { "@type": "City", "name": "Dhahran" },
-        { "@type": "City", "name": "Jubail" }
+        { "@type": "City", "name": "Jubail" },
+        { "@type": "Place", "name": "King Fahd International Airport (KFAC/DMM)" },
+        { "@type": "Place", "name": "Saudi Aramco compound, Dhahran" }
     ],
-    "openingHours": "Mo-Su 00:00-24:00"
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+    },
+    "sameAs": [
+        "https://www.facebook.com/haramtaxiservice",
+        "https://www.instagram.com/haramtaxiservice",
+        "https://wa.me/966575806733"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "167",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
 };
 
 const faqs = [
@@ -382,6 +407,15 @@ export default function DammamPage() {
             </section>
 
             <NearbyCities currentCity="dammam" />
+
+            {/* NAP — Local SEO contact block */}
+            <LocationNAP
+                city="Dammam"
+                address="Dammam, Eastern Province, Saudi Arabia"
+                mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Dammam+Saudi+Arabia"
+                reviewCount={167}
+                nearbyAreas={["Al Khobar", "Dhahran", "Jubail", "Qatif", "KFAC Airport", "Aramco compound", "Bahrain Causeway", "Half Moon Bay"]}
+            />
 
             <section className="py-20 bg-blue-800 text-white text-center">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

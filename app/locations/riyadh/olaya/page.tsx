@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Star, CheckCircle2, Car } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Olaya Riyadh",
     "@id": "https://haramtaxiservice.com/locations/riyadh/olaya",
     "url": "https://haramtaxiservice.com/locations/riyadh/olaya",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Professional taxi and chauffeur service in Olaya, Riyadh's central business district. KKIA airport transfers, KAFD business runs, and intercity travel from Kingdom Tower and King Fahd Road area.",
     "address": {
         "@type": "PostalAddress",

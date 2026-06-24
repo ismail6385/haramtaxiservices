@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { MessageSquare } from "lucide-react";
 
@@ -16,7 +16,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 export default function WhatsAppFloating() {
     return (
         <a
-            href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%2C%20I%20would%20like%20to%20book%20a%20ride."
+            href="https://wa.me/966575806733?text=Hello%20Haram%20Taxi%2C%20I%20would%20like%20to%20book%20a%20ride."
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-24 md:bottom-6 right-6 z-[999] bg-[#25D366] text-white p-4 rounded-full shadow-[0_20px_40px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform flex items-center justify-center border-4 border-white/20 group"

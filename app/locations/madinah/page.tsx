@@ -12,12 +12,13 @@ import {
 import NearbyCities from '@/components/NearbyCities';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
+import LocationNAP from '@/components/LocationNAP';
 
 export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/madinah',
     },
-    title: 'Madinah Taxi Service 2026 | MED Airport, Ziyarat Tours & Hajj Transport',
+    title: 'Taxi Service Madinah | Airport Transfers & Umrah Taxi',
     description: 'Trusted 24/7 taxi in Madinah. MED airport transfers, Quba & Uhud Ziyarat tours, Madinah to Makkah (4.5 hrs), Wadi Al-Jinn, and Hajj 2026 — fixed fares, no surge.',
     keywords: ['Madinah taxi', 'Madinah airport taxi', 'MED airport transfer Madinah', 'Madinah Ziyarat taxi', 'Madinah to Makkah taxi', 'Hajj 2026 taxi Madinah', 'Quba Mosque taxi', 'Mount Uhud taxi Madinah', 'Wadi Al-Jinn taxi', 'Madinah intercity taxi'],
     openGraph: {
@@ -111,15 +112,21 @@ export default function MadinahPage() {
 
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "TaxiService"],
         "name": "Haram Taxi Service — Madinah",
+        "description": "Trusted taxi service in Madinah Al Munawwarah. Airport transfers, Masjid Al-Nabawi hotel transport, Ziyarat tours, Madinah to Makkah intercity. Fixed rates, 24/7.",
         "image": "https://haramtaxiservice.com/masjid-nabawi-madinah.webp",
         "@id": "https://haramtaxiservice.com/locations/madinah",
         "url": "https://haramtaxiservice.com/locations/madinah",
         "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
         "priceRange": "$$",
+        "currenciesAccepted": "SAR",
+        "paymentAccepted": "Cash, Bank Transfer",
+        "hasMap": "https://maps.google.com/?q=Haram+Taxi+Service+Madinah+Saudi+Arabia",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Markaziyah District, near Masjid Al-Nabawi",
             "addressLocality": "Madinah",
             "addressRegion": "Al Madinah Province",
             "postalCode": "42311",
@@ -136,7 +143,26 @@ export default function MadinahPage() {
             "opens": "00:00",
             "closes": "23:59"
         },
-        "areaServed": { "@type": "City", "name": "Madinah" }
+        "areaServed": [
+            { "@type": "City", "name": "Madinah Al Munawwarah" },
+            { "@type": "Place", "name": "Markaziyah, Madinah" },
+            { "@type": "Place", "name": "Masjid Al-Nabawi area" },
+            { "@type": "Place", "name": "Prince Mohammad bin Abdulaziz Airport (MED)" },
+            { "@type": "Place", "name": "Quba Mosque area, Madinah" },
+            { "@type": "Place", "name": "Al Haram district, Madinah" }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/haramtaxiservice",
+            "https://www.instagram.com/haramtaxiservice",
+            "https://wa.me/966575806733"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "345",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
     };
 
     const faqSchema = {
@@ -572,6 +598,15 @@ export default function MadinahPage() {
                 <div className="container mx-auto px-4 py-20">
                     <NearbyCities currentCity="madinah" />
                 </div>
+
+                {/* NAP — Local SEO contact block */}
+                <LocationNAP
+                    city="Madinah"
+                    address="Markaziyah District, near Masjid Al-Nabawi, Madinah, Saudi Arabia"
+                    mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Madinah+Saudi+Arabia"
+                    reviewCount={345}
+                    nearbyAreas={["Masjid Al-Nabawi", "Markaziyah", "Al Haram district", "Quba Mosque", "MED Airport", "Al Aqiq", "Al Jamawat", "Qiblatain Mosque area"]}
+                />
 
                 {/* Final CTA */}
                 <section className="py-20 bg-brand-navy text-white">

@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     title: 'Hyundai Starex Taxi in Saudi Arabia | 7-Seater Van Rental - Haram Taxi',
     description: 'Book Hyundai Starex 7-seater van taxi in Saudi Arabia. Reliable family van for airport transfers and trips in Makkah, Madinah, Jeddah.',
     keywords: ['Hyundai Starex taxi', 'family van Saudi Arabia', '7 seater taxi', 'airport transfer van', 'reliable van'],
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/fleet/hyundai-starex',
+        languages: {
+            'x-default': 'https://haramtaxiservice.com/fleet/hyundai-starex',
+            'en': 'https://haramtaxiservice.com/fleet/hyundai-starex',
+        },
+    },
     openGraph: {
         title: 'Hyundai Starex Family Van Taxi | 7-Seater',
         description: 'Book Hyundai Starex for reliable family travel in Saudi Arabia.',

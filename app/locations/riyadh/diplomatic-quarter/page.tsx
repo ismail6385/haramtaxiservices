@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Shield, Star, Building2, CheckCircle2 } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Diplomatic Quarter Riyadh",
     "@id": "https://haramtaxiservice.com/locations/riyadh/diplomatic-quarter",
     "url": "https://haramtaxiservice.com/locations/riyadh/diplomatic-quarter",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Professional taxi and chauffeur service in Riyadh's Diplomatic Quarter. Serving embassy staff, expat families, NGO workers, and corporate clients with fixed-rate, pre-booked transfers.",
     "address": {
         "@type": "PostalAddress",

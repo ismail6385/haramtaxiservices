@@ -3,31 +3,61 @@ import Script from 'next/script';
 export default function JsonLdLocalBusiness() {
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "TaxiService"],
         "name": "Haram Taxi Service",
-        "image": "https://haramtaxiservice.com/logo.png",
-        "description": "Premium Umrah taxi and Hajj transport services in Saudi Arabia. Professional airport transfers, Ziyarat tours, and luxury intercity travel.",
+        "image": [
+            "https://haramtaxiservice.com/logo.png",
+            "https://haramtaxiservice.com/gmc-yukon-xl-taxi.webp"
+        ],
+        "logo": "https://haramtaxiservice.com/logo.png",
+        "description": "Saudi Arabia's most trusted private taxi service. Specialising in Umrah transfers, Makkah to Madinah routes, Jeddah Airport pickups, and intercity travel. Fixed rates, 24/7 availability.",
         "address": {
             "@type": "PostalAddress",
-            "addressCountry": "SA",
+            "streetAddress": "Al Aziziyah, Misfalah District",
+            "addressLocality": "Makkah Al Mukarramah",
             "addressRegion": "Makkah Province",
-            "addressLocality": "Jeddah"
+            "addressCountry": "SA"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "21.543333",
-            "longitude": "39.172778"
+            "latitude": "21.4225",
+            "longitude": "39.8262"
+        },
+        "hasMap": "https://maps.google.com/?q=Haram+Taxi+Service+Makkah+Saudi+Arabia",
+        "url": "https://haramtaxiservice.com",
+        "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
+        "priceRange": "$$",
+        "currenciesAccepted": "SAR",
+        "paymentAccepted": "Cash, Bank Transfer, WhatsApp",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
         },
         "areaServed": [
-            "Jeddah", "Makkah", "Madinah", "Riyadh", "Dammam", "Taif", "Al Khobar", "Yanbu"
+            { "@type": "City", "name": "Makkah" },
+            { "@type": "City", "name": "Madinah" },
+            { "@type": "City", "name": "Jeddah" },
+            { "@type": "City", "name": "Riyadh" },
+            { "@type": "City", "name": "Dammam" },
+            { "@type": "City", "name": "Taif" },
+            { "@type": "City", "name": "Al Khobar" },
+            { "@type": "City", "name": "Yanbu" },
+            { "@type": "Country", "name": "Saudi Arabia" }
         ],
-        "url": "https://haramtaxiservice.com",
-        "priceRange": "$$",
-        "openingHours": "Mo-Su 00:Get Quote:59",
+        "sameAs": [
+            "https://www.facebook.com/haramtaxiservice",
+            "https://www.instagram.com/haramtaxiservice",
+            "https://wa.me/966575806733"
+        ],
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
-            "reviewCount": "847"
+            "reviewCount": "847",
+            "bestRating": "5",
+            "worstRating": "1"
         }
     };
 

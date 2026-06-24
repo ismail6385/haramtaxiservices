@@ -1,4 +1,4 @@
-import Image from 'next/image';
+﻿import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Users, Briefcase, CheckCircle2, ArrowRight, Car, MessageCircle } from 'lucide-react';
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/fleet',
     },
-    title: 'Elite Chauffeur Fleet | Premium GMC & VIP Executive Sedans [2026]',
-    description: 'Explore our distinguished chauffeur fleet in Saudi Arabia. Featuring 2024 GMC Yukon XL, executive Toyota Camry, and VIP family vans. [Book Your Ultimate Sanctuary on the Road].',
+    title: 'Our Taxi Fleet | GMC Yukon, Toyota Camry & VIP Vans | Haram Taxi Service',
+    description: 'View our private taxi fleet in Saudi Arabia — GMC Yukon XL (7-seat), Toyota Camry, Hyundai Staria, and Toyota Hiace. All vehicles are air-conditioned, licensed, and available 24/7.',
     keywords: ['chauffeur fleet Saudi Arabia', 'GMC Yukon VIP', 'executive sedan Makkah', 'premium family transport', 'luxury SUV chauffeur', 'VIP pilgrimage transport', 'Saudi Arabia executive car'],
     openGraph: {
         title: 'Elite Chauffeur Fleet | Premium Saudi VIP Transport',
@@ -217,7 +217,7 @@ export default function FleetPage() {
                                             </Link>
                                         </Button>
                                         <a 
-                                            href={`https://wa.me/996575806733?text=Assalamu%20Alaikum%2C%20I%20want%20to%20get%20a%20quote%20for%20a%20${encodeURIComponent(vehicle.name)}.`}
+                                            href={`https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20want%20to%20get%20a%20quote%20for%20a%20${encodeURIComponent(vehicle.name)}.`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex-1"
@@ -280,7 +280,7 @@ export default function FleetPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a 
-                            href="https://wa.me/996575806733"
+                            href="https://wa.me/966575806733"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MapPin } from 'lucide-react';
@@ -22,10 +22,11 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Al-Ahsa",
     "description": "Private taxi in Al-Ahsa (Hofuf) — UNESCO Oasis, Al-Qara Mountain caves, Jawatha Mosque, Qasr Ibrahim, Al-Uqair coast, HOF Airport, and intercity routes to Riyadh, Dammam, and Qatar border.",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Al-Ahsa", "addressRegion": "Eastern Province", "addressCountry": "SA" },
     "url": "https://haramtaxiservice.com/locations/al-ahsa",
     "areaServed": "Al-Ahsa",

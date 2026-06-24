@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+﻿import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 // Force dynamic rendering for this API route
@@ -551,7 +551,7 @@ export async function POST(request: NextRequest) {
                         
                         <div class="action-bar">
                             ${booking.customer_phone ? `<a href="https://wa.me/${formatPhoneForWhatsApp(booking.customer_phone)}" class="btn btn-whatsapp">WhatsApp</a>` : ''}
-                            ${booking.customer_phone ? `<a href="https://wa.me/996575806733" class="btn btn-call">Call</a>` : ''}
+                            ${booking.customer_phone ? `<a href="https://wa.me/966575806733" class="btn btn-call">Call</a>` : ''}
                             <a href="mailto:${booking.customer_email}" class="btn btn-email">Email</a>
                         </div>
                     </div>

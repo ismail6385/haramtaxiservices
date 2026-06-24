@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Trees, CheckCircle2, Star } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — King Salman Park Riyadh",
     "@id": "https://haramtaxiservice.com/locations/riyadh/king-salman-park",
     "url": "https://haramtaxiservice.com/locations/riyadh/king-salman-park",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Taxi and transfer service to King Salman Park, the world's largest urban park in Riyadh. Fixed-rate transfers from hotels, KAFD, KKIA airport, and all Riyadh areas.",
     "address": {
         "@type": "PostalAddress",

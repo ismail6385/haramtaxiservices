@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Star, CheckCircle2, Car } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Wadi Naaman, Taif",
     "@id": "https://haramtaxiservice.com/locations/taif/wadi-naaman",
     "url": "https://haramtaxiservice.com/locations/taif/wadi-naaman",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Professional taxi and rose farm tour service in Wadi Naaman, Taif. Damask rose farms, traditional perfume distilleries, honey markets, and agricultural areas.",
     "address": {
         "@type": "PostalAddress",

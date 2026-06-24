@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/booking',
     },
-    title: 'Book Elite Taxi in Saudi Arabia [2026 Updated] | Instant Booking',
-    description: 'Secure your premium taxi booking in Saudi Arabia today. 100% reliable service for Makkah, Madinah, and Jeddah. [Book Your VIP Sanctuary on the Road].',
+    title: 'Book a Taxi in Saudi Arabia | Instant Confirmation | Haram Taxi Service',
+    description: 'Book your private taxi in Saudi Arabia online. Serving Makkah, Madinah, Jeddah, and Riyadh. Fixed rates with no hidden charges — confirm via WhatsApp in under 2 minutes.',
     keywords: ['book taxi online Saudi Arabia', 'VIP car booking Makkah', 'book private transport Madinah', 'executive car service booking', 'taxi reservation Saudi Arabia'],
     openGraph: {
         title: 'Book Elite Taxi in Saudi Arabia | VIP Transport',
@@ -160,7 +160,7 @@ export default function BookingPage() {
             <section id="commitment" className="py-12 bg-white scroll-mt-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-brand-navy rounded-2xl p-8 text-white shadow-xl shadow-brand-navy/20">
-                        <h3 className="text-2xl font-bold mb-6 text-center font-display">Our Commitment to You</h3>
+                        <h2 className="text-2xl font-bold mb-6 text-center font-display">Our Commitment to You</h2>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
                                 <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">

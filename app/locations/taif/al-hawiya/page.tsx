@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Star, CheckCircle2, Car, Mountain } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Al Hawiya, Taif",
     "@id": "https://haramtaxiservice.com/locations/taif/al-hawiya",
     "url": "https://haramtaxiservice.com/locations/taif/al-hawiya",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Professional taxi service in Al Hawiya, Taif's mountain residential district. City transfers, Makkah connections, and Jeddah airport runs.",
     "address": {
         "@type": "PostalAddress",

@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     title: 'Hyundai Staria Taxi in Saudi Arabia | Family Van Rental - Haram Taxi',
     description: 'Book Hyundai Staria family van taxi in Saudi Arabia. Modern 7-seater for families in Makkah, Madinah, Jeddah. Spacious and comfortable.',
     keywords: ['Hyundai Staria taxi', 'family van Saudi Arabia', '7 seater taxi Makkah', 'family taxi Madinah', 'spacious van'],
+    alternates: {
+        canonical: 'https://haramtaxiservice.com/fleet/hyundai-staria',
+        languages: {
+            'x-default': 'https://haramtaxiservice.com/fleet/hyundai-staria',
+            'en': 'https://haramtaxiservice.com/fleet/hyundai-staria',
+        },
+    },
     openGraph: {
         title: 'Hyundai Staria Family Van Taxi | 7-Seater',
         description: 'Book Hyundai Staria for comfortable family travel in Saudi Arabia.',

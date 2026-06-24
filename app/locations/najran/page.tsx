@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MapPin } from 'lucide-react';
@@ -22,10 +22,11 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Najran",
     "description": "Private taxi in Najran — EAM Airport transfers, Al-Ukhdood archaeological site, Bir Hima UNESCO rock art, Emara Palace, and intercity routes to Riyadh, Abha, and Jazan.",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Najran", "addressRegion": "Najran Province", "addressCountry": "SA" },
     "url": "https://haramtaxiservice.com/locations/najran",
     "areaServed": "Najran",

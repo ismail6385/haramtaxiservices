@@ -1,4 +1,4 @@
-import { MapPin, MessageSquare, ShieldCheck, CheckCircle2, Navigation, Clock, UserCheck } from 'lucide-react';
+﻿import { MapPin, MessageSquare, ShieldCheck, CheckCircle2, Navigation, Clock, UserCheck } from 'lucide-react';
 
 export default function BookingProcess() {
     const steps = [
@@ -63,7 +63,7 @@ export default function BookingProcess() {
                         </div>
                     </div>
                     <a 
-                        href="https://wa.me/996575806733?text=Assalamu%20Alaikum%2C%20I%20am%20arriving%20soon%20and%20need%20a%20taxi."
+                        href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20am%20arriving%20soon%20and%20need%20a%20taxi."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full lg:w-auto"

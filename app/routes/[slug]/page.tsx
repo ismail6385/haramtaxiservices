@@ -318,28 +318,57 @@ export default async function RoutePage({ params }: Props) {
             {/* Customer Updates for the Route */}
             <CustomerUpdates location={route.h1} />
 
-            {/* Silo Linking Section */}
-            <div className="bg-white border-t border-gray-200 mt-12 py-12">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-8">
-                        <h2 className="text-2xl font-bold text-gray-900">Explore Other Destinations</h2>
+            {/* Topic Cluster: Related Routes */}
+            {(() => {
+                const slugParts = slug.split('-to-');
+                const origin = slugParts[0] || '';
+                const destination = slugParts.slice(1).join('-to-') || '';
+                const reverseSlug = destination && origin ? `${destination}-to-${origin}` : null;
+                const reverseRoute = reverseSlug ? routesData.find(r => r.slug === reverseSlug) : null;
+                const relatedRoutes = routesData
+                    .filter(r => r.slug !== slug && r.slug !== reverseSlug)
+                    .filter(r => (origin && r.slug.startsWith(origin)) || (destination && r.slug.endsWith(destination)))
+                    .slice(0, 4);
+
+                return (
+                    <div className="bg-gray-50 border-t border-gray-200 mt-0 py-12">
+                        <div className="container mx-auto px-4">
+                            <h2 className="text-xl font-bold text-gray-900 mb-6">Related Routes</h2>
+                            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {reverseRoute && (
+                                    <Link
+                                        href={`/routes/${reverseRoute.slug}`}
+                                        className="flex flex-col p-5 bg-white rounded-xl border border-gray-200 hover:border-slate-400 hover:shadow-md transition-all group"
+                                    >
+                                        <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Return Journey</span>
+                                        <span className="font-semibold text-gray-900 group-hover:text-slate-700 leading-snug">{reverseRoute.h1}</span>
+                                        {reverseRoute.distance && <span className="text-xs text-gray-400 mt-2">{reverseRoute.distance} · {reverseRoute.duration}</span>}
+                                    </Link>
+                                )}
+                                {relatedRoutes.map(r => (
+                                    <Link
+                                        key={r.slug}
+                                        href={`/routes/${r.slug}`}
+                                        className="flex flex-col p-5 bg-white rounded-xl border border-gray-200 hover:border-slate-400 hover:shadow-md transition-all group"
+                                    >
+                                        <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Same Origin</span>
+                                        <span className="font-semibold text-gray-900 group-hover:text-slate-700 leading-snug">{r.h1}</span>
+                                        {r.distance && <span className="text-xs text-gray-400 mt-2">{r.distance} · {r.duration}</span>}
+                                    </Link>
+                                ))}
+                                <Link
+                                    href="/routes"
+                                    className="flex flex-col p-5 bg-slate-800 text-white rounded-xl border border-slate-700 hover:bg-slate-700 transition-all"
+                                >
+                                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">All Routes</span>
+                                    <span className="font-semibold leading-snug">Browse All Saudi Arabia Routes →</span>
+                                    <span className="text-xs text-slate-400 mt-2">166+ intercity routes</span>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex flex-wrap justify-center gap-4 text-sm">
-                        <Link href="/locations/makkah" className="px-5 py-2 bg-gray-50 hover:bg-slate-50 text-gray-700 hover:text-slate-700 rounded-full border border-gray-200 transition-colors">
-                            Taxi in Makkah
-                        </Link>
-                        <Link href="/locations/madinah" className="px-5 py-2 bg-gray-50 hover:bg-slate-50 text-gray-700 hover:text-slate-700 rounded-full border border-gray-200 transition-colors">
-                            Taxi in Madinah
-                        </Link>
-                        <Link href="/locations/jeddah" className="px-5 py-2 bg-gray-50 hover:bg-slate-50 text-gray-700 hover:text-slate-700 rounded-full border border-gray-200 transition-colors">
-                            Taxi in Jeddah
-                        </Link>
-                        <Link href="/blog" className="px-5 py-2 bg-gray-50 hover:bg-slate-50 text-gray-700 hover:text-slate-700 rounded-full border border-gray-200 transition-colors">
-                            Travel Blog
-                        </Link>
-                    </div>
-                </div>
-            </div>
+                );
+            })()}
         </div>
     );
 }

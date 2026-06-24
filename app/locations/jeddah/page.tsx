@@ -12,12 +12,13 @@ import {
 import NearbyCities from '@/components/NearbyCities';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
+import LocationNAP from '@/components/LocationNAP';
 
 export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/jeddah',
     },
-    title: 'Jeddah Taxi Service | KAIA Airport, Al Balad, Makkah & Intercity 2026',
+    title: 'Taxi Service Jeddah | KAIA Airport Transfer to Makkah 24/7',
     description: 'Trusted Jeddah taxi 24/7. KAIA airport to Makkah (75 min), Al Balad city tours, Corniche transfers, Hajj 2026 permits — fixed fares, no surge. Book via WhatsApp.',
     keywords: ['Jeddah taxi', 'Jeddah airport taxi', 'KAIA taxi to Makkah', 'Jeddah to Makkah taxi', 'Hajj 2026 Jeddah transfer', 'Al Balad taxi Jeddah', 'Jeddah city tour taxi', 'Jeddah Corniche taxi', 'Jeddah intercity taxi', 'KAIA transfer Makkah Madinah'],
     openGraph: {
@@ -111,13 +112,18 @@ export default function JeddahPage() {
 
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "TaxiService"],
         "name": "Haram Taxi Service — Jeddah",
+        "description": "Trusted taxi service in Jeddah. KAIA airport to Makkah transfers, Al Balad tours, Corniche, Hajj 2026 transport. Fixed rates, 24/7 WhatsApp booking.",
         "image": "https://haramtaxiservice.com/images/locations/jeddah-corniche-view.webp",
         "@id": "https://haramtaxiservice.com/locations/jeddah",
         "url": "https://haramtaxiservice.com/locations/jeddah",
         "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
         "priceRange": "$$",
+        "currenciesAccepted": "SAR",
+        "paymentAccepted": "Cash, Bank Transfer",
+        "hasMap": "https://maps.google.com/?q=Haram+Taxi+Service+Jeddah+Saudi+Arabia",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Jeddah",
@@ -136,7 +142,26 @@ export default function JeddahPage() {
             "opens": "00:00",
             "closes": "23:59"
         },
-        "areaServed": { "@type": "City", "name": "Jeddah" }
+        "areaServed": [
+            { "@type": "City", "name": "Jeddah" },
+            { "@type": "Place", "name": "King Abdulaziz International Airport (KAIA)" },
+            { "@type": "Place", "name": "Al Balad Historic District, Jeddah" },
+            { "@type": "Place", "name": "Jeddah Corniche" },
+            { "@type": "Place", "name": "Al Hamra, Jeddah" },
+            { "@type": "Place", "name": "North Jeddah" }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/haramtaxiservice",
+            "https://www.instagram.com/haramtaxiservice",
+            "https://wa.me/966575806733"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "418",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
     };
 
     const faqSchema = {
@@ -617,6 +642,15 @@ export default function JeddahPage() {
                 <div className="container mx-auto px-4 py-20">
                     <NearbyCities currentCity="jeddah" />
                 </div>
+
+                {/* NAP — Local SEO contact block */}
+                <LocationNAP
+                    city="Jeddah"
+                    address="Jeddah, Makkah Province, Saudi Arabia"
+                    mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Jeddah+Saudi+Arabia"
+                    reviewCount={418}
+                    nearbyAreas={["KAIA Airport", "Al Balad", "Corniche", "Al Hamra", "Al Rawdah", "Al Zahra", "North Jeddah", "KAEC", "Obhur"]}
+                />
 
                 {/* Final CTA */}
                 <section className="py-20 bg-slate-700 text-white">

@@ -25,7 +25,7 @@ export default function AFairaButton() {
                              <span className="text-2xl">🎉</span>
                              <h4 className="font-display font-black text-2xl text-brand-navy leading-none tracking-tight">WELCOME TO AFAIRA!</h4>
                         </div>
-                        <p className="text-[10px] font-black text-brand-gold uppercase tracking-[0.2em]">Congrats on choosing the best service ✨</p>
+                        <p className="text-xs font-black text-brand-gold uppercase tracking-[0.2em]">Congrats on choosing the best service ✨</p>
                     </div>
                     
                     {/* Decorative Dot */}
@@ -43,7 +43,7 @@ export default function AFairaButton() {
                 <div className="flex flex-col items-center gap-6 relative z-10">
                     <Crown className={`w-5 h-5 text-brand-gold transition-all duration-500 ${showCongrats ? 'scale-125 rotate-[360deg]' : 'group-hover:rotate-12'}`} />
                     <span 
-                        className="font-display font-black uppercase tracking-[0.4em] text-[10px] [writing-mode:vertical-lr] rotate-180"
+                        className="font-display font-black uppercase tracking-[0.4em] text-xs [writing-mode:vertical-lr] rotate-180"
                     >
                         AFaira
                     </span>

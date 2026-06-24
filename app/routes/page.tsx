@@ -22,6 +22,7 @@ export default function RoutesIndexPage() {
                     </p>
                 </div>
 
+                <h2 className="sr-only">All Taxi Routes in Saudi Arabia</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {routesData.map((route, idx) => (
                         <Link href={`/routes/${route.slug}`} key={idx} className="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 overflow-hidden">

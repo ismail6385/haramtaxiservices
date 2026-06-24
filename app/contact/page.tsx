@@ -1,4 +1,4 @@
-import BookingForm from '@/components/BookingForm';
+﻿import BookingForm from '@/components/BookingForm';
 import { Suspense } from 'react';
 import { Clock, MapPin, CheckCircle2, MessageSquare, Headphones, Phone, Mail, Home, ChevronRight, Star } from 'lucide-react';
 import { Metadata } from 'next';
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/contact',
     },
-    title: 'Contact Us | Executive Taxi Services KSA [24/7 Support]',
-    description: 'Get in touch for premium taxi bookings in Makkah, Madinah, and Jeddah. 24/7 VIP support via WhatsApp. [Instant Quotes & Confirmation].',
+    title: 'Contact Haram Taxi Service | WhatsApp & Phone 24/7',
+    description: 'Contact Haram Taxi Service for taxi bookings in Makkah, Madinah, Jeddah, and across Saudi Arabia. Available 24 hours via WhatsApp — we reply in under 2 minutes.',
     keywords: ['contact taxi Saudi Arabia', 'book luxury transport Makkah', 'premium transfer Madinah', 'VIP taxi Jeddah', 'executive car booking'],
     openGraph: {
         title: 'Contact Us | Executive Taxi Service Saudi Arabia',
@@ -82,7 +82,7 @@ const contactSchema = {
     "mainEntity": {
         "@type": "LocalBusiness",
         "name": "Haram Taxi Service",
-        "telephone": "+996575806733",
+        "telephone": "+966575806733",
         "email": "haramtaxiservice@gmail.com",
         "address": {
             "@type": "PostalAddress",
@@ -131,7 +131,7 @@ export default function ContactPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
-                            <a href="https://wa.me/996575806733" className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#20bd5a] transition-all shadow-lg hover:scale-105 active:scale-95">
+                            <a href="https://wa.me/966575806733" className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#20bd5a] transition-all shadow-lg hover:scale-105 active:scale-95">
                                 <MessageSquare className="w-6 h-6" />
                                 WhatsApp Us Now
                             </a>

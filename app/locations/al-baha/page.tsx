@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MapPin } from 'lucide-react';
@@ -22,10 +22,11 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Al-Baha",
     "description": "Private taxi in Al-Baha — ABT Airport transfers, Dhee Ain marble village, Raghadan Forest, Zahran Heritage Village, Baljurashi, and intercity routes to Jeddah, Taif, and Riyadh.",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Al-Baha", "addressRegion": "Al-Baha Province", "addressCountry": "SA" },
     "url": "https://haramtaxiservice.com/locations/al-baha",
     "areaServed": "Al-Baha",

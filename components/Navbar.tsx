@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from 'next/link';
 import { useState } from 'react';
@@ -71,7 +71,7 @@ export default function Navbar() {
                             <span className="text-2xl font-bold text-gray-900 font-display tracking-tight leading-none">
                                 Haram <span className="text-brand-gold">Taxi</span>
                             </span>
-                            <span className="text-[9px] text-gray-500 uppercase tracking-[0.2em] font-black mt-1">Car Rental With Driver</span>
+                            <span className="text-xs text-gray-500 uppercase tracking-[0.2em] font-black mt-1">Car Rental With Driver</span>
                         </div>
                     </Link>
 
@@ -162,7 +162,7 @@ export default function Navbar() {
                         </Link>
 
                         <a
-                            href="https://wa.me/996575806733?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20chauffeur%20service."
+                            href="https://wa.me/966575806733?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20chauffeur%20service."
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -274,7 +274,7 @@ export default function Navbar() {
                         </Link>
 
                         <a
-                            href="https://wa.me/996575806733?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20chauffeur%20service."
+                            href="https://wa.me/966575806733?text=As-salamu%20alaykum,%20I%20want%20to%20get%20a%20quote%20for%20chauffeur%20service."
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setMobileMenuOpen(false)}

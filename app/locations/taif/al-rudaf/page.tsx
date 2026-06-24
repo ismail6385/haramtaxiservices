@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Star, CheckCircle2, Car } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Al Rudaf, Taif",
     "@id": "https://haramtaxiservice.com/locations/taif/al-rudaf",
     "url": "https://haramtaxiservice.com/locations/taif/al-rudaf",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Professional taxi service in Al Rudaf, Taif. Park visits, zoo trips, family outings and city transfers.",
     "address": {
         "@type": "PostalAddress",

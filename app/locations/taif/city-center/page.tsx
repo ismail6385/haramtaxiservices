@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Star, CheckCircle2, Car, Building2 } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Taif City Center",
     "@id": "https://haramtaxiservice.com/locations/taif/city-center",
     "url": "https://haramtaxiservice.com/locations/taif/city-center",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Professional taxi service in Taif city center. Shubra Palace, Taif Airport transfers, and intercity connections to Makkah, Jeddah, and Riyadh.",
     "address": {
         "@type": "PostalAddress",

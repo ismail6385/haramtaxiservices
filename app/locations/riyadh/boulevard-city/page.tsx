@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Star, CheckCircle2, Ticket } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Boulevard City Riyadh",
     "@id": "https://haramtaxiservice.com/locations/riyadh/boulevard-city",
     "url": "https://haramtaxiservice.com/locations/riyadh/boulevard-city",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Taxi and transfer service to and from Boulevard City, Riyadh Season's main entertainment hub. Pre-booked fixed rates, return pickups, no event-night surge pricing.",
     "address": {
         "@type": "PostalAddress",

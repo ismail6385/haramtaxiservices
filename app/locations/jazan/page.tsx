@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MapPin, CheckCircle2, Star } from 'lucide-react';
@@ -22,11 +22,12 @@ export const metadata: Metadata = {
 
 const schema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Jazan",
     "description": "Professional taxi service in Jazan — Farasan Islands, GIZ Airport, Jizan Corniche, Abha mountain transfers.",
     "url": "https://haramtaxiservice.com/locations/jazan",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "areaServed": "Jazan Region, Saudi Arabia",
     "address": { "@type": "PostalAddress", "addressLocality": "Jazan", "addressCountry": "SA" }
 } as const;

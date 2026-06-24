@@ -184,6 +184,7 @@ export default async function BlogPostPage({ params }: Props) {
                             </div>
 
                             {/* ── BLOG CONTENT ── */}
+                            <h2 className="sr-only">{post.title} — Full Article</h2>
                             <div
                                 className="blog-content"
                                 dangerouslySetInnerHTML={{ __html: processedContent }}
@@ -239,7 +240,7 @@ export default async function BlogPostPage({ params }: Props) {
                                                     View Service <ArrowRight className="w-5 h-5 ml-2" />
                                                 </Button>
                                             </Link>
-                                            <a href="https://wa.me/996575806733" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://wa.me/966575806733" target="_blank" rel="noopener noreferrer">
                                                 <Button size="lg" variant="outline" className="border-white/25 text-white hover:bg-white/10 font-bold px-6 py-5 text-base">
                                                     <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp
                                                 </Button>
@@ -252,7 +253,7 @@ export default async function BlogPostPage({ params }: Props) {
                             {/* ── RELATED POSTS ── */}
                             {relatedPosts.length > 0 && (
                                 <div className="mb-10">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-6 font-display">More Guides You May Like</h3>
+                                    <h2 className="text-xl font-bold text-gray-900 mb-6 font-display">More Guides You May Like</h2>
                                     <div className="grid sm:grid-cols-2 gap-4">
                                         {relatedPosts.map((rp) => (
                                             <Link key={rp.slug} href={`/blog/${rp.slug}`} className="group">
@@ -329,7 +330,7 @@ export default async function BlogPostPage({ params }: Props) {
 
                                 {/* WhatsApp Quick CTA */}
                                 <a
-                                    href="https://wa.me/996575806733"
+                                    href="https://wa.me/966575806733"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-3.5 rounded-xl font-bold text-sm shadow-lg hover:bg-[#1ebd5b] active:scale-[0.97] transition-all w-full"

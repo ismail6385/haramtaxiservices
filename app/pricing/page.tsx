@@ -78,8 +78,98 @@ const fleet = [
 ];
 
 export default function PricingPage() {
+    const pricingSchema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Product",
+                "name": "Toyota Camry Private Taxi Service",
+                "description": "Comfortable 4-passenger sedan for airport transfers and intercity travel.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "SAR",
+                    "price": "150",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "150",
+                        "priceCurrency": "SAR",
+                        "priceType": "https://schema.org/MinimumPrice"
+                    }
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "GMC Yukon XL Private Taxi Service",
+                "description": "Spacious 7-passenger VIP SUV for families with luggage.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "SAR",
+                    "price": "350",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "350",
+                        "priceCurrency": "SAR",
+                        "priceType": "https://schema.org/MinimumPrice"
+                    }
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "Hyundai Staria Private Taxi Service",
+                "description": "Modern 7-9 passenger family minivan.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "SAR",
+                    "price": "300",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "300",
+                        "priceCurrency": "SAR",
+                        "priceType": "https://schema.org/MinimumPrice"
+                    }
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "Toyota Hiace Minibus Service",
+                "description": "11-14 passenger minibus for group transfers and Ziyarats.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "SAR",
+                    "price": "450",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "450",
+                        "priceCurrency": "SAR",
+                        "priceType": "https://schema.org/MinimumPrice"
+                    }
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "Toyota Coaster Bus Service",
+                "description": "17-22 passenger minibus for large pilgrim groups.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "SAR",
+                    "price": "800",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "800",
+                        "priceCurrency": "SAR",
+                        "priceType": "https://schema.org/MinimumPrice"
+                    }
+                }
+            }
+        ]
+    };
+
     return (
         <div className="bg-white min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingSchema) }}
+            />
             {/* Executive Hero */}
             <section className="relative py-24 bg-brand-navy overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -189,7 +279,7 @@ export default function PricingPage() {
 
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <a 
-                                            href={`https://wa.me/996575806733?text=Assalamu%20Alaikum%2C%20I%20want%20to%20get%20a%20quote%20for%20a%20${encodeURIComponent(vehicle.name)}.`}
+                                            href={`https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20want%20to%20get%20a%20quote%20for%20a%20${encodeURIComponent(vehicle.name)}.`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex-1"
@@ -264,7 +354,7 @@ export default function PricingPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a 
-                            href="https://wa.me/996575806733"
+                            href="https://wa.me/966575806733"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

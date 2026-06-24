@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -24,12 +24,13 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Tabuk",
     "description": "Professional taxi service in Tabuk Region. NEOM transfers, AlUla day trips, airport pickups, Jordan border crossings, Red Sea coast trips.",
     "@id": "https://haramtaxiservice.com/locations/tabuk",
     "url": "https://haramtaxiservice.com/locations/tabuk",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "priceRange": "$$",
     "address": { "@type": "PostalAddress", "streetAddress": "Tabuk City", "addressLocality": "Tabuk", "addressCountry": "SA" },
     "areaServed": { "@type": "City", "name": "Tabuk" },

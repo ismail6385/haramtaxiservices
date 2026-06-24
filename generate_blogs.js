@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 
 const titlesStr = fs.readFileSync('BLOG_TEMPLATES_AND_TITLES.md', 'utf8');
 const titlesRegex = /^\d+\.\s+(.*)$/gm;
@@ -34,7 +34,7 @@ titles.forEach((title, index) => {
 
 <div class="soft-cta">
     <span>Need quick premium transport?</span>
-    <a href="https://wa.me/996575806733">WhatsApp Us Now →</a>
+    <a href="https://wa.me/966575806733">WhatsApp Us Now →</a>
 </div>
 
 <h3>1. Understanding the Options</h3>
@@ -65,7 +65,7 @@ titles.forEach((title, index) => {
 </div>
 
 <div class="urgency-box">
-    <strong>⏱️ Flash Bookings:</strong> VIP vehicles are currently in extremely high demand due to Umrah season. <a href="https://wa.me/996575806733" class="inline-cta">Check live availability →</a>
+    <strong>⏱️ Flash Bookings:</strong> VIP vehicles are currently in extremely high demand due to Umrah season. <a href="https://wa.me/966575806733" class="inline-cta">Check live availability →</a>
 </div>
 
 <div class="key-takeaway">

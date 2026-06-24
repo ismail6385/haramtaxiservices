@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState, useCallback } from 'react';
 import { MessageCircle, FileText, Share2, Facebook, Twitter, Linkedin, Copy, Check, ChevronDown, ChevronUp } from 'lucide-react';
@@ -68,7 +68,7 @@ export function MobileStickyCTA() {
         <div className="fixed bottom-0 left-0 w-full z-50 lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] safe-area-bottom">
             <div className="flex gap-2.5 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
                 <a
-                    href="https://wa.me/996575806733"
+                    href="https://wa.me/966575806733"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3.5 rounded-xl font-bold text-sm shadow-lg hover:bg-[#1ebd5b] active:scale-[0.97] transition-all"

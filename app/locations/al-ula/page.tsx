@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MapPin } from 'lucide-react';
@@ -22,10 +22,11 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — AlUla",
     "description": "Private taxi and transfer service in AlUla — ULH Airport transfers, Hegra day trips, Elephant Rock, Dadan, AlUla Old Town, and intercity routes to Madinah, Tabuk, and Jeddah.",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "address": { "@type": "PostalAddress", "addressLocality": "AlUla", "addressRegion": "Madinah Province", "addressCountry": "SA" },
     "url": "https://haramtaxiservice.com/locations/al-ula",
     "areaServed": "AlUla",

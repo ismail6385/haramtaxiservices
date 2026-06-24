@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Shield, Users, Clock, Star, Award, Target, Heart, TrendingUp, Car, MapPin, Headphones } from 'lucide-react';
@@ -106,7 +106,7 @@ export default function AboutPage() {
         "logo": "https://haramtaxiservice.com/logo.png",
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+996575806733",
+            "telephone": "+966575806733",
             "contactType": "customer service",
             "areaServed": "SA",
             "availableLanguage": ["English", "Arabic", "Urdu"]

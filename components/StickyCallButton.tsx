@@ -7,7 +7,7 @@ export default function StickyCallButton() {
         <div className="fixed bottom-0 left-0 w-full z-[998] bg-white border-t border-gray-200 p-3 flex items-center justify-between shadow-[0_-4px_20px_rgba(0,0,0,0.1)] md:hidden">
             <div className="flex-1 shrink-0 px-2 justify-center flex flex-col">
                 <span className="text-xs font-black text-brand-navy">Looking for a Taxi?</span>
-                <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Book instantly</span>
+                <span className="text-xs text-gray-500 font-bold uppercase tracking-widest">Book instantly</span>
             </div>
             <a
                 href="/booking"

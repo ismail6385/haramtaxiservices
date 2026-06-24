@@ -53,28 +53,29 @@ export default function YanbuLocationPage() {
     const faqs = [
         {
             question: "How far is Yanbu Industrial City from the Airport?",
-            answer: "Yanbu Industrial City (Royal Commission) is about a estimated time away from Prince Abdul Mohsin Airport (YNB) by taxi."
+            answer: "Yanbu Industrial City (Royal Commission area) is approximately 25 km from Prince Abdul Mohsin Airport (YNB) — about 25–30 minutes by taxi depending on traffic. Our drivers know all gate access routes for the Royal Commission compounds and SABIC/Marafiq facilities."
         },
         {
             question: "Do you have gate passes for Industrial areas?",
-            answer: "Our drivers are familiar with the security checkpoints, but visitors usually need to arrange their own gate passes for specific plant entry. We drop off at the main gates."
+            answer: "Our drivers are familiar with all security checkpoints in Yanbu Industrial City. Visitors typically need to arrange their own access permits for specific plant entry through their host company. We drop off at the main Royal Commission gate or your designated facility entrance."
         },
         {
             question: "How much is a taxi from Yanbu to Madinah?",
-            answer: "A private taxi from Yanbu to Madinah typically costs between Get Quote depending on the vehicle type (Sedan or SUV)."
+            answer: "The Yanbu to Madinah route is approximately 250 km (about 2.5 hours via the coastal highway). We provide fixed-rate private taxi service for this route — WhatsApp us your travel date, group size, and vehicle preference for an instant quote. No meter, no hidden fees."
         },
         {
             question: "Is there Uber in Yanbu?",
-            answer: "Ride-hailing is available but can be spotty in the industrial zones. Pre-booking ensures you aren't left waiting in the heat."
+            answer: "Ride-hailing apps like Uber and Careem operate in Yanbu city center but coverage in Yanbu Industrial City, Royal Commission zones, and the port areas is unreliable. Pre-booking a private taxi ensures you have a confirmed vehicle for industrial zone pickups, airport runs, and intercity transfers."
         }
     ];
 
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "TaxiService"],
         "name": "Haram Taxi Service Yanbu",
         "image": "https://haramtaxiservice.com/logo.png",
-        "telephone": "+996575806733",
+        "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "King Abdulaziz Road",
@@ -145,7 +146,7 @@ export default function YanbuLocationPage() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Yanbu." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                                    <a href="https://wa.me/966575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Yanbu." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                                         <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 text-lg w-full sm:w-auto shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
                                             <MessageCircle className="w-5 h-5 mr-2" />
                                             Book via WhatsApp
@@ -256,7 +257,7 @@ export default function YanbuLocationPage() {
                                     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center">
                                     <h3 className="text-lg font-bold text-gray-900 mb-2">Book Your Ride</h3>
                                     <p className="text-sm text-gray-600 mb-4">Chat with us on WhatsApp for instant booking.</p>
-                                    <a href="https://wa.me/996575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Yanbu." target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <a href="https://wa.me/966575806733?text=Hello%20Haram%20Taxi%20Service%2C%20I%20would%20like%20to%20book%20a%20ride%20in%20Yanbu." target="_blank" rel="noopener noreferrer" className="block w-full">
                                         <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold h-12">
                                             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp Booking
                                         </Button>
@@ -302,7 +303,7 @@ export default function YanbuLocationPage() {
                                 Book Now
                             </Button>
                         </Link>
-                        <a href="https://wa.me/996575806733">
+                        <a href="https://wa.me/966575806733">
                             <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-10 py-6 text-lg">
                                 WhatsApp Support
                             </Button>

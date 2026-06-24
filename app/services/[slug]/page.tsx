@@ -288,28 +288,48 @@ export default async function ServicePage({ params }: Props) {
                 </div>
             </div>
 
-            {/* Silo Linking Section */}
-            <div className="bg-gray-50 border-t border-gray-200 py-12">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-8">
-                        <h2 className="text-2xl font-bold text-gray-900">{service.title} Service Areas</h2>
+            {/* Topic Cluster: Related Services */}
+            {(() => {
+                const stopWords = new Set(['to', 'from', 'and', 'the', 'a', 'in', 'for', 'of', 'by', 'with', 'service', 'taxi', 'transfer']);
+                const slugWords = slug.split('-').filter(w => !stopWords.has(w) && w.length > 2);
+                const related = servicesData
+                    .filter(s => s.slug !== slug)
+                    .map(s => {
+                        const score = slugWords.filter(w => s.slug.includes(w)).length;
+                        return { ...s, score };
+                    })
+                    .filter(s => s.score > 0)
+                    .sort((a, b) => b.score - a.score)
+                    .slice(0, 4);
+
+                return (
+                    <div className="bg-gray-50 border-t border-gray-200 py-12">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <h2 className="text-xl font-bold text-gray-900 mb-6">Related Services</h2>
+                            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {related.map(s => (
+                                    <Link
+                                        key={s.slug}
+                                        href={`/services/${s.slug}`}
+                                        className="flex flex-col p-5 bg-white rounded-xl border border-gray-200 hover:border-gray-400 hover:shadow-md transition-all group"
+                                    >
+                                        <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2">Related Service</span>
+                                        <span className="font-semibold text-gray-900 group-hover:text-slate-700 leading-snug text-sm">{s.title.split(' | ')[0]}</span>
+                                    </Link>
+                                ))}
+                                <Link
+                                    href="/services"
+                                    className="flex flex-col p-5 bg-slate-800 text-white rounded-xl border border-slate-700 hover:bg-slate-700 transition-all"
+                                >
+                                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">All Services</span>
+                                    <span className="font-semibold leading-snug">Browse All Saudi Taxi Services →</span>
+                                    <span className="text-xs text-slate-400 mt-2">180+ services available</span>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex flex-wrap justify-center gap-4 text-sm">
-                        <Link href="/locations/makkah" className="px-5 py-2 bg-white hover:bg-slate-50 text-gray-700 hover:text-slate-700 rounded-full border border-gray-200 transition-colors shadow-sm">
-                            Makkah
-                        </Link>
-                        <Link href="/locations/madinah" className="px-5 py-2 bg-white hover:bg-slate-50 text-gray-700 hover:text-slate-700 rounded-full border border-gray-200 transition-colors shadow-sm">
-                            Madinah
-                        </Link>
-                        <Link href="/locations/jeddah" className="px-5 py-2 bg-white hover:bg-slate-50 text-gray-700 hover:text-slate-700 rounded-full border border-gray-200 transition-colors shadow-sm">
-                            Jeddah
-                        </Link>
-                        <Link href="/routes/jeddah-airport-to-makkah" className="px-5 py-2 bg-white hover:bg-slate-50 text-gray-700 hover:text-slate-700 rounded-full border border-gray-200 transition-colors shadow-sm">
-                            Jeddah Airport to Makkah
-                        </Link>
-                    </div>
-                </div>
-            </div>
+                );
+            })()}
         </div>
     );
 }

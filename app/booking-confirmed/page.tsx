@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
@@ -103,7 +103,7 @@ function ConfirmationContent() {
                                     Admin: umrahtaxi22@gmail.com
                                 </a>
                                 <span className="hidden sm:inline text-neutral-600">|</span>
-                                <a href="https://wa.me/996575806733" className="flex items-center gap-2 text-white hover:text-green-400 transition-colors">
+                                <a href="https://wa.me/966575806733" className="flex items-center gap-2 text-white hover:text-green-400 transition-colors">
                                     <MessageSquare className="w-4 h-4" />
                                     WhatsApp Support
                                 </a>

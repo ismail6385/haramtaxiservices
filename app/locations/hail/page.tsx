@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -24,11 +24,12 @@ export const metadata: Metadata = {
 
 const schema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Hail",
     "description": "Professional taxi service in Hail and northern Saudi Arabia. Airport transfers, Jubbah UNESCO rock art, Qasr Barzan, Jabal Aja, and desert tours.",
     "url": "https://haramtaxiservice.com/locations/hail",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Hail", "addressRegion": "Hail Region", "addressCountry": "SA" },
     "geo": { "@type": "GeoCoordinates", "latitude": 27.5114, "longitude": 41.6930 },
     "openingHours": "Mo-Su 00:00-23:59",

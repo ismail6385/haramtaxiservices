@@ -1,4 +1,4 @@
-import { MapPin, ArrowRight } from 'lucide-react';
+﻿import { MapPin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -103,7 +103,7 @@ export default function PopularRoutes() {
                     </Button>
                   </Link>
                   <a 
-                    href={`https://wa.me/996575806733?text=${encodeURIComponent(`As-salamu alaykum, I want to book a taxi from ${route.from} to ${route.to}.`)}`}
+                    href={`https://wa.me/966575806733?text=${encodeURIComponent(`As-salamu alaykum, I want to book a taxi from ${route.from} to ${route.to}.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full"

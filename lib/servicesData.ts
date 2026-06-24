@@ -1,4 +1,4 @@
-﻿import { LucideIcon, Plane, MapPin, Crown, Building2, User } from 'lucide-react';
+import { LucideIcon, Plane, MapPin, Crown, Building2, User } from 'lucide-react';
 
 export interface ServiceData {
     slug: string;
@@ -2021,6 +2021,90 @@ export const servicesData: ServiceData[] = [
         faqs: [
             { question: "Is Wadi Disah suitable for families with young children?", answer: "Yes — the canyon floor is flat and walkable, the spring areas are safe, and the shade from canyon walls is significant. One of Saudi Arabia's most family-friendly natural destinations. Bring food, water, and sun protection." },
             { question: "Can I combine Wadi Disah and AlUla in one day?", answer: "Possible but exhausting — Tabuk to Wadi Disah (50 min) + 3 hrs canyon + Wadi Disah to AlUla (3 hrs south) = nearly a full day of driving plus site time. Better as part of a multi-day southward trip. For a single day from Tabuk, choose one or the other." }
+        ]
+    },
+    {
+        slug: "umrah-taxi-jeddah",
+        title: "Umrah Taxi Jeddah | Jeddah Airport (KAIA) to Makkah 24/7",
+        description: "Book your private Umrah taxi from King Abdulaziz International Airport (KAIA) Jeddah to your hotel in Makkah. Premium & economy cars available.",
+        content: "Arriving at Jeddah Airport (KAIA) for Umrah? Avoid the long queues and stress of bargaining with local taxis. Our private Umrah taxi service from Jeddah to Makkah offers a seamless door-to-door transfer. Your professional driver will meet you at the arrivals terminal with a name board, help with your luggage, and drive you directly to your hotel near Masjid Al-Haram in Makkah via the Haramain Highway. All our vehicles are air-conditioned, regularly cleaned, and fully licensed for pilgrim transport.",
+        features: ["Meet & Greet with Name Board", "Haramain Highway Direct Route", "Hajj & Umrah Permitted Fleet", "24/7 Customer Support"],
+        pricing: [
+            { title: "Sedan (Toyota Camry) — 1-3 Pax", price: "Get Quote" },
+            { title: "SUV (GMC Yukon XL) — 4-7 Pax", price: "Get Quote" },
+            { title: "Minivan (Hyundai Staria) — 5-7 Pax", price: "Get Quote" },
+            { title: "Minibus (Toyota Hiace) — 8-12 Pax", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "How long does the journey take from Jeddah Airport to Makkah?", answer: "The drive typically takes 75 to 90 minutes under normal traffic conditions. During peak hours or Ramadan/Hajj seasons, it may take slightly longer due to checkpoint checks." },
+            { question: "Are your drivers permitted to enter Makkah?", answer: "Yes, all our drivers and vehicles carry the necessary permits and licenses from the Ministry of Hajj & Umrah to enter Makkah's hotel zones and inner ring roads." }
+        ]
+    },
+    {
+        slug: "airport-transfer-makkah",
+        title: "Airport Transfer Makkah | Taxi to Jeddah (KAIA) & Madinah (MED)",
+        description: "Reliable private taxi transfers from your hotel in Makkah to King Abdulaziz Airport Jeddah (KAIA) or Madinah Airport (MED). 24/7 service.",
+        content: "Ensure a stress-free departure from Makkah. Our private airport transfer service picks you up directly from your Makkah hotel lobby and transports you to King Abdulaziz International Airport (KAIA) Jeddah or Prince Mohammad bin Abdulaziz Airport (MED) Madinah. We coordinate pickup times based on your flight schedule to ensure you arrive with plenty of buffer time. Our drivers monitor traffic conditions and checkpoints, assuring a smooth journey.",
+        features: ["Punctual Hotel Pickups", "Luggage Assistance", "Flight-Coordinated Scheduling", "24/7 Operations Support"],
+        pricing: [
+            { title: "Makkah to Jeddah Airport (Sedan)", price: "Get Quote" },
+            { title: "Makkah to Jeddah Airport (GMC Yukon XL)", price: "Get Quote" },
+            { title: "Makkah to Madinah Airport (Sedan)", price: "Get Quote" },
+            { title: "Makkah to Madinah Airport (GMC Yukon)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "What time should I book my pickup from Makkah to Jeddah Airport?", answer: "We recommend scheduling your pickup at least 4 to 5 hours before your flight departure. The drive takes around 1.5 to 2 hours, and you will need 2 to 3 hours for check-in procedures." },
+            { question: "Do you offer group vehicles for airport transfers?", answer: "Yes, we provide larger group vehicles such as the Toyota Hiace (12-seater) and Toyota Coaster (24-seater) for large groups of pilgrims traveling with luggage." }
+        ]
+    },
+    {
+        slug: "vip-chauffeur-riyadh",
+        title: "VIP Chauffeur Service Riyadh | Executive Chauffeur & Limousine",
+        description: "Premium executive chauffeur service in Riyadh. Luxury sedan and SUV transfers for business, airport pickups, and intercity travel.",
+        content: "Experience the ultimate in comfort and professionalism with our VIP Chauffeur Service in Riyadh. Whether you are traveling for business to the King Abdullah Financial District (KAFD), attending diplomatic meetings in the Diplomatic Quarter, or needing a premium transfer from King Khalid International Airport (KKIA), our professional chauffeurs ensure you arrive in style. We offer elite vehicles including the Lexus ES 300, Mercedes-Benz S-Class, and luxury GMC Yukon Denali, driven by experienced, English-speaking professionals.",
+        features: ["Elite Luxury Fleet (Lexus, Mercedes, GMC)", "Uniformed, English-Speaking Chauffeurs", "Corporate & Hourly Booking Options", "Complimentary Refreshments & Wi-Fi"],
+        pricing: [
+            { title: "Lexus ES 300 (Daily Chauffeur)", price: "Get Quote" },
+            { title: "Mercedes-Benz S-Class (Per Transfer)", price: "Get Quote" },
+            { title: "GMC Yukon Denali (Daily / Hourly)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Can I book a VIP chauffeur by the hour in Riyadh?", answer: "Yes, we offer flexible hourly and daily rates for our executive chauffeur services. Minimum booking is typically 4 hours." },
+            { question: "Do you provide airport meet & greet with this service?", answer: "Absolutely. For all KKIA airport pickups, your chauffeur will meet you at the arrivals terminal with a personalized name board and escort you to your vehicle." }
+        ]
+    },
+    {
+        slug: "ziyarat-tours-madinah",
+        title: "Ziyarat Tours Madinah | Prophet's Mosque & Holy Sites Tour",
+        description: "Explore the holy places of Al Madinah Al Munawwarah. Private taxi tours visiting Quba Mosque, Uhud Battlefield, Qiblatain Mosque, and more.",
+        content: "Embark on a spiritual journey through the history of Al Madinah Al Munawwarah. Our private Ziyarat tours offer a comfortable and flexible way to visit the sacred sites of the Prophet's City. A typical tour includes Masjid Quba (the first mosque built in Islam, where praying 2 rakat is equivalent to performing Umrah), Mount Uhud (the historic battle site and graveyard of martyrs), Masjid Al-Qiblatain (the mosque of two Qiblas), and the Seven Mosques. Our professional drivers are knowledgeable about the history and significance of each site, providing a meaningful experience for your family.",
+        features: ["Private, Flexible Tour Routes", "Comfortable, Air-Conditioned Vehicles", "Knowledgeable English/Urdu Drivers", "Family & Kid-Friendly Itinerary"],
+        pricing: [
+            { title: "Half-Day Tour (3-4 Hours) — Sedan", price: "Get Quote" },
+            { title: "Half-Day Tour (3-4 Hours) — GMC SUV", price: "Get Quote" },
+            { title: "Full-Day Tour (including Wadi Al-Jinn) — Sedan", price: "Get Quote" },
+            { title: "Full-Day Tour (including Wadi Al-Jinn) — GMC SUV", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Can we customize the sites we want to visit in Madinah?", answer: "Yes, our Ziyarat tours are fully private. You can adjust the itinerary and spend as much time as you like at each historic location." },
+            { question: "Is entry to the historic sites included?", answer: "Most religious and historic sites in Madinah do not have entry fees. The tour covers transportation and driver waiting time; any custom activity fees are separate." }
+        ]
+    },
+    {
+        slug: "intercity-taxi-taif",
+        title: "Intercity Taxi Taif | Private Transfers to Makkah, Jeddah & Madinah",
+        description: "Book reliable intercity taxi transfers from Taif to Makkah, Jeddah, or Madinah. Hajj-permitted vehicles and expert mountain-road drivers.",
+        content: "Travel between Taif and other major Saudi cities in absolute comfort. Our intercity taxi service connects Taif with Makkah, Jeddah, and Madinah. Navigating the mountain highways and the famous Al Hada zigzag road requires experienced, professional drivers. Our fleet is equipped with modern, air-conditioned vehicles, including economy sedans and spacious GMC SUVs. For pilgrims preparing for Umrah or Hajj, we include stops at the Qarn al-Manazil Miqat to wear the Ihram and make niyyah.",
+        features: ["Experienced Mountain-Highway Drivers", "Miqat Stop at Qarn al-Manazil", "Door-to-Door Intercity Transfer", "24/7 Availability & Fixed Rates"],
+        pricing: [
+            { title: "Taif to Makkah (Toyota Camry)", price: "Get Quote" },
+            { title: "Taif to Makkah (GMC Yukon XL)", price: "Get Quote" },
+            { title: "Taif to Jeddah Airport (Toyota Camry)", price: "Get Quote" },
+            { title: "Taif to Madinah (Toyota Camry)", price: "Get Quote" }
+        ],
+        faqs: [
+            { question: "Does the route pass through the scenic Al Hada mountain road?", answer: "Yes, unless weather conditions require the alternative route, our drivers take the scenic Al Hada zigzag mountain road, offering beautiful views of the highlands." },
+            { question: "Can the driver stop at the Miqat for us?", answer: "Yes, we include a stop at the Qarn al-Manazil Miqat en route to Makkah, where the driver will wait while you wear your Ihram." }
         ]
     }
 ];

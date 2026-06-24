@@ -7,10 +7,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import NearbyCities from '@/components/NearbyCities';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
+import LocationNAP from '@/components/LocationNAP';
 
 export const metadata: Metadata = {
     alternates: { canonical: 'https://haramtaxiservice.com/locations/makkah' },
-    title: 'Makkah Taxi Service 2026 | Hajj Transport, KAIA Airport & Ziyarat Tours',
+    title: 'Taxi Service Makkah | Umrah Transfers, Ziyarat Tours & Hajj 2026 Permitted',
     description: 'Trusted taxi service in Makkah Al-Mukarramah for Hajj 2026 & Umrah. KAIA Airport to Makkah hotel, Haram transfers, Ziyarat tours, Mina & Arafat transport. Fixed rates, 24/7 WhatsApp.',
     keywords: ['Makkah taxi', 'Hajj 2026 taxi', 'KAIA airport to Makkah', 'Umrah taxi Makkah', 'Makkah Ziyarat tour', 'Mina Arafat transport', 'Haram hotel transfer', 'private taxi Makkah', 'Aziziyah taxi Makkah', 'Makkah Madinah taxi'],
     openGraph: {
@@ -24,16 +25,45 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi Service — Makkah Al-Mukarramah",
     "description": "Professional taxi and transport service in Makkah. Hajj 2026 permitted vehicles, KAIA airport transfers, Ziyarat tours, Haram hotel transport.",
     "@id": "https://haramtaxiservice.com/locations/makkah",
     "url": "https://haramtaxiservice.com/locations/makkah",
     "telephone": "+966575806733",
+    "email": "booking@haramtaxiservice.com",
     "priceRange": "$$",
-    "address": { "@type": "PostalAddress", "streetAddress": "Masjid Al-Haram Area", "addressLocality": "Makkah Al-Mukarramah", "addressCountry": "SA" },
-    "areaServed": { "@type": "City", "name": "Makkah Al-Mukarramah" },
-    "openingHours": "Mo-Su 00:00-24:00"
+    "currenciesAccepted": "SAR",
+    "paymentAccepted": "Cash, Bank Transfer",
+    "hasMap": "https://maps.google.com/?q=Haram+Taxi+Service+Makkah+Saudi+Arabia",
+    "address": { "@type": "PostalAddress", "streetAddress": "Al Aziziyah, Misfalah District", "addressLocality": "Makkah Al-Mukarramah", "addressRegion": "Makkah Province", "addressCountry": "SA" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 21.4225, "longitude": 39.8262 },
+    "areaServed": [
+        { "@type": "City", "name": "Makkah Al-Mukarramah" },
+        { "@type": "Place", "name": "Masjid Al-Haram area" },
+        { "@type": "Place", "name": "Aziziyah, Makkah" },
+        { "@type": "Place", "name": "Misfalah, Makkah" },
+        { "@type": "Place", "name": "Mina, Makkah" },
+        { "@type": "Place", "name": "Arafat plain, Makkah" }
+    ],
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+    },
+    "sameAs": [
+        "https://www.facebook.com/haramtaxiservice",
+        "https://www.instagram.com/haramtaxiservice",
+        "https://wa.me/966575806733"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "312",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
 };
 
 const faqs = [
@@ -426,6 +456,15 @@ export default function MakkahPage() {
             </section>
 
             <NearbyCities currentCity="makkah" />
+
+            {/* NAP — Local SEO contact block */}
+            <LocationNAP
+                city="Makkah"
+                address="Al Aziziyah, Misfalah District, Makkah Al-Mukarramah, Saudi Arabia"
+                mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Makkah+Saudi+Arabia"
+                reviewCount={312}
+                nearbyAreas={["Masjid Al-Haram", "Aziziyah", "Misfalah", "Kudai", "Jarwal", "Shisha", "Mina", "Arafat", "Muzdalifah", "Abraj Al-Bait"]}
+            />
 
             {/* Final CTA */}
             <section className="py-20 bg-emerald-900 text-white text-center">

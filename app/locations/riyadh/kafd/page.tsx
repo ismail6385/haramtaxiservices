@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, CheckCircle2, Car, ArrowRight, Building2, Briefcase, Star, Shield } from 'lucide-react';
@@ -27,11 +27,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — KAFD Riyadh Corporate Chauffeur",
     "@id": "https://haramtaxiservice.com/locations/riyadh/kafd",
     "url": "https://haramtaxiservice.com/locations/riyadh/kafd",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Corporate taxi and chauffeur service in King Abdullah Financial District (KAFD), Riyadh. Specialising in KKIA airport transfers, business circuit runs, and intercity executive travel.",
     "address": {
         "@type": "PostalAddress",

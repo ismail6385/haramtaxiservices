@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -111,12 +111,13 @@ export default function TaifPage() {
 
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "TaxiService"],
         "name": "Haram Taxi Service — Taif",
         "image": "https://haramtaxiservice.com/taif-mountains-view.webp",
         "@id": "https://haramtaxiservice.com/locations/taif",
         "url": "https://haramtaxiservice.com/locations/taif",
         "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",

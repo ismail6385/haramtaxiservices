@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 
 const fileContent = fs.readFileSync('lib/blogData.ts', 'utf8');
 
@@ -67,7 +67,7 @@ const updates = [
 
 <div class="soft-cta">
     <span>Got more bags than people?</span>
-    <a href="https://wa.me/996575806733">Request a High-Capacity SVG →</a>
+    <a href="https://wa.me/966575806733">Request a High-Capacity SVG →</a>
 </div>
 
 <h3>1. GMC Yukon XL vs. Chevrolet Suburban</h3>
@@ -99,7 +99,7 @@ const updates = [
 </div>
 
 <div class="urgency-box">
-    <strong>⏱️ Pack Smart:</strong> If your luggage count changes last minute, please let us know. We can upgrade your vehicle category up to 4 hours before pickup. <a href="https://wa.me/996575806733" class="inline-cta">Update your luggage count →</a>
+    <strong>⏱️ Pack Smart:</strong> If your luggage count changes last minute, please let us know. We can upgrade your vehicle category up to 4 hours before pickup. <a href="https://wa.me/966575806733" class="inline-cta">Update your luggage count →</a>
 </div>
 
 <div class="key-takeaway">
@@ -128,7 +128,7 @@ const updates = [
 
 <div class="soft-cta">
     <span>Don't cram your family into a bus.</span>
-    <a href="https://wa.me/996575806733">Get a Family GMC Quote →</a>
+    <a href="https://wa.me/966575806733">Get a Family GMC Quote →</a>
 </div>
 
 <h3>1. Control Your Schedule</h3>
@@ -160,7 +160,7 @@ const updates = [
 </div>
 
 <div class="urgency-box">
-    <strong>⏱️ Family First:</strong> Don't start your Madinah stay exhausted from a stressful bus ride. <a href="https://wa.me/996575806733" class="inline-cta">Check our family-discounted rates →</a>
+    <strong>⏱️ Family First:</strong> Don't start your Madinah stay exhausted from a stressful bus ride. <a href="https://wa.me/966575806733" class="inline-cta">Check our family-discounted rates →</a>
 </div>
 
 <div class="key-takeaway">
@@ -189,7 +189,7 @@ const updates = [
 
 <div class="soft-cta">
     <span>Ready for a peaceful transfer?</span>
-    <a href="https://wa.me/996575806733">Request a Professional Chauffeur →</a>
+    <a href="https://wa.me/966575806733">Request a Professional Chauffeur →</a>
 </div>
 
 <h3>1. Book the 'Right' Time</h3>
@@ -221,7 +221,7 @@ const updates = [
 </div>
 
 <div class="urgency-box">
-    <strong>⏱️ Smooth Transitions:</strong> Our dispatchers coordinate with hotel bellboys to ensure your vehicle is waiting exactly when you step out of the lobby. <a href="https://wa.me/996575806733" class="inline-cta">Plan your stress-free move →</a>
+    <strong>⏱️ Smooth Transitions:</strong> Our dispatchers coordinate with hotel bellboys to ensure your vehicle is waiting exactly when you step out of the lobby. <a href="https://wa.me/966575806733" class="inline-cta">Plan your stress-free move →</a>
 </div>
 
 <div class="key-takeaway">
@@ -250,7 +250,7 @@ const updates = [
 
 <div class="soft-cta">
     <span>Planning a lunch stop?</span>
-    <a href="https://wa.me/996575806733">Ask Your Driver for a Recommended Stop →</a>
+    <a href="https://wa.me/966575806733">Ask Your Driver for a Recommended Stop →</a>
 </div>
 
 <h3>1. The 'Sasqo' Standard</h3>
@@ -282,7 +282,7 @@ const updates = [
 </div>
 
 <div class="urgency-box">
-    <strong>⏱️ Schedule Your Stop:</strong> If you are traveling with children, tell your driver *before* leaving Makkah that you want a 30-minute stop at a major Sasqo station. <a href="https://wa.me/996575806733" class="inline-cta">Book a flexible intercity ride →</a>
+    <strong>⏱️ Schedule Your Stop:</strong> If you are traveling with children, tell your driver *before* leaving Makkah that you want a 30-minute stop at a major Sasqo station. <a href="https://wa.me/966575806733" class="inline-cta">Book a flexible intercity ride →</a>
 </div>
 
 <div class="key-takeaway">
@@ -311,7 +311,7 @@ const updates = [
 
 <div class="soft-cta">
     <span>Traveling with little ones?</span>
-    <a href="https://wa.me/996575806733">Book an Entertainer-Friendly SUV →</a>
+    <a href="https://wa.me/966575806733">Book an Entertainer-Friendly SUV →</a>
 </div>
 
 <h3>1. Choose the Right Vehicle for Wiggle Room</h3>
@@ -343,7 +343,7 @@ const updates = [
 </div>
 
 <div class="urgency-box">
-    <strong>⏱️ Family Comfort:</strong> Our drivers are exceptionally patient with families and are happy to adjust the cabin environment for your children's comfort. <a href="https://wa.me/996575806733" class="inline-cta">Secure your family ride →</a>
+    <strong>⏱️ Family Comfort:</strong> Our drivers are exceptionally patient with families and are happy to adjust the cabin environment for your children's comfort. <a href="https://wa.me/966575806733" class="inline-cta">Secure your family ride →</a>
 </div>
 
 <div class="key-takeaway">
@@ -372,7 +372,7 @@ const updates = [
 
 <div class="soft-cta">
     <span>Prioritize your family's safety.</span>
-    <a href="https://wa.me/996575806733">Book with a Licensed Chauffeur Agency →</a>
+    <a href="https://wa.me/966575806733">Book with a Licensed Chauffeur Agency →</a>
 </div>
 
 <h3>1. The License Plate and Permit Check</h3>
@@ -404,7 +404,7 @@ const updates = [
 </div>
 
 <div class="urgency-box">
-    <strong>⏱️ Trust Your Gut:</strong> If at any point during the initial 5 minutes you feel unsafe, ask the driver to stop in a safe, public area and contact our support team immediately. <a href="https://wa.me/996575806733" class="inline-cta">Review our safety protocols →</a>
+    <strong>⏱️ Trust Your Gut:</strong> If at any point during the initial 5 minutes you feel unsafe, ask the driver to stop in a safe, public area and contact our support team immediately. <a href="https://wa.me/966575806733" class="inline-cta">Review our safety protocols →</a>
 </div>
 
 <div class="key-takeaway">
@@ -433,7 +433,7 @@ const updates = [
 
 <div class="soft-cta">
     <span>Ready to pack?</span>
-    <a href="https://wa.me/996575806733">Check Our Luggage-Friendly Fleet →</a>
+    <a href="https://wa.me/966575806733">Check Our Luggage-Friendly Fleet →</a>
 </div>
 
 <h3>1. High-Quality Power Bank & Multi-Plug</h3>
@@ -466,7 +466,7 @@ const updates = [
 </div>
 
 <div class="urgency-box">
-    <strong>⏱️ Traveling Light:</strong> Most of our SUVs can handle up to 2 extra bags if you decide to buy gifts in Madinah. <a href="https://wa.me/996575806733" class="inline-cta">Check our shopping tour packages →</a>
+    <strong>⏱️ Traveling Light:</strong> Most of our SUVs can handle up to 2 extra bags if you decide to buy gifts in Madinah. <a href="https://wa.me/966575806733" class="inline-cta">Check our shopping tour packages →</a>
 </div>
 
 <div class="key-takeaway">

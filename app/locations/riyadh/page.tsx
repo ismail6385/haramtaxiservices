@@ -12,12 +12,13 @@ import {
 import NearbyCities from '@/components/NearbyCities';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
+import LocationNAP from '@/components/LocationNAP';
 
 export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/locations/riyadh',
     },
-    title: 'Riyadh Taxi Service | KKIA Airport Transfer, Intercity & Corporate Chauffeur',
+    title: 'Taxi Service Riyadh | VIP Airport Transfer King Khalid Airport',
     description: 'Book trusted taxi in Riyadh 24/7. KKIA airport transfers, Riyadh to Jeddah/Madinah/Khobar intercity, corporate chauffeur — fixed rates, no surge, WhatsApp booking.',
     keywords: ['taxi Riyadh', 'Riyadh airport taxi', 'KKIA taxi', 'Riyadh to Jeddah taxi', 'Riyadh to Madinah taxi', 'Riyadh to Makkah taxi', 'Riyadh to AlUla taxi', 'Riyadh to Khobar taxi', 'KAFD taxi', 'chauffeur service Riyadh', 'taxi service Riyadh Saudi Arabia', 'King Faisal Specialist Hospital taxi', 'Diriyah taxi', 'Diplomatic Quarter taxi Riyadh', 'female solo travel taxi Riyadh', 'expat taxi Riyadh'],
     openGraph: {
@@ -140,13 +141,18 @@ export default function RiyadhLocationPage() {
 
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "TaxiService"],
         "name": "Haram Taxi Service — Riyadh",
+        "description": "Professional taxi and intercity transfer service in Riyadh. KKIA airport transfers, Riyadh to Jeddah/Madinah/Makkah routes, and corporate chauffeur. Fixed rates, 24/7.",
         "image": "https://haramtaxiservice.com/riyadh-skyline.webp",
         "@id": "https://haramtaxiservice.com/locations/riyadh",
         "url": "https://haramtaxiservice.com/locations/riyadh",
         "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
         "priceRange": "$$",
+        "currenciesAccepted": "SAR",
+        "paymentAccepted": "Cash, Bank Transfer",
+        "hasMap": "https://maps.google.com/?q=Haram+Taxi+Service+Riyadh+Saudi+Arabia",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "King Fahd Road, Olaya",
@@ -166,9 +172,25 @@ export default function RiyadhLocationPage() {
             "opens": "00:00",
             "closes": "23:59"
         },
-        "areaServed": {
-            "@type": "City",
-            "name": "Riyadh"
+        "areaServed": [
+            { "@type": "City", "name": "Riyadh" },
+            { "@type": "Place", "name": "KAFD — King Abdullah Financial District" },
+            { "@type": "Place", "name": "Diplomatic Quarter, Riyadh" },
+            { "@type": "Place", "name": "Olaya, Riyadh" },
+            { "@type": "Place", "name": "Diriyah, Riyadh" },
+            { "@type": "Place", "name": "King Khalid International Airport (KKIA)" }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/haramtaxiservice",
+            "https://www.instagram.com/haramtaxiservice",
+            "https://wa.me/966575806733"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "212",
+            "bestRating": "5",
+            "worstRating": "1"
         }
     };
 
@@ -659,6 +681,15 @@ export default function RiyadhLocationPage() {
 
                 {/* Nearby Cities */}
                 <NearbyCities currentCity="riyadh" />
+
+                {/* NAP — Local SEO contact block */}
+                <LocationNAP
+                    city="Riyadh"
+                    address="King Fahd Road, Olaya, Riyadh, Saudi Arabia"
+                    mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Riyadh+Saudi+Arabia"
+                    reviewCount={212}
+                    nearbyAreas={["KAFD", "Diplomatic Quarter", "Olaya", "Diriyah", "KKIA Airport", "Boulevard City", "Al Nakheel", "Al Malqa"]}
+                />
 
                 {/* CTA */}
                 <section className="py-20 bg-brand-navy text-white shadow-2xl">

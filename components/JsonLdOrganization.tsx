@@ -1,4 +1,4 @@
-import Script from 'next/script';
+﻿import Script from 'next/script';
 
 export default function JsonLdOrganization() {
     const organizationSchema = {
@@ -21,7 +21,7 @@ export default function JsonLdOrganization() {
         ],
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+996 57 580 6733",
+            "telephone": "+966 57 580 6733",
             "contactType": "customer service",
             "areaServed": "SA",
             "availableLanguage": ["en", "ar", "ur"]

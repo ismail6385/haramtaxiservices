@@ -90,7 +90,7 @@ export default function AdminSidebar() {
                 >
                     {isMobileMenuOpen ? <X /> : <Menu />}
                     {pendingCount > 0 && !isMobileMenuOpen && (
-                        <span className="absolute -top-1 -right-1 bg-yellow-500 text-black text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                        <span className="absolute -top-1 -right-1 bg-yellow-500 text-black text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">
                             {pendingCount > 9 ? '9+' : pendingCount}
                         </span>
                     )}
@@ -139,7 +139,7 @@ export default function AdminSidebar() {
                                     <span className="flex-1">{item.name}</span>
                                     {item.badge && pendingCount > 0 && (
                                         <span className={cn(
-                                            "text-[10px] font-bold rounded-full px-1.5 py-0.5 min-w-[20px] text-center",
+                                            "text-xs font-bold rounded-full px-1.5 py-0.5 min-w-[20px] text-center",
                                             isActive
                                                 ? "bg-brand-navy text-brand-gold"
                                                 : "bg-yellow-500 text-black"
@@ -163,7 +163,7 @@ export default function AdminSidebar() {
                                 </div>
                                 <div className="flex-1 min-w-0">
                                     <p className="text-xs font-semibold text-white truncate">Admin</p>
-                                    <p className="text-[10px] text-slate-500 truncate">{adminEmail}</p>
+                                    <p className="text-xs text-slate-500 truncate">{adminEmail}</p>
                                 </div>
                             </div>
                         )}

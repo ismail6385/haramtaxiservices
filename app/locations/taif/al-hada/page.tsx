@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, ArrowRight, Star, CheckCircle2, Car, Mountain } from 'lucide-react';
 import {
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     "name": "Haram Taxi — Al Hada, Taif",
     "@id": "https://haramtaxiservice.com/locations/taif/al-hada",
     "url": "https://haramtaxiservice.com/locations/taif/al-hada",
     "telephone": "+966575806733",
+        "email": "booking@haramtaxiservice.com",
     "description": "Professional taxi and mountain tour service in Al Hada, Taif. Cable car transfers, zigzag road scenic tours, hotel pickups, and Makkah transfers via the scenic mountain route.",
     "address": {
         "@type": "PostalAddress",
