@@ -60,7 +60,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
 
     const textPrimary = isHero ? "text-white" : "text-gray-900";
     const textSecondary = isHero ? "text-neutral-300" : "text-gray-600";
-    const inputBg = isHero ? "bg-white/10 border-white/20 text-white placeholder:text-neutral-400 focus:bg-black/50 focus:border-brand-navy rounded-none text-sm sm:text-base" : "bg-gray-50 border-gray-300 text-gray-900 focus:border-brand-navy focus:bg-white rounded-lg sm:rounded-xl text-sm sm:text-base";
+    const inputBg = isHero ? "bg-white/10 border-white/20 text-white placeholder:text-neutral-400 focus:bg-black/50 focus:border-brand-navy rounded-xl text-sm sm:text-base" : "bg-gray-50 border-gray-300 text-gray-900 focus:border-brand-navy focus:bg-white rounded-lg sm:rounded-xl text-sm sm:text-base";
     const labelColor = isHero ? "text-neutral-200" : "text-gray-700";
     const iconColor = isHero ? "text-neutral-400" : "text-gray-400";
 
@@ -95,6 +95,16 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
     useEffect(() => {
         const vehicleParam = searchParams.get('vehicle');
         const serviceParam = searchParams.get('service');
+        const pickupParam = searchParams.get('pickup');
+        const dropoffParam = searchParams.get('dropoff');
+        const dateParam = searchParams.get('date');
+
+        setFormData(prev => ({
+            ...prev,
+            ...(pickupParam ? { pickup_location: pickupParam } : {}),
+            ...(dropoffParam ? { destination: dropoffParam } : {}),
+            ...(dateParam ? { pickup_date: dateParam } : {}),
+        }));
 
         if (vehicleParam) {
             const selectedVehicle = vehicles.find(v => v.name === vehicleParam);
@@ -349,7 +359,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                         <Button
                             type="button"
                             onClick={nextStep}
-                            className={`w-full bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none shadow-lg transition-transform hover:scale-[1.02] mt-2`}
+                            className={`w-full bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-xl shadow-lg transition-transform hover:scale-[1.02] mt-2`}
                         >
                             Continue <ArrowRight className={`${isHero ? 'w-4 h-4' : 'w-4 h-4 sm:w-5 sm:h-5'} ml-2`} />
                         </Button>
@@ -575,14 +585,14 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                 type="button"
                                 onClick={prevStep}
                                 variant="outline"
-                                className={`flex-1 ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none border border-white/20`}
+                                className={`flex-1 ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-xl border border-white/20`}
                             >
                                 <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2" /> Back
                             </Button>
                             <Button
                                 type="button"
                                 onClick={nextStep}
-                                className={`flex-1 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
+                                className={`flex-1 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-xl`}
                             >
                                 Continue <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" />
                             </Button>
@@ -642,14 +652,14 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                 type="button"
                                 onClick={prevStep}
                                 variant="outline"
-                                className={`flex-1 ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none border-white/20`}
+                                className={`flex-1 ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-xl border-white/20`}
                                 disabled={loading}
                             >
                                 <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2" /> Back
                             </Button>
                             <Button
                                 type="submit"
-                                className={`flex-1 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-none`}
+                                className={`flex-1 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg'} rounded-xl`}
                                 disabled={loading}
                             >
                                 {loading ? 'Booking...' : 'Confirm Booking'} <Check className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" />
@@ -694,7 +704,7 @@ export default function BookingForm({ variant = 'default' }: BookingFormProps) {
                                     status: 'pending'
                                 });
                             }}
-                            className={`bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 px-6 lg:px-8 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 text-sm sm:text-base'} rounded-none mx-2`}
+                            className={`bg-brand-navy hover:bg-brand-navy-dark text-white font-bold ${isHero ? 'h-11 lg:h-12 px-6 lg:px-8 text-sm lg:text-base' : 'py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 text-sm sm:text-base'} rounded-xl mx-2`}
                         >
                             Make Another Booking
                         </Button>

@@ -49,7 +49,7 @@ export default function BookingPage() {
             <div className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     <nav className="flex flex-wrap items-center gap-6 text-sm">
-                        <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px] text-gray-400">Quick Navigation:</span>
+                        <span className="font-bold uppercase tracking-wider text-xs text-gray-400">Quick Navigation:</span>
                         <a href="#booking-form" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Booking Form</a>
                         <a href="#benefits" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Service Benefits</a>
                         <a href="#commitment" className="text-gray-600 font-medium hover:text-brand-navy hover:underline decoration-brand-navy/30 underline-offset-4">Our Commitment</a>
