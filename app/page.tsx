@@ -36,9 +36,7 @@ import { Button } from '@/components/ui/button';
 import JsonLdFAQ from '@/components/JsonLdFAQ';
 import JsonLdService from '@/components/JsonLdService';
 import PricingPreview from '@/components/PricingPreview';
-import HowItWorks from '@/components/HowItWorks';
 import BlogTeaser from '@/components/BlogTeaser';
-import DistanceTable from '@/components/DistanceTable';
 import Testimonials from '@/components/Testimonials';
 import FounderNote from '@/components/FounderNote';
 import TrustMarkers from '@/components/TrustMarkers';
@@ -47,7 +45,6 @@ import PilgrimTips from '@/components/PilgrimTips';
 import HomeFAQ from '@/components/HomeFAQ';
 import WhatsAppFloating from '@/components/WhatsAppFloating';
 import StickyCallButton from '@/components/StickyCallButton';
-import AFairaButton from '@/components/AFairaButton';
 
 
 
@@ -215,9 +212,9 @@ export default async function Home() {
       </div>
 
       {/* INTRO SECTION - Max Authority & EEAT */}
-      <section className="py-32 overflow-hidden bg-white">
+      <section className="py-20 overflow-hidden bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative group">
               <div className="absolute -inset-6 bg-brand-gold/20 rounded-[4rem] blur-3xl opacity-50 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
@@ -283,8 +280,8 @@ export default async function Home() {
               </div>
               
               <div className="pt-4">
-                <Button asChild size="lg" className="h-24 px-12 bg-brand-navy hover:bg-brand-navy-light text-white font-black text-xl rounded-3xl shadow-2xl group">
-                  <Link href="/pricing">EXPLORE FLEET RATES <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform h-8 w-8 text-brand-gold" /></Link>
+                <Button asChild size="lg" className="h-12 px-8 bg-brand-navy hover:bg-brand-navy-light text-white font-black text-sm rounded-xl shadow-xl group">
+                  <Link href="/pricing">EXPLORE FLEET RATES <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform h-4 w-4 text-brand-gold" /></Link>
                 </Button>
               </div>
             </div>
@@ -296,8 +293,8 @@ export default async function Home() {
       <section className="py-24 bg-brand-navy relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('/pattern-dots.svg')] opacity-10" />
         <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <div className="bg-white/5 backdrop-blur-2xl rounded-[4rem] p-12 md:p-20 border border-white/10 shadow-2xl">
-            <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="bg-white/5 backdrop-blur-2xl rounded-[3rem] p-8 md:p-14 border border-white/10 shadow-2xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-gold/20 text-brand-gold rounded-full text-xs font-black uppercase tracking-widest mb-8">
                   <span className="w-2 h-2 rounded-full bg-brand-gold animate-ping" /> Beyond The Algorithm
@@ -360,13 +357,13 @@ export default async function Home() {
       </section>
 
       {/* CORE ROUTES & SEO LANDING CLUSTERS */}
-      <section className="py-32 bg-brand-navy-dark relative overflow-hidden">
+      <section className="py-20 bg-brand-navy-dark relative overflow-hidden">
         <div className="absolute inset-0 pattern-grid-lg opacity-[0.05]" />
         <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-12">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl text-center md:text-left">
-              <h2 className="text-5xl md:text-7xl font-display font-black text-white mb-6 leading-none">Global Routes, <br/><span className="text-brand-gold">Local Excellence.</span></h2>
-              <p className="text-gray-400 text-xl font-bold uppercase tracking-widest italic leading-relaxed">Exclusive Makkah to Madinah Transit • Riyadh Corporate • Jeddah Airport Specialists</p>
+              <h2 className="text-4xl md:text-5xl font-display font-black text-white mb-4 leading-tight">Global Routes, <span className="text-brand-gold">Local Excellence.</span></h2>
+              <p className="text-gray-400 text-base font-medium leading-relaxed">Makkah to Madinah Transit • Riyadh Corporate • Jeddah Airport Transfers</p>
             </div>
             <div className="bg-white/5 backdrop-blur-xl p-8 rounded-[2rem] border border-white/10 text-center flex flex-col items-center gap-3">
                  <div className="flex items-center gap-2 text-brand-gold">
@@ -383,11 +380,11 @@ export default async function Home() {
               { title: "Jeddah Airport to Makkah Taxi", p: "Fixed Rate • Get Quote", d: "Direct KAIA Terminal transfer with flight tracking and 60min free waiting.", tags: ["VIP Pickup", "Fixed Tolls", "Luggage Help"], link: "/routes/jeddah-airport-to-makkah-taxi" },
               { title: "VIP Madinah City Ziyarat", p: "Fixed Rate • Get Quote", d: "Visit Uhud, Quba, and 7 Mosques with our expert bilingual guides.", tags: ["Knowledgeable", "Hydration Incl.", "Flexible Time"], link: "/services/ziyarat" }
             ].map((service, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-3xl border border-white/10 p-10 rounded-3xl hover:bg-brand-gold group transition-all duration-500 cursor-pointer">
-                <h3 className="text-3xl font-black text-white group-hover:text-brand-navy mb-4 leading-tight">{service.title}</h3>
-                <div className="text-brand-gold group-hover:text-brand-navy font-black text-2xl mb-8 italic">{service.p}</div>
-                <p className="text-gray-300 group-hover:text-brand-navy/70 font-bold text-sm leading-relaxed mb-8">{service.d}</p>
-                <div className="flex flex-wrap gap-2 mb-10">
+              <div key={i} className="bg-white/10 backdrop-blur-3xl border border-white/10 p-8 rounded-3xl hover:bg-brand-gold group transition-all duration-500 cursor-pointer">
+                <h3 className="text-xl font-black text-white group-hover:text-brand-navy mb-3 leading-tight">{service.title}</h3>
+                <div className="text-brand-gold group-hover:text-brand-navy font-black text-lg mb-5 italic">{service.p}</div>
+                <p className="text-gray-300 group-hover:text-brand-navy/70 font-bold text-sm leading-relaxed mb-5">{service.d}</p>
+                <div className="flex flex-wrap gap-2 mb-6">
                     {service.tags.map((t, j) => (
                         <span key={j} className="text-xs font-black uppercase bg-white/10 group-hover:bg-brand-navy group-hover:text-white px-3 py-1.5 rounded-full tracking-tighter">
                             {t}
@@ -406,9 +403,9 @@ export default async function Home() {
       <PricingPreview />
 
       {/* MASSIVE LOCATION GRID - Final SEO Victory */}
-      <section className="py-32 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-12 gap-20">
+          <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4 space-y-8">
                 <h2 className="text-5xl md:text-6xl font-display font-black text-brand-navy leading-none tracking-tighter">
                     We Cover <br />
@@ -420,8 +417,8 @@ export default async function Home() {
                     <p className="text-4xl font-black text-brand-navy mb-2">55+</p>
                     <p className="text-xs font-black uppercase tracking-widest text-brand-gold">Cities Serviced 24/7</p>
                 </div>
-                <Button asChild className="w-full h-20 bg-brand-gold hover:bg-brand-gold-light text-brand-navy font-black text-sm rounded-2xl">
-                    <Link href="/locations">VIEW INTERACTIVE MAP <MapPin className="ml-3" /></Link>
+                <Button asChild className="w-full h-12 bg-brand-gold hover:bg-brand-gold-light text-brand-navy font-black text-sm rounded-xl">
+                    <Link href="/locations">VIEW ALL LOCATIONS <MapPin className="ml-2 w-4 h-4" /></Link>
                 </Button>
             </div>
             
@@ -477,9 +474,9 @@ export default async function Home() {
       </section>
 
       {/* REASSURANCE / HOW IT WORKS */}
-      <section className="py-32 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
-             <div className="text-center mb-20 space-y-4">
+             <div className="text-center mb-12 space-y-4">
                  <h2 className="text-4xl md:text-6xl font-display font-black text-brand-navy">What Happens Next?</h2>
                  <p className="text-gray-500 font-bold uppercase tracking-widest">Total Transparency from Booking to Destination.</p>
              </div>
@@ -491,9 +488,9 @@ export default async function Home() {
                    { t: "Driver Dispatch", d: "Driver contacts you 30 mins before pickup. Meeting point and exact timing shared immediately.", icon: Phone },
                    { t: "Safe Journey", d: "Pay CASH or CARD AFTER reaching safely. Free and transparent cancellation policy.", icon: BadgeCheck }
                  ].map((step, i) => (
-                     <div key={i} className="relative z-10 bg-white p-10 rounded-[3rem] border border-gray-100 shadow-xl text-center group">
-                         <div className="w-20 h-20 bg-brand-navy text-brand-gold rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl group-hover:scale-110 transition-transform">
-                             <step.icon className="w-10 h-10" />
+                     <div key={i} className="relative z-10 bg-white p-8 rounded-[2rem] border border-gray-100 shadow-xl text-center group">
+                         <div className="w-14 h-14 bg-brand-navy text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform">
+                             <step.icon className="w-7 h-7" />
                          </div>
                          <h4 className="text-xl font-black text-brand-navy mb-4">{step.t}</h4>
                          <p className="text-sm font-medium text-gray-500 leading-relaxed">{step.d}</p>
@@ -501,7 +498,7 @@ export default async function Home() {
                  ))}
              </div>
              
-             <div className="mt-20 p-8 bg-green-50 rounded-[3rem] border-2 border-green-100 flex flex-col md:flex-row items-center justify-between gap-8">
+             <div className="mt-12 p-8 bg-green-50 rounded-[2rem] border-2 border-green-100 flex flex-col md:flex-row items-center justify-between gap-8">
                  <div className="flex items-center gap-6">
                      <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-green-600 shadow-sm border border-green-100">
                          <ShieldCheck className="w-8 h-8" />

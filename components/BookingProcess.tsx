@@ -39,38 +39,37 @@ export default function BookingProcess() {
                     
                     {steps.map((step, i) => (
                         <div key={i} className="flex flex-col items-center text-center group">
-                            <div className="w-24 h-24 bg-white rounded-3xl shadow-xl flex items-center justify-center mb-8 border border-gray-100 group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500 relative">
-                                <span className="absolute -top-3 -right-3 w-8 h-8 bg-brand-gold text-white rounded-full flex items-center justify-center font-bold shadow-lg ring-4 ring-white">
+                            <div className="w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-6 border border-gray-100 group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500 relative">
+                                <span className="absolute -top-2.5 -right-2.5 w-6 h-6 bg-brand-gold text-white rounded-full flex items-center justify-center text-xs font-bold shadow-md ring-2 ring-white">
                                     {i + 1}
                                 </span>
-                                <step.icon className="w-10 h-10 text-brand-navy" />
+                                <step.icon className="w-7 h-7 text-brand-navy" />
                             </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">{step.title}</h3>
-                            <p className="text-gray-600 leading-relaxed font-light">{step.desc}</p>
+                            <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                            <p className="text-gray-600 leading-relaxed font-light text-sm">{step.desc}</p>
                         </div>
                     ))}
                 </div>
 
-                <div className="mt-20 p-10 bg-white rounded-[40px] border border-gray-100 shadow-2xl shadow-brand-navy/5 flex flex-col lg:flex-row items-center justify-between gap-8">
-                    <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 bg-brand-navy text-white rounded-2xl flex items-center justify-center flex-shrink-0 animate-pulse">
-                            <Clock className="w-8 h-8" />
+                <div className="mt-12 p-8 bg-white rounded-3xl border border-gray-100 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
+                    <div className="flex items-center gap-5">
+                        <div className="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center flex-shrink-0">
+                            <Clock className="w-6 h-6" />
                         </div>
                         <div>
-                            <h4 className="text-xl font-bold text-gray-900">Arriving in the next 24 Hours?</h4>
-                            <p className="text-brand-gold font-black uppercase text-sm mt-1">Limited Taxi Availability for Airport Transfers & Umrah</p>
-                            <p className="text-gray-500">Fast-track your booking via WhatsApp for priority dispatch.</p>
+                            <h4 className="text-lg font-bold text-gray-900">Ready to book your transfer?</h4>
+                            <p className="text-gray-500 text-sm mt-0.5">WhatsApp us for instant confirmation and pricing.</p>
                         </div>
                     </div>
-                    <a 
-                        href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20am%20arriving%20soon%20and%20need%20a%20taxi."
+                    <a
+                        href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20booking."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full lg:w-auto"
                     >
-                        <button className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-xl shadow-green-200 transition-all active:scale-95 flex items-center justify-center gap-3 group">
-                           <MessageSquare className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-                           Priority WhatsApp Booking
+                        <button className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-3 rounded-xl font-bold text-base shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 group">
+                           <MessageSquare className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                           WhatsApp Booking
                         </button>
                     </a>
                 </div>
