@@ -10,7 +10,7 @@ export default function Hero() {
         <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden bg-brand-navy-dark">
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-brand-navy-dark via-brand-navy-dark/90 to-brand-navy-dark z-10" />
-                <div className="absolute inset-0 bg-[url('/hero-bg-saudi.webp')] bg-cover bg-center opacity-30 mix-blend-overlay" />
+                <div className="absolute inset-0 bg-[url('/hero-slide-1.webp')] bg-cover bg-center opacity-30 mix-blend-overlay" />
             </div>
 
             <div className="container relative z-20 px-4">
