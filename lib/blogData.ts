@@ -17177,5 +17177,647 @@ export const blogData: BlogPost[] = [
       { question: "Is the Jizan Corniche good for families?", answer: "Yes — the Jizan Corniche is a family-friendly public space. Parks with children's play areas, wide paved paths for pushchairs, seating throughout, and cafes selling juice and light snacks. The evening walk (7–10pm) is the prime family time." },
       { question: "What is matbaq?", answer: "Matbaq is a stuffed pastry — a Yemeni/Saudi southern tradition particularly associated with Jazan and Jeddah. The filling is typically minced meat, onion, egg, and spices in thin pastry, pan-fried to a crispy finish. Jazan's version uses local spices and is one of the best versions in Saudi Arabia. Available at street stalls near the Corniche." }
     ]
+  },
+
+  // ─── OPEN ENVIRONMENT / QUERY LAYER CONTENT ───────────────────────────────
+
+  {
+    slug: "haram-taxi-vs-uber-vs-careem-saudi-arabia-2026",
+    title: "Haram Taxi vs Uber KSA vs Careem: Honest Comparison for Pilgrims 2026",
+    excerpt: "Planning Umrah or Hajj? We compare Uber Saudi Arabia, Careem, and private taxi services for Makkah, Madinah, and Jeddah — on price, reliability, Makkah entry permits, and luggage space.",
+    content: `
+<h2>Which Taxi Service Should You Use in Saudi Arabia?</h2>
+<p>If you are travelling to Saudi Arabia for Umrah or Hajj, one of the first questions you will face is: <strong>should I use Uber, Careem, or a private taxi service like Haram Taxi?</strong> The answer depends entirely on what type of journey you are making. This honest comparison covers every important factor.</p>
+
+<div class="cta-box">
+  <h3>Skip the App — Book a Confirmed Private Transfer</h3>
+  <p>Fixed price, Makkah-permitted vehicles, meet-and-greet, and zero surge pricing.</p>
+  <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20to%20book%20a%20private%20taxi%20in%20Saudi%20Arabia" target="_blank" rel="noopener noreferrer" class="inline-cta">Book via WhatsApp</a>
+</div>
+
+<h2>The Core Difference: App vs. Private Booking</h2>
+<p>Uber KSA and Careem operate on a dynamic, algorithm-based marketplace. Drivers are independent contractors who accept or reject trips in real time. A private taxi service like Haram Taxi operates on confirmed, pre-booked reservations — a completely different model. Neither is universally better; they serve different journey types.</p>
+
+<div class="comparison-table">
+  <table>
+    <thead><tr><th>Factor</th><th>Haram Taxi (Private)</th><th>Uber KSA / Careem</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Makkah Entry Permit</strong></td><td class="best-choice">Yes — all vehicles authorized</td><td>Varies — many drivers lack permits</td></tr>
+      <tr><td><strong>Pricing</strong></td><td class="best-choice">Fixed, agreed before booking</td><td>Dynamic — surge pricing during Hajj/Umrah peaks</td></tr>
+      <tr><td><strong>Availability During Hajj</strong></td><td class="best-choice">Pre-confirmed, guaranteed</td><td>Very limited — drivers avoid Hajj zone</td></tr>
+      <tr><td><strong>Luggage Capacity</strong></td><td class="best-choice">Large SUVs — up to 8 bags</td><td>Standard sedans — limited luggage</td></tr>
+      <tr><td><strong>Driver Language</strong></td><td class="best-choice">English, Arabic, Urdu, Malay</td><td>Arabic primarily</td></tr>
+      <tr><td><strong>Meet & Greet at Airport</strong></td><td class="best-choice">Yes — name board at arrivals</td><td>No — find the car yourself</td></tr>
+      <tr><td><strong>Intercity Routes (e.g., Makkah–Madinah)</strong></td><td class="best-choice">Standard offering</td><td>Not available on apps</td></tr>
+      <tr><td><strong>Payment</strong></td><td>WhatsApp advance booking</td><td class="best-choice">In-app, card, or cash</td></tr>
+      <tr><td><strong>Price Transparency</strong></td><td class="best-choice">Full quote before trip</td><td>Estimate only — final price varies</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>When Uber KSA or Careem Is the Right Choice</h2>
+<ul>
+  <li>Short city hops within Riyadh, Jeddah, or Dammam (not to/from Makkah)</li>
+  <li>Last-minute, unplanned trips where you need a car within minutes</li>
+  <li>Solo travelers with no luggage doing quick errands</li>
+  <li>When price is the absolute priority and a Makkah entry permit is not needed</li>
+</ul>
+
+<h2>When a Private Service Like Haram Taxi Is the Right Choice</h2>
+<ul>
+  <li>Any journey <strong>into or out of Makkah</strong> — a permit is non-negotiable</li>
+  <li>Airport pick-ups where you need guaranteed availability after a long flight</li>
+  <li>Intercity routes: Makkah–Madinah, Jeddah–Madinah, Riyadh–Makkah</li>
+  <li>Groups of 3 or more people with full luggage</li>
+  <li>Hajj and peak Umrah season when apps show no availability or 5× surge pricing</li>
+  <li>Families with children or elderly pilgrims needing a specific vehicle</li>
+</ul>
+
+<h2>The Makkah Permit Problem — Why App Taxis Fail Here</h2>
+<p>This is the single most important factor for Umrah and Hajj travellers. <strong>Makkah has restricted access checkpoints on all entry roads.</strong> Vehicles require a specific permit from the Saudi Ministry of Interior to enter the Haram zone. Uber and Careem drivers can accept a trip to Makkah on the app, but many will drop you at the last checkpoint — often 5–10km from your hotel — and claim they cannot proceed.</p>
+
+<div class="warning-box">
+  <strong>⚠️ Real Warning</strong>
+  Hundreds of pilgrims are dropped at Makkah entry checkpoints every Umrah season by Uber and Careem drivers who do not have valid Makkah access permits. Always confirm your driver has Makkah authorization before the trip — or use a dedicated service where every vehicle is pre-cleared.
+</div>
+
+<h2>Careem vs Uber in Saudi Arabia — Is There a Difference?</h2>
+<p>Careem was acquired by Uber in 2020 but continues to operate as a separate brand in the Middle East. In Saudi Arabia, both operate similarly. Careem has deeper roots in the Gulf market and may have slightly more local drivers. Uber has a larger global app infrastructure. For pilgrimage travel, the differences are negligible — both face the same Makkah permit limitations.</p>
+
+<h2>Price Comparison: Private Taxi vs Apps</h2>
+<p>The comparison depends heavily on timing:</p>
+<ul>
+  <li><strong>Off-peak (normal Umrah season):</strong> Uber/Careem may appear cheaper for short city trips. For Makkah transfers, private taxis are typically comparable or slightly higher — but with fixed pricing.</li>
+  <li><strong>Peak Umrah (Ramadan, school holidays):</strong> App surge pricing can reach 3–5× base fare. A pre-booked private transfer with fixed pricing becomes significantly cheaper.</li>
+  <li><strong>Hajj Season:</strong> Apps become essentially non-functional or outrageously priced for Makkah access. Private permitted services are the only reliable option.</li>
+</ul>
+
+<div class="tip-box">
+  <strong>💡 Practical Advice</strong>
+  For city trips in Riyadh or Jeddah that don't involve Makkah, use the app. For everything involving Makkah entry, intercity routes, or airport transfers during peak season — pre-book a private service. This combination gives you the best of both worlds.
+</div>
+    `,
+    date: "2026-06-24",
+    author: "Haram Taxi Team",
+    category: "Travel Tips",
+    image: "/makkah-clock-tower-new.webp",
+    faqs: [
+      { question: "Can Uber or Careem enter Makkah?", answer: "Most Uber and Careem drivers cannot reliably complete journeys into Makkah because all vehicles entering the Haram zone require a Saudi Ministry of Interior entry permit, and the majority of app-registered drivers do not hold one. Pilgrims are regularly dropped at Makkah's outer checkpoints — sometimes 10km from their hotel — by drivers who accepted the trip on the app but cannot pass the checkpoint. However, a small number of individual drivers do hold valid permits; always confirm before travel by asking 'Hal ladaika tasreeh Makkah?' Dedicated Umrah transfer services such as Haram Taxi maintain Ministry-authorized permits for their entire fleet." },
+      { question: "Is Careem available in Makkah?", answer: "Careem operates within Makkah city for short local trips but is unreliable for arrivals from Jeddah or Madinah because many drivers lack the highway checkpoint permits required to enter the Makkah restricted zone. In-city availability is moderate during normal Umrah periods. However, during the Hajj restricted access window (8th–13th Dhul Hijjah), even in-city app transport becomes severely limited near the Haram, and pre-booked private taxis with confirmed checkpoint clearance are the only dependable option for airport transfers and intercity Makkah routes." },
+      { question: "Does Uber have surge pricing during Hajj in Saudi Arabia?", answer: "Yes. Uber KSA and Careem apply surge multipliers of 3x to 5x — and sometimes higher — during Hajj season, particularly for trips near Makkah. During peak Hajj days in Dhul Hijjah, app driver availability near the Haram collapses because most drivers avoid the restricted zone entirely. Pre-booked private taxis with confirmed fixed pricing are the only consistently available and predictably priced option near Makkah during Hajj. However, for city trips within Jeddah or Riyadh during non-Hajj periods, Uber and Careem pricing is typically moderate and competitive." },
+      { question: "What is cheaper: Uber KSA or a private taxi for Jeddah airport to Makkah?", answer: "Off-peak, Uber KSA and private taxis are roughly comparable for the Jeddah airport to Makkah route, both ranging 250–400 SAR depending on vehicle type. During Ramadan and Hajj, Uber surge pricing can push fares to 600–900 SAR with no guarantee the driver can pass Makkah checkpoints. A pre-booked private taxi with a confirmed fixed price becomes both cheaper and more reliable during peak seasons. However, for solo travelers on a tight budget during quiet Umrah months, app taxis for short city errands within Jeddah offer genuine cost savings." },
+      { question: "Is Haram Taxi available 24 hours?", answer: "Yes. Haram Taxi Service operates 24/7, including early Fajr pick-ups from 3:30–4am, late-night airport arrivals, and all Umrah and Hajj season peak hours. WhatsApp +966575806733 at any time to confirm availability and receive a fixed quote before travel day. However, advance booking of at least 2–3 hours is recommended for very early morning pick-ups during Ramadan and peak Hajj days, when demand across all transport services is at its highest." }
+    ]
+  },
+
+  {
+    slug: "taxi-prices-saudi-arabia-2026-makkah-madinah-jeddah-riyadh",
+    title: "Exact Taxi Prices in Saudi Arabia 2026: Makkah, Madinah, Jeddah & Riyadh Fares",
+    excerpt: "Wondering how much a taxi costs in Saudi Arabia? We break down exact 2026 taxi fares for the most common routes: Jeddah to Makkah, Makkah to Madinah, Riyadh airport, and more — no hidden fees.",
+    content: `
+<h2>Saudi Arabia Taxi Prices 2026 — What to Actually Expect</h2>
+<p>Taxi pricing in Saudi Arabia confuses many first-time visitors. There is no single, official rate card. Prices depend on distance, vehicle type, number of passengers, luggage, and season. This guide gives you real 2026 reference prices for the most common routes, so you know what to expect before you arrive.</p>
+
+<div class="cta-box">
+  <h3>Get Your Exact Quote — Fixed Price, No Surprises</h3>
+  <p>WhatsApp us your route and we'll give you a confirmed price within minutes. No surge pricing. No hidden fees.</p>
+  <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20taxi%20price%20quote%20for%20Saudi%20Arabia" target="_blank" rel="noopener noreferrer" class="inline-cta">Get Price via WhatsApp</a>
+</div>
+
+<h2>Jeddah Airport (KAIA) to Makkah — 2026 Taxi Price</h2>
+<p><strong>Distance:</strong> 90–100km | <strong>Journey time:</strong> 1–1.5 hours (off-peak), 2–3 hours (Hajj/Umrah peaks)</p>
+<ul>
+  <li>Standard sedan (1–3 passengers, limited luggage): 250–350 SAR</li>
+  <li>SUV / GMC Yukon (1–6 passengers, full luggage): 400–550 SAR</li>
+  <li>Minivan / Staria (up to 7 passengers): 500–650 SAR</li>
+  <li>Hajj peak (Dhul Hijjah): add 30–50% to above rates</li>
+</ul>
+
+<h2>Makkah to Madinah — 2026 Taxi Price</h2>
+<p><strong>Distance:</strong> 420km | <strong>Journey time:</strong> 4–5 hours via Haramain Expressway</p>
+<ul>
+  <li>Sedan (1–3 passengers): 700–900 SAR</li>
+  <li>SUV (1–6 passengers): 950–1,200 SAR</li>
+  <li>Minivan (up to 7): 1,100–1,400 SAR</li>
+</ul>
+
+<div class="tip-box">
+  <strong>💡 Pro Tip</strong>
+  The Haramain High Speed Railway (Haramain Train) runs Makkah–Madinah in 2 hours for 200–300 SAR per person. For solo travellers it can be cheaper than a taxi. For families of 4+ with luggage, a private taxi is often cheaper, more convenient, and takes you directly to your hotel.
+</div>
+
+<h2>Riyadh (KKIA Airport) to City Centre — 2026 Price</h2>
+<p><strong>Distance:</strong> 25–35km | <strong>Journey time:</strong> 30–45 minutes</p>
+<ul>
+  <li>Standard sedan: 80–120 SAR</li>
+  <li>SUV: 150–200 SAR</li>
+  <li>Uber/Careem estimate: 60–100 SAR (surge varies)</li>
+</ul>
+
+<h2>Jeddah to Madinah — 2026 Taxi Price</h2>
+<p><strong>Distance:</strong> 420km | <strong>Journey time:</strong> 4–5 hours</p>
+<ul>
+  <li>Sedan: 700–850 SAR</li>
+  <li>SUV: 900–1,100 SAR</li>
+</ul>
+
+<h2>Makkah to Taif — 2026 Taxi Price</h2>
+<p><strong>Distance:</strong> 85km | <strong>Journey time:</strong> 1–1.5 hours</p>
+<ul>
+  <li>Sedan: 200–300 SAR</li>
+  <li>SUV: 300–400 SAR</li>
+</ul>
+
+<h2>Riyadh to Makkah — 2026 Taxi Price</h2>
+<p><strong>Distance:</strong> 950km | <strong>Journey time:</strong> 8–10 hours</p>
+<ul>
+  <li>Sedan: 1,200–1,500 SAR</li>
+  <li>SUV: 1,600–2,000 SAR</li>
+</ul>
+
+<h2>What Affects the Final Price?</h2>
+<ul>
+  <li><strong>Season:</strong> Ramadan and Hajj add 30–50% to most Makkah routes</li>
+  <li><strong>Luggage:</strong> Excess bags beyond the vehicle's standard capacity may require a supplement or upgrade</li>
+  <li><strong>Waiting time:</strong> If you book a vehicle to wait (e.g., for a ziyarat tour), hourly waiting rates of 50–100 SAR apply</li>
+  <li><strong>Night rate:</strong> Some providers add a 10–20% surcharge for journeys starting between midnight and 5am</li>
+  <li><strong>Booking method:</strong> App taxis (Uber/Careem) use dynamic pricing that can spike during high demand</li>
+</ul>
+
+<div class="warning-box">
+  <strong>⚠️ Unmetered Taxis Warning</strong>
+  Saudi Arabia's street taxis do not have meters. Always agree on a price BEFORE getting in. If a driver refuses to give a price upfront or seems evasive, find another taxi. Pre-booked private transfers with fixed pricing eliminate this problem entirely.
+</div>
+
+<h2>How to Avoid Overpaying</h2>
+<ol>
+  <li>Pre-book via WhatsApp and confirm the exact price before travel day</li>
+  <li>Avoid negotiating on arrival at KAIA — tired pilgrims are easy targets for inflated prices</li>
+  <li>Know the approximate distance of your route before speaking to a driver</li>
+  <li>During Hajj, only use pre-permitted private services — street taxis cannot enter Makkah and will demand high prices at checkpoints</li>
+</ol>
+    `,
+    date: "2026-06-24",
+    author: "Haram Taxi Team",
+    category: "Travel Tips",
+    image: "/jeddah-city.webp",
+    faqs: [
+      { question: "How much is a taxi from Jeddah airport to Makkah?", answer: "A standard sedan from King Abdulaziz International Airport (KAIA) Jeddah to Makkah costs 250–350 SAR in 2026 for 1–3 passengers, while a large SUV such as a GMC Yukon costs 400–550 SAR for up to 6 passengers with full luggage. The journey covers 90–100km and takes 1–1.5 hours under normal traffic conditions. During Ramadan and Hajj season, prices typically rise 30–50% and journey times can double due to checkpoint queues. However, pre-booked private taxis with confirmed fixed prices — such as Haram Taxi — do not apply surge adjustments the way app taxis do." },
+      { question: "How much is a taxi from Makkah to Madinah?", answer: "A private taxi from Makkah to Madinah costs 700–900 SAR for a sedan and 950–1,200 SAR for a large SUV in 2026, covering the 420km Haramain Expressway route in approximately 4–5 hours. The Haramain High Speed Railway covers the same route in 2 hours for 200–300 SAR per person and is faster for solo travelers. However, for families of 4 or more with full pilgrimage luggage, a private taxi is typically cheaper per person than individual train tickets and offers direct hotel-to-hotel drop-off without transfers or luggage handling at stations." },
+      { question: "Do taxis in Saudi Arabia have meters?", answer: "No. Street taxis in Saudi Arabia do not use meters, and there is no legally mandated rate card for unmetered taxi fares. You must negotiate and agree on a fixed price before the journey begins — entering a taxi without agreeing a price is the most common cause of overcharging disputes. App-based taxis (Uber KSA, Careem) calculate fares algorithmically before the trip but apply surge pricing during high-demand periods. However, pre-booked private transfer services provide written fixed quotes confirmed via WhatsApp before travel day, eliminating all price uncertainty regardless of traffic or demand conditions." },
+      { question: "Is Uber cheap in Saudi Arabia?", answer: "Uber KSA is competitively priced for city trips during normal periods — Riyadh and Jeddah city hops typically cost 60–120 SAR. During Ramadan, peak Umrah season, and especially Hajj, surge pricing makes Uber significantly more expensive than pre-booked private taxis, and app driver availability near Makkah drops sharply. A comparison of Jeddah-to-Makkah fares during Ramadan consistently shows app taxis charging 3–4x baseline, while pre-booked fixed-price services maintain standard rates. However, for occasional short city errands in Riyadh or Jeddah during non-peak months, Uber remains a convenient and cost-effective option." },
+      { question: "What is the cheapest way to get from Jeddah to Makkah?", answer: "The cheapest option is SAPTCO public bus service (under 30 SAR), but it requires Umrah visa verification at boarding, does not operate direct airport-terminal-to-hotel routes, and has limited luggage accommodation — making it impractical for most pilgrims with full baggage. For Umrah pilgrims travelling with luggage, a shared or private taxi (250–550 SAR per vehicle) is the practical standard — for a group of 7 sharing a Staria, the per-person cost drops to approximately 50–80 SAR each. However, for solo travelers with carry-on luggage on a strict budget, the SAPTCO city bus from KAIA to Jeddah followed by an onward shared taxi to Makkah is the lowest-cost combination." }
+    ]
+  },
+
+  {
+    slug: "taxi-scams-saudi-arabia-how-to-avoid-2026",
+    title: "Taxi Scams in Saudi Arabia 2026: How to Spot and Avoid Being Overcharged",
+    excerpt: "From inflated airport fares to fake 'Makkah permit' fees — learn the most common taxi scams in Saudi Arabia and exactly how to protect yourself as a pilgrim or tourist.",
+    content: `
+<h2>Taxi Scams in Saudi Arabia — What Pilgrims Need to Know</h2>
+<p>Saudi Arabia is generally a safe country, but like any major tourism destination, opportunistic overcharging exists — particularly around airports and during Hajj and Umrah seasons when millions of foreign visitors arrive with limited local knowledge. This guide names the most common scams and tells you exactly how to avoid them.</p>
+
+<div class="warning-box">
+  <strong>⚠️ Most Important Rule</strong>
+  Always agree on a fixed price BEFORE getting into any unmetered taxi in Saudi Arabia. If the driver refuses to quote a price upfront, walk away.
+</div>
+
+<h2>Scam #1: The "No Meter" Fare Inflation</h2>
+<p><strong>How it works:</strong> Street taxis in Saudi Arabia are unmetered. An unscrupulous driver picks up a foreign pilgrim, stays silent about price during the trip, then demands an inflated amount on arrival — often 3–5× the fair rate.</p>
+<p><strong>How to avoid it:</strong> Negotiate and agree on the exact price before the trip starts. Know the approximate fare range for your route (see our <a href="/blog/taxi-prices-saudi-arabia-2026-makkah-madinah-jeddah-riyadh" class="inline-cta">Saudi Arabia Taxi Price Guide</a>). Use app taxis (Uber/Careem) for city trips where the fare is calculated before you ride.</p>
+
+<h2>Scam #2: The Fake "Makkah Entry Permit" Fee</h2>
+<p><strong>How it works:</strong> A driver agrees to take you to Makkah, then stops at a checkpoint and demands an additional "permit fee" of 100–200 SAR, claiming the original price didn't include permits. In some cases, they stop outside the city and refuse to proceed without payment.</p>
+<p><strong>How to avoid it:</strong> Makkah entry permits are the driver's cost — you should never pay separately for them. A legitimate private taxi service includes all permits in the quoted price. Confirm this explicitly before booking: "Is the Makkah entry permit included in this price?" Any "yes" over WhatsApp is a written record.</p>
+
+<h2>Scam #3: The "KAIA Taxi Mafia" — Jeddah Airport Touts</h2>
+<p><strong>How it works:</strong> Unofficial "helpers" outside KAIA arrivals approach exhausted pilgrims and offer taxi services. They quote a reasonable fare, take the luggage, and lead you to a private car (not a licensed taxi). The final price may be 3–4× what was agreed, and you have no official recourse since the vehicle is unlicensed.</p>
+<p><strong>How to avoid it:</strong> Never accept unsolicited offers from people approaching you inside the airport. Pre-book your transfer before you fly — your confirmed driver will hold a name board and never approach you; you look for them. If you must arrange on arrival, use the official SAPTCO taxi desk inside arrivals, not the informal touts outside.</p>
+
+<h2>Scam #4: The "Long Route" Extra Distance Charge</h2>
+<p><strong>How it works:</strong> A driver takes a deliberately longer route (particularly common for unfamiliar Riyadh or Jeddah city trips) and charges by distance, or uses it as justification for a higher price.</p>
+<p><strong>How to avoid it:</strong> Use Google Maps on your phone to verify the route. Pre-agree a fixed price (not per kilometer) so route deviations don't affect your cost.</p>
+
+<h2>Scam #5: Shared Taxi Overload</h2>
+<p><strong>How it works:</strong> For intercity routes, some operators advertise a "private taxi" but then try to add other passengers to the vehicle to maximize profit, delaying your journey by 1–2 hours as they wait for more passengers at depots.</p>
+<p><strong>How to avoid it:</strong> Explicitly book a "private, exclusive vehicle" — not a shared service. Get written confirmation over WhatsApp that no additional passengers will be added. A reputable service will confirm this clearly.</p>
+
+<h2>Scam #6: The Broken AC "Discount" Switch</h2>
+<p><strong>How it works:</strong> After agreeing on a price, the driver claims the air conditioning is broken and offers a token discount. In 45°C Saudi heat, being in a vehicle without AC is dangerous — especially for elderly pilgrims and children.</p>
+<p><strong>How to avoid it:</strong> Check that the AC works before any bags go into the car. With pre-booked private services that use maintained fleets, this is not an issue.</p>
+
+<div class="tip-box">
+  <strong>💡 The Ultimate Protection: Pre-Book Before You Fly</strong>
+  Every scam on this list becomes impossible when you pre-book via WhatsApp before departure. You have a fixed price in writing, a confirmed driver meeting you at arrivals with your name, and a direct line to customer support. Scams target people making decisions under stress at the airport — remove that stress entirely.
+</div>
+
+<h2>What to Do If You've Been Scammed</h2>
+<ol>
+  <li>Note the vehicle registration plate immediately</li>
+  <li>Call the Saudi Tourism Authority complaint line: 920001996</li>
+  <li>File a report at the nearest police station — tourist scams are taken seriously in Saudi Arabia</li>
+  <li>If the vehicle was app-based, report through the Uber or Careem in-app support immediately</li>
+</ol>
+    `,
+    date: "2026-06-24",
+    author: "Haram Taxi Team",
+    category: "Travel Tips",
+    image: "/makkah-clock-tower-new.webp",
+    faqs: [
+      { question: "Are taxis in Saudi Arabia safe?", answer: "Taxis in Saudi Arabia are generally safe from violent crime — Saudi Arabia consistently ranks among the lowest-crime countries in the Middle East. The primary risk is financial: price overcharging, particularly from unregistered vehicles at airports. Licensed taxis, app taxis (Uber KSA, Careem), and pre-booked private services are all safe to use from a personal safety perspective. However, unlicensed informal taxis approached via airport touts carry no passenger insurance and no consumer protection — avoid these regardless of the price offered." },
+      { question: "Can I trust random taxis outside Jeddah airport?", answer: "Informal taxis solicited by touts outside KAIA arrivals are not reliable — these vehicles are unregistered, carry no passenger insurance, and offer no price accountability. Saudi Arabia's official position requires all taxis operating from KAIA to be dispatched through licensed channels: either the SAPTCO taxi desk inside the arrivals hall or registered app services. The safest approach is a pre-booked driver who meets you at arrivals with a name board — you know the driver, vehicle, and price before you land. However, during quiet periods outside Hajj and Ramadan, some legitimate licensed drivers do operate from designated pickup zones." },
+      { question: "What should I do if a taxi driver demands more money than agreed?", answer: "Refuse to pay any amount above the pre-agreed price and calmly present any WhatsApp confirmation of the original fare as written evidence. Document the vehicle plate number and driver ID card before escalating. Saudi Arabia's Tourist Police (call 999) take overcharging disputes involving foreign pilgrims seriously, and cases are investigated. A firm, calm refusal is sufficient in the vast majority of disputes — drivers rarely escalate when confronted with written evidence of the agreed price. However, for complete prevention, always confirm a fixed price in writing via WhatsApp before travel and use pre-booked services where the quote is secured in advance." },
+      { question: "Do Uber and Careem have scams in Saudi Arabia?", answer: "App-based taxis (Uber KSA and Careem) are far less prone to traditional price overcharging scams because fares are calculated before the trip starts and permanently recorded in-app. The most significant problem specific to Makkah routes is driver acceptance without checkpoint permits — a driver accepts the trip in the app but cannot enter the Makkah restricted zone and drops passengers at the outer checkpoint, 5–15km from their hotel. This results in an incomplete journey and additional unplanned transport costs. Report incomplete journeys immediately through the app for a fare adjustment. However, for complete certainty on Makkah-entry routes, pre-booked private taxis with confirmed Ministry permit documentation eliminate this risk entirely." }
+    ]
+  },
+
+  {
+    slug: "safe-taxi-for-women-saudi-arabia-2026",
+    title: "Safe Taxi for Women in Saudi Arabia 2026: Female Traveler & Pilgrim Guide",
+    excerpt: "Is it safe for women to take taxis alone in Saudi Arabia? We cover the rules, rights, safest booking methods, and how solo female pilgrims can travel confidently in Makkah, Madinah, and Jeddah.",
+    content: `
+<h2>Women Taking Taxis in Saudi Arabia — The Facts in 2026</h2>
+<p>Saudi Arabia has transformed significantly since Vision 2030. Women now have the right to drive, ride freely in taxis, travel without a male guardian for most activities, and use all transport services independently. This guide addresses practical safety, rights, and the best booking methods for female travellers and solo female pilgrims.</p>
+
+<div class="cta-box">
+  <h3>Pre-Book Your Transfer — Safe, Confirmed, Fixed Price</h3>
+  <p>Female pilgrims can book directly via WhatsApp. Receive your driver's name, photo, and vehicle plate before travel.</p>
+  <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20am%20a%20female%20traveller%20and%20need%20to%20book%20a%20taxi%20in%20Saudi%20Arabia" target="_blank" rel="noopener noreferrer" class="inline-cta">Book Safely via WhatsApp</a>
+</div>
+
+<h2>Legal Rights of Women Using Taxis in Saudi Arabia</h2>
+<p>Since the landmark 2019 reforms, Saudi women have the right to:</p>
+<ul>
+  <li>Use taxi services, ride-hailing apps, and private car services without a male guardian (mahram) present</li>
+  <li>Travel domestically and obtain a passport independently (as of age 21)</li>
+  <li>Sit in the front seat of a taxi if preferred</li>
+  <li>Request a female driver where available (Careem has a Women Only mode in some cities)</li>
+</ul>
+<p>Female tourists and pilgrims from any country have the same rights.</p>
+
+<h2>Uber and Careem Safety Features for Women</h2>
+<p>Both Uber KSA and Careem have implemented safety features specifically for female riders:</p>
+<ul>
+  <li><strong>Trip sharing:</strong> Share your live route with a trusted contact</li>
+  <li><strong>Emergency button:</strong> One-tap connection to emergency services</li>
+  <li><strong>Driver ID verification:</strong> Full name, photo, and vehicle plate shown before ride</li>
+  <li><strong>Careem Women Only mode:</strong> Available in some Saudi cities — only female drivers are matched</li>
+  <li><strong>In-app support:</strong> Any harassment or inappropriate behaviour can be reported immediately with trip data as evidence</li>
+</ul>
+
+<h2>Private Pre-Booked Taxis — The Safest Option for Pilgrims</h2>
+<p>For Umrah and Hajj trips, particularly airport transfers and intercity journeys, pre-booked private taxis offer the highest safety standard:</p>
+<ul>
+  <li>Driver details shared before travel — you know exactly who is picking you up</li>
+  <li>Fixed price confirmed in writing — no on-the-spot negotiation required</li>
+  <li>Company accountability — a business (not a random individual) is responsible for the service</li>
+  <li>WhatsApp contact maintained throughout the journey</li>
+  <li>Makkah-permitted vehicles — no risk of being dropped outside the city</li>
+</ul>
+
+<h2>Practical Safety Tips for Female Travellers in Saudi Arabia</h2>
+<ol>
+  <li><strong>Always pre-book when possible</strong> — avoids the airport negotiation environment where you are tired and unfamiliar with local rates</li>
+  <li><strong>Share trip details</strong> — before any taxi journey, send driver name, plate number, and route to a trusted person</li>
+  <li><strong>Sit in the rear</strong> — most Saudi cultural norms expect female passengers in the back seat. This is not compulsory but maintains comfortable boundaries</li>
+  <li><strong>Keep your phone charged</strong> — always have battery for the duration of any journey</li>
+  <li><strong>Know the emergency number</strong> — 999 for police in Saudi Arabia</li>
+  <li><strong>Trust your instincts</strong> — Saudi Arabia has low crime rates, but if a driver makes you uncomfortable, it is completely acceptable to end the trip and use another service</li>
+</ol>
+
+<h2>Mahram (Male Guardian) Requirements — Current Rules 2026</h2>
+<p>For Umrah specifically, Saudi regulations historically required women under 45 to be accompanied by a mahram. As of recent years, women can perform Umrah in organized groups without a mahram under the group Umrah visa scheme. For taxis and local transport, no mahram is required for any journey. Always check the specific Umrah visa terms issued to your country, as they may have specific conditions.</p>
+
+<div class="tip-box">
+  <strong>💡 Makkah & Madinah Note</strong>
+  The sacred cities are among the safest environments in Saudi Arabia — security presence is extremely high, particularly around the Harams. Female pilgrims routinely travel alone or in small groups throughout both cities. The local community is deeply respectful of female pilgrims.
+</div>
+    `,
+    date: "2026-06-24",
+    author: "Haram Taxi Team",
+    category: "Travel Tips",
+    image: "/madinah-haram.webp",
+    faqs: [
+      { question: "Can a woman take a taxi alone in Saudi Arabia?", answer: "Yes. Women in Saudi Arabia have the legal right to use taxis, ride-hailing apps, and private car services independently, without a male guardian (mahram) present — this was established under Vision 2030 reforms enacted in 2019. This applies equally to Saudi women and all foreign female visitors, including pilgrims on Umrah visas. Uber KSA, Careem, and private taxi services all serve solo female passengers without restriction. However, in remote areas outside major cities, driver availability and service standards may be less consistent than in Riyadh, Jeddah, Makkah, or Madinah." },
+      { question: "Is Uber safe for women in Saudi Arabia?", answer: "Uber KSA includes multiple safety features for female passengers: driver identity and photo verification before pickup, live trip-sharing to a trusted contact, an in-app emergency button connecting to local authorities, and in-app incident reporting. Saudi Arabia's ride-hailing safety standards have improved significantly since 2020. For most city trips, Uber is a reliable option for women. However, for airport transfers after long international flights during peak Umrah or Hajj seasons — when app driver availability is limited — a pre-booked private taxi with driver details shared in advance provides additional predictability and verified security." },
+      { question: "Does Saudi Arabia have female taxi drivers?", answer: "Yes. Female taxi and ride-hailing drivers have been active in Saudi Arabia since the right to drive was granted in June 2018. Careem's Women Only mode specifically pairs female riders with female drivers and is available in Riyadh, Jeddah, and select other major cities. However, female driver availability varies significantly by city, time of day, and current demand — in smaller cities and during late-night hours, female driver matching on apps may have longer wait times or limited availability, and the Women Only mode may not always match successfully." },
+      { question: "Do I need a mahram to take a taxi in Makkah?", answer: "No. A mahram (male guardian) is not required for any taxi journey in Makkah, Madinah, or anywhere in Saudi Arabia. Female pilgrims of all nationalities use taxis independently throughout both holy cities without restriction. The mahram requirement that applies to certain Umrah visa categories relates specifically to the pilgrimage arrangement and visa eligibility — not to local transport. However, for Umrah visa eligibility specifically, women under 45 from certain countries should verify their country's current mahram requirement with a licensed Umrah travel agent, as rules vary by nationality and bilateral agreements." },
+      { question: "Is it safe for a woman to travel alone in Makkah?", answer: "Yes. Makkah has one of the highest security presences of any city in Saudi Arabia, with the Saudi Ministry of Hajj and General Security maintaining continuous monitoring throughout the Haram zone and surrounding neighborhoods due to the constant presence of pilgrims from over 180 countries. Solo female pilgrims from all nationalities travel freely throughout Makkah and Madinah without incident as a matter of routine. However, as a sensible precaution in any unfamiliar city, maintaining phone charge, sharing your location with a trusted contact, and pre-arranging transport for late-night journeys are advisable regardless of gender." }
+    ]
+  },
+
+  {
+    slug: "late-night-taxi-makkah-fajr-tahajjud-transport-guide",
+    title: "Late Night Taxi in Makkah: Fajr, Tahajjud & After-Midnight Transport Guide 2026",
+    excerpt: "Need a taxi in Makkah at 2am for Tahajjud or 4am for Fajr? Learn how to arrange reliable late-night transport in Makkah and Madinah during Umrah — including what actually works at 3am.",
+    content: `
+<h2>Getting a Taxi in Makkah at Night — The Real Situation</h2>
+<p>One of the most common questions from Umrah pilgrims: <strong>"Can I get a taxi to Masjid Al-Haram at 2am or 3am for Tahajjud and Fajr prayer?"</strong> The answer depends heavily on your hotel location, booking method, and the season. This guide tells you what actually works.</p>
+
+<div class="cta-box">
+  <h3>Pre-Book Your Late Night Makkah Transfer</h3>
+  <p>24/7 operation. WhatsApp any time — even at 3am. Fixed price, Makkah-permitted vehicles.</p>
+  <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20a%20late%20night%20taxi%20in%20Makkah%20for%20Fajr%20prayer" target="_blank" rel="noopener noreferrer" class="inline-cta">Book 24/7 via WhatsApp</a>
+</div>
+
+<h2>Why Late Night Transport in Makkah Is Different</h2>
+<p>Makkah is unlike any other city in Saudi Arabia — it is spiritually active 24 hours a day. Fajr at the Masjid Al-Haram draws some of the largest congregations of the day. Tahajjud (the night prayer, typically 1–3am) is enormously popular during Ramadan and throughout the year among dedicated pilgrims. The demand for transport at unusual hours is therefore much higher than in a normal city.</p>
+
+<h2>Hotels Within Walking Distance vs. Those Requiring Transport</h2>
+<p>The first consideration is your hotel's distance from the Haram:</p>
+<ul>
+  <li><strong>Abraj Al-Bait towers and hotels within 500m:</strong> Walking is practical for Fajr and Tahajjud — no transport needed</li>
+  <li><strong>Hotels 500m–2km away (Aziziyah, Misfalah, Ajyad):</strong> Walking is possible but takes 20–30 minutes — many pilgrims prefer transport for late night/early morning</li>
+  <li><strong>Hotels 2km+ away:</strong> Transport is essentially required — walking in the middle of the night with road conditions and construction is risky</li>
+</ul>
+
+<h2>What Works at 2am–4am in Makkah</h2>
+<h3>Option 1: Pre-Booked Private Taxi (Most Reliable)</h3>
+<p>A pre-booked service that operates 24/7 is the most reliable solution. Arrange the pick-up time in advance — WhatsApp the night before or earlier the same day. The driver is confirmed and waiting, even if you message at 3am to confirm they are en route.</p>
+
+<h3>Option 2: Hotel Taxi Desk</h3>
+<p>Many larger hotels near the Haram operate 24-hour taxi desks. Prices are typically higher than market rate (hotels add a significant markup) but availability at very late hours is generally good. Ask your hotel concierge about overnight taxi availability on arrival.</p>
+
+<h3>Option 3: Street Taxis (Inconsistent)</h3>
+<p>Street taxis do circulate near the Haram 24/7, but availability at 3–4am can be unpredictable, particularly outside the immediate Haram zone. Negotiating prices while half-asleep before Fajr is not ideal. This option works better close to the Haram than in outlying areas like Aziziyah or Kudai.</p>
+
+<h3>Option 4: Uber/Careem at Night in Makkah</h3>
+<p>App-based services operate in Makkah at night but driver availability drops significantly between midnight and 4am. During Ramadan, availability is better than usual (many drivers work through the night). Outside Ramadan, wait times can be 15–30 minutes or longer. Surge pricing often applies late at night.</p>
+
+<h2>Ramadan Special: Night Transport in Makkah</h2>
+<p>During Ramadan, Makkah becomes most active at night. After Tarawih prayer (approximately 10pm–midnight), the streets are full. Iftaar gatherings and Suhoor (pre-Fajr meal) draw millions out until very late. Transport availability is actually BETTER during Ramadan nights than during normal months because demand drives more drivers to work night shifts. However, prices may be higher and journeys longer due to traffic.</p>
+
+<div class="tip-box">
+  <strong>💡 Practical Plan for Night Prayers</strong>
+  For Tahajjud and Fajr during Umrah: pre-book your outbound transfer the night before (WhatsApp your service), walk or take a pre-arranged pick-up to the Haram, then either walk back after Fajr and sunrise (a beautiful time to explore the area) or have a driver standing by. Many pilgrims arrange a "return open" where the driver waits and returns you after an agreed time.
+</div>
+
+<h2>Madinah Late Night Transport</h2>
+<p>Similar considerations apply in Madinah near Masjid Al-Nabawi. The area within walking distance of the Haram is large and well-lit. Hotels in Markaziyah district are typically within 10–15 minutes walk. The main taxi area around the Haram operates 24/7. Pre-booking is recommended for journeys to/from MED Airport at unusual hours.</p>
+    `,
+    date: "2026-06-24",
+    author: "Haram Taxi Team",
+    category: "Umrah Guide",
+    image: "/makkah-night.webp",
+    faqs: [
+      { question: "Can I get a taxi in Makkah at 3am?", answer: "Yes. Taxis operate in Makkah 24 hours a day because Masjid Al-Haram functions as a spiritual hub through the night, with Tahajjud prayers (1–3am) and Fajr preparation drawing large congregations in the early hours. Street taxis circulate near the Haram perimeter continuously at all hours. However, for hotels located 2km or more from the Haram — such as in Aziziyah, Misfalah, or Kudai districts — street taxi availability at 2–4am can be inconsistent, and pre-booking a private taxi the evening before is the most reliable approach for guaranteed early-morning Fajr transport." },
+      { question: "How do I get from my hotel to Fajr prayer at Masjid Al-Haram?", answer: "For hotels within 1km of Masjid Al-Haram, walking to Fajr is the most practical and spiritually preferred option for most pilgrims. For hotels in the 1–3km range such as Aziziyah or Jarwal, a pre-booked private taxi or hotel taxi desk arranged the night before provides reliable 3:30–4am pick-up. During Hajj and Ramadan, Saudi Haramain shuttle buses (mahajir buses) circulate through residential neighborhoods and offer free service to the Haram. However, outside Ramadan during normal Umrah months, bus frequency is reduced significantly and private taxi pre-booking is the most dependable option for Fajr transport." },
+      { question: "Are there taxis in Makkah after midnight?", answer: "Yes. Taxis operate in Makkah after midnight continuously — Makkah is one of the few cities in the world where late-night and early-morning hours are among the busiest, due to Tahajjud, Fajr, and Suhoor activity. Street taxis, hotel taxi services, and Careem within Makkah all operate after midnight year-round. During Ramadan, post-Tarawih hours (10pm–midnight) are particularly active and transport is more available than during non-Ramadan months. However, for destinations more than 2km from the Haram, pre-booking is more reliable than waiting for a passing street taxi at 2–4am." },
+      { question: "Is Uber available in Makkah late at night?", answer: "Uber KSA is technically available in Makkah late at night, but driver availability decreases significantly between midnight and 4am outside the Ramadan period. Wait times of 15–30 minutes are common for late-night Uber requests more than 1km from the Haram. During Ramadan, when Makkah is busiest at night, app availability improves substantially and some pilgrims report standard 5–10 minute wait times even at 2am. However, for Fajr and Tahajjud pick-ups where a specific time is critical — such as a 3:45am departure — pre-booking a confirmed private taxi with a named driver is significantly more reliable than depending on real-time app availability." }
+    ]
+  },
+
+  {
+    slug: "first-time-saudi-arabia-taxi-guide-umrah-pilgrims-2026",
+    title: "First Time in Saudi Arabia? Complete Taxi & Transport Guide for Umrah Pilgrims 2026",
+    excerpt: "Flying to Saudi Arabia for Umrah for the first time? This step-by-step guide covers everything you need to know about getting from the airport to your hotel, transport in Makkah and Madinah, and how to avoid common mistakes.",
+    content: `
+<h2>Your First Time in Saudi Arabia — Transport Made Simple</h2>
+<p>If you are doing Umrah for the first time, the transport system in Saudi Arabia can seem intimidating. Unfamiliar airports, unmetered taxis, road signs in Arabic, and the added complexity of Makkah's entry restrictions all add up. This guide gives you a clear, step-by-step understanding of how transport works so you can focus on your spiritual journey.</p>
+
+<div class="cta-box">
+  <h3>Book Your First Saudi Arabia Transfer — Fixed Price, English Support</h3>
+  <p>We handle first-timers every day. WhatsApp us your arrival details and we'll guide you through everything.</p>
+  <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20this%20is%20my%20first%20Umrah%20and%20I%20need%20help%20with%20transport" target="_blank" rel="noopener noreferrer" class="inline-cta">WhatsApp for First-Timer Help</a>
+</div>
+
+<h2>Step 1: The Arrival Airport — Jeddah or Madinah?</h2>
+<p>Most Umrah flights arrive at one of two airports:</p>
+<ul>
+  <li><strong>King Abdulaziz International Airport (KAIA), Jeddah:</strong> The primary Umrah entry point for international pilgrims. From here, most pilgrims go directly to Makkah (90–100km, 1–1.5 hours).</li>
+  <li><strong>Prince Mohammad bin Abdulaziz Airport (MED), Madinah:</strong> Some packages route through Madinah first. From here, most pilgrims go to the city centre (30km, 30–45 minutes) before eventually travelling to Makkah.</li>
+</ul>
+
+<h2>Step 2: Jeddah Airport Arrivals — What Happens First</h2>
+<ol>
+  <li>Clear immigration and customs (Umrah visa). This takes 30 minutes to 2 hours depending on flight volume.</li>
+  <li>Collect baggage and exit to the arrivals hall.</li>
+  <li>If you pre-booked a transfer: look for your driver holding a sign with your name. Do not accept approaches from people in the hall offering taxis.</li>
+  <li>If arranging on arrival: go to the official SAPTCO taxi desk inside arrivals. Avoid the informal touts outside the terminal exits.</li>
+</ol>
+
+<h2>Step 3: The Journey to Makkah — The Permit</h2>
+<p>This is the single most important thing first-timers must understand: <strong>Makkah has entry restrictions.</strong> All vehicles entering the Haram zone must carry a specific permit from the Saudi Ministry of Interior. Without this, a driver cannot pass the checkpoints.</p>
+<p>When you pre-book a legitimate private taxi service for Umrah, this is always handled. But if you try to arrange a taxi at the airport on arrival, confirm explicitly before getting in: "Do you have a Makkah entry permit?" A legitimate driver will answer immediately and confidently. Evasion or uncertainty means the driver does not have one.</p>
+
+<h2>Step 4: Understanding the Saudi Taxi System</h2>
+<ul>
+  <li><strong>No meters:</strong> Street taxis do not have meters. Always agree on a price before the trip starts.</li>
+  <li><strong>App taxis:</strong> Uber KSA and Careem are available in Jeddah, Riyadh, Madinah, and within Makkah for city trips. They calculate fares automatically but cannot guarantee Makkah entry.</li>
+  <li><strong>Private pre-booked taxis:</strong> The most reliable for airport transfers, intercity routes, and Makkah entry. Book via WhatsApp before you travel.</li>
+</ul>
+
+<h2>Step 5: Getting Around Makkah</h2>
+<p>Once in Makkah, your transport needs depend on your hotel location:</p>
+<ul>
+  <li><strong>Hotels near the Haram (within 500m):</strong> Walk everywhere. This is the most popular and most spiritually fulfilling option.</li>
+  <li><strong>Hotels 1–3km away:</strong> Combination of walking for major prayers and taxis for off-peak trips. Taxis are plentiful around the Haram zone.</li>
+  <li><strong>Hotels in Aziziyah, Misfalah, Kudai:</strong> Taxis are the primary mode of getting to and from the Haram. Negotiate prices upfront. For Hajj, pre-book everything.</li>
+</ul>
+<p>The Makkah Metro (Al Mashaer Railway) connects the Hajj sites (Mina, Muzdalifah, Arafat) — not the city centre. It is for Hajj specifically, not Umrah.</p>
+
+<h2>Step 6: Makkah to Madinah for Ziyarat</h2>
+<p>Most Umrah packages include a visit to Madinah. The main options:</p>
+<ul>
+  <li><strong>Haramain High Speed Train:</strong> 2 hours, approximately 200–300 SAR per person, departs from Makkah King Abdullah station (requires taxi to the station)</li>
+  <li><strong>Private taxi:</strong> 4–5 hours, 900–1,200 SAR for the vehicle (cost-effective for families of 4+), door-to-door</li>
+  <li><strong>Coach/bus (SAPTCO):</strong> Cheapest option but slowest and least comfortable with luggage</li>
+</ul>
+
+<div class="tip-box">
+  <strong>💡 First-Timer's Best Advice</strong>
+  Pre-book your Jeddah airport to Makkah transfer before you leave home. After a long flight and immigration queue, the last thing you want is to negotiate a taxi price in an unfamiliar environment. The cost difference is minimal; the peace of mind is enormous.
+</div>
+
+<h2>Essential Arabic Transport Phrases</h2>
+<ul>
+  <li>"Kam al-ujra?" — How much is the fare?</li>
+  <li>"Mumkin takhfidh?" — Can you reduce the price?</li>
+  <li>"Hal ladaika tasreeh Makkah?" — Do you have a Makkah permit?</li>
+  <li>"Mathal-Haram, min fadhlak" — To the Haram, please</li>
+  <li>"Waqif huna, min fadhlak" — Stop here, please</li>
+</ul>
+    `,
+    date: "2026-06-24",
+    author: "Haram Taxi Team",
+    category: "Umrah Guide",
+    image: "/makkah-clock-tower-new.webp",
+    faqs: [
+      { question: "How do I get from Jeddah airport to Makkah for the first time?", answer: "The most reliable option for first-time Umrah pilgrims arriving at Jeddah KAIA is a pre-booked private taxi with a driver waiting in arrivals holding a sign with your name — arrange this via WhatsApp before your departure date. The 90–100km journey costs 300–550 SAR depending on vehicle size and takes 1–1.5 hours in normal traffic. The official SAPTCO taxi desk inside the terminal is the alternative if pre-booking was not arranged — negotiate a fixed price before leaving the counter. However, avoid accepting any taxi offered by individuals approaching you inside or outside the arrivals hall, as these are unregistered vehicles with no price protection or passenger recourse." },
+      { question: "What documents do I need for Umrah transport?", answer: "Your Umrah visa stamped in your passport is the primary document required at Makkah's entry checkpoints — all passengers must present their passport for verification. Carry printed or digital copies of your hotel booking confirmation so your driver can take you to the correct property. For pre-booked private taxis, the driver manages all vehicle permits independently — you only need your own passport and visa. However, if you are part of an organized group Umrah package, your group leader may hold the booking documents — confirm before landing so you know what to present if asked." },
+      { question: "Is there public transport from Jeddah airport to Makkah?", answer: "SAPTCO operates air-conditioned bus services from Jeddah city to Makkah for under 30 SAR, but direct terminal-to-hotel routes require a transfer and are inconvenient with full pilgrimage luggage. The Haramain High Speed Railway does not currently serve KAIA directly — it operates from Jeddah city stations requiring a separate transfer. For most Umrah pilgrims arriving with luggage and traveling as a family or group, a private taxi is the practical standard. However, for solo travelers with minimal carry-on luggage on a very tight budget, the SAPTCO airport shuttle to Jeddah city combined with an onward Makkah bus is a viable low-cost combination." },
+      { question: "How do I pay for a taxi in Saudi Arabia?", answer: "Street taxis in Saudi Arabia accept cash payment in Saudi Riyals (SAR) — carry local currency exchanged at the airport before leaving arrivals. Uber KSA and Careem accept credit and debit cards linked to the app account, as well as cash in most cases. Pre-booked private services typically receive cash payment on pickup, with the fare confirmed in writing via WhatsApp beforehand. ATM access at KAIA arrivals is reliable if you prefer to withdraw rather than exchange currency — major international debit and credit cards work at Saudi ATMs without issue. However, always carry some SAR cash regardless of payment preference, as it gives you flexibility for street taxis and small tips." },
+      { question: "What is the Makkah entry permit and do I need one?", answer: "The Makkah entry permit is a vehicle authorization issued by the Saudi Ministry of Interior, required for all cars passing through the restricted zone checkpoints on every road entering Makkah — it applies to the vehicle, not to individual passengers. As a Muslim pilgrim with a valid Umrah visa, you personally have automatic right of entry to Makkah. All legitimate Umrah private taxi services maintain current Ministry authorization for their entire fleet, so the permit is handled without any action from you. However, if you arrange a taxi on the spot at KAIA, always ask 'Hal ladaika tasreeh Makkah?' (Do you have a Makkah permit?) before getting in — drivers without authorization will stop at checkpoints unable to proceed, leaving you stranded outside the city." }
+    ]
+  },
+
+  {
+    slug: "large-group-taxi-makkah-madinah-jeddah-8-15-people",
+    title: "Group Transport in Makkah, Madinah & Jeddah: Taxis for 8–15 People 2026",
+    excerpt: "Travelling with a large family or group for Umrah? Find out which vehicles handle 8–15 passengers, exact capacity and pricing, and how to arrange large group transport in Saudi Arabia's holy cities.",
+    content: `
+<h2>Large Group Transport for Umrah — Your Complete Guide</h2>
+<p>Large family groups and organized Umrah groups face a specific transport challenge in Saudi Arabia: finding vehicles large enough to keep everyone together, with space for luggage, at a manageable price. This guide covers every vehicle option and practical arrangements for groups of 8 to 15 people.</p>
+
+<div class="cta-box">
+  <h3>Group Booking — Coaster Bus, Staria, GMC Yukon</h3>
+  <p>Tell us your group size and luggage count and we'll recommend the right vehicle. Fixed group price, no per-head surprises.</p>
+  <a href="https://wa.me/966575806733?text=Assalamu%20Alaikum%2C%20I%20need%20transport%20for%20a%20large%20group%20for%20Umrah" target="_blank" rel="noopener noreferrer" class="inline-cta">Get Group Quote via WhatsApp</a>
+</div>
+
+<h2>Vehicle Options by Group Size</h2>
+
+<h3>5–7 Passengers: Hyundai Staria or Toyota Hiace</h3>
+<p>The Hyundai Staria is the premium choice — captain's chairs, rear AC, USB charging, smooth ride. Seats 7 comfortably with moderate luggage. The Toyota Hiace is the classic pilgrim van — less comfortable but proven for decades in Saudi Arabia.</p>
+
+<h3>6–8 Passengers: GMC Yukon XL or Chevrolet Suburban</h3>
+<p>American full-size SUVs with 3-row seating. The XL variants seat 8 with rear luggage space. Popular for smaller large groups where everyone wants car-level comfort rather than van seating.</p>
+
+<h3>8–14 Passengers: Toyota Coaster Mini-Bus</h3>
+<p>The Toyota Coaster is the industry standard for medium groups in Saudi Arabia. 14 seats, significant luggage capacity (roof rack or rear compartment), proven reliability on long-haul routes like Makkah–Madinah. Widely available and Makkah-permitted.</p>
+
+<h3>15–35 Passengers: Standard Coach Bus</h3>
+<p>For pilgrim groups above 15, a full coach is the appropriate vehicle. Luggage is stored in underfloor compartments. Cost is calculated per vehicle, not per passenger.</p>
+
+<h2>Luggage — The Hidden Challenge for Groups</h2>
+<p>Groups of 8+ almost always underestimate luggage volume. Hajj and Umrah pilgrims typically travel with:</p>
+<ul>
+  <li>1–2 large suitcases per person</li>
+  <li>Ihram bags, prayer mat rolls, Zam Zam water containers for return</li>
+  <li>Children's equipment (strollers, car seats)</li>
+</ul>
+<p><strong>Rule of thumb:</strong> A 7-seat Staria can hold 7 people + 7 carry-on sized bags. If each person has a full-size suitcase, you need either a roof-rack arrangement, a separate luggage vehicle, or an upgrade to a Coaster.</p>
+
+<div class="warning-box">
+  <strong>⚠️ Always Confirm Luggage Count When Booking</strong>
+  Overloaded vehicles are a safety concern and a common source of disagreement on pick-up day. Tell your taxi service EXACTLY how many bags you have — not approximately. A good service will tell you if you need a luggage vehicle.
+</div>
+
+<h2>Cost for Group Transport</h2>
+<h3>Jeddah Airport to Makkah (group pricing)</h3>
+<ul>
+  <li>Hyundai Staria (7 pax): 550–700 SAR</li>
+  <li>Toyota Coaster (14 pax): 900–1,200 SAR</li>
+  <li>Coach (30+ pax): 1,500–2,500 SAR</li>
+</ul>
+<h3>Makkah to Madinah (group pricing)</h3>
+<ul>
+  <li>Hyundai Staria (7 pax): 1,100–1,400 SAR</li>
+  <li>Toyota Coaster (14 pax): 1,600–2,200 SAR</li>
+</ul>
+
+<h2>Tips for Coordinating Large Group Arrivals</h2>
+<ol>
+  <li>Designate one group leader as the single contact with the taxi service — avoids confusion on arrival</li>
+  <li>Share all passenger flight details even if arriving on the same flight — immigration can separate groups</li>
+  <li>Add 30–45 minutes to estimated immigration time for groups travelling with elderly pilgrims or those with special needs</li>
+  <li>For very large groups (50+), coordinate with a Hajj travel company that specializes in group logistics</li>
+  <li>Pre-arrange a meeting point inside the arrivals hall — the area outside is chaotic during peak Umrah season</li>
+</ol>
+    `,
+    date: "2026-06-24",
+    author: "Haram Taxi Team",
+    category: "Travel Tips",
+    image: "/toyota-coaster.webp",
+    faqs: [
+      { question: "What is the largest taxi available in Makkah?", answer: "The Toyota Coaster mini-bus is the largest standard taxi vehicle widely available in Makkah, Madinah, and Jeddah, seating 14 passengers with luggage accommodated in the rear compartment or roof rack. For groups above 14 passengers, full coach buses (30+ seats) are available through private charter booking with licensed Umrah transport operators. The Toyota Coaster is Makkah entry-permitted and is the de facto standard for organized Umrah groups of 8–14 people. However, during peak Hajj days in Dhul Hijjah, Coaster availability reduces sharply — groups requiring Coasters during Hajj season should book at least 3–4 weeks in advance." },
+      { question: "How much does a group taxi from Jeddah to Makkah cost?", answer: "A Toyota Coaster (14 seats) costs approximately 900–1,200 SAR per vehicle for the Jeddah KAIA to Makkah route in 2026 — approximately 65–85 SAR per person when fully occupied, making it cheaper per head than individual standard sedan taxis. A Hyundai Staria (7 seats) costs 550–700 SAR for the same route. Both prices apply during off-peak periods; add 30–50% for Hajj and peak Ramadan season. However, the per-vehicle price applies regardless of actual passenger count — confirm your total passenger number and luggage bag count when booking so the correct vehicle size is dispatched." },
+      { question: "Can a Hyundai Staria fit 8 people and luggage?", answer: "The Hyundai Staria seats 7 passengers comfortably with rear luggage space sufficient for 7 standard cabin bags or approximately 4–5 full-size suitcases. An 8th passenger is physically possible but eliminates remaining luggage space — a roof rack arrangement would be required, which standard Staria bookings typically do not include. For 8 passengers with standard Umrah luggage (one large bag each), a Toyota Coaster is the appropriate vehicle. However, for 8 light-luggage passengers traveling with carry-on only, the Staria can accommodate with some compromise to comfort in the rear row." },
+      { question: "Do you offer group Umrah transport packages?", answer: "Yes. Haram Taxi Service arranges group transport for Umrah and Hajj groups of any size, from family parties of 5 in a Hyundai Staria to organized groups of 30+ requiring a full coach. WhatsApp +966575806733 with your group size, arrival airport, travel dates, and destination to receive a custom quote within the same day. All vehicles used are Makkah entry-authorized with valid Ministry of Interior permits. However, group bookings for the Hajj season (Dhul Hijjah) require advance booking of at least 3–4 weeks — availability for the peak Hajj restricted-access days is genuinely limited across all operators." }
+    ]
+  },
+
+  {
+    slug: "what-to-do-if-taxi-doesnt-arrive-makkah-hajj",
+    title: "What to Do If Your Taxi Doesn't Arrive in Makkah: Emergency Transport Guide",
+    excerpt: "Your taxi didn't show up at Jeddah airport or Makkah hotel — now what? This step-by-step emergency transport guide tells you exactly what to do in Saudi Arabia when transport falls through.",
+    content: `
+<h2>Your Taxi Didn't Arrive — Don't Panic. Here's Exactly What to Do.</h2>
+<p>Transport failures during Umrah or Hajj are stressful, but they are solvable. This guide gives you a clear step-by-step response plan, whether you are stranded at Jeddah airport, your Makkah hotel, or en route between cities.</p>
+
+<div class="cta-box">
+  <h3>Emergency Booking — Available 24/7</h3>
+  <p>No booking? No problem. WhatsApp us your location and we will dispatch the nearest available vehicle.</p>
+  <a href="https://wa.me/966575806733?text=URGENT%3A%20I%20need%20emergency%20transport%20in%20Saudi%20Arabia%20right%20now" target="_blank" rel="noopener noreferrer" class="inline-cta">WhatsApp for Emergency Transport</a>
+</div>
+
+<h2>Scenario 1: Driver Didn't Show Up at Jeddah Airport (KAIA)</h2>
+<h3>Immediate steps (first 10 minutes):</h3>
+<ol>
+  <li><strong>Call and WhatsApp the driver directly.</strong> Flight delays happen — the driver may be in the terminal searching for you. Send your exact location: "I am outside Gate X, arrivals level."</li>
+  <li><strong>Contact the booking company.</strong> If you booked through a service, call their main number immediately. A reputable company will have a 24/7 line or WhatsApp.</li>
+  <li><strong>Wait 15–20 minutes</strong> at a clearly visible, well-lit spot near the arrivals exit before assuming a complete no-show.</li>
+</ol>
+<h3>If confirmed no-show:</h3>
+<ol>
+  <li>Go to the <strong>official SAPTCO taxi desk inside arrivals</strong> (not outside touts) — look for the official government taxi counter</li>
+  <li>Or open <strong>Careem or Uber</strong> — both operate from KAIA</li>
+  <li>Or WhatsApp a backup service like Haram Taxi immediately — emergency bookings can be dispatched within 30–60 minutes</li>
+</ol>
+
+<div class="warning-box">
+  <strong>⚠️ Critical Warning for Makkah Entry</strong>
+  Any replacement vehicle must have a Makkah entry permit. Confirm this before getting in any taxi at KAIA. Ask directly: "Hal ladaika tasreeh Makkah?" (Do you have a Makkah permit?) An unauthorized vehicle will drop you at the checkpoint, not your hotel.
+</div>
+
+<h2>Scenario 2: Taxi Didn't Arrive at Your Makkah Hotel</h2>
+<ol>
+  <li><strong>Contact your booking service immediately</strong> by phone and WhatsApp</li>
+  <li>Ask your <strong>hotel reception</strong> — hotels almost always have taxi contacts or their own car service, typically priced higher but available immediately</li>
+  <li>Walk to the nearest <strong>main road or Haram perimeter</strong> — taxis cruise these areas constantly. Negotiate price upfront.</li>
+  <li>Open <strong>Careem</strong> within Makkah — the app works for trips inside the city</li>
+</ol>
+
+<h2>Scenario 3: Stranded Between Cities (e.g., Mid-Route Makkah to Madinah)</h2>
+<p>A vehicle breakdown on the Makkah–Madinah highway is rare but possible. If it happens:</p>
+<ol>
+  <li>Driver should call their company immediately for a replacement vehicle — this is the driver's responsibility</li>
+  <li>Move to the <strong>hard shoulder</strong> and stay with the vehicle — do not stand on the road</li>
+  <li>Call <strong>993</strong> (Saudi road assistance) if no help is coming</li>
+  <li>If you arranged through a private service, WhatsApp the company — a reputable service will dispatch a replacement or arrange alternative transport</li>
+</ol>
+
+<h2>Scenario 4: Dropped at Makkah Checkpoint (Driver Had No Permit)</h2>
+<p>This is one of the most common transport problems for Umrah pilgrims — a driver accepts a trip to Makkah but has no permit and drops you at the checkpoint.</p>
+<ol>
+  <li>Do not pay the full agreed fare — you were not delivered to your destination</li>
+  <li>At the checkpoint area, <strong>other taxis with permits will be present</strong> — they specifically wait to pick up stranded passengers (at elevated prices)</li>
+  <li>Negotiate the remaining journey from checkpoint to hotel (10–30 minutes depending on location)</li>
+  <li>Report the original driver to the Saudi Tourism Authority: 920001996</li>
+</ol>
+
+<h2>How to Prevent This Happening</h2>
+<ul>
+  <li>Always pre-book with a company that confirms Makkah permits in writing via WhatsApp</li>
+  <li>Save multiple transport contacts before you travel — at least two options</li>
+  <li>Download Careem and Uber KSA before you land (and ensure payment method is set up)</li>
+  <li>Ask your hotel for their in-house taxi number on check-in day</li>
+  <li>Keep 500 SAR cash accessible at all times — you will always be able to find emergency transport if you have cash</li>
+</ul>
+
+<div class="tip-box">
+  <strong>💡 The Best Prevention</strong>
+  The most reliable protection against transport failure is using a pre-booked service with a strong WhatsApp communication record. Text and call logs create accountability. Companies with WhatsApp-based booking have strong incentives to deliver because the communication trail is permanent.
+</div>
+
+<h2>Emergency Numbers to Save Before You Travel</h2>
+<ul>
+  <li><strong>Police / Emergency:</strong> 999</li>
+  <li><strong>Saudi Road Assistance:</strong> 993</li>
+  <li><strong>Saudi Tourism Authority Complaints:</strong> 920001996</li>
+  <li><strong>Haram Taxi 24/7 WhatsApp:</strong> +966575806733</li>
+</ul>
+    `,
+    date: "2026-06-24",
+    author: "Haram Taxi Team",
+    category: "Travel Tips",
+    image: "/jeddah-city.webp",
+    faqs: [
+      { question: "What do I do if my Uber doesn't arrive in Makkah?", answer: "If your Uber driver does not arrive within the expected wait time, cancel the trip in the app and immediately rebook — Uber KSA allows instant rebooking with a different driver, and the cancellation fee is typically waived for driver no-shows. If app driver availability is low, open Careem as a parallel option, or contact your hotel reception for their in-house taxi service, which is often available within 10–15 minutes. Pre-saving at least one WhatsApp backup taxi contact (such as Haram Taxi at +966575806733) before your trip allows emergency dispatch within 30–60 minutes. However, inside Makkah during peak Hajj days (8th–13th Dhul Hijjah), Uber and Careem availability near the Haram can be near zero, and your hotel's transport desk becomes the primary fallback." },
+      { question: "I was dropped at the Makkah checkpoint — what do I do now?", answer: "At Makkah's outer checkpoints, permitted taxis specifically position themselves to pick up passengers dropped by unauthorized drivers — this is a known and common scenario that local drivers exploit for additional income. Negotiate a ride from the checkpoint into the city (expect 50–150 SAR depending on your hotel's distance), collect your luggage from the original vehicle, and do not pay the original driver the full agreed fare — they failed to complete the journey. Take a photo of the original vehicle's license plate for a subsequent complaint. However, your immediate priority is reaching your hotel safely — file the complaint with the Saudi Tourism Authority (920001996) after arrival." },
+      { question: "Is it safe to walk in Makkah if transport fails?", answer: "Walking is safe in Makkah — the city has one of the highest security presences in Saudi Arabia, with Ministry of Hajj and General Security personnel stationed throughout the city at all hours. The Haram zone and major streets leading to it are brightly lit and continuously monitored. For distances under 2km, walking is a practical option for most pilgrims. However, for elderly pilgrims, those with health conditions, or any journey longer than 2km with full luggage in summer heat exceeding 40–45°C, walking is not advisable — seek assistance from hotel staff, a mosque (staff always help pilgrims), or the police checkpoint officers stationed throughout the city." },
+      { question: "Can I book a taxi on the spot in Makkah during Hajj?", answer: "Booking a taxi on the spot in Makkah during active Hajj days (8th–13th Dhul Hijjah) is extremely difficult — street taxis are overwhelmed, Uber and Careem app availability collapses near the Haram, and most permitted vehicles are pre-contracted to licensed Hajj operators. If stranded without pre-arranged transport during Hajj, your hotel's own transport desk is the most reliable immediate option, followed by contacting a pre-established private service by phone. Saving the WhatsApp number of your transport provider before Hajj begins is essential — do not rely on finding spot transport during the peak Hajj window. However, outside the restricted Hajj days (before the 8th and after the 13th Dhul Hijjah), normal on-demand transport availability returns to the city." }
+    ]
   }
 ];
