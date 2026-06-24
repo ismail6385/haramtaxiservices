@@ -1,6 +1,6 @@
-﻿"use client";
+"use client";
 
-import { MessageSquare, Phone, ShieldCheck, Star, ArrowRight } from 'lucide-react';
+import { MessageSquare, ShieldCheck, Star, ArrowRight, Clock } from 'lucide-react';
 import HeroBookingForm from './HeroBookingForm';
 import { Button } from './ui/button';
 import Link from 'next/link';
@@ -8,68 +8,78 @@ import Link from 'next/link';
 export default function Hero() {
     return (
         <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden bg-brand-navy-dark">
-            {/* SEO Background & Overlays */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-brand-navy-dark via-brand-navy-dark/90 to-brand-navy-dark z-10" />
                 <div className="absolute inset-0 bg-[url('/hero-bg-saudi.webp')] bg-cover bg-center opacity-30 mix-blend-overlay" />
-                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/50 to-transparent z-10" />
             </div>
 
             <div className="container relative z-20 px-4">
-                <div className="text-center max-w-5xl mx-auto space-y-8">
-                    {/* Urgency & Trust Header */}
-                    <div className="flex flex-wrap justify-center gap-3 animate-in fade-in slide-in-from-top-4 duration-700">
-                        <div className="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full flex items-center gap-2 text-white text-xs font-black uppercase tracking-widest leading-none">
-                            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                            Available 24/7 | Drivers Ready in 10 mins
-                        </div>
-                        <div className="bg-brand-gold px-4 py-2 rounded-full flex items-center gap-2 text-brand-navy text-xs font-black uppercase tracking-widest leading-none shadow-lg">
-                            <Star className="w-3 h-3 fill-brand-navy" />
-                            4.9/5 Google Rated
-                        </div>
+                <div className="text-center max-w-5xl mx-auto">
+
+                    {/* Single trust row */}
+                    <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs font-bold text-gray-400 uppercase tracking-widest mb-8 animate-in fade-in slide-in-from-top-4 duration-700">
+                        <span className="flex items-center gap-1.5"><Clock className="w-3 h-3 text-brand-gold" /> 24/7 Support</span>
+                        <span className="text-white/20 hidden sm:inline">·</span>
+                        <span className="flex items-center gap-1.5"><ShieldCheck className="w-3 h-3 text-green-400" /> Fixed Fares</span>
+                        <span className="text-white/20 hidden sm:inline">·</span>
+                        <span className="flex items-center gap-1.5"><ShieldCheck className="w-3 h-3 text-green-400" /> Pay After Journey</span>
+                        <span className="text-white/20 hidden sm:inline">·</span>
+                        <span className="flex items-center gap-1.5"><Star className="w-3 h-3 text-brand-gold fill-brand-gold" /> 4.9/5 Google Rated</span>
                     </div>
 
-                    {/* Exact-Match SEO Headline */}
-                    <h1 className="text-4xl sm:text-6xl md:text-7xl font-display font-black text-white leading-[1.1] tracking-tighter animate-in fade-in slide-in-from-bottom-8 duration-1000">
-                        Saudi Arabia&apos;s <span className="text-brand-gold italic">#1</span><br />
-                        <span className="text-brand-gold italic">Private Taxi</span> <span className="underline decoration-brand-gold decoration-4 underline-offset-8">for Umrah &amp; Hajj</span>
+                    {/* H1 — keyword-focused */}
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-white leading-[1.1] tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+                        Saudi Arabia Umrah Taxi Service<br />
+                        <span className="text-brand-gold">for Makkah, Madinah &amp; Jeddah</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-gray-300 font-bold max-w-3xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200 mt-6 md:mt-10">
-                        <span className="text-brand-gold bg-brand-navy-dark/80 px-4 py-2 rounded-xl inline-block mb-3 border border-brand-gold/30">Rent a Car <strong className="text-white">With Driver</strong> • Chauffeur Driven Taxis</span> <br className="hidden md:block" />
-                        <span className="text-white/90">Makkah • Madinah • Jeddah Airport | Fixed Rates • Pay After The Journey</span>
+                    {/* Supporting text — keyword-rich, audience-clear */}
+                    <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8 animate-in fade-in duration-1000 delay-150">
+                        Private taxi transfers for Umrah, Hajj, airport pickups, hotel transfers and intercity travel across Jeddah Airport, Makkah, Madinah, Taif and major Saudi cities — for pilgrims, families and tourists.
                     </p>
 
-                    {/* Dominant Primary CTAs */}
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 animate-in fade-in slide-in-from-bottom-16 duration-1000 delay-300">
-                        <Button asChild size="lg" className="h-16 px-10 bg-brand-gold hover:bg-yellow-500 text-brand-navy font-black text-lg rounded-2xl shadow-[0_12px_40px_rgba(212,175,55,0.4)] transition-all hover:scale-105 active:scale-95 group w-full sm:w-auto">
+                    {/* 2 CTAs only */}
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 animate-in fade-in duration-1000 delay-200">
+                        <Button asChild size="lg" className="h-14 px-10 bg-brand-gold hover:bg-yellow-500 text-brand-navy font-black text-base rounded-2xl shadow-[0_12px_40px_rgba(212,175,55,0.4)] transition-all hover:scale-105 active:scale-95 group w-full sm:w-auto">
                             <Link href="/booking">
-                                BOOK YOUR TAXI NOW <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform h-5 w-5" />
+                                Get Instant Quote <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform h-4 w-4" />
                             </Link>
                         </Button>
-
-                        <Button asChild size="lg" className="h-16 px-10 bg-[#25D366] hover:bg-[#20ba59] text-white font-black text-lg rounded-2xl shadow-[0_12px_40px_rgba(37,211,102,0.4)] transition-all hover:scale-105 active:scale-95 group w-full sm:w-auto">
+                        <Button asChild size="lg" className="h-14 px-10 bg-[#25D366] hover:bg-[#20ba59] text-white font-black text-base rounded-2xl shadow-[0_12px_40px_rgba(37,211,102,0.35)] transition-all hover:scale-105 active:scale-95 group w-full sm:w-auto">
                             <a href="https://wa.me/966575806733" target="_blank" rel="noopener noreferrer">
-                                <MessageSquare className="w-5 h-5 mr-2 fill-current" />
-                                WHATSAPP US
+                                <MessageSquare className="w-4 h-4 mr-2 fill-current" />
+                                WhatsApp Us
                             </a>
                         </Button>
                     </div>
 
-                    {/* THE BOOKING ENGINE */}
+                    {/* Booking Form */}
                     <HeroBookingForm />
 
-                    {/* Trust micro-strip */}
-                    <div className="pt-8 flex flex-wrap justify-center gap-6">
-                        <span className="flex items-center gap-2 text-xs font-bold text-gray-400 uppercase tracking-widest"><ShieldCheck className="w-4 h-4 text-green-400" /> Pay After Journey</span>
-                        <span className="flex items-center gap-2 text-xs font-bold text-gray-400 uppercase tracking-widest"><Star className="w-4 h-4 text-brand-gold fill-brand-gold" /> 4.9/5 Google</span>
-                        <span className="flex items-center gap-2 text-xs font-bold text-gray-400 uppercase tracking-widest"><Phone className="w-4 h-4 text-brand-gold" /> 24/7 Support</span>
+                    {/* Popular routes — real SEO-crawlable links */}
+                    <div className="flex flex-wrap justify-center items-center gap-3 mt-8">
+                        <span className="text-xs font-bold text-white/30 uppercase tracking-widest">Popular routes:</span>
+                        {[
+                            { label: 'Jeddah Airport → Makkah', href: '/routes/jeddah-airport-to-makkah' },
+                            { label: 'Makkah → Madinah', href: '/routes/makkah-to-madinah' },
+                            { label: 'Madinah → Makkah', href: '/routes/madinah-to-makkah' },
+                            { label: 'Makkah → Taif', href: '/routes/makkah-to-taif' },
+                        ].map((r) => (
+                            <Link
+                                key={r.href}
+                                href={r.href}
+                                className="px-4 py-1.5 bg-white/8 hover:bg-brand-gold hover:text-brand-navy text-white/60 rounded-full text-xs font-bold transition-all border border-white/10 hover:border-brand-gold"
+                            >
+                                {r.label}
+                            </Link>
+                        ))}
                     </div>
+
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30">
+            {/* Scroll indicator */}
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-30">
                 <div className="w-1 h-12 bg-gradient-to-b from-brand-gold to-transparent rounded-full animate-bounce" />
             </div>
         </section>
