@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { servicesData } from '@/lib/servicesData';
+import { buildServiceSeoTitle, buildServiceH1 } from '@/lib/serviceSeo';
 import BookingForm from '@/components/BookingForm';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, Home, ChevronRight } from 'lucide-react';
@@ -23,14 +24,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         };
     }
 
+    const seoTitle = buildServiceSeoTitle(service);
+
     return {
-        title: `${service.title} | Haram Taxi Service`,
+        title: { absolute: seoTitle },
         description: `Book ${service.title.split('|')[0].trim()} with Haram Taxi Service. Licensed drivers, clean modern vehicles, and fixed rates with no hidden charges. WhatsApp us for an instant quote.`,
         alternates: {
             canonical: `https://haramtaxiservice.com/services/${slug}`,
         },
         openGraph: {
-            title: `${service.title} | Haram Taxi`,
+            title: seoTitle,
             description: service.description,
             type: 'website',
             url: `https://haramtaxiservice.com/services/${slug}`,
@@ -119,7 +122,7 @@ export default async function ServicePage({ params }: Props) {
                             <span className="text-sm font-semibold uppercase tracking-wider">Premium Service</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                            {service.title}
+                            {buildServiceH1(service)}
                         </h1>
                         <p className="text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl">
                             {service.description}

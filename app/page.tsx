@@ -2,7 +2,7 @@
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Haram Taxi Service | No.1 Private Taxi in Saudi Arabia [2026]',
+    absolute: 'Private Car, Taxi, Limo & Chauffeur Service in Saudi Arabia | 24/7 Service',
   },
   description: 'Saudi Arabia\'s most trusted private taxi service. Specialising in Umrah transfers, Makkah to Madinah routes, and Jeddah Airport pickups. Fixed rates, no pre-payment, 24/7 availability.',
   keywords: [

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://haramtaxiservice.com/services',
     },
-    title: 'Private Taxi Services Saudi Arabia | Airport, Umrah, Ziyarat & Intercity',
+    title: { absolute: 'All Services — Private Car, Taxi, Limo & Chauffeur Service in Saudi Arabia | 24/7 Service' },
     description: 'All private taxi services in Saudi Arabia — airport transfers from KAIA, PMIA & RUH, Umrah & Hajj transport, Ziyarat tours, heritage tours, VIP chauffeur, and intercity routes. Fixed rates, 24/7.',
 };
 
@@ -107,7 +107,7 @@ export default function ServicesIndexPage() {
         <div className="bg-white min-h-screen">
             {/* Hero */}
             <div className="bg-brand-navy text-white py-12 md:py-20 px-4 text-center">
-                <h1 className="text-fluid-h1 font-bold mb-4 font-display">Saudi Arabia Taxi Services</h1>
+                <h1 className="text-fluid-h1 font-bold mb-4 font-display">Saudi Arabia Taxi &amp; Chauffeur Services</h1>
                 <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
                     Airport transfers, Umrah & Hajj transport, Ziyarat tours, VIP chauffeur, and intercity routes —
                     all across <Link href="/locations" className="text-white hover:text-brand-gold underline decoration-white/20">13 provinces of Saudi Arabia</Link>.

@@ -27,10 +27,10 @@ export default function Hero() {
                         <span className="flex items-center gap-1.5"><Star className="w-3 h-3 text-brand-gold fill-brand-gold" /> 4.9/5 Google Rated</span>
                     </div>
 
-                    {/* H1 — keyword-focused */}
+                    {/* H1 — keyword-focused, deliberately distinct from the <title> tag */}
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-white leading-[1.1] tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-                        Saudi Arabia Umrah Taxi Service<br />
-                        <span className="text-brand-gold">for Makkah, Madinah &amp; Jeddah</span>
+                        Private Taxi &amp; Chauffeur Service for Umrah Travel<br />
+                        <span className="text-brand-gold">in Makkah, Madinah, Jeddah &amp; Across Saudi Arabia</span>
                     </h1>
 
                     {/* Supporting text — keyword-rich, audience-clear */}
