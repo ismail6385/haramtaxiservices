@@ -10,7 +10,6 @@ import LeadCapturePopup from './LeadCapturePopup';
 import MobileBottomCTA from './MobileBottomCTA';
 import JsonLdBreadcrumb from './JsonLdBreadcrumb';
 import JsonLdOrganization from './JsonLdOrganization';
-import JsonLdLocalBusiness from './JsonLdLocalBusiness';
 import JsonLdService from './JsonLdService';
 
 export default function SiteChrome({ children }: { children: React.ReactNode }) {
@@ -26,7 +25,6 @@ export default function SiteChrome({ children }: { children: React.ReactNode }) 
             <Navbar />
             <JsonLdBreadcrumb />
             <JsonLdOrganization />
-            <JsonLdLocalBusiness />
             <JsonLdService />
             <main id="main-content">
                 {children}

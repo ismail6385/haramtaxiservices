@@ -1,6 +1,4 @@
-﻿import Script from 'next/script';
-
-export default function JsonLdOrganization() {
+﻿export default function JsonLdOrganization() {
     const organizationSchema = {
         "@context": "https://schema.org",
         "@type": "Organization",
@@ -29,7 +27,7 @@ export default function JsonLdOrganization() {
     };
 
     return (
-        <Script
+        <script
             id="organization-schema"
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
