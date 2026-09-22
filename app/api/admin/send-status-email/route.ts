@@ -5,14 +5,19 @@ export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
 
 const resendApiKey = process.env.RESEND_API_KEY;
-const TRUSTPILOT_LINK = 'https://www.trustpilot.com/review/haramtaxiservice.com';
-
-if (!resendApiKey) {
-    console.error('RESEND_API_KEY is not set');
-}
-
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
+function escapeHtml(str: unknown): string {
+    if (str === null || str === undefined) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+// Protected by middleware.ts (matches /api/admin/:path*) — requires an admin session.
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
@@ -25,6 +30,9 @@ export async function POST(request: NextRequest) {
         if (!resend) {
             return NextResponse.json({ error: 'Email service not configured' }, { status: 500 });
         }
+
+        const safeName = escapeHtml(customerName);
+        const safeBookingId = escapeHtml(String(bookingId).slice(0, 8));
 
         let subject = '';
         let htmlContent = '';
@@ -49,8 +57,8 @@ export async function POST(request: NextRequest) {
                         <div class="container">
                             <div class="header"><h1>Booking Confirmed!</h1></div>
                             <div class="content">
-                                <p>Dear <strong>${customerName}</strong>,</p>
-                                <p>Great news! Your booking <strong>#${bookingId.slice(0, 8)}</strong> has been fully confirmed by our team.</p>
+                                <p>Dear <strong>${safeName}</strong>,</p>
+                                <p>Great news! Your booking <strong>#${safeBookingId}</strong> has been fully confirmed by our team.</p>
                                 <p>Your driver will meet you at the scheduled time and location.</p>
                                 <p>If you need any assistance, simply reply to this email or contact us via WhatsApp.</p>
                                 <center><a href="https://haramtaxiservice.com/contact" class="button">Contact Support</a></center>
@@ -71,8 +79,8 @@ export async function POST(request: NextRequest) {
                         <div class="container">
                             <div class="header"><h1>Booking Cancelled</h1></div>
                             <div class="content">
-                                <p>Dear <strong>${customerName}</strong>,</p>
-                                <p>Your booking <strong>#${bookingId.slice(0, 8)}</strong> has been cancelled.</p>
+                                <p>Dear <strong>${safeName}</strong>,</p>
+                                <p>Your booking <strong>#${safeBookingId}</strong> has been cancelled.</p>
                                 <p>If this was a mistake or you wish to rebook, please visit our website.</p>
                                 <center><a href="https://haramtaxiservice.com" class="button" style="background: #000; color: #fff;">Book Again</a></center>
                             </div>
@@ -92,7 +100,7 @@ export async function POST(request: NextRequest) {
                         <div class="container">
                             <div class="header"><h1>Journey Completed</h1></div>
                             <div class="content">
-                                <p>Dear <strong>${customerName}</strong>,</p>
+                                <p>Dear <strong>${safeName}</strong>,</p>
                                 <p>We hope you had a pleasant journey and a blessed Umrah!</p>
                                 <p>Your feedback helps us improve. If you enjoyed our service, please consider leaving us a review.</p>
                                 <p style="font-size: 14px; color: #666; text-align: center;">Thank you for choosing Haram Taxi Service.</p>
@@ -106,8 +114,6 @@ export async function POST(request: NextRequest) {
             default:
                 return NextResponse.json({ message: 'No email sent for this status' });
         }
-
-        console.log(`Sending ${status} email to ${customerEmail}`);
 
         const data = await resend.emails.send({
             from: 'Haram Taxi <bookings@haramtaxiservice.com>',

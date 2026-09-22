@@ -165,6 +165,16 @@ const nextConfig = {
         destination: '/locations',
         permanent: true,
       },
+      {
+        source: '/services/ziyarat',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/routes/makkah-to-madinah-taxi',
+        destination: '/routes/makkah-to-madinah',
+        permanent: true,
+      },
     ]
   },
 

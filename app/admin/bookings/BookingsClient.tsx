@@ -206,7 +206,7 @@ export default function BookingsClient({ initialBookings }: Props) {
 
             // Fire status email (non-blocking)
             if (['confirmed', 'cancelled', 'completed'].includes(newStatus)) {
-                fetch('/api/send-status-email', {
+                fetch('/api/admin/send-status-email', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -431,7 +431,7 @@ export default function BookingsClient({ initialBookings }: Props) {
 
     const handleResendEmail = useCallback(async (booking: Booking) => {
         try {
-            const res = await fetch('/api/send-confirmation-email', {
+            const res = await fetch('/api/admin/send-confirmation-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ booking }),

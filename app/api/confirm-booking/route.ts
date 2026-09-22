@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { supabaseAdmin as supabase } from '@/lib/supabase-admin';
+import { sendBookingConfirmationEmail } from '@/lib/email/sendConfirmationEmail';
 
 // Force dynamic rendering for this route
 export const dynamic = 'force-dynamic';
@@ -54,15 +55,7 @@ export async function GET(request: Request) {
 
         // Send confirmation email to customer
         try {
-            const protocol = request.headers.get('x-forwarded-proto') || 'http';
-            const host = request.headers.get('host');
-            const baseUrl = `${protocol}://${host}`;
-
-            await fetch(`${baseUrl}/api/send-confirmation-email`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ booking })
-            });
+            await sendBookingConfirmationEmail(booking);
         } catch (emailError) {
             console.error('Failed to send confirmation email:', emailError);
         }
