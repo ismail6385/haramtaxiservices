@@ -168,7 +168,7 @@ export default async function Home() {
             
             <div className="space-y-10">
               <div className="inline-flex items-center gap-3 px-6 py-3 bg-brand-navy text-white rounded-full font-black text-xs uppercase tracking-[0.3em] shadow-xl">
-                <Crown className="w-4 h-4 text-brand-gold animate-pulse" /> THE KSA ROYAL STANDARD
+                <Crown className="w-4 h-4 text-brand-gold animate-pulse" /> PRIVATE TAXI IN SAUDI ARABIA
               </div>
               
               <h2 className="text-4xl md:text-6xl font-display font-black text-brand-navy leading-[1] tracking-tighter">
@@ -219,15 +219,14 @@ export default async function Home() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-gold/20 text-brand-gold rounded-full text-xs font-black uppercase tracking-widest mb-8">
-                  <span className="w-2 h-2 rounded-full bg-brand-gold animate-ping" /> Beyond The Algorithm
+                  <span className="w-2 h-2 rounded-full bg-brand-gold animate-ping" /> Why Choose Haram Taxi
                 </div>
                 <h2 className="text-4xl md:text-6xl font-display font-black text-white leading-none mb-8">
-                  The <span className="text-brand-gold">Human Standard</span> <br /> 
-                  of Saudi Travel.
+                  A Real Driver, <br />
+                  <span className="text-brand-gold">Not an App.</span>
                 </h2>
                 <p className="text-xl text-gray-300 leading-relaxed font-medium mb-10">
-                  In a world of automated apps and random drivers, we believe your sacred journey deserves a <Link href="/about" className="text-white underline decoration-brand-gold decoration-4 underline-offset-8 hover:text-brand-gold transition-colors">Human Touch</Link>. 
-                  We don&apos;t just send a car; we dispatch a <Link href="/services" className="text-white hover:text-brand-gold underline decoration-white/20">managed experience</Link>.
+                  Booking through an app doesn&apos;t guarantee who shows up. When you book with us, the same licensed driver and vehicle are assigned to your <Link href="/about" className="text-white underline decoration-brand-gold decoration-4 underline-offset-8 hover:text-brand-gold transition-colors">trip</Link> from confirmation to drop-off — a <Link href="/services" className="text-white hover:text-brand-gold underline decoration-white/20">managed booking</Link>, not a marketplace request.
                 </p>
                 
                 <div className="space-y-6">
@@ -298,7 +297,7 @@ export default async function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Taxi from Makkah to Madinah", p: "Fixed Rate • Get Quote", d: "Standard 450km transit via Haramain Highway in premium SUV or Van.", tags: ["4.5 Hours", "Door-to-door", "Meet & Greet"], link: "/routes/makkah-to-madinah" },
+              { title: "Taxi from Makkah to Madinah", p: "Fixed Rate • Get Quote", d: "Approx. 450km via Haramain Highway in premium SUV or Van.", tags: ["Usually 4.5–5 Hrs", "Door-to-door", "Meet & Greet"], link: "/routes/makkah-to-madinah" },
               { title: "Jeddah Airport to Makkah Taxi", p: "Fixed Rate • Get Quote", d: "Direct KAIA Terminal transfer with flight tracking and 60min free waiting.", tags: ["VIP Pickup", "Fixed Tolls", "Luggage Help"], link: "/routes/jeddah-airport-to-makkah" },
               { title: "VIP Madinah City Ziyarat", p: "Fixed Rate • Get Quote", d: "Visit Uhud, Quba, and 7 Mosques with our expert bilingual guides.", tags: ["Knowledgeable", "Hydration Incl.", "Flexible Time"], link: "/services/ziyarat-tours" }
             ].map((service, i) => (
@@ -426,12 +425,12 @@ export default async function Home() {
                          <ShieldCheck className="w-8 h-8" />
                      </div>
                      <div>
-                         <p className="text-xl font-black text-green-900 leading-tight">Zero-Risk Booking Policy</p>
-                         <p className="text-xs font-bold text-green-700/60 uppercase tracking-widest mt-1">Free Cancellation • No Pre-payment required • 100% Fixed Rates</p>
+                         <p className="text-xl font-black text-green-900 leading-tight">Flexible Booking Policy</p>
+                         <p className="text-xs font-bold text-green-700/60 uppercase tracking-widest mt-1">Free Cancellation • No Pre-payment Required</p>
                      </div>
                  </div>
                  <button className="bg-green-600 hover:bg-green-700 text-white font-black px-10 h-16 rounded-2xl shadow-xl shadow-green-200">
-                     <Link href="/booking">BOOK RISK-FREE</Link>
+                     <Link href="/booking">BOOK NOW</Link>
                  </button>
              </div>
         </div>

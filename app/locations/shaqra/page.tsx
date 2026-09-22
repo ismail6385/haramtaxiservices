@@ -162,7 +162,7 @@ export default function ShaqraLocationPage() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi cost in Shaqra?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Trips to Riyadh Airport cost between <span className="font-bold text-stone-700">competitive rates</span>.
+                        Trips to Riyadh Airport cost <span className="font-bold text-stone-700">Get Quote</span>.
                         Local transfers to Ushaiger are around <span className="font-bold text-stone-700">Get Quote</span>.
                         Rides to Qassim region typically range from <span className="font-bold text-stone-700">Get Quote</span>.
                     </p>

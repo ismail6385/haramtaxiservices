@@ -89,11 +89,11 @@ export default function PricingPreview() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 id="pricing-heading" className="text-4xl md:text-6xl font-display font-black text-gray-900 mb-4 tracking-tight">Executive Fleet & Transparent Pricing</h2>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">No bargaining. No hidden tolls. Just professional service at <span className="text-brand-gold font-black">Guaranteed Fixed Rates.</span></p>
+                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">No bargaining. No hidden tolls. Just professional service at <span className="text-brand-gold font-black">Transparent Fixed Fares.</span></p>
                     <div className="mt-6 flex justify-center">
                         <div className="bg-amber-50 border border-amber-100 text-amber-900 px-6 py-3 rounded-2xl text-xs sm:text-sm font-bold flex items-center gap-2 max-w-xl text-left">
                             <span className="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0 animate-pulse"></span>
-                            Price varies based on chosen vehicle category, exact pickup/dropoff points, and seasonal availability.
+                            Your final fare is confirmed before booking and may vary by vehicle, pickup/drop-off location and travel date.
                         </div>
                     </div>
                 </div>

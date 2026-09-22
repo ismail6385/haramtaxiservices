@@ -46,13 +46,13 @@ export default function TrustMarkers() {
                     <div>
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-navy/10 text-brand-navy rounded-full mb-6 font-bold text-sm uppercase tracking-widest">
                             <Star className="w-4 h-4 fill-current" />
-                            The Gold Standard of Umrah Transport
+                            Why Pilgrims Trust Us
                         </div>
                         <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-8 leading-tight">
                             Experience the Premium <span className="text-brand-navy italic underline decoration-brand-gold underline-offset-8">Difference</span>
                         </h2>
                         <p className="text-xl text-gray-600 font-light leading-relaxed mb-12">
-                            While others copy our words, they can never replicate our commitment. We provide more than just a car; we provide a worry-free spiritual experience.
+                            Licensed drivers, fixed fares agreed before pickup, and door-to-door service across Saudi Arabia — for a worry-free Umrah journey.
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-8">

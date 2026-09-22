@@ -22,7 +22,7 @@ export default function PilgrimTips() {
                         <div>
                             <h4 className="font-bold text-gray-900 mb-1">Meeting Points</h4>
                             <p className="text-gray-600 text-sm leading-relaxed">
-                                At Jeddah Terminal 1, meet your driver near the large aquarium. For Terminal North, look for the designated pre-arranged transport area.
+                                Your driver will send you the exact meeting point and name-board details on WhatsApp before pickup, since terminal arrangements can change.
                             </p>
                         </div>
                     </div>

@@ -78,7 +78,7 @@ export default function Footer() {
                                 <span className="text-2xl font-display font-black text-white tracking-tighter">
                                     Haram <span className="text-brand-gold">Taxi</span>
                                 </span>
-                                <span className="text-xs text-gray-500 uppercase tracking-[0.3em] font-black">Official KSA Transport</span>
+                                <span className="text-xs text-gray-500 uppercase tracking-[0.3em] font-black">Licensed Private Transport</span>
                             </div>
                         </Link>
                         <p className="text-sm text-gray-400 mb-8 leading-relaxed pr-8">

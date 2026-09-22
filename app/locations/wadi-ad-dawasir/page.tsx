@@ -163,7 +163,7 @@ export default function WadiLocationPage() {
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi cost in Wadi Ad Dawasir?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         A taxi from Wadi Ad Dawasir Airport (WAE) to town center is approximately <span className="font-bold text-yellow-700">Get Quote</span>.
-                        Private transfers to Riyadh can cost between <span className="font-bold text-yellow-700">competitive rates</span>.
+                        Private transfers to Riyadh cost <span className="font-bold text-yellow-700">Get Quote</span>.
                         Local hourly rental starts at <span className="font-bold text-yellow-700">Get Quote/hour</span>.
                     </p>
                 </div>

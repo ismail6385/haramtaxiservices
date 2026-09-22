@@ -164,7 +164,7 @@ export default function SalwaLocationPage() {
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">How much does a taxi to Salwa border cost?</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         Trips from Al Ahsa to Salwa typically range from <span className="font-bold text-emerald-700">Get Quote</span>.
-                        Longer rides from Dammam or Khobar generally cost between <span className="font-bold text-emerald-700">competitive rates</span>.
+                        Longer rides from Dammam or Khobar cost <span className="font-bold text-emerald-700">Get Quote</span>.
                         We operate 24/7 for all border crossing times.
                         <span className="block text-sm text-gray-400 mt-2">Prices vary by vehicle type; confirm before booking.</span>
                     </p>
