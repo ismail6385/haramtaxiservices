@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Suspense } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
   ShieldCheck, 
@@ -338,7 +339,9 @@ export default function PricingPage() {
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-navy/5 rounded-bl-full"></div>
                                 <h3 className="text-3xl font-display font-bold mb-2">Quick Quote Request</h3>
                                 <p className="text-gray-500 mb-8">Fill the form below or message us directly on WhatsApp for an immediate response.</p>
-                                <BookingForm />
+                                <Suspense fallback={<div className="h-[400px] flex items-center justify-center text-gray-400">Loading form...</div>}>
+                                    <BookingForm />
+                                </Suspense>
                              </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import './globals.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import SiteChrome from '@/components/SiteChrome';
 
@@ -72,16 +72,17 @@ export const metadata: Metadata = {
     google: 'q-DVASWU6Kyf0-UGvNkYPL1EYFzfh3KmLg26ACwGoDM',
   },
   category: 'Transportation Services',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
+  manifest: '/manifest.json',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#001F3F' }, // Brand Navy
     { media: '(prefers-color-scheme: dark)', color: '#001F3F' },
   ],
-  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
