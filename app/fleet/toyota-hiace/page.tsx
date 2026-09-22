@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
+import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
 
 export const metadata: Metadata = {
     title: 'Toyota Hiace Taxi in Saudi Arabia | 11-Seater Van Rental - Haram Taxi',
@@ -217,6 +218,7 @@ export default function ToyotaHiacePage() {
 
 
             {/* Related Vehicles */}
+            <PopularRoutesForVehicle vehicleSlug="toyota-hiace" vehicleName="Toyota Hiace" />
             <RelatedVehicles currentVehicle="toyota-hiace" />
             <section className="py-20 bg-slate-500 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

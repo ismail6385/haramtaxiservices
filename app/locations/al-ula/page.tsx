@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import NearbyCities from '@/components/NearbyCities';
+import PopularServicesForCity from '@/components/PopularServicesForCity';
 
 export const metadata: Metadata = {
     alternates: { canonical: 'https://haramtaxiservice.com/locations/al-ula' },
@@ -218,6 +219,12 @@ export default function AlUlaPage() {
             <div className="py-8 bg-white">
                 <CustomerUpdates location="AlUla" />
             </div>
+            <PopularServicesForCity city="AlUla" services={[
+                { label: 'Ziyarat Taxi Tours', href: '/services/ziyarat-tours' },
+                { label: 'Private Chauffeur Service', href: '/services/chauffeur-service' },
+                { label: 'Group Transportation', href: '/services/group-transport' },
+                { label: 'Hegra UNESCO Tour', href: '/services/hegra-tour' },
+            ]} />
             <div className="py-8 bg-white">
                 <NearbyCities currentCity="AlUla" />
             </div>

@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
+import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
 
 export const metadata: Metadata = {
     title: 'GMC Yukon Taxi in Saudi Arabia | Luxury SUV Rental - Haram Taxi',
@@ -225,6 +226,7 @@ export default function GMCYukonPage() {
             </section>
 
             {/* Related Vehicles */}
+            <PopularRoutesForVehicle vehicleSlug="gmc-yukon" vehicleName="GMC Yukon" />
             <RelatedVehicles currentVehicle="gmc-yukon" />
 
             {/* CTA Section */}

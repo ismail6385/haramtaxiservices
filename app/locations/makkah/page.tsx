@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { MapPin, Clock, CheckCircle2, Car, Users, Navigation, ArrowRight, AlertCircle, Wallet, Star } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import NearbyCities from '@/components/NearbyCities';
+import PopularServicesForCity from '@/components/PopularServicesForCity';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 import LocationNAP from '@/components/LocationNAP';
@@ -382,6 +383,13 @@ export default function MakkahPage() {
                     </div>
                 </div>
             </section>
+
+            <PopularServicesForCity city="Makkah" services={[
+                { label: 'Umrah Taxi Service', href: '/services/umrah-taxi' },
+                { label: 'Makkah Ziyarat Tour', href: '/services/makkah-ziyarat' },
+                { label: 'Hotel to Haram Transport', href: '/services/hotel-to-haram-transport' },
+                { label: 'Private Chauffeur Service', href: '/services/chauffeur-service' },
+            ]} />
 
             {/* Pricing */}
             <section className="py-20 bg-white">

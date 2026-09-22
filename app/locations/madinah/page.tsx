@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import NearbyCities from '@/components/NearbyCities';
+import PopularServicesForCity from '@/components/PopularServicesForCity';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 import LocationNAP from '@/components/LocationNAP';
@@ -476,6 +477,13 @@ export default function MadinahPage() {
                         </div>
                     </div>
                 </section>
+
+                <PopularServicesForCity city="Madinah" services={[
+                    { label: 'Umrah Taxi Service', href: '/services/umrah-taxi' },
+                    { label: 'Madinah Ziyarat Tour', href: '/services/madinah-ziyarat' },
+                    { label: 'Madinah Airport Transfer', href: '/services/madinah-airport-transfer' },
+                    { label: 'Private Chauffeur Service', href: '/services/chauffeur-service' },
+                ]} />
 
                 {/* Pricing */}
                 <section className="py-20 bg-white">

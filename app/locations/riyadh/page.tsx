@@ -13,6 +13,7 @@ import NearbyCities from '@/components/NearbyCities';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 import LocationNAP from '@/components/LocationNAP';
+import PopularServicesForCity from '@/components/PopularServicesForCity';
 
 export const metadata: Metadata = {
     alternates: {
@@ -613,6 +614,13 @@ export default function RiyadhLocationPage() {
                         </div>
                     </div>
                 </section>
+
+                <PopularServicesForCity city="Riyadh" services={[
+                    { label: 'Airport Transfer Service', href: '/services/airport-transfers' },
+                    { label: 'Private Chauffeur Service', href: '/services/chauffeur-service' },
+                    { label: 'Corporate & Business Taxi', href: '/services/business-travel' },
+                    { label: 'Hourly Chauffeur Hire', href: '/services/hourly-chauffeur' },
+                ]} />
 
                 {/* Pilgrim & Business Reviews */}
                 <section className="py-20 bg-white">

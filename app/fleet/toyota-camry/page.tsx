@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
+import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
 
 export const metadata: Metadata = {
     title: 'Toyota Camry Taxi in Saudi Arabia | Sedan Rental - Haram Taxi',
@@ -221,6 +222,7 @@ export default function ToyotaCamryPage() {
             </section>
 
             {/* Related Vehicles */}
+            <PopularRoutesForVehicle vehicleSlug="toyota-camry" vehicleName="Toyota Camry" />
             <RelatedVehicles currentVehicle="toyota-camry" />
 
             {/* CTA */}

@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import NearbyCities from '@/components/NearbyCities';
+import PopularServicesForCity from '@/components/PopularServicesForCity';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
@@ -547,6 +548,13 @@ export default function TaifPage() {
                         </div>
                     </div>
                 </section>
+
+                <PopularServicesForCity city="Taif" services={[
+                    { label: 'Taif Rose Farm Tour', href: '/services/taif-rose-farm-tour' },
+                    { label: 'Taif Mountain Tour', href: '/services/taif-mountain-tour' },
+                    { label: 'Ziyarat Taxi Tours', href: '/services/ziyarat-tours' },
+                    { label: 'Group Transportation', href: '/services/group-transport' },
+                ]} />
 
                 {/* Testimonials */}
                 <section className="py-20 bg-white">

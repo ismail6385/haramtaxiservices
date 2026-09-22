@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import NearbyCities from '@/components/NearbyCities';
+import PopularServicesForCity from '@/components/PopularServicesForCity';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 import LocationNAP from '@/components/LocationNAP';
@@ -565,6 +566,13 @@ export default function JeddahPage() {
                         </div>
                     </div>
                 </section>
+
+                <PopularServicesForCity city="Jeddah" services={[
+                    { label: 'Airport Transfer Service', href: '/services/airport-transfers' },
+                    { label: 'Umrah Taxi Service', href: '/services/umrah-taxi' },
+                    { label: 'Private Chauffeur Service', href: '/services/chauffeur-service' },
+                    { label: 'Group Transportation', href: '/services/group-transport' },
+                ]} />
 
                 {/* Testimonials */}
                 <section className="py-20 bg-white">

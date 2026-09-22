@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { MapPin, Clock, CheckCircle2, Car, Users, Navigation, ArrowRight, AlertCircle, Wallet, Star } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import NearbyCities from '@/components/NearbyCities';
+import PopularServicesForCity from '@/components/PopularServicesForCity';
 import CustomerUpdates from '@/components/CustomerUpdates';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
@@ -346,6 +347,13 @@ export default function TabukPage() {
                     </div>
                 </div>
             </section>
+
+            <PopularServicesForCity city="Tabuk" services={[
+                { label: 'Airport Transfer Service', href: '/services/airport-transfers' },
+                { label: 'Ziyarat Taxi Tours', href: '/services/ziyarat-tours' },
+                { label: 'Group Transportation', href: '/services/group-transport' },
+                { label: 'Private Chauffeur Service', href: '/services/chauffeur-service' },
+            ]} />
 
             {/* Testimonials */}
             <section className="py-20 bg-white">

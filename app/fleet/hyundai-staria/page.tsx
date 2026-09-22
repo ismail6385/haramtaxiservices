@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
+import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
 
 export const metadata: Metadata = {
     title: 'Hyundai Staria Taxi in Saudi Arabia | Family Van Rental - Haram Taxi',
@@ -217,6 +218,7 @@ export default function HyundaiStariaPage() {
 
 
             {/* Related Vehicles */}
+            <PopularRoutesForVehicle vehicleSlug="hyundai-staria" vehicleName="Hyundai Staria" />
             <RelatedVehicles currentVehicle="hyundai-staria" />
             <section className="py-20 bg-slate-500 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

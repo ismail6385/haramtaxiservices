@@ -10,6 +10,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
+import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
 
 export const metadata: Metadata = {
     title: 'Toyota Coaster Taxi in Saudi Arabia | 17-Seater Bus Rental - Haram Taxi',
@@ -217,6 +218,7 @@ export default function ToyotaCoasterPage() {
 
 
             {/* Related Vehicles */}
+            <PopularRoutesForVehicle vehicleSlug="toyota-coaster" vehicleName="Toyota Coaster" />
             <RelatedVehicles currentVehicle="toyota-coaster" />
             <section className="py-20 bg-slate-500 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

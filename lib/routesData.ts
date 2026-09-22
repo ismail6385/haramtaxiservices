@@ -271,7 +271,7 @@ export const routesData: RouteData[] = [
         content: "Specialized transfer service to the Al Wadeeah border crossing into Yemen.",
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
-            { vehicle: "Myundi Staria", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "5 Bags" },
         ],
         faqs: [
                   {
@@ -2148,7 +2148,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2172,7 +2172,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2196,7 +2196,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long does it take to drive from Riyadh to Al Khobar?", answer: "The Riyadh to Al Khobar drive is approximately 400km and takes 4â€“4.5 hours via King Abdulaziz Highway (Route 40) under normal traffic conditions. No rest stop is required on this route, though we can make a brief fuel stop if needed." },
@@ -2219,7 +2219,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the drive from Al Khobar to Riyadh?", answer: "The Al Khobar to Riyadh drive is approximately 400km and takes 4–4.5 hours via Route 40 under normal conditions. No rest stop is required, though we can stop for fuel or prayers on request." },
@@ -2240,7 +2240,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2262,7 +2262,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2284,7 +2284,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2306,7 +2306,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2327,7 +2327,7 @@ export const routesData: RouteData[] = [
         content: "Tabuk is the gateway to northwest Saudi Arabia — connecting NEOM, AlUla, Hegra (Mada'in Saleh), and the Red Sea coastline. The 1,350km Riyadh to Tabuk journey crosses the entire width of the Arabian Peninsula, travelling via Route 65 through Al Qassim, then Route 80 northwest through Hail and the Nefud Desert. This long-haul route serves NEOM project workers, AlUla tourism travellers, government contractors, and increasing numbers of adventure tourists exploring Saudi Arabia's northwest.",
         pricing: [
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2350,7 +2350,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2374,7 +2374,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long does it take to drive from Bahrain to Riyadh?", answer: "Bahrain to Riyadh is approximately 450km and takes 4–4.5 hours via the King Fahad Causeway and Route 40. Border crossing time at King Fahad Causeway varies — allow 30–60 minutes extra during peak weekends (Thursday–Friday evenings)." },
@@ -2394,7 +2394,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2414,7 +2414,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2433,7 +2433,7 @@ export const routesData: RouteData[] = [
         content: "Tabuk to Riyadh covers 1,350km via Route 80 southeast through the Nefud Desert and Hail region, then Route 65 south to Riyadh. This long-haul corridor serves NEOM project workers completing rotations, AlUla tourists returning to Riyadh, government contractors, and Tabuk residents travelling to the capital for medical or government appointments. Two scheduled rest stops are included.",
         pricing: [
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2453,7 +2453,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2472,7 +2472,7 @@ export const routesData: RouteData[] = [
         content: "NEOM to Riyadh is one of Saudi Arabia's longest intercity taxi routes — covering approximately 1,600km from the NEOM construction zone in Tabuk Province southeast through the Hejaz and Najd to Riyadh. This corridor serves NEOM project workers completing rotations, contractors, and government personnel. The route travels via Tabuk, then Route 80 through the Nefud, then Route 65 south to Riyadh. An overnight departure is strongly recommended.",
         pricing: [
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2492,7 +2492,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the drive from Al-Ahsa to Riyadh?", answer: "Al-Ahsa (Al Hofuf) to Riyadh is approximately 350km via Route 10 and takes 3.5–4 hours under normal traffic conditions. No scheduled rest stop is required." },
@@ -2511,7 +2511,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How far is Dammam from Al-Ahsa (Hofuf)?", answer: "Dammam to Al-Ahsa is approximately 135km via Route 605 through Abqaiq — about 1.5 hours. Al-Ahsa is one of the most popular day trips from Dammam and Al-Khobar, particularly in summer when Al-Qara Mountain's cool caves provide dramatic relief from Eastern Province heat." },
@@ -2530,7 +2530,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the drive from Al-Ahsa to Dammam?", answer: "Al-Ahsa (Hofuf) to Dammam is approximately 135km via Route 605 through Abqaiq — about 1.5 hours under normal traffic conditions. Al-Khobar is a further 20km beyond Dammam." },
@@ -2549,7 +2549,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2570,7 +2570,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the Taif to Al Khobar drive?", answer: "Taif to Al Khobar is approximately 900km and takes 9 hours with one scheduled rest stop. The route goes via the Taif–Riyadh highway then east on Route 40 to the Eastern Province." },
@@ -2589,7 +2589,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the Al Khobar to Taif drive?", answer: "Al Khobar to Taif is approximately 900km and takes 9 hours with one rest stop. The route goes west on Route 40 then south on Route 65 toward Taif." },
@@ -2608,7 +2608,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the Taif to Yanbu drive?", answer: "Taif to Yanbu is approximately 350km and takes 4 hours. No rest stop is typically required, though we can arrange a prayer stop on request." },
@@ -2627,7 +2627,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the Taif to Tabuk drive?", answer: "Taif to Tabuk is approximately 1,100km via Route 15 and Route 65 north. The journey takes around 11 hours with two scheduled rest stops." },
@@ -2646,7 +2646,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2667,7 +2667,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the drive from Taif to Al Baha?", answer: "Taif to Al Baha is approximately 220km via Route 15 and takes around 3 hours. The route follows the Hejaz mountain highway south with spectacular highland scenery." },
@@ -2687,7 +2687,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the drive from Al Baha to Taif?", answer: "Al Baha to Taif is approximately 220km via Route 15 north and takes around 3 hours. Our mountain-experienced drivers handle the highland highway sections safely." },
@@ -2706,7 +2706,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2726,7 +2726,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2748,7 +2748,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the drive from Yanbu to Taif?", answer: "Yanbu to Taif is approximately 350km and takes around 4 hours. No rest stop is typically required for this duration, though we can arrange a prayer break on request." },
@@ -2768,7 +2768,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
         ],
         faqs: [
             { question: "How long is the drive from Tabuk to Taif?", answer: "Tabuk to Taif is approximately 1,100km via Route 65 south and Route 15. The journey takes around 11 hours with two scheduled rest stops. An early morning departure from Tabuk arrives in Taif by evening." },
@@ -2788,7 +2788,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2810,7 +2810,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2832,7 +2832,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2853,7 +2853,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2874,7 +2874,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2894,7 +2894,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2915,7 +2915,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2935,7 +2935,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2955,7 +2955,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2975,7 +2975,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -2995,7 +2995,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3016,7 +3016,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3036,7 +3036,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3056,7 +3056,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3077,7 +3077,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3097,7 +3097,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3117,7 +3117,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3136,7 +3136,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3155,7 +3155,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3174,7 +3174,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3193,7 +3193,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3212,7 +3212,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3231,7 +3231,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [
@@ -3534,7 +3534,7 @@ export const routesData: RouteData[] = [
         pricing: [
             { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "3 Bags" },
             { vehicle: "GMC Yukon XL", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
-            { vehicle: "Toyota Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
+            { vehicle: "Hyundai Staria", price: "Get Quote", capacity: "7 Pax", luggage: "7 Bags" },
             { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "11 Pax", luggage: "10 Bags" },
         ],
         faqs: [

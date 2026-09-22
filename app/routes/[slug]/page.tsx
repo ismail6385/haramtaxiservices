@@ -9,6 +9,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Home } from 'lucide-react';
 import CustomerUpdates from '@/components/CustomerUpdates';
+import { getFleetSlugForVehicle, getRelatedServicesForRoute } from '@/lib/routeRelated';
+import { Compass } from 'lucide-react';
 
 export const dynamic = 'force-static';
 
@@ -233,24 +235,33 @@ export default async function RoutePage({ params }: Props) {
                             </div>
                             <div className="p-6">
                                 <div className="grid gap-4">
-                                    {route.pricing.map((item, idx) => (
-                                        <div key={idx} className="flex flex-col sm:flex-row justify-between items-center p-4 border border-gray-100 rounded-lg hover:border-slate-500 hover:bg-slate-50/10 transition-all">
-                                            <div className="mb-2 sm:mb-0">
-                                                <h3 className="font-bold text-lg text-gray-900">{item.vehicle}</h3>
-                                                <div className="text-sm text-gray-500 flex gap-3">
-                                                    <span>{item.capacity}</span>
-                                                    <span>•</span>
-                                                    <span>{item.luggage}</span>
+                                    {route.pricing.map((item, idx) => {
+                                        const fleetSlug = getFleetSlugForVehicle(item.vehicle);
+                                        return (
+                                            <div key={idx} className="flex flex-col sm:flex-row justify-between items-center p-4 border border-gray-100 rounded-lg hover:border-slate-500 hover:bg-slate-50/10 transition-all">
+                                                <div className="mb-2 sm:mb-0">
+                                                    <h3 className="font-bold text-lg text-gray-900">
+                                                        {fleetSlug ? (
+                                                            <Link href={`/fleet/${fleetSlug}`} className="hover:text-slate-600 hover:underline decoration-slate-300 underline-offset-4">
+                                                                {item.vehicle}
+                                                            </Link>
+                                                        ) : item.vehicle}
+                                                    </h3>
+                                                    <div className="text-sm text-gray-500 flex gap-3">
+                                                        <span>{item.capacity}</span>
+                                                        <span>•</span>
+                                                        <span>{item.luggage}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="flex items-center gap-4">
+                                                    <span className="text-2xl font-bold text-slate-600">{item.price}</span>
+                                                    <Link href="/booking">
+                                                        <Button size="sm">Book Now</Button>
+                                                    </Link>
                                                 </div>
                                             </div>
-                                            <div className="flex items-center gap-4">
-                                                <span className="text-2xl font-bold text-slate-600">{item.price}</span>
-                                                <Link href="/booking">
-                                                    <Button size="sm">Book Now</Button>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </div>
                             <p className="text-xs text-gray-400 px-6 pb-4">All prices are for the full vehicle, not per person. For common questions about booking, pickup, and luggage, see the FAQ section below.</p>
@@ -270,6 +281,29 @@ export default async function RoutePage({ params }: Props) {
                                 </div>
                             </div>
                         )}
+
+                        {/* Related Services */}
+                        {(() => {
+                            const relatedServices = getRelatedServicesForRoute(route);
+                            return relatedServices.length > 0 ? (
+                                <div className="bg-white rounded-2xl p-8 shadow-sm">
+                                    <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                                        <Compass className="w-5 h-5 text-slate-500" /> Related Services
+                                    </h2>
+                                    <div className="flex flex-wrap gap-3">
+                                        {relatedServices.map((s, idx) => (
+                                            <Link
+                                                key={idx}
+                                                href={s.href}
+                                                className="inline-flex items-center gap-2 px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-semibold text-gray-700 hover:border-slate-400 hover:text-slate-700 transition-colors"
+                                            >
+                                                {s.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            ) : null;
+                        })()}
 
                         <div id="tips" className="scroll-mt-24">
                             <PilgrimTips />
