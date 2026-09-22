@@ -10,6 +10,7 @@ export interface ServiceData {
     features: string[];
     pricing: { title: string; price: string }[];
     faqs: { question: string; answer: string }[];
+    relatedLinks?: { label: string; href: string }[];
 }
 
 export const servicesData: ServiceData[] = [
@@ -1541,12 +1542,31 @@ export const servicesData: ServiceData[] = [
     },
     {
         slug: "umrah-taxi",
-        title: "Umrah Taxi Service",
-        description: "Complete taxi service for Umrah pilgrims in Saudi Arabia.",
-        content: "From airport to hotel, hotel to Haram, and Ziyarat tours. Everything a pilgrim needs in one reliable taxi service.",
-        features: ["Airport Pickup", "Hotel Transfers", "Ziyarat", "24/7"],
-        pricing: [{ title: "Package", price: "Get Quote" }],
-        faqs: []
+        title: "Umrah Taxi Service in Saudi Arabia | Makkah, Madinah & Jeddah",
+        description: "Private Umrah taxi covering airport pickup, hotel transfers, and Ziyarat — one driver for the whole trip across Makkah, Madinah and Jeddah.",
+        content: "Most Umrah pilgrims end up booking several separate taxis: one from the airport, another for the hotel-to-Haram run, and a third for Ziyarat. Our Umrah taxi service is built to cover all of it with a single private vehicle and driver, so you're not re-explaining your itinerary or re-negotiating a fare at every stage. Pickup starts at Jeddah, Madinah or Riyadh airport, continues to your Makkah or Madinah hotel, and extends to Ziyarat sites in both cities on request. Drivers are used to pilgrim routines — Miqat stops, prayer-time breaks, and waiting near the Haram — and vehicles range from a 4-seat Camry for a couple to a Coaster for a full family or group. The fare is agreed and confirmed on WhatsApp before the vehicle is dispatched, and payment is due after the journey, not before.",
+        features: ["Airport Pickup (Jeddah, Madinah, Riyadh)", "Hotel-to-Haram Transfers", "Makkah & Madinah Ziyarat on Request", "One Driver for the Full Umrah Itinerary"],
+        pricing: [
+            { title: "Sedan (Camry) — up to 3 pax", price: "Get Quote" },
+            { title: "Staria / GMC Yukon — up to 6 pax", price: "Get Quote" },
+            { title: "Hiace — up to 10 pax", price: "Get Quote" },
+            { title: "Coaster — group Umrah, up to 17 pax", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "Can one driver handle the whole Umrah trip — airport, hotel and Ziyarat?", answer: "Yes. You can book the airport pickup, hotel transfers and Ziyarat tour as one continuous booking with the same driver, or book each leg separately if you prefer." },
+            { question: "Do you provide child seats for family Umrah trips?", answer: "Yes, child seats are available on request — mention it when booking on WhatsApp so the right vehicle is sent." },
+            { question: "Is payment required in advance for Umrah taxi bookings?", answer: "No. The fare is confirmed before the trip starts, and payment is made in cash or card after you arrive safely." },
+            { question: "Can I book just a one-way transfer instead of a full Umrah package?", answer: "Yes, one-way and single-leg bookings (airport-only, or Ziyarat-only, for example) are available — you don't have to book the full itinerary." },
+        ],
+        relatedLinks: [
+            { label: "Makkah Taxi Service", href: "/locations/makkah" },
+            { label: "Madinah Taxi Service", href: "/locations/madinah" },
+            { label: "Jeddah Airport Taxi", href: "/locations/jeddah" },
+            { label: "Jeddah Airport → Makkah", href: "/routes/jeddah-to-makkah" },
+            { label: "Makkah → Madinah", href: "/routes/makkah-to-madinah" },
+            { label: "Makkah Ziyarat Tour", href: "/services/makkah-ziyarat" },
+            { label: "Madinah Ziyarat Tour", href: "/services/madinah-ziyarat" },
+        ],
     },
     {
         slug: "heritage-taxi",
@@ -1568,13 +1588,129 @@ export const servicesData: ServiceData[] = [
         faqs: []
     },
     {
-        slug: "airport-taxi",
-        title: "Airport Taxi Service",
-        description: "Professional airport taxi at all Saudi airports.",
-        content: "Meet and greet at arrivals, flight tracking, and reliable transport from every airport in Saudi Arabia to your destination.",
-        features: ["All Airports", "Meet & Greet", "Flight Tracking", "24/7"],
-        pricing: [{ title: "Transfer", price: "Get Quote" }],
-        faqs: []
+        slug: "airport-transfers",
+        title: "Airport Transfer Service in Saudi Arabia | Jeddah, Madinah, Riyadh & Dammam",
+        description: "Meet-and-greet airport transfers at every major Saudi airport, with flight tracking and a fixed fare confirmed before pickup.",
+        content: "Landing after a long flight is the wrong time to negotiate a fare or wait for a taxi that isn't coming. Our airport transfer service covers Jeddah (KAIA), Madinah (Prince Mohammad Bin Abdulaziz), Riyadh (KKIA) and Dammam (KFIA), with a driver waiting in the arrivals hall holding a name board. We track your flight number, so a delay on your end doesn't mean an empty pickup slot — the driver adjusts automatically and waits without extra charge for a reasonable window after landing. The fare to your hotel, whether in the same city or onward to Makkah or Madinah, is agreed before you land and doesn't change at the curb.",
+        features: ["Meet & Greet at Arrivals", "Live Flight Tracking", "Free Waiting Window on Delays", "Fixed Fare Confirmed Before Pickup"],
+        pricing: [
+            { title: "Jeddah (JED) → Makkah / Madinah", price: "Get Quote" },
+            { title: "Madinah (MED) → Hotel", price: "Get Quote" },
+            { title: "Riyadh (RUH) → City / Hotel", price: "Get Quote" },
+            { title: "Dammam (DMM) → City / Hotel", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "Where exactly will the driver meet me at the airport?", answer: "At the arrivals hall exit, holding a sign with your name — we'll send you the driver's WhatsApp and photo before you land." },
+            { question: "What happens if my flight is delayed?", answer: "We track your flight number and adjust the pickup time automatically, so a delay doesn't affect your booking." },
+            { question: "Do you charge extra for late-night or early-morning arrivals?", answer: "No, the fare is the same regardless of arrival time — we run airport transfers 24/7." },
+            { question: "Can I book a round-trip airport transfer in advance?", answer: "Yes, you can book both the arrival and departure transfer in one WhatsApp booking." },
+        ],
+        relatedLinks: [
+            { label: "Jeddah Airport Transfer", href: "/services/jeddah-airport-transfer" },
+            { label: "Madinah Airport Transfer", href: "/services/madinah-airport-transfer" },
+            { label: "Riyadh Airport Transfer", href: "/services/riyadh-airport-transfer" },
+            { label: "Dammam Airport Transfer", href: "/services/dammam-airport-transfer" },
+            { label: "Jeddah Airport → Makkah", href: "/routes/jeddah-to-makkah" },
+            { label: "Jeddah Taxi Service", href: "/locations/jeddah" },
+        ],
+    },
+    {
+        slug: "ziyarat-tours",
+        title: "Makkah & Madinah Ziyarat Taxi Tours | Historical Sites",
+        description: "Private, driver-guided Ziyarat tours of the historical sites in Makkah and Madinah, with flexible stops and prayer breaks.",
+        content: "A Ziyarat tour is more useful with a driver who knows the sites, not just the roads. In Makkah that means Jabal al-Nour (Cave of Hira), Jabal Thawr, Mina, Muzdalifah, Arafat and Jannat al-Mu'alla; in Madinah it means Masjid Quba, Mount Uhud, Masjid Qiblatain and the Seven Mosques. The vehicle is private for your group — no shared seats, no fixed departure time — so you can linger at a site for reflection or skip one that doesn't interest you without holding up other passengers. Tours can be booked for Makkah alone, Madinah alone, or combined if you're moving between the two cities anyway.",
+        features: ["Makkah & Madinah Coverage", "Knowledgeable Local Drivers", "Flexible Stops & Prayer Breaks", "Private Vehicle — No Shared Seats"],
+        pricing: [
+            { title: "Makkah Ziyarat (half-day)", price: "Get Quote" },
+            { title: "Madinah Ziyarat (half-day)", price: "Get Quote" },
+            { title: "Combined Makkah + Madinah Ziyarat", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "How long does a typical Ziyarat tour take?", answer: "Most half-day tours run 3-4 hours; a combined Makkah and Madinah tour is usually split across two separate half-days." },
+            { question: "Which sites are included in the Makkah Ziyarat tour?", answer: "Jabal al-Nour, Jabal Thawr, Mina, Muzdalifah, Arafat and Jannat al-Mu'alla, with the route adjustable on request." },
+            { question: "Which sites are included in the Madinah Ziyarat tour?", answer: "Masjid Quba, Mount Uhud, Masjid Qiblatain and the Seven Mosques." },
+            { question: "Can we customize which sites are visited?", answer: "Yes — tell the driver or mention it when booking, and stops can be added or skipped." },
+        ],
+        relatedLinks: [
+            { label: "Makkah Ziyarat Tour", href: "/services/makkah-ziyarat" },
+            { label: "Madinah Ziyarat Tour", href: "/services/madinah-ziyarat" },
+            { label: "Battle of Badr Tour", href: "/services/badr-ziyarat-tour" },
+            { label: "Makkah Taxi Service", href: "/locations/makkah" },
+            { label: "Madinah Taxi Service", href: "/locations/madinah" },
+        ],
+    },
+    {
+        slug: "hajj-transport",
+        title: "Hajj Transportation Service in Saudi Arabia | Group & Family",
+        description: "Private Hajj transport for families and groups, covering airport arrival, Mina, Muzdalifah and Arafat, with vehicles up to 17 seats.",
+        content: "Hajj logistics leave little room for a taxi that shows up late or a driver unfamiliar with the Mina-Muzdalifah-Arafat routing. We arrange private transport for Hajj groups and families — from airport arrival through to the Hajj days themselves — with vans and coasters sized for the group rather than splitting people across multiple cars. For larger group and camp bookings that fall under official Tafweej coordination, we work within that process rather than around it. Vehicles range from a GMC for a small family to a 17-seat Coaster for a full group, and luggage handling is factored into the vehicle choice from the start.",
+        features: ["Mina, Muzdalifah & Arafat Routing", "Group & Family Coordination", "Works Within Tafweej Coordination Where Applicable", "Coaster & Van Options for Larger Groups"],
+        pricing: [
+            { title: "Sedan / GMC (small family)", price: "Get Quote" },
+            { title: "Hiace — up to 10 pax", price: "Get Quote" },
+            { title: "Coaster — up to 17 pax", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "Do you provide transport for the Mina-Muzdalifah-Arafat route during Hajj?", answer: "Yes, this is arranged as part of Hajj group bookings — let us know your group size in advance so the right vehicle is reserved." },
+            { question: "Can you coordinate transport for a large Hajj delegation?", answer: "Yes, multiple vehicles can be arranged and coordinated for a single group leader's booking." },
+            { question: "How far in advance should Hajj transport be booked?", answer: "As early as possible — Hajj season vehicle availability is limited, so booking weeks ahead is strongly recommended." },
+            { question: "Do drivers stay with the group throughout the Hajj days?", answer: "For group and camp bookings, yes — this is confirmed as part of the booking so the same driver and vehicle stay assigned to your group." },
+        ],
+        relatedLinks: [
+            { label: "Hajj & Umrah Group Coaster", href: "/services/hajj-umrah-group-bus-coaster" },
+            { label: "Makkah Taxi Service", href: "/locations/makkah" },
+            { label: "Jeddah Airport → Makkah", href: "/routes/jeddah-to-makkah" },
+            { label: "Jeddah Airport Transfer", href: "/services/jeddah-airport-transfer" },
+        ],
+    },
+    {
+        slug: "chauffeur-service",
+        title: "Private Chauffeur Service in Saudi Arabia | Hourly & VIP",
+        description: "Hourly and full-day private chauffeur hire in Makkah, Madinah, Jeddah and Riyadh, with a VIP luxury tier for executive travel.",
+        content: "A chauffeur booking is different from a point-to-point taxi — you keep the same driver and vehicle for a block of time and set the stops as you go. Our chauffeur service covers by-the-hour hire (minimum four hours) for a day of errands, meetings or sightseeing, full-day hire for a packed itinerary, and a VIP tier with a newer luxury fleet and uniformed drivers for executive or high-profile travel. Corporate clients can also set up an account for monthly invoicing instead of paying per trip. The driver waits between stops rather than being re-booked each time, which is the main reason people choose hourly hire over separate taxi rides.",
+        features: ["Hourly & Full-Day Hire", "VIP Luxury Fleet Option", "Corporate Accounts with Monthly Invoicing", "Driver Waits Between Stops"],
+        pricing: [
+            { title: "Hourly Chauffeur (min 4h)", price: "Get Quote" },
+            { title: "Full-Day Chauffeur", price: "Get Quote" },
+            { title: "VIP Luxury Chauffeur", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "What's the difference between hourly and full-day chauffeur hire?", answer: "Hourly hire has a 4-hour minimum and suits a few stops in one area; full-day hire covers a longer, multi-stop itinerary across a wider area." },
+            { question: "Can I request the same driver for multiple days?", answer: "Yes, for multi-day bookings we can assign the same driver where availability allows — mention this when booking." },
+            { question: "Do you offer a corporate account with monthly invoicing?", answer: "Yes, corporate clients can set up an account for priority booking and monthly invoicing instead of paying per trip." },
+            { question: "What's included in the VIP luxury chauffeur tier?", answer: "A newer luxury vehicle (such as Mercedes V-Class or Lexus ES), a uniformed professional driver, and complimentary water on board." },
+        ],
+        relatedLinks: [
+            { label: "Hourly Chauffeur Service", href: "/services/hourly-chauffeur" },
+            { label: "VIP Luxury Chauffeur", href: "/services/luxury-chauffeur" },
+            { label: "Corporate & Business Taxi", href: "/services/business-travel" },
+            { label: "Riyadh Taxi Service", href: "/locations/riyadh" },
+            { label: "Jeddah Taxi Service", href: "/locations/jeddah" },
+        ],
+    },
+    {
+        slug: "group-transport",
+        title: "Group Transportation Service in Saudi Arabia | Vans & Coasters",
+        description: "Group taxi transport for Umrah delegations, corporate groups and family reunions, with Hiace and Coaster vehicles up to 17+ seats.",
+        content: "Booking separate taxis for a group means separate fares, separate pickup times, and no guarantee everyone arrives together. Our group transport service puts a delegation, Umrah group or extended family into one Hiace (up to 10 seats) or Coaster (up to 17 seats), with a single point of contact handling the whole booking. For groups larger than one vehicle can hold, we coordinate multiple vans to leave and arrive together rather than staggered. Luggage handling is planned into the vehicle choice up front, which matters more for a 15-person group than it does for an individual transfer.",
+        features: ["Hiace & Coaster Options (10-17+ pax)", "Multi-Vehicle Convoy Coordination", "Heavy Luggage Handling", "Single Point of Contact for the Whole Group"],
+        pricing: [
+            { title: "Hiace — up to 10 pax", price: "Get Quote" },
+            { title: "Coaster — up to 17 pax", price: "Get Quote" },
+            { title: "Multiple Vehicles (20+ pax)", price: "Get Quote" },
+        ],
+        faqs: [
+            { question: "What's the largest group you can transport in one booking?", answer: "A single Coaster seats up to 17; for larger groups we coordinate multiple vehicles under one booking." },
+            { question: "Can you arrange multiple vehicles to keep a large group together?", answer: "Yes, vehicles are scheduled to depart and arrive together rather than at separate times." },
+            { question: "Do you handle group luggage separately from passengers?", answer: "Vehicle choice accounts for luggage volume — tell us your group size and luggage amount so the right vehicle mix is arranged." },
+            { question: "Is group transport available for both Umrah and corporate groups?", answer: "Yes — the same Hiace/Coaster booking process applies whether it's a pilgrim group, family reunion, or corporate delegation." },
+        ],
+        relatedLinks: [
+            { label: "Hajj & Umrah Group Coaster", href: "/services/hajj-umrah-group-bus-coaster" },
+            { label: "Family Taxi Service", href: "/services/family-taxi" },
+            { label: "Corporate & Business Taxi", href: "/services/business-travel" },
+            { label: "Makkah Taxi Service", href: "/locations/makkah" },
+        ],
     },
     {
         slug: "date-festival-transfer",

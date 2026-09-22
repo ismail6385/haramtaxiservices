@@ -5,7 +5,7 @@ import { servicesData } from '@/lib/servicesData';
 import { buildServiceSeoTitle, buildServiceH1 } from '@/lib/serviceSeo';
 import BookingForm from '@/components/BookingForm';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, Home, ChevronRight } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, Home, ChevronRight, Compass } from 'lucide-react';
 import { Suspense } from 'react';
 import PilgrimTips from '@/components/PilgrimTips';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
@@ -186,6 +186,26 @@ export default async function ServicePage({ params }: Props) {
                             </div>
                             <p className="text-xs text-gray-400 mt-4">For pricing by vehicle type, see the rates table below — or scroll to the FAQ section for answers to common questions.</p>
                         </div>
+
+                        {/* Related Locations & Routes */}
+                        {service.relatedLinks && service.relatedLinks.length > 0 && (
+                            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                    <Compass className="w-5 h-5 text-slate-500" /> Explore by City &amp; Route
+                                </h2>
+                                <div className="flex flex-wrap gap-3">
+                                    {service.relatedLinks.map((link, idx) => (
+                                        <Link
+                                            key={idx}
+                                            href={link.href}
+                                            className="inline-flex items-center gap-2 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-700 hover:border-slate-400 hover:text-slate-700 transition-colors"
+                                        >
+                                            {link.label} <ArrowRight className="w-3.5 h-3.5" />
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
 
                         {/* Pricing Table */}
                         {service.pricing && service.pricing.length > 0 && (

@@ -23,7 +23,7 @@ const serviceClusters = [
         borderColor: 'border-sky-200',
         textColor: 'text-sky-700',
         description: 'Meet & greet transfers from all Saudi airports — KAIA, PMIA, KFIA, KKIA, and more.',
-        slugs: ['jeddah-airport-transfer', 'madinah-airport-transfer', 'riyadh-airport-transfer', 'dammam-airport-transfer', 'alula-airport-transfer', 'neom-bay-transfer', 'jazan-airport-taxi'],
+        slugs: ['airport-transfers', 'jeddah-airport-transfer', 'madinah-airport-transfer', 'riyadh-airport-transfer', 'dammam-airport-transfer', 'alula-airport-transfer', 'neom-bay-transfer', 'jazan-airport-taxi'],
         anchor: '#airport-taxi',
     },
     {
@@ -35,7 +35,7 @@ const serviceClusters = [
         borderColor: 'border-emerald-200',
         textColor: 'text-emerald-700',
         description: 'Dedicated Umrah taxis, Hajj group coaches, and Miqat transfers with Ihram facilities.',
-        slugs: ['hajj-umrah-group-bus-coaster', 'taif-miqat-transfer', 'makkah-ziyarat', 'madinah-ziyarat'],
+        slugs: ['umrah-taxi', 'hajj-transport', 'group-transport', 'hajj-umrah-group-bus-coaster', 'taif-miqat-transfer', 'makkah-ziyarat', 'madinah-ziyarat'],
         anchor: '#umrah-hajj',
     },
     {
@@ -47,7 +47,7 @@ const serviceClusters = [
         borderColor: 'border-amber-200',
         textColor: 'text-amber-700',
         description: 'Guided taxi tours of Islamic heritage sites, UNESCO landmarks, and mountain highlands.',
-        slugs: ['badr-ziyarat-tour', 'hegra-tour', 'alula-hegra-day-trip', 'alula-old-town-circuit', 'taif-rose-farm-tour', 'taif-mountain-tour', 'taif-city-tour', 'tabuk-city-tour'],
+        slugs: ['ziyarat-tours', 'badr-ziyarat-tour', 'hegra-tour', 'alula-hegra-day-trip', 'alula-old-town-circuit', 'taif-rose-farm-tour', 'taif-mountain-tour', 'taif-city-tour', 'tabuk-city-tour'],
         anchor: '#ziyarat-tours',
     },
     {
@@ -71,7 +71,7 @@ const serviceClusters = [
         borderColor: 'border-slate-200',
         textColor: 'text-slate-800',
         description: 'Executive chauffeurs, corporate accounts, hourly car-with-driver, and NEOM project transport.',
-        slugs: ['business-travel', 'hourly-chauffeur', 'neom-taxi', 'neom-bay-transfer'],
+        slugs: ['chauffeur-service', 'business-travel', 'hourly-chauffeur', 'luxury-chauffeur', 'neom-taxi', 'neom-bay-transfer'],
         anchor: '#vip-corporate',
     },
     {

@@ -175,6 +175,11 @@ const nextConfig = {
         destination: '/routes/makkah-to-madinah',
         permanent: true,
       },
+      {
+        source: '/services/airport-taxi',
+        destination: '/services/airport-transfers',
+        permanent: true,
+      },
     ]
   },
 

@@ -64,7 +64,7 @@ export default async function Home() {
   const speakableSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Haram Taxi Service — No.1 Private Taxi in Saudi Arabia",
+    "name": "Haram Taxi Service — Private Taxi in Saudi Arabia",
     "url": "https://haramtaxiservice.com",
     "speakable": {
       "@type": "SpeakableSpecification",
@@ -298,9 +298,9 @@ export default async function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Taxi from Makkah to Madinah", p: "Fixed Rate • Get Quote", d: "Standard 450km transit via Haramain Highway in premium SUV or Van.", tags: ["4.5 Hours", "Door-to-door", "Meet & Greet"], link: "/routes/makkah-to-madinah-taxi" },
-              { title: "Jeddah Airport to Makkah Taxi", p: "Fixed Rate • Get Quote", d: "Direct KAIA Terminal transfer with flight tracking and 60min free waiting.", tags: ["VIP Pickup", "Fixed Tolls", "Luggage Help"], link: "/routes/jeddah-airport-to-makkah-taxi" },
-              { title: "VIP Madinah City Ziyarat", p: "Fixed Rate • Get Quote", d: "Visit Uhud, Quba, and 7 Mosques with our expert bilingual guides.", tags: ["Knowledgeable", "Hydration Incl.", "Flexible Time"], link: "/services/ziyarat" }
+              { title: "Taxi from Makkah to Madinah", p: "Fixed Rate • Get Quote", d: "Standard 450km transit via Haramain Highway in premium SUV or Van.", tags: ["4.5 Hours", "Door-to-door", "Meet & Greet"], link: "/routes/makkah-to-madinah" },
+              { title: "Jeddah Airport to Makkah Taxi", p: "Fixed Rate • Get Quote", d: "Direct KAIA Terminal transfer with flight tracking and 60min free waiting.", tags: ["VIP Pickup", "Fixed Tolls", "Luggage Help"], link: "/routes/jeddah-airport-to-makkah" },
+              { title: "VIP Madinah City Ziyarat", p: "Fixed Rate • Get Quote", d: "Visit Uhud, Quba, and 7 Mosques with our expert bilingual guides.", tags: ["Knowledgeable", "Hydration Incl.", "Flexible Time"], link: "/services/ziyarat-tours" }
             ].map((service, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-3xl border border-white/10 p-8 rounded-3xl hover:bg-brand-gold group transition-all duration-500 cursor-pointer">
                 <h3 className="text-xl font-black text-white group-hover:text-brand-navy mb-3 leading-tight">{service.title}</h3>
@@ -466,10 +466,10 @@ export default async function Home() {
       <footer className="bg-brand-navy py-10 px-4">
           <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8">
               <div className="vcard flex flex-col items-center text-white/40 font-bold text-xs uppercase tracking-widest gap-2">
-                  <div className="fn text-brand-gold text-lg font-black mb-2">HARAM TAXI SERVICE HQ</div>
+                  <div className="fn text-brand-gold text-lg font-black mb-2">HARAM TAXI SERVICE</div>
                   <div className="adr text-center">
-                      <div className="street-address">Al Aziziyah, Misfalah District</div>
                       <span className="locality">Makkah Al Mukarramah</span>, <span className="country-name">Kingdom of Saudi Arabia</span>
+                      <div className="text-white/30 text-[10px] normal-case tracking-normal mt-1">Service area — Makkah, Madinah, Jeddah &amp; across Saudi Arabia</div>
                   </div>
                   <div className="tel flex items-center gap-2">
                       <Phone className="w-3 h-3" /> +966 57 580 6733
@@ -480,7 +480,7 @@ export default async function Home() {
                   <Link href="/locations/makkah">Makkah Taxi</Link>
                   <Link href="/locations/madinah">Madinah Taxi</Link>
                   <Link href="/locations/jeddah">Jeddah Taxi</Link>
-                  <Link href="/services/airport-transfer">Airport Pickup</Link>
+                  <Link href="/services/airport-transfers">Airport Pickup</Link>
                   <Link href="/services/umrah-taxi">Umrah Packages</Link>
               </div>
           </div>
