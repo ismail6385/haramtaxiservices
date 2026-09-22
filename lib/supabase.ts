@@ -1,9 +1,27 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+// Created lazily on first use (not at module import) so that build-time
+// static analysis of routes/pages importing this module doesn't crash when
+// env vars aren't present in the build environment.
+let client: SupabaseClient | null = null
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+function getClient(): SupabaseClient {
+    if (client) return client
+
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+
+    client = createClient(supabaseUrl, supabaseAnonKey)
+    return client
+}
+
+export const supabase = new Proxy({} as SupabaseClient, {
+    get(_target, prop, _receiver) {
+        const real = getClient();
+        const value = Reflect.get(real, prop, real);
+        return typeof value === 'function' ? value.bind(real) : value;
+    }
+})
 
 export type BookingData = {
     customer_name: string;
