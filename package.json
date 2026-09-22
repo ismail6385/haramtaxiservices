@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -57,13 +59,13 @@
     "embla-carousel-react": "^8.6.0",
     "embla-carousel-reactive-utils": "^8.6.0",
     "eslint": "8.49.0",
-    "eslint-config-next": "14.2.35",
+    "eslint-config-next": "15.5.26",
     "html2canvas": "^1.4.1",
     "input-otp": "^1.2.4",
     "js-cookie": "^3.0.5",
     "jspdf": "^4.2.1",
     "lucide-react": "^0.446.0",
-    "next": "14.2.35",
+    "next": "15.5.26",
     "next-themes": "^0.3.0",
     "playwright": "^1.59.1",
     "postcss": "8.4.30",
@@ -82,5 +84,9 @@
     "typescript": "5.2.2",
     "vaul": "^0.9.9",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.6",
+    "wrangler": "^4.136.3"
   }
 }

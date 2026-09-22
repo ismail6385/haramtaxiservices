@@ -7,7 +7,7 @@ import type { Booking } from './types'
 export const dynamic = 'force-dynamic'
 
 export default async function BookingsPage() {
-    const cookieStore = cookies()
+    const cookieStore = await cookies()
 
     const supabase = createServerClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,

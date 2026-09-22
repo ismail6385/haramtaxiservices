@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar } from 'lucide-react';
 
 type Props = {
-    params: { city: string }
+    params: Promise<{ city: string }>
 };
 
 function capitalize(s: string) {
@@ -15,7 +15,8 @@ function capitalize(s: string) {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const city = capitalize(params.city);
+    const { city: citySlug } = await params;
+    const city = capitalize(citySlug);
     return {
         title: `Prayer Times ${city} | Today's Salah Time - Haram Taxi`,
         description: `Get accurate prayer times (Salah time) for ${city} today. Fajr, Dhuhr, Asr, Maghrib, and Isha timings provided by Haram Taxi Service.`,
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function CityPrayerPage({ params }: Props) {
-    const citySlug = params.city;
+    const { city: citySlug } = await params;
     const cityName = capitalize(citySlug);
 
     const times = await getPrayerTimes(cityName);
