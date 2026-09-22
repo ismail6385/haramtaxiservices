@@ -460,7 +460,7 @@ export default function MakkahPage() {
             {/* NAP — Local SEO contact block */}
             <LocationNAP
                 city="Makkah"
-                address="Al Aziziyah, Misfalah District, Makkah Al-Mukarramah, Saudi Arabia"
+                address="Service Area: Makkah Al-Mukarramah, Saudi Arabia"
                 mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Makkah+Saudi+Arabia"
                 reviewCount={312}
                 nearbyAreas={["Masjid Al-Haram", "Aziziyah", "Misfalah", "Kudai", "Jarwal", "Shisha", "Mina", "Arafat", "Muzdalifah", "Abraj Al-Bait"]}

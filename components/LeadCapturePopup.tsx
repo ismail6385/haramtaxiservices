@@ -108,7 +108,7 @@ export default function LeadCapturePopup() {
                             </a>
 
                             <p className="text-white/40 text-xs mt-3">
-                                Trusted by 5,000+ pilgrims • Response in under 2 minutes
+                                Trusted by 15,000+ pilgrims • Response in under 2 minutes
                             </p>
                         </div>
                     </div>

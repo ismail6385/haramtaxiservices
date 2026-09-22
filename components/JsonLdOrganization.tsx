@@ -13,9 +13,8 @@
             "addressRegion": "Makkah Province"
         },
         "sameAs": [
-            "https://www.facebook.com/umrahtaxi",
-            "https://www.instagram.com/umrahtaxi",
-            "https://twitter.com/umrahtaxi"
+            "https://www.facebook.com/haramtaxiservice",
+            "https://www.instagram.com/haramtaxiservice"
         ],
         "contactPoint": {
             "@type": "ContactPoint",

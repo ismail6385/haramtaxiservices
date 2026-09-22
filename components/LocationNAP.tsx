@@ -38,7 +38,7 @@ export default function LocationNAP({
                             <MapPin className="w-5 h-5 text-brand-navy" />
                         </div>
                         <div>
-                            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Address</p>
+                            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Service Area</p>
                             <p className="text-sm text-gray-800 font-medium leading-snug">{address}</p>
                             <a
                                 href={mapsUrl}

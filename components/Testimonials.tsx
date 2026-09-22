@@ -219,7 +219,7 @@ export default function Testimonials() {
                                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400 drop-shadow-sm" />
                                 ))}
                             </div>
-                            <span className="text-white font-bold text-base">5.0 Average Rating</span>
+                            <span className="text-white font-bold text-base">4.9 Average Rating</span>
                         </div>
                         <div className="w-px h-6 bg-gray-600 hidden sm:block" aria-hidden="true" />
                         <span className="text-gray-400 text-sm font-medium flex items-center gap-2">
@@ -231,7 +231,7 @@ export default function Testimonials() {
                         </span>
                         <div className="w-px h-6 bg-gray-600 hidden sm:block" aria-hidden="true" />
                         <span className="text-gray-400 text-sm font-medium flex items-center gap-2">
-                            <Shield className="w-4 h-4 text-yellow-400" /> TGA Licensed &amp; Insured
+                            <Shield className="w-4 h-4 text-yellow-400" /> Licensed &amp; Insured
                         </span>
                         <div className="w-px h-6 bg-gray-600 hidden sm:block" aria-hidden="true" />
                         <span className="text-gray-400 text-sm font-medium flex items-center gap-2">

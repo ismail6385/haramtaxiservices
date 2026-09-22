@@ -73,79 +73,6 @@ export default async function Home() {
     "description": "Haram Taxi Service is Saudi Arabia's most trusted private taxi. We specialise in Umrah and Hajj transfers between Makkah, Madinah and Jeddah Airport. Fixed rates, 24/7 service, no pre-payment required."
   };
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "TaxiService"],
-    "name": "Haram Taxi Service",
-    "image": [
-      "https://haramtaxiservice.com/gmc-yukon-xl-taxi.webp",
-      "https://haramtaxiservice.com/makkah-clock-tower-new.webp"
-    ],
-    "logo": "https://haramtaxiservice.com/logo.png",
-    "priceRange": "$$",
-    "currenciesAccepted": "SAR",
-    "paymentAccepted": "Cash, Bank Transfer",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Al Aziziyah, Misfalah District",
-      "addressLocality": "Makkah Al Mukarramah",
-      "addressRegion": "Makkah Province",
-      "addressCountry": "SA"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 21.4225,
-      "longitude": 39.8262
-    },
-    "hasMap": "https://maps.google.com/?q=Haram+Taxi+Service+Makkah",
-    "url": "https://haramtaxiservice.com",
-    "telephone": "+966575806733",
-    "email": "booking@haramtaxiservice.com",
-    "sameAs": [
-      "https://www.facebook.com/haramtaxiservice",
-      "https://www.instagram.com/haramtaxiservice",
-      "https://wa.me/966575806733"
-    ],
-    "areaServed": [
-      { "@type": "City", "name": "Makkah" },
-      { "@type": "City", "name": "Madinah" },
-      { "@type": "City", "name": "Jeddah" },
-      { "@type": "City", "name": "Riyadh" },
-      { "@type": "City", "name": "Dammam" },
-      { "@type": "Country", "name": "Saudi Arabia" }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "500",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "potentialAction": {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://haramtaxiservice.com/booking",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      },
-      "result": {
-        "@type": "Reservation",
-        "name": "Taxi Booking"
-      }
-    }
-  };
-
   const faqs = [
     {
       question: "Where exactly will I meet my driver at the airport?",
@@ -173,11 +100,6 @@ export default async function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
       />
       <Script
-        id="local-business-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <Script
         id="speakable-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
@@ -196,9 +118,9 @@ export default async function Home() {
       <div className="relative -mt-16 z-20 max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { label: "Bookings", val: "5,000+", sub: "Trips Completed", icon: BadgeCheck },
-            { label: "Google Rating", val: "⭐ 4.9", sub: "Google Verified", icon: Star },
-            { label: "Drivers", val: "85+", sub: "Licensed by Transport Ministry", icon: Shield },
+            { label: "Passengers Served", val: "15,000+", sub: "Trips Completed", icon: BadgeCheck },
+            { label: "Google Rating", val: "⭐ 4.9", sub: "500+ Reviews", icon: Star },
+            { label: "Drivers", val: "85+", sub: "Licensed & Insured", icon: Shield },
             { label: "Support", val: "24/7", sub: "Instant Response", icon: Clock },
           ].map((stat, i) => (
             <div key={i} className="bg-white rounded-3xl p-6 shadow-2xl border border-gray-100 flex flex-col items-center text-center transform hover:-translate-y-2 transition-all">
@@ -235,11 +157,11 @@ export default async function Home() {
                       </div>
                       <div>
                           <p className="text-3xl font-black text-brand-navy">Licensed</p>
-                          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">By Ministry of Transport</p>
+                          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">& Fully Insured</p>
                       </div>
                   </div>
                   <p className="text-xs font-bold text-gray-500 max-w-[200px] leading-relaxed">
-                      Official transport provider for pilgrims and corporate clients across the Kingdom.
+                      Professional private transport service for pilgrims, families and corporate travelers across Saudi Arabia.
                   </p>
               </div>
             </div>
@@ -251,8 +173,8 @@ export default async function Home() {
               
               <h2 className="text-4xl md:text-6xl font-display font-black text-brand-navy leading-[1] tracking-tighter">
                 Haram Taxi: <br />
-                <span className="text-brand-gold">10 Years</span> of <br />
-                Trust & Safety
+                <span className="text-brand-gold">Trusted</span> Since <br />
+                2014
               </h2>
 
               <div className="space-y-6 text-xl text-gray-600 font-medium leading-relaxed">
@@ -342,7 +264,7 @@ export default async function Home() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="p-6 bg-white/5 rounded-2xl border border-white/5 text-center">
                       <p className="text-3xl font-black text-white">0</p>
-                      <p className="text-xs font-black text-brand-gold uppercase tracking-widest mt-1">Pre-payment Required</p>
+                      <p className="text-xs font-black text-brand-gold uppercase tracking-widest mt-1">Advance Payment Needed</p>
                     </div>
                     <div className="p-6 bg-white/5 rounded-2xl border border-white/5 text-center">
                       <p className="text-3xl font-black text-white">100%</p>
@@ -369,8 +291,8 @@ export default async function Home() {
                  <div className="flex items-center gap-2 text-brand-gold">
                     {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 fill-brand-gold" />)}
                  </div>
-                 <p className="text-3xl font-black text-white">50,000+</p>
-                 <p className="text-white/60 text-xs font-bold uppercase tracking-widest">Pilgrims Served Worldwide</p>
+                 <p className="text-3xl font-black text-white">15,000+</p>
+                 <p className="text-white/60 text-xs font-bold uppercase tracking-widest">Pilgrims Served</p>
             </div>
           </div>
           

@@ -13,7 +13,6 @@ export const metadata: Metadata = {
       'x-default': '/',
       'en-US': '/',
       'en-GB': '/',
-      'ar-SA': '/ar',
     },
   },
   title: {
@@ -45,7 +44,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Haram Taxi Service | #1 Private Umrah Taxi Saudi Arabia | Book Now',
+    title: 'Haram Taxi Service | Private Umrah Taxi Saudi Arabia | Book Now',
     description: 'Trusted by thousands of pilgrims. Book your Umrah taxi from Jeddah to Makkah, ' +
                  'Madinah to Makkah. VIP & Economy cars. Airport transfers 24/7.',
     url: 'https://haramtaxiservice.com',

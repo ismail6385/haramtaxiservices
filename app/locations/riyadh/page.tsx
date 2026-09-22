@@ -291,7 +291,7 @@ export default function RiyadhLocationPage() {
                                 <div className="text-sm opacity-90">All Terminals</div>
                             </div>
                             <div>
-                                <div className="text-3xl font-bold mb-2">50,000+</div>
+                                <div className="text-3xl font-bold mb-2">15,000+</div>
                                 <div className="text-sm opacity-90">Pilgrims Served</div>
                             </div>
                         </div>
@@ -685,7 +685,7 @@ export default function RiyadhLocationPage() {
                 {/* NAP — Local SEO contact block */}
                 <LocationNAP
                     city="Riyadh"
-                    address="King Fahd Road, Olaya, Riyadh, Saudi Arabia"
+                    address="Service Area: Riyadh, Saudi Arabia"
                     mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Riyadh+Saudi+Arabia"
                     reviewCount={212}
                     nearbyAreas={["KAFD", "Diplomatic Quarter", "Olaya", "Diriyah", "KKIA Airport", "Boulevard City", "Al Nakheel", "Al Malqa"]}

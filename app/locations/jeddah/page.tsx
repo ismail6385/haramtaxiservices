@@ -646,7 +646,7 @@ export default function JeddahPage() {
                 {/* NAP — Local SEO contact block */}
                 <LocationNAP
                     city="Jeddah"
-                    address="Jeddah, Makkah Province, Saudi Arabia"
+                    address="Service Area: Jeddah, Saudi Arabia"
                     mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Jeddah+Saudi+Arabia"
                     reviewCount={418}
                     nearbyAreas={["KAIA Airport", "Al Balad", "Corniche", "Al Hamra", "Al Rawdah", "Al Zahra", "North Jeddah", "KAEC", "Obhur"]}

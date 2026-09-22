@@ -602,7 +602,7 @@ export default function MadinahPage() {
                 {/* NAP — Local SEO contact block */}
                 <LocationNAP
                     city="Madinah"
-                    address="Markaziyah District, near Masjid Al-Nabawi, Madinah, Saudi Arabia"
+                    address="Service Area: Madinah, Saudi Arabia (including areas near Masjid Al-Nabawi)"
                     mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Madinah+Saudi+Arabia"
                     reviewCount={345}
                     nearbyAreas={["Masjid Al-Nabawi", "Markaziyah", "Al Haram district", "Quba Mosque", "MED Airport", "Al Aqiq", "Al Jamawat", "Qiblatain Mosque area"]}

@@ -13606,7 +13606,7 @@ export const blogData: BlogPost[] = [
 <h3>Our "Family First" Safety Guarantee</h3>
 <p>Haram Taxi Service was built on trust. Here is how we protect our guests:</p>
 <ol>
-    <li><strong>Verified Drivers:</strong> Every driver is licensed, strictly vetted, and carries a verified Ministry of Transport ID.</li>
+    <li><strong>Verified Drivers:</strong> Every driver is licensed, strictly vetted, and carries a verified license ID.</li>
     <li><strong>Ride Sharing & Tracking:</strong> Upon booking, you are provided with your driver's WhatsApp, photo, and license plate. You can share your live location via WhatsApp with family back home.</li>
     <li><strong>Strict Privacy Protocol:</strong> Our drivers are trained to respect passenger privacy. There is no unnecessary conversation, no loud music, and absolute respect for your family's personal space.</li>
     <li><strong>No "Surge" or Extortion:</strong> You pay zero in advance. You pay the exact agreed price <em>after</em> you and your luggage are safely at your hotel. No arguments, no hidden fees.</li>
@@ -13922,7 +13922,7 @@ export const blogData: BlogPost[] = [
 </ul>
 
 <div class="cta-box">
-    <h4>Book the #1 Rated Umrah Taxi in KSA</h4>
+    <h4>Book a Trusted Umrah Taxi in KSA</h4>
     <p>Join thousands of satisfied pilgrims. Fixed prices. VIP vehicles. Zero stress.</p>
     <a href="https://wa.me/966575806733" target="_blank" rel="noopener noreferrer">Book Now on WhatsApp (24/7)</a>
 </div>

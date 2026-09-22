@@ -411,7 +411,7 @@ export default function DammamPage() {
             {/* NAP — Local SEO contact block */}
             <LocationNAP
                 city="Dammam"
-                address="Dammam, Eastern Province, Saudi Arabia"
+                address="Service Area: Dammam, Saudi Arabia"
                 mapsUrl="https://maps.google.com/?q=Haram+Taxi+Service+Dammam+Saudi+Arabia"
                 reviewCount={167}
                 nearbyAreas={["Al Khobar", "Dhahran", "Jubail", "Qatif", "KFAC Airport", "Aramco compound", "Bahrain Causeway", "Half Moon Bay"]}

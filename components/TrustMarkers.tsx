@@ -4,8 +4,8 @@ export default function TrustMarkers() {
     const markers = [
         {
             icon: Shield,
-            title: "TGA Licensed",
-            desc: "Fully compliant with Saudi Transport Authority.",
+            title: "Licensed & Insured",
+            desc: "Every driver and vehicle is licensed and insured.",
             color: "text-blue-600",
             bg: "bg-blue-50"
         },
@@ -18,8 +18,8 @@ export default function TrustMarkers() {
         },
         {
             icon: Award,
-            title: "Award Winning",
-            desc: "Voted #1 Umrah Taxi Service by pilgrims in 2025.",
+            title: "Highly Rated",
+            desc: "Trusted by thousands of pilgrims across Saudi Arabia.",
             color: "text-brand-gold",
             bg: "bg-brand-gold-pale"
         },
@@ -33,7 +33,7 @@ export default function TrustMarkers() {
     ];
 
     const stats = [
-        { label: "Bookings Monthly", value: "2,500+" },
+        { label: "Passengers Served", value: "15,000+" },
         { label: "Verified Drivers", value: "85+" },
         { label: "Customer Rating", value: "4.9/5" },
         { label: "Service Area", value: "All KSA" }
@@ -103,7 +103,7 @@ export default function TrustMarkers() {
                                    ))}
                                </div>
                                <button className="text-brand-gold font-bold text-sm hover:underline">
-                                   Join 50k+ Happy Pilgrims
+                                   Join 15,000+ Happy Pilgrims
                                </button>
                            </div>
                         </div>

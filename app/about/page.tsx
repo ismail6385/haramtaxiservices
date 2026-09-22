@@ -51,8 +51,8 @@ export default function AboutPage() {
 
     const achievements = [
         { number: '15k+', label: 'Pilgrims Served' },
-        { number: '100+', label: 'Expert Chauffeurs' },
-        { number: '50+', label: 'Luxury Fleet' },
+        { number: '85+', label: 'Expert Chauffeurs' },
+        { number: '85+', label: 'Luxury Fleet' },
         { number: '24/7', label: 'Support System' }
     ];
 
