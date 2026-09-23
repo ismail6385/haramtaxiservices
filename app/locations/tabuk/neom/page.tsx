@@ -123,6 +123,15 @@ export default function NEOMPage() {
                 </div>
             </section>
 
+            <section className="py-14 bg-white border-t border-gray-100">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continuing to Jordan from NEOM</h2>
+                    <p className="text-gray-600 leading-relaxed text-center">
+                        If your NEOM stay includes a cross-border trip, we run dedicated private transfers from NEOM to the Saudi side of the Al Durra crossing near Haql — framed either around reaching <Link href="/routes/neom-to-aqaba" className="text-cyan-700 font-semibold hover:underline">Aqaba, Jordan</Link>, or simply getting to the <Link href="/routes/neom-to-durra-border" className="text-cyan-700 font-semibold hover:underline">Durra Border crossing</Link> itself if your onward plans are already arranged. Both also run in reverse — <Link href="/routes/aqaba-to-neom" className="text-cyan-700 font-semibold hover:underline">Aqaba to NEOM</Link> and <Link href="/routes/durra-border-to-neom" className="text-cyan-700 font-semibold hover:underline">Durra Border to NEOM</Link> — for travelers heading back in. The crossing itself is near <Link href="/locations/tabuk/haql" className="text-cyan-700 font-semibold hover:underline">Haql</Link>, home to the Gulf of Aqaba&apos;s well-known shipwreck site if you have time to stop.
+                    </p>
+                </div>
+            </section>
+
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">NEOM Transport FAQ</h2>

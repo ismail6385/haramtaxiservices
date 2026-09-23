@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const faqs = [
     { question: 'What is the Haql shipwreck and how do I visit it?', answer: "The Haql shipwreck is a cargo ship (the 'Million Hope' or similar — multiple vessels have run aground in this area) stranded on the Gulf of Aqaba shore near Haql town in Tabuk Province. The rusting hulk is visible from the shoreline and has become one of Saudi Arabia's most-photographed coastal landmarks. It can be viewed from the beach — no diving required for the visual. For underwater wreck diving, local dive operators in Haql can arrange guided dives around the vessel and the surrounding reef." },
     { question: 'How long is the taxi from Tabuk to Haql?', answer: "Tabuk to Haql town is approximately 200km — about 2 hours via the coastal highway northwest. The route passes through striking desert-meets-sea scenery on the Gulf of Aqaba coast. Our driver waits at Haql while you explore the beach and shipwreck site, then drives you back — full day round trip." },
-    { question: 'Which Jordan border crossing is near Tabuk/Haql?', answer: "There are two main Saudi-Jordan border crossings accessible from Tabuk: (1) Halat Ammar (Durra) crossing — 150km north of Tabuk city, the main vehicle crossing point. Popular with Saudi residents crossing to Aqaba, Jordan. (2) Al Durra crossing — near Haql, at the tip of the Gulf of Aqaba. Both crossings require valid Saudi exit permits, passport, and Jordan visa (or Jordan visa on arrival for GCC residents). Saudi transit visas for expatriates require Saudi exit/re-entry authorization." },
+    { question: 'Which Jordan border crossing is near Tabuk/Haql?', answer: "There are two separate Saudi-Jordan border crossings accessible from the Tabuk region: (1) Halat Ammar — approximately 150km from Tabuk city, a major inland vehicle crossing. (2) Al Durra (also written Ad-Durrah or Al-Durra) — near Haql, on the Gulf of Aqaba coast, and the crossing that connects most directly to Aqaba, Jordan. Both require a valid passport, a Saudi exit permit for residents on iqama, and a Jordan visa or visa-on-arrival eligibility — verify current requirements with the Jordan Consulate before travel, since these can change." },
     { question: 'Do you drop off at the Saudi-Jordan border?', answer: "Yes — we provide drop-off at both Halat Ammar and Al Durra border crossings. Our service ends at the Saudi border gate — transport on the Jordan side must be arranged separately (Aqaba has taxis on the Jordanian side). For the return journey from Jordan to Tabuk, arrange a separate booking in advance via WhatsApp." },
     { question: 'What documents do I need for the Jordan border crossing?', answer: "For Saudi nationals and GCC residents: valid passport, Saudi exit permit (for non-Saudis on iqama), and Jordan visa or visa-on-arrival eligibility. Many nationalities receive Jordan visa on arrival at Aqaba (including US, EU, UK passports). For Saudi nationals, a national ID card may suffice at land crossings. Always verify entry requirements with the Jordan Consulate before travel — requirements change. Our drivers do not provide document advice but know the crossing procedure." },
 ];
@@ -122,6 +122,15 @@ export default function HaqlPage() {
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </section>
+
+            <section className="py-14 bg-white border-t border-gray-100">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Traveling Further Than Haql?</h2>
+                    <p className="text-gray-600 leading-relaxed text-center">
+                        This page covers transfers to Haql and the nearby border crossing from Tabuk. If your trip starts or ends at <Link href="/locations/tabuk/neom" className="text-blue-800 font-semibold hover:underline">NEOM</Link> instead, we run dedicated private transfers for that corridor: <Link href="/routes/neom-to-aqaba" className="text-blue-800 font-semibold hover:underline">NEOM to Aqaba</Link>, <Link href="/routes/aqaba-to-neom" className="text-blue-800 font-semibold hover:underline">Aqaba to NEOM</Link>, <Link href="/routes/neom-to-durra-border" className="text-blue-800 font-semibold hover:underline">NEOM to Durra Border</Link>, and <Link href="/routes/durra-border-to-neom" className="text-blue-800 font-semibold hover:underline">Durra Border to NEOM</Link> — the same Al Durra crossing described above, reached from NEOM rather than Tabuk/Haql.
+                    </p>
                 </div>
             </section>
 
