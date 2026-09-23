@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
 import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
+import RelatedLinks from '@/components/RelatedLinks';
 
 export const metadata: Metadata = {
     title: 'Hyundai Staria Taxi in Saudi Arabia | Family Van Rental - Haram Taxi',
@@ -218,6 +219,12 @@ export default function HyundaiStariaPage() {
 
 
             {/* Related Vehicles */}
+            <RelatedLinks heading="Book the Hyundai Staria For" links={[
+                { label: 'Makkah Taxi Service', href: '/locations/makkah' },
+                { label: 'Madinah Taxi Service', href: '/locations/madinah' },
+                { label: 'Umrah Taxi Service', href: '/services/umrah-taxi' },
+                { label: 'Family Taxi Service', href: '/services/family-taxi' },
+            ]} />
             <PopularRoutesForVehicle vehicleSlug="hyundai-staria" vehicleName="Hyundai Staria" />
             <RelatedVehicles currentVehicle="hyundai-staria" />
             <section className="py-20 bg-slate-500 text-white">

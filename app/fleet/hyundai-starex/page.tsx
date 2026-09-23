@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
 import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
+import RelatedLinks from '@/components/RelatedLinks';
 
 export const metadata: Metadata = {
     title: 'Hyundai Starex Taxi in Saudi Arabia | 7-Seater Van Rental - Haram Taxi',
@@ -218,6 +219,12 @@ export default function HyundaiStarexPage() {
 
 
             {/* Related Vehicles */}
+            <RelatedLinks heading="Book the Hyundai Starex For" links={[
+                { label: 'Madinah Taxi Service', href: '/locations/madinah' },
+                { label: 'Makkah Taxi Service', href: '/locations/makkah' },
+                { label: 'Family Taxi Service', href: '/services/family-taxi' },
+                { label: 'Airport Transfer Service', href: '/services/airport-transfers' },
+            ]} />
             <PopularRoutesForVehicle vehicleSlug="hyundai-starex" vehicleName="Hyundai Starex" />
             <RelatedVehicles currentVehicle="hyundai-starex" />
             <section className="py-20 bg-slate-500 text-white">

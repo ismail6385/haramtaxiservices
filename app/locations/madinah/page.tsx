@@ -253,6 +253,15 @@ export default function MadinahPage() {
                     </div>
                 </section>
 
+                {/* Contextual intercity link */}
+                <section className="py-10 bg-slate-50 border-b border-slate-100">
+                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <p className="text-lg text-gray-700 leading-relaxed">
+                            Arriving from Makkah, or heading there next? Our private <Link href="/routes/madinah-to-makkah" className="font-bold text-brand-navy hover:underline">Madinah to Makkah taxi</Link> covers the 4.5-hour Hijrah Highway transfer with a Hajj-permitted vehicle when needed.
+                        </p>
+                    </div>
+                </section>
+
                 {/* Districts Grid */}
                 <section className="py-16 bg-white border-b border-gray-100">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

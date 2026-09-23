@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
 import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
+import RelatedLinks from '@/components/RelatedLinks';
 
 export const metadata: Metadata = {
     title: 'Toyota Hiace Taxi in Saudi Arabia | 11-Seater Van Rental - Haram Taxi',
@@ -218,6 +219,12 @@ export default function ToyotaHiacePage() {
 
 
             {/* Related Vehicles */}
+            <RelatedLinks heading="Book the Toyota Hiace For" links={[
+                { label: 'Makkah Taxi Service', href: '/locations/makkah' },
+                { label: 'Madinah Taxi Service', href: '/locations/madinah' },
+                { label: 'Umrah Taxi Service', href: '/services/umrah-taxi' },
+                { label: 'Group Transportation', href: '/services/group-transport' },
+            ]} />
             <PopularRoutesForVehicle vehicleSlug="toyota-hiace" vehicleName="Toyota Hiace" />
             <RelatedVehicles currentVehicle="toyota-hiace" />
             <section className="py-20 bg-slate-500 text-white">

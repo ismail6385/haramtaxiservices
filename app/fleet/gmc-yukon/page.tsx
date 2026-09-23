@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
 import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
+import RelatedLinks from '@/components/RelatedLinks';
 
 export const metadata: Metadata = {
     title: 'GMC Yukon Taxi in Saudi Arabia | Luxury SUV Rental - Haram Taxi',
@@ -226,6 +227,12 @@ export default function GMCYukonPage() {
             </section>
 
             {/* Related Vehicles */}
+            <RelatedLinks heading="Book the GMC Yukon For" links={[
+                { label: 'Makkah Taxi Service', href: '/locations/makkah' },
+                { label: 'Madinah Taxi Service', href: '/locations/madinah' },
+                { label: 'Umrah Taxi Service', href: '/services/umrah-taxi' },
+                { label: 'Airport Transfer Service', href: '/services/airport-transfers' },
+            ]} />
             <PopularRoutesForVehicle vehicleSlug="gmc-yukon" vehicleName="GMC Yukon" />
             <RelatedVehicles currentVehicle="gmc-yukon" />
 

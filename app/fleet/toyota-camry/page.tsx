@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import RelatedVehicles from '@/components/RelatedVehicles';
 import PopularRoutesForVehicle from '@/components/PopularRoutesForVehicle';
+import RelatedLinks from '@/components/RelatedLinks';
 
 export const metadata: Metadata = {
     title: 'Toyota Camry Taxi in Saudi Arabia | Sedan Rental - Haram Taxi',
@@ -222,6 +223,12 @@ export default function ToyotaCamryPage() {
             </section>
 
             {/* Related Vehicles */}
+            <RelatedLinks heading="Book the Toyota Camry For" links={[
+                { label: 'Makkah Taxi Service', href: '/locations/makkah' },
+                { label: 'Jeddah Airport Transfer', href: '/services/jeddah-airport-transfer' },
+                { label: 'Umrah Taxi Service', href: '/services/umrah-taxi' },
+                { label: 'Private Chauffeur Service', href: '/services/chauffeur-service' },
+            ]} />
             <PopularRoutesForVehicle vehicleSlug="toyota-camry" vehicleName="Toyota Camry" />
             <RelatedVehicles currentVehicle="toyota-camry" />
 

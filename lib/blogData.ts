@@ -18,7 +18,7 @@ export const blogData: BlogPost[] = [
         excerpt: "Arriving for Hajj 2026? Learn exactly how to navigate the KAIA Hajj Terminal and secure your private VIP transfer to Makkah without the wait.",
         content: `
 <h2>Navigating the KAIA Hajj Terminal in 2026</h2>
-<p>The <strong>King Abdulaziz International Airport (KAIA) Hajj Terminal</strong> in Jeddah is one of the busiest passenger terminals in the world during the pilgrimage season. For Hajj 2026, millions of pilgrims will pass through its gates. Waiting until you land to figure out your transportation to Makkah is a recipe for delays, exhaustion, and frustration.</p>
+<p>The <strong>King Abdulaziz International Airport (KAIA) Hajj Terminal</strong> in Jeddah is one of the busiest passenger terminals in the world during the pilgrimage season. For Hajj 2026, millions of pilgrims will pass through its gates. Waiting until you land to figure out your <a href="/routes/jeddah-airport-to-makkah">transportation to Makkah</a> is a recipe for delays, exhaustion, and frustration — pre-booking through our dedicated <a href="/services/hajj-transport">Hajj transportation service</a> avoids all of it.</p>
 
 <div class="cta-box">
     <h3>Hajj 2026 Slots Are Filling Fast â€” Book Your KAIA Transfer Now</h3>
@@ -119,7 +119,7 @@ export const blogData: BlogPost[] = [
         excerpt: "Arriving at King Abdulaziz International Airport for Umrah? Book a private VIP SUV or Sedan for a seamless, comfortable journey directly to your Makkah hotel.",
         content: `
 <h2>The Best Way to Start Your Umrah Journey</h2>
-<p>Arriving at <strong>King Abdulaziz International Airport (KAIA) in Jeddah</strong> for Umrah is a profoundly spiritual moment. However, navigating the busy airport terminals and negotiating with local cabs can be exhausting. Haram Taxi Service offers pre-booked private transfers directly from the arrivals terminal to your hotel in Makkah.</p>
+<p>Arriving at <strong>King Abdulaziz International Airport (KAIA) in Jeddah</strong> for Umrah is a profoundly spiritual moment. However, navigating the busy airport terminals and negotiating with local cabs can be exhausting. Haram Taxi Service offers a pre-booked <a href="/routes/jeddah-airport-to-makkah">Jeddah Airport to Makkah taxi</a> directly from the arrivals terminal to your hotel, as part of our wider <a href="/services/umrah-taxi">Umrah taxi service</a> covering every stage of your trip once you're in <a href="/locations/makkah">Makkah</a>.</p>
 
 <div class="cta-box">
     <h3>Book Your KAIA to Makkah Umrah Transfer Now</h3>
@@ -158,7 +158,7 @@ export const blogData: BlogPost[] = [
         excerpt: "Traveling between the two Holy Cities? Discover the comfort and convenience of hiring a private executive vehicle from Makkah to Madinah.",
         content: `
 <h2>The Sacred Journey: Makkah to Madinah</h2>
-<p>The roughly <strong>450-kilometer</strong> journey between Makkah and Madinah is a core part of any Ziyarat or Umrah trip. While the Haramain High-Speed Railway exists, taking a private VIP taxi offers unparalleled door-to-door convenience that trains simply cannot match.</p>
+<p>The roughly <strong>450-kilometer</strong> journey between Makkah and Madinah is a core part of any Ziyarat or Umrah trip. While the Haramain High-Speed Railway exists, taking a <a href="/routes/makkah-to-madinah">private Makkah to Madinah taxi</a> offers unparalleled door-to-door convenience that trains simply cannot match, especially once you're settled into your <a href="/locations/madinah">Madinah</a> hotel.</p>
 
 <div class="cta-box">
     <h3>Travel Door-to-Door in Total Comfort</h3>
