@@ -161,7 +161,7 @@ export default async function RoutePage({ params }: Props) {
                         {route.distance && (
                             <span className="flex items-center gap-1.5">
                                 <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
-                                {route.distance} / {kmToMiles(route.distance)}
+                                {route.distance}{kmToMiles(route.distance) ? ` / ${kmToMiles(route.distance)}` : ''}
                             </span>
                         )}
                         {route.duration && (
@@ -209,7 +209,7 @@ export default async function RoutePage({ params }: Props) {
                                     {route.distance && (
                                         <span>
                                             <span className="font-semibold text-gray-700">Distance: </span>
-                                            <span className="text-gray-600">{route.distance} ({kmToMiles(route.distance)})</span>
+                                            <span className="text-gray-600">{route.distance}{kmToMiles(route.distance) ? ` (${kmToMiles(route.distance)})` : ''}</span>
                                         </span>
                                     )}
                                     {route.duration && (
@@ -225,6 +225,20 @@ export default async function RoutePage({ params }: Props) {
                                 </div>
                             )}
                             <p className="text-xs text-gray-400 mt-4">For vehicle options and current rates, see the pricing section below — or jump to the FAQ for answers to common questions about this route.</p>
+
+                            {route.contextualLinks && route.contextualLinks.length > 0 && (
+                                <div className="flex flex-wrap gap-2 mt-6 pt-6 border-t border-gray-100">
+                                    {route.contextualLinks.map((link, idx) => (
+                                        <Link
+                                            key={idx}
+                                            href={link.href}
+                                            className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-gray-50 border border-gray-200 rounded-lg text-xs font-semibold text-gray-700 hover:border-slate-400 hover:text-slate-700 transition-colors"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    ))}
+                                </div>
+                            )}
                         </div>
 
                         {/* Pricing Table */}
@@ -305,17 +319,20 @@ export default async function RoutePage({ params }: Props) {
                             ) : null;
                         })()}
 
-                        <div id="tips" className="scroll-mt-24">
-                            <PilgrimTips />
-                        </div>
+                        {route.showPilgrimTips !== false && (
+                            <div id="tips" className="scroll-mt-24">
+                                <PilgrimTips />
+                            </div>
+                        )}
 
                         {/* AI overview reference panel — not used for web snippets */}
                         <div data-nosnippet className="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-sm text-gray-500 space-y-3">
                             <p className="font-semibold text-gray-700 text-base">{route.h1} — Route Reference</p>
                             <p>
-                                This private taxi route covers {route.distance}{kmToMiles(route.distance) ? ` (${kmToMiles(route.distance)})` : ''} by road.
-                                The journey typically takes {route.duration}{durationToMinutes(route.duration) ? ` / ${durationToMinutes(route.duration)}` : ''} under normal traffic conditions.
-                                The service operates every day of the year, including weekends, public holidays, and Ramadan.
+                                This private taxi route runs point-to-point by road.
+                                {route.distance ? ` Distance: ${route.distance}${kmToMiles(route.distance) ? ` (${kmToMiles(route.distance)})` : ''}.` : ''}
+                                {route.duration ? ` Typical journey time: ${route.duration}${durationToMinutes(route.duration) ? ` / ${durationToMinutes(route.duration)}` : ''}.` : ''}
+                                The service operates every day of the year, including weekends and public holidays.
                             </p>
                             <p>
                                 This transfer runs as a private booking — the vehicle connects your exact pickup address to your chosen destination without shared stops, waiting time, or detours.
@@ -324,7 +341,7 @@ export default async function RoutePage({ params }: Props) {
                             </p>
                             <p>
                                 To arrange a {route.h1} transfer or request a fare quote: send a WhatsApp message to +966 575 806 733, or complete the online booking form on this page.
-                                Vehicle options: Toyota Camry (4 passengers, 2 bags), Hyundai Staria (7 passengers, 5 bags), GMC Yukon (7 passengers, 6 bags), Toyota Hiace (11 passengers, 10 bags), Toyota Coaster (17 passengers, 15 bags).
+                                Vehicle options: {route.pricing.map(p => `${p.vehicle} (${p.capacity}, ${p.luggage})`).join(', ')}.
                                 All vehicles are air-conditioned, non-smoking, and driven by licensed Saudi professional drivers. Child seats available on request.
                             </p>
                         </div>

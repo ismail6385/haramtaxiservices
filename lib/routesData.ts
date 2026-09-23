@@ -16,6 +16,9 @@ export interface RouteData {
     image?: string;
     pricing: RoutePricing[];
     faqs: { question: string; answer: string }[];
+    // Optional — omitted (undefined) preserves existing behavior for all other routes.
+    showPilgrimTips?: boolean;
+    contextualLinks?: { label: string; href: string }[];
 }
 
 export const routesData: RouteData[] = [
@@ -3541,5 +3544,124 @@ export const routesData: RouteData[] = [
             { question: "Where do we stop on the Tabuk to Makkah road?", answer: "Scheduled rest stops approximately every 3–4 hours — typically at Yanbu (midpoint) for a 30-minute break with prayers, plus fuel stops at Al Wajh and near Jeddah." },
             { question: "Can pilgrims from Tabuk use this service for Hajj 2026?", answer: "Yes. The Miqat for pilgrims from the direction of Tabuk is Al-Juhfah (Rabigh) — approximately 187km north of Makkah on the Red Sea coast. We include a Miqat stop at Rabigh mosque on request." }
         ]
+    },
+    {
+        slug: "neom-to-aqaba",
+        title: "NEOM to Aqaba Private Transfer | Cross-Border Taxi to Jordan",
+        description: "Private car transfer from NEOM to the Saudi side of the Al Durra border crossing near Haql, with straightforward onward access to Aqaba, Jordan. Door-to-door from your NEOM location, fixed booking confirmed on WhatsApp.",
+        h1: "NEOM to Aqaba Private Transfer",
+        distance: "Regional transfer — exact distance depends on your NEOM pickup point",
+        duration: "Confirmed at booking, based on pickup location and current border conditions",
+        content: "If you're based in NEOM — whether at NEOM Bay, The Line, Sindalah, or another project site — and need to reach Aqaba, Jordan, we provide a private door-to-door transfer from your NEOM location to the Al Durra (also written Ad-Durrah or Al-Durra) border crossing near Haql, the crossing that connects most directly to Aqaba. This is a private vehicle for you and your group only, with no shared rides and no scheduled departures. Our service takes you comfortably to the Saudi side of the crossing; travel on the Jordanian side into Aqaba itself is arranged separately, since a different set of vehicles and permits operate across the border. This transfer suits NEOM contractors heading to Aqaba for a break, business travelers connecting onward, and tourists planning a Jordan side-trip during their NEOM stay. Because you're departing a NEOM project zone, check with your NEOM sponsor or employer about any exit clearance your specific site requires before booking.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "8–12 Pax", luggage: "8 Bags" },
+        ],
+        faqs: [
+            { question: "Can I book a private transfer from NEOM to Aqaba?", answer: "Yes. We provide a private car and driver from your NEOM pickup point to the Saudi side of the Al Durra border crossing near Haql, which is the crossing closest to Aqaba. Onward travel into Aqaba itself is arranged on the Jordanian side separately." },
+            { question: "Does the route cross the Saudi-Jordan border?", answer: "Our vehicle and driver operate on the Saudi side only, taking you to the border crossing. Crossing into Jordan and onward transport into Aqaba is handled separately once you're through passport control." },
+            { question: "What do I need for the border crossing?", answer: "Border requirements — passports, visas, exit permits for residents, and current crossing hours — can change, so please verify the latest requirements with the Saudi and Jordanian authorities (or the Jordanian embassy/consulate) before you travel. We're not able to guarantee visa eligibility or border operating hours." },
+            { question: "Can families travel with luggage?", answer: "Yes. Our GMC Yukon and Toyota Hiace options are chosen for family groups with more luggage than a standard sedan can carry — let us know your group size and luggage when booking so we send the right vehicle." },
+            { question: "Which vehicles are available for this route?", answer: "Toyota Camry for individuals or couples, GMC Yukon for families needing extra space, and Toyota Hiace for larger groups — the same vehicles we use for NEOM's other intercity and cross-border transfers." },
+            { question: "Can I request a one-way or return transfer?", answer: "Both are available. For a return trip, let us know your planned crossing-back date when booking so a vehicle can be arranged for pickup at the border on your way back to NEOM." },
+            { question: "Can you pick me up from a NEOM hotel or work site?", answer: "Yes — tell us your exact NEOM location (hotel, camp, or site address) when booking and we'll confirm pickup details on WhatsApp." },
+        ],
+        showPilgrimTips: false,
+        contextualLinks: [
+            { label: "NEOM Transport Hub", href: "/locations/tabuk/neom" },
+            { label: "Haql & Border Crossing Guide", href: "/locations/tabuk/haql" },
+            { label: "GMC Yukon", href: "/fleet/gmc-yukon" },
+            { label: "Toyota Hiace (Groups)", href: "/fleet/toyota-hiace" },
+            { label: "Aqaba to NEOM (Return Journey)", href: "/routes/aqaba-to-neom" },
+        ],
+    },
+    {
+        slug: "aqaba-to-neom",
+        title: "Aqaba to NEOM Private Transfer | Cross-Border Taxi from Jordan",
+        description: "Private car pickup from the Saudi side of the Al Durra border crossing near Haql, for onward transfer to your NEOM destination. Suits contractors, business travelers, and tourists arriving from Jordan.",
+        h1: "Aqaba to NEOM Private Transfer",
+        distance: "Regional transfer — exact distance depends on your NEOM destination",
+        duration: "Confirmed at booking, based on destination and current border conditions",
+        content: "Arriving in Saudi Arabia from Aqaba, Jordan, and heading to NEOM? Once you've crossed at the Al Durra (Ad-Durrah) border near Haql and cleared Saudi passport control, we provide a private car and driver for the onward journey to your NEOM destination — NEOM Bay, The Line, Sindalah, or another project site. This is the return leg of our NEOM-Aqaba service, and the main practical difference is on the Saudi entry side: NEOM is a controlled development zone, so if you're heading to a NEOM work site rather than the public NEOM Bay waterfront area, confirm your NEOM-issued permit or visitor pass is arranged before you travel, since our driver cannot take you into restricted construction zones without it. This service is used by NEOM contractors returning from time off in Jordan, business travelers connecting through Aqaba, and visitors combining a Jordan trip with a NEOM visit.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "8–12 Pax", luggage: "8 Bags" },
+        ],
+        faqs: [
+            { question: "Can I travel from Aqaba to NEOM by private car?", answer: "Yes — once you've crossed the border into Saudi Arabia at the Al Durra crossing near Haql and cleared passport control, we pick you up on the Saudi side for the private transfer to your NEOM destination." },
+            { question: "Do I need a permit to enter NEOM?", answer: "If your destination is a NEOM work site or construction zone, yes — NEOM is a controlled development zone requiring a permit from NEOM LLC or your sponsoring employer. Public areas like the NEOM Bay waterfront may be more accessible, but always confirm current access rules with your NEOM host before travel." },
+            { question: "Where exactly will the driver meet me?", answer: "At the Saudi side of the Al Durra border crossing, after you've cleared passport control. We'll coordinate the exact meeting point with you on WhatsApp once your crossing time is confirmed." },
+            { question: "How should I prepare for the border crossing?", answer: "Border and visa requirements can change, so verify current entry requirements — passport validity, Saudi visa or entry permissions, and crossing hours — with the relevant Saudi authorities before traveling. We're not able to guarantee entry eligibility or border hours." },
+            { question: "Can groups or families travel together?", answer: "Yes — GMC Yukon and Toyota Hiace options are available for families and small groups traveling together with luggage." },
+            { question: "Can I book a one-way transfer only?", answer: "Yes, one-way bookings are available in either direction — you don't need to book a round trip." },
+        ],
+        showPilgrimTips: false,
+        contextualLinks: [
+            { label: "NEOM Transport Hub", href: "/locations/tabuk/neom" },
+            { label: "Haql & Border Crossing Guide", href: "/locations/tabuk/haql" },
+            { label: "GMC Yukon", href: "/fleet/gmc-yukon" },
+            { label: "Toyota Hiace (Groups)", href: "/fleet/toyota-hiace" },
+            { label: "NEOM to Aqaba (Outbound Journey)", href: "/routes/neom-to-aqaba" },
+        ],
+    },
+    {
+        slug: "neom-to-durra-border",
+        title: "NEOM to Durra Border Transfer | Al Durra / Ad-Durrah Crossing Taxi",
+        description: "Private transfer from NEOM directly to the Al Durra (Ad-Durrah) border crossing near Haql — for travelers who need to reach the crossing point itself, without a specific Aqaba stopover.",
+        h1: "NEOM to Durra Border Private Transfer",
+        distance: "Shorter than the NEOM-Tabuk corridor — exact distance depends on your NEOM pickup point",
+        duration: "Confirmed at booking, based on pickup location",
+        content: "Some journeys from NEOM don't need a specific Jordanian destination attached — you might be meeting someone at the crossing, have your own transport already arranged on the Jordan side, or simply need to reach the Al Durra (also written Ad-Durrah or Al-Durra) border point itself. This transfer takes you privately from your NEOM location directly to the Saudi side of that crossing, near Haql, without the Aqaba-specific framing of our other border transfer. It's a more direct booking for travelers whose plans on the Jordanian side are already arranged, or who are simply crossing briefly rather than continuing into Aqaba. As with any NEOM departure, check whether your specific project site requires exit clearance from your employer or NEOM sponsor before the vehicle picks you up.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "8–12 Pax", luggage: "8 Bags" },
+        ],
+        faqs: [
+            { question: "What's the difference between this and the NEOM to Aqaba transfer?", answer: "This transfer is framed around reaching the Al Durra border crossing itself — useful if you're meeting someone there, have arranged your own transport in Jordan, or are making a short crossing rather than continuing to Aqaba. Our NEOM to Aqaba page covers the same crossing point framed around continuing into the city." },
+            { question: "Is Durra the same as Ad-Durrah or Al-Durra?", answer: "Yes — these are different spellings of the same Saudi-Jordan border crossing near Haql. We use 'Al Durra' as our standard spelling." },
+            { question: "Does this include crossing into Jordan?", answer: "No — our driver and vehicle take you to the Saudi side of the crossing. Passport control and anything beyond the border gate is handled separately." },
+            { question: "What should I know about the border crossing itself?", answer: "Crossing procedures, required documents, and operating hours can change, so confirm current requirements with the relevant Saudi and Jordanian authorities before travel. We can't guarantee visa eligibility, customs rules, or border hours." },
+            { question: "Can I book a group vehicle?", answer: "Yes — Toyota Hiace is available for larger groups, alongside the Toyota Camry and GMC Yukon for smaller parties." },
+            { question: "Can I arrange a pickup back from the border afterward?", answer: "Yes — let us know your expected return time when booking, or contact us on WhatsApp once you're ready to be picked up." },
+        ],
+        showPilgrimTips: false,
+        contextualLinks: [
+            { label: "NEOM Transport Hub", href: "/locations/tabuk/neom" },
+            { label: "Haql & Jordan Border Guide", href: "/locations/tabuk/haql" },
+            { label: "NEOM to Aqaba (Full Journey)", href: "/routes/neom-to-aqaba" },
+            { label: "GMC Yukon", href: "/fleet/gmc-yukon" },
+        ],
+    },
+    {
+        slug: "durra-border-to-neom",
+        title: "Durra Border to NEOM Transfer | Al Durra Crossing Taxi to NEOM",
+        description: "Private car from the Saudi side of the Al Durra (Ad-Durrah) border crossing near Haql to your NEOM destination — for travelers crossing from Jordan without a specific Aqaba stopover.",
+        h1: "Durra Border to NEOM Private Transfer",
+        distance: "Shorter than the Tabuk-NEOM corridor — exact distance depends on your NEOM destination",
+        duration: "Confirmed at booking, based on destination",
+        content: "If you've crossed into Saudi Arabia at the Al Durra border near Haql and your onward destination is NEOM rather than Tabuk or elsewhere, we provide a private transfer directly from the Saudi side of the crossing to your NEOM location. This suits travelers who crossed the border directly rather than via Aqaba specifically, such as those meeting a pre-arranged pickup, or NEOM personnel re-entering Saudi Arabia this way. The same NEOM entry considerations apply as our Aqaba-to-NEOM service: if your destination is a NEOM work site or construction zone rather than a public area, have your NEOM-issued permit or visitor pass confirmed before travel.",
+        pricing: [
+            { vehicle: "Toyota Camry", price: "Get Quote", capacity: "4 Pax", luggage: "2 Bags" },
+            { vehicle: "GMC Yukon", price: "Get Quote", capacity: "7 Pax", luggage: "6 Bags" },
+            { vehicle: "Toyota Hiace", price: "Get Quote", capacity: "8–12 Pax", luggage: "8 Bags" },
+        ],
+        faqs: [
+            { question: "Can you pick me up right at the border crossing?", answer: "Yes — once you've cleared Saudi passport control at the Al Durra crossing, our driver meets you there for the transfer to NEOM. We'll confirm the exact meeting point on WhatsApp." },
+            { question: "Do I need a NEOM permit for this transfer?", answer: "If you're heading to a NEOM work site or construction zone, yes — confirm your NEOM-issued permit or visitor pass with your sponsor before travel. Public areas may have different access rules, so check with your NEOM host." },
+            { question: "What's the difference between this and the Aqaba to NEOM transfer?", answer: "This is for travelers crossing directly at the Durra border without an Aqaba-specific stop — for example, meeting a pre-arranged ride at the crossing itself. Our Aqaba to NEOM page is framed for travelers coming specifically from Aqaba city." },
+            { question: "What should I verify before crossing?", answer: "Entry requirements, visa rules, and border operating hours can change — confirm the latest information with the relevant Saudi authorities before you travel. We can't guarantee entry eligibility or crossing hours." },
+            { question: "Which vehicles can I book?", answer: "Toyota Camry, GMC Yukon, and Toyota Hiace, depending on your group size and luggage." },
+            { question: "Can I book this transfer in advance from outside Saudi Arabia?", answer: "Yes — message us on WhatsApp with your expected crossing date and NEOM destination, and we'll confirm the booking ahead of your trip." },
+        ],
+        showPilgrimTips: false,
+        contextualLinks: [
+            { label: "NEOM Transport Hub", href: "/locations/tabuk/neom" },
+            { label: "Haql & Jordan Border Guide", href: "/locations/tabuk/haql" },
+            { label: "Aqaba to NEOM (Full Journey)", href: "/routes/aqaba-to-neom" },
+            { label: "Toyota Hiace (Groups)", href: "/fleet/toyota-hiace" },
+        ],
     }
 ];
