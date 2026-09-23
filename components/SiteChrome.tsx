@@ -6,7 +6,6 @@ import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import WhatsAppButton from './WhatsAppButton';
 import UrgencyTopBar from './UrgencyTopBar';
-import LeadCapturePopup from './LeadCapturePopup';
 import MobileBottomCTA from './MobileBottomCTA';
 import JsonLdBreadcrumb from './JsonLdBreadcrumb';
 import JsonLdOrganization from './JsonLdOrganization';
@@ -32,7 +31,6 @@ export default function SiteChrome({ children }: { children: React.ReactNode }) 
             <Footer />
             <WhatsAppButton />
             <ScrollToTop />
-            <LeadCapturePopup />
             <MobileBottomCTA />
         </>
     );
